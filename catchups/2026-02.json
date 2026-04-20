@@ -1,0 +1,257 @@
+{
+  "month": "2026-02",
+  "title": "February 2026 Catchup — Top 25",
+  "generated": "2026-04-20",
+  "items": [
+    {
+      "slug": "claude-opus-4-6",
+      "name": "Claude Opus 4.6",
+      "primary_url": "https://www.anthropic.com/news/claude-opus-4-6",
+      "secondary_urls": ["https://techcrunch.com/2026/02/05/anthropic-releases-opus-4-6-with-new-agent-teams/"],
+      "hook": "First Opus-class model with a 1M-token context window plus 'agent teams' that let multiple Claude Code agents work in parallel — released Feb 5.",
+      "categories": ["anthropic"],
+      "install": "claude --model claude-opus-4-6",
+      "added_date": "2026-02-05"
+    },
+    {
+      "slug": "claude-sonnet-4-6",
+      "name": "Claude Sonnet 4.6",
+      "primary_url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+      "secondary_urls": ["https://www.cnbc.com/2026/02/17/anthropic-ai-claude-sonnet-4-6-default-free-pro.html"],
+      "hook": "New default Sonnet at $3/$15 per MTok hits 79.6% on SWE-bench Verified with 1M-token context — released Feb 17.",
+      "categories": ["anthropic"],
+      "install": "claude --model claude-sonnet-4-6",
+      "added_date": "2026-02-17"
+    },
+    {
+      "slug": "xcode-claude-agent-sdk",
+      "name": "Apple Xcode 26.3 + Claude Agent SDK",
+      "primary_url": "https://www.anthropic.com/news/apple-xcode-claude-agent-sdk",
+      "secondary_urls": ["https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/"],
+      "hook": "Xcode ships native Claude Agent SDK integration — subagents, background tasks, plugins, and Preview-based visual verification for iOS/macOS/visionOS.",
+      "categories": ["anthropic", "skill"],
+      "install": "Update Xcode to 26.3 → Settings → Accounts → Claude",
+      "added_date": "2026-02-03"
+    },
+    {
+      "slug": "claude-code-security",
+      "name": "Claude Code Security",
+      "primary_url": "https://www.anthropic.com/news/claude-code-security",
+      "secondary_urls": ["https://thehackernews.com/2026/02/anthropic-launches-claude-code-security.html"],
+      "hook": "Reasoning-based vulnerability scanner that found 500+ zero-days in production OSS, now in limited preview for Enterprise/Team and OSS maintainers.",
+      "categories": ["anthropic", "design"],
+      "install": "Available via claude.ai/code (Enterprise/Team waitlist)",
+      "added_date": "2026-02-20"
+    },
+    {
+      "slug": "claude-cowork-windows",
+      "name": "Claude Cowork on Windows",
+      "primary_url": "https://venturebeat.com/technology/anthropics-claude-cowork-finally-lands-on-windows-and-it-wants-to-automate",
+      "secondary_urls": ["https://claude.com/product/claude-cowork"],
+      "hook": "Cowork desktop reaches Windows with full feature parity — file access, MCP connectors, plugins — opening Anthropic's autonomous agent to ~70% of desktops.",
+      "categories": ["anthropic"],
+      "install": "Download Claude Desktop for Windows → switch to Cowork mode",
+      "added_date": "2026-02-10"
+    },
+    {
+      "slug": "anthropic-acquires-vercept",
+      "name": "Anthropic acquires Vercept",
+      "primary_url": "https://www.anthropic.com/news/acquires-vercept",
+      "secondary_urls": ["https://techcrunch.com/2026/02/25/anthropic-acquires-vercept-ai-startup-agents-computer-use-founders-investors/"],
+      "hook": "Seattle computer-use startup behind Vy joins Anthropic to advance Claude's desktop automation; Vercept product sunset March 25.",
+      "categories": ["anthropic"],
+      "install": "n/a",
+      "added_date": "2026-02-25"
+    },
+    {
+      "slug": "claude-powerpoint-pro",
+      "name": "Claude in PowerPoint expands to Pro",
+      "primary_url": "https://gigazine.net/gsc_news/en/20260220-claude-in-powerpoint/",
+      "secondary_urls": ["https://claude.com/claude-for-powerpoint"],
+      "hook": "Template-aware slide co-author lands on the $20/mo Pro tier — read existing decks, edit with brand-respecting precision, generate full structures from a prompt.",
+      "categories": ["anthropic"],
+      "install": "PowerPoint → Get Add-ins → search 'Claude'",
+      "added_date": "2026-02-20"
+    },
+    {
+      "slug": "anthropic-infosys",
+      "name": "Anthropic + Infosys partnership",
+      "primary_url": "https://www.anthropic.com/news/anthropic-infosys",
+      "secondary_urls": [],
+      "hook": "Joint Center of Excellence to build Claude-powered agents for telecom, financial services, manufacturing, and software dev in regulated industries.",
+      "categories": ["anthropic"],
+      "install": "n/a",
+      "added_date": "2026-02-17"
+    },
+    {
+      "slug": "cowork-enterprise-plugins",
+      "name": "Cowork enterprise plugin marketplaces",
+      "primary_url": "https://techcrunch.com/2026/02/24/anthropic-launches-new-push-for-enterprise-agents-with-plugins-for-finance-engineering-and-design/",
+      "secondary_urls": ["https://claude.com/plugins"],
+      "hook": "10 department plugin packs + 12 new MCP connectors (Google Workspace, DocuSign, FactSet, Harvey…) and a 'Customize' admin UI for private internal marketplaces.",
+      "categories": ["marketplace", "plugin"],
+      "install": "Cowork → /plugin → Discover → Customize (Team/Enterprise)",
+      "added_date": "2026-02-24"
+    },
+    {
+      "slug": "financial-services-plugins",
+      "name": "anthropics/financial-services-plugins",
+      "primary_url": "https://github.com/anthropics/financial-services-plugins",
+      "secondary_urls": [],
+      "hook": "Anthropic's first official vertical plugin pack — ~7.7K stars, MCP-backed integrations for finserv workflows like equity research and compliance review.",
+      "categories": ["marketplace", "anthropic"],
+      "install": "/plugin marketplace add anthropics/financial-services-plugins",
+      "added_date": "2026-02-24"
+    },
+    {
+      "slug": "opus-fast-mode",
+      "name": "Fast mode for Claude Opus 4.6",
+      "primary_url": "https://simonwillison.net/2026/Feb/7/claude-fast-mode/",
+      "secondary_urls": ["https://github.blog/changelog/2026-02-07-claude-opus-4-6-fast-is-now-in-public-preview-for-github-copilot/"],
+      "hook": "Same Opus 4.6 weights, ~2.5× faster output tokens/sec, priced 6× standard — toggle with /fast in Claude Code v2.1.36+.",
+      "categories": ["cost"],
+      "install": "Inside Claude Code: /fast (then Tab to toggle)",
+      "added_date": "2026-02-07"
+    },
+    {
+      "slug": "claude-for-open-source",
+      "name": "Claude for Open Source program",
+      "primary_url": "https://simonwillison.net/2026/Feb/27/claude-max-oss-six-months/",
+      "secondary_urls": ["https://claude.com/contact-sales/claude-for-oss"],
+      "hook": "Six months of free Claude Max 20x ($1,200 value) for up to 10,000 OSS maintainers of repos with 5K+ stars or 1M+ monthly NPM downloads.",
+      "categories": ["cost", "anthropic"],
+      "install": "Apply at claude.com/contact-sales/claude-for-oss",
+      "added_date": "2026-02-26"
+    },
+    {
+      "slug": "claude-devtools",
+      "name": "claude-devtools",
+      "primary_url": "https://github.com/matt1398/claude-devtools",
+      "secondary_urls": [],
+      "hook": "Visual UI for Claude Code session logs — turn-based context, compaction visualization, subagent execution trees, token-usage observability.",
+      "categories": ["cost"],
+      "install": "git clone https://github.com/matt1398/claude-devtools",
+      "added_date": "2026-02-15"
+    },
+    {
+      "slug": "claude-code-remote-control",
+      "name": "Claude Code Remote Control",
+      "primary_url": "https://simonwillison.net/2026/Feb/25/claude-code-remote-control/",
+      "secondary_urls": ["https://venturebeat.com/orchestration/anthropic-just-released-a-mobile-version-of-claude-code-called-remote"],
+      "hook": "Run a local Claude Code session, then drive it from claude.ai/code, iOS, or Android — execution stays on your machine, prompts flow from anywhere.",
+      "categories": ["viral"],
+      "install": "claude --remote (Max-tier preview)",
+      "added_date": "2026-02-25"
+    },
+    {
+      "slug": "pragmatic-engineer-survey",
+      "name": "Pragmatic Engineer Survey: Claude Code most-loved",
+      "primary_url": "https://newsletter.pragmaticengineer.com/p/ai-tooling-2026",
+      "secondary_urls": ["https://aiproductivity.ai/news/pragmatic-engineer-survey-ai-tooling-2026/"],
+      "hook": "Survey of ~1,000 devs (Jan 27–Feb 17) crowns Claude Code the #1 most-loved tool at 46%, vs Cursor 19% and Copilot 9%; 95% of devs use AI weekly.",
+      "categories": ["viral"],
+      "install": "n/a",
+      "added_date": "2026-02-17"
+    },
+    {
+      "slug": "anthropic-oauth-ban",
+      "name": "Anthropic OAuth third-party ban",
+      "primary_url": "https://www.theregister.com/2026/02/20/anthropic_clarifies_ban_third_party_claude_access/",
+      "secondary_urls": ["https://code.claude.com/docs/en/legal-and-compliance"],
+      "hook": "Anthropic clarifies that Free/Pro/Max OAuth tokens cannot be used in third-party tools (incl. its own Agent SDK) — ending the OpenClaw-era subscription resale loophole.",
+      "categories": ["design"],
+      "install": "n/a",
+      "added_date": "2026-02-19"
+    },
+    {
+      "slug": "claudes-c-compiler",
+      "name": "The Claude C Compiler",
+      "primary_url": "https://simonwillison.net/2026/Feb/22/ccc/",
+      "secondary_urls": ["https://github.com/anthropics/claudes-c-compiler"],
+      "hook": "Nicholas Carlini's parallel-Claude experiment: Opus 4.6 + agent teams produced a dependency-free Rust C compiler that boots Linux on x86/ARM/RISC-V.",
+      "categories": ["design"],
+      "install": "git clone https://github.com/anthropics/claudes-c-compiler",
+      "added_date": "2026-02-22"
+    },
+    {
+      "slug": "obra-superpowers",
+      "name": "Superpowers (obra)",
+      "primary_url": "https://github.com/obra/superpowers",
+      "secondary_urls": ["https://blog.fsck.com/2025/10/09/superpowers/"],
+      "hook": "20+ composable skills enforcing clarify→design→plan→code→verify discipline — exploded to 55K+ stars in Feb after Anthropic accepted it into the official marketplace.",
+      "categories": ["skill"],
+      "install": "/plugin marketplace add obra/superpowers-marketplace",
+      "added_date": "2026-02-15"
+    },
+    {
+      "slug": "addyosmani-agent-skills",
+      "name": "addyosmani/agent-skills",
+      "primary_url": "https://github.com/addyosmani/agent-skills",
+      "secondary_urls": [],
+      "hook": "Addy Osmani (Google) drops production-grade engineering skills compatible with Claude Code, Cursor, and Antigravity — ~18K stars in weeks.",
+      "categories": ["skill"],
+      "install": "git clone https://github.com/addyosmani/agent-skills ~/.claude/skills/addyosmani",
+      "added_date": "2026-02-08"
+    },
+    {
+      "slug": "mattpocock-skills",
+      "name": "mattpocock/skills",
+      "primary_url": "https://github.com/mattpocock/skills",
+      "secondary_urls": [],
+      "hook": "Matt Pocock's personal `.claude/skills` directory becomes the most-cloned creator-driven skill collection of the month — ~16.5K stars.",
+      "categories": ["skill"],
+      "install": "git clone https://github.com/mattpocock/skills ~/.claude/skills/mattpocock",
+      "added_date": "2026-02-12"
+    },
+    {
+      "slug": "anthropic-cybersecurity-skills",
+      "name": "Anthropic Cybersecurity Skills",
+      "primary_url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "secondary_urls": [],
+      "hook": "754 cybersecurity skills mapped to MITRE ATT&CK and NIST CSF — riding the Claude Code Security wave to ~5K stars.",
+      "categories": ["skill"],
+      "install": "git clone https://github.com/mukul975/Anthropic-Cybersecurity-Skills ~/.claude/skills/cybersec",
+      "added_date": "2026-02-22"
+    },
+    {
+      "slug": "code-review-graph",
+      "name": "code-review-graph",
+      "primary_url": "https://github.com/tirth8205/code-review-graph",
+      "secondary_urls": [],
+      "hook": "Local knowledge-graph MCP server for Claude Code — claims 6.8× fewer tokens on review tasks via tree-sitter + graph indexing. ~11.7K stars.",
+      "categories": ["mcp"],
+      "install": "pip install code-review-graph && claude mcp add code-review-graph",
+      "added_date": "2026-02-14"
+    },
+    {
+      "slug": "engram-memory-mcp",
+      "name": "engram",
+      "primary_url": "https://github.com/Gentleman-Programming/engram",
+      "secondary_urls": [],
+      "hook": "Persistent agent memory MCP server in Go + SQLite — tools for store/recall/forget across sessions, riding Feb's memory-layer wave.",
+      "categories": ["mcp"],
+      "install": "go install github.com/Gentleman-Programming/engram@latest",
+      "added_date": "2026-02-18"
+    },
+    {
+      "slug": "context-mode",
+      "name": "context-mode",
+      "primary_url": "https://github.com/mksglu/context-mode",
+      "secondary_urls": [],
+      "hook": "Claude Code plugin that sandboxes tool output via PreToolUse/PostToolUse hooks — claims 98% context-window reduction across 12 platforms.",
+      "categories": ["plugin"],
+      "install": "/plugin install mksglu/context-mode",
+      "added_date": "2026-02-09"
+    },
+    {
+      "slug": "composio-agent-orchestrator",
+      "name": "Composio agent-orchestrator",
+      "primary_url": "https://github.com/ComposioHQ/agent-orchestrator",
+      "secondary_urls": [],
+      "hook": "Parallel coding-agent orchestrator from Composio — coordinates Claude Code subagents on CI fixes and merge-conflict resolution. ~6.4K stars.",
+      "categories": ["plugin"],
+      "install": "npx @composio/agent-orchestrator init",
+      "added_date": "2026-02-11"
+    }
+  ]
+}
