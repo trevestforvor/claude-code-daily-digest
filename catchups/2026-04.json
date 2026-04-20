@@ -1,0 +1,327 @@
+{
+  "month": "2026-04",
+  "title": "April 2026 Catchup — Top 25 (partial month, Apr 1–20)",
+  "generated_at": "2026-04-20",
+  "items": [
+    {
+      "rank_in_month": 1,
+      "slug": "caveman",
+      "name": "caveman",
+      "primary_url": "https://github.com/JuliusBrussee/caveman",
+      "secondary_urls": [
+        "https://decrypt.co/363440/devs-claude-talk-like-caveman-cut-costs-work-better",
+        "https://www.producthunt.com/products/caveman-claude-code-skill-plugin"
+      ],
+      "hook": "\"Why use many token when few token do trick.\" A Claude Code skill that forces caveman-speak output and cuts 65–75% of output tokens with no accuracy loss. Biggest breakout of April.",
+      "categories": ["viral"],
+      "install": "curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash",
+      "month": "2026-04",
+      "stars_approx": 39946,
+      "evidence": "Created 2026-04-04, ~39.9k stars by 2026-04-20. Covered by Yahoo, Decrypt, LinkedIn viral post, Product Hunt, skool.com, multiple Medium tutorials. #1 HN trending."
+    },
+    {
+      "rank_in_month": 2,
+      "slug": "career-ops",
+      "name": "career-ops",
+      "primary_url": "https://github.com/santifer/career-ops",
+      "secondary_urls": [
+        "https://santifer.io/career-ops-system",
+        "https://www.news.aakashg.com/p/job-search-os"
+      ],
+      "hook": "AI-powered job-search OS built on Claude Code — 14 skill modes, Playwright scraping of 45+ career portals, ATS-optimized CV generation, Go dashboard. Creator scored 700+ apps and landed Head of Applied AI.",
+      "categories": ["viral"],
+      "install": "git clone https://github.com/santifer/career-ops && cd career-ops && ./setup.sh",
+      "month": "2026-04",
+      "stars_approx": 36748,
+      "evidence": "Created 2026-04-04, ~36.7k stars in 16 days. Garry Tan amplified; Product Hunt launch; Aakash Gupta writeup; YouTube creator coverage."
+    },
+    {
+      "rank_in_month": 3,
+      "slug": "graphify",
+      "name": "graphify",
+      "primary_url": "https://github.com/safishamsi/graphify",
+      "secondary_urls": [
+        "https://graphify.net/graphify-claude-code-integration.html",
+        "https://www.roborhythms.com/how-to-build-llm-knowledge-base-claude-code-2026/"
+      ],
+      "hook": "One skill turns any folder of code/docs/papers/images/video into a queryable knowledge graph. Reported 71x fewer tokens per session. Works with 10+ coding agents.",
+      "categories": ["skill"],
+      "install": "pip install graphifyy && graphify install",
+      "month": "2026-04",
+      "stars_approx": 31104,
+      "evidence": "Created 2026-04-03, ~31.1k stars. Anchor of April's Karpathy-LLM-Wiki wave; 5+ Medium writeups, dedicated website, spawned direct copies (llmwiki, karpathy-llm-wiki, LLM-Wiki, swarmvault)."
+    },
+    {
+      "rank_in_month": 4,
+      "slug": "claude-opus-4-7",
+      "name": "Claude Opus 4.7",
+      "primary_url": "https://www.anthropic.com/news/claude-opus-4-7",
+      "secondary_urls": [
+        "https://venturebeat.com/technology/anthropic-releases-claude-opus-4-7-narrowly-retaking-lead-for-most-powerful-generally-available-llm",
+        "https://code.claude.com/docs/en/changelog"
+      ],
+      "hook": "New frontier Anthropic model shipped April 16. SWE-bench Verified 87.6%, GPQA Diamond 94.2%, pricing unchanged from 4.6. Default in Claude Code with Auto mode + new xhigh /effort tier for Max subscribers.",
+      "categories": ["anthropic"],
+      "install": "/model claude-opus-4-7  # inside Claude Code",
+      "month": "2026-04",
+      "stars_approx": null,
+      "evidence": "Released 2026-04-16 on Platform, Bedrock, Vertex, Microsoft Foundry. Covered by VentureBeat, 9to5Mac, Rolling Out. Triggered CC 2.1.90+ changelog wave (Auto mode, xhigh, /tui, push-notif tool)."
+    },
+    {
+      "rank_in_month": 5,
+      "slug": "claude-design",
+      "name": "Claude Design (Anthropic Labs)",
+      "primary_url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+      "secondary_urls": [
+        "https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/",
+        "https://venturebeat.com/technology/anthropic-just-launched-claude-design-an-ai-tool-that-turns-prompts-into-prototypes-and-challenges-figma"
+      ],
+      "hook": "Prompt-to-prototype design surface powered by Opus 4.7, under a new Anthropic Labs sub-brand. Packages output into a handoff bundle that drops into Claude Code with one instruction. Figma stock fell 7.3% same day.",
+      "categories": ["anthropic"],
+      "install": "Visit claude.ai/design (research preview — Pro/Max/Team/Enterprise)",
+      "month": "2026-04",
+      "stars_approx": null,
+      "evidence": "Launched 2026-04-17, day after Opus 4.7. Major design-tool press cycle (TechCrunch, VentureBeat, Fast Company, SiliconAngle). Mike Krieger resigned from Figma's board April 14."
+    },
+    {
+      "rank_in_month": 6,
+      "slug": "awesome-persona-distill-skills",
+      "name": "awesome-persona-distill-skills",
+      "primary_url": "https://github.com/xixu-me/awesome-persona-distill-skills",
+      "hook": "Curated catalog of persona-distillation Agent Skills — people, relationships, commemorative scenes, and methodological lenses, drop-in for Claude Code and OpenClaw. The April spine of the digital-immortality skill cluster.",
+      "categories": ["marketplace"],
+      "install": "git clone https://github.com/xixu-me/awesome-persona-distill-skills",
+      "month": "2026-04",
+      "stars_approx": 3939,
+      "evidence": "Created 2026-04-06, ~3.9k stars. Central hub for April's persona-distill wave (immortal-skill, yupi-skill, Master-skill, cyber-figures, forge-skill). 437 forks."
+    },
+    {
+      "rank_in_month": 7,
+      "slug": "openmythos",
+      "name": "OpenMythos",
+      "primary_url": "https://github.com/kyegomez/OpenMythos",
+      "hook": "Theoretical reconstruction of the rumored Claude Mythos architecture (looped transformers, novel attention), built from first principles using public research. Kye Gomez's April mega-drop.",
+      "categories": ["viral"],
+      "install": "pip install openmythos",
+      "month": "2026-04",
+      "stars_approx": 3118,
+      "evidence": "Created 2026-04-18, ~3.1k stars in 2 days. Kye Gomez's reach (Agoraverse/Swarms founder) plus ML research interest. 641 forks."
+    },
+    {
+      "rank_in_month": 8,
+      "slug": "codeburn",
+      "name": "codeburn",
+      "primary_url": "https://github.com/getagentseal/codeburn",
+      "hook": "Interactive TUI dashboard that shows where your AI coding tokens actually go across Claude Code, Codex, and Cursor. Cost-observability with model/project/session breakdowns.",
+      "categories": ["cost"],
+      "install": "npx codeburn",
+      "month": "2026-04",
+      "stars_approx": 2967,
+      "evidence": "Created 2026-04-13, ~2.97k stars in a week. Opus 4.7 launch raised cost pressure; codeburn caught the wave along with TokenTracker, claude-usage."
+    },
+    {
+      "rank_in_month": 9,
+      "slug": "claude-obsidian",
+      "name": "claude-obsidian",
+      "primary_url": "https://github.com/AgriciDaniel/claude-obsidian",
+      "hook": "Claude Code + Obsidian knowledge companion — persistent, compounding wiki vault using Karpathy's LLM Wiki pattern. Slash commands: /wiki, /save, /autoresearch.",
+      "categories": ["skill"],
+      "install": "git clone https://github.com/AgriciDaniel/claude-obsidian && ./install.sh",
+      "month": "2026-04",
+      "stars_approx": 2216,
+      "evidence": "Created 2026-04-07, ~2.2k stars. Top Karpathy-LLM-Wiki implementation of the month; paired with claude-code-memory-setup for end-to-end PKM stack."
+    },
+    {
+      "rank_in_month": 10,
+      "slug": "design-extract",
+      "name": "design-extract",
+      "primary_url": "https://github.com/Manavarya09/design-extract",
+      "hook": "One command extracts a website's full design system — DTCG tokens, semantic+primitive+composite, multi-platform emitters (SwiftUI, Compose, Flutter, WordPress). Ships as MCP server + Chrome extension.",
+      "categories": ["design"],
+      "install": "npx design-extract",
+      "month": "2026-04",
+      "stars_approx": 1120,
+      "evidence": "Created 2026-04-15, ~1.1k stars. Rode the Claude Design launch wave; cited in design-system skill aggregators (rohitg00, VoltAgent awesome-claude-design)."
+    },
+    {
+      "rank_in_month": 11,
+      "slug": "claude-usage",
+      "name": "claude-usage",
+      "primary_url": "https://github.com/phuryn/claude-usage",
+      "hook": "Local dashboard for Claude Code token usage, costs, and session history. Pro/Max subscribers get a progress bar that the official CLI hides; everyone gets the full picture.",
+      "categories": ["cost"],
+      "install": "pip install claude-usage",
+      "month": "2026-04",
+      "stars_approx": 1092,
+      "evidence": "Created 2026-04-07, ~1.09k stars. Hit Reddit r/ClaudeAI as the 'show me what /usage hides' tool; consistently shared alongside codeburn."
+    },
+    {
+      "rank_in_month": 12,
+      "slug": "claudecode-rust",
+      "name": "soongenwong/claudecode (Rust leak)",
+      "primary_url": "https://github.com/soongenwong/claudecode",
+      "hook": "Post-leak Rust rebuild of Claude Code — April 1 drop. Same functionality, free, runnable on a Max subscription without Anthropic's CLI.",
+      "categories": ["viral"],
+      "install": "cargo install claudecode && claudecode",
+      "month": "2026-04",
+      "stars_approx": 994,
+      "evidence": "Created 2026-04-01, ~994 stars. Part of the April-1 post-leak fork cluster with clawgod, CoreCoder, cheetahclaws, better-clawd."
+    },
+    {
+      "rank_in_month": 13,
+      "slug": "paper2code",
+      "name": "paper2code",
+      "primary_url": "https://github.com/PrathamLearnsToCode/paper2code",
+      "hook": "Skill that turns any arXiv paper into a working implementation — reads PDF, extracts method, scaffolds code, runs reproducibility checks. Sibling to PaperOrchestra.",
+      "categories": ["skill"],
+      "install": "git clone https://github.com/PrathamLearnsToCode/paper2code ~/.claude/skills/paper2code",
+      "month": "2026-04",
+      "stars_approx": 958,
+      "evidence": "Created 2026-04-03, ~958 stars. Extension of March autoresearch wave into paper-reproduction territory; frequently paired with asta-skill, paper-fetch."
+    },
+    {
+      "rank_in_month": 14,
+      "slug": "claude-code-prompts",
+      "name": "claude-code-prompts (repowise-dev)",
+      "primary_url": "https://github.com/repowise-dev/claude-code-prompts",
+      "hook": "Independently authored prompt templates for AI coding agents — system prompts, tool prompts, delegation, memory management, multi-agent coordination. Informed by CC but not a leak.",
+      "categories": ["marketplace"],
+      "install": "git clone https://github.com/repowise-dev/claude-code-prompts",
+      "month": "2026-04",
+      "stars_approx": 947,
+      "evidence": "Created 2026-04-01, ~947 stars. Becomes the 'clean' alternative to the March 31 source leak — many devs cite it in HN/Reddit threads to avoid the leak repos."
+    },
+    {
+      "rank_in_month": 15,
+      "slug": "clawgod",
+      "name": "clawgod",
+      "primary_url": "https://github.com/0Chencc/clawgod",
+      "hook": "Not a third-party CC client — a runtime patch applied on top of the official CLI. Survives CC updates automatically. The April-1 'mod' everyone on Reddit argued about.",
+      "categories": ["viral"],
+      "install": "bash <(curl -sSL https://raw.githubusercontent.com/0Chencc/clawgod/main/install.sh)",
+      "month": "2026-04",
+      "stars_approx": 806,
+      "evidence": "Created 2026-04-01, ~806 stars. Cross-platform (macOS/Linux/Windows); Reddit discussed it heavily as a usage-limit bypass."
+    },
+    {
+      "rank_in_month": 16,
+      "slug": "immortal-skill",
+      "name": "immortal-skill",
+      "primary_url": "https://github.com/agenmod/immortal-skill",
+      "hook": "Open-source digital-immortality framework — distills anyone's seven-dimensional digital twin from chat logs (WeChat, Feishu, iMessage, Telegram, 12+ platforms). Aligns with OpenClaw Soul Spec.",
+      "categories": ["skill"],
+      "install": "git clone https://github.com/agenmod/immortal-skill ~/.claude/skills/immortal",
+      "month": "2026-04",
+      "stars_approx": 604,
+      "evidence": "Created 2026-04-01, ~604 stars. Anchors the awesome-persona-distill-skills cluster; heavy PRC dev community + Xiaohongshu traction."
+    },
+    {
+      "rank_in_month": 17,
+      "slug": "auto-deep-researcher-24x7",
+      "name": "auto-deep-researcher-24x7",
+      "primary_url": "https://github.com/Xiangyue-Zhang/auto-deep-researcher-24x7",
+      "hook": "Autonomous AI agent that runs your deep-learning experiments 24/7 while you sleep. Leader-Worker architecture, constant-size memory, zero-cost monitoring. Logical successor to March's ARIS.",
+      "categories": ["skill"],
+      "install": "git clone https://github.com/Xiangyue-Zhang/auto-deep-researcher-24x7",
+      "month": "2026-04",
+      "stars_approx": 595,
+      "evidence": "Created 2026-04-08, ~595 stars. Continuation of March ARIS/autoresearch wave; frequently listed in ML-research skill roundups."
+    },
+    {
+      "rank_in_month": 18,
+      "slug": "antivibe",
+      "name": "antivibe",
+      "primary_url": "https://github.com/mohi-devhub/antivibe",
+      "hook": "Claude Code skill that turns AI-generated code into educational deep dives. Stop accepting the vibe-coded diff — learn why it works before merging.",
+      "categories": ["skill"],
+      "install": "bash <(curl -sSL https://raw.githubusercontent.com/mohi-devhub/antivibe/main/install.sh)",
+      "month": "2026-04",
+      "stars_approx": 592,
+      "evidence": "Created 2026-04-10, ~592 stars. Strong anti-vibe-coding discourse on X/Reddit in April; positioned as the educational counterweight to caveman/velocity skills."
+    },
+    {
+      "rank_in_month": 19,
+      "slug": "awesome-claude-design-voltagent",
+      "name": "awesome-claude-design (VoltAgent)",
+      "primary_url": "https://github.com/VoltAgent/awesome-claude-design",
+      "hook": "68 ready-to-use design-system inspirations in DESIGN.md format. Drop one in, scaffold a full UI in one shot. Biggest Claude Design companion repo of the launch week.",
+      "categories": ["design"],
+      "install": "git clone https://github.com/VoltAgent/awesome-claude-design",
+      "month": "2026-04",
+      "stars_approx": 576,
+      "evidence": "Created 2026-04-18, ~576 stars in 2 days. Rode the Claude Design launch; VoltAgent org brand recognition."
+    },
+    {
+      "rank_in_month": 20,
+      "slug": "llmwiki-lucasastorian",
+      "name": "llmwiki (lucasastorian)",
+      "primary_url": "https://github.com/lucasastorian/llmwiki",
+      "hook": "Open-source Karpathy LLM Wiki implementation. Upload documents, connect Claude via MCP, have the model write and maintain your wiki. Supabase-backed RAG.",
+      "categories": ["mcp"],
+      "install": "git clone https://github.com/lucasastorian/llmwiki && pnpm install && pnpm dev",
+      "month": "2026-04",
+      "stars_approx": 566,
+      "evidence": "Created 2026-04-04, ~566 stars. Canonical of April's LLM-Wiki wave; cited directly alongside graphify and karpathy-llm-wiki."
+    },
+    {
+      "rank_in_month": 21,
+      "slug": "mioisland",
+      "name": "MioIsland",
+      "primary_url": "https://github.com/MioMioOS/MioIsland",
+      "hook": "macOS Dynamic Island for AI coding agents — monitor, approve, and jump to Claude Code sessions from the notch. Native SwiftUI, menubar + notch.",
+      "categories": ["plugin"],
+      "install": "Download from GitHub Releases (MioIsland.dmg)",
+      "month": "2026-04",
+      "stars_approx": 353,
+      "evidence": "Created 2026-04-01, ~353 stars. Featured in developer-productivity YouTube roundups; one of April's signature Mac-native CC tools."
+    },
+    {
+      "rank_in_month": 22,
+      "slug": "thinkwatch",
+      "name": "ThinkWatch",
+      "primary_url": "https://github.com/ThinkWatchProject/ThinkWatch",
+      "hook": "Enterprise AI bastion host for secure API + MCP access. Unified proxying, RBAC, audit logs, rate limiting, cost tracking across OpenAI/Anthropic/Gemini/self-hosted. Rust.",
+      "categories": ["mcp"],
+      "install": "docker run -p 8080:8080 thinkwatch/thinkwatch",
+      "month": "2026-04",
+      "stars_approx": 364,
+      "evidence": "Created 2026-04-02, ~364 stars. Enterprise procurement angle — cited in April's MCP-security threads as the 'gateway' answer."
+    },
+    {
+      "rank_in_month": 23,
+      "slug": "evo-hq",
+      "name": "evo (evo-hq)",
+      "primary_url": "https://github.com/evo-hq/evo",
+      "hook": "Plugin for Claude Code and Codex that turns your codebase into an autoresearch loop — discovers what to measure, instruments a benchmark, runs tree search with parallel subagents.",
+      "categories": ["plugin"],
+      "install": "/plugin install evo-hq/evo",
+      "month": "2026-04",
+      "stars_approx": 486,
+      "evidence": "Created 2026-04-05, ~486 stars. Evolutionary-algorithm / autoresearch hybrid for code optimization; one of April's standout cross-vendor plugins."
+    },
+    {
+      "rank_in_month": 24,
+      "slug": "my-claude-devteam",
+      "name": "my-claude-devteam",
+      "primary_url": "https://github.com/NYCU-Chung/my-claude-devteam",
+      "hook": "Engineering team in a box for Claude Code — 12 specialized agents, 15 automation hooks, and the P7/P9/P10 methodology. Spiritual successor to March's gstack vibe.",
+      "categories": ["plugin"],
+      "install": "git clone https://github.com/NYCU-Chung/my-claude-devteam && ./setup.sh",
+      "month": "2026-04",
+      "stars_approx": 221,
+      "evidence": "Created 2026-04-11, ~221 stars. Featured in zh/tw dev community threads as the 'post-gstack' opinionated team template; sibling to the-dev-squad, claude-alloy."
+    },
+    {
+      "rank_in_month": 25,
+      "slug": "styleseed",
+      "name": "styleseed",
+      "primary_url": "https://github.com/bitjaru/styleseed",
+      "hook": "Claude Code + Cursor design system. 69 design rules + 48 shadcn components + Toss/Stripe/Linear/Vercel/Notion brand skins. Tailwind v4 + Radix. Stop generating ugly AI UI.",
+      "categories": ["design"],
+      "install": "npx styleseed init",
+      "month": "2026-04",
+      "stars_approx": 305,
+      "evidence": "Created 2026-04-07, ~305 stars. Rode Claude Design launch + the 'ugly AI UI' meme; consistently paired with hue and design-extract in April roundups."
+    }
+  ]
+}
