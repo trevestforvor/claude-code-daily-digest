@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YTD 2026 Catchup</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="index.html">← Back to hub</a></div>
+<h1>Claude Code YTD Catchup — 2026</h1><p class="sub">Top 87 hottest items from Jan 1 through today. Deduped across 4 months.</p><nav class="toc"><a href="#design">Design <span class="count">(8)</span></a><a href="#cost">Cost & Tokens <span class="count">(10)</span></a><a href="#viral">Viral <span class="count">(15)</span></a><a href="#general">Anthropic / General <span class="count">(54)</span></a></nav><section id="design"><h2>Design</h2>
+<article class="item">
+  <h3><a href="https://anthropic.com/news/claude-design">#1. Claude Design</a></h3>
+  <p class="hook">Anthropic launched Claude Design on April 17 — Opus 4.7-powered tool that generates prototypes, slides, and one-pagers from prompts while reading your codebase and design files to apply your design system. Research preview for Pro/Max/Team/Enterprise; Figma stock dropped 7.28% on launch day.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="trend">↑ April 2026</span> </div>
+  <pre><button class="copy">copy</button><code>Available at claude.ai (Pro/Max/Team/Enterprise)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/claude-code-security">#2. Claude Code Security</a></h3>
+  <p class="hook">Reasoning-based vulnerability scanner that found 500+ zero-days in production OSS, now in limited preview for Enterprise/Team and OSS maintainers.</p>
+  <div class="secondary">Also: <a href="https://thehackernews.com/2026/02/anthropic-launches-claude-code-security.html">thehackernews.com/2026/02/anthropic-launches-claude-code-security.html</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>Available via claude.ai/code (Enterprise/Team waitlist)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/vecartier/cc-beeper">#3. CC-Beeper</a></h3>
+  <p class="hook">Floating macOS pager for Claude Code: see what agents are doing, respond by voice, and never miss a permission prompt. 100% Swift, zero dependencies, fully local, no telemetry — hit #6 on Product Hunt daily on April 15 with 220 upvotes.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="trend">↑ April 2026</span> </div>
+  <pre><button class="copy">copy</button><code>brew install --cask cc-beeper</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Lum1104/Understand-Anything">#4. Understand-Anything</a></h3>
+  <p class="hook">Trending since March 2026. Skill that turns any codebase or knowledge base into an interactive knowledge graph from inside Claude Code. ~8.6k stars by mid-April.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/Lum1104/Understand-Anything</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/RousselPaul/masko-code">#5. Masko Code</a></h3>
+  <p class="hook">Desktop mascot companion that watches your Claude Code agents and shows speech bubbles for permission requests — ships with Clippy and community mascots, or generate custom ones at masko.ai. Free, MIT-licensed, 100% local.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="trend">↑ April 2026</span> </div>
+  <pre><button class="copy">copy</button><code>Download DMG from masko.ai</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.theregister.com/2026/02/20/anthropic_clarifies_ban_third_party_claude_access/">#6. Anthropic OAuth third-party ban</a></h3>
+  <p class="hook">Anthropic clarifies that Free/Pro/Max OAuth tokens cannot be used in third-party tools (incl. its own Agent SDK) — ending the OpenClaw-era subscription resale loophole.</p>
+  <div class="secondary">Also: <a href="https://code.claude.com/docs/en/legal-and-compliance">code.claude.com/docs/en/legal-and-compliance</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>n/a</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://simonwillison.net/2026/Feb/22/ccc/">#7. The Claude C Compiler</a></h3>
+  <p class="hook">Nicholas Carlini&#39;s parallel-Claude experiment: Opus 4.6 + agent teams produced a dependency-free Rust C compiler that boots Linux on x86/ARM/RISC-V.</p>
+  <div class="secondary">Also: <a href="https://github.com/anthropics/claudes-c-compiler">github.com/anthropics/claudes-c-compiler</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/anthropics/claudes-c-compiler</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Adityaraj0421/naksha-studio">#8. naksha-studio</a></h3>
+  <p class="hook">Virtual design team plugin — 26 roles, 60 commands, 13.8k lines of curated design knowledge for Claude Code.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>/plugin install Adityaraj0421/naksha-studio</code></pre>
+  
+</article></section>
+<section id="cost"><h2>Cost & Tokens</h2>
+<article class="item">
+  <h3><a href="https://github.com/rtk-ai/rtk">#1. rtk</a></h3>
+  <p class="hook">Rust CLI proxy that strips noise from dev-command output before it hits the model — claims 60-90% token reduction. ~30k stars from Jan 22.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~30,424 stars</span></div>
+  <pre><button class="copy">copy</button><code>brew install rtk</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/JuliusBrussee/caveman">#2. caveman</a></h3>
+  <p class="hook">&quot;Why use many token when few token do trick&quot; — the viral meme-skill (39.7k stars) that cuts ~65–75% output tokens and ~46% input tokens while preserving technical accuracy. Arjan Brussee&#39;s LinkedIn post spawned 30+ comments; launched on Product Hunt this week.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ April 2026</span> </div>
+  <pre><button class="copy">copy</button><code>claude plugin marketplace add JuliusBrussee/caveman &amp;&amp; claude plugin install caveman@caveman</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/tirth8205/code-review-graph">#3. code-review-graph</a></h3>
+  <p class="hook">Trending since February 2026. MCP server (11.7k stars, v2.3.2 Apr 14) that builds an AST knowledge graph with tree-sitter + SQLite, delivering 6.8× fewer tokens on code reviews and up to 49× on daily tasks. Plugs straight into Claude Code&#39;s MCP config with a single pip install.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="trend">↑ April 2026</span> </div>
+  <pre><button class="copy">copy</button><code>pip install code-review-graph &amp;&amp; code-review-graph install &amp;&amp; code-review-graph build</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/thedotmack/claude-mem">#4. claude-mem</a></h3>
+  <p class="hook">Plugin (46k+ stars, gained 3k in a single day) that auto-captures sessions, compresses them with the Claude Agent SDK, and injects relevant context at the start of the next session. Uses SQLite + Chroma vector search; cross-platform.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="trend">↑ April 2026</span> </div>
+  <pre><button class="copy">copy</button><code>npx claude-mem install</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://simonwillison.net/2026/Feb/7/claude-fast-mode/">#5. Fast mode for Claude Opus 4.6</a></h3>
+  <p class="hook">Same Opus 4.6 weights, ~2.5× faster output tokens/sec, priced 6× standard — toggle with /fast in Claude Code v2.1.36+.</p>
+  <div class="secondary">Also: <a href="https://github.blog/changelog/2026-02-07-claude-opus-4-6-fast-is-now-in-public-preview-for-github-copilot/">github.blog/changelog/2026-02-07-claude-opus-4-6-fast-is-now-in-public-preview-for-github-copilot/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>Inside Claude Code: /fast (then Tab to toggle)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://simonwillison.net/2026/Feb/27/claude-max-oss-six-months/">#6. Claude for Open Source program</a></h3>
+  <p class="hook">Six months of free Claude Max 20x ($1,200 value) for up to 10,000 OSS maintainers of repos with 5K+ stars or 1M+ monthly NPM downloads.</p>
+  <div class="secondary">Also: <a href="https://claude.com/contact-sales/claude-for-oss">claude.com/contact-sales/claude-for-oss</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>Apply at claude.com/contact-sales/claude-for-oss</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/matt1398/claude-devtools">#7. claude-devtools</a></h3>
+  <p class="hook">Visual UI for Claude Code session logs — turn-based context, compaction visualization, subagent execution trees, token-usage observability.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/matt1398/claude-devtools</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/drona23/claude-token-efficient">#8. claude-token-efficient</a></h3>
+  <p class="hook">A single drop-in CLAUDE.md that slashes verbosity on heavy workflows. 4.5k stars in three weeks rode the late-March pricing-pain wave.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>cp CLAUDE.md ~/your-project/</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/motiful/cc-gateway">#9. cc-gateway</a></h3>
+  <p class="hook">Privacy-preserving reverse-proxy gateway for Claude Code — fingerprint normalization, request rewriting, prompt-leak audit. 2.7k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>docker run motiful/cc-gateway</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/decolua/9router">#10. 9router</a></h3>
+  <p class="hook">Free router connecting Claude Code, Cursor and Cline to 40+ providers and 100+ models, auto-switching tiers when quotas die. ~2.7k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~2,729 stars</span></div>
+  <pre><button class="copy">copy</button><code>npm install -g 9router</code></pre>
+  
+</article></section>
+<section id="viral"><h2>Viral</h2>
+<article class="item">
+  <h3><a href="https://github.com/garrytan/gstack">#1. gstack</a></h3>
+  <p class="hook">Garry Tan&#39;s exact Claude Code setup — 23 opinionated tools wired up as CEO/Designer/EM/QA personas. Hit ~78k stars from a March 11 creation, the breakout viral template of the month.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/garrytan/gstack</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/affaan-m/everything-claude-code">#2. everything-claude-code</a></h3>
+  <p class="hook">Trending since January 2026. Full agent harness with 48 agents, 183 skills, hooks, rules and MCP configs. Hit ~162k stars three months after a Jan 18 creation.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~161,633 stars</span></div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add https://github.com/affaan-m/everything-claude-code</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/claude-code-best/claude-code">#3. claude-code-best/claude-code</a></h3>
+  <p class="hook">Runnable, TS-typed, bun-installable build of Claude Code that emerged hours after the March 31 source leak. ~16.4k stars in &lt;3 weeks.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>bun install &amp;&amp; bun run dev</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/JCodesMore/ai-website-cloner-template">#4. ai-website-cloner-template</a></h3>
+  <p class="hook">Clone any website with a single Claude Code command — template hit 12k stars in &lt;3 weeks on the back of a viral demo thread.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>npx ai-website-cloner</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/qwibitai/nanoclaw">#5. nanoclaw</a></h3>
+  <p class="hook">Container-native alternative to OpenClaw — messaging integrations, memory, scheduled jobs, runs on Anthropic&#39;s Agents SDK. Exploded to ~28k stars from Jan 31.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~27,560 stars</span></div>
+  <pre><button class="copy">copy</button><code>gh repo fork qwibitai/nanoclaw --clone &amp;&amp; cd nanoclaw &amp;&amp; claude</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/paoloanzn/free-code">#6. paoloanzn/free-code</a></h3>
+  <p class="hook">Post-leak &#39;free build of Claude Code&#39; with telemetry and guardrails stripped — controversial but pulled ~8k stars within days.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>bun install</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/NanmiCoder/cc-haha">#7. NanmiCoder/cc-haha</a></h3>
+  <p class="hook">Cross-platform desktop Claude Code fork that bolts on Computer Use. Spawned in the post-leak rush, 7.2k stars in &lt;3 weeks.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/NanmiCoder/cc-haha</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/ChinaSiro/claude-code-sourcemap">#8. claude-code-sourcemap</a></h3>
+  <p class="hook">Annotated sourcemap of the leaked Claude Code internals — 8.95k stars, 14.5k forks in &lt;3 weeks. Anchor of the post-leak research cluster.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>browse repo</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/gsd-build/get-shit-done">#9. get-shit-done</a></h3>
+  <p class="hook">Spec-driven meta-prompting system for Claude Code (55.2k stars, updated April 19) with five slash commands: /gsd-new-project, /gsd-plan-phase, /gsd-execute-phase, /gsd-spike, and /gsd-sketch. Enforces a structured plan-then-build loop that prevents runaway agent sessions.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ April 2026</span> </div>
+  <pre><button class="copy">copy</button><code>npx get-shit-done-cc@latest</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/manaflow-ai/cmux">#10. cmux</a></h3>
+  <p class="hook">Ghostty-based macOS terminal with vertical tabs and notifications purpose-built for AI coding agents. ~15k stars since Jan 28.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~14,847 stars</span></div>
+  <pre><button class="copy">copy</button><code>brew tap manaflow-ai/cmux &amp;&amp; brew install --cask cmux</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/smtg-ai/claude-squad">#11. claude-squad</a></h3>
+  <p class="hook">Terminal app (7.1k stars) for managing multiple Claude Code, Codex, and Gemini agents in parallel — each in its own isolated git workspace with a tmux pane. Supports any agent that speaks the Claude Code protocol.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="trend">↑ April 2026</span> </div>
+  <pre><button class="copy">copy</button><code>curl -fsSL https://raw.githubusercontent.com/smtg-ai/claude-squad/main/install.sh | bash</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://simonwillison.net/2026/Feb/25/claude-code-remote-control/">#12. Claude Code Remote Control</a></h3>
+  <p class="hook">Run a local Claude Code session, then drive it from claude.ai/code, iOS, or Android — execution stays on your machine, prompts flow from anywhere.</p>
+  <div class="secondary">Also: <a href="https://venturebeat.com/orchestration/anthropic-just-released-a-mobile-version-of-claude-code-called-remote">venturebeat.com/orchestration/anthropic-just-released-a-mobile-version-of-claude-code-called-remote</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>claude --remote (Max-tier preview)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://newsletter.pragmaticengineer.com/p/ai-tooling-2026">#13. Pragmatic Engineer Survey: Claude Code most-loved</a></h3>
+  <p class="hook">Survey of ~1,000 devs (Jan 27–Feb 17) crowns Claude Code the #1 most-loved tool at 46%, vs Cursor 19% and Copilot 9%; 95% of devs use AI weekly.</p>
+  <div class="secondary">Also: <a href="https://aiproductivity.ai/news/pragmatic-engineer-survey-ai-tooling-2026/">aiproductivity.ai/news/pragmatic-engineer-survey-ai-tooling-2026/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>n/a</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/lintsinghua/claude-code-book">#14. claude-code-book</a></h3>
+  <p class="hook">420k-word Chinese book reverse-engineering Claude Code as an Agent Harness — landed at the post-leak peak with 2.8k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>browse repo</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/michaelshimeles/ralphy">#15. ralphy</a></h3>
+  <p class="hook">Autonomous bash loop that runs Claude Code, Codex, OpenCode, Cursor, Qwen and Droid against a PRD until it&#39;s done. ~2.8k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~2,778 stars</span></div>
+  <pre><button class="copy">copy</button><code>npm install -g ralphy-cli</code></pre>
+  
+</article></section>
+<section id="general"><h2>Anthropic / General</h2>
+<article class="item">
+  <h3><a href="https://simonwillison.net/2026/Jan/12/claude-cowork/">#1. Claude Cowork</a></h3>
+  <p class="hook">Anthropic&#39;s Jan 12 research preview — Claude Code for knowledge workers. Direct permission-based access to local files from the macOS app.</p>
+  <div class="secondary">Also: <a href="https://www.anthropic.com/webinars/future-of-ai-at-work-introducing-cowork">www.anthropic.com/webinars/future-of-ai-at-work-introducing-cowork</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="trend">↑ January 2026</span> </div>
+  <pre><button class="copy">copy</button><code># macOS desktop app — enable from claude.ai settings</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/claude-opus-4-6">#2. Claude Opus 4.6</a></h3>
+  <p class="hook">First Opus-class model with a 1M-token context window plus &#39;agent teams&#39; that let multiple Claude Code agents work in parallel — released Feb 5.</p>
+  <div class="secondary">Also: <a href="https://techcrunch.com/2026/02/05/anthropic-releases-opus-4-6-with-new-agent-teams/">techcrunch.com/2026/02/05/anthropic-releases-opus-4-6-with-new-agent-teams/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>claude --model claude-opus-4-6</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/claude-sonnet-4-6">#3. Claude Sonnet 4.6</a></h3>
+  <p class="hook">New default Sonnet at $3/$15 per MTok hits 79.6% on SWE-bench Verified with 1M-token context — released Feb 17.</p>
+  <div class="secondary">Also: <a href="https://www.cnbc.com/2026/02/17/anthropic-ai-claude-sonnet-4-6-default-free-pro.html">www.cnbc.com/2026/02/17/anthropic-ai-claude-sonnet-4-6-default-free-pro.html</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>claude --model claude-sonnet-4-6</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://anthropic.com/news/claude-opus-4-7">#4. Claude Opus 4.7</a></h3>
+  <p class="hook">Released April 16: 87.6% SWE-bench in new xhigh effort mode, 98.5% visual acuity, 3.75MP images (3× higher than Opus 4.6), and /ultrareview for parallel multi-agent cloud code review. Price unchanged at $5/M input, $25/M output; Auto mode now available to Max subscribers.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="trend">↑ April 2026</span> </div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/VoltAgent/awesome-openclaw-skills">#5. awesome-openclaw-skills</a></h3>
+  <p class="hook">VoltAgent&#39;s curated registry — 5,400+ OpenClaw skills filtered from 13,729 candidates. Jan 25 launch pulled ~47k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~46,684 stars</span></div>
+  <pre><button class="copy">copy</button><code>clawhub install &lt;skill-slug&gt;</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/apple-xcode-claude-agent-sdk">#6. Apple Xcode 26.3 + Claude Agent SDK</a></h3>
+  <p class="hook">Xcode ships native Claude Agent SDK integration — subagents, background tasks, plugins, and Preview-based visual verification for iOS/macOS/visionOS.</p>
+  <div class="secondary">Also: <a href="https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/">www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>Update Xcode to 26.3 → Settings → Accounts → Claude</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/openai/codex-plugin-cc">#7. OpenAI codex-plugin-cc</a></h3>
+  <p class="hook">OpenAI ships an official Claude Code plugin — call Codex from inside CC for review or delegation. Cross-vendor moment of the month, 15.2k stars in ~3 weeks.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>/plugin install openai/codex-plugin-cc</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">#8. Claude Code v2.1.111–2.1.114</a></h3>
+  <p class="hook">Four releases in four days (Apr 15–18): CLI now spawns a native binary instead of bundled JS, sandbox network domain blocking, OSC 8 clickable URLs in terminal, /tui fullscreen mode, push notifications, /less-permission-prompts skill, and plan files auto-named after the prompt.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="trend">↑ April 2026</span> </div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/sickn33/antigravity-awesome-skills">#9. antigravity-awesome-skills</a></h3>
+  <p class="hook">Installable library of 1,400+ agentic skills covering Claude Code, Cursor, Codex CLI, Gemini CLI and Antigravity. ~34k stars from Jan 14.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~34,073 stars</span></div>
+  <pre><button class="copy">copy</button><code>npx antigravity-awesome-skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://venturebeat.com/technology/anthropics-claude-cowork-finally-lands-on-windows-and-it-wants-to-automate">#10. Claude Cowork on Windows</a></h3>
+  <p class="hook">Cowork desktop reaches Windows with full feature parity — file access, MCP connectors, plugins — opening Anthropic&#39;s autonomous agent to ~70% of desktops.</p>
+  <div class="secondary">Also: <a href="https://claude.com/product/claude-cowork">claude.com/product/claude-cowork</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>Download Claude Desktop for Windows → switch to Cowork mode</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Yeachan-Heo/oh-my-claudecode">#11. oh-my-claudecode</a></h3>
+  <p class="hook">Teams-first multi-agent orchestration layer for Claude Code. ~30k stars since its Jan 9 release.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~30,168 stars</span></div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add https://github.com/Yeachan-Heo/oh-my-claudecode</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/acquires-vercept">#12. Anthropic acquires Vercept</a></h3>
+  <p class="hook">Seattle computer-use startup behind Vy joins Anthropic to advance Claude&#39;s desktop automation; Vercept product sunset March 25.</p>
+  <div class="secondary">Also: <a href="https://techcrunch.com/2026/02/25/anthropic-acquires-vercept-ai-startup-agents-computer-use-founders-investors/">techcrunch.com/2026/02/25/anthropic-acquires-vercept-ai-startup-agents-computer-use-founders-investors/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>n/a</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/slavingia/skills">#13. slavingia/skills</a></h3>
+  <p class="hook">Sahil Lavingia&#39;s &#39;Minimalist Entrepreneur&#39; skill pack — opinionated solo-founder workflows. 8k+ stars, broadly forked as a personal-skills starter.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/slavingia/skills ~/.claude/skills/slavingia</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://gigazine.net/gsc_news/en/20260220-claude-in-powerpoint/">#14. Claude in PowerPoint expands to Pro</a></h3>
+  <p class="hook">Template-aware slide co-author lands on the $20/mo Pro tier — read existing decks, edit with brand-respecting precision, generate full structures from a prompt.</p>
+  <div class="secondary">Also: <a href="https://claude.com/claude-for-powerpoint">claude.com/claude-for-powerpoint</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>PowerPoint → Get Add-ins → search &#39;Claude&#39;</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mvanhorn/last30days-skill">#15. last30days-skill</a></h3>
+  <p class="hook">Research skill that pulls 30-day signal from Reddit, X, YouTube, HN, Polymarket and the web into a grounded summary. ~23k stars from Jan 23.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~22,885 stars</span></div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add mvanhorn/last30days-skill</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/anthropic-infosys">#16. Anthropic + Infosys partnership</a></h3>
+  <p class="hook">Joint Center of Excellence to build Claude-powered agents for telecom, financial services, manufacturing, and software dev in regulated industries.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>n/a</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/jarrodwatts/claude-hud">#17. claude-hud</a></h3>
+  <p class="hook">Statusline plugin showing context usage, active tools, running agents and todo progress. ~20k stars since Jan 2.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~20,062 stars</span></div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add jarrodwatts/claude-hud</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://techcrunch.com/2026/02/24/anthropic-launches-new-push-for-enterprise-agents-with-plugins-for-finance-engineering-and-design/">#18. Cowork enterprise plugin marketplaces</a></h3>
+  <p class="hook">10 department plugin packs + 12 new MCP connectors (Google Workspace, DocuSign, FactSet, Harvey…) and a &#39;Customize&#39; admin UI for private internal marketplaces.</p>
+  <div class="secondary">Also: <a href="https://claude.com/plugins">claude.com/plugins</a></div>
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>Cowork → /plugin → Discover → Customize (Team/Enterprise)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep">#19. ARIS — Auto-claude-code-research-in-sleep</a></h3>
+  <p class="hook">Markdown-only autonomous ML research skill — overnight idea/experiment/eval loops. Kicked off the March &#39;autoresearch&#39; wave, 7k+ stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>git clone into ~/.claude/skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/OthmanAdi/planning-with-files">#20. planning-with-files</a></h3>
+  <p class="hook">Skill that implements Manus-style persistent markdown planning — the workflow pattern behind the $2B acquisition. ~19k stars from Jan 3.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~19,125 stars</span></div>
+  <pre><button class="copy">copy</button><code>npx skills add OthmanAdi/planning-with-files --skill planning-with-files -g</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/financial-services-plugins">#21. anthropics/financial-services-plugins</a></h3>
+  <p class="hook">Anthropic&#39;s first official vertical plugin pack — ~7.7K stars, MCP-backed integrations for finserv workflows like equity research and compliance review.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add anthropics/financial-services-plugins</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/jnMetaCode/agency-agents-zh">#22. agency-agents-zh</a></h3>
+  <p class="hook">211 plug-and-play AI expert personas across 18 departments — the Chinese-localized agency pack everyone forked in March.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/jnMetaCode/agency-agents-zh</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/JimLiu/baoyu-skills">#23. baoyu-skills</a></h3>
+  <p class="hook">Jim Liu&#39;s content + image-gen skill bundle — infographics, slides, social publishing, nine image providers. ~15k stars from Jan 13.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~15,520 stars</span></div>
+  <pre><button class="copy">copy</button><code>npx skills add jimliu/baoyu-skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/eze-is/web-access">#24. web-access</a></h3>
+  <p class="hook">Three-tier web/CDP/parallel skill that gives Claude Code robust internet access without third-party MCPs. 5.3k+ stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>git clone into ~/.claude/skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/aden-hive/hive">#25. hive</a></h3>
+  <p class="hook">Zero-setup harness that auto-generates multi-agent topologies for long-running workflows. ~10k stars since Jan 12.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~10,102 stars</span></div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/aden-hive/hive.git &amp;&amp; cd hive &amp;&amp; ./quickstart.sh</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/jeremylongshore/claude-code-plugins-plus-skills">#26. claude-code-plugins-plus-skills</a></h3>
+  <p class="hook">Open-source marketplace index with 423 plugins, 2,849 skills, and 177 agents (2k+ stars). The ccpi CLI lets you search and install anything from the index with a single command.</p>
+  <div class="secondary">Also: <a href="https://tonsofskills.com">tonsofskills.com</a></div>
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span> <span class="trend">↑ April 2026</span> </div>
+  <pre><button class="copy">copy</button><code>pnpm add -g @intentsolutionsio/ccpi &amp;&amp; ccpi install [plugin-name]</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/trailofbits/skills">#27. trailofbits/skills</a></h3>
+  <p class="hook">Trail of Bits ships 40+ security skills — smart-contract scanners, YARA authoring, Android APK checks, differential code audits. ~4.7k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~4,688 stars</span></div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add trailofbits/skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/zarazhangrui/codebase-to-course">#28. codebase-to-course</a></h3>
+  <p class="hook">Skill that converts any codebase into a self-paced interactive HTML course — ~3.9k stars from a single tweet.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>git clone into ~/.claude/skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/ComposioHQ/awesome-claude-plugins">#29. awesome-claude-plugins (ComposioHQ)</a></h3>
+  <p class="hook">Curated list of 40+ Claude Code plugins (1.4k stars) led by connect-apps — a flagship plugin with 500+ integration connectors — plus frontend-design, CCHub, and other high-signal picks.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="trend">↑ April 2026</span> </div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/antfu/skills">#30. antfu/skills</a></h3>
+  <p class="hook">Anthony Fu&#39;s curated skills — Vue, Nuxt, Vite, Vitest, Pinia, UnoCSS, pnpm — hand-tuned plus generated from upstream docs. ~4.6k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~4,645 stars</span></div>
+  <pre><button class="copy">copy</button><code>pnpx skills add antfu/skills --skill=&#39;*&#39;</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/uditgoenka/autoresearch">#31. autoresearch</a></h3>
+  <p class="hook">Karpathy-style autonomous goal-directed iteration skill — second hit in the March autoresearch surge with ~3.9k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>git clone into ~/.claude/skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/levnikolaevich/claude-code-skills">#32. levnikolaevich/claude-code-skills</a></h3>
+  <p class="hook">Full dev lifecycle plugin suite (413 stars): 7 core plugins covering planning through deployment, plus three MCP servers (hex-line, hex-graph, hex-ssh) for graph visualization and remote SSH sessions inside Claude Code.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="trend">↑ April 2026</span> </div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add levnikolaevich/claude-code-skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/ComposioHQ/open-claude-cowork">#33. open-claude-cowork</a></h3>
+  <p class="hook">Composio&#39;s open-source take on Claude Cowork with 500+ SaaS integrations. Shipped Jan 13, day after Anthropic&#39;s preview.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~3,882 stars</span></div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/ComposioHQ/open-claude-cowork.git &amp;&amp; cd open-claude-cowork &amp;&amp; ./setup.sh</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/tw93/Waza">#34. Waza</a></h3>
+  <p class="hook">Engineering habits packaged as runnable Claude skills — code review, debugging, refactor playbooks. 3.6k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>git clone into ~/.claude/skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/FlorianBruniaux/claude-code-ultimate-guide">#35. claude-code-ultimate-guide</a></h3>
+  <p class="hook">24k lines of docs, 228 templates, 271 quiz questions and a built-in MCP server you can point Claude Code at. ~3.7k stars from Jan 9.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~3,729 stars</span></div>
+  <pre><button class="copy">copy</button><code>npx -y claude-code-ultimate-guide-mcp</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Galaxy-Dawn/claude-scholar">#36. claude-scholar</a></h3>
+  <p class="hook">Research assistant covering ideation → literature → experiments → writing, with Zotero and Obsidian integrations. ~3.4k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~3,448 stars</span></div>
+  <pre><button class="copy">copy</button><code>bash &lt;(curl -fsSL https://raw.githubusercontent.com/Galaxy-Dawn/claude-scholar/main/scripts/setup.sh)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/obra/superpowers">#37. Superpowers (obra)</a></h3>
+  <p class="hook">20+ composable skills enforcing clarify→design→plan→code→verify discipline — exploded to 55K+ stars in Feb after Anthropic accepted it into the official marketplace.</p>
+  <div class="secondary">Also: <a href="https://blog.fsck.com/2025/10/09/superpowers/">blog.fsck.com/2025/10/09/superpowers/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add obra/superpowers-marketplace</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/revfactory/harness">#38. harness</a></h3>
+  <p class="hook">Meta-plugin that designs domain-specific agent teams and generates their skills on the fly. 2.7k stars in two weeks.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>/plugin install revfactory/harness</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/addyosmani/agent-skills">#39. addyosmani/agent-skills</a></h3>
+  <p class="hook">Addy Osmani (Google) drops production-grade engineering skills compatible with Claude Code, Cursor, and Antigravity — ~18K stars in weeks.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/addyosmani/agent-skills ~/.claude/skills/addyosmani</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/nyldn/claude-octopus">#40. claude-octopus</a></h3>
+  <p class="hook">Puts up to 8 models on every coding task so blind spots surface before you ship. Plugin form, ~2.8k stars from Jan 15.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~2,758 stars</span></div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add https://github.com/nyldn/claude-octopus.git</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mattpocock/skills">#41. mattpocock/skills</a></h3>
+  <p class="hook">Matt Pocock&#39;s personal `.claude/skills` directory becomes the most-cloned creator-driven skill collection of the month — ~16.5K stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/mattpocock/skills ~/.claude/skills/mattpocock</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/CoderLuii/HolyClaude">#42. HolyClaude</a></h3>
+  <p class="hook">Dockerized AI coding workstation: Claude Code + 7 sibling CLIs + headless browser + 50+ tools, ready to spin up. 2k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>docker compose up</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills">#43. Anthropic Cybersecurity Skills</a></h3>
+  <p class="hook">754 cybersecurity skills mapped to MITRE ATT&amp;CK and NIST CSF — riding the Claude Code Security wave to ~5K stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/mukul975/Anthropic-Cybersecurity-Skills ~/.claude/skills/cybersec</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/jxnxts/mcp-brasil">#44. mcp-brasil</a></h3>
+  <p class="hook">MCP server bundling 41 Brazilian public-data and government APIs (CNPJ, CEP, Receita, BCB) into one install. 1.4k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>pip install mcp-brasil</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Q00/ouroboros">#45. ouroboros</a></h3>
+  <p class="hook">Spec-driven harness — interview, seed, execute, evaluate, evolve — with nine specialized agents and 3-stage evaluation gates. ~2.4k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~2,448 stars</span></div>
+  <pre><button class="copy">copy</button><code>curl -fsSL https://raw.githubusercontent.com/Q00/ouroboros/main/scripts/install.sh | bash</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/claude-plugins-community">#46. Claude Plugins Community</a></h3>
+  <p class="hook">Read-only mirror of Anthropic&#39;s official curated community plugin marketplace. Submission pipeline at clau.de/plugin-directory-submission.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add anthropics/claude-plugins-community</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/njbrake/agent-of-empires">#47. agent-of-empires</a></h3>
+  <p class="hook">Rust TUI + web dashboard for managing many Claude Code / OpenCode / Codex sessions via tmux and git worktrees. ~1.6k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~1,638 stars</span></div>
+  <pre><button class="copy">copy</button><code>brew install aoe</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Gentleman-Programming/engram">#48. engram</a></h3>
+  <p class="hook">Persistent agent memory MCP server in Go + SQLite — tools for store/recall/forget across sessions, riding Feb&#39;s memory-layer wave.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>go install github.com/Gentleman-Programming/engram@latest</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/rohitg00/awesome-claude-code-toolkit">#49. awesome-claude-code-toolkit</a></h3>
+  <p class="hook">Most comprehensive toolkit of the month — 135 agents, 35 skills, 176+ plugins, 14 MCP configs. Heavy March commit cadence.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>browse repo</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/dadbodgeoff/drift">#50. drift</a></h3>
+  <p class="hook">MCP server that learns codebase patterns and remembers decisions across sessions. Offline CLI, works in any IDE. ~780 stars from Jan 19.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~777 stars</span></div>
+  <pre><button class="copy">copy</button><code># MCP — see repo README for server config</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mksglu/context-mode">#51. context-mode</a></h3>
+  <p class="hook">Claude Code plugin that sandboxes tool output via PreToolUse/PostToolUse hooks — claims 98% context-window reduction across 12 platforms.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>/plugin install mksglu/context-mode</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/yvgude/lean-ctx">#52. lean-ctx</a></h3>
+  <p class="hook">Rust binary positioning itself as a 99%-cost-cut MCP + shell-hook layer for 24+ coding agents. 695 stars in three weeks.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="trend">↑ March 2026</span> </div>
+  <pre><button class="copy">copy</button><code>cargo install lean-ctx</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/FuzzingLabs/mcp-security-hub">#53. mcp-security-hub</a></h3>
+  <p class="hook">FuzzingLabs&#39; collection of MCP servers wiring offensive tools — Nmap, Ghidra, Nuclei, SQLMap, Hashcat — into AI assistants. ~525 stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="trend">↑ January 2026</span> <span class="stars">📈 ~525 stars</span></div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/FuzzingLabs/mcp-security-hub</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/ComposioHQ/agent-orchestrator">#54. Composio agent-orchestrator</a></h3>
+  <p class="hook">Parallel coding-agent orchestrator from Composio — coordinates Claude Code subagents on CI fixes and merge-conflict resolution. ~6.4K stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="trend">↑ February 2026</span> </div>
+  <pre><button class="copy">copy</button><code>npx @composio/agent-orchestrator init</code></pre>
+  
+</article></section><footer class="foot">Source months: <a href="catchups/2026-01.html">January 2026</a> · <a href="catchups/2026-02.html">February 2026</a> · <a href="catchups/2026-03.html">March 2026</a> · <a href="catchups/2026-04.html">April 2026</a> · Dedup count: 3 · Generated 2026-04-20T14:54:46.136Z</footer>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
