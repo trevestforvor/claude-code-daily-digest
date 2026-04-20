@@ -9,22 +9,26 @@
   * { box-sizing: border-box; }
   body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
   .wrap { max-width: 760px; margin: 0 auto; padding: 48px 24px; }
-  a { color: #7aa2f7; }
-  a:hover { color: #a3bffa; }
+  a { color: #7aa2f7; text-decoration: none; }
+  a:hover { color: #a3bffa; text-decoration: underline; }
   .crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
   h1 { font-size: 28px; margin: 0 0 8px; }
   p.sub { color: #9aa3b2; margin: 0 0 32px; }
-  .empty { border: 1px dashed #2a3039; border-radius: 12px; padding: 32px; color: #9aa3b2; text-align: center; }
-  .empty code { background: #1a1e25; padding: 2px 6px; border-radius: 4px; color: #e6e9ef; font-size: 13px; }
-  details { margin-bottom: 24px; border: 1px solid #1e232b; border-radius: 12px; padding: 16px 20px; background: #0f1217; }
-  summary { cursor: pointer; font-weight: 600; font-size: 18px; padding: 4px 0; user-select: none; }
-  summary::-webkit-details-marker { color: #7aa2f7; }
+  details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+  summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+  details[open] summary::after { transform: rotate(90deg); }
+  .count { color: #6a7280; font-weight: 400; font-size: 13px; margin-left: 8px; }
+  .month-body { padding: 0 20px 12px; }
   .item { border-top: 1px solid #1e232b; padding: 16px 0; }
-  .item:first-of-type { border-top: none; padding-top: 12px; }
   .item h3 { margin: 0 0 6px; font-size: 16px; }
-  .item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0; }
+  .item h3 a { color: #e6e9ef; }
+  .item h3 a:hover { color: #a3bffa; }
+  .item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+  .item .secondary { font-size: 12px; color: #6a7280; margin-top: 4px; }
   .badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
-  .badge { font-size: 11px; padding: 2px 8px; border-radius: 999px; font-weight: 500; }
+  .badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
   .bg-design { background: #3b2b5c; color: #c4b5fd; }
   .bg-cost { background: #1f4d3d; color: #6ee7b7; }
   .bg-viral { background: #5c2323; color: #fca5a5; }
@@ -33,9 +37,9 @@
   .bg-mcp { background: #1f4d4d; color: #67e8f9; }
   .bg-plugin { background: #5c4a1f; color: #fde68a; }
   .bg-skill { background: #5c2343; color: #f9a8d4; }
-  pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 12px; overflow-x: auto; font-size: 13px; position: relative; }
-  pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; }
-  .copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; }
+  pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 40px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+  pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+  .copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
   .copy:hover { background: #3a4049; }
   .meta { color: #6a7280; font-size: 11px; margin-top: 6px; }
 </style>
@@ -45,13 +49,27 @@
     <div class="crumb"><a href="index.html">← Back to hub</a></div>
     <h1>Your Submissions</h1>
     <p class="sub">Items you've captured for the Claude Code digest. The daily cron auto-dedupes against this list.</p>
-    <div class="empty">
-      <p>No submissions yet.</p>
-      <p>Add one with <code>/digest-add &lt;item&gt;</code> in any Claude Code session.</p>
-    </div>
+
+    <details open>
+      <summary>April 2026 <span class="count">1 item</span></summary>
+      <div class="month-body">
+        <div class="item">
+          <h3><a href="https://github.com/cytostack/openwolf">OpenWolf</a></h3>
+          <p class="hook">Middleware that cuts Claude Code token usage ~65% via automatic project memory, token tracking, and invisible hooks — zero workflow changes.</p>
+          <div class="secondary">Also: <a href="https://openwolf.com/">openwolf.com</a></div>
+          <div class="badges">
+            <span class="badge bg-cost">cost</span>
+          </div>
+          <pre><button class="copy">copy</button><code>npm install -g openwolf</code></pre>
+          <div class="meta">Added 2026-04-20</div>
+        </div>
+      </div>
+    </details>
+
   </div>
   <script>
-    document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+      e.preventDefault();
       navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
       const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
     }));

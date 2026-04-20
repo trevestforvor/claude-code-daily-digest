@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "slug": "openwolf",
+    "name": "OpenWolf",
+    "primary_url": "https://github.com/cytostack/openwolf",
+    "secondary_urls": ["https://openwolf.com/"],
+    "hook": "Middleware that cuts Claude Code token usage ~65% via automatic project memory, token tracking, and invisible hooks — zero workflow changes.",
+    "categories": ["cost"],
+    "install": "npm install -g openwolf",
+    "added_date": "2026-04-20",
+    "added_by": "user"
+  }
+]
