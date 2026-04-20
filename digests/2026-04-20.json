@@ -1,0 +1,135 @@
+[
+  {
+    "slug": "claude-design",
+    "name": "Claude Design",
+    "primary_url": "https://anthropic.com/news/claude-design",
+    "secondary_urls": [],
+    "hook": "Anthropic launched Claude Design on April 17 — Opus 4.7-powered tool that generates prototypes, slides, and one-pagers from prompts while reading your codebase and design files to apply your design system. Research preview for Pro/Max/Team/Enterprise; Figma stock dropped 7.28% on launch day.",
+    "categories": ["anthropic", "design"],
+    "install": "Available at claude.ai (Pro/Max/Team/Enterprise)"
+  },
+  {
+    "slug": "claude-opus-4-7",
+    "name": "Claude Opus 4.7",
+    "primary_url": "https://anthropic.com/news/claude-opus-4-7",
+    "secondary_urls": [],
+    "hook": "Released April 16: 87.6% SWE-bench in new xhigh effort mode, 98.5% visual acuity, 3.75MP images (3× higher than Opus 4.6), and /ultrareview for parallel multi-agent cloud code review. Price unchanged at $5/M input, $25/M output; Auto mode now available to Max subscribers.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "claude-code-v2-1-111-114",
+    "name": "Claude Code v2.1.111–2.1.114",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "secondary_urls": [],
+    "hook": "Four releases in four days (Apr 15–18): CLI now spawns a native binary instead of bundled JS, sandbox network domain blocking, OSC 8 clickable URLs in terminal, /tui fullscreen mode, push notifications, /less-permission-prompts skill, and plan files auto-named after the prompt.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "cc-beeper",
+    "name": "CC-Beeper",
+    "primary_url": "https://github.com/vecartier/cc-beeper",
+    "secondary_urls": [],
+    "hook": "Floating macOS pager for Claude Code: see what agents are doing, respond by voice, and never miss a permission prompt. 100% Swift, zero dependencies, fully local, no telemetry — hit #6 on Product Hunt daily on April 15 with 220 upvotes.",
+    "categories": ["design", "viral"],
+    "install": "brew install --cask cc-beeper"
+  },
+  {
+    "slug": "masko-code",
+    "name": "Masko Code",
+    "primary_url": "https://github.com/RousselPaul/masko-code",
+    "secondary_urls": [],
+    "hook": "Desktop mascot companion that watches your Claude Code agents and shows speech bubbles for permission requests — ships with Clippy and community mascots, or generate custom ones at masko.ai. Free, MIT-licensed, 100% local.",
+    "categories": ["design", "viral"],
+    "install": "Download DMG from masko.ai"
+  },
+  {
+    "slug": "understand-anything",
+    "name": "Understand-Anything",
+    "primary_url": "https://github.com/Lum1104/Understand-Anything",
+    "secondary_urls": [],
+    "hook": "Multi-platform Claude Code plugin (8.6k stars, v2.3.1 Apr 12) that renders a visual knowledge graph plus business logic dashboard for any codebase — tagline 'graphs that teach > graphs that impress'. Supports all major IDEs via the plugin marketplace.",
+    "categories": ["design", "plugin"],
+    "install": "/plugin install understand-anything"
+  },
+  {
+    "slug": "caveman",
+    "name": "caveman",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "secondary_urls": [],
+    "hook": "\"Why use many token when few token do trick\" — the viral meme-skill (39.7k stars) that cuts ~65–75% output tokens and ~46% input tokens while preserving technical accuracy. Arjan Brussee's LinkedIn post spawned 30+ comments; launched on Product Hunt this week.",
+    "categories": ["cost", "viral", "skill"],
+    "install": "claude plugin marketplace add JuliusBrussee/caveman && claude plugin install caveman@caveman"
+  },
+  {
+    "slug": "code-review-graph",
+    "name": "code-review-graph",
+    "primary_url": "https://github.com/tirth8205/code-review-graph",
+    "secondary_urls": [],
+    "hook": "MCP server (11.7k stars, v2.3.2 Apr 14) that builds an AST knowledge graph with tree-sitter + SQLite, delivering 6.8× fewer tokens on code reviews and up to 49× on daily tasks. Plugs straight into Claude Code's MCP config with a single pip install.",
+    "categories": ["mcp", "cost"],
+    "install": "pip install code-review-graph && code-review-graph install && code-review-graph build"
+  },
+  {
+    "slug": "claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "secondary_urls": [],
+    "hook": "Plugin (46k+ stars, gained 3k in a single day) that auto-captures sessions, compresses them with the Claude Agent SDK, and injects relevant context at the start of the next session. Uses SQLite + Chroma vector search; cross-platform.",
+    "categories": ["viral", "plugin", "cost"],
+    "install": "npx claude-mem install"
+  },
+  {
+    "slug": "everything-claude-code",
+    "name": "everything-claude-code",
+    "primary_url": "https://github.com/affaan-m/everything-claude-code",
+    "secondary_urls": [],
+    "hook": "Agent harness optimization framework with 48 agents, 183 skills, 34 language rules, and 14+ MCP configs (162k stars). v1.10.0 April 2026 added a desktop dashboard GUI and launched the ECC 2.0 alpha — the community calls it the 'Claude Code distro'.",
+    "categories": ["viral", "skill", "plugin"],
+    "install": "./install.sh --profile full"
+  },
+  {
+    "slug": "get-shit-done",
+    "name": "get-shit-done",
+    "primary_url": "https://github.com/gsd-build/get-shit-done",
+    "secondary_urls": [],
+    "hook": "Spec-driven meta-prompting system for Claude Code (55.2k stars, updated April 19) with five slash commands: /gsd-new-project, /gsd-plan-phase, /gsd-execute-phase, /gsd-spike, and /gsd-sketch. Enforces a structured plan-then-build loop that prevents runaway agent sessions.",
+    "categories": ["viral", "skill"],
+    "install": "npx get-shit-done-cc@latest"
+  },
+  {
+    "slug": "claude-squad",
+    "name": "claude-squad",
+    "primary_url": "https://github.com/smtg-ai/claude-squad",
+    "secondary_urls": [],
+    "hook": "Terminal app (7.1k stars) for managing multiple Claude Code, Codex, and Gemini agents in parallel — each in its own isolated git workspace with a tmux pane. Supports any agent that speaks the Claude Code protocol.",
+    "categories": ["viral", "plugin"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/smtg-ai/claude-squad/main/install.sh | bash"
+  },
+  {
+    "slug": "claude-code-plugins-plus-skills",
+    "name": "claude-code-plugins-plus-skills",
+    "primary_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+    "secondary_urls": ["https://tonsofskills.com"],
+    "hook": "Open-source marketplace index with 423 plugins, 2,849 skills, and 177 agents (2k+ stars). The ccpi CLI lets you search and install anything from the index with a single command.",
+    "categories": ["marketplace"],
+    "install": "pnpm add -g @intentsolutionsio/ccpi && ccpi install [plugin-name]"
+  },
+  {
+    "slug": "awesome-claude-plugins",
+    "name": "awesome-claude-plugins (ComposioHQ)",
+    "primary_url": "https://github.com/ComposioHQ/awesome-claude-plugins",
+    "secondary_urls": [],
+    "hook": "Curated list of 40+ Claude Code plugins (1.4k stars) led by connect-apps — a flagship plugin with 500+ integration connectors — plus frontend-design, CCHub, and other high-signal picks.",
+    "categories": ["marketplace", "plugin"],
+    "install": "See README"
+  },
+  {
+    "slug": "levnikolaevich-claude-code-skills",
+    "name": "levnikolaevich/claude-code-skills",
+    "primary_url": "https://github.com/levnikolaevich/claude-code-skills",
+    "secondary_urls": [],
+    "hook": "Full dev lifecycle plugin suite (413 stars): 7 core plugins covering planning through deployment, plus three MCP servers (hex-line, hex-graph, hex-ssh) for graph visualization and remote SSH sessions inside Claude Code.",
+    "categories": ["plugin", "mcp"],
+    "install": "/plugin marketplace add levnikolaevich/claude-code-skills"
+  }
+]
