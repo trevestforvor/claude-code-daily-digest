@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>April 2026 Catchup — Top 25 — Claude Code Digest</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 24px; }
+  a { color: #7aa2f7; text-decoration: none; }
+  a:hover { color: #a3bffa; text-decoration: underline; }
+  .crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+  h1 { font-size: 28px; margin: 0 0 8px; }
+  p.sub { color: #9aa3b2; margin: 0 0 32px; }
+  .item { border: 1px solid #1e232b; border-radius: 10px; background: #0f1217; padding: 14px 16px; margin-bottom: 10px; display: grid; grid-template-columns: 32px 1fr; gap: 12px; align-items: start; }
+  .rank { color: #6a7280; font-size: 13px; font-variant-numeric: tabular-nums; padding-top: 2px; }
+  .item h3 { margin: 0 0 4px; font-size: 15px; }
+  .item h3 a { color: #e6e9ef; }
+  .item h3 a:hover { color: #a3bffa; }
+  .hook { color: #c2c8d4; font-size: 13px; margin: 4px 0 8px; }
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; }
+  .badge { font-size: 10px; padding: 2px 9px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+  .bg-design { background: #3b2b5c; color: #c4b5fd; }
+  .bg-cost { background: #1f4d3d; color: #6ee7b7; }
+  .bg-viral { background: #5c2323; color: #fca5a5; }
+  .bg-anthropic { background: #5c3a1f; color: #fdba74; }
+  .bg-marketplace { background: #1f3a5c; color: #93c5fd; }
+  .bg-mcp { background: #1f4d4d; color: #67e8f9; }
+  .bg-plugin { background: #5c4a1f; color: #fde68a; }
+  .bg-skill { background: #5c2343; color: #f9a8d4; }
+  pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 6px; padding: 8px 36px 8px 10px; overflow-x: auto; font-size: 12px; position: relative; margin: 6px 0 0; }
+  pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+  .copy { position: absolute; top: 5px; right: 5px; background: #2a3039; border: none; color: #e6e9ef; padding: 2px 7px; border-radius: 4px; font-size: 10px; cursor: pointer; font-family: inherit; }
+  .copy:hover { background: #3a4049; }
+  .footer { color: #6a7280; font-size: 12px; margin-top: 24px; border-top: 1px solid #1e232b; padding-top: 16px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html">← Back to hub</a></div>
+    <h1>April 2026 Catchup — Top 25 (month in progress)</h1>
+    <p class="sub">Hottest Claude Code ecosystem items that spiked between 2026-04-01 and 2026-04-20. Token-cost pain, Karpathy-wiki mania, Opus 4.7 + Routines from Anthropic, and a design-system-as-skill wave.</p>
+
+    <div class="item">
+      <div class="rank">01</div>
+      <div>
+        <h3><a href="https://github.com/JuliusBrussee/caveman">caveman</a></h3>
+        <p class="hook">Why use many token when few token do trick. Meme skill that makes Claude talk caveman cuts ~65% of tokens on real tasks — hit ~39.8k stars in 16 days and became the April story.</p>
+        <div class="badges"><span class="badge bg-viral">viral</span><span class="badge bg-cost">cost</span></div>
+        <pre><button class="copy">copy</button><code>git clone https://github.com/JuliusBrussee/caveman ~/.claude/skills/caveman</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">02</div>
+      <div>
+        <h3><a href="https://github.com/santifer/career-ops">career-ops</a></h3>
+        <p class="hook">AI-powered job-search stack built on Claude Code — 14 skill modes, Go dashboard, resume+cover-letter batch generation. ~36.7k stars from an April 4 creation.</p>
+        <div class="badges"><span class="badge bg-viral">viral</span></div>
+        <pre><button class="copy">copy</button><code>git clone https://github.com/santifer/career-ops</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">03</div>
+      <div>
+        <h3><a href="https://github.com/safishamsi/graphify">graphify</a></h3>
+        <p class="hook">Turn any folder of code, docs, papers, images, or video into a queryable knowledge graph. Works across Claude Code, Codex, OpenCode, Cursor, Gemini CLI. ~31k stars in &lt;3 weeks.</p>
+        <div class="badges"><span class="badge bg-skill">skill</span></div>
+        <pre><button class="copy">copy</button><code>git clone https://github.com/safishamsi/graphify</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">04</div>
+      <div>
+        <h3><a href="https://www.anthropic.com/news/claude-opus-4-7">Claude Opus 4.7</a></h3>
+        <p class="hook">GA on April 16. xhigh effort level, task budgets with countdown, /ultrareview multi-agent code review, 2576px vision, 87.6% SWE-bench Verified, Auto mode for Max. Same $5/$25 pricing as 4.6.</p>
+        <div class="badges"><span class="badge bg-anthropic">anthropic</span></div>
+        <pre><button class="copy">copy</button><code>claude --model claude-opus-4-7</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">05</div>
+      <div>
+        <h3><a href="https://claude.com/blog/introducing-routines-in-claude-code">Claude Code Routines</a></h3>
+        <p class="hook">April 14 launch: scheduled Claude Code runs on Anthropic's cloud. Cron-like cadence, API webhook, or GitHub-event triggers — no laptop online. Pro 5/day, Max 15, Team 25.</p>
+        <div class="badges"><span class="badge bg-anthropic">anthropic</span></div>
+        <pre><button class="copy">copy</button><code>enable in Claude Code web → Routines</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">06</div>
+      <div>
+        <h3><a href="https://github.com/xixu-me/awesome-persona-distill-skills">awesome-persona-distill-skills</a></h3>
+        <p class="hook">Curated catalog of persona-distillation Agent Skills — people, relationships, commemorative personas, methodological voices. Biggest April marketplace list, ~3.9k stars.</p>
+        <div class="badges"><span class="badge bg-marketplace">marketplace</span><span class="badge bg-skill">skill</span></div>
+        <pre><button class="copy">copy</button><code>browse repo</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">07</div>
+      <div>
+        <h3><a href="https://github.com/yizhiyanhua-ai/fireworks-tech-graph">fireworks-tech-graph</a></h3>
+        <p class="hook">Claude Code skill for production-quality SVG+PNG technical diagrams — 8 diagram types, 5 visual styles, deep AI/agent domain knowledge. ~3.85k stars.</p>
+        <div class="badges"><span class="badge bg-skill">skill</span><span class="badge bg-design">design</span></div>
+        <pre><button class="copy">copy</button><code>git clone https://github.com/yizhiyanhua-ai/fireworks-tech-graph</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">08</div>
+      <div>
+        <h3><a href="https://github.com/getagentseal/codeburn">codeburn</a></h3>
+        <p class="hook">Interactive TUI dashboard showing where your AI coding tokens go across Claude Code, Codex, and Cursor. April cost-observability breakout — ~2.95k stars from an April 13 launch.</p>
+        <div class="badges"><span class="badge bg-cost">cost</span></div>
+        <pre><button class="copy">copy</button><code>npx codeburn</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">09</div>
+      <div>
+        <h3><a href="https://github.com/kyegomez/OpenMythos">OpenMythos</a></h3>
+        <p class="hook">Theoretical reconstruction of the Claude Mythos architecture from first principles + published research literature. ~2.86k stars in days after its April 18 drop.</p>
+        <div class="badges"><span class="badge bg-viral">viral</span></div>
+        <pre><button class="copy">copy</button><code>pip install openmythos</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">10</div>
+      <div>
+        <h3><a href="https://github.com/AgriciDaniel/claude-obsidian">claude-obsidian</a></h3>
+        <p class="hook">Claude + Obsidian knowledge companion. Persistent compounding wiki vault built on Karpathy's LLM-Wiki pattern. /wiki /save /autoresearch. ~2.2k stars.</p>
+        <div class="badges"><span class="badge bg-skill">skill</span></div>
+        <pre><button class="copy">copy</button><code>git clone https://github.com/AgriciDaniel/claude-obsidian</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">11</div>
+      <div>
+        <h3><a href="https://github.com/alchaincyf/darwin-skill">darwin-skill</a></h3>
+        <p class="hook">Autoresearch-inspired skill that evaluates, improves, tests, then keeps or reverts your other skills. ~1.36k stars in a week.</p>
+        <div class="badges"><span class="badge bg-skill">skill</span></div>
+        <pre><button class="copy">copy</button><code>git clone https://github.com/alchaincyf/darwin-skill</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">12</div>
+      <div>
+        <h3><a href="https://github.com/luyao618/Claude-Code-Source-Study">Claude-Code-Source-Study</a></h3>
+        <p class="hook">Chinese deep-dive into the Claude Code source, studying the current best-in-class agent implementation. Post-leak reading club, ~1.2k stars.</p>
+        <div class="badges"><span class="badge bg-viral">viral</span></div>
+        <pre><button class="copy">copy</button><code>browse repo</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">13</div>
+      <div>
+        <h3><a href="https://github.com/Manavarya09/design-extract">design-extract</a></h3>
+        <p class="hook">One command extracts any website's complete design system — DTCG tokens, Tailwind v4, shadcn/ui, iOS/Android/Flutter emitters. MCP server for Claude Code, Cursor, Windsurf. ~1.1k stars.</p>
+        <div class="badges"><span class="badge bg-design">design</span><span class="badge bg-mcp">mcp</span></div>
+        <pre><button class="copy">copy</button><code>npx design-extract &lt;url&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">14</div>
+      <div>
+        <h3><a href="https://github.com/phuryn/claude-usage">claude-usage</a></h3>
+        <p class="hook">Local dashboard for Claude Code token usage, costs, and session history. Pro/Max subscribers see a progress bar. ~1.09k stars.</p>
+        <div class="badges"><span class="badge bg-cost">cost</span></div>
+        <pre><button class="copy">copy</button><code>npx claude-usage</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">15</div>
+      <div>
+        <h3><a href="https://github.com/PrathamLearnsToCode/paper2code">paper2code</a></h3>
+        <p class="hook">Agent skill that turns any arxiv paper into a working implementation. ~955 stars and a steady favorite of the autoresearch crowd.</p>
+        <div class="badges"><span class="badge bg-skill">skill</span></div>
+        <pre><button class="copy">copy</button><code>git clone https://github.com/PrathamLearnsToCode/paper2code</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">16</div>
+      <div>
+        <h3><a href="https://github.com/Houseofmvps/codesight">codesight</a></h3>
+        <p class="hook">Universal AI context generator — saves thousands of tokens per conversation in Claude Code, Cursor, Copilot, Codex. ~940 stars.</p>
+        <div class="badges"><span class="badge bg-cost">cost</span></div>
+        <pre><button class="copy">copy</button><code>npx codesight</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">17</div>
+      <div>
+        <h3><a href="https://github.com/anthropics/claude-desktop-buddy">anthropics/claude-desktop-buddy</a></h3>
+        <p class="hook">Reference implementation of the Bluetooth API for makers in Claude Cowork &amp; Claude Code Desktop. First-party signal that Code Desktop is now an integration surface. ~871 stars.</p>
+        <div class="badges"><span class="badge bg-anthropic">anthropic</span></div>
+        <pre><button class="copy">copy</button><code>git clone https://github.com/anthropics/claude-desktop-buddy</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">18</div>
+      <div>
+        <h3><a href="https://github.com/coleam00/claude-memory-compiler">claude-memory-compiler</a></h3>
+        <p class="hook">Hooks capture sessions, the Agent SDK extracts decisions and lessons, an LLM compiler organizes them into cross-referenced knowledge articles. Karpathy-KB flavored. ~827 stars.</p>
+        <div class="badges"><span class="badge bg-plugin">plugin</span></div>
+        <pre><button class="copy">copy</button><code>git clone https://github.com/coleam00/claude-memory-compiler</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">19</div>
+      <div>
+        <h3><a href="https://github.com/cathrynlavery/diagram-design">diagram-design</a></h3>
+        <p class="hook">Thirteen editorial diagram types for Claude Code — self-contained HTML + SVG, no shadows, no Mermaid-slop. ~813 stars in four days.</p>
+        <div class="badges"><span class="badge bg-design">design</span></div>
+        <pre><button class="copy">copy</button><code>git clone https://github.com/cathrynlavery/diagram-design</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">20</div>
+      <div>
+        <h3><a href="https://github.com/hamen/material-3-skill">material-3-skill</a></h3>
+        <p class="hook">Material Design 3 skill for Claude Code — 30+ components, design tokens, theming, responsive layout, MD3 compliance audit. ~732 stars.</p>
+        <div class="badges"><span class="badge bg-skill">skill</span><span class="badge bg-design">design</span></div>
+        <pre><button class="copy">copy</button><code>git clone https://github.com/hamen/material-3-skill ~/.claude/skills/md3</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">21</div>
+      <div>
+        <h3><a href="https://github.com/ProjectBarks/gopher-code">gopher-code</a></h3>
+        <p class="hook">Claude Code rewritten from scratch in Go — zero Node.js, zero Electron, one binary. Post-leak ecosystem arrives at static binaries. ~599 stars.</p>
+        <div class="badges"><span class="badge bg-viral">viral</span></div>
+        <pre><button class="copy">copy</button><code>go install github.com/ProjectBarks/gopher-code@latest</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">22</div>
+      <div>
+        <h3><a href="https://github.com/mohi-devhub/antivibe">antivibe</a></h3>
+        <p class="hook">Counter-skill for vibe-coding — turns AI-generated code into educational deep dives so you actually learn what was written. ~591 stars.</p>
+        <div class="badges"><span class="badge bg-skill">skill</span></div>
+        <pre><button class="copy">copy</button><code>git clone https://github.com/mohi-devhub/antivibe</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">23</div>
+      <div>
+        <h3><a href="https://github.com/lucasastorian/llmwiki">llmwiki</a></h3>
+        <p class="hook">Open-source implementation of Karpathy's LLM Wiki — upload docs, connect Claude over MCP, have it write your wiki. ~563 stars, cleanest of the wiki cluster.</p>
+        <div class="badges"><span class="badge bg-mcp">mcp</span></div>
+        <pre><button class="copy">copy</button><code>git clone https://github.com/lucasastorian/llmwiki</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">24</div>
+      <div>
+        <h3><a href="https://github.com/VoltAgent/awesome-claude-design">awesome-claude-design</a></h3>
+        <p class="hook">68 ready-to-use design system inspirations packaged as DESIGN.md drop-ins. Scaffold a full UI in one shot. ~558 stars within two days of launch.</p>
+        <div class="badges"><span class="badge bg-marketplace">marketplace</span><span class="badge bg-design">design</span></div>
+        <pre><button class="copy">copy</button><code>browse repo</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">25</div>
+      <div>
+        <h3><a href="https://github.com/evo-hq/evo">evo</a></h3>
+        <p class="hook">Plugin that turns your codebase into an autoresearch loop — discovers what to measure, instruments the benchmark, runs tree search with parallel subagents. ~486 stars.</p>
+        <div class="badges"><span class="badge bg-plugin">plugin</span></div>
+        <pre><button class="copy">copy</button><code>/plugin install evo-hq/evo</code></pre>
+      </div>
+    </div>
+
+    <div class="footer">
+      April 2026 is still in progress — window covered 2026-04-01 through 2026-04-20. Rankings combine April-specific star velocity, category balance, and Anthropic-official announcements. Final April catchup will be locked at month-end.
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll('.copy').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const code = btn.parentElement.querySelector('code').textContent;
+        navigator.clipboard.writeText(code);
+        const orig = btn.textContent;
+        btn.textContent = 'copied';
+        setTimeout(() => { btn.textContent = orig; }, 1000);
+      });
+    });
+  </script>
+</body>
+</html>

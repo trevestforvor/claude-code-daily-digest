@@ -1,0 +1,232 @@
+{
+  "month": "2026-04",
+  "title": "April 2026 Catchup — Top 25 (month in progress)",
+  "generated_at": "2026-04-20",
+  "items": [
+    {
+      "rank": 1,
+      "slug": "caveman",
+      "name": "caveman",
+      "primary_url": "https://github.com/JuliusBrussee/caveman",
+      "hook": "Why use many token when few token do trick. Meme skill that makes Claude talk caveman cuts ~65% of tokens on real tasks — hit ~39.8k stars in 16 days and became the April story.",
+      "categories": ["viral", "cost"],
+      "install": "git clone https://github.com/JuliusBrussee/caveman ~/.claude/skills/caveman"
+    },
+    {
+      "rank": 2,
+      "slug": "career-ops",
+      "name": "career-ops",
+      "primary_url": "https://github.com/santifer/career-ops",
+      "hook": "AI-powered job-search stack built on Claude Code — 14 skill modes, Go dashboard, resume+cover-letter batch generation. ~36.7k stars from an April 4 creation.",
+      "categories": ["viral"],
+      "install": "git clone https://github.com/santifer/career-ops"
+    },
+    {
+      "rank": 3,
+      "slug": "graphify",
+      "name": "graphify",
+      "primary_url": "https://github.com/safishamsi/graphify",
+      "hook": "Turn any folder of code, docs, papers, images, or video into a queryable knowledge graph. Works across Claude Code, Codex, OpenCode, Cursor, Gemini CLI. ~31k stars in <3 weeks.",
+      "categories": ["skill"],
+      "install": "git clone https://github.com/safishamsi/graphify"
+    },
+    {
+      "rank": 4,
+      "slug": "opus-4-7",
+      "name": "Claude Opus 4.7",
+      "primary_url": "https://www.anthropic.com/news/claude-opus-4-7",
+      "hook": "GA on April 16. xhigh effort level, task budgets with countdown, /ultrareview multi-agent code review, 2576px vision, 87.6% SWE-bench Verified, Auto mode for Max. Same $5/$25 pricing as 4.6.",
+      "categories": ["anthropic"],
+      "install": "claude --model claude-opus-4-7"
+    },
+    {
+      "rank": 5,
+      "slug": "claude-code-routines",
+      "name": "Claude Code Routines",
+      "primary_url": "https://claude.com/blog/introducing-routines-in-claude-code",
+      "hook": "April 14 launch: scheduled Claude Code runs on Anthropic's cloud. Cron-like cadence, API webhook, or GitHub-event triggers — no laptop online. Pro 5/day, Max 15, Team 25.",
+      "categories": ["anthropic"],
+      "install": "enable in Claude Code web → Routines"
+    },
+    {
+      "rank": 6,
+      "slug": "awesome-persona-distill-skills",
+      "name": "awesome-persona-distill-skills",
+      "primary_url": "https://github.com/xixu-me/awesome-persona-distill-skills",
+      "hook": "Curated catalog of persona-distillation Agent Skills — people, relationships, commemorative personas, methodological voices. Biggest April marketplace list, ~3.9k stars.",
+      "categories": ["marketplace", "skill"],
+      "install": "browse repo"
+    },
+    {
+      "rank": 7,
+      "slug": "fireworks-tech-graph",
+      "name": "fireworks-tech-graph",
+      "primary_url": "https://github.com/yizhiyanhua-ai/fireworks-tech-graph",
+      "hook": "Claude Code skill for production-quality SVG+PNG technical diagrams — 8 diagram types, 5 visual styles, deep AI/agent domain knowledge. ~3.85k stars.",
+      "categories": ["skill", "design"],
+      "install": "git clone https://github.com/yizhiyanhua-ai/fireworks-tech-graph"
+    },
+    {
+      "rank": 8,
+      "slug": "codeburn",
+      "name": "codeburn",
+      "primary_url": "https://github.com/getagentseal/codeburn",
+      "hook": "Interactive TUI dashboard showing where your AI coding tokens go across Claude Code, Codex, and Cursor. April cost-observability breakout — ~2.95k stars from an April 13 launch.",
+      "categories": ["cost"],
+      "install": "npx codeburn"
+    },
+    {
+      "rank": 9,
+      "slug": "openmythos",
+      "name": "OpenMythos",
+      "primary_url": "https://github.com/kyegomez/OpenMythos",
+      "hook": "Theoretical reconstruction of the Claude Mythos architecture from first principles + published research literature. ~2.86k stars in days after its April 18 drop.",
+      "categories": ["viral"],
+      "install": "pip install openmythos"
+    },
+    {
+      "rank": 10,
+      "slug": "claude-obsidian",
+      "name": "claude-obsidian",
+      "primary_url": "https://github.com/AgriciDaniel/claude-obsidian",
+      "hook": "Claude + Obsidian knowledge companion. Persistent compounding wiki vault built on Karpathy's LLM-Wiki pattern. /wiki /save /autoresearch. ~2.2k stars.",
+      "categories": ["skill"],
+      "install": "git clone https://github.com/AgriciDaniel/claude-obsidian"
+    },
+    {
+      "rank": 11,
+      "slug": "darwin-skill",
+      "name": "darwin-skill",
+      "primary_url": "https://github.com/alchaincyf/darwin-skill",
+      "hook": "Autoresearch-inspired skill that evaluates, improves, tests, then keeps or reverts your other skills. ~1.36k stars in a week.",
+      "categories": ["skill"],
+      "install": "git clone https://github.com/alchaincyf/darwin-skill"
+    },
+    {
+      "rank": 12,
+      "slug": "claude-code-source-study",
+      "name": "Claude-Code-Source-Study",
+      "primary_url": "https://github.com/luyao618/Claude-Code-Source-Study",
+      "hook": "Chinese deep-dive into the Claude Code source, studying the current best-in-class agent implementation. Post-leak reading club, ~1.2k stars.",
+      "categories": ["viral"],
+      "install": "browse repo"
+    },
+    {
+      "rank": 13,
+      "slug": "design-extract",
+      "name": "design-extract",
+      "primary_url": "https://github.com/Manavarya09/design-extract",
+      "hook": "One command extracts any website's complete design system — DTCG tokens, Tailwind v4, shadcn/ui, iOS/Android/Flutter emitters. MCP server for Claude Code, Cursor, Windsurf. ~1.1k stars.",
+      "categories": ["design", "mcp"],
+      "install": "npx design-extract <url>"
+    },
+    {
+      "rank": 14,
+      "slug": "claude-usage",
+      "name": "claude-usage",
+      "primary_url": "https://github.com/phuryn/claude-usage",
+      "hook": "Local dashboard for Claude Code token usage, costs, and session history. Pro/Max subscribers see a progress bar. ~1.09k stars.",
+      "categories": ["cost"],
+      "install": "npx claude-usage"
+    },
+    {
+      "rank": 15,
+      "slug": "paper2code",
+      "name": "paper2code",
+      "primary_url": "https://github.com/PrathamLearnsToCode/paper2code",
+      "hook": "Agent skill that turns any arxiv paper into a working implementation. ~955 stars and a steady favorite of the autoresearch crowd.",
+      "categories": ["skill"],
+      "install": "git clone https://github.com/PrathamLearnsToCode/paper2code"
+    },
+    {
+      "rank": 16,
+      "slug": "codesight",
+      "name": "codesight",
+      "primary_url": "https://github.com/Houseofmvps/codesight",
+      "hook": "Universal AI context generator — saves thousands of tokens per conversation in Claude Code, Cursor, Copilot, Codex. ~940 stars.",
+      "categories": ["cost"],
+      "install": "npx codesight"
+    },
+    {
+      "rank": 17,
+      "slug": "claude-desktop-buddy",
+      "name": "anthropics/claude-desktop-buddy",
+      "primary_url": "https://github.com/anthropics/claude-desktop-buddy",
+      "hook": "Reference implementation of the Bluetooth API for makers in Claude Cowork & Claude Code Desktop. First-party signal that Code Desktop is now an integration surface. ~871 stars.",
+      "categories": ["anthropic"],
+      "install": "git clone https://github.com/anthropics/claude-desktop-buddy"
+    },
+    {
+      "rank": 18,
+      "slug": "claude-memory-compiler",
+      "name": "claude-memory-compiler",
+      "primary_url": "https://github.com/coleam00/claude-memory-compiler",
+      "hook": "Hooks capture sessions, the Agent SDK extracts decisions and lessons, an LLM compiler organizes them into cross-referenced knowledge articles. Karpathy-KB flavored. ~827 stars.",
+      "categories": ["plugin"],
+      "install": "git clone https://github.com/coleam00/claude-memory-compiler"
+    },
+    {
+      "rank": 19,
+      "slug": "diagram-design",
+      "name": "diagram-design",
+      "primary_url": "https://github.com/cathrynlavery/diagram-design",
+      "hook": "Thirteen editorial diagram types for Claude Code — self-contained HTML + SVG, no shadows, no Mermaid-slop. ~813 stars in four days.",
+      "categories": ["design"],
+      "install": "git clone https://github.com/cathrynlavery/diagram-design"
+    },
+    {
+      "rank": 20,
+      "slug": "material-3-skill",
+      "name": "material-3-skill",
+      "primary_url": "https://github.com/hamen/material-3-skill",
+      "hook": "Material Design 3 skill for Claude Code — 30+ components, design tokens, theming, responsive layout, MD3 compliance audit. ~732 stars.",
+      "categories": ["skill", "design"],
+      "install": "git clone https://github.com/hamen/material-3-skill ~/.claude/skills/md3"
+    },
+    {
+      "rank": 21,
+      "slug": "gopher-code",
+      "name": "gopher-code",
+      "primary_url": "https://github.com/ProjectBarks/gopher-code",
+      "hook": "Claude Code rewritten from scratch in Go — zero Node.js, zero Electron, one binary. Post-leak ecosystem arrives at static binaries. ~599 stars.",
+      "categories": ["viral"],
+      "install": "go install github.com/ProjectBarks/gopher-code@latest"
+    },
+    {
+      "rank": 22,
+      "slug": "antivibe",
+      "name": "antivibe",
+      "primary_url": "https://github.com/mohi-devhub/antivibe",
+      "hook": "Counter-skill for vibe-coding — turns AI-generated code into educational deep dives so you actually learn what was written. ~591 stars.",
+      "categories": ["skill"],
+      "install": "git clone https://github.com/mohi-devhub/antivibe"
+    },
+    {
+      "rank": 23,
+      "slug": "llmwiki",
+      "name": "llmwiki",
+      "primary_url": "https://github.com/lucasastorian/llmwiki",
+      "hook": "Open-source implementation of Karpathy's LLM Wiki — upload docs, connect Claude over MCP, have it write your wiki. ~563 stars, cleanest of the wiki cluster.",
+      "categories": ["mcp"],
+      "install": "git clone https://github.com/lucasastorian/llmwiki"
+    },
+    {
+      "rank": 24,
+      "slug": "awesome-claude-design",
+      "name": "awesome-claude-design",
+      "primary_url": "https://github.com/VoltAgent/awesome-claude-design",
+      "hook": "68 ready-to-use design system inspirations packaged as DESIGN.md drop-ins. Scaffold a full UI in one shot. ~558 stars within two days of launch.",
+      "categories": ["marketplace", "design"],
+      "install": "browse repo"
+    },
+    {
+      "rank": 25,
+      "slug": "evo",
+      "name": "evo (evo-hq)",
+      "primary_url": "https://github.com/evo-hq/evo",
+      "hook": "Plugin that turns your codebase into an autoresearch loop — discovers what to measure, instruments the benchmark, runs tree search with parallel subagents. ~486 stars.",
+      "categories": ["plugin"],
+      "install": "/plugin install evo-hq/evo"
+    }
+  ]
+}
