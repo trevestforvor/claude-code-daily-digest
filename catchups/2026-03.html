@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>March 2026 Catchup — Top 25 — Claude Code Digest</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 24px; }
+  a { color: #7aa2f7; text-decoration: none; }
+  a:hover { color: #a3bffa; text-decoration: underline; }
+  .crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+  h1 { font-size: 28px; margin: 0 0 8px; }
+  p.sub { color: #9aa3b2; margin: 0 0 32px; }
+  .item { border: 1px solid #1e232b; border-radius: 10px; background: #0f1217; padding: 14px 16px; margin-bottom: 10px; display: grid; grid-template-columns: 32px 1fr; gap: 12px; align-items: start; }
+  .rank { color: #6a7280; font-size: 13px; font-variant-numeric: tabular-nums; padding-top: 2px; }
+  .item h3 { margin: 0 0 4px; font-size: 15px; }
+  .item h3 a { color: #e6e9ef; }
+  .item h3 a:hover { color: #a3bffa; }
+  .hook { color: #c2c8d4; font-size: 13px; margin: 4px 0 8px; }
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; }
+  .badge { font-size: 10px; padding: 2px 9px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+  .bg-design { background: #3b2b5c; color: #c4b5fd; }
+  .bg-cost { background: #1f4d3d; color: #6ee7b7; }
+  .bg-viral { background: #5c2323; color: #fca5a5; }
+  .bg-anthropic { background: #5c3a1f; color: #fdba74; }
+  .bg-marketplace { background: #1f3a5c; color: #93c5fd; }
+  .bg-mcp { background: #1f4d4d; color: #67e8f9; }
+  .bg-plugin { background: #5c4a1f; color: #fde68a; }
+  .bg-skill { background: #5c2343; color: #f9a8d4; }
+  pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 6px; padding: 8px 36px 8px 10px; overflow-x: auto; font-size: 12px; position: relative; margin: 6px 0 0; }
+  pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+  .copy { position: absolute; top: 5px; right: 5px; background: #2a3039; border: none; color: #e6e9ef; padding: 2px 7px; border-radius: 4px; font-size: 10px; cursor: pointer; font-family: inherit; }
+  .copy:hover { background: #3a4049; }
+  .footer { color: #6a7280; font-size: 12px; margin-top: 24px; border-top: 1px solid #1e232b; padding-top: 16px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html">← Back to hub</a></div>
+    <h1>March 2026 Catchup — Top 25</h1>
+    <p class="sub">Hottest Claude Code ecosystem items that spiked between 2026-03-01 and 2026-03-31. Ranked by March-specific traction across skills, plugins, MCP servers, marketplaces, cost tools, design tools, and viral community releases.</p>
+
+    <div class="item">
+      <div class="rank">01</div>
+      <div>
+        <h3><a href="https://github.com/garrytan/gstack">gstack</a></h3>
+        <p class="hook">Garry Tan's exact Claude Code setup — 23 opinionated tools wired up as CEO/Designer/EM/QA personas. Hit ~78k stars from a March 11 creation, the breakout viral template of the month.</p>
+        <div class="badges"><span class="badge bg-viral">viral</span></div>
+        <pre><button class="copy">copy</button><code>git clone https://github.com/garrytan/gstack</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">02</div>
+      <div>
+        <h3><a href="https://github.com/claude-code-best/claude-code">claude-code-best/claude-code</a></h3>
+        <p class="hook">Runnable, TS-typed, bun-installable build of Claude Code that emerged hours after the March 31 source leak. ~16.4k stars in &lt;3 weeks.</p>
+        <div class="badges"><span class="badge bg-viral">viral</span></div>
+        <pre><button class="copy">copy</button><code>bun install &amp;&amp; bun run dev</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">03</div>
+      <div>
+        <h3><a href="https://github.com/openai/codex-plugin-cc">OpenAI codex-plugin-cc</a></h3>
+        <p class="hook">OpenAI ships an official Claude Code plugin — call Codex from inside CC for review or delegation. Cross-vendor moment of the month, 15.2k stars in ~3 weeks.</p>
+        <div class="badges"><span class="badge bg-anthropic">anthropic</span></div>
+        <pre><button class="copy">copy</button><code>/plugin install openai/codex-plugin-cc</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">04</div>
+      <div>
+        <h3><a href="https://github.com/JCodesMore/ai-website-cloner-template">ai-website-cloner-template</a></h3>
+        <p class="hook">Clone any website with a single Claude Code command — template hit 12k stars in &lt;3 weeks on the back of a viral demo thread.</p>
+        <div class="badges"><span class="badge bg-viral">viral</span></div>
+        <pre><button class="copy">copy</button><code>npx ai-website-cloner</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">05</div>
+      <div>
+        <h3><a href="https://github.com/Lum1104/Understand-Anything">Understand-Anything</a></h3>
+        <p class="hook">Skill that turns any codebase or knowledge base into an interactive knowledge graph from inside Claude Code. ~8.6k stars by mid-April.</p>
+        <div class="badges"><span class="badge bg-skill">skill</span></div>
+        <pre><button class="copy">copy</button><code>git clone https://github.com/Lum1104/Understand-Anything</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">06</div>
+      <div>
+        <h3><a href="https://github.com/slavingia/skills">slavingia/skills</a></h3>
+        <p class="hook">Sahil Lavingia's "Minimalist Entrepreneur" skill pack — opinionated solo-founder workflows. 8k+ stars, broadly forked as a personal-skills starter.</p>
+        <div class="badges"><span class="badge bg-skill">skill</span></div>
+        <pre><button class="copy">copy</button><code>git clone https://github.com/slavingia/skills ~/.claude/skills/slavingia</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">07</div>
+      <div>
+        <h3><a href="https://github.com/paoloanzn/free-code">paoloanzn/free-code</a></h3>
+        <p class="hook">Post-leak "free build of Claude Code" with telemetry and guardrails stripped — controversial but pulled ~8k stars within days.</p>
+        <div class="badges"><span class="badge bg-viral">viral</span></div>
+        <pre><button class="copy">copy</button><code>bun install</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">08</div>
+      <div>
+        <h3><a href="https://github.com/NanmiCoder/cc-haha">NanmiCoder/cc-haha</a></h3>
+        <p class="hook">Cross-platform desktop Claude Code fork that bolts on Computer Use. Spawned in the post-leak rush, 7.2k stars in &lt;3 weeks.</p>
+        <div class="badges"><span class="badge bg-viral">viral</span></div>
+        <pre><button class="copy">copy</button><code>git clone https://github.com/NanmiCoder/cc-haha</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">09</div>
+      <div>
+        <h3><a href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep">ARIS — Auto-claude-code-research-in-sleep</a></h3>
+        <p class="hook">Markdown-only autonomous ML research skill — overnight idea/experiment/eval loops. Kicked off the March "autoresearch" wave, 7k+ stars.</p>
+        <div class="badges"><span class="badge bg-skill">skill</span></div>
+        <pre><button class="copy">copy</button><code>git clone into ~/.claude/skills</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">10</div>
+      <div>
+        <h3><a href="https://github.com/jnMetaCode/agency-agents-zh">agency-agents-zh</a></h3>
+        <p class="hook">211 plug-and-play AI expert personas across 18 departments — the Chinese-localized agency pack everyone forked in March.</p>
+        <div class="badges"><span class="badge bg-skill">skill</span></div>
+        <pre><button class="copy">copy</button><code>git clone https://github.com/jnMetaCode/agency-agents-zh</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">11</div>
+      <div>
+        <h3><a href="https://github.com/ChinaSiro/claude-code-sourcemap">claude-code-sourcemap</a></h3>
+        <p class="hook">Annotated sourcemap of the leaked Claude Code internals — 8.95k stars, 14.5k forks in &lt;3 weeks. Anchor of the post-leak research cluster.</p>
+        <div class="badges"><span class="badge bg-viral">viral</span></div>
+        <pre><button class="copy">copy</button><code>browse repo</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">12</div>
+      <div>
+        <h3><a href="https://github.com/eze-is/web-access">web-access</a></h3>
+        <p class="hook">Three-tier web/CDP/parallel skill that gives Claude Code robust internet access without third-party MCPs. 5.3k+ stars.</p>
+        <div class="badges"><span class="badge bg-skill">skill</span></div>
+        <pre><button class="copy">copy</button><code>git clone into ~/.claude/skills</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">13</div>
+      <div>
+        <h3><a href="https://github.com/drona23/claude-token-efficient">claude-token-efficient</a></h3>
+        <p class="hook">A single drop-in CLAUDE.md that slashes verbosity on heavy workflows. 4.5k stars in three weeks rode the late-March pricing-pain wave.</p>
+        <div class="badges"><span class="badge bg-cost">cost</span></div>
+        <pre><button class="copy">copy</button><code>cp CLAUDE.md ~/your-project/</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">14</div>
+      <div>
+        <h3><a href="https://github.com/zarazhangrui/codebase-to-course">codebase-to-course</a></h3>
+        <p class="hook">Skill that converts any codebase into a self-paced interactive HTML course — ~3.9k stars from a single tweet.</p>
+        <div class="badges"><span class="badge bg-skill">skill</span></div>
+        <pre><button class="copy">copy</button><code>git clone into ~/.claude/skills</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">15</div>
+      <div>
+        <h3><a href="https://github.com/uditgoenka/autoresearch">autoresearch</a></h3>
+        <p class="hook">Karpathy-style autonomous goal-directed iteration skill — second hit in the March autoresearch surge with ~3.9k stars.</p>
+        <div class="badges"><span class="badge bg-skill">skill</span></div>
+        <pre><button class="copy">copy</button><code>git clone into ~/.claude/skills</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">16</div>
+      <div>
+        <h3><a href="https://github.com/tw93/Waza">Waza</a></h3>
+        <p class="hook">Engineering habits packaged as runnable Claude skills — code review, debugging, refactor playbooks. 3.6k stars.</p>
+        <div class="badges"><span class="badge bg-skill">skill</span></div>
+        <pre><button class="copy">copy</button><code>git clone into ~/.claude/skills</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">17</div>
+      <div>
+        <h3><a href="https://github.com/lintsinghua/claude-code-book">claude-code-book</a></h3>
+        <p class="hook">420k-word Chinese book reverse-engineering Claude Code as an Agent Harness — landed at the post-leak peak with 2.8k stars.</p>
+        <div class="badges"><span class="badge bg-viral">viral</span></div>
+        <pre><button class="copy">copy</button><code>browse repo</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">18</div>
+      <div>
+        <h3><a href="https://github.com/revfactory/harness">harness</a></h3>
+        <p class="hook">Meta-plugin that designs domain-specific agent teams and generates their skills on the fly. 2.7k stars in two weeks.</p>
+        <div class="badges"><span class="badge bg-plugin">plugin</span></div>
+        <pre><button class="copy">copy</button><code>/plugin install revfactory/harness</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">19</div>
+      <div>
+        <h3><a href="https://github.com/motiful/cc-gateway">cc-gateway</a></h3>
+        <p class="hook">Privacy-preserving reverse-proxy gateway for Claude Code — fingerprint normalization, request rewriting, prompt-leak audit. 2.7k stars.</p>
+        <div class="badges"><span class="badge bg-cost">cost</span></div>
+        <pre><button class="copy">copy</button><code>docker run motiful/cc-gateway</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">20</div>
+      <div>
+        <h3><a href="https://github.com/CoderLuii/HolyClaude">HolyClaude</a></h3>
+        <p class="hook">Dockerized AI coding workstation: Claude Code + 7 sibling CLIs + headless browser + 50+ tools, ready to spin up. 2k stars.</p>
+        <div class="badges"><span class="badge bg-plugin">plugin</span></div>
+        <pre><button class="copy">copy</button><code>docker compose up</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">21</div>
+      <div>
+        <h3><a href="https://github.com/jxnxts/mcp-brasil">mcp-brasil</a></h3>
+        <p class="hook">MCP server bundling 41 Brazilian public-data and government APIs (CNPJ, CEP, Receita, BCB) into one install. 1.4k stars.</p>
+        <div class="badges"><span class="badge bg-mcp">mcp</span></div>
+        <pre><button class="copy">copy</button><code>pip install mcp-brasil</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">22</div>
+      <div>
+        <h3><a href="https://github.com/anthropics/claude-plugins-community">Claude Plugins Community</a></h3>
+        <p class="hook">Read-only mirror of Anthropic's official curated community plugin marketplace. Submission pipeline at clau.de/plugin-directory-submission.</p>
+        <div class="badges"><span class="badge bg-marketplace">marketplace</span></div>
+        <pre><button class="copy">copy</button><code>/plugin marketplace add anthropics/claude-plugins-community</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">23</div>
+      <div>
+        <h3><a href="https://github.com/rohitg00/awesome-claude-code-toolkit">awesome-claude-code-toolkit</a></h3>
+        <p class="hook">Most comprehensive toolkit of the month — 135 agents, 35 skills, 176+ plugins, 14 MCP configs. Heavy March commit cadence.</p>
+        <div class="badges"><span class="badge bg-marketplace">marketplace</span></div>
+        <pre><button class="copy">copy</button><code>browse repo</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">24</div>
+      <div>
+        <h3><a href="https://github.com/yvgude/lean-ctx">lean-ctx</a></h3>
+        <p class="hook">Rust binary positioning itself as a 99%-cost-cut MCP + shell-hook layer for 24+ coding agents. 695 stars in three weeks.</p>
+        <div class="badges"><span class="badge bg-mcp">mcp</span></div>
+        <pre><button class="copy">copy</button><code>cargo install lean-ctx</code></pre>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">25</div>
+      <div>
+        <h3><a href="https://github.com/Adityaraj0421/naksha-studio">naksha-studio</a></h3>
+        <p class="hook">Virtual design team plugin — 26 roles, 60 commands, 13.8k lines of curated design knowledge for Claude Code.</p>
+        <div class="badges"><span class="badge bg-design">design</span></div>
+        <pre><button class="copy">copy</button><code>/plugin install Adityaraj0421/naksha-studio</code></pre>
+      </div>
+    </div>
+
+    <div class="footer">Generated 2026-04-20 from GitHub-verified March 2026 traction. See <code>catchups/2026-03-research-notes.md</code> for the full candidate pool and methodology.</div>
+  </div>
+  <script>
+    document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+      e.preventDefault();
+      navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+      const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+    }));
+  </script>
+</body>
+</html>

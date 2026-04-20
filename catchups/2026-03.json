@@ -1,0 +1,232 @@
+{
+  "month": "2026-03",
+  "title": "March 2026 Catchup — Top 25",
+  "generated_at": "2026-04-20",
+  "items": [
+    {
+      "rank": 1,
+      "slug": "gstack",
+      "name": "gstack",
+      "primary_url": "https://github.com/garrytan/gstack",
+      "hook": "Garry Tan's exact Claude Code setup — 23 opinionated tools wired up as CEO/Designer/EM/QA personas. Hit ~78k stars from a March 11 creation, the breakout viral template of the month.",
+      "categories": ["viral"],
+      "install": "git clone https://github.com/garrytan/gstack"
+    },
+    {
+      "rank": 2,
+      "slug": "claude-code-best",
+      "name": "claude-code-best/claude-code",
+      "primary_url": "https://github.com/claude-code-best/claude-code",
+      "hook": "Runnable, TS-typed, bun-installable build of Claude Code that emerged hours after the March 31 source leak. ~16.4k stars in <3 weeks.",
+      "categories": ["viral"],
+      "install": "bun install && bun run dev"
+    },
+    {
+      "rank": 3,
+      "slug": "openai-codex-plugin-cc",
+      "name": "OpenAI codex-plugin-cc",
+      "primary_url": "https://github.com/openai/codex-plugin-cc",
+      "hook": "OpenAI ships an official Claude Code plugin — call Codex from inside CC for review or delegation. Cross-vendor moment of the month, 15.2k stars in ~3 weeks.",
+      "categories": ["anthropic"],
+      "install": "/plugin install openai/codex-plugin-cc"
+    },
+    {
+      "rank": 4,
+      "slug": "ai-website-cloner-template",
+      "name": "ai-website-cloner-template",
+      "primary_url": "https://github.com/JCodesMore/ai-website-cloner-template",
+      "hook": "Clone any website with a single Claude Code command — template hit 12k stars in <3 weeks on the back of a viral demo thread.",
+      "categories": ["viral"],
+      "install": "npx ai-website-cloner"
+    },
+    {
+      "rank": 5,
+      "slug": "understand-anything",
+      "name": "Understand-Anything",
+      "primary_url": "https://github.com/Lum1104/Understand-Anything",
+      "hook": "Skill that turns any codebase or knowledge base into an interactive knowledge graph from inside Claude Code. ~8.6k stars by mid-April.",
+      "categories": ["skill"],
+      "install": "git clone https://github.com/Lum1104/Understand-Anything"
+    },
+    {
+      "rank": 6,
+      "slug": "slavingia-skills",
+      "name": "slavingia/skills",
+      "primary_url": "https://github.com/slavingia/skills",
+      "hook": "Sahil Lavingia's 'Minimalist Entrepreneur' skill pack — opinionated solo-founder workflows. 8k+ stars, broadly forked as a personal-skills starter.",
+      "categories": ["skill"],
+      "install": "git clone https://github.com/slavingia/skills ~/.claude/skills/slavingia"
+    },
+    {
+      "rank": 7,
+      "slug": "free-code",
+      "name": "paoloanzn/free-code",
+      "primary_url": "https://github.com/paoloanzn/free-code",
+      "hook": "Post-leak 'free build of Claude Code' with telemetry and guardrails stripped — controversial but pulled ~8k stars within days.",
+      "categories": ["viral"],
+      "install": "bun install"
+    },
+    {
+      "rank": 8,
+      "slug": "cc-haha",
+      "name": "NanmiCoder/cc-haha",
+      "primary_url": "https://github.com/NanmiCoder/cc-haha",
+      "hook": "Cross-platform desktop Claude Code fork that bolts on Computer Use. Spawned in the post-leak rush, 7.2k stars in <3 weeks.",
+      "categories": ["viral"],
+      "install": "git clone https://github.com/NanmiCoder/cc-haha"
+    },
+    {
+      "rank": 9,
+      "slug": "aris",
+      "name": "ARIS — Auto-claude-code-research-in-sleep",
+      "primary_url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+      "hook": "Markdown-only autonomous ML research skill — overnight idea/experiment/eval loops. Kicked off the March 'autoresearch' wave, 7k+ stars.",
+      "categories": ["skill"],
+      "install": "git clone into ~/.claude/skills"
+    },
+    {
+      "rank": 10,
+      "slug": "agency-agents-zh",
+      "name": "agency-agents-zh",
+      "primary_url": "https://github.com/jnMetaCode/agency-agents-zh",
+      "hook": "211 plug-and-play AI expert personas across 18 departments — the Chinese-localized agency pack everyone forked in March.",
+      "categories": ["skill"],
+      "install": "git clone https://github.com/jnMetaCode/agency-agents-zh"
+    },
+    {
+      "rank": 11,
+      "slug": "claude-code-sourcemap",
+      "name": "claude-code-sourcemap",
+      "primary_url": "https://github.com/ChinaSiro/claude-code-sourcemap",
+      "hook": "Annotated sourcemap of the leaked Claude Code internals — 8.95k stars, 14.5k forks in <3 weeks. Anchor of the post-leak research cluster.",
+      "categories": ["viral"],
+      "install": "browse repo"
+    },
+    {
+      "rank": 12,
+      "slug": "web-access",
+      "name": "web-access",
+      "primary_url": "https://github.com/eze-is/web-access",
+      "hook": "Three-tier web/CDP/parallel skill that gives Claude Code robust internet access without third-party MCPs. 5.3k+ stars.",
+      "categories": ["skill"],
+      "install": "git clone into ~/.claude/skills"
+    },
+    {
+      "rank": 13,
+      "slug": "claude-token-efficient",
+      "name": "claude-token-efficient",
+      "primary_url": "https://github.com/drona23/claude-token-efficient",
+      "hook": "A single drop-in CLAUDE.md that slashes verbosity on heavy workflows. 4.5k stars in three weeks rode the late-March pricing-pain wave.",
+      "categories": ["cost"],
+      "install": "cp CLAUDE.md ~/your-project/"
+    },
+    {
+      "rank": 14,
+      "slug": "codebase-to-course",
+      "name": "codebase-to-course",
+      "primary_url": "https://github.com/zarazhangrui/codebase-to-course",
+      "hook": "Skill that converts any codebase into a self-paced interactive HTML course — ~3.9k stars from a single tweet.",
+      "categories": ["skill"],
+      "install": "git clone into ~/.claude/skills"
+    },
+    {
+      "rank": 15,
+      "slug": "autoresearch",
+      "name": "autoresearch",
+      "primary_url": "https://github.com/uditgoenka/autoresearch",
+      "hook": "Karpathy-style autonomous goal-directed iteration skill — second hit in the March autoresearch surge with ~3.9k stars.",
+      "categories": ["skill"],
+      "install": "git clone into ~/.claude/skills"
+    },
+    {
+      "rank": 16,
+      "slug": "waza",
+      "name": "Waza",
+      "primary_url": "https://github.com/tw93/Waza",
+      "hook": "Engineering habits packaged as runnable Claude skills — code review, debugging, refactor playbooks. 3.6k stars.",
+      "categories": ["skill"],
+      "install": "git clone into ~/.claude/skills"
+    },
+    {
+      "rank": 17,
+      "slug": "claude-code-book",
+      "name": "claude-code-book",
+      "primary_url": "https://github.com/lintsinghua/claude-code-book",
+      "hook": "420k-word Chinese book reverse-engineering Claude Code as an Agent Harness — landed at the post-leak peak with 2.8k stars.",
+      "categories": ["viral"],
+      "install": "browse repo"
+    },
+    {
+      "rank": 18,
+      "slug": "harness",
+      "name": "harness",
+      "primary_url": "https://github.com/revfactory/harness",
+      "hook": "Meta-plugin that designs domain-specific agent teams and generates their skills on the fly. 2.7k stars in two weeks.",
+      "categories": ["plugin"],
+      "install": "/plugin install revfactory/harness"
+    },
+    {
+      "rank": 19,
+      "slug": "cc-gateway",
+      "name": "cc-gateway",
+      "primary_url": "https://github.com/motiful/cc-gateway",
+      "hook": "Privacy-preserving reverse-proxy gateway for Claude Code — fingerprint normalization, request rewriting, prompt-leak audit. 2.7k stars.",
+      "categories": ["cost"],
+      "install": "docker run motiful/cc-gateway"
+    },
+    {
+      "rank": 20,
+      "slug": "holyclaude",
+      "name": "HolyClaude",
+      "primary_url": "https://github.com/CoderLuii/HolyClaude",
+      "hook": "Dockerized AI coding workstation: Claude Code + 7 sibling CLIs + headless browser + 50+ tools, ready to spin up. 2k stars.",
+      "categories": ["plugin"],
+      "install": "docker compose up"
+    },
+    {
+      "rank": 21,
+      "slug": "mcp-brasil",
+      "name": "mcp-brasil",
+      "primary_url": "https://github.com/jxnxts/mcp-brasil",
+      "hook": "MCP server bundling 41 Brazilian public-data and government APIs (CNPJ, CEP, Receita, BCB) into one install. 1.4k stars.",
+      "categories": ["mcp"],
+      "install": "pip install mcp-brasil"
+    },
+    {
+      "rank": 22,
+      "slug": "claude-plugins-community",
+      "name": "Claude Plugins Community",
+      "primary_url": "https://github.com/anthropics/claude-plugins-community",
+      "hook": "Read-only mirror of Anthropic's official curated community plugin marketplace. Submission pipeline at clau.de/plugin-directory-submission.",
+      "categories": ["marketplace"],
+      "install": "/plugin marketplace add anthropics/claude-plugins-community"
+    },
+    {
+      "rank": 23,
+      "slug": "awesome-claude-code-toolkit",
+      "name": "awesome-claude-code-toolkit",
+      "primary_url": "https://github.com/rohitg00/awesome-claude-code-toolkit",
+      "hook": "Most comprehensive toolkit of the month — 135 agents, 35 skills, 176+ plugins, 14 MCP configs. Heavy March commit cadence.",
+      "categories": ["marketplace"],
+      "install": "browse repo"
+    },
+    {
+      "rank": 24,
+      "slug": "lean-ctx",
+      "name": "lean-ctx",
+      "primary_url": "https://github.com/yvgude/lean-ctx",
+      "hook": "Rust binary positioning itself as a 99%-cost-cut MCP + shell-hook layer for 24+ coding agents. 695 stars in three weeks.",
+      "categories": ["mcp"],
+      "install": "cargo install lean-ctx"
+    },
+    {
+      "rank": 25,
+      "slug": "naksha-studio",
+      "name": "naksha-studio",
+      "primary_url": "https://github.com/Adityaraj0421/naksha-studio",
+      "hook": "Virtual design team plugin — 26 roles, 60 commands, 13.8k lines of curated design knowledge for Claude Code.",
+      "categories": ["design"],
+      "install": "/plugin install Adityaraj0421/naksha-studio"
+    }
+  ]
+}
