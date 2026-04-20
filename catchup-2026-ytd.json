@@ -1,0 +1,1371 @@
+{
+  "generated_at": "2026-04-20T14:54:46.136Z",
+  "source_months": [
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04"
+  ],
+  "dedup_count": 3,
+  "categories": {
+    "design": [
+      {
+        "rank_in_month": 1,
+        "slug": "claude-design",
+        "name": "Claude Design",
+        "primary_url": "https://anthropic.com/news/claude-design",
+        "secondary_urls": [],
+        "hook": "Anthropic launched Claude Design on April 17 — Opus 4.7-powered tool that generates prototypes, slides, and one-pagers from prompts while reading your codebase and design files to apply your design system. Research preview for Pro/Max/Team/Enterprise; Figma stock dropped 7.28% on launch day.",
+        "categories": [
+          "anthropic",
+          "design"
+        ],
+        "install": "Available at claude.ai (Pro/Max/Team/Enterprise)",
+        "month": "2026-04",
+        "stars_approx": null,
+        "evidence": null,
+        "first_seen_month": "2026-04"
+      },
+      {
+        "slug": "claude-code-security",
+        "name": "Claude Code Security",
+        "primary_url": "https://www.anthropic.com/news/claude-code-security",
+        "secondary_urls": [
+          "https://thehackernews.com/2026/02/anthropic-launches-claude-code-security.html"
+        ],
+        "hook": "Reasoning-based vulnerability scanner that found 500+ zero-days in production OSS, now in limited preview for Enterprise/Team and OSS maintainers.",
+        "categories": [
+          "anthropic",
+          "design"
+        ],
+        "install": "Available via claude.ai/code (Enterprise/Team waitlist)",
+        "added_date": "2026-02-20",
+        "month": "2026-02",
+        "rank_in_month": 4,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "rank_in_month": 4,
+        "slug": "cc-beeper",
+        "name": "CC-Beeper",
+        "primary_url": "https://github.com/vecartier/cc-beeper",
+        "secondary_urls": [],
+        "hook": "Floating macOS pager for Claude Code: see what agents are doing, respond by voice, and never miss a permission prompt. 100% Swift, zero dependencies, fully local, no telemetry — hit #6 on Product Hunt daily on April 15 with 220 upvotes.",
+        "categories": [
+          "design",
+          "viral"
+        ],
+        "install": "brew install --cask cc-beeper",
+        "month": "2026-04",
+        "stars_approx": null,
+        "evidence": null,
+        "first_seen_month": "2026-04"
+      },
+      {
+        "rank": 5,
+        "slug": "understand-anything",
+        "name": "Understand-Anything",
+        "primary_url": "https://github.com/Lum1104/Understand-Anything",
+        "hook": "Trending since March 2026. Skill that turns any codebase or knowledge base into an interactive knowledge graph from inside Claude Code. ~8.6k stars by mid-April.",
+        "categories": [
+          "skill",
+          "design",
+          "plugin"
+        ],
+        "install": "git clone https://github.com/Lum1104/Understand-Anything",
+        "month": "2026-03",
+        "rank_in_month": 5,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank_in_month": 5,
+        "slug": "masko-code",
+        "name": "Masko Code",
+        "primary_url": "https://github.com/RousselPaul/masko-code",
+        "secondary_urls": [],
+        "hook": "Desktop mascot companion that watches your Claude Code agents and shows speech bubbles for permission requests — ships with Clippy and community mascots, or generate custom ones at masko.ai. Free, MIT-licensed, 100% local.",
+        "categories": [
+          "design",
+          "viral"
+        ],
+        "install": "Download DMG from masko.ai",
+        "month": "2026-04",
+        "stars_approx": null,
+        "evidence": null,
+        "first_seen_month": "2026-04"
+      },
+      {
+        "slug": "anthropic-oauth-ban",
+        "name": "Anthropic OAuth third-party ban",
+        "primary_url": "https://www.theregister.com/2026/02/20/anthropic_clarifies_ban_third_party_claude_access/",
+        "secondary_urls": [
+          "https://code.claude.com/docs/en/legal-and-compliance"
+        ],
+        "hook": "Anthropic clarifies that Free/Pro/Max OAuth tokens cannot be used in third-party tools (incl. its own Agent SDK) — ending the OpenClaw-era subscription resale loophole.",
+        "categories": [
+          "design"
+        ],
+        "install": "n/a",
+        "added_date": "2026-02-19",
+        "month": "2026-02",
+        "rank_in_month": 16,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "slug": "claudes-c-compiler",
+        "name": "The Claude C Compiler",
+        "primary_url": "https://simonwillison.net/2026/Feb/22/ccc/",
+        "secondary_urls": [
+          "https://github.com/anthropics/claudes-c-compiler"
+        ],
+        "hook": "Nicholas Carlini's parallel-Claude experiment: Opus 4.6 + agent teams produced a dependency-free Rust C compiler that boots Linux on x86/ARM/RISC-V.",
+        "categories": [
+          "design"
+        ],
+        "install": "git clone https://github.com/anthropics/claudes-c-compiler",
+        "added_date": "2026-02-22",
+        "month": "2026-02",
+        "rank_in_month": 17,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "rank": 25,
+        "slug": "naksha-studio",
+        "name": "naksha-studio",
+        "primary_url": "https://github.com/Adityaraj0421/naksha-studio",
+        "hook": "Virtual design team plugin — 26 roles, 60 commands, 13.8k lines of curated design knowledge for Claude Code.",
+        "categories": [
+          "design"
+        ],
+        "install": "/plugin install Adityaraj0421/naksha-studio",
+        "month": "2026-03",
+        "rank_in_month": 25,
+        "first_seen_month": "2026-03"
+      }
+    ],
+    "cost": [
+      {
+        "rank_in_month": 5,
+        "slug": "rtk",
+        "name": "rtk",
+        "primary_url": "https://github.com/rtk-ai/rtk",
+        "hook": "Rust CLI proxy that strips noise from dev-command output before it hits the model — claims 60-90% token reduction. ~30k stars from Jan 22.",
+        "categories": [
+          "cost"
+        ],
+        "install": "brew install rtk",
+        "month": "2026-01",
+        "stars_approx": 30424,
+        "evidence": "Created 2026-01-22; 30,424 stars per api.github.com.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "rank_in_month": 7,
+        "slug": "caveman",
+        "name": "caveman",
+        "primary_url": "https://github.com/JuliusBrussee/caveman",
+        "secondary_urls": [],
+        "hook": "\"Why use many token when few token do trick\" — the viral meme-skill (39.7k stars) that cuts ~65–75% output tokens and ~46% input tokens while preserving technical accuracy. Arjan Brussee's LinkedIn post spawned 30+ comments; launched on Product Hunt this week.",
+        "categories": [
+          "cost",
+          "viral",
+          "skill"
+        ],
+        "install": "claude plugin marketplace add JuliusBrussee/caveman && claude plugin install caveman@caveman",
+        "month": "2026-04",
+        "stars_approx": null,
+        "evidence": null,
+        "first_seen_month": "2026-04"
+      },
+      {
+        "rank_in_month": 8,
+        "slug": "code-review-graph",
+        "name": "code-review-graph",
+        "primary_url": "https://github.com/tirth8205/code-review-graph",
+        "secondary_urls": [],
+        "hook": "Trending since February 2026. MCP server (11.7k stars, v2.3.2 Apr 14) that builds an AST knowledge graph with tree-sitter + SQLite, delivering 6.8× fewer tokens on code reviews and up to 49× on daily tasks. Plugs straight into Claude Code's MCP config with a single pip install.",
+        "categories": [
+          "mcp",
+          "cost"
+        ],
+        "install": "pip install code-review-graph && code-review-graph install && code-review-graph build",
+        "month": "2026-04",
+        "stars_approx": null,
+        "evidence": null,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "rank_in_month": 9,
+        "slug": "claude-mem",
+        "name": "claude-mem",
+        "primary_url": "https://github.com/thedotmack/claude-mem",
+        "secondary_urls": [],
+        "hook": "Plugin (46k+ stars, gained 3k in a single day) that auto-captures sessions, compresses them with the Claude Agent SDK, and injects relevant context at the start of the next session. Uses SQLite + Chroma vector search; cross-platform.",
+        "categories": [
+          "viral",
+          "plugin",
+          "cost"
+        ],
+        "install": "npx claude-mem install",
+        "month": "2026-04",
+        "stars_approx": null,
+        "evidence": null,
+        "first_seen_month": "2026-04"
+      },
+      {
+        "slug": "opus-fast-mode",
+        "name": "Fast mode for Claude Opus 4.6",
+        "primary_url": "https://simonwillison.net/2026/Feb/7/claude-fast-mode/",
+        "secondary_urls": [
+          "https://github.blog/changelog/2026-02-07-claude-opus-4-6-fast-is-now-in-public-preview-for-github-copilot/"
+        ],
+        "hook": "Same Opus 4.6 weights, ~2.5× faster output tokens/sec, priced 6× standard — toggle with /fast in Claude Code v2.1.36+.",
+        "categories": [
+          "cost"
+        ],
+        "install": "Inside Claude Code: /fast (then Tab to toggle)",
+        "added_date": "2026-02-07",
+        "month": "2026-02",
+        "rank_in_month": 11,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "slug": "claude-for-open-source",
+        "name": "Claude for Open Source program",
+        "primary_url": "https://simonwillison.net/2026/Feb/27/claude-max-oss-six-months/",
+        "secondary_urls": [
+          "https://claude.com/contact-sales/claude-for-oss"
+        ],
+        "hook": "Six months of free Claude Max 20x ($1,200 value) for up to 10,000 OSS maintainers of repos with 5K+ stars or 1M+ monthly NPM downloads.",
+        "categories": [
+          "cost",
+          "anthropic"
+        ],
+        "install": "Apply at claude.com/contact-sales/claude-for-oss",
+        "added_date": "2026-02-26",
+        "month": "2026-02",
+        "rank_in_month": 12,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "slug": "claude-devtools",
+        "name": "claude-devtools",
+        "primary_url": "https://github.com/matt1398/claude-devtools",
+        "secondary_urls": [],
+        "hook": "Visual UI for Claude Code session logs — turn-based context, compaction visualization, subagent execution trees, token-usage observability.",
+        "categories": [
+          "cost"
+        ],
+        "install": "git clone https://github.com/matt1398/claude-devtools",
+        "added_date": "2026-02-15",
+        "month": "2026-02",
+        "rank_in_month": 13,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "rank": 13,
+        "slug": "claude-token-efficient",
+        "name": "claude-token-efficient",
+        "primary_url": "https://github.com/drona23/claude-token-efficient",
+        "hook": "A single drop-in CLAUDE.md that slashes verbosity on heavy workflows. 4.5k stars in three weeks rode the late-March pricing-pain wave.",
+        "categories": [
+          "cost"
+        ],
+        "install": "cp CLAUDE.md ~/your-project/",
+        "month": "2026-03",
+        "rank_in_month": 13,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank": 19,
+        "slug": "cc-gateway",
+        "name": "cc-gateway",
+        "primary_url": "https://github.com/motiful/cc-gateway",
+        "hook": "Privacy-preserving reverse-proxy gateway for Claude Code — fingerprint normalization, request rewriting, prompt-leak audit. 2.7k stars.",
+        "categories": [
+          "cost"
+        ],
+        "install": "docker run motiful/cc-gateway",
+        "month": "2026-03",
+        "rank_in_month": 19,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank_in_month": 21,
+        "slug": "9router",
+        "name": "9router",
+        "primary_url": "https://github.com/decolua/9router",
+        "hook": "Free router connecting Claude Code, Cursor and Cline to 40+ providers and 100+ models, auto-switching tiers when quotas die. ~2.7k stars.",
+        "categories": [
+          "cost"
+        ],
+        "install": "npm install -g 9router",
+        "month": "2026-01",
+        "stars_approx": 2729,
+        "evidence": "Created Jan 2026; 2,729 stars per GitHub search.",
+        "first_seen_month": "2026-01"
+      }
+    ],
+    "viral": [
+      {
+        "rank": 1,
+        "slug": "gstack",
+        "name": "gstack",
+        "primary_url": "https://github.com/garrytan/gstack",
+        "hook": "Garry Tan's exact Claude Code setup — 23 opinionated tools wired up as CEO/Designer/EM/QA personas. Hit ~78k stars from a March 11 creation, the breakout viral template of the month.",
+        "categories": [
+          "viral"
+        ],
+        "install": "git clone https://github.com/garrytan/gstack",
+        "month": "2026-03",
+        "rank_in_month": 1,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank_in_month": 2,
+        "slug": "everything-claude-code",
+        "name": "everything-claude-code",
+        "primary_url": "https://github.com/affaan-m/everything-claude-code",
+        "hook": "Trending since January 2026. Full agent harness with 48 agents, 183 skills, hooks, rules and MCP configs. Hit ~162k stars three months after a Jan 18 creation.",
+        "categories": [
+          "plugin",
+          "skill",
+          "viral"
+        ],
+        "install": "/plugin marketplace add https://github.com/affaan-m/everything-claude-code",
+        "month": "2026-01",
+        "stars_approx": 161633,
+        "evidence": "Created 2026-01-18; 161,633 stars / 25,120 forks per api.github.com 2026-04-20.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "rank": 2,
+        "slug": "claude-code-best",
+        "name": "claude-code-best/claude-code",
+        "primary_url": "https://github.com/claude-code-best/claude-code",
+        "hook": "Runnable, TS-typed, bun-installable build of Claude Code that emerged hours after the March 31 source leak. ~16.4k stars in <3 weeks.",
+        "categories": [
+          "viral"
+        ],
+        "install": "bun install && bun run dev",
+        "month": "2026-03",
+        "rank_in_month": 2,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank": 4,
+        "slug": "ai-website-cloner-template",
+        "name": "ai-website-cloner-template",
+        "primary_url": "https://github.com/JCodesMore/ai-website-cloner-template",
+        "hook": "Clone any website with a single Claude Code command — template hit 12k stars in <3 weeks on the back of a viral demo thread.",
+        "categories": [
+          "viral"
+        ],
+        "install": "npx ai-website-cloner",
+        "month": "2026-03",
+        "rank_in_month": 4,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank_in_month": 7,
+        "slug": "nanoclaw",
+        "name": "nanoclaw",
+        "primary_url": "https://github.com/qwibitai/nanoclaw",
+        "hook": "Container-native alternative to OpenClaw — messaging integrations, memory, scheduled jobs, runs on Anthropic's Agents SDK. Exploded to ~28k stars from Jan 31.",
+        "categories": [
+          "viral"
+        ],
+        "install": "gh repo fork qwibitai/nanoclaw --clone && cd nanoclaw && claude",
+        "month": "2026-01",
+        "stars_approx": 27560,
+        "evidence": "Created 2026-01-31; 27,560 stars / 12,424 forks per api.github.com.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "rank": 7,
+        "slug": "free-code",
+        "name": "paoloanzn/free-code",
+        "primary_url": "https://github.com/paoloanzn/free-code",
+        "hook": "Post-leak 'free build of Claude Code' with telemetry and guardrails stripped — controversial but pulled ~8k stars within days.",
+        "categories": [
+          "viral"
+        ],
+        "install": "bun install",
+        "month": "2026-03",
+        "rank_in_month": 7,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank": 8,
+        "slug": "cc-haha",
+        "name": "NanmiCoder/cc-haha",
+        "primary_url": "https://github.com/NanmiCoder/cc-haha",
+        "hook": "Cross-platform desktop Claude Code fork that bolts on Computer Use. Spawned in the post-leak rush, 7.2k stars in <3 weeks.",
+        "categories": [
+          "viral"
+        ],
+        "install": "git clone https://github.com/NanmiCoder/cc-haha",
+        "month": "2026-03",
+        "rank_in_month": 8,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank": 11,
+        "slug": "claude-code-sourcemap",
+        "name": "claude-code-sourcemap",
+        "primary_url": "https://github.com/ChinaSiro/claude-code-sourcemap",
+        "hook": "Annotated sourcemap of the leaked Claude Code internals — 8.95k stars, 14.5k forks in <3 weeks. Anchor of the post-leak research cluster.",
+        "categories": [
+          "viral"
+        ],
+        "install": "browse repo",
+        "month": "2026-03",
+        "rank_in_month": 11,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank_in_month": 11,
+        "slug": "get-shit-done",
+        "name": "get-shit-done",
+        "primary_url": "https://github.com/gsd-build/get-shit-done",
+        "secondary_urls": [],
+        "hook": "Spec-driven meta-prompting system for Claude Code (55.2k stars, updated April 19) with five slash commands: /gsd-new-project, /gsd-plan-phase, /gsd-execute-phase, /gsd-spike, and /gsd-sketch. Enforces a structured plan-then-build loop that prevents runaway agent sessions.",
+        "categories": [
+          "viral",
+          "skill"
+        ],
+        "install": "npx get-shit-done-cc@latest",
+        "month": "2026-04",
+        "stars_approx": null,
+        "evidence": null,
+        "first_seen_month": "2026-04"
+      },
+      {
+        "rank_in_month": 12,
+        "slug": "cmux",
+        "name": "cmux",
+        "primary_url": "https://github.com/manaflow-ai/cmux",
+        "hook": "Ghostty-based macOS terminal with vertical tabs and notifications purpose-built for AI coding agents. ~15k stars since Jan 28.",
+        "categories": [
+          "viral"
+        ],
+        "install": "brew tap manaflow-ai/cmux && brew install --cask cmux",
+        "month": "2026-01",
+        "stars_approx": 14847,
+        "evidence": "Created 2026-01-28; 14,847 stars per api.github.com.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "rank_in_month": 12,
+        "slug": "claude-squad",
+        "name": "claude-squad",
+        "primary_url": "https://github.com/smtg-ai/claude-squad",
+        "secondary_urls": [],
+        "hook": "Terminal app (7.1k stars) for managing multiple Claude Code, Codex, and Gemini agents in parallel — each in its own isolated git workspace with a tmux pane. Supports any agent that speaks the Claude Code protocol.",
+        "categories": [
+          "viral",
+          "plugin"
+        ],
+        "install": "curl -fsSL https://raw.githubusercontent.com/smtg-ai/claude-squad/main/install.sh | bash",
+        "month": "2026-04",
+        "stars_approx": null,
+        "evidence": null,
+        "first_seen_month": "2026-04"
+      },
+      {
+        "slug": "claude-code-remote-control",
+        "name": "Claude Code Remote Control",
+        "primary_url": "https://simonwillison.net/2026/Feb/25/claude-code-remote-control/",
+        "secondary_urls": [
+          "https://venturebeat.com/orchestration/anthropic-just-released-a-mobile-version-of-claude-code-called-remote"
+        ],
+        "hook": "Run a local Claude Code session, then drive it from claude.ai/code, iOS, or Android — execution stays on your machine, prompts flow from anywhere.",
+        "categories": [
+          "viral"
+        ],
+        "install": "claude --remote (Max-tier preview)",
+        "added_date": "2026-02-25",
+        "month": "2026-02",
+        "rank_in_month": 14,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "slug": "pragmatic-engineer-survey",
+        "name": "Pragmatic Engineer Survey: Claude Code most-loved",
+        "primary_url": "https://newsletter.pragmaticengineer.com/p/ai-tooling-2026",
+        "secondary_urls": [
+          "https://aiproductivity.ai/news/pragmatic-engineer-survey-ai-tooling-2026/"
+        ],
+        "hook": "Survey of ~1,000 devs (Jan 27–Feb 17) crowns Claude Code the #1 most-loved tool at 46%, vs Cursor 19% and Copilot 9%; 95% of devs use AI weekly.",
+        "categories": [
+          "viral"
+        ],
+        "install": "n/a",
+        "added_date": "2026-02-17",
+        "month": "2026-02",
+        "rank_in_month": 15,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "rank": 17,
+        "slug": "claude-code-book",
+        "name": "claude-code-book",
+        "primary_url": "https://github.com/lintsinghua/claude-code-book",
+        "hook": "420k-word Chinese book reverse-engineering Claude Code as an Agent Harness — landed at the post-leak peak with 2.8k stars.",
+        "categories": [
+          "viral"
+        ],
+        "install": "browse repo",
+        "month": "2026-03",
+        "rank_in_month": 17,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank_in_month": 19,
+        "slug": "ralphy",
+        "name": "ralphy",
+        "primary_url": "https://github.com/michaelshimeles/ralphy",
+        "hook": "Autonomous bash loop that runs Claude Code, Codex, OpenCode, Cursor, Qwen and Droid against a PRD until it's done. ~2.8k stars.",
+        "categories": [
+          "viral"
+        ],
+        "install": "npm install -g ralphy-cli",
+        "month": "2026-01",
+        "stars_approx": 2778,
+        "evidence": "Created 2026-01-15; 2,778 stars per api.github.com.",
+        "first_seen_month": "2026-01"
+      }
+    ],
+    "general": [
+      {
+        "rank_in_month": 1,
+        "slug": "claude-cowork",
+        "name": "Claude Cowork",
+        "primary_url": "https://simonwillison.net/2026/Jan/12/claude-cowork/",
+        "secondary_urls": [
+          "https://www.anthropic.com/webinars/future-of-ai-at-work-introducing-cowork"
+        ],
+        "hook": "Anthropic's Jan 12 research preview — Claude Code for knowledge workers. Direct permission-based access to local files from the macOS app.",
+        "categories": [
+          "anthropic"
+        ],
+        "install": "# macOS desktop app — enable from claude.ai settings",
+        "month": "2026-01",
+        "stars_approx": null,
+        "evidence": "Launched Jan 12 to Max, widened to Pro by Jan 16. Mostly built by Claude Code.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "slug": "claude-opus-4-6",
+        "name": "Claude Opus 4.6",
+        "primary_url": "https://www.anthropic.com/news/claude-opus-4-6",
+        "secondary_urls": [
+          "https://techcrunch.com/2026/02/05/anthropic-releases-opus-4-6-with-new-agent-teams/"
+        ],
+        "hook": "First Opus-class model with a 1M-token context window plus 'agent teams' that let multiple Claude Code agents work in parallel — released Feb 5.",
+        "categories": [
+          "anthropic"
+        ],
+        "install": "claude --model claude-opus-4-6",
+        "added_date": "2026-02-05",
+        "month": "2026-02",
+        "rank_in_month": 1,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "slug": "claude-sonnet-4-6",
+        "name": "Claude Sonnet 4.6",
+        "primary_url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+        "secondary_urls": [
+          "https://www.cnbc.com/2026/02/17/anthropic-ai-claude-sonnet-4-6-default-free-pro.html"
+        ],
+        "hook": "New default Sonnet at $3/$15 per MTok hits 79.6% on SWE-bench Verified with 1M-token context — released Feb 17.",
+        "categories": [
+          "anthropic"
+        ],
+        "install": "claude --model claude-sonnet-4-6",
+        "added_date": "2026-02-17",
+        "month": "2026-02",
+        "rank_in_month": 2,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "rank_in_month": 2,
+        "slug": "claude-opus-4-7",
+        "name": "Claude Opus 4.7",
+        "primary_url": "https://anthropic.com/news/claude-opus-4-7",
+        "secondary_urls": [],
+        "hook": "Released April 16: 87.6% SWE-bench in new xhigh effort mode, 98.5% visual acuity, 3.75MP images (3× higher than Opus 4.6), and /ultrareview for parallel multi-agent cloud code review. Price unchanged at $5/M input, $25/M output; Auto mode now available to Max subscribers.",
+        "categories": [
+          "anthropic"
+        ],
+        "month": "2026-04",
+        "stars_approx": null,
+        "evidence": null,
+        "first_seen_month": "2026-04"
+      },
+      {
+        "rank_in_month": 3,
+        "slug": "awesome-openclaw-skills",
+        "name": "awesome-openclaw-skills",
+        "primary_url": "https://github.com/VoltAgent/awesome-openclaw-skills",
+        "hook": "VoltAgent's curated registry — 5,400+ OpenClaw skills filtered from 13,729 candidates. Jan 25 launch pulled ~47k stars.",
+        "categories": [
+          "marketplace",
+          "skill"
+        ],
+        "install": "clawhub install <skill-slug>",
+        "month": "2026-01",
+        "stars_approx": 46684,
+        "evidence": "Created 2026-01-25; 46,684 stars per api.github.com.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "slug": "xcode-claude-agent-sdk",
+        "name": "Apple Xcode 26.3 + Claude Agent SDK",
+        "primary_url": "https://www.anthropic.com/news/apple-xcode-claude-agent-sdk",
+        "secondary_urls": [
+          "https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/"
+        ],
+        "hook": "Xcode ships native Claude Agent SDK integration — subagents, background tasks, plugins, and Preview-based visual verification for iOS/macOS/visionOS.",
+        "categories": [
+          "anthropic",
+          "skill"
+        ],
+        "install": "Update Xcode to 26.3 → Settings → Accounts → Claude",
+        "added_date": "2026-02-03",
+        "month": "2026-02",
+        "rank_in_month": 3,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "rank": 3,
+        "slug": "openai-codex-plugin-cc",
+        "name": "OpenAI codex-plugin-cc",
+        "primary_url": "https://github.com/openai/codex-plugin-cc",
+        "hook": "OpenAI ships an official Claude Code plugin — call Codex from inside CC for review or delegation. Cross-vendor moment of the month, 15.2k stars in ~3 weeks.",
+        "categories": [
+          "anthropic"
+        ],
+        "install": "/plugin install openai/codex-plugin-cc",
+        "month": "2026-03",
+        "rank_in_month": 3,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank_in_month": 3,
+        "slug": "claude-code-v2-1-111-114",
+        "name": "Claude Code v2.1.111–2.1.114",
+        "primary_url": "https://code.claude.com/docs/en/changelog",
+        "secondary_urls": [],
+        "hook": "Four releases in four days (Apr 15–18): CLI now spawns a native binary instead of bundled JS, sandbox network domain blocking, OSC 8 clickable URLs in terminal, /tui fullscreen mode, push notifications, /less-permission-prompts skill, and plan files auto-named after the prompt.",
+        "categories": [
+          "anthropic"
+        ],
+        "month": "2026-04",
+        "stars_approx": null,
+        "evidence": null,
+        "first_seen_month": "2026-04"
+      },
+      {
+        "rank_in_month": 4,
+        "slug": "antigravity-awesome-skills",
+        "name": "antigravity-awesome-skills",
+        "primary_url": "https://github.com/sickn33/antigravity-awesome-skills",
+        "hook": "Installable library of 1,400+ agentic skills covering Claude Code, Cursor, Codex CLI, Gemini CLI and Antigravity. ~34k stars from Jan 14.",
+        "categories": [
+          "marketplace",
+          "skill"
+        ],
+        "install": "npx antigravity-awesome-skills",
+        "month": "2026-01",
+        "stars_approx": 34073,
+        "evidence": "Created 2026-01-14; 34,073 stars per api.github.com.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "slug": "claude-cowork-windows",
+        "name": "Claude Cowork on Windows",
+        "primary_url": "https://venturebeat.com/technology/anthropics-claude-cowork-finally-lands-on-windows-and-it-wants-to-automate",
+        "secondary_urls": [
+          "https://claude.com/product/claude-cowork"
+        ],
+        "hook": "Cowork desktop reaches Windows with full feature parity — file access, MCP connectors, plugins — opening Anthropic's autonomous agent to ~70% of desktops.",
+        "categories": [
+          "anthropic"
+        ],
+        "install": "Download Claude Desktop for Windows → switch to Cowork mode",
+        "added_date": "2026-02-10",
+        "month": "2026-02",
+        "rank_in_month": 5,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "rank_in_month": 6,
+        "slug": "oh-my-claudecode",
+        "name": "oh-my-claudecode",
+        "primary_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+        "hook": "Teams-first multi-agent orchestration layer for Claude Code. ~30k stars since its Jan 9 release.",
+        "categories": [
+          "plugin"
+        ],
+        "install": "/plugin marketplace add https://github.com/Yeachan-Heo/oh-my-claudecode",
+        "month": "2026-01",
+        "stars_approx": 30168,
+        "evidence": "Created 2026-01-09; 30,168 stars per api.github.com.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "slug": "anthropic-acquires-vercept",
+        "name": "Anthropic acquires Vercept",
+        "primary_url": "https://www.anthropic.com/news/acquires-vercept",
+        "secondary_urls": [
+          "https://techcrunch.com/2026/02/25/anthropic-acquires-vercept-ai-startup-agents-computer-use-founders-investors/"
+        ],
+        "hook": "Seattle computer-use startup behind Vy joins Anthropic to advance Claude's desktop automation; Vercept product sunset March 25.",
+        "categories": [
+          "anthropic"
+        ],
+        "install": "n/a",
+        "added_date": "2026-02-25",
+        "month": "2026-02",
+        "rank_in_month": 6,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "rank": 6,
+        "slug": "slavingia-skills",
+        "name": "slavingia/skills",
+        "primary_url": "https://github.com/slavingia/skills",
+        "hook": "Sahil Lavingia's 'Minimalist Entrepreneur' skill pack — opinionated solo-founder workflows. 8k+ stars, broadly forked as a personal-skills starter.",
+        "categories": [
+          "skill"
+        ],
+        "install": "git clone https://github.com/slavingia/skills ~/.claude/skills/slavingia",
+        "month": "2026-03",
+        "rank_in_month": 6,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "slug": "claude-powerpoint-pro",
+        "name": "Claude in PowerPoint expands to Pro",
+        "primary_url": "https://gigazine.net/gsc_news/en/20260220-claude-in-powerpoint/",
+        "secondary_urls": [
+          "https://claude.com/claude-for-powerpoint"
+        ],
+        "hook": "Template-aware slide co-author lands on the $20/mo Pro tier — read existing decks, edit with brand-respecting precision, generate full structures from a prompt.",
+        "categories": [
+          "anthropic"
+        ],
+        "install": "PowerPoint → Get Add-ins → search 'Claude'",
+        "added_date": "2026-02-20",
+        "month": "2026-02",
+        "rank_in_month": 7,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "rank_in_month": 8,
+        "slug": "last30days-skill",
+        "name": "last30days-skill",
+        "primary_url": "https://github.com/mvanhorn/last30days-skill",
+        "hook": "Research skill that pulls 30-day signal from Reddit, X, YouTube, HN, Polymarket and the web into a grounded summary. ~23k stars from Jan 23.",
+        "categories": [
+          "skill"
+        ],
+        "install": "/plugin marketplace add mvanhorn/last30days-skill",
+        "month": "2026-01",
+        "stars_approx": 22885,
+        "evidence": "Created 2026-01-23; 22,885 stars per api.github.com.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "slug": "anthropic-infosys",
+        "name": "Anthropic + Infosys partnership",
+        "primary_url": "https://www.anthropic.com/news/anthropic-infosys",
+        "secondary_urls": [],
+        "hook": "Joint Center of Excellence to build Claude-powered agents for telecom, financial services, manufacturing, and software dev in regulated industries.",
+        "categories": [
+          "anthropic"
+        ],
+        "install": "n/a",
+        "added_date": "2026-02-17",
+        "month": "2026-02",
+        "rank_in_month": 8,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "rank_in_month": 9,
+        "slug": "claude-hud",
+        "name": "claude-hud",
+        "primary_url": "https://github.com/jarrodwatts/claude-hud",
+        "hook": "Statusline plugin showing context usage, active tools, running agents and todo progress. ~20k stars since Jan 2.",
+        "categories": [
+          "plugin"
+        ],
+        "install": "/plugin marketplace add jarrodwatts/claude-hud",
+        "month": "2026-01",
+        "stars_approx": 20062,
+        "evidence": "Created 2026-01-02; 20,062 stars per api.github.com.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "slug": "cowork-enterprise-plugins",
+        "name": "Cowork enterprise plugin marketplaces",
+        "primary_url": "https://techcrunch.com/2026/02/24/anthropic-launches-new-push-for-enterprise-agents-with-plugins-for-finance-engineering-and-design/",
+        "secondary_urls": [
+          "https://claude.com/plugins"
+        ],
+        "hook": "10 department plugin packs + 12 new MCP connectors (Google Workspace, DocuSign, FactSet, Harvey…) and a 'Customize' admin UI for private internal marketplaces.",
+        "categories": [
+          "marketplace",
+          "plugin"
+        ],
+        "install": "Cowork → /plugin → Discover → Customize (Team/Enterprise)",
+        "added_date": "2026-02-24",
+        "month": "2026-02",
+        "rank_in_month": 9,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "rank": 9,
+        "slug": "aris",
+        "name": "ARIS — Auto-claude-code-research-in-sleep",
+        "primary_url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+        "hook": "Markdown-only autonomous ML research skill — overnight idea/experiment/eval loops. Kicked off the March 'autoresearch' wave, 7k+ stars.",
+        "categories": [
+          "skill"
+        ],
+        "install": "git clone into ~/.claude/skills",
+        "month": "2026-03",
+        "rank_in_month": 9,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank_in_month": 10,
+        "slug": "planning-with-files",
+        "name": "planning-with-files",
+        "primary_url": "https://github.com/OthmanAdi/planning-with-files",
+        "hook": "Skill that implements Manus-style persistent markdown planning — the workflow pattern behind the $2B acquisition. ~19k stars from Jan 3.",
+        "categories": [
+          "skill"
+        ],
+        "install": "npx skills add OthmanAdi/planning-with-files --skill planning-with-files -g",
+        "month": "2026-01",
+        "stars_approx": 19125,
+        "evidence": "Created 2026-01-03; 19,125 stars per api.github.com.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "slug": "financial-services-plugins",
+        "name": "anthropics/financial-services-plugins",
+        "primary_url": "https://github.com/anthropics/financial-services-plugins",
+        "secondary_urls": [],
+        "hook": "Anthropic's first official vertical plugin pack — ~7.7K stars, MCP-backed integrations for finserv workflows like equity research and compliance review.",
+        "categories": [
+          "marketplace",
+          "anthropic"
+        ],
+        "install": "/plugin marketplace add anthropics/financial-services-plugins",
+        "added_date": "2026-02-24",
+        "month": "2026-02",
+        "rank_in_month": 10,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "rank": 10,
+        "slug": "agency-agents-zh",
+        "name": "agency-agents-zh",
+        "primary_url": "https://github.com/jnMetaCode/agency-agents-zh",
+        "hook": "211 plug-and-play AI expert personas across 18 departments — the Chinese-localized agency pack everyone forked in March.",
+        "categories": [
+          "skill"
+        ],
+        "install": "git clone https://github.com/jnMetaCode/agency-agents-zh",
+        "month": "2026-03",
+        "rank_in_month": 10,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank_in_month": 11,
+        "slug": "baoyu-skills",
+        "name": "baoyu-skills",
+        "primary_url": "https://github.com/JimLiu/baoyu-skills",
+        "hook": "Jim Liu's content + image-gen skill bundle — infographics, slides, social publishing, nine image providers. ~15k stars from Jan 13.",
+        "categories": [
+          "skill"
+        ],
+        "install": "npx skills add jimliu/baoyu-skills",
+        "month": "2026-01",
+        "stars_approx": 15520,
+        "evidence": "Created 2026-01-13; 15,520 stars per api.github.com.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "rank": 12,
+        "slug": "web-access",
+        "name": "web-access",
+        "primary_url": "https://github.com/eze-is/web-access",
+        "hook": "Three-tier web/CDP/parallel skill that gives Claude Code robust internet access without third-party MCPs. 5.3k+ stars.",
+        "categories": [
+          "skill"
+        ],
+        "install": "git clone into ~/.claude/skills",
+        "month": "2026-03",
+        "rank_in_month": 12,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank_in_month": 13,
+        "slug": "hive",
+        "name": "hive",
+        "primary_url": "https://github.com/aden-hive/hive",
+        "hook": "Zero-setup harness that auto-generates multi-agent topologies for long-running workflows. ~10k stars since Jan 12.",
+        "categories": [
+          "plugin"
+        ],
+        "install": "git clone https://github.com/aden-hive/hive.git && cd hive && ./quickstart.sh",
+        "month": "2026-01",
+        "stars_approx": 10102,
+        "evidence": "Created 2026-01-12; 10,102 stars per api.github.com.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "rank_in_month": 13,
+        "slug": "claude-code-plugins-plus-skills",
+        "name": "claude-code-plugins-plus-skills",
+        "primary_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+        "secondary_urls": [
+          "https://tonsofskills.com"
+        ],
+        "hook": "Open-source marketplace index with 423 plugins, 2,849 skills, and 177 agents (2k+ stars). The ccpi CLI lets you search and install anything from the index with a single command.",
+        "categories": [
+          "marketplace"
+        ],
+        "install": "pnpm add -g @intentsolutionsio/ccpi && ccpi install [plugin-name]",
+        "month": "2026-04",
+        "stars_approx": null,
+        "evidence": null,
+        "first_seen_month": "2026-04"
+      },
+      {
+        "rank_in_month": 14,
+        "slug": "trailofbits-skills",
+        "name": "trailofbits/skills",
+        "primary_url": "https://github.com/trailofbits/skills",
+        "hook": "Trail of Bits ships 40+ security skills — smart-contract scanners, YARA authoring, Android APK checks, differential code audits. ~4.7k stars.",
+        "categories": [
+          "skill"
+        ],
+        "install": "/plugin marketplace add trailofbits/skills",
+        "month": "2026-01",
+        "stars_approx": 4688,
+        "evidence": "Created 2026-01-14; 4,688 stars per api.github.com.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "rank": 14,
+        "slug": "codebase-to-course",
+        "name": "codebase-to-course",
+        "primary_url": "https://github.com/zarazhangrui/codebase-to-course",
+        "hook": "Skill that converts any codebase into a self-paced interactive HTML course — ~3.9k stars from a single tweet.",
+        "categories": [
+          "skill"
+        ],
+        "install": "git clone into ~/.claude/skills",
+        "month": "2026-03",
+        "rank_in_month": 14,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank_in_month": 14,
+        "slug": "awesome-claude-plugins",
+        "name": "awesome-claude-plugins (ComposioHQ)",
+        "primary_url": "https://github.com/ComposioHQ/awesome-claude-plugins",
+        "secondary_urls": [],
+        "hook": "Curated list of 40+ Claude Code plugins (1.4k stars) led by connect-apps — a flagship plugin with 500+ integration connectors — plus frontend-design, CCHub, and other high-signal picks.",
+        "categories": [
+          "marketplace",
+          "plugin"
+        ],
+        "install": "See README",
+        "month": "2026-04",
+        "stars_approx": null,
+        "evidence": null,
+        "first_seen_month": "2026-04"
+      },
+      {
+        "rank_in_month": 15,
+        "slug": "antfu-skills",
+        "name": "antfu/skills",
+        "primary_url": "https://github.com/antfu/skills",
+        "hook": "Anthony Fu's curated skills — Vue, Nuxt, Vite, Vitest, Pinia, UnoCSS, pnpm — hand-tuned plus generated from upstream docs. ~4.6k stars.",
+        "categories": [
+          "skill"
+        ],
+        "install": "pnpx skills add antfu/skills --skill='*'",
+        "month": "2026-01",
+        "stars_approx": 4645,
+        "evidence": "Created 2026-01-28; 4,645 stars per api.github.com.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "rank": 15,
+        "slug": "autoresearch",
+        "name": "autoresearch",
+        "primary_url": "https://github.com/uditgoenka/autoresearch",
+        "hook": "Karpathy-style autonomous goal-directed iteration skill — second hit in the March autoresearch surge with ~3.9k stars.",
+        "categories": [
+          "skill"
+        ],
+        "install": "git clone into ~/.claude/skills",
+        "month": "2026-03",
+        "rank_in_month": 15,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank_in_month": 15,
+        "slug": "levnikolaevich-claude-code-skills",
+        "name": "levnikolaevich/claude-code-skills",
+        "primary_url": "https://github.com/levnikolaevich/claude-code-skills",
+        "secondary_urls": [],
+        "hook": "Full dev lifecycle plugin suite (413 stars): 7 core plugins covering planning through deployment, plus three MCP servers (hex-line, hex-graph, hex-ssh) for graph visualization and remote SSH sessions inside Claude Code.",
+        "categories": [
+          "plugin",
+          "mcp"
+        ],
+        "install": "/plugin marketplace add levnikolaevich/claude-code-skills",
+        "month": "2026-04",
+        "stars_approx": null,
+        "evidence": null,
+        "first_seen_month": "2026-04"
+      },
+      {
+        "rank_in_month": 16,
+        "slug": "open-claude-cowork",
+        "name": "open-claude-cowork",
+        "primary_url": "https://github.com/ComposioHQ/open-claude-cowork",
+        "hook": "Composio's open-source take on Claude Cowork with 500+ SaaS integrations. Shipped Jan 13, day after Anthropic's preview.",
+        "categories": [
+          "plugin",
+          "marketplace"
+        ],
+        "install": "git clone https://github.com/ComposioHQ/open-claude-cowork.git && cd open-claude-cowork && ./setup.sh",
+        "month": "2026-01",
+        "stars_approx": 3882,
+        "evidence": "Created 2026-01-13; 3,882 stars per api.github.com.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "rank": 16,
+        "slug": "waza",
+        "name": "Waza",
+        "primary_url": "https://github.com/tw93/Waza",
+        "hook": "Engineering habits packaged as runnable Claude skills — code review, debugging, refactor playbooks. 3.6k stars.",
+        "categories": [
+          "skill"
+        ],
+        "install": "git clone into ~/.claude/skills",
+        "month": "2026-03",
+        "rank_in_month": 16,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank_in_month": 17,
+        "slug": "claude-code-ultimate-guide",
+        "name": "claude-code-ultimate-guide",
+        "primary_url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+        "hook": "24k lines of docs, 228 templates, 271 quiz questions and a built-in MCP server you can point Claude Code at. ~3.7k stars from Jan 9.",
+        "categories": [
+          "skill",
+          "mcp"
+        ],
+        "install": "npx -y claude-code-ultimate-guide-mcp",
+        "month": "2026-01",
+        "stars_approx": 3729,
+        "evidence": "Created 2026-01-09; 3,729 stars per api.github.com.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "rank_in_month": 18,
+        "slug": "claude-scholar",
+        "name": "claude-scholar",
+        "primary_url": "https://github.com/Galaxy-Dawn/claude-scholar",
+        "hook": "Research assistant covering ideation → literature → experiments → writing, with Zotero and Obsidian integrations. ~3.4k stars.",
+        "categories": [
+          "skill"
+        ],
+        "install": "bash <(curl -fsSL https://raw.githubusercontent.com/Galaxy-Dawn/claude-scholar/main/scripts/setup.sh)",
+        "month": "2026-01",
+        "stars_approx": 3448,
+        "evidence": "Created Jan 2026; 3,448 stars per GitHub search.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "slug": "obra-superpowers",
+        "name": "Superpowers (obra)",
+        "primary_url": "https://github.com/obra/superpowers",
+        "secondary_urls": [
+          "https://blog.fsck.com/2025/10/09/superpowers/"
+        ],
+        "hook": "20+ composable skills enforcing clarify→design→plan→code→verify discipline — exploded to 55K+ stars in Feb after Anthropic accepted it into the official marketplace.",
+        "categories": [
+          "skill"
+        ],
+        "install": "/plugin marketplace add obra/superpowers-marketplace",
+        "added_date": "2026-02-15",
+        "month": "2026-02",
+        "rank_in_month": 18,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "rank": 18,
+        "slug": "harness",
+        "name": "harness",
+        "primary_url": "https://github.com/revfactory/harness",
+        "hook": "Meta-plugin that designs domain-specific agent teams and generates their skills on the fly. 2.7k stars in two weeks.",
+        "categories": [
+          "plugin"
+        ],
+        "install": "/plugin install revfactory/harness",
+        "month": "2026-03",
+        "rank_in_month": 18,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "slug": "addyosmani-agent-skills",
+        "name": "addyosmani/agent-skills",
+        "primary_url": "https://github.com/addyosmani/agent-skills",
+        "secondary_urls": [],
+        "hook": "Addy Osmani (Google) drops production-grade engineering skills compatible with Claude Code, Cursor, and Antigravity — ~18K stars in weeks.",
+        "categories": [
+          "skill"
+        ],
+        "install": "git clone https://github.com/addyosmani/agent-skills ~/.claude/skills/addyosmani",
+        "added_date": "2026-02-08",
+        "month": "2026-02",
+        "rank_in_month": 19,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "rank_in_month": 20,
+        "slug": "claude-octopus",
+        "name": "claude-octopus",
+        "primary_url": "https://github.com/nyldn/claude-octopus",
+        "hook": "Puts up to 8 models on every coding task so blind spots surface before you ship. Plugin form, ~2.8k stars from Jan 15.",
+        "categories": [
+          "plugin"
+        ],
+        "install": "/plugin marketplace add https://github.com/nyldn/claude-octopus.git",
+        "month": "2026-01",
+        "stars_approx": 2758,
+        "evidence": "Created 2026-01-15; 2,758 stars per api.github.com.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "slug": "mattpocock-skills",
+        "name": "mattpocock/skills",
+        "primary_url": "https://github.com/mattpocock/skills",
+        "secondary_urls": [],
+        "hook": "Matt Pocock's personal `.claude/skills` directory becomes the most-cloned creator-driven skill collection of the month — ~16.5K stars.",
+        "categories": [
+          "skill"
+        ],
+        "install": "git clone https://github.com/mattpocock/skills ~/.claude/skills/mattpocock",
+        "added_date": "2026-02-12",
+        "month": "2026-02",
+        "rank_in_month": 20,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "rank": 20,
+        "slug": "holyclaude",
+        "name": "HolyClaude",
+        "primary_url": "https://github.com/CoderLuii/HolyClaude",
+        "hook": "Dockerized AI coding workstation: Claude Code + 7 sibling CLIs + headless browser + 50+ tools, ready to spin up. 2k stars.",
+        "categories": [
+          "plugin"
+        ],
+        "install": "docker compose up",
+        "month": "2026-03",
+        "rank_in_month": 20,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "slug": "anthropic-cybersecurity-skills",
+        "name": "Anthropic Cybersecurity Skills",
+        "primary_url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "secondary_urls": [],
+        "hook": "754 cybersecurity skills mapped to MITRE ATT&CK and NIST CSF — riding the Claude Code Security wave to ~5K stars.",
+        "categories": [
+          "skill"
+        ],
+        "install": "git clone https://github.com/mukul975/Anthropic-Cybersecurity-Skills ~/.claude/skills/cybersec",
+        "added_date": "2026-02-22",
+        "month": "2026-02",
+        "rank_in_month": 21,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "rank": 21,
+        "slug": "mcp-brasil",
+        "name": "mcp-brasil",
+        "primary_url": "https://github.com/jxnxts/mcp-brasil",
+        "hook": "MCP server bundling 41 Brazilian public-data and government APIs (CNPJ, CEP, Receita, BCB) into one install. 1.4k stars.",
+        "categories": [
+          "mcp"
+        ],
+        "install": "pip install mcp-brasil",
+        "month": "2026-03",
+        "rank_in_month": 21,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank_in_month": 22,
+        "slug": "ouroboros",
+        "name": "ouroboros",
+        "primary_url": "https://github.com/Q00/ouroboros",
+        "hook": "Spec-driven harness — interview, seed, execute, evaluate, evolve — with nine specialized agents and 3-stage evaluation gates. ~2.4k stars.",
+        "categories": [
+          "plugin"
+        ],
+        "install": "curl -fsSL https://raw.githubusercontent.com/Q00/ouroboros/main/scripts/install.sh | bash",
+        "month": "2026-01",
+        "stars_approx": 2448,
+        "evidence": "Created 2026-01-14; 2,448 stars per api.github.com.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "rank": 22,
+        "slug": "claude-plugins-community",
+        "name": "Claude Plugins Community",
+        "primary_url": "https://github.com/anthropics/claude-plugins-community",
+        "hook": "Read-only mirror of Anthropic's official curated community plugin marketplace. Submission pipeline at clau.de/plugin-directory-submission.",
+        "categories": [
+          "marketplace"
+        ],
+        "install": "/plugin marketplace add anthropics/claude-plugins-community",
+        "month": "2026-03",
+        "rank_in_month": 22,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank_in_month": 23,
+        "slug": "agent-of-empires",
+        "name": "agent-of-empires",
+        "primary_url": "https://github.com/njbrake/agent-of-empires",
+        "hook": "Rust TUI + web dashboard for managing many Claude Code / OpenCode / Codex sessions via tmux and git worktrees. ~1.6k stars.",
+        "categories": [
+          "plugin"
+        ],
+        "install": "brew install aoe",
+        "month": "2026-01",
+        "stars_approx": 1638,
+        "evidence": "Created 2026-01-09; 1,638 stars per api.github.com.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "slug": "engram-memory-mcp",
+        "name": "engram",
+        "primary_url": "https://github.com/Gentleman-Programming/engram",
+        "secondary_urls": [],
+        "hook": "Persistent agent memory MCP server in Go + SQLite — tools for store/recall/forget across sessions, riding Feb's memory-layer wave.",
+        "categories": [
+          "mcp"
+        ],
+        "install": "go install github.com/Gentleman-Programming/engram@latest",
+        "added_date": "2026-02-18",
+        "month": "2026-02",
+        "rank_in_month": 23,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "rank": 23,
+        "slug": "awesome-claude-code-toolkit",
+        "name": "awesome-claude-code-toolkit",
+        "primary_url": "https://github.com/rohitg00/awesome-claude-code-toolkit",
+        "hook": "Most comprehensive toolkit of the month — 135 agents, 35 skills, 176+ plugins, 14 MCP configs. Heavy March commit cadence.",
+        "categories": [
+          "marketplace"
+        ],
+        "install": "browse repo",
+        "month": "2026-03",
+        "rank_in_month": 23,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank_in_month": 24,
+        "slug": "drift",
+        "name": "drift",
+        "primary_url": "https://github.com/dadbodgeoff/drift",
+        "hook": "MCP server that learns codebase patterns and remembers decisions across sessions. Offline CLI, works in any IDE. ~780 stars from Jan 19.",
+        "categories": [
+          "mcp"
+        ],
+        "install": "# MCP — see repo README for server config",
+        "month": "2026-01",
+        "stars_approx": 777,
+        "evidence": "Created 2026-01-19; 777 stars per api.github.com.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "slug": "context-mode",
+        "name": "context-mode",
+        "primary_url": "https://github.com/mksglu/context-mode",
+        "secondary_urls": [],
+        "hook": "Claude Code plugin that sandboxes tool output via PreToolUse/PostToolUse hooks — claims 98% context-window reduction across 12 platforms.",
+        "categories": [
+          "plugin"
+        ],
+        "install": "/plugin install mksglu/context-mode",
+        "added_date": "2026-02-09",
+        "month": "2026-02",
+        "rank_in_month": 24,
+        "first_seen_month": "2026-02"
+      },
+      {
+        "rank": 24,
+        "slug": "lean-ctx",
+        "name": "lean-ctx",
+        "primary_url": "https://github.com/yvgude/lean-ctx",
+        "hook": "Rust binary positioning itself as a 99%-cost-cut MCP + shell-hook layer for 24+ coding agents. 695 stars in three weeks.",
+        "categories": [
+          "mcp"
+        ],
+        "install": "cargo install lean-ctx",
+        "month": "2026-03",
+        "rank_in_month": 24,
+        "first_seen_month": "2026-03"
+      },
+      {
+        "rank_in_month": 25,
+        "slug": "mcp-security-hub",
+        "name": "mcp-security-hub",
+        "primary_url": "https://github.com/FuzzingLabs/mcp-security-hub",
+        "hook": "FuzzingLabs' collection of MCP servers wiring offensive tools — Nmap, Ghidra, Nuclei, SQLMap, Hashcat — into AI assistants. ~525 stars.",
+        "categories": [
+          "mcp"
+        ],
+        "install": "git clone https://github.com/FuzzingLabs/mcp-security-hub",
+        "month": "2026-01",
+        "stars_approx": 525,
+        "evidence": "Created 2026-01-06; 525 stars per api.github.com.",
+        "first_seen_month": "2026-01"
+      },
+      {
+        "slug": "composio-agent-orchestrator",
+        "name": "Composio agent-orchestrator",
+        "primary_url": "https://github.com/ComposioHQ/agent-orchestrator",
+        "secondary_urls": [],
+        "hook": "Parallel coding-agent orchestrator from Composio — coordinates Claude Code subagents on CI fixes and merge-conflict resolution. ~6.4K stars.",
+        "categories": [
+          "plugin"
+        ],
+        "install": "npx @composio/agent-orchestrator init",
+        "added_date": "2026-02-11",
+        "month": "2026-02",
+        "rank_in_month": 25,
+        "first_seen_month": "2026-02"
+      }
+    ]
+  }
+}
