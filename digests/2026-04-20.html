@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — April 20, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — April 20, 2026</h1><p class="sub">Top 15 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://anthropic.com/news/claude-design">Claude Design</a></h3>
+  <p class="hook">Anthropic launched Claude Design on April 17 — Opus 4.7-powered tool that generates prototypes, slides, and one-pagers from prompts while reading your codebase and design files to apply your design system. Research preview for Pro/Max/Team/Enterprise; Figma stock dropped 7.28% on launch day.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <pre><button class="copy">copy</button><code>Available at claude.ai (Pro/Max/Team/Enterprise)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://anthropic.com/news/claude-opus-4-7">Claude Opus 4.7</a></h3>
+  <p class="hook">Released April 16: 87.6% SWE-bench in new xhigh effort mode, 98.5% visual acuity, 3.75MP images (3× higher than Opus 4.6), and /ultrareview for parallel multi-agent cloud code review. Price unchanged at $5/M input, $25/M output; Auto mode now available to Max subscribers.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.111–2.1.114</a></h3>
+  <p class="hook">Four releases in four days (Apr 15–18): CLI now spawns a native binary instead of bundled JS, sandbox network domain blocking, OSC 8 clickable URLs in terminal, /tui fullscreen mode, push notifications, /less-permission-prompts skill, and plan files auto-named after the prompt.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/vecartier/cc-beeper">CC-Beeper</a></h3>
+  <p class="hook">Floating macOS pager for Claude Code: see what agents are doing, respond by voice, and never miss a permission prompt. 100% Swift, zero dependencies, fully local, no telemetry — hit #6 on Product Hunt daily on April 15 with 220 upvotes.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <pre><button class="copy">copy</button><code>brew install --cask cc-beeper</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/RousselPaul/masko-code">Masko Code</a></h3>
+  <p class="hook">Desktop mascot companion that watches your Claude Code agents and shows speech bubbles for permission requests — ships with Clippy and community mascots, or generate custom ones at masko.ai. Free, MIT-licensed, 100% local.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <pre><button class="copy">copy</button><code>Download DMG from masko.ai</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Lum1104/Understand-Anything">Understand-Anything</a></h3>
+  <p class="hook">Multi-platform Claude Code plugin (8.6k stars, v2.3.1 Apr 12) that renders a visual knowledge graph plus business logic dashboard for any codebase — tagline &#39;graphs that teach &gt; graphs that impress&#39;. Supports all major IDEs via the plugin marketplace.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <pre><button class="copy">copy</button><code>/plugin install understand-anything</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/JuliusBrussee/caveman">caveman</a></h3>
+  <p class="hook">&quot;Why use many token when few token do trick&quot; — the viral meme-skill (39.7k stars) that cuts ~65–75% output tokens and ~46% input tokens while preserving technical accuracy. Arjan Brussee&#39;s LinkedIn post spawned 30+ comments; launched on Product Hunt this week.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <pre><button class="copy">copy</button><code>claude plugin marketplace add JuliusBrussee/caveman &amp;&amp; claude plugin install caveman@caveman</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/tirth8205/code-review-graph">code-review-graph</a></h3>
+  <p class="hook">MCP server (11.7k stars, v2.3.2 Apr 14) that builds an AST knowledge graph with tree-sitter + SQLite, delivering 6.8× fewer tokens on code reviews and up to 49× on daily tasks. Plugs straight into Claude Code&#39;s MCP config with a single pip install.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <pre><button class="copy">copy</button><code>pip install code-review-graph &amp;&amp; code-review-graph install &amp;&amp; code-review-graph build</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/thedotmack/claude-mem">claude-mem</a></h3>
+  <p class="hook">Plugin (46k+ stars, gained 3k in a single day) that auto-captures sessions, compresses them with the Claude Agent SDK, and injects relevant context at the start of the next session. Uses SQLite + Chroma vector search; cross-platform.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <pre><button class="copy">copy</button><code>npx claude-mem install</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/affaan-m/everything-claude-code">everything-claude-code</a></h3>
+  <p class="hook">Agent harness optimization framework with 48 agents, 183 skills, 34 language rules, and 14+ MCP configs (162k stars). v1.10.0 April 2026 added a desktop dashboard GUI and launched the ECC 2.0 alpha — the community calls it the &#39;Claude Code distro&#39;.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <pre><button class="copy">copy</button><code>./install.sh --profile full</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/gsd-build/get-shit-done">get-shit-done</a></h3>
+  <p class="hook">Spec-driven meta-prompting system for Claude Code (55.2k stars, updated April 19) with five slash commands: /gsd-new-project, /gsd-plan-phase, /gsd-execute-phase, /gsd-spike, and /gsd-sketch. Enforces a structured plan-then-build loop that prevents runaway agent sessions.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <pre><button class="copy">copy</button><code>npx get-shit-done-cc@latest</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/smtg-ai/claude-squad">claude-squad</a></h3>
+  <p class="hook">Terminal app (7.1k stars) for managing multiple Claude Code, Codex, and Gemini agents in parallel — each in its own isolated git workspace with a tmux pane. Supports any agent that speaks the Claude Code protocol.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <pre><button class="copy">copy</button><code>curl -fsSL https://raw.githubusercontent.com/smtg-ai/claude-squad/main/install.sh | bash</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/jeremylongshore/claude-code-plugins-plus-skills">claude-code-plugins-plus-skills</a></h3>
+  <p class="hook">Open-source marketplace index with 423 plugins, 2,849 skills, and 177 agents (2k+ stars). The ccpi CLI lets you search and install anything from the index with a single command.</p>
+  <div class="secondary">Also: <a href="https://tonsofskills.com">tonsofskills.com</a></div>
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span>  </div>
+  <pre><button class="copy">copy</button><code>pnpm add -g @intentsolutionsio/ccpi &amp;&amp; ccpi install [plugin-name]</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/ComposioHQ/awesome-claude-plugins">awesome-claude-plugins (ComposioHQ)</a></h3>
+  <p class="hook">Curated list of 40+ Claude Code plugins (1.4k stars) led by connect-apps — a flagship plugin with 500+ integration connectors — plus frontend-design, CCHub, and other high-signal picks.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/levnikolaevich/claude-code-skills">levnikolaevich/claude-code-skills</a></h3>
+  <p class="hook">Full dev lifecycle plugin suite (413 stars): 7 core plugins covering planning through deployment, plus three MCP servers (hex-line, hex-graph, hex-ssh) for graph visualization and remote SSH sessions inside Claude Code.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add levnikolaevich/claude-code-skills</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>

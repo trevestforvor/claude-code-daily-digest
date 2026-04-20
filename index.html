@@ -5,23 +5,80 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Claude Code Daily Digest</title>
 <style>
-  :root { color-scheme: dark; }
-  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 24px; }
-  h1 { font-size: 28px; margin: 0 0 8px; }
-  p.sub { color: #9aa3b2; margin: 0 0 32px; }
-  .pending { border: 1px dashed #2a3039; border-radius: 12px; padding: 24px; color: #9aa3b2; }
-  a { color: #7aa2f7; }
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <h1>Claude Code Daily Digest</h1>
-    <p class="sub">Top 15 hottest Claude Code skills, plugins, MCPs &amp; releases — past 72h. Updated daily at 9am PT.</p>
-    <div class="pending">
-      Awaiting first scheduled run. Check back after 9am PT today — or view the scheduled trigger at
-      <a href="https://claude.ai/code/scheduled/trig_01E2vo4B11U9DmFDv5jScwKA">claude.ai/code/scheduled</a>.
-    </div>
-  </div>
+<div class="wrap">
+
+
+<h1>Claude Code Daily Digest</h1>
+<p class="sub">Hottest Claude Code skills, plugins, MCPs &amp; releases. Updated daily at 9am PT.</p>
+<div class="hero"><a href="submissions.html" class="hero-card"><span class="arrow">→</span><h2>✍️ Your Submissions</h2><p>Items you've added manually via <code>/digest-add</code>.</p></a></div>
+<div class="section-title">Monthly catchups</div><div class="monthly-grid"><a href="catchups/2026-03.html" class="mini">March 2026 <span class="count">25</span></a><a href="catchups/2026-02.html" class="mini">February 2026 <span class="count">25</span></a><a href="catchups/2026-01.html" class="mini">January 2026 <span class="count">25</span></a></div>
+<div class="section-title">Daily digests</div>
+<div class="daily-list"><div class="daily-item"><a href="digests/2026-04-20.html" class="date">April 20, 2026</a><span class="teaser">Claude Design</span></div></div>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
 </body>
 </html>

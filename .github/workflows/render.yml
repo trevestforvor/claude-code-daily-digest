@@ -1,0 +1,39 @@
+name: Render site
+
+on:
+  push:
+    paths:
+      - 'submissions.json'
+      - 'digests/**/*.json'
+      - 'catchups/**/*.json'
+      - 'catchup-2026-ytd.json'
+      - 'scripts/render.js'
+      - '.github/workflows/render.yml'
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run renderer
+        run: node scripts/render.js
+
+      - name: Commit rendered site
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions Renderer"
+          git add index.html submissions.html digests/*.html catchups/*.html catchup-2026-ytd.html 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No HTML changes to commit."
+          else
+            git commit -m "render: update site"
+            git push
+          fi
