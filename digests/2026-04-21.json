@@ -1,0 +1,131 @@
+[
+  {
+    "slug": "awesome-claude-skills-composio",
+    "name": "awesome-claude-skills (ComposioHQ)",
+    "primary_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "hook": "55.4k stars (5.9k forks) — Composio's curated 78+ automation skills wire Claude to 1,000+ SaaS apps (Slack, Linear, GitHub, Stripe, Notion, Salesforce, HubSpot) via a single connect-apps plugin. Skills run identically in Claude.ai, Claude Code, and the API.",
+    "categories": ["design", "skill", "viral"],
+    "install": "See README"
+  },
+  {
+    "slug": "understand-anything",
+    "name": "Understand-Anything",
+    "primary_url": "https://github.com/Lum1104/Understand-Anything",
+    "hook": "Multi-platform Claude Code plugin (8.6k stars, v2.3.1 Apr 12) that renders a visual knowledge graph plus business logic dashboard for any codebase — tagline 'graphs that teach > graphs that impress'. Supports all major IDEs via the plugin marketplace.",
+    "categories": ["design", "plugin"],
+    "install": "/plugin install understand-anything",
+    "recurring_note": "↑ Day 2 — consistently top-cited codebase visualization tool this week"
+  },
+  {
+    "slug": "cc-beeper",
+    "name": "CC-Beeper",
+    "primary_url": "https://github.com/vecartier/cc-beeper",
+    "hook": "Floating macOS pager for Claude Code: see what agents are doing, respond by voice, and never miss a permission prompt. 100% Swift, zero dependencies, fully local, no telemetry — hit #6 on Product Hunt daily on April 15 with 220 upvotes.",
+    "categories": ["design", "viral"],
+    "install": "brew install --cask cc-beeper",
+    "recurring_note": "↑ Day 2 — PH launch momentum; referenced heavily in r/ClaudeCode threads"
+  },
+  {
+    "slug": "claude-context-zilliz",
+    "name": "claude-context",
+    "primary_url": "https://github.com/zilliztech/claude-context",
+    "hook": "Code search MCP for Claude Code (6.4k stars): indexes your entire codebase with AST-aware chunking, stores embeddings in Milvus/Zilliz Cloud, and cuts ~40% of tokens vs loading whole directories. Hybrid BM25 + dense vector queries; Merkle-tree incremental re-indexing means only changed files are re-processed.",
+    "categories": ["mcp", "cost"],
+    "install": "See README"
+  },
+  {
+    "slug": "code-review-graph",
+    "name": "code-review-graph",
+    "primary_url": "https://github.com/tirth8205/code-review-graph",
+    "hook": "MCP server (11.7k stars, v2.3.2 Apr 14) that builds an AST knowledge graph with tree-sitter + SQLite, delivering 6.8× fewer tokens on code reviews and up to 49× on daily tasks. Plugs straight into Claude Code's MCP config with a single pip install.",
+    "categories": ["mcp", "cost"],
+    "install": "pip install code-review-graph && code-review-graph install && code-review-graph build",
+    "recurring_note": "↑ Day 2 — leading token-reduction MCP, stable 11.7k stars"
+  },
+  {
+    "slug": "caveman",
+    "name": "caveman",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "\"Why use many token when few token do trick\" — the viral meme-skill (39.7k stars) that cuts ~65–75% output tokens and ~46% input tokens while preserving technical accuracy. Arjan Brussee's LinkedIn post spawned 30+ comments; launched on Product Hunt this week.",
+    "categories": ["cost", "viral", "skill"],
+    "install": "claude plugin marketplace add JuliusBrussee/caveman && claude plugin install caveman@caveman",
+    "recurring_note": "↑ Day 2 — still trending; LinkedIn engagement ongoing"
+  },
+  {
+    "slug": "gh-skill",
+    "name": "gh skill (GitHub CLI v2.90.0)",
+    "primary_url": "https://github.com/cli/cli/releases/tag/v2.90.0",
+    "secondary_urls": ["https://github.blog/changelog/2026-04-16-manage-agent-skills-with-github-cli/"],
+    "hook": "GitHub shipped native `gh skill` in CLI v2.90.0 (April 16, public preview): discover, install, update, and publish agent skills directly from any GitHub repo. Targets Claude Code with `--agent claude-code --scope user`; every release is SHA-pinned so supply chain tampering is detectable with `gh skill update`.",
+    "categories": ["viral", "skill"],
+    "install": "gh upgrade && gh skill install <owner>/<repo> <skill> --agent claude-code"
+  },
+  {
+    "slug": "awesome-agent-skills-volt",
+    "name": "awesome-agent-skills (VoltAgent)",
+    "primary_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "hook": "16.7k stars — 1,100+ hand-picked agent skills from official dev teams at Anthropic, Google, Vercel, Cloudflare, Stripe, and Microsoft plus community contributions. \"Hand-picked, not AI-slop generated\" — works across Claude Code, Codex, Gemini CLI, and Cursor via the new `gh skill` command.",
+    "categories": ["skill", "viral"],
+    "install": "gh skill install VoltAgent/awesome-agent-skills <skill-name> --agent claude-code"
+  },
+  {
+    "slug": "claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "Plugin (46k+ stars, gained 3k in a single day) that auto-captures sessions, compresses them with the Claude Agent SDK, and injects relevant context at the start of the next session. Uses SQLite + Chroma vector search; cross-platform.",
+    "categories": ["viral", "plugin", "cost"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 2 — 46k+ stars; community calling it essential for long multi-day projects"
+  },
+  {
+    "slug": "get-shit-done",
+    "name": "get-shit-done",
+    "primary_url": "https://github.com/gsd-build/get-shit-done",
+    "hook": "Spec-driven meta-prompting system for Claude Code (55.2k stars, updated April 19) with five slash commands: /gsd-new-project, /gsd-plan-phase, /gsd-execute-phase, /gsd-spike, and /gsd-sketch. Enforces a structured plan-then-build loop that prevents runaway agent sessions.",
+    "categories": ["viral", "skill"],
+    "install": "npx get-shit-done-cc@latest",
+    "recurring_note": "↑ Day 2 — updated April 19 (yesterday); fresh commit activity"
+  },
+  {
+    "slug": "alirezarezvani-claude-skills",
+    "name": "alirezarezvani/claude-skills",
+    "primary_url": "https://github.com/alirezarezvani/claude-skills",
+    "hook": "12.2k stars — 235+ production skills across 9 domains (engineering, marketing, C-level advisory, compliance, product management, Playwright testing) with 305 stdlib-only Python CLI scripts (zero pip installs). One `scripts/convert.sh` call deploys to 12 agent platforms including Codex, Gemini CLI, and Cursor.",
+    "categories": ["skill", "viral"],
+    "install": "gh skill install alirezarezvani/claude-skills <skill-name> --agent claude-code"
+  },
+  {
+    "slug": "skillshare-runkids",
+    "name": "skillshare",
+    "primary_url": "https://github.com/runkids/skillshare",
+    "hook": "Single-command skill syncer (v0.19.3, April 19): `skillshare sync` pushes your skills, agents, rules, and commands to 50+ AI platforms simultaneously — Claude Code, Codex, Cursor, OpenClaw, and more. Shipped as a zero-dependency Go binary with built-in prompt-injection and data-exfiltration security scanning plus a web dashboard.",
+    "categories": ["skill"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/runkids/skillshare/main/install.sh | sh"
+  },
+  {
+    "slug": "claude-code-v2-1-116",
+    "name": "Claude Code v2.1.116",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "hook": "Released April 20: /resume is up to 67% faster on sessions over 40MB, MCP startup with multiple stdio servers is deferred (faster launch), and thinking now displays inline progress — \"still thinking\" → \"thinking more\" → \"almost done thinking\". Security fix: sandbox auto-allow no longer bypasses dangerous-path checks for rm/rmdir.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "claude-squad",
+    "name": "claude-squad",
+    "primary_url": "https://github.com/smtg-ai/claude-squad",
+    "hook": "Terminal app (7.1k stars) for managing multiple Claude Code, Codex, and Gemini agents in parallel — each in its own isolated git workspace with a tmux pane. Supports any agent that speaks the Claude Code protocol.",
+    "categories": ["viral", "plugin"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/smtg-ai/claude-squad/main/install.sh | bash",
+    "recurring_note": "↑ Day 2 — steady interest as multi-agent setups become standard"
+  },
+  {
+    "slug": "everything-claude-code",
+    "name": "everything-claude-code",
+    "primary_url": "https://github.com/affaan-m/everything-claude-code",
+    "hook": "Agent harness optimization framework with 48 agents, 183 skills, 34 language rules, and 14+ MCP configs (162k stars). v1.10.0 April 2026 added a desktop dashboard GUI and launched the ECC 2.0 alpha — the community calls it the 'Claude Code distro'.",
+    "categories": ["viral", "skill", "plugin"],
+    "install": "./install.sh --profile full",
+    "recurring_note": "↑ Day 2 — 162k stars, ECC 2.0 alpha discussion active on Reddit"
+  }
+]
