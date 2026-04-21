@@ -1,0 +1,74 @@
+[
+  {
+    "handle": "@charlieautomates",
+    "channel_url": "https://www.youtube.com/@charlieautomates",
+    "name": "Charlie Automates",
+    "subscribers_approx": 8080,
+    "focus": "Claude Code tools, skills, plugins, agent workflows",
+    "why_signal": "Posts multiple times per week drilling into specific Claude Code plugins, skills, and repos — the tightest signal of the three user-provided channels for tool discovery.",
+    "user_provided": true
+  },
+  {
+    "handle": "@Chase-H-AI",
+    "channel_url": "https://www.youtube.com/@Chase-H-AI",
+    "name": "Chase AI",
+    "subscribers_approx": 109000,
+    "focus": "Claude Code workflows, skills, plugins, AI design, agent tooling",
+    "why_signal": "109K subs, publishes ranked lists of Claude Code skills and plugins weekly (e.g. 'Top 10 Claude Code Skills, Plugins & CLIs'), making it a direct feed for tool discovery.",
+    "user_provided": true
+  },
+  {
+    "handle": "@adrienaidesigner",
+    "channel_url": "https://www.youtube.com/@adrienaidesigner",
+    "name": "Adrien | AI Designer",
+    "subscribers_approx": 4050,
+    "focus": "AI design workflows, Claude design tools, no-code app building",
+    "why_signal": "Posts Claude design workflow tutorials weekly; smaller audience but hands-on depth covering Claude-specific design tooling and workflows.",
+    "user_provided": true
+  },
+  {
+    "handle": "@indydevdan",
+    "channel_url": "https://www.youtube.com/@indydevdan",
+    "name": "IndyDevDan",
+    "subscribers_approx": 129000,
+    "focus": "Agentic coding engineering, Claude Code, multi-agent orchestration, MCP",
+    "why_signal": "129K subs, posts weekly on agentic engineering with strong Claude Code focus; covers MCP, multi-agent orchestration, and tool-calling patterns at engineering depth that surfaces new tooling early.",
+    "user_provided": false
+  },
+  {
+    "handle": "@simonscrapes",
+    "channel_url": "https://www.youtube.com/@simonscrapes",
+    "name": "Simon Scrapes",
+    "subscribers_approx": 71800,
+    "focus": "Claude Code workflows, agentic systems for business",
+    "why_signal": "Dedicated Claude Code playlist with 163K-view breakdowns of Claude Code 2.0, skills, and workflows — posts 1-2x per week with practitioner-level depth.",
+    "user_provided": false
+  },
+  {
+    "handle": "@UICollectiveDesign",
+    "channel_url": "https://www.youtube.com/@UICollectiveDesign",
+    "name": "UI Collective",
+    "subscribers_approx": 52500,
+    "focus": "Design systems, Figma, Claude Code for designers, AI design workflows",
+    "why_signal": "211K views on 'Design with Claude Code' in one month; covers Claude skills for design at production-level depth, bridging design tooling and Claude Code — surfaces design-adjacent plugins and skills.",
+    "user_provided": false
+  },
+  {
+    "handle": "@DevelopersDigest",
+    "channel_url": "https://www.youtube.com/@DevelopersDigest",
+    "name": "Developers Digest",
+    "subscribers_approx": 61500,
+    "focus": "AI coding tools, Claude/Anthropic releases, developer tooling",
+    "why_signal": "Posts 2-3x per week covering every major Anthropic release and Claude Code feature in concise format; high-frequency signal for new tool and model announcements.",
+    "user_provided": false
+  },
+  {
+    "handle": "@TechWithTim",
+    "channel_url": "https://www.youtube.com/@TechWithTim",
+    "name": "Tech With Tim",
+    "subscribers_approx": 2000000,
+    "focus": "General software development, AI coding tools, Claude Code tutorials",
+    "why_signal": "2M subs with comprehensive Claude Code MCP/skills/subagents guide (82K views in 8 days); posts daily and covers Claude Code tooling at beginner-to-intermediate depth — surfaces mainstream adoption signals.",
+    "user_provided": false
+  }
+]
