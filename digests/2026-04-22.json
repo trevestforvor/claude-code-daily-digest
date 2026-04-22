@@ -1,0 +1,103 @@
+[
+  {
+    "slug": "awesome-design-md",
+    "name": "awesome-design-md",
+    "primary_url": "https://github.com/VoltAgent/awesome-design-md",
+    "hook": "61.9k stars (Global Rank #271) — drop one of 55+ DESIGN.md files from Stripe, Linear, Notion, Figma, or ElevenLabs into your project root and Claude Code generates a pixel-perfect matching UI automatically. Launched March 31, accumulated 4,385 stars in its first three days. Covers color palettes, typography hierarchies, component states, elevation systems, and design guardrails — all in plain markdown that LLMs understand natively.",
+    "categories": ["design", "viral"],
+    "install": "See README (copy a DESIGN.md file into your project root)"
+  },
+  {
+    "slug": "garrytan-gstack",
+    "name": "gstack",
+    "primary_url": "https://github.com/garrytan/gstack",
+    "hook": "73.6k stars — Y Combinator CEO Garry Tan open-sourced his Claude Code setup as a 23-skill virtual dev team: a CEO who rethinks product direction, a Designer who catches AI slop, an Eng Manager who locks architecture, a QA Lead who opens a real browser, and a Security Officer who runs OWASP + STRIDE audits. April 2026 update added Team mode (`./setup --team`) and multi-host support for Codex, Cursor, OpenCode, Kiro, and Factory Droid. Issues filed April 21 — active.",
+    "categories": ["viral", "skill"],
+    "install": "git clone https://github.com/garrytan/gstack && cd gstack && ./setup"
+  },
+  {
+    "slug": "claude-code-v2-1-117",
+    "name": "Claude Code v2.1.117",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "hook": "Released April 22 (today): effort default bumped to `high` for Pro/Max on Opus 4.6 and Sonnet 4.6, forked subagents enabled on external builds via `CLAUDE_CODE_FORK_SUBAGENT=1`, `/model` selections now persist across restarts, and `/resume` offers to summarize stale large sessions before re-reading. Native builds replace Glob and Grep with embedded `bfs` and `ugrep` for faster file search. Plugin dependency auto-resolution lands — `blockedMarketplaces` and `strictKnownMarketplaces` in managed-settings enforce install policy org-wide.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "claude-routines",
+    "name": "Claude Routines",
+    "primary_url": "https://code.claude.com/docs/en/routines",
+    "hook": "Research preview (April 14): save a Claude Code configuration once — prompt, repo, connectors — and have it run automatically on Anthropic-managed cloud even when your laptop is closed. Three trigger types: Scheduled (hourly/nightly/weekly), API (HTTP POST to a per-routine endpoint with bearer token), and GitHub (fires on PR open, push, or release). IndyDevDan dedicated a full video to it — \"Claude Routines Just Dropped, And It's Perfect.\" Available on Pro, Max, Team, and Enterprise.",
+    "categories": ["anthropic"],
+    "install": "Available at claude.ai/code/routines or /schedule in CLI",
+    "creator_buzz": ["@indydevdan"]
+  },
+  {
+    "slug": "claude-memory-compiler",
+    "name": "claude-memory-compiler",
+    "primary_url": "https://github.com/coleam00/claude-memory-compiler",
+    "hook": "821 stars — inspired by Andrej Karpathy's LLM Knowledge Base architecture: a SessionEnd hook captures every conversation, the Claude Agent SDK extracts key decisions and lessons, then an LLM compiler organizes them into structured, cross-referenced knowledge articles injected back via SessionStart. Launched April 6; gained 237 stars in its first day. Unlike claude-mem (flat session replay), this compiles a growing wiki that improves with every session.",
+    "categories": ["cost"],
+    "install": "See README"
+  },
+  {
+    "slug": "pro-workflow",
+    "name": "pro-workflow",
+    "primary_url": "https://github.com/rohitg00/pro-workflow",
+    "hook": "Self-correcting memory that compounds over 50+ sessions: when you correct Claude, it proposes a rule, you approve it, it's saved to SQLite, and by session 2 it writes correctly without reminders. v2.0 ships 18 hook events, 5 agents, 7 reference guides, 17 battle-tested skills, and an 80/20 AI coding ratio guide. Context engineering, parallel worktrees, and wrap-up rituals included. Works across Claude Code, Cursor, Codex, Kiro, Goose, Roo, and 27 more tools.",
+    "categories": ["cost", "skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "awesome-claude-code-subagents",
+    "name": "awesome-claude-code-subagents",
+    "primary_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "hook": "17.8k stars — 100+ specialized Claude Code subagent definitions from VoltAgent covering core-development, quality-security, infrastructure, data-ai, and business-product use cases. Each agent ships with a focused system prompt, tool allowlist, and examples. A companion to VoltAgent/awesome-agent-skills (already in the digest), this collection targets the subagent coordination layer specifically.",
+    "categories": ["skill", "viral"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-dev-skill",
+    "name": "/dev for Claude Code",
+    "primary_url": "https://github.com/hnaymyh123-henry/claude-dev-skill",
+    "secondary_urls": ["https://www.producthunt.com/products/dev-for-claude-code"],
+    "hook": "A slash command that turns Claude into a Tech Lead orchestrating parallel Worker Agents: PRD alignment → architecture → isolated git worktree Workers → QA verification → structured code review with veto conditions → merge. Each Worker does a 6-category counterexample self-check before finishing; mandatory security audits (bandit / npm audit) run before the review phase. MIT licensed. 89 Product Hunt points at launch.",
+    "categories": ["skill"],
+    "install": "See README (copy commands/ into ~/.claude/commands/)"
+  },
+  {
+    "slug": "awesome-claude-design",
+    "name": "awesome-claude-design",
+    "primary_url": "https://github.com/rohitg00/awesome-claude-design",
+    "hook": "219 stars — curated DESIGN.md prompts organized by aesthetic family (warm, terminal, editorial, glass, brutalist, cinematic, indie) with remix recipes (e.g. Linear × Claude) and launch-week community signal. Launched to accompany Claude Design (April 17). Pairs with five Claude Code skills — design-shotgun, design-html, design-review, design-consultation — installable via SkillKit.",
+    "categories": ["design"],
+    "install": "See README"
+  },
+  {
+    "slug": "caveman",
+    "name": "caveman",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "\"Why use many token when few token do trick\" — 39.7k stars. Cuts ~65–75% output tokens and ~46% input tokens while preserving technical accuracy. One-line install for Claude Code, Cursor, Windsurf, Copilot, and more. Arjan Brussee's LinkedIn post still circulating; community discussion active across r/ClaudeCode.",
+    "categories": ["cost", "viral", "skill"],
+    "install": "claude plugin marketplace add JuliusBrussee/caveman && claude plugin install caveman@caveman",
+    "recurring_note": "↑ Day 3 — 39.7k stars; still the most-cited token-reduction skill"
+  },
+  {
+    "slug": "claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "46k+ stars — auto-captures sessions, compresses them with the Claude Agent SDK, and injects relevant context at the start of the next session. Uses SQLite + Chroma vector search; cross-platform. Community calling it essential for multi-day projects.",
+    "categories": ["viral", "plugin", "cost"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 3 — 46k+ stars; r/ClaudeCode still recommending for long-running work"
+  },
+  {
+    "slug": "everything-claude-code",
+    "name": "everything-claude-code",
+    "primary_url": "https://github.com/affaan-m/everything-claude-code",
+    "hook": "162k stars — 48 agents, 183 skills, 34 language rules, 14+ MCP configs. v1.10.0 (April 2026) added a desktop dashboard GUI and launched the ECC 2.0 alpha — the community calls it the 'Claude Code distro'. ECC 2.0 alpha discussion remains active on Reddit.",
+    "categories": ["viral", "skill", "plugin"],
+    "install": "./install.sh --profile full",
+    "recurring_note": "↑ Day 3 — ECC 2.0 alpha discussion ongoing; 162k stars steady"
+  }
+]
