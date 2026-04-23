@@ -1,0 +1,126 @@
+[
+  {
+    "slug": "meigen-ai-design-mcp",
+    "name": "MeiGen-AI-Design-MCP",
+    "primary_url": "https://github.com/jau123/MeiGen-AI-Design-MCP",
+    "hook": "591 stars — turns Claude Code (and OpenClaw) into a local Lovart: seven MCP tools covering image generation, prompt enhancement, gallery search, and workflow management, backed by local ComfyUI (free), MeiGen Cloud, or any OpenAI-compatible API. The 1,500+ curated prompt library handles art direction automatically, and multi-direction parallel generation means Claude can explore a composition grid in one shot instead of iterating one image at a time.",
+    "categories": ["design", "mcp"],
+    "install": "npx meigen init claude"
+  },
+  {
+    "slug": "claude-desktop-buddy",
+    "name": "Claude Desktop Buddy",
+    "primary_url": "https://github.com/anthropics/claude-desktop-buddy",
+    "hook": "Official Anthropic repo (1.2k stars) that exposes a BLE bridge from Claude for macOS/Windows to maker hardware — the reference build is an ESP32 M5StickC desk pet that sleeps when Claude is idle, wakes when a session starts, goes visibly impatient when a permission prompt is waiting, and lets you approve or deny right from the device. Launched April 20 on Product Hunt: #2 Product of the Day, 387 upvotes. Enable via Help → Troubleshooting → Developer Mode, then pair in Developer → Open Hardware Buddy.",
+    "categories": ["design", "anthropic"],
+    "install": "pio run -t upload  # flash ESP32 firmware, then pair via Claude developer mode"
+  },
+  {
+    "slug": "claude-code-pro-removal",
+    "name": "Claude Code Pro Plan Controversy",
+    "primary_url": "https://www.theregister.com/2026/04/22/anthropic_removes_claude_code_pro/",
+    "secondary_urls": [
+      "https://simonwillison.net/2026/Apr/22/claude-code-confusion/",
+      "https://www.wheresyoured.at/news-anthropic-removes-pro-cc/"
+    ],
+    "hook": "April 21-22: Anthropic silently removed Claude Code from the $20/mo Pro pricing page — no changelog entry, no email. Anthropic's head of growth called it a '~2% of new prosumer signups' test, but the public pricing page, support article titles, and plan comparison all reflected the change globally. The Register, PCWorld, Simon Willison, and Ed Zitron all covered it. Willison's analysis names the root cause: Pro subscriptions are priced far below the token cost of how people actually use Claude Code today, so Anthropic is stress-testing a higher-tier-only model.",
+    "categories": ["cost"]
+  },
+  {
+    "slug": "claw-code",
+    "name": "claw-code",
+    "primary_url": "https://github.com/ultraworkers/claw-code",
+    "hook": "185k stars, global rank #23 — the fastest GitHub repo in history to hit 100k stars. Born April 1 after security researcher Chaofan Shou found Claude Code's complete source in a 59.8 MB npm source map; Sigrid Jin (the world's most active Claude Code user by token count) immediately began a clean-room Rust rewrite of the agent harness architecture. The repo ('finally unlocked — enjoy the party!') now has 109k forks and an active Discord. Not affiliated with Anthropic; build from source via cargo build --workspace.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/ultraworkers/claw-code && cd claw-code/rust && cargo build --workspace"
+  },
+  {
+    "slug": "claude-code-v2-1-118",
+    "name": "Claude Code v2.1.118",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "hook": "Released April 23 (today): vim visual mode lands — `v` and `V` trigger character and line selection with full operator support and visual feedback. `/usage` merges `/cost` and `/stats` into one command (both shorthands still work). Custom named themes are now first-class — create and switch via `/theme` or hand-edit JSON in `~/.claude/themes/`. Hooks can now invoke MCP tools directly with `type: \"mcp_tool\"`, unlocking hook → MCP automation chains without subprocess indirection.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "shanraisshan-claude-code-best-practice",
+    "name": "claude-code-best-practice",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "47.6k stars — the community's definitive agentic engineering guide, updated April 23. 82+ actionable tips across 11 categories including six tips from Boris Cherny (the Anthropic engineer who built Claude Code). Covers every major feature: subagents, Routines, Ultrareview, Channels, Devcontainers, Computer Use, hooks, MCP, and context management — plus curated industry workflows from Anthropic, Google, Linear, and others. Hit GitHub Trending Day #1 in March and has compounded since.",
+    "categories": ["viral", "skill"],
+    "install": "See README (clone and follow workflow guides)"
+  },
+  {
+    "slug": "lydia-hallie-cc-workshop",
+    "name": "Claude Code Deep Dive (Frontend Masters)",
+    "primary_url": "https://frontendmasters.com/workshops/advanced-claude-code/",
+    "secondary_urls": [
+      "https://www.youtube.com/shorts/ijsrILEcdVc"
+    ],
+    "hook": "April 21 free full-day workshop (9:30am–4:30pm CT) by Lydia Hallie, Anthropic's DX engineer on the Claude Code team. Curriculum: CLAUDE.md design, plan mode and permissions, building a skill from scratch, writing a custom MCP server, hooks, subagents, and worktrees — suitable from beginner to senior because agentic engineering is still new territory for everyone. Recording available for replay at frontendmasters.com (free). IndyDevDan promoted it via YouTube Short.",
+    "categories": ["anthropic"],
+    "creator_buzz": ["@indydevdan"]
+  },
+  {
+    "slug": "dive-into-claude-code-vila",
+    "name": "Dive into Claude Code (VILA Lab / arXiv 2604.14228)",
+    "primary_url": "https://github.com/VILA-Lab/Dive-into-Claude-Code",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=HRI34v68igw"
+    ],
+    "hook": "608 stars — peer-reviewed academic paper (arXiv 2604.14228) + practical design guide that dissects Claude Code's ~512K-line TypeScript codebase across 1,884 files. The headline finding: 98.4% of the complexity is deterministic infrastructure (permission gates, context compaction, tool routing, recovery logic) and only 1.6% is the AI reasoning loop. Includes a 40+ entry reading list of reimplementations and follow-on papers. YouTube discussion video posted April 21.",
+    "categories": ["viral"],
+    "creator_buzz": ["@indydevdan"]
+  },
+  {
+    "slug": "claude-code-system-prompts",
+    "name": "claude-code-system-prompts",
+    "primary_url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+    "hook": "9.4k stars — every component of Claude Code's system prompt extracted directly from compiled source, with precise token counts and a CHANGELOG.md spanning 160+ versions since v2.0.14. Maintained within minutes of each Claude Code release: main system prompt, 24 built-in tool descriptions, Plan/Explore/Task sub-agent prompts, ~40 contextual system reminders, CLAUDE.md generation, security review, and memory management prompts. Companion tool tweakcc lets you patch specific components and track version conflicts.",
+    "categories": ["skill"],
+    "install": "See README (clone; use tweakcc for patching)"
+  },
+  {
+    "slug": "claude-code-plugins-plus-skills",
+    "name": "claude-code-plugins-plus-skills",
+    "primary_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+    "hook": "2,000+ stars — 423 plugins, 2,849 skills, and 177 agents backed by an open-source marketplace at tonsofskills.com and the ccpi CLI package manager. Skills use standardized YAML frontmatter so Claude auto-activates them based on conversation context. Includes 11 operational playbooks covering multi-agent rate limiting, cost management, incident debugging, and compliance auditing — organized across 18 domains (DevOps, AI/ML, crypto, database, security, business).",
+    "categories": ["skill", "plugin"],
+    "install": "pnpm add -g @intentsolutionsio/ccpi && ccpi install devops-automation-pack"
+  },
+  {
+    "slug": "levnikolaevich-claude-code-skills",
+    "name": "levnikolaevich/claude-code-skills",
+    "primary_url": "https://github.com/levnikolaevich/claude-code-skills",
+    "hook": "421 stars — full Agile delivery lifecycle as a Claude Code plugin suite, bundled with three custom MCP servers: hex-line-mcp (every line carries a content hash, preventing stale-context edit corruption), hex-graph-mcp (SQLite-backed code knowledge graph with symbol search and reference tracking), and hex-ssh-mcp (hash-verified remote file editing and SFTP over SSH). Covers planning, execution, multi-model AI review, project bootstrap, docs generation, and codebase audits.",
+    "categories": ["skill", "mcp"],
+    "install": "/plugin marketplace add levnikolaevich/claude-code-skills && /plugin install [plugin-name]@levnikolaevich-skills-marketplace"
+  },
+  {
+    "slug": "caveman",
+    "name": "caveman",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "\"Why use many token when few token do trick\" — 39.7k stars. Cuts ~65–75% output tokens and ~46% input tokens while preserving technical accuracy. One-line install for Claude Code, Cursor, Windsurf, Copilot, and more. The Pro plan controversy has sent a wave of users looking for cost-reduction skills — caveman is the first recommendation in every thread.",
+    "categories": ["cost", "viral", "skill"],
+    "install": "claude plugin marketplace add JuliusBrussee/caveman && claude plugin install caveman@caveman",
+    "recurring_note": "↑ Day 4 — renewed interest driven by Pro plan pricing controversy"
+  },
+  {
+    "slug": "claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "46k+ stars — auto-captures sessions, compresses them with the Claude Agent SDK, and injects relevant context at session start via SQLite + Chroma vector search. The Pro plan access scare reminded users why persistent memory matters: on Max/Team plans, this tool effectively extends expensive context across sessions at minimal overhead.",
+    "categories": ["viral", "plugin", "cost"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 4 — 46k+ stars; Pro controversy renewed \"must-have\" recommendations in r/ClaudeCode"
+  },
+  {
+    "slug": "everything-claude-code",
+    "name": "everything-claude-code",
+    "primary_url": "https://github.com/affaan-m/everything-claude-code",
+    "hook": "162k stars — 48 agents, 183 skills, 34 language rules, 14+ MCP configs. v1.10.0 (April 2026) added a desktop dashboard GUI and launched the ECC 2.0 alpha — the community calls it the 'Claude Code distro'. ECC 2.0 alpha discussion remains active on Reddit.",
+    "categories": ["viral", "skill", "plugin"],
+    "install": "./install.sh --profile full",
+    "recurring_note": "↑ Day 4 — 162k stars steady; ECC 2.0 alpha discussion ongoing"
+  }
+]
