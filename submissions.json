@@ -180,5 +180,16 @@
     "install": "npx skills add kepano/obsidian-skills",
     "added_date": "2026-04-24",
     "added_by": "user"
+  },
+  {
+    "slug": "remotion",
+    "name": "Remotion",
+    "primary_url": "https://github.com/remotion-dev/remotion",
+    "secondary_urls": ["https://www.remotion.dev/"],
+    "hook": "Make videos programmatically in React — components, CSS, Canvas, SVG, and WebGL compose into deterministic MP4s. ~44k stars and the de-facto stack for AI-generated motion.",
+    "categories": ["design"],
+    "install": "npx create-video@latest",
+    "added_date": "2026-04-24",
+    "added_by": "user"
   }
 ]
