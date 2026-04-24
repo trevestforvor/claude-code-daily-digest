@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "huashu-design",
+    "name": "Huashu Design",
+    "primary_url": "https://github.com/alchaincyf/huashu-design",
+    "hook": "HTML-native design skill for Claude Code with 6,000 GitHub stars; v2.0 released April 21, 2026. Describe a deliverable in one sentence and get high-fidelity prototypes, animated slide decks, or MP4 exports in 3–30 minutes—powered by 20 design philosophies, 31 layout types, and a 5-dimension expert review framework. Agent-agnostic: works with Claude Code, Cursor, Codex, OpenClaw, and Hermes.",
+    "categories": ["design"],
+    "install": "npx skills add alchaincyf/huashu-design"
+  },
+  {
+    "slug": "diagram-design-cathrynlavery",
+    "name": "Diagram Design",
+    "primary_url": "https://github.com/cathrynlavery/diagram-design",
+    "hook": "Claude Code skill with 1,800 stars that generates 14 types of editorial-quality diagrams (architecture, flowcharts, sequence diagrams, state machines, timelines) as self-contained HTML+SVG files. Auto-reads your website to extract brand colors and fonts, then applies your visual identity to every diagram—three variants each (minimal light, dark, and full editorial). No Mermaid, no shadows, no generic AI aesthetics.",
+    "categories": ["design"],
+    "install": "/plugin marketplace add cathrynlavery/diagram-design"
+  },
+  {
+    "slug": "html-ppt-skill",
+    "name": "HTML PPT Skill",
+    "primary_url": "https://github.com/lewislulu/html-ppt-skill",
+    "hook": "Presentation AgentSkill at 2,000 GitHub stars—describe a deck in natural language and receive pure HTML/CSS/JS output with 36 design themes, 31 page layouts, and 47 animations (27 CSS + 20 canvas effects). Includes a live presenter mode with four resizable cards: current slide, next-slide preview, speaker script, and timer. Zero build step, MIT licensed.",
+    "categories": ["design"],
+    "install": "npx skills add https://github.com/lewislulu/html-ppt-skill"
+  },
+  {
+    "slug": "design-extract",
+    "name": "Design Extract (designlang)",
+    "primary_url": "https://github.com/Manavarya09/design-extract",
+    "hook": "1,500-star CLI and MCP server that crawls any website with a headless Playwright browser and outputs 17+ files—W3C DTCG design tokens, Tailwind configs, CSS variables, Figma variables, component stubs, brand-voice analysis, WCAG audit, and platform emitters for iOS SwiftUI, Android Compose, and Flutter. Eliminates the reverse-engineering step before starting a new project. Integrates directly with Claude Code via the bundled MCP server.",
+    "categories": ["design", "mcp"],
+    "install": "npx designlang https://example.com"
+  },
+  {
+    "slug": "andrej-karpathy-skills",
+    "name": "Andrej Karpathy Skills (CLAUDE.md)",
+    "primary_url": "https://github.com/forrestchang/andrej-karpathy-skills",
+    "hook": "Forrest Chang distilled Andrej Karpathy's January 2026 viral post on LLM coding failure modes into a four-rule CLAUDE.md—Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution. Now at 82,900 GitHub stars, it topped the global trending chart again this week with a +44K weekly lead. Installs as a Claude Code plugin so the rules apply across all projects.",
+    "categories": ["workflow"],
+    "install": "/plugin marketplace add forrestchang/andrej-karpathy-skills"
+  },
+  {
+    "slug": "anthropic-april23-postmortem",
+    "name": "Anthropic: Three Claude Code Quality Bugs, All Fixed",
+    "primary_url": "https://www.anthropic.com/engineering/april-23-postmortem",
+    "secondary_urls": ["https://simonwillison.net/2026/Apr/24/recent-claude-code-quality-reports/"],
+    "hook": "Anthropic published a postmortem (April 23–24) confirming three separate engineering changes degraded Claude Code output since March: a reasoning-effort downgrade on March 4 (reverted April 7), a session-idle caching bug that corrupted thinking every turn instead of just once (March 26, fixed April 10), and a verbosity-reduction system prompt that hurt coding quality (April 16, reverted April 20). All three fixes shipped in v2.1.116; Anthropic reset usage limits for all affected subscribers on April 23.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "anthropics-skills-official",
+    "name": "Anthropic Official Skills Repository",
+    "primary_url": "https://github.com/anthropics/skills",
+    "hook": "Anthropic's public Agent Skills repo sits at 123,000 stars with 547 pull requests and is the canonical reference for the Agent Skills open spec (agentskills.io). Contains skill templates across creative, technical, enterprise, and document categories, and serves as the source-of-truth implementation that GitHub's `gh skill` CLI, Claude Code, Copilot, Cursor, and Gemini CLI all validate against.",
+    "categories": ["anthropic"],
+    "install": "gh skill install anthropics/<skill-name>"
+  },
+  {
+    "slug": "n8n-skills",
+    "name": "n8n Skills for Claude Code",
+    "primary_url": "https://github.com/czlonkowski/n8n-skills",
+    "hook": "Seven complementary Claude Code skills at 4,600 stars that teach Claude the full n8n idiom: expression syntax, MCP node configuration, JavaScript/Python code-node development, workflow validation patterns, and production anti-patterns. Closes the gap between 'plausible but broken' and 'runs on first deploy'—community reports describing it as the single skill that makes n8n generation practical.",
+    "categories": ["workflow", "mcp"],
+    "install": "/plugin install czlonkowski/n8n-skills"
+  },
+  {
+    "slug": "agentic-stack",
+    "name": "Agentic Stack",
+    "primary_url": "https://github.com/codejunkie99/agentic-stack",
+    "hook": "Portable `.agent/` folder—memory, skills, and protocols—with adapters for Claude Code, Cursor, Windsurf, OpenCode, Hermes Agent, and 5 more harnesses at 1,500 stars. v0.9.0 shipped today (April 24, 2026) with a manifest-driven adapter system and concurrent-write protection, so switching between coding agents no longer wipes accumulated session knowledge.",
+    "categories": ["workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "awesome-claude-code-toolkit",
+    "name": "Awesome Claude Code Toolkit",
+    "primary_url": "https://github.com/rohitg00/awesome-claude-code-toolkit",
+    "hook": "Frames itself as a deployable 'development OS' for Claude Code rather than a list: 135 agents, 35 curated skills (plus 400,000 via SkillKit), 42 slash commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, and 14 MCP configs across 459 commits. 1,400 stars and actively maintained as of April 2026—distinguishes from comparable repos by wiring everything into a cohesive, production-ready framework.",
+    "categories": ["workflow", "mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "simonscrapes-memory-systems-compared",
+    "name": "Every Claude Code Memory System Compared — Simon Scrapes",
+    "primary_url": "https://www.youtube.com/watch?v=UHVFcUzAGlM",
+    "hook": "Simon Scrapes (71,800 subscribers) posted this 20 hours ago—the first side-by-side benchmark of all three Claude Code memory layers: the native Memory Tool API, claude-mem (21.5K stars), and the Milvus memsearch persistent-vector plugin. Practitioners frequently guess wrong which layer suits their use case; this video provides the structured decision matrix.",
+    "categories": ["workflow"],
+    "creator_buzz": ["@simonscrapes"]
+  },
+  {
+    "slug": "techwithttim-claude-code-masterclass-2026",
+    "name": "Claude Code Build & Sell Masterclass — Tech With Tim",
+    "primary_url": "https://www.youtube.com/watch?v=fQgJ7qXlyDE",
+    "hook": "Tech With Tim's 4-hour 'Claude Code Masterclass: Build & Sell (2026)' landed 3 days ago (April 21) for the channel's 2 million subscribers. Covers Claude Code setup through full product shipping: MCP server integration, multi-agent orchestration, hooks, and monetization workflows in a single structured progression—currently the broadest-reach entry point into the Claude Code ecosystem published this week.",
+    "categories": ["workflow"],
+    "creator_buzz": ["@TechWithTim"]
+  }
+]
