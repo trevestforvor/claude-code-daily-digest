@@ -89,5 +89,38 @@
     "install": "uv tool install git+https://github.com/Alishahryar1/free-claude-code.git",
     "added_date": "2026-04-24",
     "added_by": "user"
+  },
+  {
+    "slug": "taste-skill",
+    "name": "Taste Skill",
+    "primary_url": "https://github.com/leonxlnx/taste-skill",
+    "secondary_urls": ["https://www.tasteskill.dev"],
+    "hook": "Anti-slop frontend skill that injects opinionated design rules into Claude Code, Cursor, and Codex — kills the default Inter + purple-gradient + grid-card look with 7 variants and 3 parameter dials.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add Leonxlnx/taste-skill",
+    "added_date": "2026-04-24",
+    "added_by": "user"
+  },
+  {
+    "slug": "impeccable",
+    "name": "Impeccable",
+    "primary_url": "https://github.com/pbakaus/impeccable",
+    "secondary_urls": ["https://impeccable.style"],
+    "hook": "Upgrade to Anthropic's frontend-design skill — 23 commands (polish, audit, critique, typeset…) plus a 24-pattern detector that catches AI-slop tells like purple gradients, bounce easing, and dark glows.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add pbakaus/impeccable",
+    "added_date": "2026-04-24",
+    "added_by": "user"
+  },
+  {
+    "slug": "emil-kowalski-skill",
+    "name": "Emil Kowalski Design Engineer Skill",
+    "primary_url": "https://github.com/emilkowalski/skill",
+    "secondary_urls": ["https://emilkowal.ski/skill"],
+    "hook": "Linear's Emil Kowalski distilled his essays on UI polish, animation timing, and the invisible details that make interfaces feel right into a drop-in skill for Claude Code, Codex, and Cursor.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add emilkowalski/skill",
+    "added_date": "2026-04-24",
+    "added_by": "user"
   }
 ]
