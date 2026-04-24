@@ -9,5 +9,85 @@
     "install": "npm install -g openwolf",
     "added_date": "2026-04-20",
     "added_by": "user"
+  },
+  {
+    "slug": "lyra-2",
+    "name": "NVIDIA Lyra 2.0",
+    "primary_url": "https://huggingface.co/nvidia/Lyra-2.0",
+    "secondary_urls": [
+      "https://github.com/nv-tlabs/lyra",
+      "https://research.nvidia.com/labs/sil/projects/lyra2/"
+    ],
+    "hook": "Turns a single still image into a persistent, explorable 3D world (Gaussian splats + meshes) via a camera-controlled video walkthrough — Apache 2.0.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/nv-tlabs/lyra",
+    "added_date": "2026-04-24",
+    "added_by": "user"
+  },
+  {
+    "slug": "hyperframes",
+    "name": "HyperFrames",
+    "primary_url": "https://github.com/heygen-com/hyperframes",
+    "secondary_urls": [],
+    "hook": "Open-source video framework that renders HTML compositions into MP4s — ships as a Claude Code skill, Cursor plugin, and MCP server for AI-driven website animations.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add heygen-com/hyperframes",
+    "added_date": "2026-04-24",
+    "added_by": "user"
+  },
+  {
+    "slug": "voxcpm",
+    "name": "VoxCPM",
+    "primary_url": "https://github.com/OpenBMB/VoxCPM",
+    "secondary_urls": [],
+    "hook": "Tokenizer-free 48 kHz TTS via end-to-end diffusion-autoregressive architecture — 30 languages, voice design from text prompts, controllable cloning.",
+    "categories": ["viral"],
+    "install": "pip install voxcpm",
+    "added_date": "2026-04-24",
+    "added_by": "user"
+  },
+  {
+    "slug": "open-higgsfield-ai",
+    "name": "Open Higgsfield AI",
+    "primary_url": "https://github.com/sunnychase/open-higgsfield-ai",
+    "secondary_urls": [],
+    "hook": "Self-hosted, subscription-free alternative to Higgsfield — cinema-studio UI with 20+ image models (Flux, SDXL, Ideogram) and pro camera controls.",
+    "categories": ["design"],
+    "install": "git clone https://github.com/sunnychase/open-higgsfield-ai && cd open-higgsfield-ai && npm install && npm run dev",
+    "added_date": "2026-04-24",
+    "added_by": "user"
+  },
+  {
+    "slug": "claude-code-local",
+    "name": "claude-code-local",
+    "primary_url": "https://github.com/nicedreamzapp/claude-code-local",
+    "secondary_urls": [],
+    "hook": "Runs Claude Code fully offline on Apple Silicon via an MLX inference server that speaks the Anthropic API — Gemma, Llama, or Qwen back the full toolset.",
+    "categories": ["cost"],
+    "install": "git clone https://github.com/nicedreamzapp/claude-code-local && cd claude-code-local && bash setup.sh",
+    "added_date": "2026-04-24",
+    "added_by": "user"
+  },
+  {
+    "slug": "open-pencil",
+    "name": "OpenPencil",
+    "primary_url": "https://github.com/open-pencil/open-pencil",
+    "secondary_urls": ["https://app.openpencil.dev"],
+    "hook": "MIT-licensed Figma alternative with native .fig support, 100+ AI design tools, real-time P2P collab, and an MCP server + skill bundle for Claude Code and Cursor.",
+    "categories": ["design", "mcp", "skill"],
+    "install": "brew install open-pencil/tap/open-pencil",
+    "added_date": "2026-04-24",
+    "added_by": "user"
+  },
+  {
+    "slug": "free-claude-code",
+    "name": "free-claude-code",
+    "primary_url": "https://github.com/Alishahryar1/free-claude-code",
+    "secondary_urls": [],
+    "hook": "Lightweight proxy that reroutes Claude Code's Anthropic API calls to NVIDIA NIM, OpenRouter, DeepSeek, LM Studio, or llama.cpp — no Anthropic key required.",
+    "categories": ["cost"],
+    "install": "uv tool install git+https://github.com/Alishahryar1/free-claude-code.git",
+    "added_date": "2026-04-24",
+    "added_by": "user"
   }
 ]
