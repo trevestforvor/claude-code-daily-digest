@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — April 25, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — April 25, 2026</h1><p class="sub">Top 15 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/claude-design-anthropic-labs">Claude Design (Anthropic Labs)</a></h3>
+  <p class="hook">Anthropic Labs launched Claude Design on April 17 — an experimental visual design tool powered by Opus 4.7 that creates prototypes, pitch decks, slides, and one-pagers from text or uploaded files. Start from a prompt or a PPTX/DOCX upload, refine via conversation, and export to Canva, PDF, or HTML; Claude packages finished work into a handoff bundle you can pass directly to Claude Code. Available in research preview for Pro, Max, Team, and Enterprise subscribers.</p>
+  <div class="secondary">Also: <a href="https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/">techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://claude.com/blog/claude-code-desktop-redesign">Claude Code Desktop Redesign — Parallel Sessions</a></h3>
+  <p class="hook">Anthropic rebuilt the Claude Code desktop app around parallel agents, shipping April 14-15. The redesign adds a session sidebar (filter by status, project, or environment), drag-and-drop pane layout, integrated terminal, in-app file editor, a rebuilt diff viewer for large changesets, and an expanded preview pane that handles HTML, PDFs, and local app servers. Available now for all Pro, Max, Team, and Enterprise plans.</p>
+  <div class="secondary">Also: <a href="https://www.macrumors.com/2026/04/15/anthropic-rebuilds-claude-code-desktop-app/">www.macrumors.com/2026/04/15/anthropic-rebuilds-claude-code-desktop-app/</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/claude-opus-4-7">Claude Opus 4.7</a></h3>
+  <p class="hook">Anthropic released Claude Opus 4.7 on April 16, now generally available across Claude.ai, the API, Bedrock, Vertex, Foundry, Snowflake Cortex, and GitHub Copilot. Key upgrades: substantially better vision at higher resolution, task budgets (rough token targets for full agentic loops), a new tokenizer (uses 1.0–1.35× more tokens), and 13% lift on a 93-task internal coding benchmark over Opus 4.6 — including 4 tasks neither Opus 4.6 nor Sonnet 4.6 could solve. Same pricing: $5/$25 per million tokens in/out.</p>
+  <div class="secondary">Also: <a href="https://github.blog/changelog/2026-04-16-claude-opus-4-7-is-generally-available/">github.blog/changelog/2026-04-16-claude-opus-4-7-is-generally-available/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/farion1231/cc-switch">cc-switch</a></h3>
+  <p class="hook">cc-switch is a Rust/Tauri cross-platform desktop app that unifies Claude Code, Codex, Gemini CLI, OpenCode, and OpenClaw into one interface — 51.2k stars, v3.14.1 shipped April 23, 2026. Features include 50+ built-in provider presets, centralized MCP + skills management across all apps, local proxy with hot-switching and auto-failover, usage dashboard with spend/token/trend charts, cloud sync via Dropbox/OneDrive/iCloud/WebDAV, and a session manager to restore conversation history.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <pre><button class="copy">copy</button><code>brew tap farion1231/ccswitch &amp;&amp; brew install --cask cc-switch</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.infoq.com/news/2026/04/anthropic-managed-agents/">Anthropic Managed Agents</a></h3>
+  <p class="hook">Launched April 8, Anthropic&#39;s Managed Agents let you define an agent as code — tools, memory, behavior — deploy it to Anthropic&#39;s infrastructure, and the API handles execution, state management, multi-turn reasoning, credential management, and sandboxing. Pricing is $0.08/session-hour; the pitch is going from idea to production in days rather than months. Compared to n8n and Zapier, it targets engineering teams building AI-native products that need genuine reasoning and adaptive behavior rather than traditional workflow automation.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.blog/changelog/2026-04-16-manage-agent-skills-with-github-cli/">GitHub CLI `gh skill` (v2.90.0)</a></h3>
+  <p class="hook">GitHub CLI v2.90.0 (April 16) ships `gh skill` — a standardized install/update/publish/search/preview/pin protocol for agent skills directly from GitHub repos. SHA-pinning lets you lock skills to a specific commit; `gh skill update` compares local SHAs against remote to detect real content changes. Compatible with Claude Code, GitHub Copilot, Cursor, Codex CLI, and Gemini CLI. Currently in public preview.</p>
+  <div class="secondary">Also: <a href="https://github.com/cli/cli/releases/tag/v2.90.0">github.com/cli/cli/releases/tag/v2.90.0</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <pre><button class="copy">copy</button><code>gh extension upgrade --all  # update gh to 2.90.0+, then: gh skill install &lt;owner/repo&gt;</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Shopify/Shopify-AI-Toolkit">Shopify AI Toolkit</a></h3>
+  <p class="hook">Shopify open-sourced an AI Toolkit on April 9 that connects Claude Code, Cursor, VS Code, Gemini CLI, and Codex directly to the Shopify platform via MCP. It surfaces Shopify dev docs and GraphQL API schemas without leaving the editor, validates GraphQL/Liquid/UI extension code against live schemas, and lets agents execute store operations (create products, manage metafields, modify themes, run bulk ops) through the Shopify CLI. MIT licensed, 250 stars. Covered by @indydevdan.</p>
+  <div class="secondary">Also: <a href="https://shopify.dev/docs/apps/build/ai-toolkit">shopify.dev/docs/apps/build/ai-toolkit</a> · <a href="https://www.youtube.com/watch?v=ptnWksC9TXY">www.youtube.com/watch?v=ptnWksC9TXY</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add Shopify/shopify-ai-toolkit</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/alirezarezvani/claude-skills">alirezarezvani/claude-skills</a></h3>
+  <p class="hook">12.7k-star skills library with 235+ production-ready skills across 9 domains — engineering (37 core + 45 advanced), marketing (44 skills across 7 pods), product, compliance, C-level advisory, Playwright testing, self-improving agent memory, project management, and regulatory/QM. v2.0 shipped March 4, 2026 adding 26 &#39;POWERFUL-tier&#39; skills. A single `convert.sh --tool all` script cross-compiles every skill for 12 AI coding platforms.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add alirezarezvani/claude-skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills">Anthropic Cybersecurity Skills</a></h3>
+  <p class="hook">5.7k stars and v1.2.0 (April 6, 2026): 754 structured cybersecurity skills across 26 domains — cloud security, pentesting, red teaming, DFIR, malware analysis, threat intel — each skill mapped to MITRE ATT&amp;CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, and NIST AI RMF simultaneously. Follows the agentskills.io open standard for agent skill discovery and works with 26+ AI coding platforms. Progressive disclosure architecture lets agents scan all 754 skills with minimal token overhead.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <pre><button class="copy">copy</button><code>npx skills add mukul975/Anthropic-Cybersecurity-Skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Automattic/claude-code-wordpress.com">WordPress.com Claude Code Plugin (Automattic)</a></h3>
+  <p class="hook">Automattic&#39;s official Claude Code plugin generates complete WordPress block themes from plain English: describe your site, pick from 3 generated design directions, and get a fully deployed theme in WordPress Studio. Two workflows: `/quick-build` for fast single-session creation and `/design-site` for a multi-phase professional pipeline including style tiles, full mockups, and live gallery. @indydevdan posted a walkthrough 3 days ago — 18 stars so far but first-party Automattic authorship is the signal.</p>
+  <div class="secondary">Also: <a href="https://developer.wordpress.com/wordpress-com-claude-code-plugin/">developer.wordpress.com/wordpress-com-claude-code-plugin/</a> · <a href="https://www.youtube.com/watch?v=FKdYdvSggzU">www.youtube.com/watch?v=FKdYdvSggzU</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <pre><button class="copy">copy</button><code>cd ~/Studio &amp;&amp; claude --plugin-dir /path/to/claude-code-wordpress.com</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/kaitranntt/ccs">ccs — Multi-Provider Claude Code Switcher</a></h3>
+  <p class="hook">2.1k stars, v7.74.0 (701 releases): ccs is a CLI profile and runtime manager that switches between Claude Code, Codex CLI, Gemini CLI, and 300+ OpenRouter models via an OAuth proxy — without rewriting config files. Visual dashboard monitors usage analytics, auth status, and provider health. Bridges Claude Code into OpenAI-compatible providers via local proxy. Zero-config to production-ready.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <pre><button class="copy">copy</button><code>npm install -g @kaitranntt/ccs</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/VoltAgent/awesome-agent-skills">VoltAgent/awesome-agent-skills</a></h3>
+  <p class="hook">A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more. Includes the mukul975/Anthropic-Cybersecurity-Skills collection (754 skills across 38 security domains), official vendor skills, and community contributions — organized as a one-stop discovery layer for the emerging cross-platform agent skills ecosystem.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/quemsah/awesome-claude-plugins">awesome-claude-plugins (Plugin Adoption Metrics)</a></h3>
+  <p class="hook">quemsah/awesome-claude-plugins is an automated n8n-powered tracker that indexes Claude Code plugin adoption metrics across GitHub repositories — 13,501 total repos indexed as of April 22, 2026. Rather than a curated list, it&#39;s live analytics: daily automated crawls tracking installs, stars, and usage signals across the plugin ecosystem, giving an evidence-based view of what&#39;s actually gaining traction.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/FlorianBruniaux/claude-code-ultimate-guide">claude-code-ultimate-guide</a></h3>
+  <p class="hook">FlorianBruniaux/claude-code-ultimate-guide is a comprehensive beginner-to-power-user documentation project covering Claude Code features with production-ready templates, agentic workflow guides, quizzes, and a cheatsheet. Described as &#39;a tremendous feat of documentation,&#39; it addresses the gap between Anthropic&#39;s sparse official docs and real-world practitioner needs — particularly for teams onboarding into agentic workflows.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/elvismdev/claude-wordpress-skills">claude-wordpress-skills</a></h3>
+  <p class="hook">A community skills pack for professional WordPress engineering in Claude Code — covering performance optimization, security auditing, Gutenberg block development, and theme/plugin best practices. Works alongside the official Automattic WordPress.com plugin to give Claude Code deep WordPress domain expertise. Fills the skill gap between generic code generation and WordPress-specific architecture patterns.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
