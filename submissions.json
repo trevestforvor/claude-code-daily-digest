@@ -89,5 +89,107 @@
     "install": "uv tool install git+https://github.com/Alishahryar1/free-claude-code.git",
     "added_date": "2026-04-24",
     "added_by": "user"
+  },
+  {
+    "slug": "taste-skill",
+    "name": "Taste Skill",
+    "primary_url": "https://github.com/leonxlnx/taste-skill",
+    "secondary_urls": ["https://www.tasteskill.dev"],
+    "hook": "Anti-slop frontend skill that injects opinionated design rules into Claude Code, Cursor, and Codex — kills the default Inter + purple-gradient + grid-card look with 7 variants and 3 parameter dials.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add Leonxlnx/taste-skill",
+    "added_date": "2026-04-24",
+    "added_by": "user"
+  },
+  {
+    "slug": "impeccable",
+    "name": "Impeccable",
+    "primary_url": "https://github.com/pbakaus/impeccable",
+    "secondary_urls": ["https://impeccable.style"],
+    "hook": "Upgrade to Anthropic's frontend-design skill — 23 commands (polish, audit, critique, typeset…) plus a 24-pattern detector that catches AI-slop tells like purple gradients, bounce easing, and dark glows.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add pbakaus/impeccable",
+    "added_date": "2026-04-24",
+    "added_by": "user"
+  },
+  {
+    "slug": "emil-kowalski-skill",
+    "name": "Emil Kowalski Design Engineer Skill",
+    "primary_url": "https://github.com/emilkowalski/skill",
+    "secondary_urls": ["https://emilkowal.ski/skill"],
+    "hook": "Linear's Emil Kowalski distilled his essays on UI polish, animation timing, and the invisible details that make interfaces feel right into a drop-in skill for Claude Code, Codex, and Cursor.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add emilkowalski/skill",
+    "added_date": "2026-04-24",
+    "added_by": "user"
+  },
+  {
+    "slug": "anthropic-courses",
+    "name": "Anthropic Courses",
+    "primary_url": "https://anthropic.skilljar.com/",
+    "secondary_urls": [
+      "https://anthropic.skilljar.com/claude-code-in-action",
+      "https://anthropic.skilljar.com/introduction-to-agent-skills"
+    ],
+    "hook": "Anthropic's free Skilljar training portal — hands-on courses including Claude Code in Action, Introduction to Agent Skills, and prompt-engineering fundamentals.",
+    "categories": ["anthropic"],
+    "install": "",
+    "added_date": "2026-04-24",
+    "added_by": "user"
+  },
+  {
+    "slug": "archon",
+    "name": "Archon",
+    "primary_url": "https://github.com/coleam00/Archon",
+    "secondary_urls": [],
+    "hook": "Open-source harness builder that wraps Claude Code with isolated worktrees, planning, test-iteration loops, and an idea→PR workflow — plus a web dashboard for chat + run monitoring.",
+    "categories": ["skill", "viral"],
+    "install": "git clone https://github.com/coleam00/Archon",
+    "added_date": "2026-04-24",
+    "added_by": "user"
+  },
+  {
+    "slug": "anthropic-theme-factory",
+    "name": "Anthropic Theme Factory",
+    "primary_url": "https://github.com/anthropics/skills/tree/main/skills/theme-factory",
+    "secondary_urls": [],
+    "hook": "Official Anthropic skill: a library of curated font + color themes (10 presets like \"Ocean Depths\") that snap onto slides, artifacts, and any rendered output.",
+    "categories": ["anthropic", "design", "skill"],
+    "install": "npx skills add https://github.com/anthropics/skills --skill theme-factory",
+    "added_date": "2026-04-24",
+    "added_by": "user"
+  },
+  {
+    "slug": "anthropic-brand-guidelines",
+    "name": "Anthropic Brand Guidelines",
+    "primary_url": "https://github.com/anthropics/skills/tree/main/skills/brand-guidelines",
+    "secondary_urls": [],
+    "hook": "Official Anthropic skill that enforces the company's visual identity — Anthropic Orange/Blue accents, Poppins + Lora typography, dark/light hex palettes — across any artifact.",
+    "categories": ["anthropic", "design", "skill"],
+    "install": "npx skills add https://github.com/anthropics/skills --skill brand-guidelines",
+    "added_date": "2026-04-24",
+    "added_by": "user"
+  },
+  {
+    "slug": "kepano-obsidian-skills",
+    "name": "Obsidian Skills (kepano)",
+    "primary_url": "https://github.com/kepano/obsidian-skills",
+    "secondary_urls": [],
+    "hook": "Steph Ango's (Obsidian CEO) official agent-skill bundle — teaches Claude Code, Codex, and Cursor to use Markdown, Bases, JSON Canvas, and the Obsidian CLI inside any vault.",
+    "categories": ["skill"],
+    "install": "npx skills add kepano/obsidian-skills",
+    "added_date": "2026-04-24",
+    "added_by": "user"
+  },
+  {
+    "slug": "remotion",
+    "name": "Remotion",
+    "primary_url": "https://github.com/remotion-dev/remotion",
+    "secondary_urls": ["https://www.remotion.dev/"],
+    "hook": "Make videos programmatically in React — components, CSS, Canvas, SVG, and WebGL compose into deterministic MP4s. ~44k stars and the de-facto stack for AI-generated motion.",
+    "categories": ["design"],
+    "install": "npx create-video@latest",
+    "added_date": "2026-04-24",
+    "added_by": "user"
   }
 ]
