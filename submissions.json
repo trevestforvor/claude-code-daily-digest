@@ -230,5 +230,16 @@
     "install": "npm install -g varlock",
     "added_date": "2026-04-25",
     "added_by": "user"
+  },
+  {
+    "slug": "openscreen",
+    "name": "OpenScreen",
+    "primary_url": "https://github.com/siddharthvaddem/openscreen",
+    "secondary_urls": ["https://openalternative.co/openscreen"],
+    "hook": "MIT-licensed Screen Studio alternative — auto/manual zoom, motion blur, custom backgrounds in an Electron + React + TS desktop app. +15k stars in a week, ~26k total.",
+    "categories": ["viral", "design"],
+    "install": "git clone https://github.com/siddharthvaddem/openscreen",
+    "added_date": "2026-04-25",
+    "added_by": "user"
   }
 ]
