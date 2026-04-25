@@ -216,5 +216,19 @@
     "install": "git clone https://github.com/lightningpixel/modly",
     "added_date": "2026-04-25",
     "added_by": "user"
+  },
+  {
+    "slug": "varlock",
+    "name": "Varlock",
+    "primary_url": "https://github.com/dmno-dev/varlock",
+    "secondary_urls": [
+      "https://varlock.dev/",
+      "https://github.com/wrsmith108/varlock-claude-skill"
+    ],
+    "hook": "AI-safe .env files: a schema DSL gives agents full config context (names, types, validation) without leaking values, plus a pre-commit hook + scan to catch secrets in AI-generated code.",
+    "categories": ["skill"],
+    "install": "npm install -g varlock",
+    "added_date": "2026-04-25",
+    "added_by": "user"
   }
 ]
