@@ -205,5 +205,16 @@
     "install": "vllm serve MiniMaxAI/MiniMax-M2.7 --tensor-parallel-size 4",
     "added_date": "2026-04-25",
     "added_by": "user"
+  },
+  {
+    "slug": "modly",
+    "name": "Modly",
+    "primary_url": "https://github.com/lightningpixel/modly",
+    "secondary_urls": [],
+    "hook": "Desktop app that turns any photo into a 3D mesh entirely on your local GPU — pluggable open-source models, MIT-licensed, Windows + Linux (macOS soon).",
+    "categories": ["viral", "design"],
+    "install": "git clone https://github.com/lightningpixel/modly",
+    "added_date": "2026-04-25",
+    "added_by": "user"
   }
 ]
