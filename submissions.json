@@ -191,5 +191,19 @@
     "install": "npx create-video@latest",
     "added_date": "2026-04-24",
     "added_by": "user"
+  },
+  {
+    "slug": "minimax-m2",
+    "name": "MiniMax M2.7",
+    "primary_url": "https://github.com/MiniMax-AI/MiniMax-M2",
+    "secondary_urls": [
+      "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+      "https://www.minimax.io/news/minimax-m27-en"
+    ],
+    "hook": "Open-source 230B-param MoE (10B active) tuned for coding + agentic tool use — ~8% the price of Sonnet at 2× speed, with M2.7 ranking #1 among open-source models on Artificial Analysis.",
+    "categories": ["cost", "viral"],
+    "install": "vllm serve MiniMaxAI/MiniMax-M2.7 --tensor-parallel-size 4",
+    "added_date": "2026-04-25",
+    "added_by": "user"
   }
 ]
