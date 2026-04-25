@@ -241,5 +241,20 @@
     "install": "git clone https://github.com/siddharthvaddem/openscreen",
     "added_date": "2026-04-25",
     "added_by": "user"
+  },
+  {
+    "slug": "mirofish",
+    "name": "MiroFish",
+    "primary_url": "https://github.com/666ghj/MiroFish",
+    "secondary_urls": [
+      "https://github.com/amadad/mirofish-cli",
+      "https://github.com/nikmcfly/MiroFish-Offline",
+      "https://666ghj.github.io/mirofish-demo/"
+    ],
+    "hook": "Swarm-intelligence prediction engine: spins up thousands of AI agents with personalities + memory in a GraphRAG-built parallel world to forecast outcomes. #1 GitHub trending and $4.1M raised in 24 hours.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/amadad/mirofish-cli",
+    "added_date": "2026-04-25",
+    "added_by": "user"
   }
 ]
