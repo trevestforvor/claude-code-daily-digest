@@ -256,5 +256,16 @@
     "install": "git clone https://github.com/amadad/mirofish-cli",
     "added_date": "2026-04-25",
     "added_by": "user"
+  },
+  {
+    "slug": "3dsvg",
+    "name": "3dsvg",
+    "primary_url": "https://3dsvg.design/",
+    "secondary_urls": ["https://github.com/renatoworks/3dsvg"],
+    "hook": "Free in-browser editor that turns any SVG into an interactive 3D object — 10 materials, 7 animations, exports as 4K PNG, 60fps MP4/WebM, GLB/STL/OBJ, or copy-paste JSX (Three.js + R3F).",
+    "categories": ["design"],
+    "install": "",
+    "added_date": "2026-04-25",
+    "added_by": "user"
   }
 ]
