@@ -1,0 +1,107 @@
+[
+  {
+    "slug": "superpowers",
+    "name": "obra/superpowers",
+    "primary_url": "https://github.com/obra/superpowers",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=KjEFy5wjFQg",
+      "https://www.youtube.com/watch?v=TX91PdBn_IA"
+    ],
+    "hook": "159.3k stars (Global Rank #40) — Jesse Vincent's structured development methodology for Claude Code and 13+ other agents. Five composable phases: Brainstorm (spec before code, shows design in chunks for validation), Design (interactive HTML mockups open in your browser), Plan (subagent task breakdown in isolated git worktrees), Code (parallel Workers with a 6-category counterexample self-check), and Verify (mandatory security audits). Official Anthropic marketplace since January 15, 2026. Multiple April 2026 tutorial videos including from @Chase-H-AI's Top 10 April Skills list; now ranked #2 globally on GitHub Trending.",
+    "categories": ["design", "skill", "viral"],
+    "install": "/plugin marketplace add obra/superpowers",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "ui-ux-pro-max-skill",
+    "name": "UI/UX Pro Max",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "secondary_urls": [
+      "https://ui-ux-pro-max-skill.nextlevelbuilder.io/",
+      "https://www.youtube.com/shorts/weNHvvolEds"
+    ],
+    "hook": "55.8k stars — \"the world's most popular community design skill.\" v2.0's Design System Generator analyzes your project and outputs a complete tailored system in seconds: 161 color palettes, 57 font pairings, 50+ visual styles, 99 UX guidelines, and 25 chart types across 10 stacks (Tailwind, React, Next.js, Vue, Nuxt, ShadCN, Flutter, SwiftUI, React Native, Jetpack Compose). Auto-activates when you request any UI/UX work — no slash command needed. Covered by @Chase-H-AI in both the April \"Top 10 Claude Code Skills\" and \"Top 5 Design\" videos.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add nextlevelbuilder/ui-ux-pro-max-skill",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "agent-browser",
+    "name": "agent-browser (Vercel Labs)",
+    "primary_url": "https://github.com/vercel-labs/agent-browser",
+    "secondary_urls": ["https://www.youtube.com/watch?v=KjEFy5wjFQg"],
+    "hook": "~29.8k stars — Vercel's official headless browser automation CLI built for AI agents. Bash-driven workflow: `agent-browser open <url>`, `agent-browser snapshot -i` returns annotated screenshots with stable element refs, `agent-browser click <ref>` acts on them — no CSS selectors that rot. Supports page init scripts, parallel sessions, and a local dashboard for live monitoring. Works across Claude Code, Codex, Cursor, Gemini CLI, Windsurf, GitHub Copilot, and OpenCode. v0.25.1 (April 6). Covered by @Chase-H-AI in the April Top 10.",
+    "categories": ["design", "skill"],
+    "install": "npm install -g agent-browser && agent-browser install && npx skills add agent-browser",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "googleworkspace-cli-gws",
+    "name": "Google Workspace CLI (gws)",
+    "primary_url": "https://github.com/googleworkspace/cli",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=KjEFy5wjFQg",
+      "https://github.com/WadeWarren/gws-claude-plugin"
+    ],
+    "hook": "19.9k stars (v0.22) — Google's official CLI for Drive, Gmail, Calendar, Sheets, Docs, Chat, and Admin, dynamically built from Google's Discovery Service so new Workspace APIs surface automatically without updates. Launched March 2, 2026; hit 4,900 stars in its first 3 days and trended on HN (427 points). Has built-in agent skills for Claude Code; the companion WadeWarren/gws-claude-plugin adds 92 curated skills covering end-to-end Gmail, Calendar, and Drive workflows without extra auth configuration. Covered by @Chase-H-AI in the April Top 10.",
+    "categories": ["mcp", "skill"],
+    "install": "npm install -g @googleworkspace/cli",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "claude-code-ultraplan",
+    "name": "Claude Code Ultraplan",
+    "primary_url": "https://code.claude.com/docs/en/ultraplan",
+    "secondary_urls": ["https://betterstack.com/community/guides/ai/claude-code-ultraplan/"],
+    "hook": "Anthropic research preview: `/ultraplan <prompt>` offloads the planning phase to a cloud Claude Code session in plan mode while your local terminal stays free — no more blocking waits during long plan generation. Review the draft in your browser with inline comments on specific passages, emoji reactions, and a structured outline sidebar; then execute the approved plan locally or in any connected environment. Unlike `/plan`, Ultraplan runs asynchronously and supports multi-person review before a line of code changes. Requires v2.1.91+ and a GitHub repo.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code  # then /ultraplan <prompt>"
+  },
+  {
+    "slug": "anthropic-cli-ant",
+    "name": "Anthropic CLI (ant)",
+    "primary_url": "https://github.com/anthropics/anthropic-cli",
+    "hook": "Official Anthropic CLI (`ant`) for the Claude API, shipped with Managed Agents (April 8). Replaces hand-written JSON with typed flags or piped YAML, `@path` references to inline file contents into string fields, and a built-in `--transform` query for field extraction — no separate `jq` needed. Claude Code shells out to `ant` natively so agent-driven API calls produce structured, parseable output. Versioning API resources as YAML files in git makes agent configurations reviewable and diffable. Go-based, single binary.",
+    "categories": ["anthropic", "cost"],
+    "install": "go install 'github.com/anthropics/anthropic-cli/cmd/ant@latest'"
+  },
+  {
+    "slug": "cc-v2-1-119-120-regressions",
+    "name": "Claude Code v2.1.119/v2.1.120 Regression Survival Checklist",
+    "primary_url": "https://gist.github.com/yurukusa/a866b4cd2976486156a00c190c39cef6",
+    "hook": "Filed April 24 — community gist documenting 8 regressions Anthropic shipped in a 24-hour patch window: auto-update break, silent model swap to a cheaper variant, two separate `--resume`/`--continue` crashes, reintroduced UI-duplication bug, WSL2-only `/mcp` freeze, CLAUDE.md ignored on project open, and a macOS worktree hang. The issue tracker hit 30+ regression reports in one day. Recommended rollback: `npm install -g @anthropic-ai/claude-code@2.1.117`. Anthropic has since pushed a partial fix via auto-update but v2.1.117 remains the stable production recommendation.",
+    "categories": ["cost"],
+    "install": "npm install -g @anthropic-ai/claude-code@2.1.117  # rollback to stable"
+  },
+  {
+    "slug": "ctx-cross-agent",
+    "name": "ctx — Cross-Agent Context Manager",
+    "primary_url": "https://github.com/dchu917/ctx",
+    "secondary_urls": ["https://news.ycombinator.com/item?id=47836740"],
+    "hook": "Show HN (April 23) — local context manager for Claude Code and Codex that replaces `/resume` for power users running many parallel sessions. Each ctx workstream binds to the exact Claude and Codex conversation it originated from; later pulls stay on that bound session instead of jumping to the newest chat on disk. Branching creates a fresh workstream from current state without mixing future transcripts with the source. Optional browser frontend for inspecting and managing saved workstreams. Addresses the \"which session was I in?\" problem that derails multi-project agentic workflows.",
+    "categories": ["cost"]
+  },
+  {
+    "slug": "hesreallyhim-awesome-claude-code",
+    "name": "awesome-claude-code (hesreallyhim)",
+    "primary_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "hook": "~41k stars — the community's definitive curated list of skills, hooks, slash-commands, agent orchestrators, applications, and plugins for Claude Code by Anthropic. CC0-licensed and actively maintained since Claude Code's public launch. Organized into clear categories unlike the broader awesome-agent-skills collections; focuses exclusively on Claude Code-native resources with quality curation rather than volume. Serves as the recommended starting point for practitioners onboarding into the ecosystem.",
+    "categories": ["skill"]
+  },
+  {
+    "slug": "claude-code-changelog-marckrenn",
+    "name": "claude-code-changelog",
+    "primary_url": "https://github.com/marckrenn/claude-code-changelog",
+    "secondary_urls": ["https://x.com/ClaudeCodeLog"],
+    "hook": "Unofficial real-time tracker of Claude Code's internal system prompt and feature flags across every release. Two files update with each new version: `cc-prompt.md` (full system prompt) and `cc-flags.md` (complete feature flag table) — tagged per version so `git diff v2.1.117..v2.1.118` shows the exact behavioral instructions that changed. Powers the @ClaudeCodeLog X account with automatic posts on every release. Especially useful after regression windows like v2.1.119/v2.1.120 to understand what Anthropic silently changed in the instructions to Claude.",
+    "categories": ["cost"]
+  },
+  {
+    "slug": "gws-claude-plugin",
+    "name": "gws-claude-plugin (WadeWarren)",
+    "primary_url": "https://github.com/WadeWarren/gws-claude-plugin",
+    "hook": "92 curated Claude Code skills for Google Workspace, built as a first-class companion to the official `googleworkspace/cli` (gws). Covers Gmail (compose, search, label, thread), Drive (upload, share, folder ops), Calendar (create, invite, check availability), Sheets (read/write ranges, formulas), Docs (create, append, export), and Google Chat. Each skill is a thin wrapper over `gws` CLI commands — no OAuth re-configuration beyond gws setup. Turns Claude Code into a daily Workspace operator without context-window-bloating MCP tool lists.",
+    "categories": ["mcp", "skill"],
+    "install": "See README (requires googleworkspace/cli installed and authenticated)"
+  }
+]
