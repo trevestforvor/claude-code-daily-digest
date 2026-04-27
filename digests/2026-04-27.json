@@ -1,0 +1,136 @@
+[
+  {
+    "slug": "graphify",
+    "name": "graphify",
+    "primary_url": "https://github.com/safishamsi/graphify",
+    "hook": "36.3k stars — turns any folder of code, docs, papers, images, or videos into a queryable knowledge graph and wires it into Claude Code via a PreToolUse hook that auto-surfaces graph context before every file search. A companion CLAUDE.md section tells Claude to load the graph report before answering architecture questions. v0.5.0 (April 23) ships with 70x-fewer-token-per-search benchmarks vs brute-force reads. Covered by @charlieautomates as a core part of their \"replaces OpenClaw\" stack.",
+    "categories": ["cost"],
+    "install": "uv tool install graphifyy && graphify install",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "claude-code-routines",
+    "name": "Claude Code Routines",
+    "primary_url": "https://code.claude.com/docs/en/web-scheduled-tasks",
+    "secondary_urls": ["https://allthings.how/claude-code-routines-how-anthropics-scheduled-ai-agents-work/"],
+    "hook": "Anthropic research preview (April 14) that puts Claude Code sessions on autopilot in the cloud — no laptop needed. Create a routine once (prompt + repos + connectors), then trigger it on a schedule (cron or preset), via HTTP POST to a per-routine endpoint, or on GitHub events like PR-opened or release-published. Runs fully autonomously with full tool access and your connected MCP connectors. Plan daily caps: Pro 5 / Max 15 / Team+Enterprise 25. Create at claude.ai/code/routines or run `/schedule` in any session. Covered by @charlieautomates in a dedicated video this week.",
+    "categories": ["anthropic"],
+    "install": "Visit claude.ai/code/routines — or /schedule in the CLI",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "claude-mythos-preview",
+    "name": "Claude Mythos Preview",
+    "primary_url": "https://www.anthropic.com/glasswing",
+    "secondary_urls": [
+      "https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/",
+      "https://simonwillison.net/2026/Apr/7/project-glasswing/"
+    ],
+    "hook": "Anthropic's most capable model to date — SWE-bench 93.9%, USAMO 97.6%, and autonomously discovered thousands of zero-day CVEs across every major OS and browser including a 17-year-old FreeBSD RCE (CVE-2026-4747). Available only through Project Glasswing, a gated initiative with AWS, Apple, Cisco, Google, NVIDIA, Linux Foundation, and 8 other partners, prioritizing defenders at internet-critical companies. $25/$125 per M input/output tokens; Anthropic committed $100M in credits to participants. Access via Claude API, Bedrock, Vertex AI, or Microsoft Foundry after approval.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "codeburn",
+    "name": "CodeBurn",
+    "primary_url": "https://github.com/getagentseal/codeburn",
+    "secondary_urls": ["https://news.ycombinator.com/item?id=47759035"],
+    "hook": "4.3k stars — TUI dashboard that shows where your AI coding tokens actually go, by reading Claude Code's JSONL session transcripts from disk (no proxy, no wrapper, no API key). Classifies every turn into 13 task categories, tracks one-shot success rates vs retry-burn spirals, and surfaces cost per task type across Claude Code, Codex, Cursor, and GitHub Copilot. macOS menubar app updated April 25. Show HN landed 1 day ago and is climbing.",
+    "categories": ["cost"],
+    "install": "npm install -g codeburn"
+  },
+  {
+    "slug": "caveman",
+    "name": "caveman",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "\"Why use many token when few token do trick\" — 47.8k stars (+8.1k since April 23). Cuts ~65–75% output tokens and ~46% input tokens while preserving technical accuracy. One-line install for Claude Code, Cursor, Windsurf, Copilot, Gemini CLI, and 40+ others. A March 2026 paper found brevity constraints improved benchmark accuracy by 26 percentage points. The Pro-plan pricing uncertainty keeps driving new cost-reduction installs; caveman is the first recommendation in every r/ClaudeAI budget thread.",
+    "categories": ["cost", "skill"],
+    "install": "claude plugin marketplace add JuliusBrussee/caveman && claude plugin install caveman@caveman",
+    "recurring_note": "↑ Day 8 — up 8.1k stars since April 23 (39.7k→47.8k); still #1 cost-reduction recommendation across Reddit threads"
+  },
+  {
+    "slug": "everything-claude-code",
+    "name": "everything-claude-code",
+    "primary_url": "https://github.com/affaan-m/everything-claude-code",
+    "hook": "168k stars (+6k since April 23) — comprehensive Claude Code harness optimization system: 48 agents, 183+ skills, 34 language rules, 14+ MCP configs, a desktop dashboard GUI (v1.10.0), and AgentShield (1,282 tests across 5 security categories including secrets detection, hook injection, and MCP server risk profiling). Hackathon winner. The community calls it the 'Claude Code distro'. ECC 2.0 alpha discussion still active on Reddit.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add https://github.com/affaan-m/everything-claude-code",
+    "recurring_note": "↑ Day 8 — 162k→168k stars; ECC 2.0 alpha discussion ongoing"
+  },
+  {
+    "slug": "zilliztech-claude-context",
+    "name": "claude-context (Zilliz)",
+    "primary_url": "https://github.com/zilliztech/claude-context",
+    "hook": "9.8k stars — MCP plugin that adds full-codebase semantic search to Claude Code and other agents via hybrid BM25 + dense-vector retrieval (Milvus/Zilliz Cloud backend). Natural language queries across your entire repo surface precisely the relevant files without manual inclusion. Supports Claude Code, Cursor, Windsurf, Claude Desktop. Requires an OpenAI API key for embeddings and a Zilliz Cloud endpoint.",
+    "categories": ["mcp"],
+    "install": "See README (requires OpenAI API key + Zilliz Cloud)"
+  },
+  {
+    "slug": "claw-code",
+    "name": "claw-code",
+    "primary_url": "https://github.com/ultraworkers/claw-code",
+    "hook": "185k+ stars — clean-room Rust rewrite of the Claude Code agent harness, initiated April 1 after security researcher Chaofan Shou found the complete 512K-line TypeScript source in the npm package. Sigrid Jin (world's most active Claude Code user by token count) leads the project. 109k forks; active Discord; not affiliated with Anthropic.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/ultraworkers/claw-code && cd claw-code/rust && cargo build --workspace",
+    "recurring_note": "↑ Day 5 — still 185k+ stars; Rust rewrite advancing with new contributors"
+  },
+  {
+    "slug": "code-review-graph",
+    "name": "code-review-graph",
+    "primary_url": "https://github.com/tirth8205/code-review-graph",
+    "hook": "13.4k stars (+1.7k since April 20) — builds a persistent AST knowledge graph with Tree-sitter + SQLite, then traces blast-radius (affected callers, dependents, tests) on every changed file to give Claude exactly the context it needs. Benchmarks: 6.8× fewer tokens on code reviews, 49× on routine daily tasks. v2.3.2 (April 14). Auto-detects and configures Claude Code, Codex, Cursor, and Windsurf on install.",
+    "categories": ["mcp", "cost"],
+    "install": "pip install code-review-graph && code-review-graph install && code-review-graph build",
+    "recurring_note": "↑ Day 8 — 11.7k→13.4k stars; blast-radius analysis increasingly cited as the preferred context-narrowing approach"
+  },
+  {
+    "slug": "claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "46k+ stars — auto-captures session transcripts, compresses them with the Claude Agent SDK, and injects the most relevant context at the start of each new session via SQLite + Chroma vector search. Cross-platform, zero config. The persistent memory layer most practitioners reach for first when starting with Max or Team plans.",
+    "categories": ["cost"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 8+ — 46k stars; standard first-install recommendation alongside caveman for cost-conscious workflows"
+  },
+  {
+    "slug": "get-shit-done",
+    "name": "get-shit-done",
+    "primary_url": "https://github.com/gsd-build/get-shit-done",
+    "hook": "55.2k stars — spec-driven meta-prompting system for Claude Code with five slash commands (/gsd-new-project, /gsd-plan-phase, /gsd-execute-phase, /gsd-spike, /gsd-sketch). Enforces a structured plan-then-build loop that prevents runaway agent sessions from scope-creeping. Updated April 19.",
+    "categories": ["skill"],
+    "install": "npx get-shit-done-cc@latest",
+    "recurring_note": "↑ Day 8 — 55.2k stars; plan-first enforcement increasingly recommended in multi-session Routines setups"
+  },
+  {
+    "slug": "almanac-mcp",
+    "name": "Almanac MCP",
+    "primary_url": "https://news.ycombinator.com/item?id=47855284",
+    "hook": "Show HN from 6 days ago: an MCP that installs proper web access into Claude Code and other coding agents, described as \"turn Claude Code into a Deep Research agent.\" One-command setup — `npx openalmanac setup` — adds structured web-search and crawl tools via the MCP protocol, giving Claude Code live access to documentation, papers, and web content without copy-paste workflows.",
+    "categories": ["mcp"],
+    "install": "npx openalmanac setup"
+  },
+  {
+    "slug": "claude-code-best-practice",
+    "name": "claude-code-best-practice (shanraisshan)",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "47.6k stars — the community's definitive agentic engineering guide: 82+ actionable tips across 11 categories, including 6 directly from Boris Cherny (the Anthropic engineer who built Claude Code). Covers every major feature: subagents, Routines, Ultraplan, Ultrareview, Channels, Devcontainers, Computer Use, hooks, MCP, and context management. Serves as the go-to companion doc as Routines and Ultraplan land in production.",
+    "categories": ["skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 5 — 47.6k stars; newly relevant as Routines section gets field-tested"
+  },
+  {
+    "slug": "chase-h-ai-8-skills-2026",
+    "name": "8 Claude Code Skills Every Developer Needs — Chase AI",
+    "primary_url": "https://www.youtube.com/watch?v=Va-U1dqhwzk",
+    "hook": "Chase AI (109k subscribers) published this 3 days ago — a developer-perspective walkthrough of the 8 skills a senior Amazon/Microsoft engineer keeps installed across all Claude Code projects. The video bridges the gap between the top-10 lists and opinionated daily-driver usage. @Chase-H-AI is the highest-volume Claude Code skill curator on YouTube with multiple top-10 videos this month.",
+    "categories": ["skill"],
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "simonscrapes-master-claude-design",
+    "name": "Master Claude Design in One Video (Full Course) — Simon Scrapes",
+    "primary_url": "https://www.youtube.com/watch?v=-_aQquBH5PU",
+    "hook": "Simon Scrapes (71,800 subscribers) dropped this full-course video 1 day ago — a comprehensive walkthrough of Claude Design (Anthropic's Opus 4.7-powered prototyping tool launched April 17). Covers design system setup, prompt strategies, brand application, and handoff to Claude Code. First practitioner-level deep dive since launch; this channel's Memory Systems Compared video last week drew significant engagement.",
+    "categories": ["design"],
+    "creator_buzz": ["@simonscrapes"]
+  }
+]
