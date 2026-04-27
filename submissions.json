@@ -191,5 +191,81 @@
     "install": "npx create-video@latest",
     "added_date": "2026-04-24",
     "added_by": "user"
+  },
+  {
+    "slug": "minimax-m2",
+    "name": "MiniMax M2.7",
+    "primary_url": "https://github.com/MiniMax-AI/MiniMax-M2",
+    "secondary_urls": [
+      "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+      "https://www.minimax.io/news/minimax-m27-en"
+    ],
+    "hook": "Open-source 230B-param MoE (10B active) tuned for coding + agentic tool use — ~8% the price of Sonnet at 2× speed, with M2.7 ranking #1 among open-source models on Artificial Analysis.",
+    "categories": ["cost", "viral"],
+    "install": "vllm serve MiniMaxAI/MiniMax-M2.7 --tensor-parallel-size 4",
+    "added_date": "2026-04-25",
+    "added_by": "user"
+  },
+  {
+    "slug": "modly",
+    "name": "Modly",
+    "primary_url": "https://github.com/lightningpixel/modly",
+    "secondary_urls": [],
+    "hook": "Desktop app that turns any photo into a 3D mesh entirely on your local GPU — pluggable open-source models, MIT-licensed, Windows + Linux (macOS soon).",
+    "categories": ["viral", "design"],
+    "install": "git clone https://github.com/lightningpixel/modly",
+    "added_date": "2026-04-25",
+    "added_by": "user"
+  },
+  {
+    "slug": "varlock",
+    "name": "Varlock",
+    "primary_url": "https://github.com/dmno-dev/varlock",
+    "secondary_urls": [
+      "https://varlock.dev/",
+      "https://github.com/wrsmith108/varlock-claude-skill"
+    ],
+    "hook": "AI-safe .env files: a schema DSL gives agents full config context (names, types, validation) without leaking values, plus a pre-commit hook + scan to catch secrets in AI-generated code.",
+    "categories": ["skill"],
+    "install": "npm install -g varlock",
+    "added_date": "2026-04-25",
+    "added_by": "user"
+  },
+  {
+    "slug": "openscreen",
+    "name": "OpenScreen",
+    "primary_url": "https://github.com/siddharthvaddem/openscreen",
+    "secondary_urls": ["https://openalternative.co/openscreen"],
+    "hook": "MIT-licensed Screen Studio alternative — auto/manual zoom, motion blur, custom backgrounds in an Electron + React + TS desktop app. +15k stars in a week, ~26k total.",
+    "categories": ["viral", "design"],
+    "install": "git clone https://github.com/siddharthvaddem/openscreen",
+    "added_date": "2026-04-25",
+    "added_by": "user"
+  },
+  {
+    "slug": "mirofish",
+    "name": "MiroFish",
+    "primary_url": "https://github.com/666ghj/MiroFish",
+    "secondary_urls": [
+      "https://github.com/amadad/mirofish-cli",
+      "https://github.com/nikmcfly/MiroFish-Offline",
+      "https://666ghj.github.io/mirofish-demo/"
+    ],
+    "hook": "Swarm-intelligence prediction engine: spins up thousands of AI agents with personalities + memory in a GraphRAG-built parallel world to forecast outcomes. #1 GitHub trending and $4.1M raised in 24 hours.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/amadad/mirofish-cli",
+    "added_date": "2026-04-25",
+    "added_by": "user"
+  },
+  {
+    "slug": "3dsvg",
+    "name": "3dsvg",
+    "primary_url": "https://3dsvg.design/",
+    "secondary_urls": ["https://github.com/renatoworks/3dsvg"],
+    "hook": "Free in-browser editor that turns any SVG into an interactive 3D object — 10 materials, 7 animations, exports as 4K PNG, 60fps MP4/WebM, GLB/STL/OBJ, or copy-paste JSX (Three.js + R3F).",
+    "categories": ["design"],
+    "install": "",
+    "added_date": "2026-04-25",
+    "added_by": "user"
   }
 ]
