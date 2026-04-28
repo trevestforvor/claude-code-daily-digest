@@ -1,0 +1,129 @@
+[
+  {
+    "slug": "claude-code-ultrareview",
+    "name": "Claude Code /ultrareview",
+    "primary_url": "https://code.claude.com/docs/en/ultrareview",
+    "hook": "Research preview since v2.1.111 (April 20). Run `/ultrareview` and a fleet of reviewer agents fans out across your branch diff in a cloud sandbox, independently verifying each bug before surfacing it — no false positives from style suggestions. Pro and Max subscribers get 3 free runs through May 5, then $5–20 per review billed as extra usage. `claude ultrareview <PR#>` runs headlessly from CI. Requires claude.ai authentication; not available on Bedrock, Vertex AI, or Foundry.",
+    "categories": ["anthropic"],
+    "install": "/ultrareview  (or: claude ultrareview <PR-number> from CI)"
+  },
+  {
+    "slug": "claude-code-custom-themes",
+    "name": "Claude Code Custom Themes",
+    "primary_url": "https://code.claude.com/docs/en/terminal-config#create-a-custom-theme",
+    "hook": "Shipped in v2.1.118 (Week 17, April 20–24). Open `/theme` to pick from built-in presets or create a named theme, then hand-edit JSON files in `~/.claude/themes/` to override only the tokens you care about. The big unlock: plugins can now ship their own themes — a design skill can carry its own terminal aesthetic alongside its instructions, making the whole Claude Code environment cohesive.",
+    "categories": ["anthropic", "design"],
+    "install": "/theme  (then 'Create new theme' in the picker)"
+  },
+  {
+    "slug": "anthropic-quality-postmortem",
+    "name": "Anthropic Claude Code Quality Postmortem (April 23)",
+    "primary_url": "https://www.anthropic.com/engineering/april-23-postmortem",
+    "secondary_urls": ["https://news.ycombinator.com/item?id=47878905", "https://simonwillison.net/2026/Apr/24/recent-claude-code-quality-reports/"],
+    "hook": "Anthropic's engineering team confirmed three simultaneous bugs caused the March–April quality regression: (1) A March 26 caching change accidentally cleared Claude's thinking history every turn for the rest of a session instead of just once after an hour of idle — Simon Willison flagged this as personally painful since he often leaves sessions for a day before returning. (2) Default reasoning effort was silently downgraded from `high` to `medium` on March 4 to reduce latency (reverted April 7). (3) A verbosity-reduction prompt added April 16 degraded coding quality and was reverted April 20. All three are fixed; default effort for Pro and Max is now `high`.",
+    "categories": ["anthropic", "cost"]
+  },
+  {
+    "slug": "dive-into-claude-code",
+    "name": "Dive into Claude Code (VILA-Lab paper + repo)",
+    "primary_url": "https://github.com/VILA-Lab/Dive-into-Claude-Code",
+    "secondary_urls": ["https://arxiv.org/abs/2604.14228", "https://www.youtube.com/watch?v=HRI34v68igw"],
+    "hook": "841-star companion repo to arXiv paper 2604.14228 (April 2026) — the first systematic source-level analysis of Claude Code's full TypeScript source. The headline finding: only 1.6% of the codebase is AI decision logic; the remaining 98.4% is deterministic infrastructure. The paper maps five human values through 13 design principles to specific implementation choices, and includes a 'Build Your Own Agent' guide. YouTube video posted 1 week ago. Produced by VILA Lab / Zhiqiang Shen et al.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/VILA-Lab/Dive-into-Claude-Code"
+  },
+  {
+    "slug": "cc-beeper",
+    "name": "CC-BEEPER",
+    "primary_url": "https://github.com/vecartier/cc-beeper",
+    "hook": "161 GitHub stars, 220 Product Hunt upvotes (#6 on April 15). A 100% Swift macOS desktop widget that shows exactly what Claude Code is doing at all times — eight named states (outline/working, orange/attention, purple/YOLO, red/recording, green/speaking, dimmed/hidden) and four auto-approval presets from Strict to YOLO. Standout feature: on-device voice I/O via WhisperKit + Kokoro TTS with a global ⌥R hotkey or double-clap to go fully hands-free. No accounts, no telemetry, no API keys — hooks directly into `~/.claude/settings.json`. macOS 14+.",
+    "categories": ["design"],
+    "install": "brew install vecartier/tap/cc-beeper"
+  },
+  {
+    "slug": "awesome-claude-design",
+    "name": "awesome-claude-design (rohitg00)",
+    "primary_url": "https://github.com/rohitg00/awesome-claude-design",
+    "hook": "399 stars since launching April 17 alongside Claude Design. Curates DESIGN.md files organized by 9 aesthetic families — Editorial Minimalism, Terminal-Core, Warm Editorial, Data-Dense Pro, Cinematic Dark, Playful Color, Glass/Soft-Futurism, Neon Brutalist, and Indie picks — plus remix recipes, community feedback, and patterns for detecting AI-slop tells. Acts as the Claude Design equivalent of what awesome-claude-code is to the agent ecosystem: a structured entry point for practitioners.",
+    "categories": ["design"],
+    "install": "git clone https://github.com/rohitg00/awesome-claude-design"
+  },
+  {
+    "slug": "claude-code-session-recap",
+    "name": "Claude Code Session Recap (/recap)",
+    "primary_url": "https://code.claude.com/docs/en/interactive-mode#session-recap",
+    "hook": "Week 17 (April 20–24). When you switch focus away from a Claude Code terminal and come back, you now get a one-line recap of what happened while you were gone — essential for users juggling multiple sessions at once. Run `/recap` on demand at any time; configure or disable the automatic version from `/config`. Force it with `CLAUDE_CODE_ENABLE_AWAY_SUMMARY=1` when telemetry is off.",
+    "categories": ["anthropic"],
+    "install": "/recap  (built into v2.1.114+)"
+  },
+  {
+    "slug": "awesome-agent-skills",
+    "name": "awesome-agent-skills (VoltAgent)",
+    "primary_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "hook": "19.2k stars — 1,100+ agent skills curated from official engineering teams at Anthropic, Google, Vercel, Stripe, Cloudflare, Netlify, Microsoft, Hugging Face, Figma, and more. The pitch: 'hand-picked, not AI-slop generated.' Compatible with Claude Code, Codex, Gemini CLI, Cursor, and GitHub Copilot. Browse the full catalog at officialskills.sh. Positioned as the authoritative source for production-grade skills backed by the companies that built the APIs.",
+    "categories": ["skill"],
+    "install": "See README (browse at officialskills.sh)"
+  },
+  {
+    "slug": "claude-code-v2-1-121",
+    "name": "Claude Code v2.1.121 Release Roundup (April 28)",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "hook": "Today's release (April 28) ships several quality-of-life changes: `alwaysLoad: true` in MCP server config skips tool deferral so your most-used server tools are always present without an extra round-trip; `claude plugin prune` cleans up orphaned auto-installed plugin deps; a type-to-filter search box in `/skills` saves hunting through long lists; `PostToolUse` hooks can now replace tool output for any tool (enables post-processing of Bash results inline); MCP servers auto-retry up to 3× on transient startup errors; iTerm2 clipboard access via `/terminal-setup`; worktree switching; and a `/proactive` alias.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code  # → v2.1.121"
+  },
+  {
+    "slug": "claude-code-plugins-plus-skills",
+    "name": "claude-code-plugins-plus-skills (jeremylongshore)",
+    "primary_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+    "hook": "2k stars — open-source Claude Code marketplace with 423 plugins, 2,849 skills, and 177 agents, browsable at tonsofskills.com. The `ccpi` CLI package manager (`pnpm add -g @intentsolutionsio/ccpi`) makes install as fast as `ccpi install devops-automation-pack`. Covers 18+ categories including SaaS packs for ClickUp, Algolia, Fly.io, and Intercom. All MIT-licensed, updated daily by GitHub Actions.",
+    "categories": ["skill"],
+    "install": "pnpm add -g @intentsolutionsio/ccpi && ccpi install <pack-name>"
+  },
+  {
+    "slug": "caveman",
+    "name": "caveman",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "\"Why use many token when few token do trick\" — 47.8k+ stars. Cuts ~65–75% output tokens and ~46% input tokens while preserving technical accuracy. One-line install for Claude Code, Cursor, Windsurf, Copilot, Gemini CLI, and 40+ others. Still the first recommendation in every r/ClaudeAI budget thread.",
+    "categories": ["cost", "skill"],
+    "install": "claude plugin marketplace add JuliusBrussee/caveman && claude plugin install caveman@caveman",
+    "recurring_note": "↑ Day 9 — 47.8k+ stars; #1 cost-reduction install recommendation continues"
+  },
+  {
+    "slug": "graphify",
+    "name": "graphify",
+    "primary_url": "https://github.com/safishamsi/graphify",
+    "hook": "36.3k stars — turns any folder of code, docs, papers, images, or videos into a queryable knowledge graph wired into Claude Code via a PreToolUse hook. v0.5.0 benchmarks: 70x fewer tokens per search vs brute-force reads. Covered by @charlieautomates as core to their 'replaces OpenClaw' stack.",
+    "categories": ["cost"],
+    "install": "uv tool install graphifyy && graphify install",
+    "creator_buzz": ["@charlieautomates"],
+    "recurring_note": "↑ Day 2 — 36.3k stars; strongest knowledge-graph option for context-narrowing"
+  },
+  {
+    "slug": "code-review-graph",
+    "name": "code-review-graph",
+    "primary_url": "https://github.com/tirth8205/code-review-graph",
+    "hook": "13.4k stars — builds a persistent AST knowledge graph with Tree-sitter + SQLite, traces blast-radius on every changed file, and gives Claude exactly the context it needs. Benchmarks: 6.8× fewer tokens on code reviews, 49× on routine daily tasks. v2.3.2. Auto-detects Claude Code, Codex, Cursor, and Windsurf on install.",
+    "categories": ["mcp", "cost"],
+    "install": "pip install code-review-graph && code-review-graph install && code-review-graph build",
+    "recurring_note": "↑ Day 9 — 13.4k stars; blast-radius analysis remains the go-to context-narrowing pattern"
+  },
+  {
+    "slug": "everything-claude-code",
+    "name": "everything-claude-code",
+    "primary_url": "https://github.com/affaan-m/everything-claude-code",
+    "hook": "168k stars — comprehensive Claude Code harness: 48 agents, 183+ skills, 34 language rules, 14+ MCP configs, a desktop dashboard GUI (v1.10.0), and AgentShield security testing (1,282 tests). The community calls it the 'Claude Code distro'. ECC 2.0 alpha discussion ongoing.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add https://github.com/affaan-m/everything-claude-code",
+    "recurring_note": "↑ Day 9 — 168k stars; ECC 2.0 alpha discussions active on Reddit"
+  },
+  {
+    "slug": "claw-code",
+    "name": "claw-code",
+    "primary_url": "https://github.com/ultraworkers/claw-code",
+    "hook": "185k+ stars — clean-room Rust rewrite of the Claude Code agent harness, initiated after the April 1 source map leak exposed 512K lines of TypeScript. Sigrid Jin leads the project. 109k forks, active Discord.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/ultraworkers/claw-code && cd claw-code/rust && cargo build --workspace",
+    "recurring_note": "↑ Day 6 — 185k+ stars; Rust rewrite advancing with new contributors joining this week"
+  }
+]
