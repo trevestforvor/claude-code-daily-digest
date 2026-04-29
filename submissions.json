@@ -267,5 +267,27 @@
     "install": "",
     "added_date": "2026-04-25",
     "added_by": "user"
+  },
+  {
+    "slug": "cobalt",
+    "name": "Cobalt",
+    "primary_url": "https://cobalt.tools/",
+    "secondary_urls": ["https://github.com/imputnet/cobalt"],
+    "hook": "Paste-link-get-file media downloader for YouTube, TikTok, X, and dozens more — no ads, no trackers, no caching. Self-hostable Svelte UI + API backend, AGPL.",
+    "categories": ["viral"],
+    "install": "docker run -d -p 9000:9000 ghcr.io/imputnet/cobalt",
+    "added_date": "2026-04-28",
+    "added_by": "user"
+  },
+  {
+    "slug": "ruflo",
+    "name": "Ruflo",
+    "primary_url": "https://github.com/ruvnet/ruflo",
+    "secondary_urls": [],
+    "hook": "Multi-agent orchestration on top of Claude Code (formerly Claude Flow) — neural routing engine SONA, HNSW vector memory, 87 native MCP tools, 9 RL algos. ~31k stars.",
+    "categories": ["plugin", "viral"],
+    "install": "npx claude-flow@latest init",
+    "added_date": "2026-04-28",
+    "added_by": "user"
   }
 ]
