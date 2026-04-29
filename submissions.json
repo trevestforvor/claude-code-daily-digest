@@ -289,5 +289,16 @@
     "install": "npx claude-flow@latest init",
     "added_date": "2026-04-28",
     "added_by": "user"
+  },
+  {
+    "slug": "jcode",
+    "name": "jcode",
+    "primary_url": "https://github.com/1jehuang/jcode",
+    "secondary_urls": [],
+    "hook": "Terminal coding-agent harness with semantic memory, swarm coordination, and browser control — multi-provider (Claude, OpenAI, Gemini, Copilot), MIT, ~940 stars.",
+    "categories": ["plugin"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/1jehuang/jcode/master/scripts/install.sh | bash",
+    "added_date": "2026-04-29",
+    "added_by": "user"
   }
 ]
