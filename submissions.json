@@ -300,5 +300,32 @@
     "install": "curl -fsSL https://raw.githubusercontent.com/1jehuang/jcode/master/scripts/install.sh | bash",
     "added_date": "2026-04-29",
     "added_by": "user"
+  },
+  {
+    "slug": "ppl-ai",
+    "name": "Perplexity (ppl-ai)",
+    "primary_url": "https://github.com/ppl-ai",
+    "secondary_urls": [
+      "https://github.com/perplexityai/pplx-garden"
+    ],
+    "hook": "Perplexity's official GitHub org — pplx-garden (open inference stack), uvloop, python-sdk, news-pulse, and more. Watching for the inference primitives the Perplexity team open-sources.",
+    "categories": ["viral"],
+    "install": "",
+    "added_date": "2026-04-29",
+    "added_by": "user"
+  },
+  {
+    "slug": "glif-mcp-server",
+    "name": "Glif MCP Server",
+    "primary_url": "https://github.com/glifxyz/glif-mcp-server",
+    "secondary_urls": [
+      "https://glif.app/",
+      "https://github.com/glifxyz"
+    ],
+    "hook": "MCP server that exposes any glif.app workflow — image generators, memes, selfies, multimedia AI — to Claude Code and other LLM clients with a single config.",
+    "categories": ["mcp", "design"],
+    "install": "npx -y @glifxyz/glif-mcp-server",
+    "added_date": "2026-04-29",
+    "added_by": "user"
   }
 ]
