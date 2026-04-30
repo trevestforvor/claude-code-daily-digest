@@ -327,5 +327,16 @@
     "install": "npx -y @glifxyz/glif-mcp-server",
     "added_date": "2026-04-29",
     "added_by": "user"
+  },
+  {
+    "slug": "open-codesign",
+    "name": "Open CoDesign",
+    "primary_url": "https://github.com/OpenCoworkAI/open-codesign",
+    "secondary_urls": ["https://opencoworkai.github.io/open-codesign/quickstart"],
+    "hook": "Open-source, BYOK, local-first Claude Design alternative — 12 design skills (decks, dashboards, landing pages, charts…), sandboxed preview, exports to HTML/PDF/PPTX. Multi-model: Claude, GPT, Gemini, Kimi, GLM, Ollama.",
+    "categories": ["design", "cost"],
+    "install": "git clone https://github.com/OpenCoworkAI/open-codesign",
+    "added_date": "2026-04-29",
+    "added_by": "user"
   }
 ]
