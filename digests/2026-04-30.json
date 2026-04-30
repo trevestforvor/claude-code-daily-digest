@@ -1,0 +1,132 @@
+[
+  {
+    "slug": "higgsfield-mcp",
+    "name": "Higgsfield MCP",
+    "primary_url": "https://higgsfield.ai/mcp",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=20BDYk-CU_o",
+      "https://phemex.com/news/article/higgsfield-ai-unveils-mcp-server-for-visual-content-creation-with-claude-77601"
+    ],
+    "hook": "Higgsfield AI launched its official MCP server on April 30 — a hosted endpoint at mcp.higgsfield.ai/mcp that wires 30+ image and video models (Seedance 2.0, Sora 2, Kling 3.0, Veo 3.1, WAN 2.6; Flux 2, GPT Image 2, Seedream 5.0 Lite) directly into Claude Code, Cursor, or any MCP client. Ships Marketing Studio presets (UGC, unboxing, TV spot, hyper motion) and a Soul Character tool for cast consistency across multi-shot productions. @Chase-H-AI posted a walkthrough the same day showing single product photos become multi-format ad sets in one Claude Code session.",
+    "categories": ["design", "mcp"],
+    "install": "Add to Claude (Settings → Connectors) at https://mcp.higgsfield.ai/mcp",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "claude-for-creative-work",
+    "name": "Claude for Creative Work — 9 Official Connectors",
+    "primary_url": "https://www.anthropic.com/news/claude-for-creative-work",
+    "secondary_urls": [
+      "https://9to5mac.com/2026/04/28/anthropic-releases-9-new-claude-connectors-for-creative-tools-including-blender-and-adobe/",
+      "https://develop3d.com/ai/claude-for-cad-blender-autodesk-fusion/"
+    ],
+    "hook": "Anthropic shipped 9 MCP-based connectors for professional creative tools on April 28: Blender (natural-language Python API, Anthropic joins Blender Dev Fund as Corporate Patron at €240k/year), Adobe (50+ Creative Cloud apps including Photoshop, Premiere, and Express), Autodesk Fusion (create and modify 3D models by conversation), Ableton (grounds Claude in official Live and Push documentation), and Splice, plus four more. All connectors are built on MCP, making them available to any MCP-compatible agent. Coverage in 9to5Mac, DEVELOP3D, RedShark News, and MusicTech within 24 hours.",
+    "categories": ["design", "mcp", "anthropic"]
+  },
+  {
+    "slug": "cc-v2-1-120-123-features",
+    "name": "Claude Code v2.1.120–123 Feature Bundle",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Four Claude Code releases shipped April 28–29 with the highest feature density in weeks. v2.1.121 adds `alwaysLoad` to MCP server config (skip tool-search deferral entirely for trusted servers), `claude plugin prune` for orphaned deps, and PostToolUse hooks can now replace any tool's output via `hookSpecificOutput.updatedToolOutput` — no longer MCP-only. v2.1.120 ships `claude ultrareview [target]` for non-interactive CI pipelines, Windows PowerShell as git fallback, and `${CLAUDE_EFFORT}` env var usable in skill files. v2.1.122 adds `ANTHROPIC_BEDROCK_SERVICE_TIER` (default/flex/priority) and paste-a-PR-URL-into-/resume to find the originating session across GitHub, GitLab, and Bitbucket.",
+    "categories": ["cost", "anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "voltagent-awesome-design-md",
+    "name": "awesome-design-md (VoltAgent)",
+    "primary_url": "https://github.com/VoltAgent/awesome-design-md",
+    "hook": "4,385 stars (3 days post-launch on March 31). A growing collection of 55+ plain-text DESIGN.md files modeled on real brand design systems — Stripe, Figma, Linear, Notion, Vercel, and others — each encoding a complete visual language (palette, typography, spacing, component states, motion rules) that AI coding agents can read natively. Drop one file into any project root and coding agents generate UI that matches the brand without extra prompting. Fills the gap between abstract design tokens and what agents actually act on.",
+    "categories": ["design"],
+    "install": "See README (copy a DESIGN.md into your project root)"
+  },
+  {
+    "slug": "voltagent-awesome-claude-design",
+    "name": "awesome-claude-design (VoltAgent)",
+    "primary_url": "https://github.com/VoltAgent/awesome-claude-design",
+    "hook": "68 ready-to-use DESIGN.md design-system inspirations curated specifically for Claude Code — organized by aesthetic family (brutalist, cinematic, editorial, glass, indie, playful, terminal, warm). Each file is a complete visual specification in Claude-readable markdown. Drop one in, prompt Claude Code to scaffold a UI, and the agent generates a themed interface without additional instruction. VoltAgent's companion to their awesome-design-md brand-specific collection, focused on aesthetic archetypes rather than company identities.",
+    "categories": ["design"],
+    "install": "See README (copy a DESIGN.md into your project root)"
+  },
+  {
+    "slug": "tweakcc",
+    "name": "tweakcc (Piebald-AI)",
+    "primary_url": "https://github.com/Piebald-AI/tweakcc",
+    "hook": "1.3k stars. A binary + npm CLI that patches Claude Code's compiled system prompts, tool descriptions, and UI without touching your global install. Replaces or extends any of CC's 110+ prompt strings, swaps thinking verbs and spinner text, applies custom themes, creates focused toolsets (e.g. a read-only toolset for audits), supports AGENTS.md files, and unlocks private or unreleased feature flags. v4.0 added a sandboxed custom-patches API so you can write your own patch scripts. Supports native binary and npm installs on all platforms.",
+    "categories": ["cost"],
+    "install": "npm install -g @piebald-ai/tweakcc"
+  },
+  {
+    "slug": "voltagent-awesome-claude-code-subagents",
+    "name": "awesome-claude-code-subagents (VoltAgent)",
+    "primary_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "hook": "18.1k stars. 100+ specialized Claude Code subagent definitions contributed by VoltAgent and the community, organized across 6 development categories. Each subagent runs in its own isolated context window (preventing cross-task contamination), carries domain-specific instructions tuned to its area, has granular tool permissions, and includes a `model` field that auto-routes to the right Claude model — balancing quality and cost without manual configuration. Copy-paste any `.md` file into `.claude/agents/` to activate.",
+    "categories": ["skill"],
+    "install": "See README (copy .md files into .claude/agents/)"
+  },
+  {
+    "slug": "piebald-claude-code-system-prompts",
+    "name": "claude-code-system-prompts (Piebald-AI)",
+    "primary_url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+    "hook": "Companion to tweakcc: every Claude Code system prompt, tool description, and sub-agent prompt (Plan/Explore/Task) extracted directly from the compiled npm package within minutes of each release. Tracks 165+ versions since v2.0.14 in a CHANGELOG.md, includes token counts for every string, and creates a GitHub Release on each new CC version so starred users get automatic notifications. Updated for v2.1.123 (April 28). Especially useful for auditing behavioral changes after regression windows — see exactly what instructions changed between any two versions.",
+    "categories": ["cost"]
+  },
+  {
+    "slug": "antigravity-awesome-skills",
+    "name": "antigravity-awesome-skills (sickn33)",
+    "primary_url": "https://github.com/sickn33/antigravity-awesome-skills",
+    "hook": "35.8k stars. An installable library of 1,400+ SKILL.md playbooks for Claude Code, Cursor, Codex CLI, Gemini CLI, and Antigravity — organized into role-based bundles (Essentials, Security Developer, Full-Stack) and workflow-driven packs (planning, coding, debugging, testing, infrastructure, growth). Ships a dedicated installer CLI and generated marketplace bundle plugins so teams can deploy focused packs via `/plugin marketplace add`. Combines official Anthropic skills, community contributions, and custom bundle logic into a single searchable, version-tracked catalog.",
+    "categories": ["skill", "cost"],
+    "install": "/plugin marketplace add sickn33/antigravity-awesome-skills"
+  },
+  {
+    "slug": "claude-code-plugins-plus-skills",
+    "name": "claude-code-plugins-plus-skills (jeremylongshore)",
+    "primary_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+    "secondary_urls": ["https://tonsofskills.com"],
+    "hook": "423 plugins, 2,849 skills, and 177 agents for Claude Code — searchable via the open-source tonsofskills.com marketplace and installable with the `ccpi` CLI package manager. 26 published packages in the claude-code-plugins namespace, updated daily by GitHub Actions. Includes SaaS-specific packs for Fly.io, ClickUp, Fathom, Intercom, and others. Grade A rating as of April 2026. `ccpi` supports `search`, `install`, `list --installed`, and `update` commands.",
+    "categories": ["skill", "cost"],
+    "install": "pnpm add -g @intentsolutionsio/ccpi && ccpi search"
+  },
+  {
+    "slug": "anthropics-claude-plugins-official",
+    "name": "anthropics/claude-plugins-official",
+    "primary_url": "https://github.com/anthropics/claude-plugins-official",
+    "hook": "Anthropic's official curated plugin directory for Claude Code — the source of record for the `/plugin install {name}@claude-plugins-official` install path. Separates Anthropic-developed plugins (in `/plugins`) from vetted external and partner plugins (in `/external_plugins`), and exposes a structured marketplace.json for tooling to index. Works alongside the unofficial community marketplaces as the authoritative provenance signal: a plugin listed here has been reviewed by Anthropic.",
+    "categories": ["anthropic", "skill"],
+    "install": "/plugin install {plugin-name}@claude-plugins-official"
+  },
+  {
+    "slug": "levnikolaevich-claude-code-skills",
+    "name": "levnikolaevich/claude-code-skills",
+    "primary_url": "https://github.com/levnikolaevich/claude-code-skills",
+    "hook": "421 stars. A plugin suite for Claude Code covering the full software delivery lifecycle — Agile pipeline with multi-model AI review, project bootstrap, documentation generation, codebase audit, performance optimization, and community workflows. Ships three bundled custom MCP servers: hex-line (hash-verified line-range editing that prevents partial-edit bugs), hex-graph (code knowledge graph for navigating large codebases), and hex-ssh (remote SSH session management). Seven plugins work independently or together; Linear integration is optional with a local-markdown fallback.",
+    "categories": ["skill", "mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-mythos-glasswing",
+    "name": "Claude Mythos Preview + Project Glasswing",
+    "primary_url": "https://www.anthropic.com/project/glasswing",
+    "secondary_urls": [
+      "https://red.anthropic.com/2026/mythos-preview/",
+      "https://simonwillison.net/2026/Apr/7/project-glasswing/"
+    ],
+    "hook": "Anthropic's new frontier model (launched April 7) restricted to a defensive-cybersecurity research preview: Claude Mythos Preview autonomously discovered and exploited a 17-year-old FreeBSD RCE without human involvement, and across 1,500+ tasks it found vulnerabilities 83% of the time (vs 67% for Opus 4.6). Project Glasswing deploys it exclusively for securing critical software with 11 founding partners (AWS, Apple, Broadcom, Cisco, Google, JPMorgan, Linux Foundation, Microsoft, NVIDIA, Palo Alto Networks, CrowdStrike) plus 40+ infrastructure maintainers. Priced at $25/$125 per M tokens with $100M in Anthropic usage credits committed.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "travisvn-awesome-claude-skills",
+    "name": "awesome-claude-skills (travisvn)",
+    "primary_url": "https://github.com/travisvn/awesome-claude-skills",
+    "hook": "11.9k stars. A curated list of Claude Skills, resources, and tools for customizing Claude AI workflows — particularly Claude Code. Uses progressive disclosure architecture: metadata (~100 tokens) loads first so Claude identifies relevant skills cheaply, then full instructions (<5k tokens) load only when a skill applies. Community contributions range from multi-agent autonomous startup systems (37 agents, 6 swarms) to CodeQL/Semgrep static-analysis skills and lightweight spec-driven development systems. Distinct from the VoltAgent and sickn33 collections in focus on quality curation over volume.",
+    "categories": ["skill"]
+  },
+  {
+    "slug": "claude-push-ntfy",
+    "name": "claude-push (coa00)",
+    "primary_url": "https://github.com/coa00/claude-push",
+    "hook": "A Claude Code stop hook that routes permission-request prompts to your phone via ntfy.sh with Allow / Deny action buttons — no need to stay at the terminal when Claude is mid-task. Intercepts the `PermissionRequest` hook event, fires a push notification with context and the tool Claude wants to run, and you tap to respond. Pairs naturally with the new native mobile push notifications added in v2.1.120 (April 28): use the official feature for task-completion pings and claude-push for interactive permission decisions while you're away from the desk.",
+    "categories": ["cost"],
+    "install": "See README"
+  }
+]
