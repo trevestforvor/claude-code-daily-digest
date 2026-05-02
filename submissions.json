@@ -338,5 +338,27 @@
     "install": "git clone https://github.com/OpenCoworkAI/open-codesign",
     "added_date": "2026-04-29",
     "added_by": "user"
+  },
+  {
+    "slug": "classbuild",
+    "name": "ClassBuild",
+    "primary_url": "https://github.com/jtangen/classbuild",
+    "secondary_urls": [],
+    "hook": "Topic → full course generator: interactive HTML chapters, gamified quizzes, PPTX with speaker notes, AI-narrated audiobooks, and infographics, all grounded in five learning-science principles.",
+    "categories": ["design"],
+    "install": "git clone https://github.com/jtangen/classbuild && cd classbuild && npm install && npm run dev",
+    "added_date": "2026-04-29",
+    "added_by": "user"
+  },
+  {
+    "slug": "agent-browser",
+    "name": "agent-browser",
+    "primary_url": "https://github.com/vercel-labs/agent-browser",
+    "secondary_urls": [],
+    "hook": "Vercel Labs' Rust browser-automation CLI for AI agents — persistent daemon, ref-based DOM interaction (@e1, @e2), works with Claude Code, Codex, Cursor, Gemini CLI, Copilot, and more.",
+    "categories": ["plugin"],
+    "install": "npm install -g agent-browser && agent-browser install",
+    "added_date": "2026-04-29",
+    "added_by": "user"
   }
 ]
