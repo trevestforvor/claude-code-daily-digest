@@ -360,5 +360,16 @@
     "install": "npm install -g agent-browser && agent-browser install",
     "added_date": "2026-04-29",
     "added_by": "user"
+  },
+  {
+    "slug": "agency-agents",
+    "name": "Agency Agents",
+    "primary_url": "https://github.com/msitarzewski/agency-agents",
+    "secondary_urls": [],
+    "hook": "112 specialized AI agent personas (frontend wizards, Reddit ninjas, whimsy injectors, reality checkers…) drop straight into Claude Code's agents directory — native .md + YAML, conversion scripts for Cursor and Aider.",
+    "categories": ["plugin"],
+    "install": "git clone https://github.com/msitarzewski/agency-agents && bash agency-agents/integrations/claude-code/install.sh",
+    "added_date": "2026-04-29",
+    "added_by": "user"
   }
 ]
