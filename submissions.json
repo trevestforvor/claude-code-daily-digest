@@ -407,5 +407,16 @@
     "install": "git clone https://github.com/agentscope-ai/QwenPaw",
     "added_date": "2026-05-03",
     "added_by": "user"
+  },
+  {
+    "slug": "fincept-terminal",
+    "name": "Fincept Terminal",
+    "primary_url": "https://github.com/Fincept-Corporation/FinceptTerminal",
+    "secondary_urls": ["https://fincept.in/"],
+    "hook": "Open-source Bloomberg Terminal alternative — native C++20 + Qt6 + embedded Python, 37 AI agents (Buffett, Graham, Lynch, Munger…), 100+ data connectors, multi-provider LLM (Anthropic, OpenAI, Gemini, MiniMax, Ollama). AGPL-3.0.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/Fincept-Corporation/FinceptTerminal",
+    "added_date": "2026-05-03",
+    "added_by": "user"
   }
 ]
