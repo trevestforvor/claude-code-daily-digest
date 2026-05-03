@@ -289,5 +289,101 @@
     "install": "npx claude-flow@latest init",
     "added_date": "2026-04-28",
     "added_by": "user"
+  },
+  {
+    "slug": "jcode",
+    "name": "jcode",
+    "primary_url": "https://github.com/1jehuang/jcode",
+    "secondary_urls": [],
+    "hook": "Terminal coding-agent harness with semantic memory, swarm coordination, and browser control — multi-provider (Claude, OpenAI, Gemini, Copilot), MIT, ~940 stars.",
+    "categories": ["plugin"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/1jehuang/jcode/master/scripts/install.sh | bash",
+    "added_date": "2026-04-29",
+    "added_by": "user"
+  },
+  {
+    "slug": "ppl-ai",
+    "name": "Perplexity (ppl-ai)",
+    "primary_url": "https://github.com/ppl-ai",
+    "secondary_urls": [
+      "https://github.com/perplexityai/pplx-garden"
+    ],
+    "hook": "Perplexity's official GitHub org — pplx-garden (open inference stack), uvloop, python-sdk, news-pulse, and more. Watching for the inference primitives the Perplexity team open-sources.",
+    "categories": ["viral"],
+    "install": "",
+    "added_date": "2026-04-29",
+    "added_by": "user"
+  },
+  {
+    "slug": "glif-mcp-server",
+    "name": "Glif MCP Server",
+    "primary_url": "https://github.com/glifxyz/glif-mcp-server",
+    "secondary_urls": [
+      "https://glif.app/",
+      "https://github.com/glifxyz"
+    ],
+    "hook": "MCP server that exposes any glif.app workflow — image generators, memes, selfies, multimedia AI — to Claude Code and other LLM clients with a single config.",
+    "categories": ["mcp", "design"],
+    "install": "npx -y @glifxyz/glif-mcp-server",
+    "added_date": "2026-04-29",
+    "added_by": "user"
+  },
+  {
+    "slug": "open-codesign",
+    "name": "Open CoDesign",
+    "primary_url": "https://github.com/OpenCoworkAI/open-codesign",
+    "secondary_urls": ["https://opencoworkai.github.io/open-codesign/quickstart"],
+    "hook": "Open-source, BYOK, local-first Claude Design alternative — 12 design skills (decks, dashboards, landing pages, charts…), sandboxed preview, exports to HTML/PDF/PPTX. Multi-model: Claude, GPT, Gemini, Kimi, GLM, Ollama.",
+    "categories": ["design", "cost"],
+    "install": "git clone https://github.com/OpenCoworkAI/open-codesign",
+    "added_date": "2026-04-29",
+    "added_by": "user"
+  },
+  {
+    "slug": "classbuild",
+    "name": "ClassBuild",
+    "primary_url": "https://github.com/jtangen/classbuild",
+    "secondary_urls": [],
+    "hook": "Topic → full course generator: interactive HTML chapters, gamified quizzes, PPTX with speaker notes, AI-narrated audiobooks, and infographics, all grounded in five learning-science principles.",
+    "categories": ["design"],
+    "install": "git clone https://github.com/jtangen/classbuild && cd classbuild && npm install && npm run dev",
+    "added_date": "2026-04-29",
+    "added_by": "user"
+  },
+  {
+    "slug": "agent-browser",
+    "name": "agent-browser",
+    "primary_url": "https://github.com/vercel-labs/agent-browser",
+    "secondary_urls": [],
+    "hook": "Vercel Labs' Rust browser-automation CLI for AI agents — persistent daemon, ref-based DOM interaction (@e1, @e2), works with Claude Code, Codex, Cursor, Gemini CLI, Copilot, and more.",
+    "categories": ["plugin"],
+    "install": "npm install -g agent-browser && agent-browser install",
+    "added_date": "2026-04-29",
+    "added_by": "user"
+  },
+  {
+    "slug": "agency-agents",
+    "name": "Agency Agents",
+    "primary_url": "https://github.com/msitarzewski/agency-agents",
+    "secondary_urls": [],
+    "hook": "112 specialized AI agent personas (frontend wizards, Reddit ninjas, whimsy injectors, reality checkers…) drop straight into Claude Code's agents directory — native .md + YAML, conversion scripts for Cursor and Aider.",
+    "categories": ["plugin"],
+    "install": "git clone https://github.com/msitarzewski/agency-agents && bash agency-agents/integrations/claude-code/install.sh",
+    "added_date": "2026-04-29",
+    "added_by": "user"
+  },
+  {
+    "slug": "higgsfield",
+    "name": "Higgsfield (Cinema Studio + MCP)",
+    "primary_url": "https://higgsfield.ai/",
+    "secondary_urls": [
+      "https://higgsfield.ai/mcp",
+      "https://higgsfield.ai/cinematic-video-generator"
+    ],
+    "hook": "AI cinema platform aggregating Sora 2, Veo 3.1, Kling 3.0, Seedance 2.0 (15+ models) under one sub — Cinema Studio 3.5 with real optical physics + camera-motion templates, plus an MCP server that pipes image/video gen into Claude Code.",
+    "categories": ["design", "mcp", "viral"],
+    "install": "",
+    "added_date": "2026-04-29",
+    "added_by": "user"
   }
 ]
