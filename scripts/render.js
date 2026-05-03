@@ -20,6 +20,66 @@ const BADGE_COLORS = {
   skill:       ['#5c2343', '#f9a8d4'],
 };
 
+// Derived tags applied to every item at render time. Rules are matched against
+// `name + hook + categories + install`. Categories are always included as tags.
+// Order is irrelevant; duplicates are deduped. Keep the list lean — extra tags
+// add noise to cards and search results.
+const TAG_RULES = [
+  // Visual
+  { tag: 'design',      match: /\b(design|aesthetic|visual identity|ui\/ux|ui design)\b/i },
+  { tag: 'frontend',    match: /\b(frontend|front-end|html artifact|landing page|design system|component library|jsx component|design tokens|ui kit)\b/i },
+  { tag: 'animation',   match: /\b(animation|animate|motion blur|easing|transition|animator)\b/i },
+  { tag: 'branding',    match: /\b(brand guideline|brand color|brand identity|typography|font pairing|palette|poppins|lora)\b/i },
+  // Media
+  { tag: 'video',       match: /\b(video|mp4|cinema|cinematic|filmmaking|veo|sora|kling|seedance|hailuo|remotion)\b/i },
+  { tag: 'image',       match: /\b(image generation|image gen|text-to-image|t2i|stable diffusion|flux|sdxl|midjourney|ideogram|nano-banana|gpt image)\b/i },
+  { tag: '3d',          match: /\b(3d|gaussian splat|three\.js|r3f|webgl|mesh|3-d)\b/i },
+  { tag: 'audio',       match: /\b(tts|text-to-speech|voice clon|voice gen|audiobook|narration|speech)\b/i },
+  { tag: 'screencast',  match: /\b(screen studio|screen record|screencast|demo recording)\b/i },
+  // Claude Code shape
+  { tag: 'mcp',         match: /\bmcp\b|model context protocol/i },
+  { tag: 'skill',       match: /\bskill\b/i },
+  { tag: 'plugin',      match: /\bplugin\b/i },
+  { tag: 'agent',       match: /\b(agent framework|multi-agent|agentic|agent orchestrat|ai agent)\b/i },
+  { tag: 'harness',     match: /\b(harness|orchestrat)\b/i },
+  { tag: 'subagent',    match: /\b(subagent|agent persona|agent collection|specialized agents)\b/i },
+  // Cognition
+  { tag: 'memory',      match: /\b(memory|long-term memory|recall|knowledge graph|vector memory)\b/i },
+  { tag: 'context',     match: /\b(context engineering|context window|context management|context usage|project memory)\b/i },
+  { tag: 'model',       match: /\b(language model|\bllm\b|mixture-of-experts|\bmoe\b|fine-tun|open-source model)\b/i },
+  // Efficiency
+  { tag: 'cost',        match: /\b(cost|cheaper|free for|token usage|token reduction|pricing|subscription|byok)\b/i },
+  { tag: 'token',       match: /\b(token usage|token reduction|tokens|cuts.*token)\b/i },
+  { tag: 'local',       match: /\b(local-first|on-device|offline|self-host|mlx|ollama|local gpu|run.*locally|local ai)\b/i },
+  { tag: 'proxy',       match: /\b(proxy|reroute|router|route.*api)\b/i },
+  // Meta
+  { tag: 'anthropic',   match: /\banthropic\b|\bclaude\.ai\b|anthropics\/skills|claude\.com\/plugins/i },
+  { tag: 'viral',       match: /\b(\d[\d,.]*k? stars|trending|#1|got \$\d|raised \$|hit #)\b/i },
+  { tag: 'alternative', match: /\b(alternative to|alternative — |open-source alternative|self-hosted alternative|open alternative)\b/i },
+  { tag: 'marketplace', match: /\b(marketplace|directory|curated list|awesome list|collection of)\b/i },
+  // I/O
+  { tag: 'terminal',    match: /\b(terminal|\bcli\b|command-line|command line)\b/i },
+  { tag: 'browser',     match: /\b(browser|chrome|playwright|web automat)\b/i },
+  { tag: 'scraping',    match: /\b(scrap|crawl|extract data)\b/i },
+  // Devtools
+  { tag: 'security',    match: /\b(secret|security|\.env|credential|leak)\b/i },
+  { tag: 'review',      match: /\b(code review|linting|\blint\b)\b/i },
+  { tag: 'testing',     match: /\b(testing|test suite|unit test|integration test|\be2e\b)\b/i },
+  { tag: 'debugger',    match: /\b(debug|debugger)\b/i },
+  { tag: 'search',      match: /\b(search engine|retrieval|\brag\b|search api|web search|hnsw)\b/i },
+  // Learning
+  { tag: 'education',   match: /\b(course|tutorial|training|learning science|lesson)\b/i },
+];
+
+const deriveTags = (item) => {
+  const text = `${item.name || ''} ${item.hook || ''} ${(item.categories || []).join(' ')} ${item.install || ''}`;
+  const tags = new Set(item.categories || []);
+  for (const { tag, match } of TAG_RULES) {
+    if (match.test(text)) tags.add(tag);
+  }
+  return [...tags];
+};
+
 const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
 const BASE_CSS = `
@@ -63,6 +123,7 @@ p.sub { color: #9aa3b2; margin: 0 0 32px; }
 .badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
 .trend, .stars { font-size: 11px; color: #9aa3b2; }
 .recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
 pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
 pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
 .copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
@@ -131,12 +192,18 @@ const renderItem = (item, opts = {}) => {
   const recurring = item.recurring_note
     ? `<div class="recurring">${esc(item.recurring_note)}</div>`
     : '';
+  const cats = item.categories || [];
+  const extraTags = deriveTags(item).filter(t => !cats.includes(t));
+  const tagsLine = extraTags.length > 0
+    ? `<div class="tags">${extraTags.map(esc).join(' · ')}</div>`
+    : '';
   return `
 <article class="item">
   <h3><a href="${esc(item.primary_url || '#')}">${rankPrefix}${esc(item.name || 'Untitled')}</a></h3>
   ${item.hook ? `<p class="hook">${esc(item.hook)}</p>` : ''}
   ${secondary ? `<div class="secondary">Also: ${secondary}</div>` : ''}
-  <div class="badges">${renderBadges(item.categories)} ${trend} ${stars}</div>
+  <div class="badges">${renderBadges(cats)} ${trend} ${stars}</div>
+  ${tagsLine}
   ${renderInstall(item.install)}
   ${recurring}
 </article>`;
@@ -295,7 +362,7 @@ ${manifest.monthlies.length > 0 ? `<div class="section-title">Monthly catchups</
     var matches = [];
     for (var i = 0; i < data.length; i++) {
       var it = data[i];
-      var hay = ((it.name || '') + ' ' + (it.hook || '') + ' ' + (it.categories || []).join(' ') + ' ' + (it.install || '')).toLowerCase();
+      var hay = ((it.name || '') + ' ' + (it.hook || '') + ' ' + (it.categories || []).join(' ') + ' ' + (it.tags || []).join(' ') + ' ' + (it.install || '')).toLowerCase();
       var ok = true;
       for (var j = 0; j < words.length; j++) { if (hay.indexOf(words[j]) === -1) { ok = false; break; } }
       if (ok) matches.push(it);
@@ -303,11 +370,11 @@ ${manifest.monthlies.length > 0 ? `<div class="section-title">Monthly catchups</
     if (!matches.length) { out.innerHTML = '<div class="no-results">No matches for &quot;' + esc(q) + '&quot;.</div>'; return; }
     matches = matches.slice(0, 40);
     out.innerHTML = matches.map(function(it){
-      var cats = (it.categories || []).map(esc).join(' · ');
+      var allTags = ((it.categories || []).concat((it.tags || []).filter(function(t){ return (it.categories || []).indexOf(t) === -1; }))).map(esc).join(' · ');
       return '<div class="search-result">'
         + '<h4><a href="' + esc(it.primary_url || '#') + '">' + esc(it.name) + '</a></h4>'
         + (it.hook ? '<p>' + esc(it.hook) + '</p>' : '')
-        + '<div class="meta">' + (cats ? cats + ' · ' : '') + '<a href="' + esc(it.source_url) + '">' + esc(it.source_label) + '</a></div>'
+        + '<div class="meta">' + (allTags ? allTags + ' · ' : '') + '<a href="' + esc(it.source_url) + '">' + esc(it.source_label) + '</a></div>'
         + '</div>';
     }).join('');
   }
@@ -330,6 +397,7 @@ const main = () => {
     name: it.name || 'Untitled',
     hook: it.hook || '',
     categories: it.categories || [],
+    tags: deriveTags(it),
     install: it.install || '',
     primary_url: it.primary_url || '',
     source_label,

@@ -45,6 +45,7 @@ p.sub { color: #9aa3b2; margin: 0 0 32px; }
 .badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
 .trend, .stars { font-size: 11px; color: #9aa3b2; }
 .recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
 pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
 pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
 .copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
@@ -71,6 +72,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Anthropic launched Claude Design on April 17 — Opus 4.7-powered tool that generates prototypes, slides, and one-pagers from prompts while reading your codebase and design files to apply your design system. Research preview for Pro/Max/Team/Enterprise; Figma stock dropped 7.28% on launch day.</p>
   
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">frontend</div>
   <pre><button class="copy">copy</button><code>Available at claude.ai (Pro/Max/Team/Enterprise)</code></pre>
   
 </article>
@@ -80,6 +82,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Released April 16: 87.6% SWE-bench in new xhigh effort mode, 98.5% visual acuity, 3.75MP images (3× higher than Opus 4.6), and /ultrareview for parallel multi-agent cloud code review. Price unchanged at $5/M input, $25/M output; Auto mode now available to Max subscribers.</p>
   
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">agent · review</div>
   
   
 </article>
@@ -89,6 +92,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Four releases in four days (Apr 15–18): CLI now spawns a native binary instead of bundled JS, sandbox network domain blocking, OSC 8 clickable URLs in terminal, /tui fullscreen mode, push notifications, /less-permission-prompts skill, and plan files auto-named after the prompt.</p>
   
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">skill · terminal</div>
   
   
 </article>
@@ -98,6 +102,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Floating macOS pager for Claude Code: see what agents are doing, respond by voice, and never miss a permission prompt. 100% Swift, zero dependencies, fully local, no telemetry — hit #6 on Product Hunt daily on April 15 with 220 upvotes.</p>
   
   <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  
   <pre><button class="copy">copy</button><code>brew install --cask cc-beeper</code></pre>
   
 </article>
@@ -107,6 +112,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Desktop mascot companion that watches your Claude Code agents and shows speech bubbles for permission requests — ships with Clippy and community mascots, or generate custom ones at masko.ai. Free, MIT-licensed, 100% local.</p>
   
   <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">audio</div>
   <pre><button class="copy">copy</button><code>Download DMG from masko.ai</code></pre>
   
 </article>
@@ -116,6 +122,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Multi-platform Claude Code plugin (8.6k stars, v2.3.1 Apr 12) that renders a visual knowledge graph plus business logic dashboard for any codebase — tagline &#39;graphs that teach &gt; graphs that impress&#39;. Supports all major IDEs via the plugin marketplace.</p>
   
   <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">memory · viral · marketplace</div>
   <pre><button class="copy">copy</button><code>/plugin install understand-anything</code></pre>
   
 </article>
@@ -125,6 +132,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">&quot;Why use many token when few token do trick&quot; — the viral meme-skill (39.7k stars) that cuts ~65–75% output tokens and ~46% input tokens while preserving technical accuracy. Arjan Brussee&#39;s LinkedIn post spawned 30+ comments; launched on Product Hunt this week.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · token · marketplace</div>
   <pre><button class="copy">copy</button><code>claude plugin marketplace add JuliusBrussee/caveman &amp;&amp; claude plugin install caveman@caveman</code></pre>
   
 </article>
@@ -134,6 +142,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">MCP server (11.7k stars, v2.3.2 Apr 14) that builds an AST knowledge graph with tree-sitter + SQLite, delivering 6.8× fewer tokens on code reviews and up to 49× on daily tasks. Plugs straight into Claude Code&#39;s MCP config with a single pip install.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">memory · token · viral</div>
   <pre><button class="copy">copy</button><code>pip install code-review-graph &amp;&amp; code-review-graph install &amp;&amp; code-review-graph build</code></pre>
   
 </article>
@@ -143,6 +152,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Plugin (46k+ stars, gained 3k in a single day) that auto-captures sessions, compresses them with the Claude Agent SDK, and injects relevant context at the start of the next session. Uses SQLite + Chroma vector search; cross-platform.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  
   <pre><button class="copy">copy</button><code>npx claude-mem install</code></pre>
   
 </article>
@@ -152,6 +162,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Agent harness optimization framework with 48 agents, 183 skills, 34 language rules, and 14+ MCP configs (162k stars). v1.10.0 April 2026 added a desktop dashboard GUI and launched the ECC 2.0 alpha — the community calls it the &#39;Claude Code distro&#39;.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">mcp · harness</div>
   <pre><button class="copy">copy</button><code>./install.sh --profile full</code></pre>
   
 </article>
@@ -161,6 +172,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Spec-driven meta-prompting system for Claude Code (55.2k stars, updated April 19) with five slash commands: /gsd-new-project, /gsd-plan-phase, /gsd-execute-phase, /gsd-spike, and /gsd-sketch. Enforces a structured plan-then-build loop that prevents runaway agent sessions.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  
   <pre><button class="copy">copy</button><code>npx get-shit-done-cc@latest</code></pre>
   
 </article>
@@ -170,6 +182,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Terminal app (7.1k stars) for managing multiple Claude Code, Codex, and Gemini agents in parallel — each in its own isolated git workspace with a tmux pane. Supports any agent that speaks the Claude Code protocol.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">terminal</div>
   <pre><button class="copy">copy</button><code>curl -fsSL https://raw.githubusercontent.com/smtg-ai/claude-squad/main/install.sh | bash</code></pre>
   
 </article>
@@ -179,6 +192,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Open-source marketplace index with 423 plugins, 2,849 skills, and 177 agents (2k+ stars). The ccpi CLI lets you search and install anything from the index with a single command.</p>
   <div class="secondary">Also: <a href="https://tonsofskills.com">tonsofskills.com</a></div>
   <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span>  </div>
+  <div class="tags">plugin · terminal</div>
   <pre><button class="copy">copy</button><code>pnpm add -g @intentsolutionsio/ccpi &amp;&amp; ccpi install [plugin-name]</code></pre>
   
 </article>
@@ -188,6 +202,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Curated list of 40+ Claude Code plugins (1.4k stars) led by connect-apps — a flagship plugin with 500+ integration connectors — plus frontend-design, CCHub, and other high-signal picks.</p>
   
   <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">design · frontend · viral</div>
   <pre><button class="copy">copy</button><code>See README</code></pre>
   
 </article>
@@ -197,6 +212,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Full dev lifecycle plugin suite (413 stars): 7 core plugins covering planning through deployment, plus three MCP servers (hex-line, hex-graph, hex-ssh) for graph visualization and remote SSH sessions inside Claude Code.</p>
   
   <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">viral · marketplace</div>
   <pre><button class="copy">copy</button><code>/plugin marketplace add levnikolaevich/claude-code-skills</code></pre>
   
 </article>

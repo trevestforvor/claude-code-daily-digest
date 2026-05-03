@@ -45,6 +45,7 @@ p.sub { color: #9aa3b2; margin: 0 0 32px; }
 .badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
 .trend, .stars { font-size: 11px; color: #9aa3b2; }
 .recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
 pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
 pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
 .copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
@@ -71,6 +72,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">61.9k stars (Global Rank #271) — drop one of 55+ DESIGN.md files from Stripe, Linear, Notion, Figma, or ElevenLabs into your project root and Claude Code generates a pixel-perfect matching UI automatically. Launched March 31, accumulated 4,385 stars in its first three days. Covers color palettes, typography hierarchies, component states, elevation systems, and design guardrails — all in plain markdown that LLMs understand natively.</p>
   
   <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">branding</div>
   <pre><button class="copy">copy</button><code>See README (copy a DESIGN.md file into your project root)</code></pre>
   
 </article>
@@ -80,6 +82,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">73.6k stars — Y Combinator CEO Garry Tan open-sourced his Claude Code setup as a 23-skill virtual dev team: a CEO who rethinks product direction, a Designer who catches AI slop, an Eng Manager who locks architecture, a QA Lead who opens a real browser, and a Security Officer who runs OWASP + STRIDE audits. April 2026 update added Team mode (`./setup --team`) and multi-host support for Codex, Cursor, OpenCode, Kiro, and Factory Droid. Issues filed April 21 — active.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">browser · security</div>
   <pre><button class="copy">copy</button><code>git clone https://github.com/garrytan/gstack &amp;&amp; cd gstack &amp;&amp; ./setup</code></pre>
   
 </article>
@@ -89,6 +92,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Released April 22 (today): effort default bumped to `high` for Pro/Max on Opus 4.6 and Sonnet 4.6, forked subagents enabled on external builds via `CLAUDE_CODE_FORK_SUBAGENT=1`, `/model` selections now persist across restarts, and `/resume` offers to summarize stale large sessions before re-reading. Native builds replace Glob and Grep with embedded `bfs` and `ugrep` for faster file search. Plugin dependency auto-resolution lands — `blockedMarketplaces` and `strictKnownMarketplaces` in managed-settings enforce install policy org-wide.</p>
   
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">plugin</div>
   <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code</code></pre>
   
 </article>
@@ -98,6 +102,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Research preview (April 14): save a Claude Code configuration once — prompt, repo, connectors — and have it run automatically on Anthropic-managed cloud even when your laptop is closed. Three trigger types: Scheduled (hourly/nightly/weekly), API (HTTP POST to a per-routine endpoint with bearer token), and GitHub (fires on PR open, push, or release). IndyDevDan dedicated a full video to it — &quot;Claude Routines Just Dropped, And It&#39;s Perfect.&quot; Available on Pro, Max, Team, and Enterprise.</p>
   
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">video · terminal</div>
   <pre><button class="copy">copy</button><code>Available at claude.ai/code/routines or /schedule in CLI</code></pre>
   
 </article>
@@ -107,6 +112,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">821 stars — inspired by Andrej Karpathy&#39;s LLM Knowledge Base architecture: a SessionEnd hook captures every conversation, the Claude Agent SDK extracts key decisions and lessons, then an LLM compiler organizes them into structured, cross-referenced knowledge articles injected back via SessionStart. Launched April 6; gained 237 stars in its first day. Unlike claude-mem (flat session replay), this compiles a growing wiki that improves with every session.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">memory · model · viral</div>
   <pre><button class="copy">copy</button><code>See README</code></pre>
   
 </article>
@@ -116,6 +122,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Self-correcting memory that compounds over 50+ sessions: when you correct Claude, it proposes a rule, you approve it, it&#39;s saved to SQLite, and by session 2 it writes correctly without reminders. v2.0 ships 18 hook events, 5 agents, 7 reference guides, 17 battle-tested skills, and an 80/20 AI coding ratio guide. Context engineering, parallel worktrees, and wrap-up rituals included. Works across Claude Code, Cursor, Codex, Kiro, Goose, Roo, and 27 more tools.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">memory · context</div>
   <pre><button class="copy">copy</button><code>See README</code></pre>
   
 </article>
@@ -125,6 +132,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">17.8k stars — 100+ specialized Claude Code subagent definitions from VoltAgent covering core-development, quality-security, infrastructure, data-ai, and business-product use cases. Each agent ships with a focused system prompt, tool allowlist, and examples. A companion to VoltAgent/awesome-agent-skills (already in the digest), this collection targets the subagent coordination layer specifically.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">subagent · security</div>
   <pre><button class="copy">copy</button><code>See README</code></pre>
   
 </article>
@@ -134,6 +142,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">A slash command that turns Claude into a Tech Lead orchestrating parallel Worker Agents: PRD alignment → architecture → isolated git worktree Workers → QA verification → structured code review with veto conditions → merge. Each Worker does a 6-category counterexample self-check before finishing; mandatory security audits (bandit / npm audit) run before the review phase. MIT licensed. 89 Product Hunt points at launch.</p>
   <div class="secondary">Also: <a href="https://www.producthunt.com/products/dev-for-claude-code">www.producthunt.com/products/dev-for-claude-code</a></div>
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">security · review</div>
   <pre><button class="copy">copy</button><code>See README (copy commands/ into ~/.claude/commands/)</code></pre>
   
 </article>
@@ -143,6 +152,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">219 stars — curated DESIGN.md prompts organized by aesthetic family (warm, terminal, editorial, glass, brutalist, cinematic, indie) with remix recipes (e.g. Linear × Claude) and launch-week community signal. Launched to accompany Claude Design (April 17). Pairs with five Claude Code skills — design-shotgun, design-html, design-review, design-consultation — installable via SkillKit.</p>
   
   <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">video · viral · terminal</div>
   <pre><button class="copy">copy</button><code>See README</code></pre>
   
 </article>
@@ -152,6 +162,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">&quot;Why use many token when few token do trick&quot; — 39.7k stars. Cuts ~65–75% output tokens and ~46% input tokens while preserving technical accuracy. One-line install for Claude Code, Cursor, Windsurf, Copilot, and more. Arjan Brussee&#39;s LinkedIn post still circulating; community discussion active across r/ClaudeCode.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · token · marketplace</div>
   <pre><button class="copy">copy</button><code>claude plugin marketplace add JuliusBrussee/caveman &amp;&amp; claude plugin install caveman@caveman</code></pre>
   <div class="recurring">↑ Day 3 — 39.7k stars; still the most-cited token-reduction skill</div>
 </article>
@@ -161,6 +172,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">46k+ stars — auto-captures sessions, compresses them with the Claude Agent SDK, and injects relevant context at the start of the next session. Uses SQLite + Chroma vector search; cross-platform. Community calling it essential for multi-day projects.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  
   <pre><button class="copy">copy</button><code>npx claude-mem install</code></pre>
   <div class="recurring">↑ Day 3 — 46k+ stars; r/ClaudeCode still recommending for long-running work</div>
 </article>
@@ -170,6 +182,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">162k stars — 48 agents, 183 skills, 34 language rules, 14+ MCP configs. v1.10.0 (April 2026) added a desktop dashboard GUI and launched the ECC 2.0 alpha — the community calls it the &#39;Claude Code distro&#39;. ECC 2.0 alpha discussion remains active on Reddit.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">mcp</div>
   <pre><button class="copy">copy</button><code>./install.sh --profile full</code></pre>
   <div class="recurring">↑ Day 3 — ECC 2.0 alpha discussion ongoing; 162k stars steady</div>
 </article>

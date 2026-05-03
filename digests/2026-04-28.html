@@ -45,6 +45,7 @@ p.sub { color: #9aa3b2; margin: 0 0 32px; }
 .badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
 .trend, .stars { font-size: 11px; color: #9aa3b2; }
 .recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
 pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
 pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
 .copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
@@ -71,6 +72,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Research preview since v2.1.111 (April 20). Run `/ultrareview` and a fleet of reviewer agents fans out across your branch diff in a cloud sandbox, independently verifying each bug before surfacing it — no false positives from style suggestions. Pro and Max subscribers get 3 free runs through May 5, then $5–20 per review billed as extra usage. `claude ultrareview &lt;PR#&gt;` runs headlessly from CI. Requires claude.ai authentication; not available on Bedrock, Vertex AI, or Foundry.</p>
   
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
   <pre><button class="copy">copy</button><code>/ultrareview  (or: claude ultrareview &lt;PR-number&gt; from CI)</code></pre>
   
 </article>
@@ -80,6 +82,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Shipped in v2.1.118 (Week 17, April 20–24). Open `/theme` to pick from built-in presets or create a named theme, then hand-edit JSON files in `~/.claude/themes/` to override only the tokens you care about. The big unlock: plugins can now ship their own themes — a design skill can carry its own terminal aesthetic alongside its instructions, making the whole Claude Code environment cohesive.</p>
   
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">skill · token · terminal</div>
   <pre><button class="copy">copy</button><code>/theme  (then &#39;Create new theme&#39; in the picker)</code></pre>
   
 </article>
@@ -91,6 +94,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
   
   
+  
 </article>
 
 <article class="item">
@@ -98,6 +102,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">841-star companion repo to arXiv paper 2604.14228 (April 2026) — the first systematic source-level analysis of Claude Code&#39;s full TypeScript source. The headline finding: only 1.6% of the codebase is AI decision logic; the remaining 98.4% is deterministic infrastructure. The paper maps five human values through 13 design principles to specific implementation choices, and includes a &#39;Build Your Own Agent&#39; guide. YouTube video posted 1 week ago. Produced by VILA Lab / Zhiqiang Shen et al.</p>
   <div class="secondary">Also: <a href="https://arxiv.org/abs/2604.14228">arxiv.org/abs/2604.14228</a> · <a href="https://www.youtube.com/watch?v=HRI34v68igw">www.youtube.com/watch?v=HRI34v68igw</a></div>
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">design · video</div>
   <pre><button class="copy">copy</button><code>git clone https://github.com/VILA-Lab/Dive-into-Claude-Code</code></pre>
   
 </article>
@@ -107,6 +112,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">161 GitHub stars, 220 Product Hunt upvotes (#6 on April 15). A 100% Swift macOS desktop widget that shows exactly what Claude Code is doing at all times — eight named states (outline/working, orange/attention, purple/YOLO, red/recording, green/speaking, dimmed/hidden) and four auto-approval presets from Strict to YOLO. Standout feature: on-device voice I/O via WhisperKit + Kokoro TTS with a global ⌥R hotkey or double-clap to go fully hands-free. No accounts, no telemetry, no API keys — hooks directly into `~/.claude/settings.json`. macOS 14+.</p>
   
   <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">audio · local</div>
   <pre><button class="copy">copy</button><code>brew install vecartier/tap/cc-beeper</code></pre>
   
 </article>
@@ -116,6 +122,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">399 stars since launching April 17 alongside Claude Design. Curates DESIGN.md files organized by 9 aesthetic families — Editorial Minimalism, Terminal-Core, Warm Editorial, Data-Dense Pro, Cinematic Dark, Playful Color, Glass/Soft-Futurism, Neon Brutalist, and Indie picks — plus remix recipes, community feedback, and patterns for detecting AI-slop tells. Acts as the Claude Design equivalent of what awesome-claude-code is to the agent ecosystem: a structured entry point for practitioners.</p>
   
   <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">video · viral · terminal</div>
   <pre><button class="copy">copy</button><code>git clone https://github.com/rohitg00/awesome-claude-design</code></pre>
   
 </article>
@@ -125,6 +132,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Week 17 (April 20–24). When you switch focus away from a Claude Code terminal and come back, you now get a one-line recap of what happened while you were gone — essential for users juggling multiple sessions at once. Run `/recap` on demand at any time; configure or disable the automatic version from `/config`. Force it with `CLAUDE_CODE_ENABLE_AWAY_SUMMARY=1` when telemetry is off.</p>
   
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">terminal</div>
   <pre><button class="copy">copy</button><code>/recap  (built into v2.1.114+)</code></pre>
   
 </article>
@@ -134,6 +142,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">19.2k stars — 1,100+ agent skills curated from official engineering teams at Anthropic, Google, Vercel, Stripe, Cloudflare, Netlify, Microsoft, Hugging Face, Figma, and more. The pitch: &#39;hand-picked, not AI-slop generated.&#39; Compatible with Claude Code, Codex, Gemini CLI, Cursor, and GitHub Copilot. Browse the full catalog at officialskills.sh. Positioned as the authoritative source for production-grade skills backed by the companies that built the APIs.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">anthropic · viral · terminal</div>
   <pre><button class="copy">copy</button><code>See README (browse at officialskills.sh)</code></pre>
   
 </article>
@@ -143,6 +152,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Today&#39;s release (April 28) ships several quality-of-life changes: `alwaysLoad: true` in MCP server config skips tool deferral so your most-used server tools are always present without an extra round-trip; `claude plugin prune` cleans up orphaned auto-installed plugin deps; a type-to-filter search box in `/skills` saves hunting through long lists; `PostToolUse` hooks can now replace tool output for any tool (enables post-processing of Bash results inline); MCP servers auto-retry up to 3× on transient startup errors; iTerm2 clipboard access via `/terminal-setup`; worktree switching; and a `/proactive` alias.</p>
   
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">mcp · plugin · terminal</div>
   <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code  # → v2.1.121</code></pre>
   
 </article>
@@ -152,6 +162,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">2k stars — open-source Claude Code marketplace with 423 plugins, 2,849 skills, and 177 agents, browsable at tonsofskills.com. The `ccpi` CLI package manager (`pnpm add -g @intentsolutionsio/ccpi`) makes install as fast as `ccpi install devops-automation-pack`. Covers 18+ categories including SaaS packs for ClickUp, Algolia, Fly.io, and Intercom. All MIT-licensed, updated daily by GitHub Actions.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral · marketplace · terminal</div>
   <pre><button class="copy">copy</button><code>pnpm add -g @intentsolutionsio/ccpi &amp;&amp; ccpi install &lt;pack-name&gt;</code></pre>
   
 </article>
@@ -161,6 +172,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">&quot;Why use many token when few token do trick&quot; — 47.8k+ stars. Cuts ~65–75% output tokens and ~46% input tokens while preserving technical accuracy. One-line install for Claude Code, Cursor, Windsurf, Copilot, Gemini CLI, and 40+ others. Still the first recommendation in every r/ClaudeAI budget thread.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · token · marketplace · terminal</div>
   <pre><button class="copy">copy</button><code>claude plugin marketplace add JuliusBrussee/caveman &amp;&amp; claude plugin install caveman@caveman</code></pre>
   <div class="recurring">↑ Day 9 — 47.8k+ stars; #1 cost-reduction install recommendation continues</div>
 </article>
@@ -170,6 +182,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">36.3k stars — turns any folder of code, docs, papers, images, or videos into a queryable knowledge graph wired into Claude Code via a PreToolUse hook. v0.5.0 benchmarks: 70x fewer tokens per search vs brute-force reads. Covered by @charlieautomates as core to their &#39;replaces OpenClaw&#39; stack.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">memory · token · viral</div>
   <pre><button class="copy">copy</button><code>uv tool install graphifyy &amp;&amp; graphify install</code></pre>
   <div class="recurring">↑ Day 2 — 36.3k stars; strongest knowledge-graph option for context-narrowing</div>
 </article>
@@ -179,6 +192,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">13.4k stars — builds a persistent AST knowledge graph with Tree-sitter + SQLite, traces blast-radius on every changed file, and gives Claude exactly the context it needs. Benchmarks: 6.8× fewer tokens on code reviews, 49× on routine daily tasks. v2.3.2. Auto-detects Claude Code, Codex, Cursor, and Windsurf on install.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">memory · token · viral</div>
   <pre><button class="copy">copy</button><code>pip install code-review-graph &amp;&amp; code-review-graph install &amp;&amp; code-review-graph build</code></pre>
   <div class="recurring">↑ Day 9 — 13.4k stars; blast-radius analysis remains the go-to context-narrowing pattern</div>
 </article>
@@ -188,6 +202,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">168k stars — comprehensive Claude Code harness: 48 agents, 183+ skills, 34 language rules, 14+ MCP configs, a desktop dashboard GUI (v1.10.0), and AgentShield security testing (1,282 tests). The community calls it the &#39;Claude Code distro&#39;. ECC 2.0 alpha discussion ongoing.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">mcp · plugin · harness · viral · marketplace · security · testing</div>
   <pre><button class="copy">copy</button><code>/plugin marketplace add https://github.com/affaan-m/everything-claude-code</code></pre>
   <div class="recurring">↑ Day 9 — 168k stars; ECC 2.0 alpha discussions active on Reddit</div>
 </article>
@@ -197,6 +212,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">185k+ stars — clean-room Rust rewrite of the Claude Code agent harness, initiated after the April 1 source map leak exposed 512K lines of TypeScript. Sigrid Jin leads the project. 109k forks, active Discord.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">harness · security</div>
   <pre><button class="copy">copy</button><code>git clone https://github.com/ultraworkers/claw-code &amp;&amp; cd claw-code/rust &amp;&amp; cargo build --workspace</code></pre>
   <div class="recurring">↑ Day 6 — 185k+ stars; Rust rewrite advancing with new contributors joining this week</div>
 </article>
