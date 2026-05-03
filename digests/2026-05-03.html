@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — May 3, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — May 3, 2026</h1><p class="sub">Top 10 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/gsd-build/get-shit-done">get-shit-done (gsd-build)</a></h3>
+  <p class="hook">v1.40.0 shipped today (May 3) with per-phase model routing, dynamic failure-tier escalation, and a --research-phase flag for the plan command. At 59.6K stars, GSD&#39;s --minimal install profile cuts cold-start system-prompt overhead by 94% (from ~12K tokens to ~700), which is the single biggest token win per install in the ecosystem right now.</p>
+  <div class="secondary">Also: <a href="https://www.youtube.com/watch?v=0qqV4yv-Hss">www.youtube.com/watch?v=0qqV4yv-Hss</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">token · viral</div>
+  <pre><button class="copy">copy</button><code>npx get-shit-done-cc@latest</code></pre>
+  <div class="recurring">↑ Day 7 — v1.40.0 ships today with per-phase model routing; now 59.6K stars</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/JuliusBrussee/caveman">caveman (JuliusBrussee)</a></h3>
+  <p class="hook">v1.7.0 landed May 1 adding cavecrew (multi-agent cave team), stats receipts, and MCP-shrink — a new MCP input-token compressor that cuts ~46% of input tokens every session on top of the existing 65% output-token reduction. Now at 52.9K stars, caveman is one of the most-installed cost skills in the ecosystem.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">mcp · agent · token · viral</div>
+  <pre><button class="copy">copy</button><code>curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash</code></pre>
+  <div class="recurring">↑ Day 7 — v1.7.0 adds MCP-shrink and cavecrew; 52.9K stars</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/farion1231/cc-switch">CC Switch (farion1231)</a></h3>
+  <p class="hook">A Tauri-powered desktop app that unifies Claude Code, Codex, OpenCode, OpenClaw, and Gemini CLI in one GUI — 50+ provider presets, one-click MCP and Skills sync across all agents, and a system-tray switcher. At 58.4K stars it has become the go-to desktop control panel for teams running multiple AI CLI tools side-by-side.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">mcp · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>brew tap farion1231/ccswitch &amp;&amp; brew install --cask cc-switch</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/affaan-m/everything-claude-code">everything-claude-code (affaan-m)</a></h3>
+  <p class="hook">Crossed 173K stars and released v2.0.0-rc.1 in April, adding a desktop dashboard GUI, operator workflows, media tooling, and a Rust-based ECC 2.0 alpha control plane. Bundles 48 agents, 182 skills, 68 command shims, and multi-language rules — still the highest-starred Claude Code harness on GitHub.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">plugin · harness · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add https://github.com/affaan-m/everything-claude-code</code></pre>
+  <div class="recurring">↑ Day 7 — 173K stars; v2.0.0-rc.1 introduces desktop dashboard and Rust control plane</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/NousResearch/hermes-agent">Hermes Agent (NousResearch)</a></h3>
+  <p class="hook">v0.12.0 shipped April 30. Nous Research&#39;s self-improving agent creates skills from experience, searches past conversations, and builds persistent user models across sessions — it hit 131K GitHub stars in ten weeks, faster than LangChain or AutoGPT. Runs Claude via OpenRouter or direct API; includes a Claude Code SKILL.md in the repo.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">skill</div>
+  <pre><button class="copy">copy</button><code>curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/garrytan/gstack">gstack (garrytan)</a></h3>
+  <p class="hook">Garry Tan&#39;s open-sourced Claude Code setup — 23 specialist skills running as slash commands: CEO, Designer, Eng Manager, QA Lead, Security Officer, Release Engineer, and more. Surpassed 10K stars in its first 48 hours after launch and now sits at 82.7K stars and 12K forks; the design-review skill catches AI slop before it ships.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">skill · viral · security</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/thedotmack/claude-mem">claude-mem (thedotmack)</a></h3>
+  <p class="hook">Now at 71.4K stars and v12.3.8 with 244 releases. Hooks into Claude Code&#39;s session lifecycle, compresses tool usage into semantic summaries via the Agent SDK, and stores them in a local SQLite+Chroma vector DB — injecting relevant context automatically on next session start. @simonscrapes compared all Claude memory systems this week and claude-mem came out on top for zero-config simplicity.</p>
+  <div class="secondary">Also: <a href="https://www.youtube.com/watch?v=UHVFcUzAGlM">www.youtube.com/watch?v=UHVFcUzAGlM</a></div>
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">memory · viral</div>
+  <pre><button class="copy">copy</button><code>npx claude-mem install</code></pre>
+  <div class="recurring">↑ Day 7 — 71.4K stars; @simonscrapes memory systems comparison this week</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/code-yeongyu/oh-my-openagent">oh-my-openagent / OMO (code-yeongyu)</a></h3>
+  <p class="hook">OMO is a multi-model orchestration harness at 55K stars that transforms a single AI coding assistant into 11 parallel specialists (Sisyphus orchestrator on Claude Opus 4.7, sub-agents on Gemini/Kimi/GLM). Ships 52 lifecycle hooks, 26 tools, and a 3-tier MCP system — each task auto-routes to the cheapest capable model, making it the most cost-aware harness after caveman.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">mcp · harness · viral</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/santifer/career-ops">career-ops (santifer)</a></h3>
+  <p class="hook">42.1K stars for an AI-powered job search system built entirely on Claude Code: 14 skill modes, a Go terminal dashboard, PDF resume generation, and Playwright-powered batch scanning of 45+ career portals. The creator used it to evaluate 740 job listings and land a Head of Applied AI role — one of the most concrete real-world Claude Code skill systems to ship this year.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">skill · viral · terminal · browser</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/santifer/career-ops.git &amp;&amp; cd career-ops &amp;&amp; npm install &amp;&amp; npx playwright install chromium</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/HKUDS/nanobot">nanobot (HKUDS)</a></h3>
+  <p class="hook">Ultra-lightweight personal AI agent at 41.6K stars; v0.1.5.post3 released April 29. Keeps the core agent loop small and readable while supporting MCP, multi-platform chat (Telegram, Discord, Slack, WeChat), 24/7 market analysis, and full-stack software engineering tasks. Built as an open alternative to Claude Code&#39;s architecture — inspects Claude Code&#39;s design philosophy but runs any LLM.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">design · mcp · agent · model · viral · alternative</div>
+  <pre><button class="copy">copy</button><code>pip install nanobot-ai</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
