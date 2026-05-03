@@ -371,5 +371,19 @@
     "install": "git clone https://github.com/msitarzewski/agency-agents && bash agency-agents/integrations/claude-code/install.sh",
     "added_date": "2026-04-29",
     "added_by": "user"
+  },
+  {
+    "slug": "higgsfield",
+    "name": "Higgsfield (Cinema Studio + MCP)",
+    "primary_url": "https://higgsfield.ai/",
+    "secondary_urls": [
+      "https://higgsfield.ai/mcp",
+      "https://higgsfield.ai/cinematic-video-generator"
+    ],
+    "hook": "AI cinema platform aggregating Sora 2, Veo 3.1, Kling 3.0, Seedance 2.0 (15+ models) under one sub — Cinema Studio 3.5 with real optical physics + camera-motion templates, plus an MCP server that pipes image/video gen into Claude Code.",
+    "categories": ["design", "mcp", "viral"],
+    "install": "",
+    "added_date": "2026-04-29",
+    "added_by": "user"
   }
 ]
