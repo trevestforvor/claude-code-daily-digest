@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "get-shit-done",
+    "name": "get-shit-done (gsd-build)",
+    "primary_url": "https://github.com/gsd-build/get-shit-done",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=0qqV4yv-Hss"
+    ],
+    "hook": "v1.40.0 shipped today (May 3) with per-phase model routing, dynamic failure-tier escalation, and a --research-phase flag for the plan command. At 59.6K stars, GSD's --minimal install profile cuts cold-start system-prompt overhead by 94% (from ~12K tokens to ~700), which is the single biggest token win per install in the ecosystem right now.",
+    "categories": ["cost"],
+    "install": "npx get-shit-done-cc@latest",
+    "recurring_note": "↑ Day 7 — v1.40.0 ships today with per-phase model routing; now 59.6K stars"
+  },
+  {
+    "slug": "caveman",
+    "name": "caveman (JuliusBrussee)",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "v1.7.0 landed May 1 adding cavecrew (multi-agent cave team), stats receipts, and MCP-shrink — a new MCP input-token compressor that cuts ~46% of input tokens every session on top of the existing 65% output-token reduction. Now at 52.9K stars, caveman is one of the most-installed cost skills in the ecosystem.",
+    "categories": ["cost"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash",
+    "recurring_note": "↑ Day 7 — v1.7.0 adds MCP-shrink and cavecrew; 52.9K stars"
+  },
+  {
+    "slug": "cc-switch",
+    "name": "CC Switch (farion1231)",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "hook": "A Tauri-powered desktop app that unifies Claude Code, Codex, OpenCode, OpenClaw, and Gemini CLI in one GUI — 50+ provider presets, one-click MCP and Skills sync across all agents, and a system-tray switcher. At 58.4K stars it has become the go-to desktop control panel for teams running multiple AI CLI tools side-by-side.",
+    "categories": ["design"],
+    "install": "brew tap farion1231/ccswitch && brew install --cask cc-switch"
+  },
+  {
+    "slug": "everything-claude-code",
+    "name": "everything-claude-code (affaan-m)",
+    "primary_url": "https://github.com/affaan-m/everything-claude-code",
+    "hook": "Crossed 173K stars and released v2.0.0-rc.1 in April, adding a desktop dashboard GUI, operator workflows, media tooling, and a Rust-based ECC 2.0 alpha control plane. Bundles 48 agents, 182 skills, 68 command shims, and multi-language rules — still the highest-starred Claude Code harness on GitHub.",
+    "categories": ["general"],
+    "install": "/plugin marketplace add https://github.com/affaan-m/everything-claude-code",
+    "recurring_note": "↑ Day 7 — 173K stars; v2.0.0-rc.1 introduces desktop dashboard and Rust control plane"
+  },
+  {
+    "slug": "hermes-agent",
+    "name": "Hermes Agent (NousResearch)",
+    "primary_url": "https://github.com/NousResearch/hermes-agent",
+    "hook": "v0.12.0 shipped April 30. Nous Research's self-improving agent creates skills from experience, searches past conversations, and builds persistent user models across sessions — it hit 131K GitHub stars in ten weeks, faster than LangChain or AutoGPT. Runs Claude via OpenRouter or direct API; includes a Claude Code SKILL.md in the repo.",
+    "categories": ["general"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash"
+  },
+  {
+    "slug": "garrytan-gstack",
+    "name": "gstack (garrytan)",
+    "primary_url": "https://github.com/garrytan/gstack",
+    "hook": "Garry Tan's open-sourced Claude Code setup — 23 specialist skills running as slash commands: CEO, Designer, Eng Manager, QA Lead, Security Officer, Release Engineer, and more. Surpassed 10K stars in its first 48 hours after launch and now sits at 82.7K stars and 12K forks; the design-review skill catches AI slop before it ships.",
+    "categories": ["design", "general"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-mem",
+    "name": "claude-mem (thedotmack)",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=UHVFcUzAGlM"
+    ],
+    "hook": "Now at 71.4K stars and v12.3.8 with 244 releases. Hooks into Claude Code's session lifecycle, compresses tool usage into semantic summaries via the Agent SDK, and stores them in a local SQLite+Chroma vector DB — injecting relevant context automatically on next session start. @simonscrapes compared all Claude memory systems this week and claude-mem came out on top for zero-config simplicity.",
+    "categories": ["general"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 7 — 71.4K stars; @simonscrapes memory systems comparison this week",
+    "creator_buzz": ["@simonscrapes"]
+  },
+  {
+    "slug": "oh-my-openagent",
+    "name": "oh-my-openagent / OMO (code-yeongyu)",
+    "primary_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "hook": "OMO is a multi-model orchestration harness at 55K stars that transforms a single AI coding assistant into 11 parallel specialists (Sisyphus orchestrator on Claude Opus 4.7, sub-agents on Gemini/Kimi/GLM). Ships 52 lifecycle hooks, 26 tools, and a 3-tier MCP system — each task auto-routes to the cheapest capable model, making it the most cost-aware harness after caveman.",
+    "categories": ["general", "cost"]
+  },
+  {
+    "slug": "career-ops",
+    "name": "career-ops (santifer)",
+    "primary_url": "https://github.com/santifer/career-ops",
+    "hook": "42.1K stars for an AI-powered job search system built entirely on Claude Code: 14 skill modes, a Go terminal dashboard, PDF resume generation, and Playwright-powered batch scanning of 45+ career portals. The creator used it to evaluate 740 job listings and land a Head of Applied AI role — one of the most concrete real-world Claude Code skill systems to ship this year.",
+    "categories": ["general"],
+    "install": "git clone https://github.com/santifer/career-ops.git && cd career-ops && npm install && npx playwright install chromium"
+  },
+  {
+    "slug": "nanobot",
+    "name": "nanobot (HKUDS)",
+    "primary_url": "https://github.com/HKUDS/nanobot",
+    "hook": "Ultra-lightweight personal AI agent at 41.6K stars; v0.1.5.post3 released April 29. Keeps the core agent loop small and readable while supporting MCP, multi-platform chat (Telegram, Discord, Slack, WeChat), 24/7 market analysis, and full-stack software engineering tasks. Built as an open alternative to Claude Code's architecture — inspects Claude Code's design philosophy but runs any LLM.",
+    "categories": ["general"],
+    "install": "pip install nanobot-ai"
+  }
+]
