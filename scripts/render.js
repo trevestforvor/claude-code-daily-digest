@@ -233,7 +233,7 @@ const renderSubmissions = submissions => {
   });
 };
 
-const renderIndex = manifest => {
+const renderIndex = (manifest, searchItems = []) => {
   const hero = [];
   if (manifest.hasCatchup) {
     hero.push(`<a href="catchup-2026-ytd.html" class="hero-card"><span class="arrow">→</span><h2>🗓️ YTD 2026 Catchup — Top 100</h2><p>Retrospective of the hottest items from the start of 2026. Grouped by category.</p></a>`);
@@ -250,13 +250,73 @@ const renderIndex = manifest => {
         return `<div class="daily-item"><a href="digests/${d.date}.html" class="date">${humanDate(d.date)}</a><span class="teaser">${teaser}</span></div>`;
       }).join('')
     : `<div class="empty">No daily digests yet — first run at 9am PT today.</div>`;
+  const safeData = JSON.stringify(searchItems).replace(/</g, '\\u003c');
   const body = `
 <h1>Claude Code Daily Digest</h1>
 <p class="sub">Hottest Claude Code skills, plugins, MCPs &amp; releases. Updated daily at 9am PT.</p>
+<input type="search" id="q" class="search" placeholder="Search items — try &quot;design tokens&quot;, &quot;ollama&quot;, &quot;cost&quot;…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+<div id="search-results" class="search-results" hidden></div>
+<div id="default-content">
 ${hero.length > 0 ? `<div class="hero">${hero.join('')}</div>` : ''}
 ${manifest.monthlies.length > 0 ? `<div class="section-title">Monthly catchups</div><div class="monthly-grid">${monthlies}</div>` : ''}
 <div class="section-title">Daily digests</div>
-<div class="daily-list">${dailies}</div>`;
+<div class="daily-list">${dailies}</div>
+</div>
+<style>
+.search { width: 100%; padding: 12px 16px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 15px; font-family: inherit; margin: 0 0 16px; }
+.search:focus { outline: none; border-color: #3a4049; }
+.search::-webkit-search-cancel-button { filter: invert(0.6); cursor: pointer; }
+.search-results { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; margin-bottom: 32px; }
+.search-result { padding: 14px 20px; border-bottom: 1px solid #1e232b; }
+.search-result:last-child { border-bottom: none; }
+.search-result h4 { margin: 0 0 4px; font-size: 15px; font-weight: 600; }
+.search-result h4 a { color: #e6e9ef; }
+.search-result h4 a:hover { color: #a3bffa; }
+.search-result p { margin: 0 0 6px; color: #9aa3b2; font-size: 13px; }
+.search-result .meta { color: #6a7280; font-size: 11px; }
+.search-result .meta a { color: #7aa2f7; }
+.no-results { color: #6a7280; padding: 20px; text-align: center; font-style: italic; font-size: 13px; }
+</style>
+<script id="search-data" type="application/json">${safeData}</script>
+<script>
+(function(){
+  var data;
+  try { data = JSON.parse(document.getElementById('search-data').textContent); } catch (e) { data = []; }
+  var input = document.getElementById('q');
+  var out = document.getElementById('search-results');
+  var def = document.getElementById('default-content');
+  var timer;
+  var esc = function(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]; }); };
+  function render(q) {
+    var words = q.toLowerCase().split(/\\s+/).filter(Boolean);
+    if (!words.length) { out.hidden = true; def.hidden = false; out.innerHTML = ''; return; }
+    def.hidden = true;
+    out.hidden = false;
+    var matches = [];
+    for (var i = 0; i < data.length; i++) {
+      var it = data[i];
+      var hay = ((it.name || '') + ' ' + (it.hook || '') + ' ' + (it.categories || []).join(' ') + ' ' + (it.install || '')).toLowerCase();
+      var ok = true;
+      for (var j = 0; j < words.length; j++) { if (hay.indexOf(words[j]) === -1) { ok = false; break; } }
+      if (ok) matches.push(it);
+    }
+    if (!matches.length) { out.innerHTML = '<div class="no-results">No matches for &quot;' + esc(q) + '&quot;.</div>'; return; }
+    matches = matches.slice(0, 40);
+    out.innerHTML = matches.map(function(it){
+      var cats = (it.categories || []).map(esc).join(' · ');
+      return '<div class="search-result">'
+        + '<h4><a href="' + esc(it.primary_url || '#') + '">' + esc(it.name) + '</a></h4>'
+        + (it.hook ? '<p>' + esc(it.hook) + '</p>' : '')
+        + '<div class="meta">' + (cats ? cats + ' · ' : '') + '<a href="' + esc(it.source_url) + '">' + esc(it.source_label) + '</a></div>'
+        + '</div>';
+    }).join('');
+  }
+  input.addEventListener('input', function(){
+    clearTimeout(timer);
+    timer = setTimeout(function(){ render(input.value.trim()); }, 60);
+  });
+})();
+</script>`;
   return pageShell('Claude Code Daily Digest', body);
 };
 
@@ -264,11 +324,23 @@ ${manifest.monthlies.length > 0 ? `<div class="section-title">Monthly catchups</
 
 const main = () => {
   const manifest = { hasCatchup: false, hasSubmissions: false, dailies: [], monthlies: [] };
+  const searchEntries = [];
+  const toSearchEntry = (it, kind, source_label, source_url) => ({
+    kind,
+    name: it.name || 'Untitled',
+    hook: it.hook || '',
+    categories: it.categories || [],
+    install: it.install || '',
+    primary_url: it.primary_url || '',
+    source_label,
+    source_url,
+  });
 
   // Submissions
   const submissions = asItems(readJSON(path.join(ROOT, 'submissions.json'), []));
   fs.writeFileSync(path.join(ROOT, 'submissions.html'), renderSubmissions(submissions));
   manifest.hasSubmissions = true;
+  for (const s of submissions) searchEntries.push(toSearchEntry(s, 'submission', 'Submission', 'submissions.html'));
   console.log(`rendered submissions.html (${submissions.length} items)`);
 
   // Daily digests
@@ -281,6 +353,7 @@ const main = () => {
       fs.writeFileSync(path.join(digestsDir, date + '.html'), renderDailyDigest(date, items));
       const firstName = items[0] ? items[0].name : null;
       manifest.dailies.push({ date, count: items.length, hook: firstName });
+      for (const it of items) searchEntries.push(toSearchEntry(it, 'daily', `Daily — ${humanDate(date)}`, `digests/${date}.html`));
       console.log(`rendered digests/${date}.html (${items.length} items)`);
     }
     manifest.dailies.sort((a, b) => b.date.localeCompare(a.date));
@@ -295,6 +368,7 @@ const main = () => {
       const items = asItems(readJSON(path.join(catchupsDir, f), []));
       fs.writeFileSync(path.join(catchupsDir, month + '.html'), renderMonthlyCatchup(month, items));
       manifest.monthlies.push({ month, count: items.length });
+      for (const it of items) searchEntries.push(toSearchEntry(it, 'monthly', `${humanMonth(month)} Catchup`, `catchups/${month}.html`));
       console.log(`rendered catchups/${month}.html (${items.length} items)`);
     }
     manifest.monthlies.sort((a, b) => b.month.localeCompare(a.month));
@@ -308,9 +382,20 @@ const main = () => {
     console.log(`rendered catchup-2026-ytd.html`);
   }
 
+  // Dedup search entries: prefer daily (most context) > submission > monthly.
+  const PRIORITY = { daily: 0, submission: 1, monthly: 2 };
+  const byKey = new Map();
+  for (const e of searchEntries) {
+    const key = (e.primary_url || e.name || '').toLowerCase();
+    if (!key) continue;
+    const existing = byKey.get(key);
+    if (!existing || PRIORITY[e.kind] < PRIORITY[existing.kind]) byKey.set(key, e);
+  }
+  const searchItems = [...byKey.values()].map(({ kind, ...rest }) => rest);
+
   // Index
-  fs.writeFileSync(path.join(ROOT, 'index.html'), renderIndex(manifest));
-  console.log(`rendered index.html`);
+  fs.writeFileSync(path.join(ROOT, 'index.html'), renderIndex(manifest, searchItems));
+  console.log(`rendered index.html (search index: ${searchItems.length} unique items)`);
 };
 
 main();

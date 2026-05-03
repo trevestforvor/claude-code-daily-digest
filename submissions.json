@@ -385,5 +385,16 @@
     "install": "",
     "added_date": "2026-04-29",
     "added_by": "user"
+  },
+  {
+    "slug": "openjarvis",
+    "name": "OpenJarvis",
+    "primary_url": "https://github.com/open-jarvis/OpenJarvis",
+    "secondary_urls": [],
+    "hook": "Local-first personal-agent framework — shared primitives for on-device agents that treat energy and latency as first-class constraints and only reach for the cloud when they have to. Apache 2.0, ~3.5k stars.",
+    "categories": ["cost"],
+    "install": "git clone https://github.com/open-jarvis/OpenJarvis && cd OpenJarvis && uv sync",
+    "added_date": "2026-05-03",
+    "added_by": "user"
   }
 ]
