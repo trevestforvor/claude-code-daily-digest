@@ -418,5 +418,16 @@
     "install": "git clone https://github.com/Fincept-Corporation/FinceptTerminal",
     "added_date": "2026-05-03",
     "added_by": "user"
+  },
+  {
+    "slug": "awesome-openclaw-usecases",
+    "name": "awesome-openclaw-usecases",
+    "primary_url": "https://github.com/hesamsheikh/awesome-openclaw-usecases",
+    "secondary_urls": [],
+    "hook": "Community-curated list of practical OpenClaw use cases — semantic vault search, arXiv-paper conversations, voice/SMS access from any phone, family-calendar briefings, multi-agent Telegram teams, meeting-to-Jira pipelines.",
+    "categories": ["marketplace"],
+    "install": "",
+    "added_date": "2026-05-03",
+    "added_by": "user"
   }
 ]
