@@ -396,5 +396,16 @@
     "install": "git clone https://github.com/open-jarvis/OpenJarvis && cd OpenJarvis && uv sync",
     "added_date": "2026-05-03",
     "added_by": "user"
+  },
+  {
+    "slug": "copaw",
+    "name": "CoPaw (now QwenPaw)",
+    "primary_url": "https://github.com/agentscope-ai/QwenPaw",
+    "secondary_urls": ["https://copaw.bot/"],
+    "hook": "Personal AI workstation built on AgentScope — multi-agent collaboration, evolving memory, and BYO-model deployment (cloud APIs, Ollama, Apple Silicon). Rebranded from CoPaw to QwenPaw in April 2026.",
+    "categories": ["plugin"],
+    "install": "git clone https://github.com/agentscope-ai/QwenPaw",
+    "added_date": "2026-05-03",
+    "added_by": "user"
   }
 ]
