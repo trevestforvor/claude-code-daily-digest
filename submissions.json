@@ -451,5 +451,16 @@
     "install": "git clone https://github.com/patchy631/ai-engineering-hub",
     "added_date": "2026-05-03",
     "added_by": "user"
+  },
+  {
+    "slug": "tradingagents",
+    "name": "TradingAgents",
+    "primary_url": "https://github.com/TauricResearch/TradingAgents",
+    "secondary_urls": [],
+    "hook": "Multi-agent LLM framework that simulates a real trading firm — fundamentals, sentiment, news, and technicals analysts collaborate on trade decisions. Apache 2.0, ~66k stars.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/TauricResearch/TradingAgents && cd TradingAgents && pip install .",
+    "added_date": "2026-05-03",
+    "added_by": "user"
   }
 ]
