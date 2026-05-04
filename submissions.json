@@ -473,5 +473,27 @@
     "install": "",
     "added_date": "2026-05-03",
     "added_by": "user"
+  },
+  {
+    "slug": "openhands",
+    "name": "OpenHands",
+    "primary_url": "https://github.com/All-Hands-AI/OpenHands",
+    "secondary_urls": ["https://github.com/OpenHands/software-agent-sdk"],
+    "hook": "Open-source AI software-engineering platform — Python SDK, CLI, local GUI, and cloud runtime for autonomous coding agents. MIT, ~72k stars.",
+    "categories": ["viral"],
+    "install": "pip install openhands-ai",
+    "added_date": "2026-05-03",
+    "added_by": "user"
+  },
+  {
+    "slug": "dify",
+    "name": "Dify",
+    "primary_url": "https://github.com/langgenius/dify",
+    "secondary_urls": ["https://dify.ai/"],
+    "hook": "Visual LLM-app platform combining workflow orchestration, RAG pipelines, agent tools, prompt management, and observability — Docker-deployable, ~140k stars.",
+    "categories": ["viral"],
+    "install": "cd dify/docker && cp .env.example .env && docker compose up -d",
+    "added_date": "2026-05-03",
+    "added_by": "user"
   }
 ]
