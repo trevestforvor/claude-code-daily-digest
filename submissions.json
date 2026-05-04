@@ -495,5 +495,34 @@
     "install": "cd dify/docker && cp .env.example .env && docker compose up -d",
     "added_date": "2026-05-03",
     "added_by": "user"
+  },
+  {
+    "slug": "hermes-agent",
+    "name": "Hermes Agent",
+    "primary_url": "https://github.com/NousResearch/hermes-agent",
+    "secondary_urls": [
+      "https://hermes-agent.nousresearch.com/",
+      "https://github.com/0xNyk/awesome-hermes-agent"
+    ],
+    "hook": "Nous Research's open-source self-improving personal agent — single gateway to Telegram/Discord/Slack/WhatsApp/Signal/CLI, BYO-model (Nous Portal, OpenRouter, NIM), and a Skills Hub that's compatible with Claude Code, Cursor, and Codex. ~23k stars.",
+    "categories": ["plugin", "viral"],
+    "install": "git clone https://github.com/NousResearch/hermes-agent",
+    "added_date": "2026-05-03",
+    "added_by": "user"
+  },
+  {
+    "slug": "pi-coding-agent",
+    "name": "Pi (pi coding agent)",
+    "primary_url": "https://github.com/badlogic/pi-mono",
+    "secondary_urls": [
+      "https://www.npmjs.com/package/@mariozechner/pi-coding-agent",
+      "https://github.com/disler/pi-vs-claude-code",
+      "https://github.com/tintinweb/pi-subagents"
+    ],
+    "hook": "Minimal, opinionated terminal coding agent — 4 tools (read, edit, write, bash), <1k-token system prompt, no MCP, no permission gates, fully replaceable prompt. The intentional anti-Claude-Code.",
+    "categories": ["plugin"],
+    "install": "npx -y @mariozechner/pi-coding-agent",
+    "added_date": "2026-05-03",
+    "added_by": "user"
   }
 ]
