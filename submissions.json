@@ -535,5 +535,71 @@
     "install": "git clone https://github.com/browser-use/browser-harness",
     "added_date": "2026-05-04",
     "added_by": "user"
+  },
+  {
+    "slug": "agentshield",
+    "name": "AgentShield",
+    "primary_url": "https://github.com/affaan-m/agentshield",
+    "secondary_urls": ["https://ecc.tools/"],
+    "hook": "AI-agent security scanner — flags hardcoded secrets, permission misconfigs, hook injection, MCP server risks, and prompt-injection vectors in your .claude/ directory. CLI, GitHub Action, and ECC plugin. 102 static rules, 1.2k tests.",
+    "categories": ["skill"],
+    "install": "npx ecc-agentshield scan ./CLAUDE.md",
+    "added_date": "2026-05-04",
+    "added_by": "user"
+  },
+  {
+    "slug": "jarvis-osint",
+    "name": "JARVIS",
+    "primary_url": "https://github.com/affaan-m/JARVIS",
+    "secondary_urls": [],
+    "hook": "Real-time agentic intel platform — Meta Ray-Ban glasses → MediaPipe + ArcFace + PimEyes → Browser Use swarm fans across LinkedIn/X/IG/Google → Claude Sonnet writes a corkboard dossier, all live.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/affaan-m/JARVIS",
+    "added_date": "2026-05-04",
+    "added_by": "user"
+  },
+  {
+    "slug": "claude-swarm",
+    "name": "claude-swarm (affaan-m)",
+    "primary_url": "https://github.com/affaan-m/claude-swarm",
+    "secondary_urls": [],
+    "hook": "Multi-agent orchestration for Claude Code — Opus 4.6 decomposes work into a dependency graph, Haiku runs the parallel subtasks, Opus reviews the merged output. Rich terminal UI, built at the Claude Code Hackathon.",
+    "categories": ["plugin"],
+    "install": "git clone https://github.com/affaan-m/claude-swarm",
+    "added_date": "2026-05-04",
+    "added_by": "user"
+  },
+  {
+    "slug": "stoictradingai",
+    "name": "stoictradingAI",
+    "primary_url": "https://github.com/affaan-m/stoictradingAI",
+    "secondary_urls": [],
+    "hook": "Autonomous Solana trading bot with transparent on-chain execution — built on Eliza, peaked at 70k concurrent live viewers during launch.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/affaan-m/stoictradingAI",
+    "added_date": "2026-05-04",
+    "added_by": "user"
+  },
+  {
+    "slug": "hypermamba",
+    "name": "HyperMamba",
+    "primary_url": "https://github.com/affaan-m/HyperMamba",
+    "secondary_urls": ["https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5137471"],
+    "hook": "Hypernetwork-enhanced meta-learning framework for autonomous trading — extends Mamba with hypernet-based weight generation for fast policy adaptation across Solana / sentiment / macro signals.",
+    "categories": ["viral"],
+    "install": "",
+    "added_date": "2026-05-04",
+    "added_by": "user"
+  },
+  {
+    "slug": "zenith-chat",
+    "name": "Zenith",
+    "primary_url": "https://zenith.chat/",
+    "secondary_urls": [],
+    "hook": "Customer-discovery platform that lets founders validate product-market fit by chatting with synthetic personas who think, react, and push back like real prospects. Anthropic × Forum Ventures hackathon winner.",
+    "categories": [],
+    "install": "",
+    "added_date": "2026-05-04",
+    "added_by": "user"
   }
 ]
