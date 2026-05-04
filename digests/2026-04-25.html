@@ -45,6 +45,7 @@ p.sub { color: #9aa3b2; margin: 0 0 32px; }
 .badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
 .trend, .stars { font-size: 11px; color: #9aa3b2; }
 .recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
 pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
 pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
 .copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
@@ -73,6 +74,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
   
   
+  
 </article>
 
 <article class="item">
@@ -80,6 +82,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Anthropic rebuilt the Claude Code desktop app around parallel agents, shipping April 14-15. The redesign adds a session sidebar (filter by status, project, or environment), drag-and-drop pane layout, integrated terminal, in-app file editor, a rebuilt diff viewer for large changesets, and an expanded preview pane that handles HTML, PDFs, and local app servers. Available now for all Pro, Max, Team, and Enterprise plans.</p>
   <div class="secondary">Also: <a href="https://www.macrumors.com/2026/04/15/anthropic-rebuilds-claude-code-desktop-app/">www.macrumors.com/2026/04/15/anthropic-rebuilds-claude-code-desktop-app/</a></div>
   <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">terminal</div>
   
   
 </article>
@@ -89,6 +92,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Anthropic released Claude Opus 4.7 on April 16, now generally available across Claude.ai, the API, Bedrock, Vertex, Foundry, Snowflake Cortex, and GitHub Copilot. Key upgrades: substantially better vision at higher resolution, task budgets (rough token targets for full agentic loops), a new tokenizer (uses 1.0–1.35× more tokens), and 13% lift on a 93-task internal coding benchmark over Opus 4.6 — including 4 tasks neither Opus 4.6 nor Sonnet 4.6 could solve. Same pricing: $5/$25 per million tokens in/out.</p>
   <div class="secondary">Also: <a href="https://github.blog/changelog/2026-04-16-claude-opus-4-7-is-generally-available/">github.blog/changelog/2026-04-16-claude-opus-4-7-is-generally-available/</a></div>
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">agent · token</div>
   
   
 </article>
@@ -98,6 +102,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">cc-switch is a Rust/Tauri cross-platform desktop app that unifies Claude Code, Codex, Gemini CLI, OpenCode, and OpenClaw into one interface — 51.2k stars, v3.14.1 shipped April 23, 2026. Features include 50+ built-in provider presets, centralized MCP + skills management across all apps, local proxy with hot-switching and auto-failover, usage dashboard with spend/token/trend charts, cloud sync via Dropbox/OneDrive/iCloud/WebDAV, and a session manager to restore conversation history.</p>
   
   <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">mcp · proxy · viral · terminal</div>
   <pre><button class="copy">copy</button><code>brew tap farion1231/ccswitch &amp;&amp; brew install --cask cc-switch</code></pre>
   
 </article>
@@ -107,6 +112,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Launched April 8, Anthropic&#39;s Managed Agents let you define an agent as code — tools, memory, behavior — deploy it to Anthropic&#39;s infrastructure, and the API handles execution, state management, multi-turn reasoning, credential management, and sandboxing. Pricing is $0.08/session-hour; the pitch is going from idea to production in days rather than months. Compared to n8n and Zapier, it targets engineering teams building AI-native products that need genuine reasoning and adaptive behavior rather than traditional workflow automation.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">memory · security</div>
   
   
 </article>
@@ -116,6 +122,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">GitHub CLI v2.90.0 (April 16) ships `gh skill` — a standardized install/update/publish/search/preview/pin protocol for agent skills directly from GitHub repos. SHA-pinning lets you lock skills to a specific commit; `gh skill update` compares local SHAs against remote to detect real content changes. Compatible with Claude Code, GitHub Copilot, Cursor, Codex CLI, and Gemini CLI. Currently in public preview.</p>
   <div class="secondary">Also: <a href="https://github.com/cli/cli/releases/tag/v2.90.0">github.com/cli/cli/releases/tag/v2.90.0</a></div>
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">skill · terminal</div>
   <pre><button class="copy">copy</button><code>gh extension upgrade --all  # update gh to 2.90.0+, then: gh skill install &lt;owner/repo&gt;</code></pre>
   
 </article>
@@ -125,6 +132,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Shopify open-sourced an AI Toolkit on April 9 that connects Claude Code, Cursor, VS Code, Gemini CLI, and Codex directly to the Shopify platform via MCP. It surfaces Shopify dev docs and GraphQL API schemas without leaving the editor, validates GraphQL/Liquid/UI extension code against live schemas, and lets agents execute store operations (create products, manage metafields, modify themes, run bulk ops) through the Shopify CLI. MIT licensed, 250 stars. Covered by @indydevdan.</p>
   <div class="secondary">Also: <a href="https://shopify.dev/docs/apps/build/ai-toolkit">shopify.dev/docs/apps/build/ai-toolkit</a> · <a href="https://www.youtube.com/watch?v=ptnWksC9TXY">www.youtube.com/watch?v=ptnWksC9TXY</a></div>
   <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">plugin · viral · marketplace · terminal</div>
   <pre><button class="copy">copy</button><code>/plugin marketplace add Shopify/shopify-ai-toolkit</code></pre>
   
 </article>
@@ -134,6 +142,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">12.7k-star skills library with 235+ production-ready skills across 9 domains — engineering (37 core + 45 advanced), marketing (44 skills across 7 pods), product, compliance, C-level advisory, Playwright testing, self-improving agent memory, project management, and regulatory/QM. v2.0 shipped March 4, 2026 adding 26 &#39;POWERFUL-tier&#39; skills. A single `convert.sh --tool all` script cross-compiles every skill for 12 AI coding platforms.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">skill · plugin · memory · marketplace · browser · testing</div>
   <pre><button class="copy">copy</button><code>/plugin marketplace add alirezarezvani/claude-skills</code></pre>
   
 </article>
@@ -143,6 +152,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">5.7k stars and v1.2.0 (April 6, 2026): 754 structured cybersecurity skills across 26 domains — cloud security, pentesting, red teaming, DFIR, malware analysis, threat intel — each skill mapped to MITRE ATT&amp;CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, and NIST AI RMF simultaneously. Follows the agentskills.io open standard for agent skill discovery and works with 26+ AI coding platforms. Progressive disclosure architecture lets agents scan all 754 skills with minimal token overhead.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">skill · anthropic · viral · security</div>
   <pre><button class="copy">copy</button><code>npx skills add mukul975/Anthropic-Cybersecurity-Skills</code></pre>
   
 </article>
@@ -152,6 +162,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Automattic&#39;s official Claude Code plugin generates complete WordPress block themes from plain English: describe your site, pick from 3 generated design directions, and get a fully deployed theme in WordPress Studio. Two workflows: `/quick-build` for fast single-session creation and `/design-site` for a multi-phase professional pipeline including style tiles, full mockups, and live gallery. @indydevdan posted a walkthrough 3 days ago — 18 stars so far but first-party Automattic authorship is the signal.</p>
   <div class="secondary">Also: <a href="https://developer.wordpress.com/wordpress-com-claude-code-plugin/">developer.wordpress.com/wordpress-com-claude-code-plugin/</a> · <a href="https://www.youtube.com/watch?v=FKdYdvSggzU">www.youtube.com/watch?v=FKdYdvSggzU</a></div>
   <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">plugin · viral</div>
   <pre><button class="copy">copy</button><code>cd ~/Studio &amp;&amp; claude --plugin-dir /path/to/claude-code-wordpress.com</code></pre>
   
 </article>
@@ -161,6 +172,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">2.1k stars, v7.74.0 (701 releases): ccs is a CLI profile and runtime manager that switches between Claude Code, Codex CLI, Gemini CLI, and 300+ OpenRouter models via an OAuth proxy — without rewriting config files. Visual dashboard monitors usage analytics, auth status, and provider health. Bridges Claude Code into OpenAI-compatible providers via local proxy. Zero-config to production-ready.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">proxy · viral · terminal</div>
   <pre><button class="copy">copy</button><code>npm install -g @kaitranntt/ccs</code></pre>
   
 </article>
@@ -170,6 +182,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more. Includes the mukul975/Anthropic-Cybersecurity-Skills collection (754 skills across 38 security domains), official vendor skills, and community contributions — organized as a one-stop discovery layer for the emerging cross-platform agent skills ecosystem.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">anthropic · marketplace · terminal · security</div>
   
   
 </article>
@@ -179,6 +192,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">quemsah/awesome-claude-plugins is an automated n8n-powered tracker that indexes Claude Code plugin adoption metrics across GitHub repositories — 13,501 total repos indexed as of April 22, 2026. Rather than a curated list, it&#39;s live analytics: daily automated crawls tracking installs, stars, and usage signals across the plugin ecosystem, giving an evidence-based view of what&#39;s actually gaining traction.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">plugin · marketplace</div>
   
   
 </article>
@@ -188,6 +202,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">FlorianBruniaux/claude-code-ultimate-guide is a comprehensive beginner-to-power-user documentation project covering Claude Code features with production-ready templates, agentic workflow guides, quizzes, and a cheatsheet. Described as &#39;a tremendous feat of documentation,&#39; it addresses the gap between Anthropic&#39;s sparse official docs and real-world practitioner needs — particularly for teams onboarding into agentic workflows.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">agent · anthropic</div>
   
   
 </article>
@@ -197,6 +212,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">A community skills pack for professional WordPress engineering in Claude Code — covering performance optimization, security auditing, Gutenberg block development, and theme/plugin best practices. Works alongside the official Automattic WordPress.com plugin to give Claude Code deep WordPress domain expertise. Fills the skill gap between generic code generation and WordPress-specific architecture patterns.</p>
   
   <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">skill · plugin · security</div>
   <pre><button class="copy">copy</button><code>See README</code></pre>
   
 </article>

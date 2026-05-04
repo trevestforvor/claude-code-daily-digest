@@ -45,6 +45,7 @@ p.sub { color: #9aa3b2; margin: 0 0 32px; }
 .badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
 .trend, .stars { font-size: 11px; color: #9aa3b2; }
 .recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
 pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
 pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
 .copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
@@ -71,6 +72,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">v1.40.0 shipped today (May 3) with per-phase model routing, dynamic failure-tier escalation, and a --research-phase flag for the plan command. At 59.6K stars, GSD&#39;s --minimal install profile cuts cold-start system-prompt overhead by 94% (from ~12K tokens to ~700), which is the single biggest token win per install in the ecosystem right now.</p>
   <div class="secondary">Also: <a href="https://www.youtube.com/watch?v=0qqV4yv-Hss">www.youtube.com/watch?v=0qqV4yv-Hss</a></div>
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">token · viral</div>
   <pre><button class="copy">copy</button><code>npx get-shit-done-cc@latest</code></pre>
   <div class="recurring">↑ Day 7 — v1.40.0 ships today with per-phase model routing; now 59.6K stars</div>
 </article>
@@ -80,6 +82,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">v1.7.0 landed May 1 adding cavecrew (multi-agent cave team), stats receipts, and MCP-shrink — a new MCP input-token compressor that cuts ~46% of input tokens every session on top of the existing 65% output-token reduction. Now at 52.9K stars, caveman is one of the most-installed cost skills in the ecosystem.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">mcp · agent · token · viral</div>
   <pre><button class="copy">copy</button><code>curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash</code></pre>
   <div class="recurring">↑ Day 7 — v1.7.0 adds MCP-shrink and cavecrew; 52.9K stars</div>
 </article>
@@ -89,6 +92,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">A Tauri-powered desktop app that unifies Claude Code, Codex, OpenCode, OpenClaw, and Gemini CLI in one GUI — 50+ provider presets, one-click MCP and Skills sync across all agents, and a system-tray switcher. At 58.4K stars it has become the go-to desktop control panel for teams running multiple AI CLI tools side-by-side.</p>
   
   <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">mcp · viral · terminal</div>
   <pre><button class="copy">copy</button><code>brew tap farion1231/ccswitch &amp;&amp; brew install --cask cc-switch</code></pre>
   
 </article>
@@ -98,6 +102,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Crossed 173K stars and released v2.0.0-rc.1 in April, adding a desktop dashboard GUI, operator workflows, media tooling, and a Rust-based ECC 2.0 alpha control plane. Bundles 48 agents, 182 skills, 68 command shims, and multi-language rules — still the highest-starred Claude Code harness on GitHub.</p>
   
   <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">plugin · harness · viral · marketplace</div>
   <pre><button class="copy">copy</button><code>/plugin marketplace add https://github.com/affaan-m/everything-claude-code</code></pre>
   <div class="recurring">↑ Day 7 — 173K stars; v2.0.0-rc.1 introduces desktop dashboard and Rust control plane</div>
 </article>
@@ -107,6 +112,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">v0.12.0 shipped April 30. Nous Research&#39;s self-improving agent creates skills from experience, searches past conversations, and builds persistent user models across sessions — it hit 131K GitHub stars in ten weeks, faster than LangChain or AutoGPT. Runs Claude via OpenRouter or direct API; includes a Claude Code SKILL.md in the repo.</p>
   
   <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">skill</div>
   <pre><button class="copy">copy</button><code>curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash</code></pre>
   
 </article>
@@ -116,6 +122,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Garry Tan&#39;s open-sourced Claude Code setup — 23 specialist skills running as slash commands: CEO, Designer, Eng Manager, QA Lead, Security Officer, Release Engineer, and more. Surpassed 10K stars in its first 48 hours after launch and now sits at 82.7K stars and 12K forks; the design-review skill catches AI slop before it ships.</p>
   
   <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">skill · viral · security</div>
   <pre><button class="copy">copy</button><code>See README</code></pre>
   
 </article>
@@ -125,6 +132,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Now at 71.4K stars and v12.3.8 with 244 releases. Hooks into Claude Code&#39;s session lifecycle, compresses tool usage into semantic summaries via the Agent SDK, and stores them in a local SQLite+Chroma vector DB — injecting relevant context automatically on next session start. @simonscrapes compared all Claude memory systems this week and claude-mem came out on top for zero-config simplicity.</p>
   <div class="secondary">Also: <a href="https://www.youtube.com/watch?v=UHVFcUzAGlM">www.youtube.com/watch?v=UHVFcUzAGlM</a></div>
   <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">memory · viral</div>
   <pre><button class="copy">copy</button><code>npx claude-mem install</code></pre>
   <div class="recurring">↑ Day 7 — 71.4K stars; @simonscrapes memory systems comparison this week</div>
 </article>
@@ -134,6 +142,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">OMO is a multi-model orchestration harness at 55K stars that transforms a single AI coding assistant into 11 parallel specialists (Sisyphus orchestrator on Claude Opus 4.7, sub-agents on Gemini/Kimi/GLM). Ships 52 lifecycle hooks, 26 tools, and a 3-tier MCP system — each task auto-routes to the cheapest capable model, making it the most cost-aware harness after caveman.</p>
   
   <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">mcp · harness · viral</div>
   
   
 </article>
@@ -143,6 +152,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">42.1K stars for an AI-powered job search system built entirely on Claude Code: 14 skill modes, a Go terminal dashboard, PDF resume generation, and Playwright-powered batch scanning of 45+ career portals. The creator used it to evaluate 740 job listings and land a Head of Applied AI role — one of the most concrete real-world Claude Code skill systems to ship this year.</p>
   
   <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">skill · viral · terminal · browser</div>
   <pre><button class="copy">copy</button><code>git clone https://github.com/santifer/career-ops.git &amp;&amp; cd career-ops &amp;&amp; npm install &amp;&amp; npx playwright install chromium</code></pre>
   
 </article>
@@ -152,6 +162,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Ultra-lightweight personal AI agent at 41.6K stars; v0.1.5.post3 released April 29. Keeps the core agent loop small and readable while supporting MCP, multi-platform chat (Telegram, Discord, Slack, WeChat), 24/7 market analysis, and full-stack software engineering tasks. Built as an open alternative to Claude Code&#39;s architecture — inspects Claude Code&#39;s design philosophy but runs any LLM.</p>
   
   <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">design · mcp · agent · model · viral · alternative</div>
   <pre><button class="copy">copy</button><code>pip install nanobot-ai</code></pre>
   
 </article>

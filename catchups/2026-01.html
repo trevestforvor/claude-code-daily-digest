@@ -45,6 +45,7 @@ p.sub { color: #9aa3b2; margin: 0 0 32px; }
 .badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
 .trend, .stars { font-size: 11px; color: #9aa3b2; }
 .recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
 pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
 pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
 .copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
@@ -71,6 +72,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Anthropic&#39;s Jan 12 research preview — Claude Code for knowledge workers. Direct permission-based access to local files from the macOS app.</p>
   <div class="secondary">Also: <a href="https://www.anthropic.com/webinars/future-of-ai-at-work-introducing-cowork">www.anthropic.com/webinars/future-of-ai-at-work-introducing-cowork</a></div>
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
   <pre><button class="copy">copy</button><code># macOS desktop app — enable from claude.ai settings</code></pre>
   
 </article>
@@ -80,6 +82,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Full agent harness with 48 agents, 183 skills, hooks, rules and MCP configs. Hit ~162k stars three months after a Jan 18 creation.</p>
   
   <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  <span class="stars">📈 ~161,633 stars</span></div>
+  <div class="tags">mcp · harness · viral · marketplace</div>
   <pre><button class="copy">copy</button><code>/plugin marketplace add https://github.com/affaan-m/everything-claude-code</code></pre>
   
 </article>
@@ -89,6 +92,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">VoltAgent&#39;s curated registry — 5,400+ OpenClaw skills filtered from 13,729 candidates. Jan 25 launch pulled ~47k stars.</p>
   
   <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  <span class="stars">📈 ~46,684 stars</span></div>
+  <div class="tags">viral</div>
   <pre><button class="copy">copy</button><code>clawhub install &lt;skill-slug&gt;</code></pre>
   
 </article>
@@ -98,6 +102,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Installable library of 1,400+ agentic skills covering Claude Code, Cursor, Codex CLI, Gemini CLI and Antigravity. ~34k stars from Jan 14.</p>
   
   <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  <span class="stars">📈 ~34,073 stars</span></div>
+  <div class="tags">agent · viral · terminal</div>
   <pre><button class="copy">copy</button><code>npx antigravity-awesome-skills</code></pre>
   
 </article>
@@ -107,6 +112,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Rust CLI proxy that strips noise from dev-command output before it hits the model — claims 60-90% token reduction. ~30k stars from Jan 22.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  <span class="stars">📈 ~30,424 stars</span></div>
+  <div class="tags">token · proxy · viral · terminal</div>
   <pre><button class="copy">copy</button><code>brew install rtk</code></pre>
   
 </article>
@@ -116,6 +122,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Teams-first multi-agent orchestration layer for Claude Code. ~30k stars since its Jan 9 release.</p>
   
   <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  <span class="stars">📈 ~30,168 stars</span></div>
+  <div class="tags">agent · viral · marketplace</div>
   <pre><button class="copy">copy</button><code>/plugin marketplace add https://github.com/Yeachan-Heo/oh-my-claudecode</code></pre>
   
 </article>
@@ -125,6 +132,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Container-native alternative to OpenClaw — messaging integrations, memory, scheduled jobs, runs on Anthropic&#39;s Agents SDK. Exploded to ~28k stars from Jan 31.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  <span class="stars">📈 ~27,560 stars</span></div>
+  <div class="tags">memory · anthropic · alternative</div>
   <pre><button class="copy">copy</button><code>gh repo fork qwibitai/nanoclaw --clone &amp;&amp; cd nanoclaw &amp;&amp; claude</code></pre>
   
 </article>
@@ -134,6 +142,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Research skill that pulls 30-day signal from Reddit, X, YouTube, HN, Polymarket and the web into a grounded summary. ~23k stars from Jan 23.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  <span class="stars">📈 ~22,885 stars</span></div>
+  <div class="tags">plugin · viral · marketplace</div>
   <pre><button class="copy">copy</button><code>/plugin marketplace add mvanhorn/last30days-skill</code></pre>
   
 </article>
@@ -143,6 +152,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Statusline plugin showing context usage, active tools, running agents and todo progress. ~20k stars since Jan 2.</p>
   
   <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  <span class="stars">📈 ~20,062 stars</span></div>
+  <div class="tags">context · viral · marketplace</div>
   <pre><button class="copy">copy</button><code>/plugin marketplace add jarrodwatts/claude-hud</code></pre>
   
 </article>
@@ -152,6 +162,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Skill that implements Manus-style persistent markdown planning — the workflow pattern behind the $2B acquisition. ~19k stars from Jan 3.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  <span class="stars">📈 ~19,125 stars</span></div>
+  <div class="tags">viral</div>
   <pre><button class="copy">copy</button><code>npx skills add OthmanAdi/planning-with-files --skill planning-with-files -g</code></pre>
   
 </article>
@@ -161,6 +172,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Jim Liu&#39;s content + image-gen skill bundle — infographics, slides, social publishing, nine image providers. ~15k stars from Jan 13.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  <span class="stars">📈 ~15,520 stars</span></div>
+  <div class="tags">viral</div>
   <pre><button class="copy">copy</button><code>npx skills add jimliu/baoyu-skills</code></pre>
   
 </article>
@@ -170,6 +182,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Ghostty-based macOS terminal with vertical tabs and notifications purpose-built for AI coding agents. ~15k stars since Jan 28.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  <span class="stars">📈 ~14,847 stars</span></div>
+  <div class="tags">terminal</div>
   <pre><button class="copy">copy</button><code>brew tap manaflow-ai/cmux &amp;&amp; brew install --cask cmux</code></pre>
   
 </article>
@@ -179,6 +192,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Zero-setup harness that auto-generates multi-agent topologies for long-running workflows. ~10k stars since Jan 12.</p>
   
   <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  <span class="stars">📈 ~10,102 stars</span></div>
+  <div class="tags">agent · harness · viral</div>
   <pre><button class="copy">copy</button><code>git clone https://github.com/aden-hive/hive.git &amp;&amp; cd hive &amp;&amp; ./quickstart.sh</code></pre>
   
 </article>
@@ -188,6 +202,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Trail of Bits ships 40+ security skills — smart-contract scanners, YARA authoring, Android APK checks, differential code audits. ~4.7k stars.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  <span class="stars">📈 ~4,688 stars</span></div>
+  <div class="tags">plugin · viral · marketplace · security</div>
   <pre><button class="copy">copy</button><code>/plugin marketplace add trailofbits/skills</code></pre>
   
 </article>
@@ -197,6 +212,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Anthony Fu&#39;s curated skills — Vue, Nuxt, Vite, Vitest, Pinia, UnoCSS, pnpm — hand-tuned plus generated from upstream docs. ~4.6k stars.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  <span class="stars">📈 ~4,645 stars</span></div>
+  <div class="tags">viral</div>
   <pre><button class="copy">copy</button><code>pnpx skills add antfu/skills --skill=&#39;*&#39;</code></pre>
   
 </article>
@@ -206,6 +222,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Composio&#39;s open-source take on Claude Cowork with 500+ SaaS integrations. Shipped Jan 13, day after Anthropic&#39;s preview.</p>
   
   <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span>  <span class="stars">📈 ~3,882 stars</span></div>
+  <div class="tags">anthropic</div>
   <pre><button class="copy">copy</button><code>git clone https://github.com/ComposioHQ/open-claude-cowork.git &amp;&amp; cd open-claude-cowork &amp;&amp; ./setup.sh</code></pre>
   
 </article>
@@ -215,6 +232,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">24k lines of docs, 228 templates, 271 quiz questions and a built-in MCP server you can point Claude Code at. ~3.7k stars from Jan 9.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  <span class="stars">📈 ~3,729 stars</span></div>
+  <div class="tags">viral</div>
   <pre><button class="copy">copy</button><code>npx -y claude-code-ultimate-guide-mcp</code></pre>
   
 </article>
@@ -224,6 +242,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Research assistant covering ideation → literature → experiments → writing, with Zotero and Obsidian integrations. ~3.4k stars.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  <span class="stars">📈 ~3,448 stars</span></div>
+  <div class="tags">viral</div>
   <pre><button class="copy">copy</button><code>bash &lt;(curl -fsSL https://raw.githubusercontent.com/Galaxy-Dawn/claude-scholar/main/scripts/setup.sh)</code></pre>
   
 </article>
@@ -233,6 +252,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Autonomous bash loop that runs Claude Code, Codex, OpenCode, Cursor, Qwen and Droid against a PRD until it&#39;s done. ~2.8k stars.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  <span class="stars">📈 ~2,778 stars</span></div>
+  <div class="tags">terminal</div>
   <pre><button class="copy">copy</button><code>npm install -g ralphy-cli</code></pre>
   
 </article>
@@ -242,6 +262,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Puts up to 8 models on every coding task so blind spots surface before you ship. Plugin form, ~2.8k stars from Jan 15.</p>
   
   <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  <span class="stars">📈 ~2,758 stars</span></div>
+  <div class="tags">viral · marketplace</div>
   <pre><button class="copy">copy</button><code>/plugin marketplace add https://github.com/nyldn/claude-octopus.git</code></pre>
   
 </article>
@@ -251,6 +272,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Free router connecting Claude Code, Cursor and Cline to 40+ providers and 100+ models, auto-switching tiers when quotas die. ~2.7k stars.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  <span class="stars">📈 ~2,729 stars</span></div>
+  <div class="tags">proxy · viral</div>
   <pre><button class="copy">copy</button><code>npm install -g 9router</code></pre>
   
 </article>
@@ -260,6 +282,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Spec-driven harness — interview, seed, execute, evaluate, evolve — with nine specialized agents and 3-stage evaluation gates. ~2.4k stars.</p>
   
   <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  <span class="stars">📈 ~2,448 stars</span></div>
+  <div class="tags">harness · subagent · viral</div>
   <pre><button class="copy">copy</button><code>curl -fsSL https://raw.githubusercontent.com/Q00/ouroboros/main/scripts/install.sh | bash</code></pre>
   
 </article>
@@ -269,6 +292,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Rust TUI + web dashboard for managing many Claude Code / OpenCode / Codex sessions via tmux and git worktrees. ~1.6k stars.</p>
   
   <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  <span class="stars">📈 ~1,638 stars</span></div>
+  <div class="tags">viral</div>
   <pre><button class="copy">copy</button><code>brew install aoe</code></pre>
   
 </article>
@@ -278,6 +302,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">MCP server that learns codebase patterns and remembers decisions across sessions. Offline CLI, works in any IDE. ~780 stars from Jan 19.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  <span class="stars">📈 ~777 stars</span></div>
+  <div class="tags">local · viral · terminal</div>
   <pre><button class="copy">copy</button><code># MCP — see repo README for server config</code></pre>
   
 </article>
@@ -287,6 +312,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">FuzzingLabs&#39; collection of MCP servers wiring offensive tools — Nmap, Ghidra, Nuclei, SQLMap, Hashcat — into AI assistants. ~525 stars.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  <span class="stars">📈 ~525 stars</span></div>
+  <div class="tags">viral · marketplace · security</div>
   <pre><button class="copy">copy</button><code>git clone https://github.com/FuzzingLabs/mcp-security-hub</code></pre>
   
 </article>

@@ -45,6 +45,7 @@ p.sub { color: #9aa3b2; margin: 0 0 32px; }
 .badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
 .trend, .stars { font-size: 11px; color: #9aa3b2; }
 .recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
 pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
 pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
 .copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
@@ -71,6 +72,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Memory for Claude Managed Agents entered public beta on April 23 under the standard `managed-agents-2026-04-01` header — no waitlist, no separate access request. Memories are stored as a workspace-scoped folder of Markdown files that agents read, write, and update using the same bash/code execution tools they already use. Early adopters include Netflix, Rakuten, Wisedocs (97% reduction in first-pass errors), and Ando (30% speed increase in document verification). Audit trails log every memory change per session; memories are browsable and editable directly in the Claude Console.</p>
   <div class="secondary">Also: <a href="https://sdtimes.com/anthropic/anthropic-adds-memory-to-claude-managed-agents/">sdtimes.com/anthropic/anthropic-adds-memory-to-claude-managed-agents/</a> · <a href="https://www.datacenterknowledge.com/next-gen-data-centers/anthropic-s-memory-push-turns-ai-into-a-data-center-systems-problem">www.datacenterknowledge.com/next-gen-data-centers/anthropic-s-memory-push-turns-ai-into-a-data-center-systems-problem</a></div>
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">memory</div>
   <pre><button class="copy">copy</button><code>Add managed-agents-2026-04-01 beta header — see docs at platform.claude.com/docs/en/managed-agents/memory</code></pre>
   
 </article>
@@ -80,6 +82,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">35.7k stars — installable library of 1,436+ agentic `SKILL.md` playbooks spanning planning, coding, debugging, testing, security review, infrastructure, and product work. v10.7.0 released April 26. Single CLI installs the full catalog or a role-based bundle; tool-specific flags (`--claude`, `--cursor`, `--gemini`, `--codex`, `--antigravity`) write only what each agent needs. Hosted web interface and local browsable catalog included. The cross-agent support means your skill investments transfer if you switch tools.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">agent · terminal · security · testing</div>
   <pre><button class="copy">copy</button><code>npx antigravity-awesome-skills</code></pre>
   
 </article>
@@ -89,6 +92,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">34.5k stars, updated April 28 — production-grade multi-agent system combining 184 specialized AI agents, 16 orchestrators, 150 skills, and 78 focused single-purpose plugins for Claude Code. Three-tier model strategy built in: Opus for critical reasoning, Sonnet for complex tasks, Haiku for routine operations. New this week: PluginEval quality evaluation framework, Agent Teams plugin for parallel workflows, and Conductor plugin for context-driven track-based development. Install with one marketplace command.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · agent · viral · marketplace</div>
   <pre><button class="copy">copy</button><code>/plugin marketplace add wshobson/agents</code></pre>
   
 </article>
@@ -98,6 +102,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">9.7k stars — every string in Claude Code&#39;s instruction architecture extracted from the compiled source, updated within minutes of each release. Tracks 110+ strings across the main system prompt, 24 builtin tool descriptions, Plan/Explore/Task sub-agent prompts, CLAUDE.md templates, and 40+ system reminders — all tagged per version so `git diff v2.1.122..v2.1.123` shows exactly what Anthropic changed. **Updated today for v2.1.123.** Companion tool `tweakcc` lets you customize individual prompt pieces as Markdown files and patch your local Claude Code installation, making it the only way to surgically adjust Claude Code&#39;s behavior without forking.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">anthropic · viral</div>
   <pre><button class="copy">copy</button><code>See README (browse on GitHub; install companion: npx tweakcc)</code></pre>
   
 </article>
@@ -107,6 +112,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">18.7k stars — 131 specialized Claude Code subagents across 10 categories (core development, language specialists, infrastructure, security, data/AI, and business functions), each running in its own isolated context window so tasks don&#39;t cross-contaminate. Smart model routing automatically selects Opus, Sonnet, or Haiku per subagent based on task complexity. Standardized template structure makes it easy to add team-specific subagents. Interactive `install-agents.sh` lets you pick by category.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · subagent · context · viral · security</div>
   <pre><button class="copy">copy</button><code>./install-agents.sh  (or: claude plugin install &lt;plugin-name&gt;)</code></pre>
   
 </article>
@@ -116,6 +122,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">185k+ stars — clean-room Rust rewrite of the Claude Code agent harness, initiated April 1 after security researcher Chaofan Shou found the complete 512K-line TypeScript source in the npm package. Sigrid Jin (world&#39;s most active Claude Code user by token count) leads the project. 109k forks; active Discord; not affiliated with Anthropic.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">harness · anthropic · security</div>
   <pre><button class="copy">copy</button><code>git clone https://github.com/ultraworkers/claw-code &amp;&amp; cd claw-code/rust &amp;&amp; cargo build --workspace</code></pre>
   <div class="recurring">↑ Day 7 — 185k+ stars; Rust rewrite actively merging contributors</div>
 </article>
@@ -125,6 +132,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">19.2k stars — 1,100+ agent skills curated from official engineering teams at Anthropic, Google, Vercel, Stripe, Cloudflare, Netlify, Microsoft, Hugging Face, Figma, and more. The pitch: &#39;hand-picked, not AI-slop generated.&#39; Compatible with Claude Code, Codex, Gemini CLI, Cursor, and GitHub Copilot. Browse the full catalog at officialskills.sh. Positioned as the authoritative source for production-grade skills backed by the companies that built the APIs.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">anthropic · viral · terminal</div>
   <pre><button class="copy">copy</button><code>See README (browse at officialskills.sh)</code></pre>
   <div class="recurring">↑ Day 2 — 19.2k stars; the official-team-curated alternative to community lists</div>
 </article>
@@ -134,6 +142,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">36.3k stars — turns any folder of code, docs, papers, images, or videos into a queryable knowledge graph wired into Claude Code via a PreToolUse hook. v0.5.0 benchmarks: 70x fewer tokens per search vs brute-force reads. Covered by @charlieautomates as core to their &#39;replaces OpenClaw&#39; stack.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">memory · token · viral</div>
   <pre><button class="copy">copy</button><code>uv tool install graphifyy &amp;&amp; graphify install</code></pre>
   <div class="recurring">↑ Day 3 — 36.3k stars; knowledge-graph context narrowing still the strongest token-reduction pattern</div>
 </article>
@@ -143,6 +152,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">4.3k stars — TUI dashboard that shows where your AI coding tokens actually go, by reading Claude Code&#39;s JSONL session transcripts from disk (no proxy, no wrapper, no API key). Classifies every turn into 13 task categories, tracks one-shot success rates vs retry-burn spirals, and surfaces cost per task type across Claude Code, Codex, Cursor, and GitHub Copilot. macOS menubar app updated April 25.</p>
   <div class="secondary">Also: <a href="https://news.ycombinator.com/item?id=47759035">news.ycombinator.com/item?id=47759035</a></div>
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">token · proxy · viral</div>
   <pre><button class="copy">copy</button><code>npm install -g codeburn</code></pre>
   <div class="recurring">↑ Day 3 — 4.3k stars; Show HN post climbing</div>
 </article>
@@ -152,6 +162,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">2k stars — open-source Claude Code marketplace with 423 plugins, 2,849 skills, and 177 agents, browsable at tonsofskills.com. The `ccpi` CLI package manager (`pnpm add -g @intentsolutionsio/ccpi`) makes install as fast as `ccpi install devops-automation-pack`. Covers 18+ categories including SaaS packs for ClickUp, Algolia, Fly.io, and Intercom. All MIT-licensed, updated daily by GitHub Actions.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral · marketplace · terminal</div>
   <pre><button class="copy">copy</button><code>pnpm add -g @intentsolutionsio/ccpi &amp;&amp; ccpi install &lt;pack-name&gt;</code></pre>
   <div class="recurring">↑ Day 2 — 2k stars; fastest-growing community marketplace</div>
 </article>
@@ -161,6 +172,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">47.6k stars — the community&#39;s definitive agentic engineering guide: 82+ actionable tips across 11 categories, including 6 directly from Boris Cherny (the Anthropic engineer who built Claude Code). Covers every major feature: subagents, Routines, Ultraplan, Ultrareview, Channels, Devcontainers, Computer Use, hooks, MCP, and context management. The Routines + Memory section is newly relevant now that Managed Agents Memory entered public beta.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">mcp · agent · memory · context · anthropic · viral</div>
   <pre><button class="copy">copy</button><code>See README</code></pre>
   <div class="recurring">↑ Day 6 — 47.6k stars; Managed Agents Memory section gaining traffic</div>
 </article>
@@ -170,6 +182,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Show HN: an MCP that installs proper web access into Claude Code and other coding agents, described as &#39;turn Claude Code into a Deep Research agent.&#39; One-command setup — `npx openalmanac setup` — adds structured web-search and crawl tools via the MCP protocol, giving Claude Code live access to documentation, papers, and web content without copy-paste workflows.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">scraping</div>
   <pre><button class="copy">copy</button><code>npx openalmanac setup</code></pre>
   <div class="recurring">↑ Day 3 — deepening discussion in HN thread; web-access for Claude Code still the #1 requested workflow</div>
 </article>
@@ -179,6 +192,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">9.8k stars — MCP plugin that adds full-codebase semantic search to Claude Code and other agents via hybrid BM25 + dense-vector retrieval (Milvus/Zilliz Cloud backend). Natural language queries across your entire repo surface precisely the relevant files without manual inclusion. Supports Claude Code, Cursor, Windsurf, Claude Desktop. Requires an OpenAI API key for embeddings and a Zilliz Cloud endpoint.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">plugin · viral · search</div>
   <pre><button class="copy">copy</button><code>See README (requires OpenAI API key + Zilliz Cloud)</code></pre>
   <div class="recurring">↑ Day 3 — 9.8k stars; hybrid BM25+dense retrieval differentiates it from pure-vector alternatives</div>
 </article>
@@ -188,6 +202,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Two releases in 24 hours. v2.1.122 (April 28): paste any PR URL into `/resume` — GitHub, GitLab, GitHub Enterprise, or Bitbucket — and Claude Code finds the session that created it; no more hunting through session IDs. Also ships `ANTHROPIC_BEDROCK_SERVICE_TIER` for Bedrock flex/priority/default tier selection, image auto-resize to 2000px, and OAuth token handling fixes. v2.1.123 (April 29, today): patches a 401 retry loop when `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1` is set.</p>
   
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
   <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code  # → v2.1.123</code></pre>
   
 </article>
@@ -197,6 +212,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">&quot;Why use many token when few token do trick&quot; — 47.8k+ stars. Cuts ~65–75% output tokens and ~46% input tokens while preserving technical accuracy. One-line install for Claude Code, Cursor, Windsurf, Copilot, Gemini CLI, and 40+ others. Still the first recommendation in every r/ClaudeAI budget thread.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · token · marketplace · terminal</div>
   <pre><button class="copy">copy</button><code>claude plugin marketplace add JuliusBrussee/caveman &amp;&amp; claude plugin install caveman@caveman</code></pre>
   <div class="recurring">↑ Day 10 — 47.8k+ stars; fading but still #1 cost-reduction recommendation</div>
 </article>

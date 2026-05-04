@@ -45,6 +45,7 @@ p.sub { color: #9aa3b2; margin: 0 0 32px; }
 .badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
 .trend, .stars { font-size: 11px; color: #9aa3b2; }
 .recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
 pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
 pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
 .copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
@@ -71,6 +72,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">591 stars — turns Claude Code (and OpenClaw) into a local Lovart: seven MCP tools covering image generation, prompt enhancement, gallery search, and workflow management, backed by local ComfyUI (free), MeiGen Cloud, or any OpenAI-compatible API. The 1,500+ curated prompt library handles art direction automatically, and multi-direction parallel generation means Claude can explore a composition grid in one shot instead of iterating one image at a time.</p>
   
   <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">image · viral</div>
   <pre><button class="copy">copy</button><code>npx meigen init claude</code></pre>
   
 </article>
@@ -80,6 +82,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Official Anthropic repo (1.2k stars) that exposes a BLE bridge from Claude for macOS/Windows to maker hardware — the reference build is an ESP32 M5StickC desk pet that sleeps when Claude is idle, wakes when a session starts, goes visibly impatient when a permission prompt is waiting, and lets you approve or deny right from the device. Launched April 20 on Product Hunt: #2 Product of the Day, 387 upvotes. Enable via Help → Troubleshooting → Developer Mode, then pair in Developer → Open Hardware Buddy.</p>
   
   <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">viral</div>
   <pre><button class="copy">copy</button><code>pio run -t upload  # flash ESP32 firmware, then pair via Claude developer mode</code></pre>
   
 </article>
@@ -89,6 +92,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">April 21-22: Anthropic silently removed Claude Code from the $20/mo Pro pricing page — no changelog entry, no email. Anthropic&#39;s head of growth called it a &#39;~2% of new prosumer signups&#39; test, but the public pricing page, support article titles, and plan comparison all reflected the change globally. The Register, PCWorld, Simon Willison, and Ed Zitron all covered it. Willison&#39;s analysis names the root cause: Pro subscriptions are priced far below the token cost of how people actually use Claude Code today, so Anthropic is stress-testing a higher-tier-only model.</p>
   <div class="secondary">Also: <a href="https://simonwillison.net/2026/Apr/22/claude-code-confusion/">simonwillison.net/2026/Apr/22/claude-code-confusion/</a> · <a href="https://www.wheresyoured.at/news-anthropic-removes-pro-cc/">www.wheresyoured.at/news-anthropic-removes-pro-cc/</a></div>
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">anthropic · testing</div>
   
   
 </article>
@@ -98,6 +102,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">185k stars, global rank #23 — the fastest GitHub repo in history to hit 100k stars. Born April 1 after security researcher Chaofan Shou found Claude Code&#39;s complete source in a 59.8 MB npm source map; Sigrid Jin (the world&#39;s most active Claude Code user by token count) immediately began a clean-room Rust rewrite of the agent harness architecture. The repo (&#39;finally unlocked — enjoy the party!&#39;) now has 109k forks and an active Discord. Not affiliated with Anthropic; build from source via cargo build --workspace.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">harness · anthropic · security</div>
   <pre><button class="copy">copy</button><code>git clone https://github.com/ultraworkers/claw-code &amp;&amp; cd claw-code/rust &amp;&amp; cargo build --workspace</code></pre>
   
 </article>
@@ -107,6 +112,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Released April 23 (today): vim visual mode lands — `v` and `V` trigger character and line selection with full operator support and visual feedback. `/usage` merges `/cost` and `/stats` into one command (both shorthands still work). Custom named themes are now first-class — create and switch via `/theme` or hand-edit JSON in `~/.claude/themes/`. Hooks can now invoke MCP tools directly with `type: &quot;mcp_tool&quot;`, unlocking hook → MCP automation chains without subprocess indirection.</p>
   
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">mcp · cost</div>
   <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code</code></pre>
   
 </article>
@@ -116,6 +122,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">47.6k stars — the community&#39;s definitive agentic engineering guide, updated April 23. 82+ actionable tips across 11 categories including six tips from Boris Cherny (the Anthropic engineer who built Claude Code). Covers every major feature: subagents, Routines, Ultrareview, Channels, Devcontainers, Computer Use, hooks, MCP, and context management — plus curated industry workflows from Anthropic, Google, Linear, and others. Hit GitHub Trending Day #1 in March and has compounded since.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">mcp · agent · context · anthropic</div>
   <pre><button class="copy">copy</button><code>See README (clone and follow workflow guides)</code></pre>
   
 </article>
@@ -125,6 +132,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">April 21 free full-day workshop (9:30am–4:30pm CT) by Lydia Hallie, Anthropic&#39;s DX engineer on the Claude Code team. Curriculum: CLAUDE.md design, plan mode and permissions, building a skill from scratch, writing a custom MCP server, hooks, subagents, and worktrees — suitable from beginner to senior because agentic engineering is still new territory for everyone. Recording available for replay at frontendmasters.com (free). IndyDevDan promoted it via YouTube Short.</p>
   <div class="secondary">Also: <a href="https://www.youtube.com/shorts/ijsrILEcdVc">www.youtube.com/shorts/ijsrILEcdVc</a></div>
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">design · frontend · mcp · skill · agent</div>
   
   
 </article>
@@ -134,6 +142,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">608 stars — peer-reviewed academic paper (arXiv 2604.14228) + practical design guide that dissects Claude Code&#39;s ~512K-line TypeScript codebase across 1,884 files. The headline finding: 98.4% of the complexity is deterministic infrastructure (permission gates, context compaction, tool routing, recovery logic) and only 1.6% is the AI reasoning loop. Includes a 40+ entry reading list of reimplementations and follow-on papers. YouTube discussion video posted April 21.</p>
   <div class="secondary">Also: <a href="https://www.youtube.com/watch?v=HRI34v68igw">www.youtube.com/watch?v=HRI34v68igw</a></div>
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">design · video</div>
   
   
 </article>
@@ -143,6 +152,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">9.4k stars — every component of Claude Code&#39;s system prompt extracted directly from compiled source, with precise token counts and a CHANGELOG.md spanning 160+ versions since v2.0.14. Maintained within minutes of each Claude Code release: main system prompt, 24 built-in tool descriptions, Plan/Explore/Task sub-agent prompts, ~40 contextual system reminders, CLAUDE.md generation, security review, and memory management prompts. Companion tool tweakcc lets you patch specific components and track version conflicts.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">memory · viral · security</div>
   <pre><button class="copy">copy</button><code>See README (clone; use tweakcc for patching)</code></pre>
   
 </article>
@@ -152,6 +162,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">2,000+ stars — 423 plugins, 2,849 skills, and 177 agents backed by an open-source marketplace at tonsofskills.com and the ccpi CLI package manager. Skills use standardized YAML frontmatter so Claude auto-activates them based on conversation context. Includes 11 operational playbooks covering multi-agent rate limiting, cost management, incident debugging, and compliance auditing — organized across 18 domains (DevOps, AI/ML, crypto, database, security, business).</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">agent · cost · marketplace · terminal · security</div>
   <pre><button class="copy">copy</button><code>pnpm add -g @intentsolutionsio/ccpi &amp;&amp; ccpi install devops-automation-pack</code></pre>
   
 </article>
@@ -161,6 +172,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">421 stars — full Agile delivery lifecycle as a Claude Code plugin suite, bundled with three custom MCP servers: hex-line-mcp (every line carries a content hash, preventing stale-context edit corruption), hex-graph-mcp (SQLite-backed code knowledge graph with symbol search and reference tracking), and hex-ssh-mcp (hash-verified remote file editing and SFTP over SSH). Covers planning, execution, multi-model AI review, project bootstrap, docs generation, and codebase audits.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">plugin · memory · viral · marketplace</div>
   <pre><button class="copy">copy</button><code>/plugin marketplace add levnikolaevich/claude-code-skills &amp;&amp; /plugin install [plugin-name]@levnikolaevich-skills-marketplace</code></pre>
   
 </article>
@@ -170,6 +182,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">&quot;Why use many token when few token do trick&quot; — 39.7k stars. Cuts ~65–75% output tokens and ~46% input tokens while preserving technical accuracy. One-line install for Claude Code, Cursor, Windsurf, Copilot, and more. The Pro plan controversy has sent a wave of users looking for cost-reduction skills — caveman is the first recommendation in every thread.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · token · marketplace</div>
   <pre><button class="copy">copy</button><code>claude plugin marketplace add JuliusBrussee/caveman &amp;&amp; claude plugin install caveman@caveman</code></pre>
   <div class="recurring">↑ Day 4 — renewed interest driven by Pro plan pricing controversy</div>
 </article>
@@ -179,6 +192,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">46k+ stars — auto-captures sessions, compresses them with the Claude Agent SDK, and injects relevant context at session start via SQLite + Chroma vector search. The Pro plan access scare reminded users why persistent memory matters: on Max/Team plans, this tool effectively extends expensive context across sessions at minimal overhead.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">memory</div>
   <pre><button class="copy">copy</button><code>npx claude-mem install</code></pre>
   <div class="recurring">↑ Day 4 — 46k+ stars; Pro controversy renewed &quot;must-have&quot; recommendations in r/ClaudeCode</div>
 </article>
@@ -188,6 +202,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">162k stars — 48 agents, 183 skills, 34 language rules, 14+ MCP configs. v1.10.0 (April 2026) added a desktop dashboard GUI and launched the ECC 2.0 alpha — the community calls it the &#39;Claude Code distro&#39;. ECC 2.0 alpha discussion remains active on Reddit.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">mcp</div>
   <pre><button class="copy">copy</button><code>./install.sh --profile full</code></pre>
   <div class="recurring">↑ Day 4 — 162k stars steady; ECC 2.0 alpha discussion ongoing</div>
 </article>

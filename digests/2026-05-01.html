@@ -45,6 +45,7 @@ p.sub { color: #9aa3b2; margin: 0 0 32px; }
 .badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
 .trend, .stars { font-size: 11px; color: #9aa3b2; }
 .recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
 pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
 pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
 .copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
@@ -71,6 +72,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">4.5k stars. A Claude Code Skill that turns a single prompt into a single-file horizontal-swipe HTML presentation deck — no build step, open in any browser. Ships 10 proven page layouts (cover, chapter divider, data table, image grid, quote callout, and more), 5 curated color themes (Ink Classic, Indigo Porcelain, Forest Ink, Kraft Paper, Dune), WebGL animated hero backgrounds, and three-tier typography (serif headline, sans-serif body, monospace metadata). Optional GPT-M 2.0 image generation integration for in-slide photographs and UI mockups. Distilled from real offline conference talks; enforces a strict design system rather than free-form generation.</p>
   <div class="secondary">Also: <a href="https://www.youtube.com/shorts/ERXgZRVFa8A">www.youtube.com/shorts/ERXgZRVFa8A</a></div>
   <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">frontend · branding · image · 3d · local · viral · browser</div>
   <pre><button class="copy">copy</button><code>npx skills add https://github.com/op7418/guizang-ppt-skill --skill guizang-ppt-skill</code></pre>
   
 </article>
@@ -80,6 +82,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Launched April 30 to all Enterprise customers (Team/Max access follows). Powered by Opus 4.7, Claude Security reasons over entire codebases the way a security researcher does — tracing data flows and cross-file interactions rather than matching known patterns. Public beta adds scheduled scans, CSV/Markdown export, and webhooks to Slack and Jira. Security platform integrations ship with CrowdStrike, Palo Alto Networks, SentinelOne, Trend Micro TrendAI, and Wiz. Anthropic says hundreds of organizations found vulnerabilities in production that existing tools had missed for years. Accessible at claude.ai/security from the Claude sidebar.</p>
   <div class="secondary">Also: <a href="https://siliconangle.com/2026/04/30/anthropic-announces-claude-security-public-beta-find-fix-software-vulnerabilities/">siliconangle.com/2026/04/30/anthropic-announces-claude-security-public-beta-find-fix-software-vulnerabilities/</a> · <a href="https://cybersecuritynews.com/claude-security-public-beta/">cybersecuritynews.com/claude-security-public-beta/</a></div>
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">security</div>
   <pre><button class="copy">copy</button><code>Included with Claude Enterprise — accessible at claude.ai/security</code></pre>
   
 </article>
@@ -89,6 +92,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Shipped today (May 1, 02:05 UTC). Five notable additions: (1) `/model` picker now lists models from any gateway&#39;s `/v1/models` endpoint — works with custom Anthropic-compatible gateways without hardcoding models; (2) `claude project purge [path]` — one command deletes all Claude Code state for a project (transcripts, tasks, file history, config); (3) `--dangerously-skip-permissions` now also bypasses prompts for protected paths (.claude/, .git/, .vscode/, shell config files); (4) `claude auth login` accepts an OAuth code pasted directly into the terminal when browser callback can&#39;t reach localhost; (5) `claude_code.skill_activated` OpenTelemetry event fires for user-typed slash commands with an `invocation_trigger` attribute. Also: auto-mode spinner turns red when a permission check stalls, and PowerShell 7 detection improves on Windows.</p>
   
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">terminal · browser</div>
   <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code  # → v2.1.126</code></pre>
   
 </article>
@@ -98,6 +102,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">36.3k stars. Turns any folder of code, docs, papers, images, or videos into a queryable knowledge graph wired into Claude Code via a PreToolUse hook. v0.5.0 benchmarks: 70x fewer tokens per search vs brute-force file reads. A PreToolUse hook intercepts every search, surfaces the 5–10 most relevant nodes, and injects only those into context — Claude never sees the rest of the repo. Covered by @charlieautomates as the core of their &#39;replaces OpenClaw&#39; context-management stack.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">memory · token · viral</div>
   <pre><button class="copy">copy</button><code>uv tool install graphifyy &amp;&amp; graphify install</code></pre>
   <div class="recurring">↑ Day 4 — 36.3k stars; knowledge-graph context narrowing remains the dominant token-reduction pattern</div>
 </article>
@@ -107,6 +112,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">24.5k stars. Tell Claude a topic and this skill researches it simultaneously across Reddit, X, YouTube (with full transcripts), TikTok, Instagram, HN, Polymarket, GitHub, Threads, Pinterest, Bluesky, and Perplexity, then synthesizes a grounded summary with upvote-scored community reactions. v3 adds intelligent entity resolution (types &#39;OpenClaw&#39; → resolves to creator @steipete, r/openclaw, relevant TikTok hashtags), cross-source cluster merging, and GitHub person-mode (track an individual&#39;s commit activity). Created by Matt Van Horn (co-founder of June, acquired by Weber; a Lyft predecessor). Works in Claude Code, OpenClaw, and claude.ai web.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">plugin · anthropic · viral · marketplace</div>
   <pre><button class="copy">copy</button><code>/plugin marketplace add mvanhorn/last30days-skill  →  /plugin install last30days@last30days-skill</code></pre>
   
 </article>
@@ -116,6 +122,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">185k+ stars — clean-room Rust rewrite of the Claude Code agent harness, initiated April 1 after security researcher Chaofan Shou found the complete 512K-line TypeScript source in the npm package. Sigrid Jin (world&#39;s most active Claude Code user by token count) leads the project. 109k forks; active Discord; not affiliated with Anthropic.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">harness · anthropic · security</div>
   <pre><button class="copy">copy</button><code>git clone https://github.com/ultraworkers/claw-code &amp;&amp; cd claw-code/rust &amp;&amp; cargo build --workspace</code></pre>
   <div class="recurring">↑ Day 8 — 185k+ stars; Rust rewrite actively merging contributors</div>
 </article>
@@ -125,6 +132,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">493 stars (launched April 14). A production-grade MCP server that gives Claude 27 security intelligence tools across 21 APIs — eliminating the need to juggle NVD, EPSS, CISA KEV, MITRE ATT&amp;CK, Shodan, VirusTotal, AbuseIPDB, GreyNoise, OSV.dev, GitHub Security Advisories, and more in separate browser tabs. Generates a composite 0–100 risk score using CVSS, EPSS, KEV status, and PoC availability. Eight tools work without API keys; graceful degradation when keys are missing. Outbound HTTPS only — no inbound ports, no telemetry, no API keys ever logged. Pairs directly with today&#39;s Claude Security public beta launch.</p>
   <div class="secondary">Also: <a href="https://cybersecuritynews.com/cve-mcp-server-and-claude/">cybersecuritynews.com/cve-mcp-server-and-claude/</a></div>
   <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">viral · browser · security</div>
   <pre><button class="copy">copy</button><code>git clone https://github.com/mukul975/cve-mcp-server.git &amp;&amp; cd cve-mcp-server &amp;&amp; pip install -e .</code></pre>
   
 </article>
@@ -134,6 +142,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">4.3k stars — TUI dashboard that shows where your AI coding tokens actually go, by reading Claude Code&#39;s JSONL session transcripts from disk (no proxy, no wrapper, no API key). Classifies every turn into 13 task categories, tracks one-shot success rates vs retry-burn spirals, and surfaces cost per task type across Claude Code, Codex, Cursor, and GitHub Copilot. macOS menubar app updated April 25.</p>
   <div class="secondary">Also: <a href="https://news.ycombinator.com/item?id=47759035">news.ycombinator.com/item?id=47759035</a></div>
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">token · proxy · viral</div>
   <pre><button class="copy">copy</button><code>npm install -g codeburn</code></pre>
   <div class="recurring">↑ Day 4 — 4.3k stars; HN thread still active</div>
 </article>
@@ -143,6 +152,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Memory for Claude Managed Agents entered public beta April 23 under the standard `managed-agents-2026-04-01` header — no waitlist. Memories are stored as a workspace-scoped folder of Markdown files that agents read, write, and update using the same tools they already use. Early adopters: Netflix, Rakuten, Wisedocs (97% reduction in first-pass errors), Ando (30% speed increase in document verification). Audit trails log every memory change per session; memories are browsable and editable in the Claude Console.</p>
   <div class="secondary">Also: <a href="https://sdtimes.com/anthropic/anthropic-adds-memory-to-claude-managed-agents/">sdtimes.com/anthropic/anthropic-adds-memory-to-claude-managed-agents/</a></div>
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">memory</div>
   <pre><button class="copy">copy</button><code>Add managed-agents-2026-04-01 beta header — see platform.claude.com/docs/en/managed-agents/memory</code></pre>
   <div class="recurring">↑ Day 2 — now the most-requested Managed Agents pattern</div>
 </article>
@@ -152,6 +162,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">34.5k stars, updated April 28 — production-grade multi-agent system combining 184 specialized AI agents, 16 orchestrators, 150 skills, and 78 focused single-purpose plugins for Claude Code. Three-tier model strategy built in: Opus for critical reasoning, Sonnet for complex tasks, Haiku for routine operations. New this week: PluginEval quality evaluation framework, Agent Teams plugin for parallel workflows, and Conductor plugin for context-driven track-based development.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · agent · viral · marketplace</div>
   <pre><button class="copy">copy</button><code>/plugin marketplace add wshobson/agents</code></pre>
   <div class="recurring">↑ Day 2 — 34.5k stars; PluginEval framework drawing attention from Claude Code power users</div>
 </article>
@@ -161,6 +172,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">19.2k stars — 1,100+ agent skills curated from official engineering teams at Anthropic, Google, Vercel, Stripe, Cloudflare, Netlify, Microsoft, Hugging Face, Figma, and more. The pitch: &#39;hand-picked, not AI-slop generated.&#39; Compatible with Claude Code, Codex, Gemini CLI, Cursor, and GitHub Copilot. Browse the full catalog at officialskills.sh.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">anthropic · viral · terminal</div>
   <pre><button class="copy">copy</button><code>See README (browse at officialskills.sh)</code></pre>
   <div class="recurring">↑ Day 3 — 19.2k stars; official-team-curated positioning attracting enterprise teams</div>
 </article>
@@ -170,6 +182,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">47.6k stars — the community&#39;s definitive agentic engineering guide: 82+ actionable tips across 11 categories, including 6 directly from Boris Cherny (the Anthropic engineer who built Claude Code). Covers every major feature: subagents, Routines, Ultraplan, Ultrareview, Channels, Devcontainers, Computer Use, hooks, MCP, and context management. The Routines + Memory section is now especially relevant with Managed Agents Memory in public beta.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">mcp · agent · memory · context · anthropic · viral</div>
   <pre><button class="copy">copy</button><code>See README</code></pre>
   <div class="recurring">↑ Day 4 — 47.6k stars; Managed Agents Memory section driving fresh traffic</div>
 </article>
@@ -179,6 +192,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">35.8k stars. An installable library of 1,400+ SKILL.md playbooks for Claude Code, Cursor, Codex CLI, Gemini CLI, and Antigravity — organized into role-based bundles (Essentials, Security Developer, Full-Stack) and workflow-driven packs (planning, coding, debugging, testing, infrastructure, growth). Ships a dedicated installer CLI and generated marketplace bundle plugins so teams can deploy focused packs via `/plugin marketplace add`. v10.7.0 released April 26.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">plugin · viral · marketplace · terminal · security · testing</div>
   <pre><button class="copy">copy</button><code>npx antigravity-awesome-skills</code></pre>
   <div class="recurring">↑ Day 2 — 35.8k stars; Security Developer bundle getting attention alongside Claude Security launch</div>
 </article>
@@ -188,6 +202,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">423 plugins, 2,849 skills, and 177 agents for Claude Code — searchable via the open-source tonsofskills.com marketplace and installable with the `ccpi` CLI package manager. 26 published packages in the claude-code-plugins namespace, updated daily by GitHub Actions. Includes SaaS-specific packs for Fly.io, ClickUp, Fathom, Intercom, and others. Grade A rating as of April 2026.</p>
   <div class="secondary">Also: <a href="https://tonsofskills.com">tonsofskills.com</a></div>
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">marketplace · terminal</div>
   <pre><button class="copy">copy</button><code>pnpm add -g @intentsolutionsio/ccpi &amp;&amp; ccpi search</code></pre>
   <div class="recurring">↑ Day 3 — 2k+ stars; fastest-growing community marketplace by install count</div>
 </article>
@@ -197,6 +212,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">9.8k stars — MCP plugin that adds full-codebase semantic search to Claude Code and other agents via hybrid BM25 + dense-vector retrieval (Milvus/Zilliz Cloud backend). Natural language queries across your entire repo surface precisely the relevant files without manual inclusion. Supports Claude Code, Cursor, Windsurf, Claude Desktop. Requires an OpenAI API key for embeddings and a Zilliz Cloud endpoint.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">plugin · viral · search</div>
   <pre><button class="copy">copy</button><code>See README (requires OpenAI API key + Zilliz Cloud)</code></pre>
   <div class="recurring">↑ Day 4 — 9.8k stars; hybrid BM25+dense retrieval differentiates it from pure-vector alternatives</div>
 </article>

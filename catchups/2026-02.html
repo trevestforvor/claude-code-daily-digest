@@ -45,6 +45,7 @@ p.sub { color: #9aa3b2; margin: 0 0 32px; }
 .badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
 .trend, .stars { font-size: 11px; color: #9aa3b2; }
 .recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
 pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
 pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
 .copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
@@ -71,6 +72,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">First Opus-class model with a 1M-token context window plus &#39;agent teams&#39; that let multiple Claude Code agents work in parallel — released Feb 5.</p>
   <div class="secondary">Also: <a href="https://techcrunch.com/2026/02/05/anthropic-releases-opus-4-6-with-new-agent-teams/">techcrunch.com/2026/02/05/anthropic-releases-opus-4-6-with-new-agent-teams/</a></div>
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">context</div>
   <pre><button class="copy">copy</button><code>claude --model claude-opus-4-6</code></pre>
   
 </article>
@@ -80,6 +82,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">New default Sonnet at $3/$15 per MTok hits 79.6% on SWE-bench Verified with 1M-token context — released Feb 17.</p>
   <div class="secondary">Also: <a href="https://www.cnbc.com/2026/02/17/anthropic-ai-claude-sonnet-4-6-default-free-pro.html">www.cnbc.com/2026/02/17/anthropic-ai-claude-sonnet-4-6-default-free-pro.html</a></div>
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
   <pre><button class="copy">copy</button><code>claude --model claude-sonnet-4-6</code></pre>
   
 </article>
@@ -89,6 +92,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Xcode ships native Claude Agent SDK integration — subagents, background tasks, plugins, and Preview-based visual verification for iOS/macOS/visionOS.</p>
   <div class="secondary">Also: <a href="https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/">www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/</a></div>
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  
   <pre><button class="copy">copy</button><code>Update Xcode to 26.3 → Settings → Accounts → Claude</code></pre>
   
 </article>
@@ -98,6 +102,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Reasoning-based vulnerability scanner that found 500+ zero-days in production OSS, now in limited preview for Enterprise/Team and OSS maintainers.</p>
   <div class="secondary">Also: <a href="https://thehackernews.com/2026/02/anthropic-launches-claude-code-security.html">thehackernews.com/2026/02/anthropic-launches-claude-code-security.html</a></div>
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">security</div>
   <pre><button class="copy">copy</button><code>Available via claude.ai/code (Enterprise/Team waitlist)</code></pre>
   
 </article>
@@ -107,6 +112,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Cowork desktop reaches Windows with full feature parity — file access, MCP connectors, plugins — opening Anthropic&#39;s autonomous agent to ~70% of desktops.</p>
   <div class="secondary">Also: <a href="https://claude.com/product/claude-cowork">claude.com/product/claude-cowork</a></div>
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">mcp</div>
   <pre><button class="copy">copy</button><code>Download Claude Desktop for Windows → switch to Cowork mode</code></pre>
   
 </article>
@@ -116,6 +122,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Seattle computer-use startup behind Vy joins Anthropic to advance Claude&#39;s desktop automation; Vercept product sunset March 25.</p>
   <div class="secondary">Also: <a href="https://techcrunch.com/2026/02/25/anthropic-acquires-vercept-ai-startup-agents-computer-use-founders-investors/">techcrunch.com/2026/02/25/anthropic-acquires-vercept-ai-startup-agents-computer-use-founders-investors/</a></div>
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
   <pre><button class="copy">copy</button><code>n/a</code></pre>
   
 </article>
@@ -125,6 +132,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Template-aware slide co-author lands on the $20/mo Pro tier — read existing decks, edit with brand-respecting precision, generate full structures from a prompt.</p>
   <div class="secondary">Also: <a href="https://claude.com/claude-for-powerpoint">claude.com/claude-for-powerpoint</a></div>
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
   <pre><button class="copy">copy</button><code>PowerPoint → Get Add-ins → search &#39;Claude&#39;</code></pre>
   
 </article>
@@ -134,6 +142,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Joint Center of Excellence to build Claude-powered agents for telecom, financial services, manufacturing, and software dev in regulated industries.</p>
   
   <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
   <pre><button class="copy">copy</button><code>n/a</code></pre>
   
 </article>
@@ -143,6 +152,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">10 department plugin packs + 12 new MCP connectors (Google Workspace, DocuSign, FactSet, Harvey…) and a &#39;Customize&#39; admin UI for private internal marketplaces.</p>
   <div class="secondary">Also: <a href="https://claude.com/plugins">claude.com/plugins</a></div>
   <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">mcp</div>
   <pre><button class="copy">copy</button><code>Cowork → /plugin → Discover → Customize (Team/Enterprise)</code></pre>
   
 </article>
@@ -152,6 +162,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Anthropic&#39;s first official vertical plugin pack — ~7.7K stars, MCP-backed integrations for finserv workflows like equity research and compliance review.</p>
   
   <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">mcp · plugin · viral</div>
   <pre><button class="copy">copy</button><code>/plugin marketplace add anthropics/financial-services-plugins</code></pre>
   
 </article>
@@ -161,6 +172,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Same Opus 4.6 weights, ~2.5× faster output tokens/sec, priced 6× standard — toggle with /fast in Claude Code v2.1.36+.</p>
   <div class="secondary">Also: <a href="https://github.blog/changelog/2026-02-07-claude-opus-4-6-fast-is-now-in-public-preview-for-github-copilot/">github.blog/changelog/2026-02-07-claude-opus-4-6-fast-is-now-in-public-preview-for-github-copilot/</a></div>
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">token</div>
   <pre><button class="copy">copy</button><code>Inside Claude Code: /fast (then Tab to toggle)</code></pre>
   
 </article>
@@ -170,6 +182,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Six months of free Claude Max 20x ($1,200 value) for up to 10,000 OSS maintainers of repos with 5K+ stars or 1M+ monthly NPM downloads.</p>
   <div class="secondary">Also: <a href="https://claude.com/contact-sales/claude-for-oss">claude.com/contact-sales/claude-for-oss</a></div>
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
   <pre><button class="copy">copy</button><code>Apply at claude.com/contact-sales/claude-for-oss</code></pre>
   
 </article>
@@ -179,6 +192,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Visual UI for Claude Code session logs — turn-based context, compaction visualization, subagent execution trees, token-usage observability.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">subagent</div>
   <pre><button class="copy">copy</button><code>git clone https://github.com/matt1398/claude-devtools</code></pre>
   
 </article>
@@ -188,6 +202,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Run a local Claude Code session, then drive it from claude.ai/code, iOS, or Android — execution stays on your machine, prompts flow from anywhere.</p>
   <div class="secondary">Also: <a href="https://venturebeat.com/orchestration/anthropic-just-released-a-mobile-version-of-claude-code-called-remote">venturebeat.com/orchestration/anthropic-just-released-a-mobile-version-of-claude-code-called-remote</a></div>
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">anthropic</div>
   <pre><button class="copy">copy</button><code>claude --remote (Max-tier preview)</code></pre>
   
 </article>
@@ -197,6 +212,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Survey of ~1,000 devs (Jan 27–Feb 17) crowns Claude Code the #1 most-loved tool at 46%, vs Cursor 19% and Copilot 9%; 95% of devs use AI weekly.</p>
   <div class="secondary">Also: <a href="https://aiproductivity.ai/news/pragmatic-engineer-survey-ai-tooling-2026/">aiproductivity.ai/news/pragmatic-engineer-survey-ai-tooling-2026/</a></div>
   <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  
   <pre><button class="copy">copy</button><code>n/a</code></pre>
   
 </article>
@@ -206,6 +222,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Anthropic clarifies that Free/Pro/Max OAuth tokens cannot be used in third-party tools (incl. its own Agent SDK) — ending the OpenClaw-era subscription resale loophole.</p>
   <div class="secondary">Also: <a href="https://code.claude.com/docs/en/legal-and-compliance">code.claude.com/docs/en/legal-and-compliance</a></div>
   <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">cost · token · anthropic</div>
   <pre><button class="copy">copy</button><code>n/a</code></pre>
   
 </article>
@@ -215,6 +232,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Nicholas Carlini&#39;s parallel-Claude experiment: Opus 4.6 + agent teams produced a dependency-free Rust C compiler that boots Linux on x86/ARM/RISC-V.</p>
   <div class="secondary">Also: <a href="https://github.com/anthropics/claudes-c-compiler">github.com/anthropics/claudes-c-compiler</a></div>
   <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  
   <pre><button class="copy">copy</button><code>git clone https://github.com/anthropics/claudes-c-compiler</code></pre>
   
 </article>
@@ -224,6 +242,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">20+ composable skills enforcing clarify→design→plan→code→verify discipline — exploded to 55K+ stars in Feb after Anthropic accepted it into the official marketplace.</p>
   <div class="secondary">Also: <a href="https://blog.fsck.com/2025/10/09/superpowers/">blog.fsck.com/2025/10/09/superpowers/</a></div>
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">design · plugin · anthropic · marketplace</div>
   <pre><button class="copy">copy</button><code>/plugin marketplace add obra/superpowers-marketplace</code></pre>
   
 </article>
@@ -233,6 +252,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Addy Osmani (Google) drops production-grade engineering skills compatible with Claude Code, Cursor, and Antigravity — ~18K stars in weeks.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral</div>
   <pre><button class="copy">copy</button><code>git clone https://github.com/addyosmani/agent-skills ~/.claude/skills/addyosmani</code></pre>
   
 </article>
@@ -242,6 +262,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Matt Pocock&#39;s personal `.claude/skills` directory becomes the most-cloned creator-driven skill collection of the month — ~16.5K stars.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral · marketplace</div>
   <pre><button class="copy">copy</button><code>git clone https://github.com/mattpocock/skills ~/.claude/skills/mattpocock</code></pre>
   
 </article>
@@ -251,6 +272,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">754 cybersecurity skills mapped to MITRE ATT&amp;CK and NIST CSF — riding the Claude Code Security wave to ~5K stars.</p>
   
   <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">anthropic · viral · security</div>
   <pre><button class="copy">copy</button><code>git clone https://github.com/mukul975/Anthropic-Cybersecurity-Skills ~/.claude/skills/cybersec</code></pre>
   
 </article>
@@ -260,6 +282,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Local knowledge-graph MCP server for Claude Code — claims 6.8× fewer tokens on review tasks via tree-sitter + graph indexing. ~11.7K stars.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">token · viral</div>
   <pre><button class="copy">copy</button><code>pip install code-review-graph &amp;&amp; claude mcp add code-review-graph</code></pre>
   
 </article>
@@ -269,6 +292,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Persistent agent memory MCP server in Go + SQLite — tools for store/recall/forget across sessions, riding Feb&#39;s memory-layer wave.</p>
   
   <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">memory</div>
   <pre><button class="copy">copy</button><code>go install github.com/Gentleman-Programming/engram@latest</code></pre>
   
 </article>
@@ -278,6 +302,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Claude Code plugin that sandboxes tool output via PreToolUse/PostToolUse hooks — claims 98% context-window reduction across 12 platforms.</p>
   
   <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  
   <pre><button class="copy">copy</button><code>/plugin install mksglu/context-mode</code></pre>
   
 </article>
@@ -287,6 +312,7 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
   <p class="hook">Parallel coding-agent orchestrator from Composio — coordinates Claude Code subagents on CI fixes and merge-conflict resolution. ~6.4K stars.</p>
   
   <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">viral</div>
   <pre><button class="copy">copy</button><code>npx @composio/agent-orchestrator init</code></pre>
   
 </article>

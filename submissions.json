@@ -396,5 +396,82 @@
     "install": "git clone https://github.com/open-jarvis/OpenJarvis && cd OpenJarvis && uv sync",
     "added_date": "2026-05-03",
     "added_by": "user"
+  },
+  {
+    "slug": "copaw",
+    "name": "CoPaw (now QwenPaw)",
+    "primary_url": "https://github.com/agentscope-ai/QwenPaw",
+    "secondary_urls": ["https://copaw.bot/"],
+    "hook": "Personal AI workstation built on AgentScope — multi-agent collaboration, evolving memory, and BYO-model deployment (cloud APIs, Ollama, Apple Silicon). Rebranded from CoPaw to QwenPaw in April 2026.",
+    "categories": ["plugin"],
+    "install": "git clone https://github.com/agentscope-ai/QwenPaw",
+    "added_date": "2026-05-03",
+    "added_by": "user"
+  },
+  {
+    "slug": "fincept-terminal",
+    "name": "Fincept Terminal",
+    "primary_url": "https://github.com/Fincept-Corporation/FinceptTerminal",
+    "secondary_urls": ["https://fincept.in/"],
+    "hook": "Open-source Bloomberg Terminal alternative — native C++20 + Qt6 + embedded Python, 37 AI agents (Buffett, Graham, Lynch, Munger…), 100+ data connectors, multi-provider LLM (Anthropic, OpenAI, Gemini, MiniMax, Ollama). AGPL-3.0.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/Fincept-Corporation/FinceptTerminal",
+    "added_date": "2026-05-03",
+    "added_by": "user"
+  },
+  {
+    "slug": "awesome-openclaw-usecases",
+    "name": "awesome-openclaw-usecases",
+    "primary_url": "https://github.com/hesamsheikh/awesome-openclaw-usecases",
+    "secondary_urls": [],
+    "hook": "Community-curated list of practical OpenClaw use cases — semantic vault search, arXiv-paper conversations, voice/SMS access from any phone, family-calendar briefings, multi-agent Telegram teams, meeting-to-Jira pipelines.",
+    "categories": ["marketplace"],
+    "install": "",
+    "added_date": "2026-05-03",
+    "added_by": "user"
+  },
+  {
+    "slug": "arcads-claude-code",
+    "name": "arcads-claude-code",
+    "primary_url": "https://github.com/krusemediallc/arcads-claude-code",
+    "secondary_urls": [],
+    "hook": "Arcads API wrapped as a Claude Code skill — generates AI influencers (hero + 9 angles) and UGC selfie-frame ads from character + product + style refs, with a MASTER_CONTEXT.md workspace memory.",
+    "categories": ["skill", "design"],
+    "install": "git clone https://github.com/krusemediallc/arcads-claude-code",
+    "added_date": "2026-05-03",
+    "added_by": "user"
+  },
+  {
+    "slug": "ai-engineering-hub",
+    "name": "AI Engineering Hub",
+    "primary_url": "https://github.com/patchy631/ai-engineering-hub",
+    "secondary_urls": [],
+    "hook": "93+ production-ready tutorials covering LLMs, RAG, and real-world AI agent applications — by Akshay Pachaar (Daily Dose of Data Science), the go-to reference repo for AI engineers.",
+    "categories": ["marketplace"],
+    "install": "git clone https://github.com/patchy631/ai-engineering-hub",
+    "added_date": "2026-05-03",
+    "added_by": "user"
+  },
+  {
+    "slug": "tradingagents",
+    "name": "TradingAgents",
+    "primary_url": "https://github.com/TauricResearch/TradingAgents",
+    "secondary_urls": [],
+    "hook": "Multi-agent LLM framework that simulates a real trading firm — fundamentals, sentiment, news, and technicals analysts collaborate on trade decisions. Apache 2.0, ~66k stars.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/TauricResearch/TradingAgents && cd TradingAgents && pip install .",
+    "added_date": "2026-05-03",
+    "added_by": "user"
+  },
+  {
+    "slug": "dive-into-claude-code",
+    "name": "Dive into Claude Code",
+    "primary_url": "https://github.com/VILA-Lab/Dive-into-Claude-Code",
+    "secondary_urls": [],
+    "hook": "Source-level architectural teardown of Claude Code (~1,900 TS files, ~512K LOC) — 7 safety layers, 5 compaction stages, design framework tracing 5 human values → 13 principles. Headline: \"98.4% Infrastructure, 1.6% AI.\"",
+    "categories": ["marketplace"],
+    "install": "",
+    "added_date": "2026-05-03",
+    "added_by": "user"
   }
 ]
