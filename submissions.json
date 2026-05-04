@@ -429,5 +429,16 @@
     "install": "",
     "added_date": "2026-05-03",
     "added_by": "user"
+  },
+  {
+    "slug": "arcads-claude-code",
+    "name": "arcads-claude-code",
+    "primary_url": "https://github.com/krusemediallc/arcads-claude-code",
+    "secondary_urls": [],
+    "hook": "Arcads API wrapped as a Claude Code skill — generates AI influencers (hero + 9 angles) and UGC selfie-frame ads from character + product + style refs, with a MASTER_CONTEXT.md workspace memory.",
+    "categories": ["skill", "design"],
+    "install": "git clone https://github.com/krusemediallc/arcads-claude-code",
+    "added_date": "2026-05-03",
+    "added_by": "user"
   }
 ]
