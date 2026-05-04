@@ -524,5 +524,16 @@
     "install": "npx -y @mariozechner/pi-coding-agent",
     "added_date": "2026-05-03",
     "added_by": "user"
+  },
+  {
+    "slug": "browser-harness",
+    "name": "Browser Harness",
+    "primary_url": "https://github.com/browser-use/browser-harness",
+    "secondary_urls": ["https://github.com/browser-use/bux"],
+    "hook": "Self-healing browser harness — thin CDP layer that hands an LLM full control of a real Chrome over one websocket, then has the agent write the missing capabilities mid-run. Pairs with Bux for a 24/7 Claude Code agent on any VPS.",
+    "categories": ["plugin"],
+    "install": "git clone https://github.com/browser-use/browser-harness",
+    "added_date": "2026-05-04",
+    "added_by": "user"
   }
 ]
