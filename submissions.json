@@ -473,5 +473,56 @@
     "install": "",
     "added_date": "2026-05-03",
     "added_by": "user"
+  },
+  {
+    "slug": "openhands",
+    "name": "OpenHands",
+    "primary_url": "https://github.com/All-Hands-AI/OpenHands",
+    "secondary_urls": ["https://github.com/OpenHands/software-agent-sdk"],
+    "hook": "Open-source AI software-engineering platform — Python SDK, CLI, local GUI, and cloud runtime for autonomous coding agents. MIT, ~72k stars.",
+    "categories": ["viral"],
+    "install": "pip install openhands-ai",
+    "added_date": "2026-05-03",
+    "added_by": "user"
+  },
+  {
+    "slug": "dify",
+    "name": "Dify",
+    "primary_url": "https://github.com/langgenius/dify",
+    "secondary_urls": ["https://dify.ai/"],
+    "hook": "Visual LLM-app platform combining workflow orchestration, RAG pipelines, agent tools, prompt management, and observability — Docker-deployable, ~140k stars.",
+    "categories": ["viral"],
+    "install": "cd dify/docker && cp .env.example .env && docker compose up -d",
+    "added_date": "2026-05-03",
+    "added_by": "user"
+  },
+  {
+    "slug": "hermes-agent",
+    "name": "Hermes Agent",
+    "primary_url": "https://github.com/NousResearch/hermes-agent",
+    "secondary_urls": [
+      "https://hermes-agent.nousresearch.com/",
+      "https://github.com/0xNyk/awesome-hermes-agent"
+    ],
+    "hook": "Nous Research's open-source self-improving personal agent — single gateway to Telegram/Discord/Slack/WhatsApp/Signal/CLI, BYO-model (Nous Portal, OpenRouter, NIM), and a Skills Hub that's compatible with Claude Code, Cursor, and Codex. ~23k stars.",
+    "categories": ["plugin", "viral"],
+    "install": "git clone https://github.com/NousResearch/hermes-agent",
+    "added_date": "2026-05-03",
+    "added_by": "user"
+  },
+  {
+    "slug": "pi-coding-agent",
+    "name": "Pi (pi coding agent)",
+    "primary_url": "https://github.com/badlogic/pi-mono",
+    "secondary_urls": [
+      "https://www.npmjs.com/package/@mariozechner/pi-coding-agent",
+      "https://github.com/disler/pi-vs-claude-code",
+      "https://github.com/tintinweb/pi-subagents"
+    ],
+    "hook": "Minimal, opinionated terminal coding agent — 4 tools (read, edit, write, bash), <1k-token system prompt, no MCP, no permission gates, fully replaceable prompt. The intentional anti-Claude-Code.",
+    "categories": ["plugin"],
+    "install": "npx -y @mariozechner/pi-coding-agent",
+    "added_date": "2026-05-03",
+    "added_by": "user"
   }
 ]
