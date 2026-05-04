@@ -440,5 +440,16 @@
     "install": "git clone https://github.com/krusemediallc/arcads-claude-code",
     "added_date": "2026-05-03",
     "added_by": "user"
+  },
+  {
+    "slug": "ai-engineering-hub",
+    "name": "AI Engineering Hub",
+    "primary_url": "https://github.com/patchy631/ai-engineering-hub",
+    "secondary_urls": [],
+    "hook": "93+ production-ready tutorials covering LLMs, RAG, and real-world AI agent applications — by Akshay Pachaar (Daily Dose of Data Science), the go-to reference repo for AI engineers.",
+    "categories": ["marketplace"],
+    "install": "git clone https://github.com/patchy631/ai-engineering-hub",
+    "added_date": "2026-05-03",
+    "added_by": "user"
   }
 ]
