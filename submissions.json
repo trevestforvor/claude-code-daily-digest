@@ -601,5 +601,16 @@
     "install": "",
     "added_date": "2026-05-04",
     "added_by": "user"
+  },
+  {
+    "slug": "google-adk",
+    "name": "Google ADK (Agent Development Kit)",
+    "primary_url": "https://github.com/google/adk-docs",
+    "secondary_urls": ["https://google.github.io/adk-docs/"],
+    "hook": "Google's open-source, code-first agent toolkit — multi-language (Python, TypeScript, Go, Java), Gemini-optimized but model-agnostic, with built-in tools, multi-agent composition, tracing, and deployment hooks. Apache 2.0.",
+    "categories": ["plugin"],
+    "install": "pip install google-adk",
+    "added_date": "2026-05-04",
+    "added_by": "user"
   }
 ]
