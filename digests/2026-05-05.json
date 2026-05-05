@@ -1,0 +1,79 @@
+[
+  {
+    "slug": "n8n-mcp",
+    "name": "n8n-MCP",
+    "primary_url": "https://github.com/czlonkowski/n8n-mcp",
+    "hook": "v2.50.4 shipped today (May 5) — an MCP server giving Claude Code full access to 1,650 n8n workflow nodes (820 core + 830 community), 2,352 workflow templates, and direct deployment to n8n instances via API. 20.1k stars and growing fast; free tier at dashboard.n8n-mcp.com offers 100 tool calls/day with no setup.",
+    "categories": ["mcp", "workflow"],
+    "install": "npm install n8n-mcp"
+  },
+  {
+    "slug": "alirezarezvani-claude-skills",
+    "name": "claude-skills (alirezarezvani)",
+    "primary_url": "https://github.com/alirezarezvani/claude-skills",
+    "hook": "13.8k stars, 235 production-ready skills spanning 9 domains — engineering, marketing, product, compliance, C-level advisory — each backed by 305 stdlib-only Python CLI tools (zero external deps). Unusually broad cross-platform support: works natively with 12 AI coding tools including Claude Code, Codex, Gemini CLI, Cursor, Aider, Windsurf, Antigravity, and Hermes Agent.",
+    "categories": ["skills", "workflow"],
+    "install": "/plugin marketplace add alirezarezvani/claude-skills"
+  },
+  {
+    "slug": "pal-mcp-server",
+    "name": "PAL MCP Server (formerly Zen MCP)",
+    "primary_url": "https://github.com/BeehiveInnovations/pal-mcp-server",
+    "hook": "11.5k stars — BeehiveInnovations rebranded zen-mcp-server to PAL (Provider Abstraction Layer), reflecting its expanded scope: Claude Code, Gemini CLI, and Codex CLI can now all orchestrate 50+ models across Gemini, OpenAI, Azure, Grok, and Ollama in a single workflow with conversation continuity preserved. The new `clink` CLI-to-CLI bridge is the headline feature of this rename release.",
+    "categories": ["mcp", "cost"],
+    "install": "git clone https://github.com/BeehiveInnovations/pal-mcp-server.git && ./run-server.sh"
+  },
+  {
+    "slug": "autoresearch-skill",
+    "name": "autoresearch (uditgoenka)",
+    "primary_url": "https://github.com/uditgoenka/autoresearch",
+    "hook": "v2.0.03 landed May 2 — a Claude Code skill that ports Karpathy's overnight ML experiment loops to any measurable domain (code, docs, security, DevOps, marketing). Set a GOAL and a metric; Claude runs Modify → Verify → Keep/Discard → Repeat with 11 commands, git-based memory, and automatic rollback. Discussion #528 on the karpathy/autoresearch repo reports 76% latency drop with zero manual tuning. 4.3k stars.",
+    "categories": ["cost", "workflow"],
+    "install": "npx skills add uditgoenka/autoresearch"
+  },
+  {
+    "slug": "claude-code-v2128",
+    "name": "Claude Code v2.1.128",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "hook": "Released May 4 — bare `/color` (no args) now picks a random session accent color; `/mcp` displays tool count per server and flags servers returning 0 tools; `--plugin-dir` accepts `.zip` archives; `--channels` now works with console (API key) auth; `EnterWorktree` creates branches from local HEAD instead of `origin/<default-branch>`, preserving unpushed commits. Full changelog at the releases page.",
+    "categories": ["official", "cli"]
+  },
+  {
+    "slug": "composio-awesome-claude-plugins",
+    "name": "awesome-claude-plugins (ComposioHQ)",
+    "primary_url": "https://github.com/ComposioHQ/awesome-claude-plugins",
+    "hook": "1.6k stars, 40+ production-ready Claude Code plugins in 9 categories: Integrations, Frontend & Design, Git, Code Quality, Backend, DevOps, Documentation, Security, and Developer Productivity. The standout `connect-apps` plugin bridges Claude to 500+ external apps (email, GitHub issues, Slack, etc.) without writing any glue code.",
+    "categories": ["plugins", "workflow"],
+    "install": "claude --plugin-dir ./plugin-name"
+  },
+  {
+    "slug": "rohitg-awesome-claude-code-toolkit",
+    "name": "awesome-claude-code-toolkit (rohitg00)",
+    "primary_url": "https://github.com/rohitg00/awesome-claude-code-toolkit",
+    "hook": "1.5k stars — billed as the most comprehensive single-repo toolkit: 135 specialized agents across 10 categories, 176+ plugins, 35 curated skills plus a gateway to 400,000+ via SkillKit, 42 commands, 20 lifecycle hooks, 14 MCP server configs, and 26 companion apps. Install the whole thing as a plugin in one line.",
+    "categories": ["plugins", "skills", "workflow"],
+    "install": "/plugin marketplace add rohitg00/awesome-claude-code-toolkit"
+  },
+  {
+    "slug": "quemsah-awesome-claude-plugins",
+    "name": "awesome-claude-plugins (quemsah)",
+    "primary_url": "https://github.com/quemsah/awesome-claude-plugins",
+    "hook": "637 stars — unlike editorial \"awesome\" lists, this repo uses n8n workflows to auto-collect Claude Code plugin adoption metrics across 15,576 indexed repositories, ranking them by real star counts and usage statistics. The top entry is superpowers (178k stars); it also surfaces lesser-known gems that editorial curation would miss.",
+    "categories": ["plugins", "analytics"]
+  },
+  {
+    "slug": "zerowing-youtube-skill",
+    "name": "claude-youtube-skill (zerowing113)",
+    "primary_url": "https://github.com/zerowing113/claude-youtube-skill",
+    "hook": "A Claude Code skill that turns any YouTube URL or playlist into a structured markdown article — embedded player, clickable timestamps, named sections, direct quotes, and key concepts. Runs `/youtube [URL]` from inside Claude Code; auto-installs youtube-transcript-api and yt-dlp. Works on any video with available captions (auto-generated or manual).",
+    "categories": ["skills", "workflow"],
+    "install": "python setup.py  # after cloning"
+  },
+  {
+    "slug": "muhammad-claude-code-best-practices",
+    "name": "claude-code-best-practices (MuhammadUsmanGM)",
+    "primary_url": "https://github.com/MuhammadUsmanGM/claude-code-best-practices",
+    "hook": "Updated April 29 — a comprehensive best-practices wiki covering CLAUDE.md templates, hooks that catch mistakes before they reach disk, skills for repeat tasks, multi-agent patterns, and cost optimization strategies. The README surfaces a key insight: rules in `.claude/rules/*.md` with YAML frontmatter are lazy-loaded only for matching files, keeping context lean compared to stuffing everything into CLAUDE.md.",
+    "categories": ["workflow", "cost"]
+  }
+]
