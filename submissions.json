@@ -612,5 +612,16 @@
     "install": "pip install google-adk",
     "added_date": "2026-05-04",
     "added_by": "user"
+  },
+  {
+    "slug": "pdf-craft",
+    "name": "PDF Craft",
+    "primary_url": "https://github.com/oomol-lab/pdf-craft",
+    "secondary_urls": [],
+    "hook": "Converts scanned-book PDFs into Markdown or EPUB while preserving tables, formulas, footnotes, and images — DeepSeek OCR for document recognition, optional LLM-assisted TOC extraction. MIT, ~5.5k stars.",
+    "categories": ["viral"],
+    "install": "pip install pdf-craft",
+    "added_date": "2026-05-04",
+    "added_by": "user"
   }
 ]
