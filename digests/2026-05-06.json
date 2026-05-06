@@ -1,0 +1,132 @@
+[
+  {
+    "slug": "mattpocock-skills",
+    "name": "Skills for Real Engineers (mattpocock)",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "62.6k stars. TypeScript educator Matt Pocock distilled his personal .claude directory into a set of composable agent skills that fix four failure modes he sees constantly: misalignment, verbosity, non-functional code, and architecture decay. Key skills: /grill-me (agent interviews you until every branch of the decision tree is resolved), /tdd (red-green-refactor loop, one vertical slice at a time), /to-issues (breaks any PRD into independently-grabbable GitHub issues), and /caveman (cuts token usage ~75% by stripping filler while keeping full technical accuracy). Works with any model and is designed to be adapted rather than followed prescriptively.",
+    "categories": ["design", "skill"],
+    "install": "npx skills@latest add mattpocock/skills"
+  },
+  {
+    "slug": "addyosmani-agent-skills",
+    "name": "agent-skills (addyosmani)",
+    "primary_url": "https://github.com/addyosmani/agent-skills",
+    "secondary_urls": ["https://addyosmani.com/blog/agent-skills/"],
+    "hook": "29.7k stars. Google Chrome engineering manager Addy Osmani's production-grade skill set for AI coding agents, built around the insight that \"agents are junior engineers who skip non-diff work unless made impossible to skip.\" Ships 7 slash commands (/spec, /plan, /build, /test, /review, /code-simplify, /ship) spanning 20 skills organized across six lifecycle phases. The standout feature: \"anti-rationalization tables\" that document every excuse agents use to skip steps, paired with documented counter-arguments. Embeds Google engineering principles — Hyrum's Law, test pyramid, Beyonce Rule, Chesterton's Fence, Shift Left, trunk-based development.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add addyosmani/agent-skills && /plugin install agent-skills@addy-agent-skills"
+  },
+  {
+    "slug": "claudian",
+    "name": "Claudian (YishenTu)",
+    "primary_url": "https://github.com/YishenTu/claudian",
+    "hook": "10.3k stars. Obsidian plugin that embeds Claude Code, Codex, or Opencode directly inside your vault — the vault becomes the agent's working directory. Inline edit with word-level diff preview, @mention system to reference vault files and subagents, MCP server integration, plan mode (agent designs before implementing), and full multi-tab conversation history with forking and resuming. Requires the Claude Code CLI; macOS/Linux/Windows desktop. The tight integration means AI-generated changes land in your note graph rather than a separate editor.",
+    "categories": ["design"],
+    "install": "Download latest release from GitHub → place in vault/.obsidian/plugins/claudian/ → enable in Obsidian settings"
+  },
+  {
+    "slug": "insforge",
+    "name": "InsForge",
+    "primary_url": "https://github.com/InsForge/InsForge",
+    "secondary_urls": ["https://insforge.dev/"],
+    "hook": "8.3k stars. Postgres-based backend platform built from the ground up for AI coding agents: auth, S3-compatible storage, edge functions, compute, model gateway, and site deployment — all exposed through a semantic layer that agents can reason about and operate autonomously. Claude Code connects via a bundled MCP server. Internal benchmarks show agents running 1.6× faster, using 30% fewer tokens, and achieving 1.7× higher task accuracy compared to a standard Supabase setup. Apache 2.0, self-hosted via Docker Compose.",
+    "categories": ["cost", "mcp"],
+    "install": "git clone https://github.com/insforge/insforge.git && cd insforge && cp .env.example .env && docker compose -f docker-compose.prod.yml up"
+  },
+  {
+    "slug": "anthropic-finance-agents",
+    "name": "Anthropic Finance Agents + Microsoft 365",
+    "primary_url": "https://www.anthropic.com/news/finance-agents",
+    "hook": "Announced May 5. Anthropic shipped ten ready-to-run agent templates for financial services work — pitch builder, meeting preparer, earnings reviewer, model builder, market researcher, KYC screener, valuation reviewer, general ledger reconciler, month-end closer, and statement auditor. Each template ships as a plugin in Claude Cowork and Claude Code and as a cookbook for Managed Agents, letting teams put Claude on real financial work in days rather than months. Also ships: Claude add-ins for Excel, PowerPoint, and Word (Outlook coming soon), where context carries between apps automatically; new data connectors from Dun & Bradstreet, IBISWorld, and Verisk; and a Moody's MCP app covering 600M+ public and private companies.",
+    "categories": ["anthropic", "mcp"]
+  },
+  {
+    "slug": "claude-code-v2-1-129",
+    "name": "Claude Code v2.1.129–131",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "hook": "Two releases shipped today (May 6). v2.1.129 (01:40 UTC): `--plugin-url <url>` lets you load a plugin .zip archive from any URL for the current session without cloning the repo; Ctrl+R history picker now searches across ALL projects (not just the current one); `CLAUDE_CODE_PACKAGE_MANAGER_AUTO_UPDATE` enables background Homebrew/WinGet auto-upgrade; plugin manifests: `themes` and `monitors` fields move under `\"experimental\": {}`. v2.1.131 (07:47 UTC): Fixed VS Code extension failing to activate on Windows due to a hardcoded build path; fixed Mantle endpoint authentication missing `x-api-key` header.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "claude-forge",
+    "name": "claude-forge (sangrokjung)",
+    "primary_url": "https://github.com/sangrokjung/claude-forge",
+    "secondary_urls": ["https://sangrokjung.github.io/claude-forge/"],
+    "hook": "660 stars, v3.0.2 shipped May 3. Inspired by oh-my-zsh, claude-forge is an open-source plugin framework that transforms Claude Code from a bare CLI into a structured development environment in 5 minutes: 11 specialized agents, 36 slash commands, 24 skill workflows, 15 automation hooks, and 9 rule files. The distinctive feature is 6-layer security hooks that enforce audit trails, validate tool calls, and prevent destructive actions before they execute — making it one of the few Claude Code frameworks to treat safety as a first-class concern.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add sangrokjung/claude-forge && /plugin install claude-forge"
+  },
+  {
+    "slug": "graphify",
+    "name": "graphify (safishamsi)",
+    "primary_url": "https://github.com/safishamsi/graphify",
+    "hook": "36.3k stars. Turns any folder of code, docs, papers, images, or videos into a queryable knowledge graph wired into Claude Code via a PreToolUse hook — the hook intercepts every search, surfaces the 5–10 most relevant nodes, and injects only those into context. v0.5.0 benchmarks: 70× fewer tokens per search vs brute-force file reads. @charlieautomates has called it the core of their \"replaces OpenClaw\" context-management stack.",
+    "categories": ["cost"],
+    "install": "uv tool install graphifyy && graphify install",
+    "recurring_note": "↑ Day 6 — 36.3k stars; @charlieautomates context-management coverage continuing",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "claw-code",
+    "name": "claw-code (ultraworkers)",
+    "primary_url": "https://github.com/ultraworkers/claw-code",
+    "hook": "185k+ stars, 109k forks — clean-room Rust rewrite of the Claude Code agent harness, initiated April 1 after security researcher Chaofan Shou found the complete 512K-line TypeScript source inside an npm package. Sigrid Jin (world's most active Claude Code user by token count) leads the project. Not affiliated with Anthropic. Active Discord; Rust rewrite actively merging contributors.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/ultraworkers/claw-code && cd claw-code/rust && cargo build --workspace",
+    "recurring_note": "↑ Day 6 — 185k+ stars; remains the #1 community fork by a wide margin"
+  },
+  {
+    "slug": "superpowers",
+    "name": "obra/superpowers",
+    "primary_url": "https://github.com/obra/superpowers",
+    "hook": "178k+ stars. Jesse Vincent's structured development methodology for Claude Code — five composable phases: Brainstorm, Design (interactive HTML mockups), Plan (git-worktree task breakdown), Code (parallel subagents with 6-category self-check), and Verify (security audit). Official Anthropic marketplace plugin since January. v5.0.7 current. The most-starred Claude Code plugin on GitHub.",
+    "categories": ["design", "skill"],
+    "install": "/plugin install superpowers@claude-plugins-official",
+    "recurring_note": "↑ Day 3 — 178k+ stars; still #1 by star count in the Claude Code ecosystem"
+  },
+  {
+    "slug": "hermes-agent",
+    "name": "Hermes Agent (NousResearch)",
+    "primary_url": "https://github.com/NousResearch/hermes-agent",
+    "hook": "131k+ GitHub stars in ten weeks — faster than LangChain or AutoGPT. NousResearch's self-improving agent creates skills from experience, searches past conversations, and builds persistent user models across sessions. v0.12.0 shipped April 30. Runs Claude via OpenRouter or direct API; includes a Claude Code SKILL.md in the repo.",
+    "categories": ["general"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash",
+    "recurring_note": "↑ Day 3 — 131k stars; self-improving skill loop remains the standout differentiator"
+  },
+  {
+    "slug": "claude-code-best-practice",
+    "name": "claude-code-best-practice (shanraisshan)",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "47.6k stars — the community's definitive agentic engineering guide: 82+ actionable tips across 11 categories, including 6 tips sourced directly from Boris Cherny (the Anthropic engineer who built Claude Code). Covers subagents, Routines, Ultraplan, Ultrareview, Channels, Devcontainers, Computer Use, hooks, MCP, and context management. The Routines + Managed Agents Memory sections are especially well-maintained.",
+    "categories": ["skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 6 — 47.6k stars; Managed Agents Memory section driving fresh traffic"
+  },
+  {
+    "slug": "wshobson-agents",
+    "name": "wshobson/agents",
+    "primary_url": "https://github.com/wshobson/agents",
+    "hook": "34.5k stars — production-grade multi-agent system combining 184 specialized AI agents, 16 orchestrators, 150 skills, and 78 focused single-purpose plugins for Claude Code. Three-tier model strategy built in: Opus for critical reasoning, Sonnet for complex tasks, Haiku for routine operations. Recent additions: PluginEval quality evaluation framework, Agent Teams plugin for parallel workflows, Conductor plugin for context-driven track-based development.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add wshobson/agents",
+    "recurring_note": "↑ Day 6 — 34.5k stars; PluginEval framework attracting Claude Code power users"
+  },
+  {
+    "slug": "awesome-agent-skills",
+    "name": "awesome-agent-skills (VoltAgent)",
+    "primary_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "hook": "20.4k stars. 1,100+ agent skills curated from official engineering teams at Anthropic, Google, Vercel, Stripe, Cloudflare, Netlify, Microsoft (133 skills in 6 languages), Hugging Face, Figma, Trail of Bits, and 20+ more. The pitch: \"hand-picked, not AI-slop generated.\" Compatible with Claude Code, Codex, Gemini CLI, Cursor, and GitHub Copilot. Browse the full catalog at officialskills.sh.",
+    "categories": ["skill"],
+    "install": "See README (browse at officialskills.sh)",
+    "recurring_note": "↑ Day 6 — grew from 19.2k to 20.4k stars since May 1; official-team curation differentiating it"
+  },
+  {
+    "slug": "last30days-skill",
+    "name": "last30days-skill (mvanhorn)",
+    "primary_url": "https://github.com/mvanhorn/last30days-skill",
+    "hook": "24.5k stars. Tell Claude a topic and this skill simultaneously researches it across Reddit, X, YouTube (full transcripts), HN, Polymarket, GitHub, Bluesky, and Perplexity, then synthesizes a grounded summary with upvote-scored community reactions. v3 adds entity resolution (types 'OpenClaw' → resolves to creator, subreddit, relevant hashtags), cross-source cluster merging, and GitHub person-mode (track an individual's commit activity). Created by Matt Van Horn (co-founder of June, acquired by Weber). Works in Claude Code, OpenClaw, and claude.ai.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add mvanhorn/last30days-skill && /plugin install last30days@last30days-skill",
+    "recurring_note": "↑ Day 6 — 24.5k stars; cross-source research pattern gaining wide adoption"
+  }
+]
