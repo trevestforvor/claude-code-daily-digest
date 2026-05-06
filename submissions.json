@@ -634,5 +634,16 @@
     "install": "curl -fsSL https://feynman.is/install | bash",
     "added_date": "2026-05-04",
     "added_by": "user"
+  },
+  {
+    "slug": "openskills",
+    "name": "OpenSkills",
+    "primary_url": "https://github.com/numman-ali/openskills",
+    "secondary_urls": ["https://github.com/instavm/open-skills"],
+    "hook": "Universal skills loader for AI coding agents — same SKILL.md format, same marketplace, same folder layout works across Claude Code, Cursor, Windsurf, Aider, Codex. Project-local installs by default; --universal goes to .agent/skills.",
+    "categories": ["skill", "marketplace"],
+    "install": "npm install -g openskills",
+    "added_date": "2026-05-04",
+    "added_by": "user"
   }
 ]
