@@ -623,5 +623,16 @@
     "install": "pip install pdf-craft",
     "added_date": "2026-05-04",
     "added_by": "user"
+  },
+  {
+    "slug": "feynman",
+    "name": "Feynman",
+    "primary_url": "https://github.com/getcompanion-ai/feynman",
+    "secondary_urls": ["https://www.feynman.is/"],
+    "hook": "Open-source AI research agent — researcher gathers evidence across papers/web/repos/docs, reviewer runs severity-graded peer review, every claim links to its source. Built on Pi + alphaXiv as a bundle of Pi skills.",
+    "categories": ["skill"],
+    "install": "curl -fsSL https://feynman.is/install | bash",
+    "added_date": "2026-05-04",
+    "added_by": "user"
   }
 ]
