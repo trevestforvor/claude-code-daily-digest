@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — May 7, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — May 7, 2026</h1><p class="sub">Top 12 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://platform.claude.com/docs/en/managed-agents">Claude Managed Agents: Dreaming, Outcomes &amp; Multi-Agent Orchestration</a></h3>
+  <p class="hook">Three major upgrades to Claude Managed Agents shipped at Code with Claude SF (May 6). Dreaming (research preview) — a scheduled background process reviews past agent sessions, extracts recurring patterns, and curates memory so agents self-improve between runs; users control whether updates apply automatically or require review. Outcomes (public beta) — write a plain-English success rubric; a separate Claude instance grades the output in isolation from the agent&#39;s reasoning trace; internal benchmarks show +10 percentage-point task success on the hardest tasks. Multi-Agent Orchestration (public beta) — a lead agent assigns sub-tasks to parallel sub-agents on a shared filesystem, all traceable in the Claude Console. Covered within 24 hours by SD Times, Digital Trends, SiliconANGLE, The Decoder, The New Stack, CryptoBriefing, 9to5Mac, and US News.</p>
+  <div class="secondary">Also: <a href="https://thenewstack.io/anthropic-managed-agents-dreaming-outcomes/">thenewstack.io/anthropic-managed-agents-dreaming-outcomes/</a> · <a href="https://sdtimes.com/ai/new-in-claude-managed-agents-dreaming-outcomes-and-multiagent-orchestration/">sdtimes.com/ai/new-in-claude-managed-agents-dreaming-outcomes-and-multiagent-orchestration/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">agent · memory</div>
+  <pre><button class="copy">copy</button><code>platform.claude.com/docs/en/managed-agents (request access via Claude Console)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/higher-limits-spacex">Claude Code Rate Limits 2× + SpaceX Compute Deal</a></h3>
+  <p class="hook">Also from Code with Claude SF (May 6, effective today): Claude Code five-hour limits double across Pro, Max, Team, and Enterprise plans — peak-hours throttling removed entirely for Pro and Max. The Claude API Tier 1 gets a 1,500% increase in input tokens/minute and a 900% increase in output tokens/minute. Powering the expansion: a deal with SpaceX for 220,000+ NVIDIA GPUs at the Colossus 1 data center in Memphis, Tennessee. Covered by Engadget, 9to5Google, PCWorld, XDA-Developers, and Dataconomy within hours of the announcement.</p>
+  <div class="secondary">Also: <a href="https://9to5google.com/2026/05/06/claude-code-is-getting-higher-usage-limits-doubled-for-most-users/">9to5google.com/2026/05/06/claude-code-is-getting-higher-usage-limits-doubled-for-most-users/</a> · <a href="https://www.engadget.com/2166315/anthropic-is-doubling-claude-code-rate-limits-after-deal-with-spacex/">www.engadget.com/2166315/anthropic-is-doubling-claude-code-rate-limits-after-deal-with-spacex/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">token</div>
+  <pre><button class="copy">copy</button><code>Automatic for existing subscribers — no action needed</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://claude.com/code-with-claude/san-francisco">Claude Code on Desktop (New Native Surface)</a></h3>
+  <p class="hook">Announced at Code with Claude SF (May 6): the third Claude Code surface after CLI and IDE extensions. A native desktop application designed for users who want a full-screen GUI with live preview, image rendering, and rich formatted outputs rather than a terminal-split experience. Anthropic also foregrounded /ultrareview at the event — the public-research-preview fleet of cloud bug-hunting agents that land findings in your CLI or Desktop — as a headline workflow for the Desktop surface. Designed for the &#39;I want visual results, not scrolling terminal output&#39; audience.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">terminal</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.132 (May 6, post-conference)</a></h3>
+  <p class="hook">`CLAUDE_CODE_SESSION_ID` is now injected into every Bash tool subprocess environment — enables audit-trail hooks to correlate every shell command to its originating session without manual instrumentation. `CLAUDE_CODE_DISABLE_ALTERNATE_SCREEN=1` lets terminals that mishandle the fullscreen renderer opt out. Critical fixes: unbounded memory growth with MCP stdio servers (high-priority for long-running MCP sessions); parallel shell tool calls no longer cancel sibling reads when one fails; NFD-accented characters no longer corrupt in vim mode; pasting text starting with `/` no longer silently swallows input.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">mcp · memory</div>
+  <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code  # → v2.1.132</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/FlorianBruniaux/claude-code-ultimate-guide">claude-code-ultimate-guide (FlorianBruniaux)</a></h3>
+  <p class="hook">Updated May 4 — 24K+ lines across 16 specialized guides from beginner to power user. Standout: 181 production-ready templates packaged as installable Claude Code plugins (security, DevOps, release automation, code quality, PR workflows); a 271-question knowledge-validation quiz; 48 Mermaid diagrams; and a 655-entry malicious-skills database alongside 28 CVE notes in a threat-modeling guide — the only community-maintained catalog tracking deliberately harmful Claude Code skills, especially timely alongside the Mitiga MCP disclosure this week.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">mcp · security</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/steipete/claude-code-mcp">claude-code-mcp (steipete)</a></h3>
+  <p class="hook">~1.1k stars, by Peter Steinberger (@steipete). Exposes Claude Code as a single `claude_code` MCP tool so any parent AI — Claude Desktop, another Claude Code instance, a Managed Agent workflow — can spawn Claude Code as a sub-agent with all permission prompts bypassed for one-shot execution. The &#39;agent in your agent&#39; pattern becomes a first-class citizen today with Anthropic&#39;s Multi-Agent Orchestration entering public beta; claude-code-mcp lets you replicate the pattern in any MCP-compatible runtime without waiting for managed infrastructure. A community-enhanced fork (`grahama1970/claude-code-mcp-enhanced`) adds orchestration capabilities and self-contained execution patterns.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">agent · anthropic · viral</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.mitiga.io/blog/claude-code-mcp-token-theft-mitm">MCP Token Theft via ~/.claude.json — Mitiga Research</a></h3>
+  <p class="hook">Mitiga security researchers disclosed a MitM attack chain against Claude Code&#39;s MCP subsystem: inject a malicious entry into `~/.claude.json`, silently redirect MCP traffic, capture OAuth tokens for connected SaaS platforms, and maintain persistent access with no visible indicator to the user. Reported to Anthropic on April 10, 2026; Anthropic responded April 12 — &#39;out of scope.&#39; Covered by SecurityWeek and circulating on HN. Practical takeaway: audit your `~/.claude.json` MCP server entries, especially after installing skills or plugins from unknown sources.</p>
+  <div class="secondary">Also: <a href="https://www.securityweek.com/claude-code-oauth-tokens-can-be-stolen-through-stealthy-mcp-hijacking/">www.securityweek.com/claude-code-oauth-tokens-can-be-stolen-through-stealthy-mcp-hijacking/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">token · anthropic · security</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/garrytan/gstack">gstack (garrytan)</a></h3>
+  <p class="hook">82.7K stars, 12K forks. Garry Tan&#39;s 23-specialist-skill Claude Code setup: CEO, Designer, Eng Manager, QA Lead, Security Officer, Release Engineer, and more. The design-review skill — which catches AI-slop before it ships — has renewed relevance as teams now have 2× the Claude Code quota to burn through; quality control matters more at higher velocity.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">skill · viral · security</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  <div class="recurring">↑ Day 5 — 82.7K stars; design-review usage spiking alongside doubled rate limits</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/farion1231/cc-switch">CC Switch (farion1231)</a></h3>
+  <p class="hook">61.4K stars (up from 58.4K on May 4, +3K in 3 days). Tauri-powered desktop app that unifies Claude Code, Codex, OpenCode, OpenClaw, and Gemini CLI in one GUI — 50+ provider presets, one-click MCP and Skills sync, system-tray switcher. Anthropic&#39;s announcement of Claude Code on Desktop as an official new surface directly validates the demand for GUI-first Claude Code experiences that cc-switch has served since launch.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">mcp · anthropic · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>brew tap farion1231/ccswitch &amp;&amp; brew install --cask cc-switch</code></pre>
+  <div class="recurring">↑ Day 5 — 61.4K stars (+3K since May 4); Claude Code on Desktop announcement validates the GUI-surface thesis</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/code-yeongyu/oh-my-openagent">oh-my-openagent / OMO (code-yeongyu)</a></h3>
+  <p class="hook">55K stars. Multi-model orchestration harness with Sisyphus orchestrator on Claude Opus 4.7 and 11 parallel sub-agents on Gemini/Kimi/GLM — tasks auto-route to the cheapest capable model. With Claude Code rate limits doubled today, OMO&#39;s parallel sub-agent stack is no longer rate-constrained for Max and Enterprise users, removing the primary bottleneck for running all 11 specialists in full.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">harness · viral</div>
+  
+  <div class="recurring">↑ Day 5 — 55K stars; doubled rate limits remove the chief constraint on parallel sub-agent depth</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/santifer/career-ops">career-ops (santifer)</a></h3>
+  <p class="hook">42.1K stars. AI-powered job search system built entirely on Claude Code: 14 skill modes, Go terminal dashboard, PDF resume generation, and Playwright-powered batch scanning of 45+ career portals. The creator used it to evaluate 740 job listings and land a Head of Applied AI role — the most-cited concrete real-world outcome story in the Claude Code ecosystem and a recurring reference in r/ClaudeCode career threads.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">skill · viral · terminal · browser</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/santifer/career-ops.git &amp;&amp; cd career-ops &amp;&amp; npm install &amp;&amp; npx playwright install chromium</code></pre>
+  <div class="recurring">↑ Day 5 — 42.1K stars; &#39;used Claude Code to land my job&#39; narrative sustaining attention</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/HKUDS/nanobot">nanobot (HKUDS)</a></h3>
+  <p class="hook">41.6K stars, v0.1.5.post3. Ultra-lightweight personal AI agent: MCP support, multi-platform chat (Telegram, Discord, Slack, WeChat), 24/7 market analysis, and full-stack software engineering — core agent loop kept deliberately small and readable. Its cross-platform messaging integration makes it the only Claude Code-adjacent harness with a native mobile notification path via consumer chat apps.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">mcp · agent · harness · viral</div>
+  <pre><button class="copy">copy</button><code>pip install nanobot-ai</code></pre>
+  <div class="recurring">↑ Day 5 — 41.6K stars; mobile-first notification path differentiates it from CLI-only tools</div>
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
