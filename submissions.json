@@ -645,5 +645,16 @@
     "install": "npm install -g openskills",
     "added_date": "2026-05-04",
     "added_by": "user"
+  },
+  {
+    "slug": "project-nomad",
+    "name": "Project N.O.M.A.D.",
+    "primary_url": "https://github.com/Crosstalk-Solutions/project-nomad",
+    "secondary_urls": ["https://www.projectnomad.us/"],
+    "hook": "Self-contained offline knowledge server — Ollama-backed AI chat with RAG (Qdrant), Wikipedia + medical refs (Kiwix), Khan Academy (Kolibri), regional maps (ProtoMaps), CyberChef. Hit #1 GitHub trending in March 2026 with +2.3k stars in a day.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/Crosstalk-Solutions/project-nomad",
+    "added_date": "2026-05-04",
+    "added_by": "user"
   }
 ]
