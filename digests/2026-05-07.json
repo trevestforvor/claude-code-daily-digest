@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "claude-managed-agents-dreaming-outcomes",
+    "name": "Claude Managed Agents: Dreaming, Outcomes & Multi-Agent Orchestration",
+    "primary_url": "https://platform.claude.com/docs/en/managed-agents",
+    "secondary_urls": [
+      "https://thenewstack.io/anthropic-managed-agents-dreaming-outcomes/",
+      "https://sdtimes.com/ai/new-in-claude-managed-agents-dreaming-outcomes-and-multiagent-orchestration/"
+    ],
+    "hook": "Three major upgrades to Claude Managed Agents shipped at Code with Claude SF (May 6). Dreaming (research preview) — a scheduled background process reviews past agent sessions, extracts recurring patterns, and curates memory so agents self-improve between runs; users control whether updates apply automatically or require review. Outcomes (public beta) — write a plain-English success rubric; a separate Claude instance grades the output in isolation from the agent's reasoning trace; internal benchmarks show +10 percentage-point task success on the hardest tasks. Multi-Agent Orchestration (public beta) — a lead agent assigns sub-tasks to parallel sub-agents on a shared filesystem, all traceable in the Claude Console. Covered within 24 hours by SD Times, Digital Trends, SiliconANGLE, The Decoder, The New Stack, CryptoBriefing, 9to5Mac, and US News.",
+    "categories": ["anthropic", "general"],
+    "install": "platform.claude.com/docs/en/managed-agents (request access via Claude Console)"
+  },
+  {
+    "slug": "anthropic-doubled-limits-spacex",
+    "name": "Claude Code Rate Limits 2× + SpaceX Compute Deal",
+    "primary_url": "https://www.anthropic.com/news/higher-limits-spacex",
+    "secondary_urls": [
+      "https://9to5google.com/2026/05/06/claude-code-is-getting-higher-usage-limits-doubled-for-most-users/",
+      "https://www.engadget.com/2166315/anthropic-is-doubling-claude-code-rate-limits-after-deal-with-spacex/"
+    ],
+    "hook": "Also from Code with Claude SF (May 6, effective today): Claude Code five-hour limits double across Pro, Max, Team, and Enterprise plans — peak-hours throttling removed entirely for Pro and Max. The Claude API Tier 1 gets a 1,500% increase in input tokens/minute and a 900% increase in output tokens/minute. Powering the expansion: a deal with SpaceX for 220,000+ NVIDIA GPUs at the Colossus 1 data center in Memphis, Tennessee. Covered by Engadget, 9to5Google, PCWorld, XDA-Developers, and Dataconomy within hours of the announcement.",
+    "categories": ["anthropic", "cost"],
+    "install": "Automatic for existing subscribers — no action needed"
+  },
+  {
+    "slug": "claude-code-on-desktop",
+    "name": "Claude Code on Desktop (New Native Surface)",
+    "primary_url": "https://claude.com/code-with-claude/san-francisco",
+    "hook": "Announced at Code with Claude SF (May 6): the third Claude Code surface after CLI and IDE extensions. A native desktop application designed for users who want a full-screen GUI with live preview, image rendering, and rich formatted outputs rather than a terminal-split experience. Anthropic also foregrounded /ultrareview at the event — the public-research-preview fleet of cloud bug-hunting agents that land findings in your CLI or Desktop — as a headline workflow for the Desktop surface. Designed for the 'I want visual results, not scrolling terminal output' audience.",
+    "categories": ["anthropic", "design"]
+  },
+  {
+    "slug": "claude-code-v2-1-132",
+    "name": "Claude Code v2.1.132 (May 6, post-conference)",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "hook": "`CLAUDE_CODE_SESSION_ID` is now injected into every Bash tool subprocess environment — enables audit-trail hooks to correlate every shell command to its originating session without manual instrumentation. `CLAUDE_CODE_DISABLE_ALTERNATE_SCREEN=1` lets terminals that mishandle the fullscreen renderer opt out. Critical fixes: unbounded memory growth with MCP stdio servers (high-priority for long-running MCP sessions); parallel shell tool calls no longer cancel sibling reads when one fails; NFD-accented characters no longer corrupt in vim mode; pasting text starting with `/` no longer silently swallows input.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code  # → v2.1.132"
+  },
+  {
+    "slug": "florian-claude-code-ultimate-guide",
+    "name": "claude-code-ultimate-guide (FlorianBruniaux)",
+    "primary_url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+    "hook": "Updated May 4 — 24K+ lines across 16 specialized guides from beginner to power user. Standout: 181 production-ready templates packaged as installable Claude Code plugins (security, DevOps, release automation, code quality, PR workflows); a 271-question knowledge-validation quiz; 48 Mermaid diagrams; and a 655-entry malicious-skills database alongside 28 CVE notes in a threat-modeling guide — the only community-maintained catalog tracking deliberately harmful Claude Code skills, especially timely alongside the Mitiga MCP disclosure this week.",
+    "categories": ["general", "skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-code-mcp-steipete",
+    "name": "claude-code-mcp (steipete)",
+    "primary_url": "https://github.com/steipete/claude-code-mcp",
+    "hook": "~1.1k stars, by Peter Steinberger (@steipete). Exposes Claude Code as a single `claude_code` MCP tool so any parent AI — Claude Desktop, another Claude Code instance, a Managed Agent workflow — can spawn Claude Code as a sub-agent with all permission prompts bypassed for one-shot execution. The 'agent in your agent' pattern becomes a first-class citizen today with Anthropic's Multi-Agent Orchestration entering public beta; claude-code-mcp lets you replicate the pattern in any MCP-compatible runtime without waiting for managed infrastructure. A community-enhanced fork (`grahama1970/claude-code-mcp-enhanced`) adds orchestration capabilities and self-contained execution patterns.",
+    "categories": ["mcp"]
+  },
+  {
+    "slug": "mcp-token-theft-mitiga",
+    "name": "MCP Token Theft via ~/.claude.json — Mitiga Research",
+    "primary_url": "https://www.mitiga.io/blog/claude-code-mcp-token-theft-mitm",
+    "secondary_urls": [
+      "https://www.securityweek.com/claude-code-oauth-tokens-can-be-stolen-through-stealthy-mcp-hijacking/"
+    ],
+    "hook": "Mitiga security researchers disclosed a MitM attack chain against Claude Code's MCP subsystem: inject a malicious entry into `~/.claude.json`, silently redirect MCP traffic, capture OAuth tokens for connected SaaS platforms, and maintain persistent access with no visible indicator to the user. Reported to Anthropic on April 10, 2026; Anthropic responded April 12 — 'out of scope.' Covered by SecurityWeek and circulating on HN. Practical takeaway: audit your `~/.claude.json` MCP server entries, especially after installing skills or plugins from unknown sources.",
+    "categories": ["mcp"]
+  },
+  {
+    "slug": "garrytan-gstack",
+    "name": "gstack (garrytan)",
+    "primary_url": "https://github.com/garrytan/gstack",
+    "hook": "82.7K stars, 12K forks. Garry Tan's 23-specialist-skill Claude Code setup: CEO, Designer, Eng Manager, QA Lead, Security Officer, Release Engineer, and more. The design-review skill — which catches AI-slop before it ships — has renewed relevance as teams now have 2× the Claude Code quota to burn through; quality control matters more at higher velocity.",
+    "categories": ["design", "general"],
+    "install": "See README",
+    "recurring_note": "↑ Day 5 — 82.7K stars; design-review usage spiking alongside doubled rate limits"
+  },
+  {
+    "slug": "cc-switch",
+    "name": "CC Switch (farion1231)",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "hook": "61.4K stars (up from 58.4K on May 4, +3K in 3 days). Tauri-powered desktop app that unifies Claude Code, Codex, OpenCode, OpenClaw, and Gemini CLI in one GUI — 50+ provider presets, one-click MCP and Skills sync, system-tray switcher. Anthropic's announcement of Claude Code on Desktop as an official new surface directly validates the demand for GUI-first Claude Code experiences that cc-switch has served since launch.",
+    "categories": ["design"],
+    "install": "brew tap farion1231/ccswitch && brew install --cask cc-switch",
+    "recurring_note": "↑ Day 5 — 61.4K stars (+3K since May 4); Claude Code on Desktop announcement validates the GUI-surface thesis"
+  },
+  {
+    "slug": "oh-my-openagent",
+    "name": "oh-my-openagent / OMO (code-yeongyu)",
+    "primary_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "hook": "55K stars. Multi-model orchestration harness with Sisyphus orchestrator on Claude Opus 4.7 and 11 parallel sub-agents on Gemini/Kimi/GLM — tasks auto-route to the cheapest capable model. With Claude Code rate limits doubled today, OMO's parallel sub-agent stack is no longer rate-constrained for Max and Enterprise users, removing the primary bottleneck for running all 11 specialists in full.",
+    "categories": ["general", "cost"],
+    "recurring_note": "↑ Day 5 — 55K stars; doubled rate limits remove the chief constraint on parallel sub-agent depth"
+  },
+  {
+    "slug": "career-ops",
+    "name": "career-ops (santifer)",
+    "primary_url": "https://github.com/santifer/career-ops",
+    "hook": "42.1K stars. AI-powered job search system built entirely on Claude Code: 14 skill modes, Go terminal dashboard, PDF resume generation, and Playwright-powered batch scanning of 45+ career portals. The creator used it to evaluate 740 job listings and land a Head of Applied AI role — the most-cited concrete real-world outcome story in the Claude Code ecosystem and a recurring reference in r/ClaudeCode career threads.",
+    "categories": ["general"],
+    "install": "git clone https://github.com/santifer/career-ops.git && cd career-ops && npm install && npx playwright install chromium",
+    "recurring_note": "↑ Day 5 — 42.1K stars; 'used Claude Code to land my job' narrative sustaining attention"
+  },
+  {
+    "slug": "nanobot",
+    "name": "nanobot (HKUDS)",
+    "primary_url": "https://github.com/HKUDS/nanobot",
+    "hook": "41.6K stars, v0.1.5.post3. Ultra-lightweight personal AI agent: MCP support, multi-platform chat (Telegram, Discord, Slack, WeChat), 24/7 market analysis, and full-stack software engineering — core agent loop kept deliberately small and readable. Its cross-platform messaging integration makes it the only Claude Code-adjacent harness with a native mobile notification path via consumer chat apps.",
+    "categories": ["general"],
+    "install": "pip install nanobot-ai",
+    "recurring_note": "↑ Day 5 — 41.6K stars; mobile-first notification path differentiates it from CLI-only tools"
+  }
+]
