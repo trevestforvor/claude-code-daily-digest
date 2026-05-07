@@ -667,5 +667,16 @@
     "install": "npx @agent-tars/cli@latest",
     "added_date": "2026-05-07",
     "added_by": "user"
+  },
+  {
+    "slug": "clawbridge",
+    "name": "ClawBridge",
+    "primary_url": "https://clawbridge.ai/",
+    "secondary_urls": ["https://github.com/NickRomanek/clawbridge"],
+    "hook": "Local-first, BYOK desktop+browser automation agent — plain-English commands, workflow recording, and one dashboard that routes work to browser-use, OpenClaw, or Anthropic computer-use. No telemetry, no cloud.",
+    "categories": ["plugin"],
+    "install": "git clone https://github.com/NickRomanek/clawbridge",
+    "added_date": "2026-05-07",
+    "added_by": "user"
   }
 ]
