@@ -656,5 +656,16 @@
     "install": "git clone https://github.com/Crosstalk-Solutions/project-nomad",
     "added_date": "2026-05-04",
     "added_by": "user"
+  },
+  {
+    "slug": "ui-tars-desktop",
+    "name": "UI-TARS Desktop",
+    "primary_url": "https://github.com/bytedance/UI-TARS-desktop",
+    "secondary_urls": [],
+    "hook": "ByteDance's multimodal GUI-control agent — vision-language model drives natural-language computer + browser automation via screenshot recognition and mouse/keyboard. CLI + desktop app, ~30k stars, Apache 2.0.",
+    "categories": ["viral"],
+    "install": "npx @agent-tars/cli@latest",
+    "added_date": "2026-05-07",
+    "added_by": "user"
   }
 ]
