@@ -473,5 +473,188 @@
     "install": "",
     "added_date": "2026-05-03",
     "added_by": "user"
+  },
+  {
+    "slug": "openhands",
+    "name": "OpenHands",
+    "primary_url": "https://github.com/All-Hands-AI/OpenHands",
+    "secondary_urls": ["https://github.com/OpenHands/software-agent-sdk"],
+    "hook": "Open-source AI software-engineering platform — Python SDK, CLI, local GUI, and cloud runtime for autonomous coding agents. MIT, ~72k stars.",
+    "categories": ["viral"],
+    "install": "pip install openhands-ai",
+    "added_date": "2026-05-03",
+    "added_by": "user"
+  },
+  {
+    "slug": "dify",
+    "name": "Dify",
+    "primary_url": "https://github.com/langgenius/dify",
+    "secondary_urls": ["https://dify.ai/"],
+    "hook": "Visual LLM-app platform combining workflow orchestration, RAG pipelines, agent tools, prompt management, and observability — Docker-deployable, ~140k stars.",
+    "categories": ["viral"],
+    "install": "cd dify/docker && cp .env.example .env && docker compose up -d",
+    "added_date": "2026-05-03",
+    "added_by": "user"
+  },
+  {
+    "slug": "hermes-agent",
+    "name": "Hermes Agent",
+    "primary_url": "https://github.com/NousResearch/hermes-agent",
+    "secondary_urls": [
+      "https://hermes-agent.nousresearch.com/",
+      "https://github.com/0xNyk/awesome-hermes-agent"
+    ],
+    "hook": "Nous Research's open-source self-improving personal agent — single gateway to Telegram/Discord/Slack/WhatsApp/Signal/CLI, BYO-model (Nous Portal, OpenRouter, NIM), and a Skills Hub that's compatible with Claude Code, Cursor, and Codex. ~23k stars.",
+    "categories": ["plugin", "viral"],
+    "install": "git clone https://github.com/NousResearch/hermes-agent",
+    "added_date": "2026-05-03",
+    "added_by": "user"
+  },
+  {
+    "slug": "pi-coding-agent",
+    "name": "Pi (pi coding agent)",
+    "primary_url": "https://github.com/badlogic/pi-mono",
+    "secondary_urls": [
+      "https://www.npmjs.com/package/@mariozechner/pi-coding-agent",
+      "https://github.com/disler/pi-vs-claude-code",
+      "https://github.com/tintinweb/pi-subagents"
+    ],
+    "hook": "Minimal, opinionated terminal coding agent — 4 tools (read, edit, write, bash), <1k-token system prompt, no MCP, no permission gates, fully replaceable prompt. The intentional anti-Claude-Code.",
+    "categories": ["plugin"],
+    "install": "npx -y @mariozechner/pi-coding-agent",
+    "added_date": "2026-05-03",
+    "added_by": "user"
+  },
+  {
+    "slug": "browser-harness",
+    "name": "Browser Harness",
+    "primary_url": "https://github.com/browser-use/browser-harness",
+    "secondary_urls": ["https://github.com/browser-use/bux"],
+    "hook": "Self-healing browser harness — thin CDP layer that hands an LLM full control of a real Chrome over one websocket, then has the agent write the missing capabilities mid-run. Pairs with Bux for a 24/7 Claude Code agent on any VPS.",
+    "categories": ["plugin"],
+    "install": "git clone https://github.com/browser-use/browser-harness",
+    "added_date": "2026-05-04",
+    "added_by": "user"
+  },
+  {
+    "slug": "agentshield",
+    "name": "AgentShield",
+    "primary_url": "https://github.com/affaan-m/agentshield",
+    "secondary_urls": ["https://ecc.tools/"],
+    "hook": "AI-agent security scanner — flags hardcoded secrets, permission misconfigs, hook injection, MCP server risks, and prompt-injection vectors in your .claude/ directory. CLI, GitHub Action, and ECC plugin. 102 static rules, 1.2k tests.",
+    "categories": ["skill"],
+    "install": "npx ecc-agentshield scan ./CLAUDE.md",
+    "added_date": "2026-05-04",
+    "added_by": "user"
+  },
+  {
+    "slug": "jarvis-osint",
+    "name": "JARVIS",
+    "primary_url": "https://github.com/affaan-m/JARVIS",
+    "secondary_urls": [],
+    "hook": "Real-time agentic intel platform — Meta Ray-Ban glasses → MediaPipe + ArcFace + PimEyes → Browser Use swarm fans across LinkedIn/X/IG/Google → Claude Sonnet writes a corkboard dossier, all live.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/affaan-m/JARVIS",
+    "added_date": "2026-05-04",
+    "added_by": "user"
+  },
+  {
+    "slug": "claude-swarm",
+    "name": "claude-swarm (affaan-m)",
+    "primary_url": "https://github.com/affaan-m/claude-swarm",
+    "secondary_urls": [],
+    "hook": "Multi-agent orchestration for Claude Code — Opus 4.6 decomposes work into a dependency graph, Haiku runs the parallel subtasks, Opus reviews the merged output. Rich terminal UI, built at the Claude Code Hackathon.",
+    "categories": ["plugin"],
+    "install": "git clone https://github.com/affaan-m/claude-swarm",
+    "added_date": "2026-05-04",
+    "added_by": "user"
+  },
+  {
+    "slug": "stoictradingai",
+    "name": "stoictradingAI",
+    "primary_url": "https://github.com/affaan-m/stoictradingAI",
+    "secondary_urls": [],
+    "hook": "Autonomous Solana trading bot with transparent on-chain execution — built on Eliza, peaked at 70k concurrent live viewers during launch.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/affaan-m/stoictradingAI",
+    "added_date": "2026-05-04",
+    "added_by": "user"
+  },
+  {
+    "slug": "hypermamba",
+    "name": "HyperMamba",
+    "primary_url": "https://github.com/affaan-m/HyperMamba",
+    "secondary_urls": ["https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5137471"],
+    "hook": "Hypernetwork-enhanced meta-learning framework for autonomous trading — extends Mamba with hypernet-based weight generation for fast policy adaptation across Solana / sentiment / macro signals.",
+    "categories": ["viral"],
+    "install": "",
+    "added_date": "2026-05-04",
+    "added_by": "user"
+  },
+  {
+    "slug": "zenith-chat",
+    "name": "Zenith",
+    "primary_url": "https://zenith.chat/",
+    "secondary_urls": [],
+    "hook": "Customer-discovery platform that lets founders validate product-market fit by chatting with synthetic personas who think, react, and push back like real prospects. Anthropic × Forum Ventures hackathon winner.",
+    "categories": [],
+    "install": "",
+    "added_date": "2026-05-04",
+    "added_by": "user"
+  },
+  {
+    "slug": "google-adk",
+    "name": "Google ADK (Agent Development Kit)",
+    "primary_url": "https://github.com/google/adk-docs",
+    "secondary_urls": ["https://google.github.io/adk-docs/"],
+    "hook": "Google's open-source, code-first agent toolkit — multi-language (Python, TypeScript, Go, Java), Gemini-optimized but model-agnostic, with built-in tools, multi-agent composition, tracing, and deployment hooks. Apache 2.0.",
+    "categories": ["plugin"],
+    "install": "pip install google-adk",
+    "added_date": "2026-05-04",
+    "added_by": "user"
+  },
+  {
+    "slug": "pdf-craft",
+    "name": "PDF Craft",
+    "primary_url": "https://github.com/oomol-lab/pdf-craft",
+    "secondary_urls": [],
+    "hook": "Converts scanned-book PDFs into Markdown or EPUB while preserving tables, formulas, footnotes, and images — DeepSeek OCR for document recognition, optional LLM-assisted TOC extraction. MIT, ~5.5k stars.",
+    "categories": ["viral"],
+    "install": "pip install pdf-craft",
+    "added_date": "2026-05-04",
+    "added_by": "user"
+  },
+  {
+    "slug": "feynman",
+    "name": "Feynman",
+    "primary_url": "https://github.com/getcompanion-ai/feynman",
+    "secondary_urls": ["https://www.feynman.is/"],
+    "hook": "Open-source AI research agent — researcher gathers evidence across papers/web/repos/docs, reviewer runs severity-graded peer review, every claim links to its source. Built on Pi + alphaXiv as a bundle of Pi skills.",
+    "categories": ["skill"],
+    "install": "curl -fsSL https://feynman.is/install | bash",
+    "added_date": "2026-05-04",
+    "added_by": "user"
+  },
+  {
+    "slug": "openskills",
+    "name": "OpenSkills",
+    "primary_url": "https://github.com/numman-ali/openskills",
+    "secondary_urls": ["https://github.com/instavm/open-skills"],
+    "hook": "Universal skills loader for AI coding agents — same SKILL.md format, same marketplace, same folder layout works across Claude Code, Cursor, Windsurf, Aider, Codex. Project-local installs by default; --universal goes to .agent/skills.",
+    "categories": ["skill", "marketplace"],
+    "install": "npm install -g openskills",
+    "added_date": "2026-05-04",
+    "added_by": "user"
+  },
+  {
+    "slug": "project-nomad",
+    "name": "Project N.O.M.A.D.",
+    "primary_url": "https://github.com/Crosstalk-Solutions/project-nomad",
+    "secondary_urls": ["https://www.projectnomad.us/"],
+    "hook": "Self-contained offline knowledge server — Ollama-backed AI chat with RAG (Qdrant), Wikipedia + medical refs (Kiwix), Khan Academy (Kolibri), regional maps (ProtoMaps), CyberChef. Hit #1 GitHub trending in March 2026 with +2.3k stars in a day.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/Crosstalk-Solutions/project-nomad",
+    "added_date": "2026-05-04",
+    "added_by": "user"
   }
 ]
