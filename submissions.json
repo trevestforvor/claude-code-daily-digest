@@ -678,5 +678,27 @@
     "install": "git clone https://github.com/NickRomanek/clawbridge",
     "added_date": "2026-05-07",
     "added_by": "user"
+  },
+  {
+    "slug": "accomplish",
+    "name": "Accomplish",
+    "primary_url": "https://github.com/accomplish-ai/accomplish",
+    "secondary_urls": ["https://accomplish.ai/"],
+    "hook": "Open-source AI coworker on your desktop — file management, document creation, browser tasks, all approval-gated and local. BYOK (OpenAI, Anthropic, Google, xAI) or Ollama. Electron + React, MIT, mac/Win/Linux.",
+    "categories": ["plugin"],
+    "install": "",
+    "added_date": "2026-05-07",
+    "added_by": "user"
+  },
+  {
+    "slug": "goose",
+    "name": "Goose (Block)",
+    "primary_url": "https://github.com/block/goose",
+    "secondary_urls": [],
+    "hook": "Block's open-source AI agent for code, workflows, and automation — desktop app + CLI + API, 15+ LLM providers, 70+ MCP extensions. Apache 2.0, ~44k stars.",
+    "categories": ["viral", "plugin"],
+    "install": "curl -fsSL https://github.com/block/goose/releases/download/stable/download_cli.sh | bash",
+    "added_date": "2026-05-07",
+    "added_by": "user"
   }
 ]
