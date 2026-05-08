@@ -782,5 +782,16 @@
     "install": "npm install -g repomix",
     "added_date": "2026-05-07",
     "added_by": "user"
+  },
+  {
+    "slug": "obsidian-mind",
+    "name": "Obsidian Mind",
+    "primary_url": "https://github.com/breferrari/obsidian-mind",
+    "secondary_urls": [],
+    "hook": "Obsidian vault that doubles as a persistent memory store for Claude Code, Codex CLI, and Gemini CLI — a SessionStart hook auto-injects North Star goals, active projects, recent changes, and the full vault index into every session.",
+    "categories": ["plugin"],
+    "install": "git clone https://github.com/breferrari/obsidian-mind",
+    "added_date": "2026-05-07",
+    "added_by": "user"
   }
 ]
