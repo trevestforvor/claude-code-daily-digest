@@ -760,5 +760,27 @@
     "install": "pip install cocoindex",
     "added_date": "2026-05-07",
     "added_by": "user"
+  },
+  {
+    "slug": "claude-subconscious",
+    "name": "Claude Subconscious",
+    "primary_url": "https://github.com/letta-ai/claude-subconscious",
+    "secondary_urls": [],
+    "hook": "Background agent that watches your Claude Code sessions, reads your files, builds long-term memory, and whispers guidance back into the next response. Built on the Letta Code SDK — demo of subconscious-agent pattern.",
+    "categories": ["plugin"],
+    "install": "npm install -g @letta-ai/letta-code",
+    "added_date": "2026-05-07",
+    "added_by": "user"
+  },
+  {
+    "slug": "repomix",
+    "name": "Repomix",
+    "primary_url": "https://github.com/yamadashy/repomix",
+    "secondary_urls": ["https://repomix.com/"],
+    "hook": "Packs an entire repo into a single AI-optimized file (XML, Markdown, JSON, or plain text) with token counting, security scanning, and compression — the standard tool for feeding codebases to Claude/ChatGPT. MIT, ~24.5k stars.",
+    "categories": ["cost", "viral"],
+    "install": "npm install -g repomix",
+    "added_date": "2026-05-07",
+    "added_by": "user"
   }
 ]
