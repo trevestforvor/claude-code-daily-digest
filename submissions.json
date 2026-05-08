@@ -722,5 +722,43 @@
     "install": "git clone https://github.com/LvcidPsyche/auto-browser",
     "added_date": "2026-05-07",
     "added_by": "user"
+  },
+  {
+    "slug": "vibeyard",
+    "name": "Vibeyard",
+    "primary_url": "https://github.com/elirantutia/vibeyard",
+    "secondary_urls": ["https://github.com/SourceSurfer/vibeyard-windows"],
+    "hook": "Electron IDE built around AI coding agents — multi-session terminals, kanban + dashboard, swarm mode for parallel agents, session inspector, cost/token tracking, P2P session sharing over WebRTC. Supports Claude Code, Codex CLI, Gemini CLI.",
+    "categories": ["plugin"],
+    "install": "",
+    "added_date": "2026-05-07",
+    "added_by": "user"
+  },
+  {
+    "slug": "mempalace",
+    "name": "MemPalace",
+    "primary_url": "https://github.com/MemPalace/mempalace",
+    "secondary_urls": ["https://www.mempalace.tech/"],
+    "hook": "Open-source AI long-term memory system — verbatim conversation storage with vector search, ChromaDB + SQLite, fully local, ~170-token startup load. Tops the LongMemEval benchmark (96.6% raw / 100% hybrid). Co-developed by Milla Jovovich.",
+    "categories": ["plugin"],
+    "install": "git clone https://github.com/MemPalace/mempalace",
+    "added_date": "2026-05-07",
+    "added_by": "user"
+  },
+  {
+    "slug": "cocoindex",
+    "name": "CocoIndex",
+    "primary_url": "https://github.com/cocoindex-io/cocoindex",
+    "secondary_urls": [
+      "https://cocoindex.io/",
+      "https://github.com/cocoindex-io/cocoindex-code",
+      "https://github.com/cocoindex-io/cocoindex-claude",
+      "https://github.com/cocoindex-io/realtime-codebase-indexing"
+    ],
+    "hook": "Rust-based incremental data framework for long-horizon AI agents — delta-only processing keeps RAG and codebase indexes fresh without reprocessing. Companion AST code-search saves ~70% tokens. Apache 2.0, ~6.9k stars.",
+    "categories": ["cost", "skill"],
+    "install": "pip install cocoindex",
+    "added_date": "2026-05-07",
+    "added_by": "user"
   }
 ]
