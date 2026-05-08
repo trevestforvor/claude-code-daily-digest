@@ -700,5 +700,27 @@
     "install": "curl -fsSL https://github.com/block/goose/releases/download/stable/download_cli.sh | bash",
     "added_date": "2026-05-07",
     "added_by": "user"
+  },
+  {
+    "slug": "autobrowse",
+    "name": "AutoBrowse (Browserbase Skills)",
+    "primary_url": "https://github.com/browserbase/skills",
+    "secondary_urls": [],
+    "hook": "Self-improving browser-skill generator: inner agent browses, outer agent reads traces and rewrites the navigation strategy until it passes 2/3 runs — then the skill graduates into ~/.claude/skills as a permanent capability. Ships in the Browserbase Skills bundle.",
+    "categories": ["skill"],
+    "install": "npx skills add browserbase/skills",
+    "added_date": "2026-05-07",
+    "added_by": "user"
+  },
+  {
+    "slug": "auto-browser",
+    "name": "auto-browser",
+    "primary_url": "https://github.com/LvcidPsyche/auto-browser",
+    "secondary_urls": ["https://github.com/lttr/auto-browser"],
+    "hook": "MCP-native browser control plane — shared Playwright session, reusable auth profiles, approval gates, audit trails, and human-in-the-loop takeover. Local-first, works with any MCP client.",
+    "categories": ["mcp"],
+    "install": "git clone https://github.com/LvcidPsyche/auto-browser",
+    "added_date": "2026-05-07",
+    "added_by": "user"
   }
 ]
