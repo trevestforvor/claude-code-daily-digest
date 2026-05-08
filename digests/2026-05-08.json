@@ -1,0 +1,134 @@
+[
+  {
+    "slug": "superpowers",
+    "name": "obra/superpowers",
+    "primary_url": "https://github.com/obra/superpowers",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=KjEFy5wjFQg",
+      "https://www.youtube.com/watch?v=TX91PdBn_IA"
+    ],
+    "hook": "178K stars — Jesse Vincent's five-phase structured development methodology for Claude Code and 13+ other agents: Brainstorm, Design (interactive HTML mockups), Plan (git-worktree task breakdown), Code (parallel subagents with 6-category self-check), Verify (security audit). Official Anthropic marketplace plugin since January. Today's v2.1.133 fix — subagents in isolated worktrees now correctly get read/edit access to files inside their own worktree — directly unblocks the Code and Verify phases, which both spawn parallel subagents into isolated worktrees.",
+    "categories": ["design", "skill"],
+    "install": "/plugin install superpowers@claude-plugins-official",
+    "recurring_note": "↑ Day 5 — 178K stars; v2.1.133 subagent-in-worktree fix removes the chief friction point in the Code phase"
+  },
+  {
+    "slug": "garrytan-gstack",
+    "name": "gstack (garrytan)",
+    "primary_url": "https://github.com/garrytan/gstack",
+    "hook": "82.7K stars, 12K forks. Garry Tan's 23-specialist-skill Claude Code setup: CEO, Designer, Eng Manager, QA Lead, Security Officer, Release Engineer, and more. The design-review skill — catching AI slop before it ships — remains the most-installed anti-slop tool in the ecosystem. v2.1.133's `$CLAUDE_EFFORT` env var in hooks means you can now gate the design-review skill to fire only at max effort, preventing low-effort passes from shipping.",
+    "categories": ["design", "general"],
+    "install": "See README",
+    "recurring_note": "↑ Day 6 — 82.7K stars; v2.1.133 effort-level hooks enable gating design-review to max-effort runs only"
+  },
+  {
+    "slug": "cc-switch",
+    "name": "CC Switch (farion1231)",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "hook": "61.4K stars. Tauri-powered desktop app that unifies Claude Code, Codex, OpenCode, OpenClaw, and Gemini CLI in one GUI — 50+ provider presets, one-click MCP and Skills sync, system-tray switcher. Still the only cross-agent GUI surface shipping today while Anthropic's announced Claude Code Desktop remains unreleased — the gap it fills continues to validate its star count.",
+    "categories": ["design"],
+    "install": "brew tap farion1231/ccswitch && brew install --cask cc-switch",
+    "recurring_note": "↑ Day 6 — 61.4K stars; still the only cross-agent GUI surface while official Desktop is pending"
+  },
+  {
+    "slug": "owl-listener-designer-skills",
+    "name": "Designer Skills Collection (Owl-Listener)",
+    "primary_url": "https://github.com/Owl-Listener/designer-skills",
+    "hook": "87 skills and 27 commands across 8 Claude Code plugins: design-research (12 skills), design-systems (11), ux-strategy (11), ui-design (14), interaction-design (15), prototyping-testing (8), design-ops (9), designer-toolkit (7). Created by Marie Claire Dean to teach Claude what designers actually know — not generic UI rules but research, systems, strategy, and delivery workflows. Endorsed publicly by Adham Dannaway on X. MIT licensed. The only skill collection that covers the full design lifecycle from research to design-ops handoff.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add Owl-Listener/designer-skills"
+  },
+  {
+    "slug": "oh-my-openagent",
+    "name": "oh-my-openagent / OMO (code-yeongyu)",
+    "primary_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "hook": "55K stars. Multi-model orchestration harness: Sisyphus orchestrator on Claude Opus 4.7, 11 parallel sub-agents on Gemini/Kimi/GLM — tasks auto-route to the cheapest capable model. 52 lifecycle hooks, 26 tools, 3-tier MCP system. With Claude Code doubled rate limits still in effect, OMO's parallel sub-agent stack can now run all 11 specialists simultaneously without hitting the cap that constrained it through April.",
+    "categories": ["general", "cost"],
+    "recurring_note": "↑ Day 6 — 55K stars; doubled rate limits remove the parallel-depth cap that constrained OMO through April"
+  },
+  {
+    "slug": "claude-code-v2-1-133",
+    "name": "Claude Code v2.1.133 (May 7)",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "hook": "Released May 7, 23:49 UTC. New `worktree.baseRef` setting (`fresh` | `head`) — choose whether --worktree, EnterWorktree, and agent-isolation worktrees branch from `origin/<default>` or local HEAD, critical for repos with unpushed commits. Hooks now receive the active effort level via `effort.level` JSON field and `$CLAUDE_EFFORT` env var, enabling effort-gated automation. Critical fixes: parallel sessions losing 401 auth after token-refresh race conditions; subagents failing to discover project/user/plugin skills; subagents in isolated worktrees denied read/edit access to their own files; stale worktrees from prior sessions being reused; `HTTP(S)_PROXY` and mTLS not respected for full MCP OAuth flow; `Edit`/`Write` allow rules matching incorrectly on drive roots.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code  # → v2.1.133"
+  },
+  {
+    "slug": "hermes-agent",
+    "name": "Hermes Agent (NousResearch)",
+    "primary_url": "https://github.com/NousResearch/hermes-agent",
+    "hook": "131K GitHub stars in ten weeks — faster than LangChain or AutoGPT. NousResearch's self-improving agent creates skills from experience, searches past conversations, and builds persistent user models across sessions. v0.12.0 shipped April 30. Runs Claude via OpenRouter or direct API; includes a Claude Code SKILL.md. The self-improvement loop mirrors Anthropic's own 'Dreaming' feature (Managed Agents, May 6) — the parallel community vs. platform race to make agents improve between runs is now explicit.",
+    "categories": ["general"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash",
+    "recurring_note": "↑ Day 5 — 131K stars; community self-improvement loop now mirrors Anthropic's own Dreaming feature"
+  },
+  {
+    "slug": "piebald-system-prompts",
+    "name": "claude-code-system-prompts (Piebald-AI)",
+    "primary_url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+    "hook": "10K stars, updated today (May 8) for v2.1.133. Extracts Claude Code's complete internal system prompts directly from compiled source code — guaranteed to be exactly what Claude Code uses. Tracks 172 versions from v2.0.14 to today: main system prompt sections and ~40 reminders, 24 builtin tool descriptions, Plan/Explore/Task sub-agent prompts, Ultraplan mode prompt, CLAUDE.md generation, compaction, security review, agent creation, and 25+ builtin skills. The CHANGELOG.md is the only public record of how Anthropic silently mutates Claude Code's internal instructions — essential reading before upgrading in production.",
+    "categories": ["general"]
+  },
+  {
+    "slug": "hesreallyhim-awesome-claude-code",
+    "name": "awesome-claude-code (hesreallyhim)",
+    "primary_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "hook": "43K stars, 3.6K forks — the canonical hand-curated list of skills, hooks, slash-commands, orchestrators, applications, and plugins for Claude Code. Currently undergoing a major structural reorganization (1,157 commits; README_CLASSIC preserved as an alternative view while the new structure is prepared). Actively maintained with 1,495+ open submission issues making it both a reference and a crowdsourced discovery pipeline. If you only bookmark one Claude Code resource page, this is it.",
+    "categories": ["general"]
+  },
+  {
+    "slug": "alirezarezvani-claude-skills",
+    "name": "claude-skills (alirezarezvani)",
+    "primary_url": "https://github.com/alirezarezvani/claude-skills",
+    "hook": "14.1K stars (up from 13.8K on May 5). 235 production-ready skills across 9 domains: engineering, Playwright testing, product management, marketing, project management, regulatory compliance, C-level advisory, business growth, and finance. Standout: Skill Security Auditor (scans skills for command injection, exfiltration, privilege escalation before install); Self-Improving Agent; RAG Architect. One `./scripts/convert.sh --tool all` converts all 235 skills into native formats for Cursor, Aider, Windsurf, Codex, and 7 other tools — the broadest cross-platform coverage of any single collection.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add alirezarezvani/claude-skills",
+    "recurring_note": "↑ Day 4 — 14.1K stars (+300 since May 5); cross-platform conversion and Skill Security Auditor driving installs"
+  },
+  {
+    "slug": "n8n-mcp",
+    "name": "n8n-MCP (czlonkowski)",
+    "primary_url": "https://github.com/czlonkowski/n8n-mcp",
+    "hook": "20.1K stars. MCP server giving Claude Code full access to 1,650 n8n workflow nodes (820 core + 830 community), 2,352 workflow templates, and direct deployment to n8n instances via API. v2.50.4 shipped May 5. Free tier at dashboard.n8n-mcp.com offers 100 tool calls/day with zero setup — the only MCP server in the ecosystem with a hosted free tier. The v2.1.133 fix for HTTP proxy and mTLS not being respected during MCP OAuth flows directly unblocks enterprise n8n deployments running behind corporate proxies.",
+    "categories": ["mcp"],
+    "install": "npm install n8n-mcp",
+    "recurring_note": "↑ Day 4 — 20.1K stars; v2.1.133 MCP proxy fix unblocks corporate-proxy n8n installs"
+  },
+  {
+    "slug": "pal-mcp-server",
+    "name": "PAL MCP Server (BeehiveInnovations)",
+    "primary_url": "https://github.com/BeehiveInnovations/pal-mcp-server",
+    "hook": "11.5K stars. Provider Abstraction Layer — formerly zen-mcp-server, rebranded in May to reflect expanded scope. Claude Code, Gemini CLI, and Codex CLI can all orchestrate 50+ models across Gemini, OpenAI, Azure, Grok, and Ollama in a single workflow with conversation continuity preserved. The new `clink` feature pipes Claude Code output directly into Gemini CLI (or vice versa) with shared context — cost-routing strategy: Claude for reasoning, Gemini for fast drafts.",
+    "categories": ["mcp", "cost"],
+    "install": "git clone https://github.com/BeehiveInnovations/pal-mcp-server.git && ./run-server.sh",
+    "recurring_note": "↑ Day 4 — 11.5K stars; `clink` CLI bridge and rebrand driving discovery"
+  },
+  {
+    "slug": "career-ops",
+    "name": "career-ops (santifer)",
+    "primary_url": "https://github.com/santifer/career-ops",
+    "hook": "42.1K stars. AI-powered job search system built entirely on Claude Code: 14 skill modes, Go terminal dashboard, PDF resume generation, and Playwright-powered batch scanning of 45+ career portals. The creator used it to evaluate 740 job listings and land a Head of Applied AI role — the most-cited concrete real-world outcome story in the Claude Code ecosystem.",
+    "categories": ["general"],
+    "install": "git clone https://github.com/santifer/career-ops.git && cd career-ops && npm install && npx playwright install chromium",
+    "recurring_note": "↑ Day 6 — 42.1K stars; Head of Applied AI outcome story sustaining community attention"
+  },
+  {
+    "slug": "nanobot",
+    "name": "nanobot (HKUDS)",
+    "primary_url": "https://github.com/HKUDS/nanobot",
+    "hook": "41.6K stars, v0.1.5.post3. Ultra-lightweight personal AI agent: MCP support, multi-platform chat (Telegram, Discord, Slack, WeChat), 24/7 market analysis, and full-stack software engineering — core loop kept deliberately small and readable. Its cross-platform messaging integration makes it the only Claude Code-adjacent harness with a native mobile notification path via consumer chat apps.",
+    "categories": ["general"],
+    "install": "pip install nanobot-ai",
+    "recurring_note": "↑ Day 6 — 41.6K stars; mobile notification via consumer chat apps remains its unique differentiator"
+  },
+  {
+    "slug": "skyvern",
+    "name": "Skyvern (Skyvern-AI)",
+    "primary_url": "https://github.com/Skyvern-AI/skyvern",
+    "hook": "21.5K stars, v1.0.32. AI-powered browser automation that gives Claude Code eyes and hands in any web UI — clicks through forms, extracts data, handles 2FA, integrates with Bitwarden/1Password/LastPass. `skyvern setup claude-code` wires it directly into Claude Code's toolset; Anthropic Claude is a first-class supported LLM. The v2.1.133 fix for subagents not discovering skills makes Skyvern reliably available to Claude Code sub-agents for the first time — previously the setup step could succeed but the tool would be invisible to spawned workers.",
+    "categories": ["cost"],
+    "install": "pip install skyvern && skyvern setup claude-code",
+    "recurring_note": "↑ Day 5 — 21.5K stars; v2.1.133 subagent skill-discovery fix makes Skyvern reliably visible to sub-agents"
+  }
+]
