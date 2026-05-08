@@ -656,5 +656,169 @@
     "install": "git clone https://github.com/Crosstalk-Solutions/project-nomad",
     "added_date": "2026-05-04",
     "added_by": "user"
+  },
+  {
+    "slug": "ui-tars-desktop",
+    "name": "UI-TARS Desktop",
+    "primary_url": "https://github.com/bytedance/UI-TARS-desktop",
+    "secondary_urls": [],
+    "hook": "ByteDance's multimodal GUI-control agent — vision-language model drives natural-language computer + browser automation via screenshot recognition and mouse/keyboard. CLI + desktop app, ~30k stars, Apache 2.0.",
+    "categories": ["viral"],
+    "install": "npx @agent-tars/cli@latest",
+    "added_date": "2026-05-07",
+    "added_by": "user"
+  },
+  {
+    "slug": "clawbridge",
+    "name": "ClawBridge",
+    "primary_url": "https://clawbridge.ai/",
+    "secondary_urls": ["https://github.com/NickRomanek/clawbridge"],
+    "hook": "Local-first, BYOK desktop+browser automation agent — plain-English commands, workflow recording, and one dashboard that routes work to browser-use, OpenClaw, or Anthropic computer-use. No telemetry, no cloud.",
+    "categories": ["plugin"],
+    "install": "git clone https://github.com/NickRomanek/clawbridge",
+    "added_date": "2026-05-07",
+    "added_by": "user"
+  },
+  {
+    "slug": "accomplish",
+    "name": "Accomplish",
+    "primary_url": "https://github.com/accomplish-ai/accomplish",
+    "secondary_urls": ["https://accomplish.ai/"],
+    "hook": "Open-source AI coworker on your desktop — file management, document creation, browser tasks, all approval-gated and local. BYOK (OpenAI, Anthropic, Google, xAI) or Ollama. Electron + React, MIT, mac/Win/Linux.",
+    "categories": ["plugin"],
+    "install": "",
+    "added_date": "2026-05-07",
+    "added_by": "user"
+  },
+  {
+    "slug": "goose",
+    "name": "Goose (Block)",
+    "primary_url": "https://github.com/block/goose",
+    "secondary_urls": [],
+    "hook": "Block's open-source AI agent for code, workflows, and automation — desktop app + CLI + API, 15+ LLM providers, 70+ MCP extensions. Apache 2.0, ~44k stars.",
+    "categories": ["viral", "plugin"],
+    "install": "curl -fsSL https://github.com/block/goose/releases/download/stable/download_cli.sh | bash",
+    "added_date": "2026-05-07",
+    "added_by": "user"
+  },
+  {
+    "slug": "autobrowse",
+    "name": "AutoBrowse (Browserbase Skills)",
+    "primary_url": "https://github.com/browserbase/skills",
+    "secondary_urls": [],
+    "hook": "Self-improving browser-skill generator: inner agent browses, outer agent reads traces and rewrites the navigation strategy until it passes 2/3 runs — then the skill graduates into ~/.claude/skills as a permanent capability. Ships in the Browserbase Skills bundle.",
+    "categories": ["skill"],
+    "install": "npx skills add browserbase/skills",
+    "added_date": "2026-05-07",
+    "added_by": "user"
+  },
+  {
+    "slug": "auto-browser",
+    "name": "auto-browser",
+    "primary_url": "https://github.com/LvcidPsyche/auto-browser",
+    "secondary_urls": ["https://github.com/lttr/auto-browser"],
+    "hook": "MCP-native browser control plane — shared Playwright session, reusable auth profiles, approval gates, audit trails, and human-in-the-loop takeover. Local-first, works with any MCP client.",
+    "categories": ["mcp"],
+    "install": "git clone https://github.com/LvcidPsyche/auto-browser",
+    "added_date": "2026-05-07",
+    "added_by": "user"
+  },
+  {
+    "slug": "vibeyard",
+    "name": "Vibeyard",
+    "primary_url": "https://github.com/elirantutia/vibeyard",
+    "secondary_urls": ["https://github.com/SourceSurfer/vibeyard-windows"],
+    "hook": "Electron IDE built around AI coding agents — multi-session terminals, kanban + dashboard, swarm mode for parallel agents, session inspector, cost/token tracking, P2P session sharing over WebRTC. Supports Claude Code, Codex CLI, Gemini CLI.",
+    "categories": ["plugin"],
+    "install": "",
+    "added_date": "2026-05-07",
+    "added_by": "user"
+  },
+  {
+    "slug": "mempalace",
+    "name": "MemPalace",
+    "primary_url": "https://github.com/MemPalace/mempalace",
+    "secondary_urls": ["https://www.mempalace.tech/"],
+    "hook": "Open-source AI long-term memory system — verbatim conversation storage with vector search, ChromaDB + SQLite, fully local, ~170-token startup load. Tops the LongMemEval benchmark (96.6% raw / 100% hybrid). Co-developed by Milla Jovovich.",
+    "categories": ["plugin"],
+    "install": "git clone https://github.com/MemPalace/mempalace",
+    "added_date": "2026-05-07",
+    "added_by": "user"
+  },
+  {
+    "slug": "cocoindex",
+    "name": "CocoIndex",
+    "primary_url": "https://github.com/cocoindex-io/cocoindex",
+    "secondary_urls": [
+      "https://cocoindex.io/",
+      "https://github.com/cocoindex-io/cocoindex-code",
+      "https://github.com/cocoindex-io/cocoindex-claude",
+      "https://github.com/cocoindex-io/realtime-codebase-indexing"
+    ],
+    "hook": "Rust-based incremental data framework for long-horizon AI agents — delta-only processing keeps RAG and codebase indexes fresh without reprocessing. Companion AST code-search saves ~70% tokens. Apache 2.0, ~6.9k stars.",
+    "categories": ["cost", "skill"],
+    "install": "pip install cocoindex",
+    "added_date": "2026-05-07",
+    "added_by": "user"
+  },
+  {
+    "slug": "claude-subconscious",
+    "name": "Claude Subconscious",
+    "primary_url": "https://github.com/letta-ai/claude-subconscious",
+    "secondary_urls": [],
+    "hook": "Background agent that watches your Claude Code sessions, reads your files, builds long-term memory, and whispers guidance back into the next response. Built on the Letta Code SDK — demo of subconscious-agent pattern.",
+    "categories": ["plugin"],
+    "install": "npm install -g @letta-ai/letta-code",
+    "added_date": "2026-05-07",
+    "added_by": "user"
+  },
+  {
+    "slug": "repomix",
+    "name": "Repomix",
+    "primary_url": "https://github.com/yamadashy/repomix",
+    "secondary_urls": ["https://repomix.com/"],
+    "hook": "Packs an entire repo into a single AI-optimized file (XML, Markdown, JSON, or plain text) with token counting, security scanning, and compression — the standard tool for feeding codebases to Claude/ChatGPT. MIT, ~24.5k stars.",
+    "categories": ["cost", "viral"],
+    "install": "npm install -g repomix",
+    "added_date": "2026-05-07",
+    "added_by": "user"
+  },
+  {
+    "slug": "obsidian-mind",
+    "name": "Obsidian Mind",
+    "primary_url": "https://github.com/breferrari/obsidian-mind",
+    "secondary_urls": [],
+    "hook": "Obsidian vault that doubles as a persistent memory store for Claude Code, Codex CLI, and Gemini CLI — a SessionStart hook auto-injects North Star goals, active projects, recent changes, and the full vault index into every session.",
+    "categories": ["plugin"],
+    "install": "git clone https://github.com/breferrari/obsidian-mind",
+    "added_date": "2026-05-07",
+    "added_by": "user"
+  },
+  {
+    "slug": "hermes-desktop",
+    "name": "Hermes Desktop",
+    "primary_url": "https://github.com/fathah/hermes-desktop",
+    "secondary_urls": [
+      "https://hermes-ai.net/desktop/",
+      "https://github.com/dodo-reach/hermes-desktop",
+      "https://github.com/Felix-Forever/hermes-agent-desktop",
+      "https://github.com/outsourc-e/hermes-workspace"
+    ],
+    "hook": "Native desktop GUI for Hermes Agent — streaming chat with tool progress, sessions, profiles, memory, skills, scheduling, and live token + cost tracking. macOS .dmg + Linux .AppImage/.deb (.NET).",
+    "categories": ["plugin"],
+    "install": "",
+    "added_date": "2026-05-07",
+    "added_by": "user"
+  },
+  {
+    "slug": "mercury-agent",
+    "name": "Mercury Agent",
+    "primary_url": "https://github.com/cosmicstack-labs/mercury-agent",
+    "secondary_urls": [],
+    "hook": "Permission-hardened, always-on AI agent with persistent \"Second Brain\" memory, token budgets, and CLI + Telegram channels — daemon mode with crash recovery on mac/Linux/Windows. MIT, ~2k stars.",
+    "categories": ["plugin"],
+    "install": "npx @cosmicstack/mercury-agent",
+    "added_date": "2026-05-07",
+    "added_by": "user"
   }
 ]
