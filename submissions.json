@@ -793,5 +793,21 @@
     "install": "git clone https://github.com/breferrari/obsidian-mind",
     "added_date": "2026-05-07",
     "added_by": "user"
+  },
+  {
+    "slug": "hermes-desktop",
+    "name": "Hermes Desktop",
+    "primary_url": "https://github.com/fathah/hermes-desktop",
+    "secondary_urls": [
+      "https://hermes-ai.net/desktop/",
+      "https://github.com/dodo-reach/hermes-desktop",
+      "https://github.com/Felix-Forever/hermes-agent-desktop",
+      "https://github.com/outsourc-e/hermes-workspace"
+    ],
+    "hook": "Native desktop GUI for Hermes Agent — streaming chat with tool progress, sessions, profiles, memory, skills, scheduling, and live token + cost tracking. macOS .dmg + Linux .AppImage/.deb (.NET).",
+    "categories": ["plugin"],
+    "install": "",
+    "added_date": "2026-05-07",
+    "added_by": "user"
   }
 ]
