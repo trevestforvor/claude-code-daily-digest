@@ -809,5 +809,16 @@
     "install": "",
     "added_date": "2026-05-07",
     "added_by": "user"
+  },
+  {
+    "slug": "mercury-agent",
+    "name": "Mercury Agent",
+    "primary_url": "https://github.com/cosmicstack-labs/mercury-agent",
+    "secondary_urls": [],
+    "hook": "Permission-hardened, always-on AI agent with persistent \"Second Brain\" memory, token budgets, and CLI + Telegram channels — daemon mode with crash recovery on mac/Linux/Windows. MIT, ~2k stars.",
+    "categories": ["plugin"],
+    "install": "npx @cosmicstack/mercury-agent",
+    "added_date": "2026-05-07",
+    "added_by": "user"
   }
 ]
