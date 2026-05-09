@@ -864,5 +864,16 @@
     "install": "git clone https://github.com/Anil-matcha/Open-Generative-AI",
     "added_date": "2026-05-08",
     "added_by": "user"
+  },
+  {
+    "slug": "peepshow",
+    "name": "Peepshow",
+    "primary_url": "https://github.com/t0mtaylor/peepshow",
+    "secondary_urls": ["https://www.peepshow.dev/"],
+    "hook": "Turns video / GIF / APNG / WebP into a timeline of still frames (+ optional whisper.cpp transcript) so any LLM can \"watch\" it. Ships as a Claude Code plugin, agent manifests for Cursor/Windsurf/Codex/Gemini, and a CLI with 71 pluggable sinks (SQL, vector DBs, AI memory, observability, more).",
+    "categories": ["plugin", "skill"],
+    "install": "npx skills add t0mtaylor/peepshow",
+    "added_date": "2026-05-08",
+    "added_by": "user"
   }
 ]
