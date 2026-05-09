@@ -875,5 +875,16 @@
     "install": "npx skills add t0mtaylor/peepshow",
     "added_date": "2026-05-08",
     "added_by": "user"
+  },
+  {
+    "slug": "gemini-cli",
+    "name": "Gemini CLI",
+    "primary_url": "https://github.com/google-gemini/gemini-cli",
+    "secondary_urls": [],
+    "hook": "Google's official open-source terminal agent for Gemini — file ops, shell, Google Search grounding, GitHub integration, and MCP-server support. Apache 2.0, ~104k stars.",
+    "categories": ["viral"],
+    "install": "npm install -g @google/gemini-cli",
+    "added_date": "2026-05-08",
+    "added_by": "user"
   }
 ]
