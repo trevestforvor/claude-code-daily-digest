@@ -853,5 +853,16 @@
     "install": "",
     "added_date": "2026-05-08",
     "added_by": "user"
+  },
+  {
+    "slug": "open-generative-ai",
+    "name": "Open Generative AI",
+    "primary_url": "https://github.com/Anil-matcha/Open-Generative-AI",
+    "secondary_urls": ["https://dev.muapi.ai/open-generative-ai"],
+    "hook": "Uncensored, self-hosted alternative to Higgsfield / Freepik / Krea / OpenArt — 200+ image and video models (Flux, Midjourney, Kling, Sora, Veo, Seedream, LTX Lipsync, Wan 2.2…) across four studios (Image, Video, Lip Sync, Cinema). MIT.",
+    "categories": ["design"],
+    "install": "git clone https://github.com/Anil-matcha/Open-Generative-AI",
+    "added_date": "2026-05-08",
+    "added_by": "user"
   }
 ]
