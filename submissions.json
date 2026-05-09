@@ -820,5 +820,16 @@
     "install": "npx @cosmicstack/mercury-agent",
     "added_date": "2026-05-07",
     "added_by": "user"
+  },
+  {
+    "slug": "floci",
+    "name": "Floci",
+    "primary_url": "https://github.com/floci-io/floci",
+    "secondary_urls": ["https://github.com/floci-io/floci-az"],
+    "hook": "Free, MIT-licensed LocalStack replacement after LocalStack's community edition sunset — Quarkus native, 41 AWS services on :4566 with ~24ms startup and ~13 MiB idle, real Docker containers for Lambda/RDS/ECS/EKS. Companion Azure emulator (floci-az).",
+    "categories": ["cost"],
+    "install": "docker run -p 4566:4566 floci-io/floci",
+    "added_date": "2026-05-08",
+    "added_by": "user"
   }
 ]
