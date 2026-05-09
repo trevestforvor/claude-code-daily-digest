@@ -842,5 +842,16 @@
     "install": "git clone https://github.com/ComposioHQ/agent-orchestrator",
     "added_date": "2026-05-08",
     "added_by": "user"
+  },
+  {
+    "slug": "halo",
+    "name": "Halo (hello-halo)",
+    "primary_url": "https://github.com/openkursar/hello-halo",
+    "secondary_urls": [],
+    "hook": "24/7 desktop AI agent built on Claude Code — visual GUI for chat, remote access, file management, and a built-in AI browser. 100% local, BYOK, no backend. ~300k-line product layer over the Claude Code core.",
+    "categories": ["plugin"],
+    "install": "",
+    "added_date": "2026-05-08",
+    "added_by": "user"
   }
 ]
