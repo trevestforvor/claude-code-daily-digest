@@ -831,5 +831,16 @@
     "install": "docker run -p 4566:4566 floci-io/floci",
     "added_date": "2026-05-08",
     "added_by": "user"
+  },
+  {
+    "slug": "agent-orchestrator",
+    "name": "Agent Orchestrator (Composio)",
+    "primary_url": "https://github.com/ComposioHQ/agent-orchestrator",
+    "secondary_urls": ["https://github.com/andyrewlee/awesome-agent-orchestrators"],
+    "hook": "Composio's fleet manager for parallel coding agents — each agent gets its own git worktree, branch, and PR; auto-handles CI fixes and review-comment turn-around. You only step in when judgment is needed.",
+    "categories": ["plugin"],
+    "install": "git clone https://github.com/ComposioHQ/agent-orchestrator",
+    "added_date": "2026-05-08",
+    "added_by": "user"
   }
 ]
