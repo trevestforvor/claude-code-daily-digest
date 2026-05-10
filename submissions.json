@@ -886,5 +886,16 @@
     "install": "npm install -g @google/gemini-cli",
     "added_date": "2026-05-08",
     "added_by": "user"
+  },
+  {
+    "slug": "openfang",
+    "name": "OpenFang",
+    "primary_url": "https://github.com/RightNow-AI/openfang",
+    "secondary_urls": [],
+    "hook": "Open-source agent operating system in Rust (14 crates) — \"Hands\" (autonomous agents) configured via HAND.toml, WASM-sandboxed tools with fuel metering + watchdogs, FangHub registry, and a Claude Code driver. 1.7k+ tests.",
+    "categories": ["plugin"],
+    "install": "git clone https://github.com/RightNow-AI/openfang",
+    "added_date": "2026-05-08",
+    "added_by": "user"
   }
 ]
