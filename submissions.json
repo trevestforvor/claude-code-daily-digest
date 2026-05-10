@@ -897,5 +897,16 @@
     "install": "git clone https://github.com/RightNow-AI/openfang",
     "added_date": "2026-05-08",
     "added_by": "user"
+  },
+  {
+    "slug": "openhuman",
+    "name": "OpenHuman",
+    "primary_url": "https://github.com/tinyhumansai/openhuman",
+    "secondary_urls": [],
+    "hook": "Private personal AI with persistent memory across docs/email/chat, a memory graph, batteries-included tools (web fetch, coder, native voice with TTS + mascot lip-sync, live Google Meet agent), and TokenJuice compression that cuts cost up to ~80%.",
+    "categories": ["plugin", "cost"],
+    "install": "git clone https://github.com/tinyhumansai/openhuman",
+    "added_date": "2026-05-08",
+    "added_by": "user"
   }
 ]
