@@ -923,5 +923,19 @@
     "install": "npx skills add referodesign/refero_skill",
     "added_date": "2026-05-08",
     "added_by": "user"
+  },
+  {
+    "slug": "invidious",
+    "name": "Invidious",
+    "primary_url": "https://github.com/iv-org/invidious",
+    "secondary_urls": [
+      "https://instances.invidious.io/",
+      "https://docs.invidious.io/installation/"
+    ],
+    "hook": "Open-source, ad-free, no-tracking YouTube front-end — runs without JavaScript, works on minimal hardware, self-hostable. AGPL-3.0, ~19.8k stars.",
+    "categories": [],
+    "install": "",
+    "added_date": "2026-05-08",
+    "added_by": "user"
   }
 ]
