@@ -908,5 +908,20 @@
     "install": "git clone https://github.com/tinyhumansai/openhuman",
     "added_date": "2026-05-08",
     "added_by": "user"
+  },
+  {
+    "slug": "refero",
+    "name": "Refero",
+    "primary_url": "https://refero.design/mcp",
+    "secondary_urls": [
+      "https://github.com/referodesign/refero_skill",
+      "https://github.com/lorecraft-io/refero-design-mcp",
+      "https://styles.refero.design/"
+    ],
+    "hook": "Design methodology + MCP that has Claude Code research first, code second — semantic search across 130k+ real product screens and 10k+ user flows, then apply craft rules for typography, color, spacing, motion. Skill bundle + community MCP.",
+    "categories": ["skill", "mcp", "design"],
+    "install": "npx skills add referodesign/refero_skill",
+    "added_date": "2026-05-08",
+    "added_by": "user"
   }
 ]
