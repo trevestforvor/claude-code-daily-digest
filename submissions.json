@@ -937,5 +937,16 @@
     "install": "",
     "added_date": "2026-05-08",
     "added_by": "user"
+  },
+  {
+    "slug": "whisper-money",
+    "name": "Whisper Money",
+    "primary_url": "https://github.com/whisper-money/whisper-money",
+    "secondary_urls": ["https://whisper.money/"],
+    "hook": "Privacy-first personal-finance app with E2E encryption — server never sees plaintext transactions (intentional: no AI on your financial data), self-hostable, Open Banking sync + CSV/Excel import. Open source.",
+    "categories": [],
+    "install": "",
+    "added_date": "2026-05-08",
+    "added_by": "user"
   }
 ]
