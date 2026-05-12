@@ -948,5 +948,16 @@
     "install": "",
     "added_date": "2026-05-08",
     "added_by": "user"
+  },
+  {
+    "slug": "steno",
+    "name": "Steno",
+    "primary_url": "https://github.com/deemuk123/steno",
+    "secondary_urls": [],
+    "hook": "Rust-based reversible text compressor that runs before content reaches an LLM — strips noise, shortens common phrases, abbreviates domain terms. MCP server (steno_compress/decompress/stats) works with Claude Code, Cursor, Windsurf. 40-70% token savings, up to 95% combined with RTK + MemPalace.",
+    "categories": ["cost", "mcp"],
+    "install": "cargo install steno",
+    "added_date": "2026-05-08",
+    "added_by": "user"
   }
 ]
