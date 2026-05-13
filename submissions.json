@@ -959,5 +959,30 @@
     "install": "cargo install steno",
     "added_date": "2026-05-08",
     "added_by": "user"
+  },
+  {
+    "slug": "supertonic-3",
+    "name": "Supertonic 3",
+    "primary_url": "https://github.com/supertone-inc/supertonic",
+    "secondary_urls": [
+      "https://huggingface.co/Supertone/supertonic-3",
+      "https://supertonictts.github.io/"
+    ],
+    "hook": "Lightning-fast on-device multilingual TTS — 31 languages, ~99M-param ONNX (vs 0.7B-2B for VoxCPM2), runs on CPU with no GPU. v3 adds expression tags <laugh>/<breath>/<sigh>. MIT code + OpenRAIL-M weights.",
+    "categories": ["viral"],
+    "install": "",
+    "added_date": "2026-05-13",
+    "added_by": "user"
+  },
+  {
+    "slug": "superserve",
+    "name": "SuperServe",
+    "primary_url": "https://github.com/superserve-ai/superserve",
+    "secondary_urls": ["https://superserve.ai/"],
+    "hook": "Sandbox infrastructure for AI agents — managed runtimes for agents to execute tools and code safely. PaaS + open-source SDK.",
+    "categories": ["plugin"],
+    "install": "",
+    "added_date": "2026-05-13",
+    "added_by": "user"
   }
 ]
