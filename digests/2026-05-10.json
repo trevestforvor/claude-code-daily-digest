@@ -1,0 +1,129 @@
+[
+  {
+    "slug": "claude-mem",
+    "name": "claude-mem (thedotmack)",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "74.4K stars. Claude Code plugin that hooks into 5 lifecycle events (SessionStart, UserPromptSubmit, PostToolUse, Stop, SessionEnd) to automatically capture everything Claude does during coding sessions — then compresses observations via Claude's agent SDK and injects relevant context back into future sessions. Stores observations in SQLite with Chroma vector DB for semantic retrieval; web viewer at localhost:37777 shows the accumulating memory with token cost visibility and `<private>` tag support for opt-out.",
+    "categories": ["design", "skill"],
+    "install": "npx claude-mem install"
+  },
+  {
+    "slug": "owl-listener-designer-skills",
+    "name": "Designer Skills Collection (Owl-Listener)",
+    "primary_url": "https://github.com/Owl-Listener/designer-skills",
+    "hook": "87 skills and 27 commands across 8 Claude Code plugins covering the complete design lifecycle — from design-research (12 skills) and ux-strategy (11) through prototyping-testing (8) and design-ops (9). Created by Marie Claire Dean to teach Claude what designers actually know, not generic UI rules. MIT licensed; endorsed publicly by Adham Dannaway — the only collection that covers handoff from raw research through design-ops.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add Owl-Listener/designer-skills",
+    "recurring_note": "↑ Day 4 — still the only collection spanning the complete design lifecycle across all 8 discipline areas"
+  },
+  {
+    "slug": "caveman",
+    "name": "caveman (JuliusBrussee)",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "57.4K stars. Claude Code skill that reduces output tokens 65–75% by instructing the model to drop articles, filler words, and pleasantries while keeping all technical substance — benchmarked at 1,214 normal tokens vs 294 caveman tokens per response across 10 test tasks. Four intensity levels: Lite, Full (default), Ultra, and Wenyan (Classical Chinese for maximum compression); auto-installs across 30+ agents. A March 2026 arXiv paper found that brevity constraints improved accuracy by 26 percentage points on problems where verbosity caused errors.",
+    "categories": ["cost"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash"
+  },
+  {
+    "slug": "rtk",
+    "name": "RTK — Rust Token Killer (rtk-ai)",
+    "primary_url": "https://github.com/rtk-ai/rtk",
+    "hook": "45.5K stars. Single Rust binary (zero dependencies) that sits between Claude Code and the shell — intercepts stdout from 100+ commands (git, npm, cargo, pytest, docker, kubectl, AWS CLI) and compresses it 60–90% before it reaches the model. A 45-line `ls` output (~800 tokens) becomes 12 lines (~150 tokens); `git push` shrinks from 200 tokens to 10 tokens. v0.39.0 shipped May 6; `rtk gain` shows cumulative token savings across all sessions.",
+    "categories": ["cost"],
+    "install": "brew install rtk"
+  },
+  {
+    "slug": "decolua-9router",
+    "name": "9Router (decolua)",
+    "primary_url": "https://github.com/decolua/9router",
+    "hook": "6.3K stars. Smart routing proxy that intercepts Claude Code requests and applies token compression before forwarding — saving 20–40% of token spend. Implements a 3-tier fallback (subscription providers first, cheap options second, free tiers last) so coding continues uninterrupted when quotas deplete. Configure via `~/.claude/config.json` with `http://localhost:20128/v1` as the API base; live quota tracking dashboard at `http://localhost:20128`.",
+    "categories": ["cost"],
+    "install": "npm install -g 9router && 9router",
+    "recurring_note": "↑ Day 3 — 6.3K stars; quota-depletion continuity use case continues to drive installs"
+  },
+  {
+    "slug": "claude-microsoft-365",
+    "name": "Claude for Microsoft 365",
+    "primary_url": "https://claude.com/claude-for-microsoft-365",
+    "hook": "Claude add-ins for Excel, Word, and PowerPoint are generally available; Outlook is in public beta. All four install from the Microsoft Marketplace in under 5 minutes and work on Windows, Mac, and web versions of Office. Available to all paid Claude plan subscribers — no separate Copilot-style add-on fee — making it the first AI-native assistant to integrate the full Microsoft 365 suite without requiring an enterprise Microsoft 365 Copilot license.",
+    "categories": ["anthropic"],
+    "install": "Search 'Claude' in Microsoft Marketplace → Add for each Office app",
+    "recurring_note": "↑ Day 3 — Outlook public beta adding new users daily; no-separate-license differentiator sustaining enterprise adoption"
+  },
+  {
+    "slug": "everything-claude-code",
+    "name": "everything-claude-code (affaan-m)",
+    "primary_url": "https://github.com/affaan-m/everything-claude-code",
+    "hook": "178K stars, 27.5K forks — Anthropic hackathon winner (February 2026). The most comprehensive Claude Code optimization system: 182 specialized skills across coding standards, backend/frontend patterns, TDD, and 15+ domain-specific workflows (ClickHouse, Django, Spring Boot), plus 48 delegation agents (planning, architecture, code review, language-specific reviewers). Continuous learning v2 extracts instinct patterns with confidence scoring across sessions; AgentShield integration adds 102 static analysis rules and 1,282 security tests. Cross-platform: Claude Code, Cursor, Codex, OpenCode. v2.0.0-rc.1 active.",
+    "categories": ["skill", "general"],
+    "install": "./install.sh --profile full"
+  },
+  {
+    "slug": "get-shit-done",
+    "name": "get-shit-done (gsd-build)",
+    "primary_url": "https://github.com/gsd-build/get-shit-done",
+    "hook": "61.3K stars, v1.41.1 (May 9). Lightweight meta-prompting system that solves context rot — the quality degradation as Claude fills its context window. Externalizes state into PROJECT.md, REQUIREMENTS.md, ROADMAP.md, and STATE.md, then runs each task in a fresh subagent context with atomic git commits per task. Multi-agent orchestration with parallel execution; trusted by engineers at Amazon, Google, Shopify, and Webflow. Works across Claude Code, OpenCode, Gemini CLI, Codex, Cursor, and Windsurf.",
+    "categories": ["general"],
+    "install": "npx get-shit-done-cc@latest"
+  },
+  {
+    "slug": "graphify",
+    "name": "graphify (safishamsi)",
+    "primary_url": "https://github.com/safishamsi/graphify",
+    "hook": "45.9K stars, v0.7.13 (May 9). Converts any codebase, SQL schema, PDF, image, or video collection into a queryable knowledge graph with a visual interactive HTML representation — processing code locally via AST with tree-sitter (zero API calls for source files), sending non-code files through AI for semantic analysis. Identifies 'god nodes' (most-connected concepts) and surfaces surprising cross-module relationships; 29 programming languages. Run `/graphify .` to generate `graph.html`, `GRAPH_REPORT.md`, and `graph.json`.",
+    "categories": ["general"],
+    "install": "uv tool install graphifyy && graphify install"
+  },
+  {
+    "slug": "last30days-skill",
+    "name": "last30days-skill (mvanhorn)",
+    "primary_url": "https://github.com/mvanhorn/last30days-skill",
+    "hook": "25.4K stars, v3.2.0 released today (May 10). Cross-source research skill that simultaneously queries Reddit, X, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the web — scoring results by real engagement metrics (upvotes, prediction odds) rather than editorial ranking. Intelligently resolves topics to relevant accounts, subreddits, and hashtags before querying; generates shareable HTML briefs with citations and a 'Best Takes' section. ELI5 mode and GitHub person-mode for tracking individual devs' recent activity.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add mvanhorn/last30days-skill"
+  },
+  {
+    "slug": "snyk-claude-code",
+    "name": "Snyk for Claude Code",
+    "primary_url": "https://snyk.io/snyk-for-claude-code/",
+    "secondary_urls": ["https://finance.yahoo.com/sectors/technology/articles/snyk-embeds-anthropics-claude-advance-174900036.html"],
+    "hook": "One command wires Snyk's scanner into Claude Code; Claude auto-discovers vulnerabilities in code it generates and produces developer-ready fixes, with Claude's reasoning powering both detection and remediation. Enterprise tier adds Evo by Snyk — discovers every AI asset across the org (models, agents, MCP servers, datasets), red-teams running agents for prompt injection and data exfiltration, and enforces runtime policy on tool calls before damage occurs. Requires Snyk CLI v1.1298.0+.",
+    "categories": ["mcp"],
+    "install": "npx -y snyk@latest mcp configure --tool=claude-cli",
+    "recurring_note": "↑ Day 3 — MCP security auditing pattern maturing as teams scale Claude Code usage"
+  },
+  {
+    "slug": "prismatic-skills",
+    "name": "Prismatic Skills for Claude Code",
+    "primary_url": "https://github.com/prismatic-io/prismatic-skills",
+    "secondary_urls": ["https://prismatic.io/blog/introducing-prismatic-skills-for-claude-code/"],
+    "hook": "Five purpose-built skills turn Claude into an integration specialist: CNI Builder (TypeScript code-native integrations), Component Builder (custom API components), Embed Advisor (customer-facing integration UIs), Orby (monitor and operate Prismatic environments), Migration Analyzer (migrate existing integrations to Prismatic). Works alongside the Prism MCP dev server so Claude has both the knowledge and direct platform access. Launched May 4 as open-source; free for all Prismatic customers on any plan tier.",
+    "categories": ["skill"],
+    "install": "See README at github.com/prismatic-io/prismatic-skills",
+    "recurring_note": "↑ Day 3 — integration-specialist skill collection expanding adoption among Prismatic's enterprise customer base"
+  },
+  {
+    "slug": "piebald-system-prompts",
+    "name": "claude-code-system-prompts (Piebald-AI)",
+    "primary_url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+    "hook": "10K stars. Extracts Claude Code's complete internal system prompts directly from compiled source code — guaranteed verbatim, tracks every version from v2.0.14 onward. The CHANGELOG.md is the only public record of how Anthropic silently mutates Claude Code's internal instructions between releases; now capturing v2.1.136–138 diffs including the new `autoMode.hard_deny` classifier language that closes the retry-loop bypass in auto mode.",
+    "categories": ["general"],
+    "recurring_note": "↑ Day 4 — 10K stars; v2.1.136-138 hard_deny and MCP persistence diffs now captured"
+  },
+  {
+    "slug": "claude-code-tips",
+    "name": "claude-code-tips (ykdojo)",
+    "primary_url": "https://github.com/ykdojo/claude-code-tips",
+    "hook": "8.2K stars. 45 practical tips from beginner to power user, plus three installable tools: a custom status line showing model, git branch, uncommitted file count, and token usage in 10 color themes; a one-liner that cuts Claude Code's internal system prompt overhead ~50% (saving ~10,000 tokens per session); and the dx plugin bundling `/dx:gha` (GitHub Actions analysis), `/dx:clone` (branch a conversation), and `/dx:handoff` (preserve context continuity across sessions).",
+    "categories": ["general"],
+    "install": "claude plugin marketplace add ykdojo/claude-code-tips"
+  },
+  {
+    "slug": "hesreallyhim-awesome-claude-code",
+    "name": "awesome-claude-code (hesreallyhim)",
+    "primary_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "hook": "43.2K stars, 3.6K forks — the canonical hand-curated list of skills, hooks, slash-commands, orchestrators, applications, and plugins for Claude Code. Structural reorganization ongoing (README_CLASSIC preserved as an alternative view); 1,495+ open submission issues making it both a reference and a crowdsourced discovery pipeline with 4,200+ skills and 770+ MCP servers now indexed.",
+    "categories": ["general"],
+    "recurring_note": "↑ Day 4 — 43.2K stars; 4,200+ skills and 770+ MCP servers now indexed, structural reorganization in progress"
+  }
+]

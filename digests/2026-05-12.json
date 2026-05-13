@@ -1,0 +1,136 @@
+[
+  {
+    "slug": "awesome-design-md",
+    "name": "awesome-design-md (VoltAgent)",
+    "primary_url": "https://github.com/VoltAgent/awesome-design-md",
+    "hook": "76.3K stars and still climbing — up from 71K just days ago. A curated collection of 73 DESIGN.md files, one per brand: Apple, Stripe, Uber, Anthropic/Claude, Tesla, Notion, Figma, Supabase, Linear, Spotify, NVIDIA, and 62 others. Each file is plain markdown describing colors, typography, spacing, and visual feel. Drop one into your project root and Claude generates a matching UI without any config or dependencies. No npm package, no install command — just plain text that any model can read as context.",
+    "categories": ["design"],
+    "install": "See README — ask Claude to clone and copy the relevant DESIGN.md into your project"
+  },
+  {
+    "slug": "addyosmani-agent-skills",
+    "name": "agent-skills (addyosmani)",
+    "primary_url": "https://github.com/addyosmani/agent-skills",
+    "hook": "40.2K stars. Addy Osmani (ex-Google Chrome DevRel, now at Anthropic) applied Google's production engineering discipline to Claude Code via 22 skills spanning the full dev lifecycle: DEFINE → PLAN → BUILD → VERIFY → REVIEW → SHIP. Standouts: spec-driven-development (writes spec before touching code), doubt-driven-development (forces agents to surface uncertainty explicitly), code-simplification (structural review after every build), and shipping-and-launch (pre-ship checklist with ADR generation). Cross-platform: Claude Code, Cursor, Gemini CLI, Windsurf. Bakes in Google's Software Engineering at Google principles without requiring you to know them.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add addyosmani/agent-skills"
+  },
+  {
+    "slug": "claude-managed-agents-2026",
+    "name": "Claude Managed Agents: Dreaming, Outcomes & Multiagent Orchestration",
+    "primary_url": "https://claude.com/blog/new-in-claude-managed-agents",
+    "secondary_urls": [
+      "https://9to5mac.com/2026/05/07/anthropic-updates-claude-managed-agents-with-three-new-features/",
+      "https://venturebeat.com/technology/anthropic-introduces-dreaming-a-system-that-lets-ai-agents-learn-from-their-own-mistakes"
+    ],
+    "hook": "Announced at Code with Claude 2026 (San Francisco, May 6). Three new features in Managed Agents: Dreaming (research preview) — a scheduled background process that reviews past agent sessions, extracts patterns, and curates memory stores so agents improve between runs without changing model weights; Harvey ran the pilot and saw task completion climb ~6x. Outcomes (public beta) — write a rubric, a separate grader evaluates output in its own context window so judgment stays independent of the agent's reasoning, then the agent takes another pass until it passes. Multiagent Orchestration (public beta) — a lead agent fans work out to specialist subagents running in parallel. Request Dreaming access at claude.com/managed-agents.",
+    "categories": ["anthropic"],
+    "install": "Available via Claude API — request Dreaming preview at claude.com/managed-agents"
+  },
+  {
+    "slug": "claude-code-routines",
+    "name": "Claude Code Routines",
+    "primary_url": "https://claude.com/code-with-claude/san-francisco",
+    "hook": "Also announced May 6 at Code with Claude 2026. Routines package a Claude Code configuration — your prompt, one or more repositories, and the tools or connectors the job depends on — and run it on Anthropic-managed cloud. Three trigger types: recurring cadence (cron), on-demand, and GitHub events (PRs, releases). A single Routine can combine all three, so the same setup runs nightly, fires from a deploy script, and reacts to every new pull request without rebuilding the workflow. Eliminates the infrastructure layer between your agent config and production execution.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "claude-code-v2-1-139",
+    "name": "Claude Code v2.1.139 (May 11)",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "hook": "Released yesterday (May 11, 18:43). Three notable additions: `claude agents` (Research Preview) — new command that shows all current agent sessions in a unified view. `/goal` — set a completion condition in natural language; Claude keeps working until the condition is met, no manual check-ins needed. `claude plugin details <name>` — lists every component a plugin installs and its token cost before you commit. MCP stdio servers now receive `CLAUDE_PROJECT_DIR` so they can scope actions to the right working directory. Plus improved transcript navigation (keyboard shortcuts `{`/`}`, `v`, `?`) and multiple UI fixes.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code  # → v2.1.139"
+  },
+  {
+    "slug": "claude-code-rate-limits-colossus",
+    "name": "Claude Code Rate Limits Doubled + Colossus 1",
+    "primary_url": "https://9to5google.com/2026/05/06/claude-code-is-getting-higher-usage-limits-doubled-for-most-users/",
+    "secondary_urls": [
+      "https://www.xda-developers.com/anthropic-is-doubling-claude-codes-hourly-rate-limits-removing-peak-hours-andworking-with-spacex/"
+    ],
+    "hook": "Announced May 6 alongside the Code with Claude 2026 conference: Claude Code's 5-hour rate limits are doubled for Pro, Max, Team, and seat-based Enterprise plans. Peak-hour throttling is removed entirely for Pro and Max. The capacity increase is backed by Colossus 1, Anthropic's new compute cluster built on SpaceX/xAI's Colossus infrastructure. Additional connectors for creative tools also shipped: Blender, Adobe suite, Ableton, Affinity, Autodesk Fusion, Resolume Arena and Wire, SketchUp, and Splice.",
+    "categories": ["anthropic", "cost"]
+  },
+  {
+    "slug": "higgsfield-mcp",
+    "name": "Higgsfield MCP",
+    "primary_url": "https://higgsfield.ai/mcp",
+    "hook": "Official hosted MCP server giving Claude Code access to 30+ image and video generation models in a single endpoint — no self-hosting required. Image models include Soul 2.0 (photorealism) and Nano Banana Pro; video models include Sora 2, Veo 3.1, and Kling 3.0. Launched April 30; works with Claude (web + Claude Code), OpenClaw, Hermes Agent, and NemoClaw. One command wires it in; from then on Claude can generate visual content inline during any coding session without switching tools.",
+    "categories": ["mcp"],
+    "install": "claude mcp add --transport http --scope user higgsfield https://mcp.higgsfield.ai/mcp",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "mitiga-mcp-oauth-attack",
+    "name": "MCP OAuth Token Theft — Mitiga Research",
+    "primary_url": "https://www.mitiga.io/blog/claude-code-mcp-token-theft-mitm",
+    "secondary_urls": [
+      "https://www.securityweek.com/claude-code-oauth-tokens-can-be-stolen-through-stealthy-mcp-hijacking/"
+    ],
+    "hook": "Mitiga Labs disclosed an attack chain that silently steals Claude Code's OAuth tokens via malicious npm packages. A postinstall hook rewrites `~/.claude.json` to redirect MCP traffic through an attacker-controlled proxy; every time Claude Code initializes or refreshes a Managed Agents session, the token transits to the attacker. If the user rotates the token, the hook rewrites the config again on next load — achieving persistence. Requests still appear legitimate in SaaS audit logs. Reported to Anthropic April 10, 2026; Anthropic replied April 12 that it was 'out of scope'. Covered this week by SecurityWeek, eSecurity Planet, and CXO Digital Pulse. Mitigation: audit `~/.claude.json` for unexpected MCP URLs and avoid untrusted npm packages.",
+    "categories": ["mcp", "general"]
+  },
+  {
+    "slug": "caveman",
+    "name": "caveman (JuliusBrussee)",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "57.4K+ stars. Claude Code skill that reduces output tokens 65–75% by instructing the model to drop articles, filler words, and pleasantries while keeping all technical substance — benchmarked at 1,214 normal tokens vs 294 caveman tokens per response across 10 test tasks. Four intensity levels: Lite, Full (default), Ultra, and Wenyan (Classical Chinese for maximum compression); auto-installs across 30+ agents. A March 2026 arXiv paper found that brevity constraints improved accuracy by 26 percentage points on problems where verbosity caused errors.",
+    "categories": ["cost"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash",
+    "recurring_note": "↑ Day 2"
+  },
+  {
+    "slug": "rtk",
+    "name": "RTK — Rust Token Killer (rtk-ai)",
+    "primary_url": "https://github.com/rtk-ai/rtk",
+    "hook": "45.5K+ stars. Single Rust binary (zero dependencies) that sits between Claude Code and the shell — intercepts stdout from 100+ commands (git, npm, cargo, pytest, docker, kubectl, AWS CLI) and compresses it 60–90% before it reaches the model. A 45-line `ls` output (~800 tokens) becomes 12 lines (~150 tokens); `git push` shrinks from 200 tokens to 10 tokens. v0.39.0 shipped May 6; `rtk gain` shows cumulative token savings across all sessions.",
+    "categories": ["cost"],
+    "install": "brew install rtk",
+    "recurring_note": "↑ Day 2"
+  },
+  {
+    "slug": "claude-mem",
+    "name": "claude-mem (thedotmack)",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "74.4K stars. Claude Code plugin that hooks into 5 lifecycle events (SessionStart, UserPromptSubmit, PostToolUse, Stop, SessionEnd) to automatically capture everything Claude does during coding sessions — then compresses observations via Claude's agent SDK and injects relevant context back into future sessions. Stores observations in SQLite with Chroma vector DB for semantic retrieval; web viewer at localhost:37777 shows the accumulating memory with token cost visibility and `<private>` tag support for opt-out.",
+    "categories": ["skill"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 2"
+  },
+  {
+    "slug": "everything-claude-code",
+    "name": "everything-claude-code (affaan-m)",
+    "primary_url": "https://github.com/affaan-m/everything-claude-code",
+    "hook": "178K stars, 27.5K forks — Anthropic hackathon winner (February 2026). The most comprehensive Claude Code optimization system: 182 specialized skills across coding standards, backend/frontend patterns, TDD, and 15+ domain-specific workflows (ClickHouse, Django, Spring Boot), plus 48 delegation agents (planning, architecture, code review, language-specific reviewers). Continuous learning v2 extracts instinct patterns with confidence scoring across sessions; AgentShield integration adds 102 static analysis rules and 1,282 security tests. Cross-platform: Claude Code, Cursor, Codex, OpenCode. v2.0.0-rc.1 active.",
+    "categories": ["skill", "general"],
+    "install": "./install.sh --profile full",
+    "recurring_note": "↑ Day 2"
+  },
+  {
+    "slug": "get-shit-done",
+    "name": "get-shit-done (gsd-build)",
+    "primary_url": "https://github.com/gsd-build/get-shit-done",
+    "hook": "61.3K stars, v1.41.1. Lightweight meta-prompting system that solves context rot — the quality degradation as Claude fills its context window. Externalizes state into PROJECT.md, REQUIREMENTS.md, ROADMAP.md, and STATE.md, then runs each task in a fresh subagent context with atomic git commits per task. Multi-agent orchestration with parallel execution; trusted by engineers at Amazon, Google, Shopify, and Webflow. Works across Claude Code, OpenCode, Gemini CLI, Codex, Cursor, and Windsurf.",
+    "categories": ["general"],
+    "install": "npx get-shit-done-cc@latest",
+    "recurring_note": "↑ Day 2"
+  },
+  {
+    "slug": "hesreallyhim-awesome-claude-code",
+    "name": "awesome-claude-code (hesreallyhim)",
+    "primary_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "hook": "43.2K+ stars, 3.6K forks — the canonical hand-curated list of skills, hooks, slash-commands, orchestrators, applications, and plugins for Claude Code. Structural reorganization ongoing (README_CLASSIC preserved as an alternative view); 1,495+ open submission issues making it both a reference and a crowdsourced discovery pipeline with 4,200+ skills and 770+ MCP servers now indexed.",
+    "categories": ["general"],
+    "recurring_note": "↑ Day 5 — still the single best bookmark for Claude Code ecosystem discovery"
+  },
+  {
+    "slug": "graphify",
+    "name": "graphify (safishamsi)",
+    "primary_url": "https://github.com/safishamsi/graphify",
+    "hook": "45.9K stars, v0.7.13. Converts any codebase, SQL schema, PDF, image, or video collection into a queryable knowledge graph with a visual interactive HTML representation — processing code locally via AST with tree-sitter (zero API calls for source files), sending non-code files through AI for semantic analysis. Identifies 'god nodes' (most-connected concepts) and surfaces surprising cross-module relationships; 29 programming languages. Run `/graphify .` to generate `graph.html`, `GRAPH_REPORT.md`, and `graph.json`.",
+    "categories": ["general"],
+    "install": "uv tool install graphifyy && graphify install",
+    "recurring_note": "↑ Day 2"
+  }
+]
