@@ -820,5 +820,169 @@
     "install": "npx @cosmicstack/mercury-agent",
     "added_date": "2026-05-07",
     "added_by": "user"
+  },
+  {
+    "slug": "floci",
+    "name": "Floci",
+    "primary_url": "https://github.com/floci-io/floci",
+    "secondary_urls": ["https://github.com/floci-io/floci-az"],
+    "hook": "Free, MIT-licensed LocalStack replacement after LocalStack's community edition sunset — Quarkus native, 41 AWS services on :4566 with ~24ms startup and ~13 MiB idle, real Docker containers for Lambda/RDS/ECS/EKS. Companion Azure emulator (floci-az).",
+    "categories": ["cost"],
+    "install": "docker run -p 4566:4566 floci-io/floci",
+    "added_date": "2026-05-08",
+    "added_by": "user"
+  },
+  {
+    "slug": "agent-orchestrator",
+    "name": "Agent Orchestrator (Composio)",
+    "primary_url": "https://github.com/ComposioHQ/agent-orchestrator",
+    "secondary_urls": ["https://github.com/andyrewlee/awesome-agent-orchestrators"],
+    "hook": "Composio's fleet manager for parallel coding agents — each agent gets its own git worktree, branch, and PR; auto-handles CI fixes and review-comment turn-around. You only step in when judgment is needed.",
+    "categories": ["plugin"],
+    "install": "git clone https://github.com/ComposioHQ/agent-orchestrator",
+    "added_date": "2026-05-08",
+    "added_by": "user"
+  },
+  {
+    "slug": "halo",
+    "name": "Halo (hello-halo)",
+    "primary_url": "https://github.com/openkursar/hello-halo",
+    "secondary_urls": [],
+    "hook": "24/7 desktop AI agent built on Claude Code — visual GUI for chat, remote access, file management, and a built-in AI browser. 100% local, BYOK, no backend. ~300k-line product layer over the Claude Code core.",
+    "categories": ["plugin"],
+    "install": "",
+    "added_date": "2026-05-08",
+    "added_by": "user"
+  },
+  {
+    "slug": "open-generative-ai",
+    "name": "Open Generative AI",
+    "primary_url": "https://github.com/Anil-matcha/Open-Generative-AI",
+    "secondary_urls": ["https://dev.muapi.ai/open-generative-ai"],
+    "hook": "Uncensored, self-hosted alternative to Higgsfield / Freepik / Krea / OpenArt — 200+ image and video models (Flux, Midjourney, Kling, Sora, Veo, Seedream, LTX Lipsync, Wan 2.2…) across four studios (Image, Video, Lip Sync, Cinema). MIT.",
+    "categories": ["design"],
+    "install": "git clone https://github.com/Anil-matcha/Open-Generative-AI",
+    "added_date": "2026-05-08",
+    "added_by": "user"
+  },
+  {
+    "slug": "peepshow",
+    "name": "Peepshow",
+    "primary_url": "https://github.com/t0mtaylor/peepshow",
+    "secondary_urls": ["https://www.peepshow.dev/"],
+    "hook": "Turns video / GIF / APNG / WebP into a timeline of still frames (+ optional whisper.cpp transcript) so any LLM can \"watch\" it. Ships as a Claude Code plugin, agent manifests for Cursor/Windsurf/Codex/Gemini, and a CLI with 71 pluggable sinks (SQL, vector DBs, AI memory, observability, more).",
+    "categories": ["plugin", "skill"],
+    "install": "npx skills add t0mtaylor/peepshow",
+    "added_date": "2026-05-08",
+    "added_by": "user"
+  },
+  {
+    "slug": "gemini-cli",
+    "name": "Gemini CLI",
+    "primary_url": "https://github.com/google-gemini/gemini-cli",
+    "secondary_urls": [],
+    "hook": "Google's official open-source terminal agent for Gemini — file ops, shell, Google Search grounding, GitHub integration, and MCP-server support. Apache 2.0, ~104k stars.",
+    "categories": ["viral"],
+    "install": "npm install -g @google/gemini-cli",
+    "added_date": "2026-05-08",
+    "added_by": "user"
+  },
+  {
+    "slug": "openfang",
+    "name": "OpenFang",
+    "primary_url": "https://github.com/RightNow-AI/openfang",
+    "secondary_urls": [],
+    "hook": "Open-source agent operating system in Rust (14 crates) — \"Hands\" (autonomous agents) configured via HAND.toml, WASM-sandboxed tools with fuel metering + watchdogs, FangHub registry, and a Claude Code driver. 1.7k+ tests.",
+    "categories": ["plugin"],
+    "install": "git clone https://github.com/RightNow-AI/openfang",
+    "added_date": "2026-05-08",
+    "added_by": "user"
+  },
+  {
+    "slug": "openhuman",
+    "name": "OpenHuman",
+    "primary_url": "https://github.com/tinyhumansai/openhuman",
+    "secondary_urls": [],
+    "hook": "Private personal AI with persistent memory across docs/email/chat, a memory graph, batteries-included tools (web fetch, coder, native voice with TTS + mascot lip-sync, live Google Meet agent), and TokenJuice compression that cuts cost up to ~80%.",
+    "categories": ["plugin", "cost"],
+    "install": "git clone https://github.com/tinyhumansai/openhuman",
+    "added_date": "2026-05-08",
+    "added_by": "user"
+  },
+  {
+    "slug": "refero",
+    "name": "Refero",
+    "primary_url": "https://refero.design/mcp",
+    "secondary_urls": [
+      "https://github.com/referodesign/refero_skill",
+      "https://github.com/lorecraft-io/refero-design-mcp",
+      "https://styles.refero.design/"
+    ],
+    "hook": "Design methodology + MCP that has Claude Code research first, code second — semantic search across 130k+ real product screens and 10k+ user flows, then apply craft rules for typography, color, spacing, motion. Skill bundle + community MCP.",
+    "categories": ["skill", "mcp", "design"],
+    "install": "npx skills add referodesign/refero_skill",
+    "added_date": "2026-05-08",
+    "added_by": "user"
+  },
+  {
+    "slug": "invidious",
+    "name": "Invidious",
+    "primary_url": "https://github.com/iv-org/invidious",
+    "secondary_urls": [
+      "https://instances.invidious.io/",
+      "https://docs.invidious.io/installation/"
+    ],
+    "hook": "Open-source, ad-free, no-tracking YouTube front-end — runs without JavaScript, works on minimal hardware, self-hostable. AGPL-3.0, ~19.8k stars.",
+    "categories": [],
+    "install": "",
+    "added_date": "2026-05-08",
+    "added_by": "user"
+  },
+  {
+    "slug": "whisper-money",
+    "name": "Whisper Money",
+    "primary_url": "https://github.com/whisper-money/whisper-money",
+    "secondary_urls": ["https://whisper.money/"],
+    "hook": "Privacy-first personal-finance app with E2E encryption — server never sees plaintext transactions (intentional: no AI on your financial data), self-hostable, Open Banking sync + CSV/Excel import. Open source.",
+    "categories": [],
+    "install": "",
+    "added_date": "2026-05-08",
+    "added_by": "user"
+  },
+  {
+    "slug": "steno",
+    "name": "Steno",
+    "primary_url": "https://github.com/deemuk123/steno",
+    "secondary_urls": [],
+    "hook": "Rust-based reversible text compressor that runs before content reaches an LLM — strips noise, shortens common phrases, abbreviates domain terms. MCP server (steno_compress/decompress/stats) works with Claude Code, Cursor, Windsurf. 40-70% token savings, up to 95% combined with RTK + MemPalace.",
+    "categories": ["cost", "mcp"],
+    "install": "cargo install steno",
+    "added_date": "2026-05-08",
+    "added_by": "user"
+  },
+  {
+    "slug": "supertonic-3",
+    "name": "Supertonic 3",
+    "primary_url": "https://github.com/supertone-inc/supertonic",
+    "secondary_urls": [
+      "https://huggingface.co/Supertone/supertonic-3",
+      "https://supertonictts.github.io/"
+    ],
+    "hook": "Lightning-fast on-device multilingual TTS — 31 languages, ~99M-param ONNX (vs 0.7B-2B for VoxCPM2), runs on CPU with no GPU. v3 adds expression tags <laugh>/<breath>/<sigh>. MIT code + OpenRAIL-M weights.",
+    "categories": ["viral"],
+    "install": "",
+    "added_date": "2026-05-13",
+    "added_by": "user"
+  },
+  {
+    "slug": "superserve",
+    "name": "SuperServe",
+    "primary_url": "https://github.com/superserve-ai/superserve",
+    "secondary_urls": ["https://superserve.ai/"],
+    "hook": "Sandbox infrastructure for AI agents — managed runtimes for agents to execute tools and code safely. PaaS + open-source SDK.",
+    "categories": ["plugin"],
+    "install": "",
+    "added_date": "2026-05-13",
+    "added_by": "user"
   }
 ]
