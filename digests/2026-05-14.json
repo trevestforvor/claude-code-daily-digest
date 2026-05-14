@@ -1,0 +1,152 @@
+[
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills (Matt Pocock)",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "81.5K stars, +6,400 in the past week — #1 weekly-trending AI repo on GitHub as of May 14. Matt Pocock (Total TypeScript) published his personal `.claude/skills/` folder: 17 Markdown files, small and composable. Standouts: `caveman` (75% token reduction), `diagnose` (root-cause first, fix second), `tdd` (spec-before-code), `zoom-out` (full-codebase architectural review), and `prototype` (explicit throwaway spike). Validates the meta-pattern that real engineers sharing their actual dotfiles beats crafted plugin packs.",
+    "categories": ["design", "skill", "cost"],
+    "install": "npx skills@latest add mattpocock/skills"
+  },
+  {
+    "slug": "anthropic-agent-sdk-credits",
+    "name": "Anthropic Agent SDK Credits (June 15 policy change)",
+    "primary_url": "https://venturebeat.com/technology/anthropic-reinstates-openclaw-and-third-party-agent-usage-on-claude-subscriptions-with-a-catch",
+    "secondary_urls": [
+      "https://news.ycombinator.com/item?id=47633396",
+      "https://devtoolpicks.com/blog/anthropic-splits-claude-subscriptions-agent-sdk-credit-june-2026"
+    ],
+    "hook": "Starting June 15, Anthropic splits Claude subscriptions: programmatic usage via the Agent SDK, `claude -p`, GitHub Actions, and third-party harnesses (OpenClaw, Hermes Agent, etc.) moves into a separate non-rollover monthly credit pool — Pro gets $20/mo, Max 5× gets $100, Max 20× gets $200. The move reverses an April 2026 ban on third-party agents that triggered widespread community backlash. To soften the transition, Anthropic also stacked a temporary +50% weekly Claude Code usage increase through July 13 (on top of the earlier 2× 5-hour limit doubling). HN thread topped 450+ comments.",
+    "categories": ["cost", "anthropic"]
+  },
+  {
+    "slug": "claude-for-small-business",
+    "name": "Claude for Small Business",
+    "primary_url": "https://www.anthropic.com/news/claude-for-small-business",
+    "secondary_urls": [
+      "https://siliconangle.com/2026/05/13/anthropic-launches-claude-small-business-new-automation-workflows/",
+      "https://www.axios.com/2026/05/13/anthropic-claude-small-business-smb"
+    ],
+    "hook": "Launched May 13. Anthropic's package for small businesses: 15 ready-to-run agentic workflows, 15 reusable skills, and connectors to 8 tools — QuickBooks, PayPal, HubSpot, Canva, DocuSign, Google Workspace, Microsoft 365, and Slack. Workflows span finance, operations, sales, marketing, HR, and customer service. Each workflow is approval-gated (user signs off before anything gets sent, posted, or paid). Toggle install inside Claude Cowork; no extra charge beyond existing Claude subscription and the partner tools you already use.",
+    "categories": ["anthropic"],
+    "install": "Toggle install inside Claude Cowork — see anthropic.com/news/claude-for-small-business"
+  },
+  {
+    "slug": "claude-code-v2-1-141",
+    "name": "Claude Code v2.1.141 (May 13)",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "hook": "Released May 13 at 23:19 UTC. Four standout additions: (1) Rewind menu now includes \"Summarize up to here\" — creates a compressed snapshot of any past conversation state on demand; (2) `claude agents --cwd <path>` scopes the session list to a directory; (3) background agents now preserve the current permission mode instead of reverting to default; (4) MCP servers that hit transient startup errors auto-retry up to 3× before going dark. Also adds `CLAUDE_CODE_PLUGIN_PREFER_HTTPS` (clone plugins over HTTPS not SSH) and `ANTHROPIC_WORKSPACE_ID` env vars.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code  # → v2.1.141"
+  },
+  {
+    "slug": "mobbin-mcp",
+    "name": "Mobbin MCP",
+    "primary_url": "https://mobbin.com/mcp",
+    "secondary_urls": ["https://www.youtube.com/watch?v=cu-Qq-47Rk8"],
+    "hook": "Launched May 13. Official MCP server from Mobbin giving Claude Code, Cursor, and Lovable direct access to 621,500+ real app screens and 142,200+ user flows from shipped production apps — fintech, e-commerce, health, productivity, social, and SaaS, including subscription-only and region-locked apps. Ask Claude how a top app handles paywalls, onboarding, permissions, or checkout — it pulls verified production references before building. IndyDevDan covered it within 12 hours of launch. Currently in beta on all paid Mobbin plans.",
+    "categories": ["design", "mcp"],
+    "install": "npx -y mobbin-mcp auth && claude mcp add mobbin -- npx -y mobbin-mcp",
+    "recurring_note": "↑ Day 2",
+    "creator_buzz": ["@indydevdan"]
+  },
+  {
+    "slug": "awesome-design-md",
+    "name": "awesome-design-md (VoltAgent)",
+    "primary_url": "https://github.com/VoltAgent/awesome-design-md",
+    "hook": "Still climbing past 76K stars. A curated collection of 73 DESIGN.md files, one per brand: Apple, Stripe, Uber, Anthropic/Claude, Tesla, Notion, Figma, Supabase, Linear, Spotify, NVIDIA, and 62 others. Each file is plain markdown describing colors, typography, spacing, and visual feel. Drop one into your project root and Claude generates a matching UI without any config or dependencies.",
+    "categories": ["design"],
+    "install": "See README — ask Claude to clone and copy the relevant DESIGN.md into your project",
+    "recurring_note": "↑ Day 3 — now at ~80K stars"
+  },
+  {
+    "slug": "addyosmani-agent-skills",
+    "name": "agent-skills (addyosmani)",
+    "primary_url": "https://github.com/addyosmani/agent-skills",
+    "hook": "40.2K stars. Addy Osmani (ex-Google Chrome DevRel, now at Anthropic) applied Google's production engineering discipline to Claude Code via 22 skills spanning the full dev lifecycle: DEFINE → PLAN → BUILD → VERIFY → REVIEW → SHIP. Standouts: spec-driven-development (writes spec before touching code), doubt-driven-development (forces agents to surface uncertainty explicitly), code-simplification (structural review after every build), and shipping-and-launch (pre-ship checklist with ADR generation). Cross-platform: Claude Code, Cursor, Gemini CLI, Windsurf.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add addyosmani/agent-skills",
+    "recurring_note": "↑ Day 3"
+  },
+  {
+    "slug": "playwright-cli",
+    "name": "Playwright CLI (Microsoft)",
+    "primary_url": "https://github.com/microsoft/playwright-cli",
+    "hook": "v0.1.13, 10.3K stars. Microsoft's token-efficient browser automation CLI purpose-built for coding agents. Playwright MCP streams full browser accessibility trees into the model's context window; Playwright CLI saves browser state to compact YAML files on disk instead. Microsoft's own benchmark: 114,000 tokens per session with MCP vs 27,000 tokens with CLI — 4× reduction. Works with Claude Code through the Bash tool exactly like git or npm.",
+    "categories": ["cost"],
+    "install": "npm install -g @playwright/cli@latest",
+    "recurring_note": "↑ Day 2"
+  },
+  {
+    "slug": "caveman",
+    "name": "caveman (JuliusBrussee)",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "57.4K+ stars. Skill that reduces output tokens 65–75% by instructing the model to drop articles, filler words, and pleasantries while keeping all technical substance. Four intensity levels: Lite, Full (default), Ultra, and Wenyan (Classical Chinese). Crossover signal: mattpocock/skills — the #1 trending repo this week — bundles caveman as a core technique, confirming its durability.",
+    "categories": ["cost"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash",
+    "recurring_note": "↑ Day 4 — validated by mattpocock/skills inclusion"
+  },
+  {
+    "slug": "rtk",
+    "name": "RTK — Rust Token Killer (rtk-ai)",
+    "primary_url": "https://github.com/rtk-ai/rtk",
+    "hook": "45.5K+ stars. Single Rust binary that intercepts stdout from 100+ commands (git, npm, cargo, pytest, docker, kubectl, AWS CLI) and compresses it 60–90% before it reaches the model. A 45-line `ls` output (~800 tokens) becomes 12 lines (~150 tokens); `git push` shrinks from 200 tokens to 10 tokens. v0.39.0 shipped May 6; `rtk gain` shows cumulative savings.",
+    "categories": ["cost"],
+    "install": "brew install rtk",
+    "recurring_note": "↑ Day 4"
+  },
+  {
+    "slug": "last30days-skill",
+    "name": "last30days-skill (mvanhorn)",
+    "primary_url": "https://github.com/mvanhorn/last30days-skill",
+    "hook": "25.8K stars, v3.2.0 released May 10. Searches Reddit, X/Twitter, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the open web simultaneously — scoring results by real engagement metrics (upvotes, views, prediction-market odds) rather than editorial algorithms — then synthesizes a single grounded brief with citations. As the creator puts it: \"Google aggregates editors. /last30days searches people.\" Works in Claude Code, OpenClaw, Gemini CLI, and claude.ai web.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add mvanhorn/last30days-skill"
+  },
+  {
+    "slug": "claude-for-legal",
+    "name": "Claude for Legal",
+    "primary_url": "https://www.anthropic.com/news/claude-for-legal",
+    "secondary_urls": [
+      "https://techcrunch.com/2026/05/12/the-ai-legal-services-industry-is-heating-up-anthropic-is-getting-in-on-the-action/",
+      "https://www.lawnext.com/2026/05/anthropic-goes-all-in-on-legal-releasing-more-than-20-connectors-and-12-practice-area-plugins-for-claude.html"
+    ],
+    "hook": "Launched May 12. 20+ MCP connectors wiring Claude into legal software (DocuSign, Box, major document and matter-management platforms) plus 12 practice-area plugins: Commercial Legal, Corporate Legal (M&A diligence), Employment, Privacy, Product, Regulatory, AI Governance, IP, and Litigation (deposition prep, brief drafting). Available at no extra charge to all paying Claude customers.",
+    "categories": ["anthropic", "mcp"],
+    "install": "Available as plugins in Claude Code and Claude Cowork — see anthropic.com/news/claude-for-legal",
+    "recurring_note": "↑ Day 2"
+  },
+  {
+    "slug": "claude-platform-aws",
+    "name": "Claude Platform on AWS",
+    "primary_url": "https://aws.amazon.com/claude-platform/",
+    "secondary_urls": ["https://claude.com/blog/claude-platform-on-aws"],
+    "hook": "Generally available May 11 via AWS Marketplace. The full native Claude Platform — Managed Agents, Skills, MCP connector, Files API, web search, code execution, prompt caching, citations, and the Claude Console — accessible through an existing AWS account. AWS IAM + SigV4 auth; billing on a single AWS invoice that retires against existing commitments; CloudTrail audit logging. First cloud provider to offer native Claude Platform access rather than model-only access through Bedrock.",
+    "categories": ["anthropic"],
+    "install": "Activate via AWS Marketplace → aws.amazon.com/claude-platform",
+    "recurring_note": "↑ Day 2"
+  },
+  {
+    "slug": "claude-managed-agents-2026",
+    "name": "Claude Managed Agents: Dreaming, Outcomes & Multiagent Orchestration",
+    "primary_url": "https://claude.com/blog/new-in-claude-managed-agents",
+    "secondary_urls": [
+      "https://9to5mac.com/2026/05/07/anthropic-updates-claude-managed-agents-with-three-new-features/",
+      "https://venturebeat.com/technology/anthropic-introduces-dreaming-a-system-that-lets-ai-agents-learn-from-their-own-mistakes"
+    ],
+    "hook": "Announced at Code with Claude 2026 (May 6). Three features: Dreaming (research preview) — scheduled background process reviews past sessions, extracts patterns, curates memory stores so agents improve between runs without weight changes; Harvey pilot saw task completion climb ~6×. Outcomes (public beta) — independent grader evaluates output in its own context window. Multiagent Orchestration (public beta) — lead agent fans work to parallel specialist subagents. Request Dreaming access at claude.com/managed-agents.",
+    "categories": ["anthropic"],
+    "install": "Available via Claude API — request Dreaming preview at claude.com/managed-agents",
+    "recurring_note": "↑ Day 3 — Dreaming access requests open"
+  },
+  {
+    "slug": "mitiga-mcp-oauth-attack",
+    "name": "MCP OAuth Token Theft — Mitiga Research",
+    "primary_url": "https://www.mitiga.io/blog/claude-code-mcp-token-theft-mitm",
+    "secondary_urls": [
+      "https://www.securityweek.com/claude-code-oauth-tokens-can-be-stolen-through-stealthy-mcp-hijacking/"
+    ],
+    "hook": "Mitiga Labs disclosed an attack chain that silently steals Claude Code's OAuth tokens via malicious npm packages. A postinstall hook rewrites `~/.claude.json` to redirect MCP traffic through an attacker-controlled proxy; persistence survives token rotations by re-writing the config on next load. Reported to Anthropic April 10; Anthropic replied April 12 that it was 'out of scope'. No fix shipped. Mitigation: audit `~/.claude.json` for unexpected MCP URLs before any npm install.",
+    "categories": ["mcp"],
+    "recurring_note": "↑ Day 3 — still no fix from Anthropic; audit ~/.claude.json MCP entries"
+  }
+]
