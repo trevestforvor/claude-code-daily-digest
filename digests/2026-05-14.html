@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — May 14, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — May 14, 2026</h1><p class="sub">Top 15 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/mattpocock/skills">mattpocock/skills (Matt Pocock)</a></h3>
+  <p class="hook">81.5K stars, +6,400 in the past week — #1 weekly-trending AI repo on GitHub as of May 14. Matt Pocock (Total TypeScript) published his personal `.claude/skills/` folder: 17 Markdown files, small and composable. Standouts: `caveman` (75% token reduction), `diagnose` (root-cause first, fix second), `tdd` (spec-before-code), `zoom-out` (full-codebase architectural review), and `prototype` (explicit throwaway spike). Validates the meta-pattern that real engineers sharing their actual dotfiles beats crafted plugin packs.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">plugin · token · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills@latest add mattpocock/skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://venturebeat.com/technology/anthropic-reinstates-openclaw-and-third-party-agent-usage-on-claude-subscriptions-with-a-catch">Anthropic Agent SDK Credits (June 15 policy change)</a></h3>
+  <p class="hook">Starting June 15, Anthropic splits Claude subscriptions: programmatic usage via the Agent SDK, `claude -p`, GitHub Actions, and third-party harnesses (OpenClaw, Hermes Agent, etc.) moves into a separate non-rollover monthly credit pool — Pro gets $20/mo, Max 5× gets $100, Max 20× gets $200. The move reverses an April 2026 ban on third-party agents that triggered widespread community backlash. To soften the transition, Anthropic also stacked a temporary +50% weekly Claude Code usage increase through July 13 (on top of the earlier 2× 5-hour limit doubling). HN thread topped 450+ comments.</p>
+  <div class="secondary">Also: <a href="https://news.ycombinator.com/item?id=47633396">news.ycombinator.com/item?id=47633396</a> · <a href="https://devtoolpicks.com/blog/anthropic-splits-claude-subscriptions-agent-sdk-credit-june-2026">devtoolpicks.com/blog/anthropic-splits-claude-subscriptions-agent-sdk-credit-june-2026</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">animation</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/claude-for-small-business">Claude for Small Business</a></h3>
+  <p class="hook">Launched May 13. Anthropic&#39;s package for small businesses: 15 ready-to-run agentic workflows, 15 reusable skills, and connectors to 8 tools — QuickBooks, PayPal, HubSpot, Canva, DocuSign, Google Workspace, Microsoft 365, and Slack. Workflows span finance, operations, sales, marketing, HR, and customer service. Each workflow is approval-gated (user signs off before anything gets sent, posted, or paid). Toggle install inside Claude Cowork; no extra charge beyond existing Claude subscription and the partner tools you already use.</p>
+  <div class="secondary">Also: <a href="https://siliconangle.com/2026/05/13/anthropic-launches-claude-small-business-new-automation-workflows/">siliconangle.com/2026/05/13/anthropic-launches-claude-small-business-new-automation-workflows/</a> · <a href="https://www.axios.com/2026/05/13/anthropic-claude-small-business-smb">www.axios.com/2026/05/13/anthropic-claude-small-business-smb</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">agent · cost</div>
+  <pre><button class="copy">copy</button><code>Toggle install inside Claude Cowork — see anthropic.com/news/claude-for-small-business</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.141 (May 13)</a></h3>
+  <p class="hook">Released May 13 at 23:19 UTC. Four standout additions: (1) Rewind menu now includes &quot;Summarize up to here&quot; — creates a compressed snapshot of any past conversation state on demand; (2) `claude agents --cwd &lt;path&gt;` scopes the session list to a directory; (3) background agents now preserve the current permission mode instead of reverting to default; (4) MCP servers that hit transient startup errors auto-retry up to 3× before going dark. Also adds `CLAUDE_CODE_PLUGIN_PREFER_HTTPS` (clone plugins over HTTPS not SSH) and `ANTHROPIC_WORKSPACE_ID` env vars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">mcp · marketplace</div>
+  <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code  # → v2.1.141</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://mobbin.com/mcp">Mobbin MCP</a></h3>
+  <p class="hook">Launched May 13. Official MCP server from Mobbin giving Claude Code, Cursor, and Lovable direct access to 621,500+ real app screens and 142,200+ user flows from shipped production apps — fintech, e-commerce, health, productivity, social, and SaaS, including subscription-only and region-locked apps. Ask Claude how a top app handles paywalls, onboarding, permissions, or checkout — it pulls verified production references before building. IndyDevDan covered it within 12 hours of launch. Currently in beta on all paid Mobbin plans.</p>
+  <div class="secondary">Also: <a href="https://www.youtube.com/watch?v=cu-Qq-47Rk8">www.youtube.com/watch?v=cu-Qq-47Rk8</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">cost</div>
+  <pre><button class="copy">copy</button><code>npx -y mobbin-mcp auth &amp;&amp; claude mcp add mobbin -- npx -y mobbin-mcp</code></pre>
+  <div class="recurring">↑ Day 2</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/VoltAgent/awesome-design-md">awesome-design-md (VoltAgent)</a></h3>
+  <p class="hook">Still climbing past 76K stars. A curated collection of 73 DESIGN.md files, one per brand: Apple, Stripe, Uber, Anthropic/Claude, Tesla, Notion, Figma, Supabase, Linear, Spotify, NVIDIA, and 62 others. Each file is plain markdown describing colors, typography, spacing, and visual feel. Drop one into your project root and Claude generates a matching UI without any config or dependencies.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">branding · anthropic · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>See README — ask Claude to clone and copy the relevant DESIGN.md into your project</code></pre>
+  <div class="recurring">↑ Day 3 — now at ~80K stars</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/addyosmani/agent-skills">agent-skills (addyosmani)</a></h3>
+  <p class="hook">40.2K stars. Addy Osmani (ex-Google Chrome DevRel, now at Anthropic) applied Google&#39;s production engineering discipline to Claude Code via 22 skills spanning the full dev lifecycle: DEFINE → PLAN → BUILD → VERIFY → REVIEW → SHIP. Standouts: spec-driven-development (writes spec before touching code), doubt-driven-development (forces agents to surface uncertainty explicitly), code-simplification (structural review after every build), and shipping-and-launch (pre-ship checklist with ADR generation). Cross-platform: Claude Code, Cursor, Gemini CLI, Windsurf.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · anthropic · viral · marketplace · terminal · browser</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add addyosmani/agent-skills</code></pre>
+  <div class="recurring">↑ Day 3</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/microsoft/playwright-cli">Playwright CLI (Microsoft)</a></h3>
+  <p class="hook">v0.1.13, 10.3K stars. Microsoft&#39;s token-efficient browser automation CLI purpose-built for coding agents. Playwright MCP streams full browser accessibility trees into the model&#39;s context window; Playwright CLI saves browser state to compact YAML files on disk instead. Microsoft&#39;s own benchmark: 114,000 tokens per session with MCP vs 27,000 tokens with CLI — 4× reduction. Works with Claude Code through the Bash tool exactly like git or npm.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">mcp · context · token · viral · terminal · browser</div>
+  <pre><button class="copy">copy</button><code>npm install -g @playwright/cli@latest</code></pre>
+  <div class="recurring">↑ Day 2</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/JuliusBrussee/caveman">caveman (JuliusBrussee)</a></h3>
+  <p class="hook">57.4K+ stars. Skill that reduces output tokens 65–75% by instructing the model to drop articles, filler words, and pleasantries while keeping all technical substance. Four intensity levels: Lite, Full (default), Ultra, and Wenyan (Classical Chinese). Crossover signal: mattpocock/skills — the #1 trending repo this week — bundles caveman as a core technique, confirming its durability.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">skill · token · viral</div>
+  <pre><button class="copy">copy</button><code>curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash</code></pre>
+  <div class="recurring">↑ Day 4 — validated by mattpocock/skills inclusion</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/rtk-ai/rtk">RTK — Rust Token Killer (rtk-ai)</a></h3>
+  <p class="hook">45.5K+ stars. Single Rust binary that intercepts stdout from 100+ commands (git, npm, cargo, pytest, docker, kubectl, AWS CLI) and compresses it 60–90% before it reaches the model. A 45-line `ls` output (~800 tokens) becomes 12 lines (~150 tokens); `git push` shrinks from 200 tokens to 10 tokens. v0.39.0 shipped May 6; `rtk gain` shows cumulative savings.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">token · terminal</div>
+  <pre><button class="copy">copy</button><code>brew install rtk</code></pre>
+  <div class="recurring">↑ Day 4</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mvanhorn/last30days-skill">last30days-skill (mvanhorn)</a></h3>
+  <p class="hook">25.8K stars, v3.2.0 released May 10. Searches Reddit, X/Twitter, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the open web simultaneously — scoring results by real engagement metrics (upvotes, views, prediction-market odds) rather than editorial algorithms — then synthesizes a single grounded brief with citations. As the creator puts it: &quot;Google aggregates editors. /last30days searches people.&quot; Works in Claude Code, OpenClaw, Gemini CLI, and claude.ai web.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · anthropic · viral · marketplace · terminal</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add mvanhorn/last30days-skill</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/claude-for-legal">Claude for Legal</a></h3>
+  <p class="hook">Launched May 12. 20+ MCP connectors wiring Claude into legal software (DocuSign, Box, major document and matter-management platforms) plus 12 practice-area plugins: Commercial Legal, Corporate Legal (M&amp;A diligence), Employment, Privacy, Product, Regulatory, AI Governance, IP, and Litigation (deposition prep, brief drafting). Available at no extra charge to all paying Claude customers.</p>
+  <div class="secondary">Also: <a href="https://techcrunch.com/2026/05/12/the-ai-legal-services-industry-is-heating-up-anthropic-is-getting-in-on-the-action/">techcrunch.com/2026/05/12/the-ai-legal-services-industry-is-heating-up-anthropic-is-getting-in-on-the-action/</a> · <a href="https://www.lawnext.com/2026/05/anthropic-goes-all-in-on-legal-releasing-more-than-20-connectors-and-12-practice-area-plugins-for-claude.html">www.lawnext.com/2026/05/anthropic-goes-all-in-on-legal-releasing-more-than-20-connectors-and-12-practice-area-plugins-for-claude.html</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  
+  <pre><button class="copy">copy</button><code>Available as plugins in Claude Code and Claude Cowork — see anthropic.com/news/claude-for-legal</code></pre>
+  <div class="recurring">↑ Day 2</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://aws.amazon.com/claude-platform/">Claude Platform on AWS</a></h3>
+  <p class="hook">Generally available May 11 via AWS Marketplace. The full native Claude Platform — Managed Agents, Skills, MCP connector, Files API, web search, code execution, prompt caching, citations, and the Claude Console — accessible through an existing AWS account. AWS IAM + SigV4 auth; billing on a single AWS invoice that retires against existing commitments; CloudTrail audit logging. First cloud provider to offer native Claude Platform access rather than model-only access through Bedrock.</p>
+  <div class="secondary">Also: <a href="https://claude.com/blog/claude-platform-on-aws">claude.com/blog/claude-platform-on-aws</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">mcp · marketplace · search</div>
+  <pre><button class="copy">copy</button><code>Activate via AWS Marketplace → aws.amazon.com/claude-platform</code></pre>
+  <div class="recurring">↑ Day 2</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://claude.com/blog/new-in-claude-managed-agents">Claude Managed Agents: Dreaming, Outcomes &amp; Multiagent Orchestration</a></h3>
+  <p class="hook">Announced at Code with Claude 2026 (May 6). Three features: Dreaming (research preview) — scheduled background process reviews past sessions, extracts patterns, curates memory stores so agents improve between runs without weight changes; Harvey pilot saw task completion climb ~6×. Outcomes (public beta) — independent grader evaluates output in its own context window. Multiagent Orchestration (public beta) — lead agent fans work to parallel specialist subagents. Request Dreaming access at claude.com/managed-agents.</p>
+  <div class="secondary">Also: <a href="https://9to5mac.com/2026/05/07/anthropic-updates-claude-managed-agents-with-three-new-features/">9to5mac.com/2026/05/07/anthropic-updates-claude-managed-agents-with-three-new-features/</a> · <a href="https://venturebeat.com/technology/anthropic-introduces-dreaming-a-system-that-lets-ai-agents-learn-from-their-own-mistakes">venturebeat.com/technology/anthropic-introduces-dreaming-a-system-that-lets-ai-agents-learn-from-their-own-mistakes</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">memory · context</div>
+  <pre><button class="copy">copy</button><code>Available via Claude API — request Dreaming preview at claude.com/managed-agents</code></pre>
+  <div class="recurring">↑ Day 3 — Dreaming access requests open</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://www.mitiga.io/blog/claude-code-mcp-token-theft-mitm">MCP OAuth Token Theft — Mitiga Research</a></h3>
+  <p class="hook">Mitiga Labs disclosed an attack chain that silently steals Claude Code&#39;s OAuth tokens via malicious npm packages. A postinstall hook rewrites `~/.claude.json` to redirect MCP traffic through an attacker-controlled proxy; persistence survives token rotations by re-writing the config on next load. Reported to Anthropic April 10; Anthropic replied April 12 that it was &#39;out of scope&#39;. No fix shipped. Mitigation: audit `~/.claude.json` for unexpected MCP URLs before any npm install.</p>
+  <div class="secondary">Also: <a href="https://www.securityweek.com/claude-code-oauth-tokens-can-be-stolen-through-stealthy-mcp-hijacking/">www.securityweek.com/claude-code-oauth-tokens-can-be-stolen-through-stealthy-mcp-hijacking/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">token · proxy · anthropic</div>
+  
+  <div class="recurring">↑ Day 3 — still no fix from Anthropic; audit ~/.claude.json MCP entries</div>
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
