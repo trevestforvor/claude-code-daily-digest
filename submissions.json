@@ -1024,5 +1024,16 @@
     "install": "git clone https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5",
     "added_date": "2026-05-15",
     "added_by": "user"
+  },
+  {
+    "slug": "spec-kit",
+    "name": "Spec Kit",
+    "primary_url": "https://github.com/github/spec-kit",
+    "secondary_urls": [],
+    "hook": "GitHub's open-source toolkit for Spec-Driven Development — `specify` CLI plus a Claude Code plugin with 9 slash commands (constitution, specify, clarify, plan, tasks, implement, analyze, checklist, taskstoissues). ~90k stars.",
+    "categories": ["plugin", "viral"],
+    "install": "pip install specify-cli",
+    "added_date": "2026-05-15",
+    "added_by": "user"
   }
 ]
