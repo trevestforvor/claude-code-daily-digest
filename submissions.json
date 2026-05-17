@@ -1035,5 +1035,16 @@
     "install": "pip install specify-cli",
     "added_date": "2026-05-15",
     "added_by": "user"
+  },
+  {
+    "slug": "sana",
+    "name": "SANA (NVIDIA)",
+    "primary_url": "https://github.com/NVlabs/Sana",
+    "secondary_urls": [],
+    "hook": "Efficiency-focused diffusion-transformer codebase for high-resolution image and video — variants SANA-1.5 (compute scaling), SANA-Sprint (one-step gen), SANA-Video, and Sol-RL (RL post-training). Apache 2.0, ~5.7k stars.",
+    "categories": ["design"],
+    "install": "git clone https://github.com/NVlabs/Sana && cd Sana && ./environment_setup.sh sana",
+    "added_date": "2026-05-15",
+    "added_by": "user"
   }
 ]
