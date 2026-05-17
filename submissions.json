@@ -1046,5 +1046,16 @@
     "install": "git clone https://github.com/NVlabs/Sana && cd Sana && ./environment_setup.sh sana",
     "added_date": "2026-05-15",
     "added_by": "user"
+  },
+  {
+    "slug": "anansi",
+    "name": "Anansi",
+    "primary_url": "https://github.com/mdowis/anansi",
+    "secondary_urls": [],
+    "hook": "Self-healing web scraper — auto-repairs broken CSS/XPath selectors, escalates to browser rendering when DOM-only fails, and mimics Chrome's TLS fingerprint to bypass bot detection. Ships an MCP server for LLM integration. Apache 2.0.",
+    "categories": ["mcp"],
+    "install": "pip install \"git+https://github.com/mdowis/anansi\"",
+    "added_date": "2026-05-15",
+    "added_by": "user"
   }
 ]
