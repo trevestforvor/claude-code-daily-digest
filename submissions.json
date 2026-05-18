@@ -1057,5 +1057,16 @@
     "install": "pip install \"git+https://github.com/mdowis/anansi\"",
     "added_date": "2026-05-15",
     "added_by": "user"
+  },
+  {
+    "slug": "streambert",
+    "name": "Streambert",
+    "primary_url": "https://github.com/truelockmc/streambert",
+    "secondary_urls": [],
+    "hook": "Cross-platform Electron app to stream and download any movie, TV series, or anime — Vue.js front-end, AniList for anime metadata, TMDB for everything else. Zero ads, zero tracking, no account.",
+    "categories": [],
+    "install": "",
+    "added_date": "2026-05-15",
+    "added_by": "user"
   }
 ]
