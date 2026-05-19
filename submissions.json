@@ -984,5 +984,89 @@
     "install": "",
     "added_date": "2026-05-13",
     "added_by": "user"
+  },
+  {
+    "slug": "freebuff",
+    "name": "Freebuff (Codebuff)",
+    "primary_url": "https://github.com/CodebuffAI/codebuff",
+    "secondary_urls": [],
+    "hook": "Free, ad-supported edition of Codebuff — multi-agent terminal coding assistant that edits your codebase via natural language. Built-in web research + browser use, no credits, no config.",
+    "categories": ["cost", "plugin"],
+    "install": "npx codebuff",
+    "added_date": "2026-05-15",
+    "added_by": "user"
+  },
+  {
+    "slug": "ltx-2",
+    "name": "LTX-2",
+    "primary_url": "https://github.com/Lightricks/LTX-2",
+    "secondary_urls": [
+      "https://huggingface.co/Lightricks/LTX-2",
+      "https://huggingface.co/Lightricks/LTX-2.3",
+      "https://github.com/Lightricks/LTX-Desktop"
+    ],
+    "hook": "Lightricks' open audio-video foundation model — first DiT that emits synced audio + 4K video at up to 50fps for ~10s clips, with ~50% lower compute than peers. Inference + LoRA trainer + desktop app.",
+    "categories": ["design", "viral"],
+    "install": "pip install ltx-pipelines",
+    "added_date": "2026-05-15",
+    "added_by": "user"
+  },
+  {
+    "slug": "hunyuan-video",
+    "name": "Hunyuan Video 1.5",
+    "primary_url": "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5",
+    "secondary_urls": [
+      "https://github.com/Tencent-Hunyuan/HunyuanVideo",
+      "https://github.com/Tencent-Hunyuan/HunyuanVideo-Foley"
+    ],
+    "hook": "Tencent's open 13B-parameter video foundation model — leading open quality and motion stability, with companion HunyuanVideo-Foley for high-fidelity audio. Permissive Tencent Hunyuan Community License.",
+    "categories": ["design", "viral"],
+    "install": "git clone https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5",
+    "added_date": "2026-05-15",
+    "added_by": "user"
+  },
+  {
+    "slug": "spec-kit",
+    "name": "Spec Kit",
+    "primary_url": "https://github.com/github/spec-kit",
+    "secondary_urls": [],
+    "hook": "GitHub's open-source toolkit for Spec-Driven Development — `specify` CLI plus a Claude Code plugin with 9 slash commands (constitution, specify, clarify, plan, tasks, implement, analyze, checklist, taskstoissues). ~90k stars.",
+    "categories": ["plugin", "viral"],
+    "install": "pip install specify-cli",
+    "added_date": "2026-05-15",
+    "added_by": "user"
+  },
+  {
+    "slug": "sana",
+    "name": "SANA (NVIDIA)",
+    "primary_url": "https://github.com/NVlabs/Sana",
+    "secondary_urls": [],
+    "hook": "Efficiency-focused diffusion-transformer codebase for high-resolution image and video — variants SANA-1.5 (compute scaling), SANA-Sprint (one-step gen), SANA-Video, and Sol-RL (RL post-training). Apache 2.0, ~5.7k stars.",
+    "categories": ["design"],
+    "install": "git clone https://github.com/NVlabs/Sana && cd Sana && ./environment_setup.sh sana",
+    "added_date": "2026-05-15",
+    "added_by": "user"
+  },
+  {
+    "slug": "anansi",
+    "name": "Anansi",
+    "primary_url": "https://github.com/mdowis/anansi",
+    "secondary_urls": [],
+    "hook": "Self-healing web scraper — auto-repairs broken CSS/XPath selectors, escalates to browser rendering when DOM-only fails, and mimics Chrome's TLS fingerprint to bypass bot detection. Ships an MCP server for LLM integration. Apache 2.0.",
+    "categories": ["mcp"],
+    "install": "pip install \"git+https://github.com/mdowis/anansi\"",
+    "added_date": "2026-05-15",
+    "added_by": "user"
+  },
+  {
+    "slug": "streambert",
+    "name": "Streambert",
+    "primary_url": "https://github.com/truelockmc/streambert",
+    "secondary_urls": [],
+    "hook": "Cross-platform Electron app to stream and download any movie, TV series, or anime — Vue.js front-end, AniList for anime metadata, TMDB for everything else. Zero ads, zero tracking, no account.",
+    "categories": [],
+    "install": "",
+    "added_date": "2026-05-15",
+    "added_by": "user"
   }
 ]
