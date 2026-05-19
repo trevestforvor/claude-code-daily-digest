@@ -1,0 +1,73 @@
+[
+  {
+    "slug": "chrome-devtools-mcp-stable",
+    "name": "Chrome DevTools MCP v1.0 (ChromeDevTools)",
+    "primary_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "secondary_urls": ["https://developer.chrome.com/blog/chrome-devtools-mcp"],
+    "hook": "The Chrome DevTools team at Google shipped v1.0.0 stable yesterday (May 18) — going from 0.x to a declared-stable 1.0 after 50 releases and 40K GitHub stars. The official MCP server gives coding agents 40+ tools: full browser control, Lighthouse performance audits, network monitoring, heap snapshots, screenshots, console inspection, and extension debugging, all over the Chrome DevTools Protocol. Unlike community Playwright wrappers, this is maintained by the same team that ships Chrome DevTools itself.",
+    "categories": ["mcp"],
+    "install": "claude mcp add chrome-devtools --scope user npx chrome-devtools-mcp@latest"
+  },
+  {
+    "slug": "anthropic-acquires-stainless",
+    "name": "Anthropic Acquires Stainless (~$300M)",
+    "primary_url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+    "secondary_urls": [
+      "https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/",
+      "https://winbuzzer.com/2026/05/19/anthropic-buys-stainless-ends-hosted-sdk-tools-xcxwbn/"
+    ],
+    "hook": "Announced May 18 for a reported $300M+. Stainless (NYC, founded 2022 by ex-Stripe engineer Alex Rattray) auto-generates and maintains production-quality SDKs — TypeScript, Python, Go, Java, Kotlin, and Swift — directly from an OpenAPI spec. OpenAI, Google, and Cloudflare all use it today. Post-acquisition, Anthropic is shutting down all hosted Stainless products: existing customers keep the SDKs they've already generated, but new access is Anthropic-exclusive. The Claude API's own Python and TypeScript SDKs were built with Stainless, and tighter integration is expected soon.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "andrej-karpathy-skills",
+    "name": "andrej-karpathy-skills (forrestchang)",
+    "primary_url": "https://github.com/forrestchang/andrej-karpathy-skills",
+    "secondary_urls": [
+      "https://www.techtimes.com/articles/316798/20260518/karpathy-inspired-claudemd-passes-220000-combined-github-stars-four-rules-that-stop-ai-breaking.htm"
+    ],
+    "hook": "137K stars on the original repo, 220K combined including the multica-ai mirror — a TechTimes article on May 18 called out the milestone. Forrest Chang's single CLAUDE.md encodes four behavioral rules derived from Andrej Karpathy's January 2026 post about switching to 80% agent-driven coding: Think Before Coding (state assumptions first), Simplicity First (minimum code that solves the problem), Surgical Changes (touch only what the request requires), and Goal-Driven Execution (convert vague prompts to verifiable success criteria before starting). No dependencies; installs as a plugin or drops straight into any project root.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add forrestchang/andrej-karpathy-skills"
+  },
+  {
+    "slug": "claude-code-v2-1-143-144",
+    "name": "Claude Code v2.1.143 + v2.1.144",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "hook": "Two releases in four days. v2.1.143 (May 15): plugin dependency enforcement is now live — `claude plugin disable` blocks dependents; projected context cost estimates appear in the /plugin marketplace browse pane so you can price a plugin before installing; MCP_TOOL_TIMEOUT now actually applies to remote HTTP/SSE servers (was silently ignored). v2.1.144 (May 19): `/resume` now surfaces background sessions (tagged `bg`) in the session list with elapsed duration; `/model` switches model for the current session only — press `d` to set the default for new sessions; fixed paginated MCP `tools/list` responses only returning the first page (silently truncated all tools past page 1); fixed startup hanging up to 75s when api.anthropic.com is unreachable.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code  # → v2.1.144"
+  },
+  {
+    "slug": "claude-peers-mcp",
+    "name": "claude-peers-mcp (louislva)",
+    "primary_url": "https://github.com/louislva/claude-peers-mcp",
+    "hook": "2K stars. Installs a local broker daemon on localhost:7899 (SQLite-backed) that every Claude Code session on your machine registers with. From any session you can call `list_peers` to see all active Claude instances with auto-generated work summaries, then `send_message` to forward context — a task that one agent finishes can instantly hand off state to another without copy-paste. Everything is localhost-only; no data leaves the machine. Built in TypeScript with Bun; requires Claude Code v2.1.80+.",
+    "categories": ["mcp"],
+    "install": "git clone https://github.com/louislva/claude-peers-mcp && cd claude-peers-mcp && bun install"
+  },
+  {
+    "slug": "n8n-mcp-v2-54",
+    "name": "n8n-mcp v2.54.0 (czlonkowski)",
+    "primary_url": "https://github.com/czlonkowski/n8n-mcp",
+    "hook": "v2.54.0 shipped May 18 — the 215th release since this project launched in early 2026. 21.1K stars (up from 20.1K two weeks ago). The MCP server gives Claude Code structured access to every n8n node: 820 core + 830 community nodes (1,650 total), multi-level validation (minimal/standard/full), and a library of 2,352 workflow templates. You describe the automation you want in natural language; Claude builds a validated, production-ready n8n workflow instead of guessing node configs.",
+    "categories": ["mcp"],
+    "install": "npx n8n-mcp",
+    "recurring_note": "↑ Day 14 — v2.54.0; 215 releases across 13 weeks"
+  },
+  {
+    "slug": "code-with-claude-london-2026",
+    "name": "Code with Claude London 2026",
+    "primary_url": "https://claude.com/code-with-claude/london",
+    "secondary_urls": ["https://claude.com/code-with-claude/london-extended"],
+    "hook": "Second stop on Anthropic's 2026 conference tour, with the main London event on May 19 (today) and Extended London on May 20 — a separate track for independent developers and early-stage founders featuring founder stories, builder deep-dives, and laptops-open workshops from Anthropic's Applied AI team. Both days are livestreamed. Tokyo follows on June 5–6. The SF event (May 6) launched Managed Agents features; London is expected to cover regional ecosystem and partner announcements.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "surgegraph-agent-bundle",
+    "name": "SurgeGraph Agent Bundle (pp-surgegraph)",
+    "primary_url": "https://www.newsfilecorp.com/release/297956/SurgeGraph-Now-Available-as-an-AgentNative-CLI-MCP-Server-and-Claude-Code-Skill-for-AEO-and-GEO-Workflows",
+    "hook": "Launched May 19. SurgeGraph — an Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) platform — is the first dedicated AI-search SEO tool to ship a full agent-callable bundle: a single Go binary CLI, an MCP server, and a Claude Code skill, all in one package. Exposes every SurgeGraph workflow (content research, draft, publish, AI citation monitoring) to Claude Code and Codex as Bash-tool commands. Includes a local SQLite mirror of SurgeGraph data so agents can run compound queries offline without round-tripping to the API. Available through the Printing Press community library at printingpress.dev under `pp-surgegraph`.",
+    "categories": ["skill", "mcp"]
+  }
+]
