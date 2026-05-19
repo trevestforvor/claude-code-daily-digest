@@ -1,20 +1,34 @@
 # April 2026 Catchup — Research Notes
 
-## Summary
+Date compiled: 2026-05-19
+Window: 2026-04-20 → 2026-04-30 (partial month — dailies only started Apr 20)
 
-- **Daily digests consumed:** 11 (2026-04-20 through 2026-04-30)
-- **Unique items after dedup:** 108
+## Method
 
-## Top 5 Most-Recurring Items
+Pure consolidation pass over `digests/2026-04-*.json`. No fresh web research.
+Items deduped by `slug`; freshest framing (hook, install, categories) kept
+from each item's last daily appearance. Ranked by recurring presence
+(appearances DESC, first-appearance ASC, name ASC).
 
-1. **caveman** (`caveman`) — 7 appearances: 2026-04-20, 2026-04-21, 2026-04-22, 2026-04-23, 2026-04-27, 2026-04-28, 2026-04-29
-2. **everything-claude-code** (`everything-claude-code`) — 6 appearances: 2026-04-20, 2026-04-21, 2026-04-22, 2026-04-23, 2026-04-27, 2026-04-28
-3. **claude-code-plugins-plus-skills (jeremylongshore)** (`claude-code-plugins-plus-skills`) — 5 appearances: 2026-04-20, 2026-04-23, 2026-04-28, 2026-04-29, 2026-04-30
-4. **claude-mem** (`claude-mem`) — 5 appearances: 2026-04-20, 2026-04-21, 2026-04-22, 2026-04-23, 2026-04-27
-5. **code-review-graph** (`code-review-graph`) — 4 appearances: 2026-04-20, 2026-04-21, 2026-04-27, 2026-04-28
+This replaces the prior legacy `catchups/2026-04.json` (which was derived
+from a single day's digest with the note "month in progress").
 
-## Notes
+## Stats
 
-This catchup replaces the prior legacy partial catchup for April 2026, which was built from a single day's digest. The partial-month window covers **Apr 20–30** only — no daily digests exist for Apr 1–19.
+- Daily digests consumed: 11
+- Unique items after dedup: 108
+- Total item-appearances across the window: 154
 
-Items are deduped by `slug`; the hook, install command, and categories are taken from the item's **last appearance**. Secondary URLs are merged across all appearances. Items are ranked by descending appearance count, then by first-appearance date (ascending), then alphabetically by name.
+## Top 5 most-recurring items
+
+1. **caveman** — 7 days (2026-04-20 → 2026-04-29)
+2. **everything-claude-code** — 6 days (2026-04-20 → 2026-04-28)
+3. **claude-code-plugins-plus-skills (jeremylongshore)** — 5 days (2026-04-20 → 2026-04-30)
+4. **claude-mem** — 5 days (2026-04-20 → 2026-04-27)
+5. **code-review-graph** — 4 days (2026-04-20 → 2026-04-28)
+
+## Anomalies
+
+- Window is partial: dailies only exist for Apr 20–30, so the first 19 days
+  of April are not represented.
+- Replaces a legacy catchup that was built from a single day's digest.

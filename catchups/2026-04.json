@@ -1,7 +1,7 @@
 {
   "month": "2026-04",
   "title": "April 2026 Catchup — All items (partial month, Apr 20–30)",
-  "generated_at": "2026-05-19T00:34:11Z",
+  "generated_at": "2026-05-19T00:48:29.685Z",
   "note": "Consolidated from 11 daily digests (2026-04-20 through 2026-04-30). Items deduped by slug; ranked by recurring presence. Replaces earlier partial catchup.",
   "items": [
     {
@@ -236,6 +236,7 @@
         "design",
         "anthropic"
       ],
+      "install": "Available at claude.ai (Pro/Max/Team/Enterprise)",
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -257,6 +258,7 @@
         "anthropic",
         "cost"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -508,6 +510,7 @@
       "categories": [
         "anthropic"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -792,6 +795,7 @@
       "categories": [
         "anthropic"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -812,6 +816,7 @@
       "categories": [
         "cost"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -905,6 +910,7 @@
       "categories": [
         "viral"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -997,6 +1003,7 @@
       "categories": [
         "anthropic"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -1033,6 +1040,7 @@
       "categories": [
         "workflow"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -1087,6 +1095,7 @@
       "categories": [
         "workflow"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -1178,6 +1187,7 @@
         "cost",
         "anthropic"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -1195,6 +1205,7 @@
       "categories": [
         "cost"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -1252,6 +1263,7 @@
         "design",
         "anthropic"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -1269,6 +1281,7 @@
       "categories": [
         "cost"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -1346,6 +1359,7 @@
       "categories": [
         "cost"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -1425,6 +1439,7 @@
       "categories": [
         "skill"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -1482,6 +1497,7 @@
       "categories": [
         "cost"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -1501,6 +1517,7 @@
       "categories": [
         "cost"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -1514,8 +1531,8 @@
       "name": "Google Workspace CLI (gws)",
       "primary_url": "https://github.com/googleworkspace/cli",
       "secondary_urls": [
-        "https://github.com/WadeWarren/gws-claude-plugin",
-        "https://www.youtube.com/watch?v=KjEFy5wjFQg"
+        "https://www.youtube.com/watch?v=KjEFy5wjFQg",
+        "https://github.com/WadeWarren/gws-claude-plugin"
       ],
       "hook": "19.9k stars (v0.22) — Google's official CLI for Drive, Gmail, Calendar, Sheets, Docs, Chat, and Admin, dynamically built from Google's Discovery Service so new Workspace APIs surface automatically without updates. Launched March 2, 2026; hit 4,900 stars in its first 3 days and trended on HN (427 points). Has built-in agent skills for Claude Code; the companion WadeWarren/gws-claude-plugin adds 92 curated skills covering end-to-end Gmail, Calendar, and Drive workflows without extra auth configuration. Covered by @Chase-H-AI in the April Top 10.",
       "categories": [
@@ -1604,6 +1621,7 @@
       "categories": [
         "skill"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -1637,13 +1655,14 @@
       "name": "Claude Mythos Preview",
       "primary_url": "https://www.anthropic.com/glasswing",
       "secondary_urls": [
-        "https://simonwillison.net/2026/Apr/7/project-glasswing/",
-        "https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/"
+        "https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/",
+        "https://simonwillison.net/2026/Apr/7/project-glasswing/"
       ],
       "hook": "Anthropic's most capable model to date — SWE-bench 93.9%, USAMO 97.6%, and autonomously discovered thousands of zero-day CVEs across every major OS and browser including a 17-year-old FreeBSD RCE (CVE-2026-4747). Available only through Project Glasswing, a gated initiative with AWS, Apple, Cisco, Google, NVIDIA, Linux Foundation, and 8 other partners, prioritizing defenders at internet-critical companies. $25/$125 per M input/output tokens; Anthropic committed $100M in credits to participants. Access via Claude API, Bedrock, Vertex AI, or Microsoft Foundry after approval.",
       "categories": [
         "anthropic"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -1661,6 +1680,7 @@
       "categories": [
         "design"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -1682,6 +1702,7 @@
         "anthropic",
         "cost"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -1924,6 +1945,7 @@
       "categories": [
         "skill"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -1983,6 +2005,7 @@
         "mcp",
         "anthropic"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -2003,6 +2026,7 @@
       "categories": [
         "anthropic"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -2020,6 +2044,7 @@
       "categories": [
         "cost"
       ],
+      "install": null,
       "month": "2026-04",
       "stars_approx": null,
       "evidence": null,
@@ -2051,8 +2076,8 @@
       "name": "Higgsfield MCP",
       "primary_url": "https://higgsfield.ai/mcp",
       "secondary_urls": [
-        "https://phemex.com/news/article/higgsfield-ai-unveils-mcp-server-for-visual-content-creation-with-claude-77601",
-        "https://www.youtube.com/watch?v=20BDYk-CU_o"
+        "https://www.youtube.com/watch?v=20BDYk-CU_o",
+        "https://phemex.com/news/article/higgsfield-ai-unveils-mcp-server-for-visual-content-creation-with-claude-77601"
       ],
       "hook": "Higgsfield AI launched its official MCP server on April 30 — a hosted endpoint at mcp.higgsfield.ai/mcp that wires 30+ image and video models (Seedance 2.0, Sora 2, Kling 3.0, Veo 3.1, WAN 2.6; Flux 2, GPT Image 2, Seedream 5.0 Lite) directly into Claude Code, Cursor, or any MCP client. Ships Marketing Studio presets (UGC, unboxing, TV spot, hyper motion) and a Soul Character tool for cast consistency across multi-shot productions. @Chase-H-AI posted a walkthrough the same day showing single product photos become multi-format ad sets in one Claude Code session.",
       "categories": [
