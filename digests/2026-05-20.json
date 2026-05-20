@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "everything-claude-code",
+    "name": "everything-claude-code (affaan-m)",
+    "primary_url": "https://github.com/affaan-m/everything-claude-code",
+    "hook": "182K stars and counting — the most-starred Claude Code harness on GitHub. Anthropic hackathon winner (Cerebral Valley x Anthropic, Feb 2026) built over 10+ months of daily use into a complete agent performance layer: 28 specialist agents, 119 skills, 60 slash commands, plus instincts (project-context auto-injection), persistent memory, 6-layer security scanning, and research-first development mode. Drops straight into Claude Code, Codex, Cursor, and OpenCode with no config.",
+    "categories": ["skill", "viral"],
+    "install": "git clone https://github.com/affaan-m/everything-claude-code && bash install.sh"
+  },
+  {
+    "slug": "opencode-v1-15-5",
+    "name": "OpenCode v1.15.5",
+    "primary_url": "https://github.com/sst/opencode",
+    "secondary_urls": ["https://opencode.ai/"],
+    "hook": "163K GitHub stars and v1.15.5 released May 18 — the open-source terminal agent that surpassed Claude Code in stars. Built by Anomaly Co (creators of SST/Ion), it pairs a 'build' agent that edits with a read-only 'plan' agent that never touches the filesystem, is fully provider-agnostic (Anthropic, OpenAI, Gemini, Mistral, Ollama), and ships a desktop app beta for macOS/Windows/Linux. Subscription tiers: Zen (pay-as-you-go curated gateway) and Go ($10/mo for open-weight models — GLM-5.1, Kimi K2.5, DeepSeek V4).",
+    "categories": ["viral", "cost"],
+    "install": "curl -fsSL https://opencode.ai/install | bash"
+  },
+  {
+    "slug": "anthropic-self-hosted-sandboxes-mcp-tunnels",
+    "name": "Self-Hosted Sandboxes + MCP Tunnels (Anthropic, London Launch)",
+    "primary_url": "https://claude.com/blog/claude-managed-agents-updates",
+    "secondary_urls": [
+      "https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes",
+      "https://platform.claude.com/docs/en/agents-and-tools/mcp-tunnels/overview"
+    ],
+    "hook": "Shipped May 19 at Code with Claude London. Two new primitives for Claude Managed Agents: Self-hosted sandboxes (public beta) let you keep sensitive data on your own infra or with four supported compute providers (Cloudflare, Daytona, Modal, Vercel) while Anthropic's orchestration layer stays in the cloud — enterprise compliance without sacrificing the managed agent loop. MCP tunnels (research preview) give agents access to MCP servers inside your private network via a single outbound gateway connection — no inbound firewall rules, no public endpoints, end-to-end encryption. Also shipped: update MCP configs on live sessions, auto-spill for tool outputs >100K tokens to a sandbox file.",
+    "categories": ["anthropic", "mcp", "cost"],
+    "install": "See platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes"
+  },
+  {
+    "slug": "claude-code-v2-1-145",
+    "name": "Claude Code v2.1.145 (May 19)",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "hook": "Released May 19. Highlights: `claude agents --json` outputs live sessions as JSON so external tools (tmux-resurrect, status bars, custom pickers) can script against running agents; OTEL spans now carry `agent_id` and `parent_agent_id` so background subagent traces nest correctly under the dispatching span — the first release with properly parented distributed traces for multi-agent workloads. Plugin Discover/Browse panes now show a plugin's full capability manifest (commands, agents, skills, hooks, MCP/LSP servers) before installation. Bug: fixed a permission-prompt bypass where bare variable assignments in Bash could execute without approval.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code  # → v2.1.145"
+  },
+  {
+    "slug": "kobiton-automate-plugin",
+    "name": "Kobiton Automate (Claude Code Plugin)",
+    "primary_url": "https://github.com/kobiton/automate",
+    "hook": "v1.2.0 released May 20. Official Kobiton plugin gives Claude Code direct access to real iOS and Android hardware via the Kobiton cloud — 12 tools across three surfaces (Devices: list/reserve/status/terminate; Sessions: list/get/artifacts/terminate; Apps: upload/confirm/list/get) plus three specialist agents for device picking, Appium capability reconciliation, and session triage. Claude reads your Appium script, extracts capabilities, confirms the target device, and executes locally — no emulator drift.",
+    "categories": ["mcp"],
+    "install": "/plugin marketplace add kobiton/automate"
+  },
+  {
+    "slug": "claude-forge",
+    "name": "Claude Forge (sangrokjung)",
+    "primary_url": "https://github.com/sangrokjung/claude-forge",
+    "secondary_urls": ["https://sangrokjung.github.io/claude-forge/"],
+    "hook": "702 stars, v3.0.2 (May 3, 2026) — the 'oh-my-zsh for Claude Code.' Installs as a plugin and wires together 11 specialist agents, 40 slash commands, and 15+ skills into a pre-built pipeline: /plan → /tdd → /code-review → /handoff-verify → /commit-push-pr, all connected via 6-layer security hooks that run automatically. Ships with a 4-server MCP minimum (playwright, context7, jina-reader, chrome-devtools@0.23.0). 5-minute install via curl; works alongside official Anthropic plugins.",
+    "categories": ["plugin", "skill"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/sangrokjung/claude-forge/main/install.sh | bash"
+  },
+  {
+    "slug": "tonsofskills-ccpi",
+    "name": "TonsOfSkills / claude-code-plugins-plus-skills (CCPI)",
+    "primary_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+    "secondary_urls": ["https://tonsofskills.com/"],
+    "hook": "The largest community-built Claude Code catalog: 425 plugins, 2,810 skills, and 200 agents managed via the CCPI (Claude Code Plugin Index) CLI package manager — install by keyword, update all, list installed. The companion marketplace at tonsofskills.com updates daily and includes curated packs like the B12.io website-generator skills, a 9-agent analytics intelligence team with Umami integration, and a Token Optimizer with 6 parallel audit agents and a live quality scoring dashboard.",
+    "categories": ["marketplace"],
+    "install": "npm install -g ccpi && ccpi search <keyword> && ccpi install <plugin-name>"
+  },
+  {
+    "slug": "levnikolaevich-claude-code-skills",
+    "name": "claude-code-skills (levnikolaevich / hex bundle)",
+    "primary_url": "https://github.com/levnikolaevich/claude-code-skills",
+    "hook": "421 stars. A full delivery-lifecycle plugin bundle for Claude Code that ships three bundled MCP servers alongside its skills and agents. hex-line: every file read returns a per-line FNV-1a hash; edits validate against the hash so Claude can't silently rewrite stale content. hex-graph: indexes the codebase into a SQLite knowledge graph with framework-aware overlays and SCIP interop for architecture analysis. hex-ssh: brings hash-verified editing over SSH with binary-safe SFTP upload/download. The plugin layer adds Agile pipeline orchestration, multi-model AI code review, automated docs generation, and codebase audit commands.",
+    "categories": ["mcp", "skill"],
+    "install": "/plugin marketplace add levnikolaevich/claude-code-skills"
+  },
+  {
+    "slug": "skill-creator-plugin",
+    "name": "Skill Creator (Official Anthropic Plugin)",
+    "primary_url": "https://claude.com/plugins/skill-creator",
+    "secondary_urls": [
+      "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/skill-creator"
+    ],
+    "hook": "Anthropic's official skill-building plugin, pre-installed in Claude Desktop and Claude Cowork. Interactive Q&A session asks about the workflow you want to automate, trigger conditions, reference files, and edge cases — then generates a complete skill directory with proper SKILL.md frontmatter, instructions, and structure. March 2026 update added evaluations and benchmarking: test skill behavior over time against a defined rubric instead of one-off 'looks good' checks. The fastest path from 'I do this manually' to a deployable agent skill.",
+    "categories": ["anthropic", "skill"],
+    "install": "Pre-installed in Claude Desktop and Claude Cowork — or: /plugin install skill-creator@anthropic"
+  },
+  {
+    "slug": "web-search-sec-filing-data",
+    "name": "Web Search Tool: Richer SEC Filing Data (Anthropic API)",
+    "primary_url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "hook": "Shipped May 18 in the Claude API. The built-in web search tool now returns richer structured data from SEC filings — 10-Ks, 10-Qs, 8-Ks, proxy statements, and EDGAR full-text search results — making it dramatically easier to build financial research agents, earnings analysis workflows, and M&A due-diligence pipelines that cite primary sources. Previously, web search returned general web snippets for SEC queries; now it surfaces actual filing content with citations. Requires no code change for existing users of the `web_search` tool.",
+    "categories": ["anthropic"],
+    "install": "No change required — update applies automatically to all web_search tool calls"
+  }
+]
