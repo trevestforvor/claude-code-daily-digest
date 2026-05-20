@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — May 20, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — May 20, 2026</h1><p class="sub">Top 10 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/affaan-m/everything-claude-code">everything-claude-code (affaan-m)</a></h3>
+  <p class="hook">182K stars and counting — the most-starred Claude Code harness on GitHub. Anthropic hackathon winner (Cerebral Valley x Anthropic, Feb 2026) built over 10+ months of daily use into a complete agent performance layer: 28 specialist agents, 119 skills, 60 slash commands, plus instincts (project-context auto-injection), persistent memory, 6-layer security scanning, and research-first development mode. Drops straight into Claude Code, Codex, Cursor, and OpenCode with no config.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">harness · memory · anthropic · security</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/affaan-m/everything-claude-code &amp;&amp; bash install.sh</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/sst/opencode">OpenCode v1.15.5</a></h3>
+  <p class="hook">163K GitHub stars and v1.15.5 released May 18 — the open-source terminal agent that surpassed Claude Code in stars. Built by Anomaly Co (creators of SST/Ion), it pairs a &#39;build&#39; agent that edits with a read-only &#39;plan&#39; agent that never touches the filesystem, is fully provider-agnostic (Anthropic, OpenAI, Gemini, Mistral, Ollama), and ships a desktop app beta for macOS/Windows/Linux. Subscription tiers: Zen (pay-as-you-go curated gateway) and Go ($10/mo for open-weight models — GLM-5.1, Kimi K2.5, DeepSeek V4).</p>
+  <div class="secondary">Also: <a href="https://opencode.ai/">opencode.ai/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">local · anthropic · terminal</div>
+  <pre><button class="copy">copy</button><code>curl -fsSL https://opencode.ai/install | bash</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://claude.com/blog/claude-managed-agents-updates">Self-Hosted Sandboxes + MCP Tunnels (Anthropic, London Launch)</a></h3>
+  <p class="hook">Shipped May 19 at Code with Claude London. Two new primitives for Claude Managed Agents: Self-hosted sandboxes (public beta) let you keep sensitive data on your own infra or with four supported compute providers (Cloudflare, Daytona, Modal, Vercel) while Anthropic&#39;s orchestration layer stays in the cloud — enterprise compliance without sacrificing the managed agent loop. MCP tunnels (research preview) give agents access to MCP servers inside your private network via a single outbound gateway connection — no inbound firewall rules, no public endpoints, end-to-end encryption. Also shipped: update MCP configs on live sessions, auto-spill for tool outputs &gt;100K tokens to a sandbox file.</p>
+  <div class="secondary">Also: <a href="https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes">platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes</a> · <a href="https://platform.claude.com/docs/en/agents-and-tools/mcp-tunnels/overview">platform.claude.com/docs/en/agents-and-tools/mcp-tunnels/overview</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">token</div>
+  <pre><button class="copy">copy</button><code>See platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.145 (May 19)</a></h3>
+  <p class="hook">Released May 19. Highlights: `claude agents --json` outputs live sessions as JSON so external tools (tmux-resurrect, status bars, custom pickers) can script against running agents; OTEL spans now carry `agent_id` and `parent_agent_id` so background subagent traces nest correctly under the dispatching span — the first release with properly parented distributed traces for multi-agent workloads. Plugin Discover/Browse panes now show a plugin&#39;s full capability manifest (commands, agents, skills, hooks, MCP/LSP servers) before installation. Bug: fixed a permission-prompt bypass where bare variable assignments in Bash could execute without approval.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">mcp · plugin · agent · subagent</div>
+  <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code  # → v2.1.145</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/kobiton/automate">Kobiton Automate (Claude Code Plugin)</a></h3>
+  <p class="hook">v1.2.0 released May 20. Official Kobiton plugin gives Claude Code direct access to real iOS and Android hardware via the Kobiton cloud — 12 tools across three surfaces (Devices: list/reserve/status/terminate; Sessions: list/get/artifacts/terminate; Apps: upload/confirm/list/get) plus three specialist agents for device picking, Appium capability reconciliation, and session triage. Claude reads your Appium script, extracts capabilities, confirms the target device, and executes locally — no emulator drift.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">plugin · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add kobiton/automate</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/sangrokjung/claude-forge">Claude Forge (sangrokjung)</a></h3>
+  <p class="hook">702 stars, v3.0.2 (May 3, 2026) — the &#39;oh-my-zsh for Claude Code.&#39; Installs as a plugin and wires together 11 specialist agents, 40 slash commands, and 15+ skills into a pre-built pipeline: /plan → /tdd → /code-review → /handoff-verify → /commit-push-pr, all connected via 6-layer security hooks that run automatically. Ships with a 4-server MCP minimum (playwright, context7, jina-reader, chrome-devtools@0.23.0). 5-minute install via curl; works alongside official Anthropic plugins.</p>
+  <div class="secondary">Also: <a href="https://sangrokjung.github.io/claude-forge/">sangrokjung.github.io/claude-forge/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">mcp · anthropic · viral · browser · security</div>
+  <pre><button class="copy">copy</button><code>curl -fsSL https://raw.githubusercontent.com/sangrokjung/claude-forge/main/install.sh | bash</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/jeremylongshore/claude-code-plugins-plus-skills">TonsOfSkills / claude-code-plugins-plus-skills (CCPI)</a></h3>
+  <p class="hook">The largest community-built Claude Code catalog: 425 plugins, 2,810 skills, and 200 agents managed via the CCPI (Claude Code Plugin Index) CLI package manager — install by keyword, update all, list installed. The companion marketplace at tonsofskills.com updates daily and includes curated packs like the B12.io website-generator skills, a 9-agent analytics intelligence team with Umami integration, and a Token Optimizer with 6 parallel audit agents and a live quality scoring dashboard.</p>
+  <div class="secondary">Also: <a href="https://tonsofskills.com/">tonsofskills.com/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span>  </div>
+  <div class="tags">plugin · terminal</div>
+  <pre><button class="copy">copy</button><code>npm install -g ccpi &amp;&amp; ccpi search &lt;keyword&gt; &amp;&amp; ccpi install &lt;plugin-name&gt;</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/levnikolaevich/claude-code-skills">claude-code-skills (levnikolaevich / hex bundle)</a></h3>
+  <p class="hook">421 stars. A full delivery-lifecycle plugin bundle for Claude Code that ships three bundled MCP servers alongside its skills and agents. hex-line: every file read returns a per-line FNV-1a hash; edits validate against the hash so Claude can&#39;t silently rewrite stale content. hex-graph: indexes the codebase into a SQLite knowledge graph with framework-aware overlays and SCIP interop for architecture analysis. hex-ssh: brings hash-verified editing over SSH with binary-safe SFTP upload/download. The plugin layer adds Agile pipeline orchestration, multi-model AI code review, automated docs generation, and codebase audit commands.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · memory · viral · marketplace · review</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add levnikolaevich/claude-code-skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://claude.com/plugins/skill-creator">Skill Creator (Official Anthropic Plugin)</a></h3>
+  <p class="hook">Anthropic&#39;s official skill-building plugin, pre-installed in Claude Desktop and Claude Cowork. Interactive Q&amp;A session asks about the workflow you want to automate, trigger conditions, reference files, and edge cases — then generates a complete skill directory with proper SKILL.md frontmatter, instructions, and structure. March 2026 update added evaluations and benchmarking: test skill behavior over time against a defined rubric instead of one-off &#39;looks good&#39; checks. The fastest path from &#39;I do this manually&#39; to a deployable agent skill.</p>
+  <div class="secondary">Also: <a href="https://github.com/anthropics/claude-plugins-official/tree/main/plugins/skill-creator">github.com/anthropics/claude-plugins-official/tree/main/plugins/skill-creator</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · marketplace</div>
+  <pre><button class="copy">copy</button><code>Pre-installed in Claude Desktop and Claude Cowork — or: /plugin install skill-creator@anthropic</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://platform.claude.com/docs/en/release-notes/overview">Web Search Tool: Richer SEC Filing Data (Anthropic API)</a></h3>
+  <p class="hook">Shipped May 18 in the Claude API. The built-in web search tool now returns richer structured data from SEC filings — 10-Ks, 10-Qs, 8-Ks, proxy statements, and EDGAR full-text search results — making it dramatically easier to build financial research agents, earnings analysis workflows, and M&amp;A due-diligence pipelines that cite primary sources. Previously, web search returned general web snippets for SEC queries; now it surfaces actual filing content with citations. Requires no code change for existing users of the `web_search` tool.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">proxy · search</div>
+  <pre><button class="copy">copy</button><code>No change required — update applies automatically to all web_search tool calls</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
