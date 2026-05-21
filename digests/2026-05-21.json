@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "claude-design-token-doubled",
+    "name": "Claude Design 2× Token Limits (All Plans)",
+    "primary_url": "https://claude.com/product/design",
+    "secondary_urls": [
+      "https://blockchain.news/ainews/claude-design-doubles-token-limits-boosts-creation"
+    ],
+    "hook": "Announced May 18 via Anthropic's official account: every Claude Design plan (Pro, Max, Team, Enterprise) now gets double the monthly token allowance. The second capacity expansion in two weeks — May 6 doubled Claude Code usage limits after the SpaceX/Colossus deal. If Claude Design has been hitting walls for you on longer prototypes, slides, or visual iteration cycles, this is a direct fix at no extra cost.",
+    "categories": ["design", "cost", "anthropic"]
+  },
+  {
+    "slug": "claude-code-v2-1-146",
+    "name": "Claude Code v2.1.146 (May 21)",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "hook": "Released today (May 21). Lead change: `/simplify` is renamed `/code-review` and now accepts an optional effort level — `/code-review high` for thorough multi-pass analysis. 16 total changes including: Windows PowerShell now works when pwsh is installed via winget or the Microsoft Store; MCP `resources/list`, `resources/templates/list`, and `prompts/list` no longer silently drop items past page 1 on paginating servers; background sessions stop re-prompting for permissions you already granted with \"don't ask again\"; `/background` no longer refuses sessions whose only typed input was a skill or slash command.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code  # → v2.1.146"
+  },
+  {
+    "slug": "claude-blog-v1-9",
+    "name": "claude-blog v1.9.0 (AgriciDaniel)",
+    "primary_url": "https://github.com/AgriciDaniel/claude-blog",
+    "hook": "v1.9.0 shipped May 18. This Claude Code blog skill suite — 30 sub-skills, 5 agents — now enforces a 5-gate Blog Delivery Contract before any draft leaves the agent: Capability Discovery, Format Completeness, Visual Verification (multiple viewport widths), Content Review (blocking gate, minimum 90/100 score), and Asset & Link Integrity. The reviewer iterates up to 3 times before escalating to you. Supports Next.js MDX, Astro, Hugo, Jekyll, WordPress, Ghost, 11ty, Gatsby, and static HTML. 790 stars.",
+    "categories": ["design", "skill"],
+    "install": "/plugin install claude-blog@agricidaniel-claude-blog"
+  },
+  {
+    "slug": "claude-hud",
+    "name": "Claude HUD (jarrodwatts)",
+    "primary_url": "https://github.com/jarrodwatts/claude-hud",
+    "hook": "23.4k stars. Installs as a one-liner plugin and injects a live dashboard below Claude Code's input: a visual context bar (how full your token window is), current usage rate limit position, active tool names, running background agents, and todo list progress. Also shows model, project path, git branch, session duration, and output speed when configured. Requires Claude Code v1.0.80+ and Node.js 18+. Quietly the most-starred Claude-Code-only plugin on GitHub.",
+    "categories": ["plugin"],
+    "install": "/plugin marketplace add jarrodwatts/claude-hud"
+  },
+  {
+    "slug": "awesome-agent-skills",
+    "name": "Awesome Agent Skills (VoltAgent)",
+    "primary_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "hook": "22.6k stars. A curated collection of 1,100+ agent skills hand-picked from official engineering teams — Anthropic, Google Labs, Vercel, Stripe, Cloudflare, Netlify, Microsoft (133+ Azure skills), OpenAI, Figma, and Hugging Face. Every skill is a real-world artifact from a real team, not bulk AI-generated. Microsoft's Azure SDKs alone contribute over 133 skills. Compatible with Claude Code, Codex, Gemini CLI, and Cursor. The authoritative reference catalog when you need to see how a leading engineering org defines its own agent workflows.",
+    "categories": ["skill", "marketplace"]
+  },
+  {
+    "slug": "alirezarezvani-claude-skills",
+    "name": "claude-skills (alirezarezvani)",
+    "primary_url": "https://github.com/alirezarezvani/claude-skills",
+    "hook": "15.8k stars; v2.8.1 released today (May 21). 313+ production-ready skills spanning 12 professional domains: Engineering (77 skills including 45 \"Powerful\" tier), Marketing (45 skills across 8 specialized pods), C-Level Advisory (28 full executive persona roles), Product Management (13), Regulatory & Quality (14), Research (8), and more. Works with Claude Code, Codex CLI, Gemini CLI, Cursor, and 8 additional coding agents. Install skill bundles by domain or get the full library.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add alirezarezvani/claude-skills"
+  },
+  {
+    "slug": "tweakcc",
+    "name": "tweakcc (Piebald AI)",
+    "primary_url": "https://github.com/Piebald-AI/tweakcc",
+    "hook": "2.1k stars. A system-level customization layer for Claude Code that goes well beyond themes: rewrite any part of Claude's system prompt, define custom toolsets per project, add regex-based input pattern highlighters, change thinking verbs and spinner animations, and toggle private/unreleased Claude Code features. Practical win: non-blocking MCP connections shorten startup by ~50%. Also ships a model alias `opusplan[1m]` that pairs an Opus planning pass with Sonnet 1M-token context for large codebases. Works on all platforms via npm or npx.",
+    "categories": ["plugin", "cost"],
+    "install": "npx tweakcc"
+  },
+  {
+    "slug": "claude-code-system-prompts",
+    "name": "Claude Code System Prompts (Piebald AI)",
+    "primary_url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+    "hook": "~10k stars. Every Claude Code system prompt — main prompt, 27 builtin tool descriptions, Plan/Explore/Task sub-agent prompts, CLAUDE.md instructions, compact, statusline, magic docs, WebFetch, Bash cmd, security review, and agent creation prompts — extracted and published, with a token-count breakdown. Updated within minutes of each release; CHANGELOG tracks prompt diffs across 182 versions since v2.0.14. Indispensable for prompt engineers, plugin authors, and anyone doing security research on what Claude Code actually sees.",
+    "categories": ["plugin"]
+  }
+]
