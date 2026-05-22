@@ -1,0 +1,88 @@
+[
+  {
+    "slug": "google-antigravity-2",
+    "name": "Google Antigravity 2.0 (Google I/O 2026)",
+    "primary_url": "https://github.com/google-antigravity/antigravity-cli",
+    "secondary_urls": [
+      "https://techcrunch.com/2026/05/19/google-launches-antigravity-2-0-with-an-updated-desktop-app-and-cli-tool-at-io-2026/"
+    ],
+    "hook": "Launched May 19 at Google I/O 2026: Google's agent-first platform goes standalone with a new desktop app, CLI (Go-based, published to GitHub same day), SDK, and Managed Agents API. The multi-model roster includes Claude Sonnet 4.6 and Claude Opus 4.6 natively alongside Gemini 3.5 and GPT-OSS-120B — making it a first-class runtime for Claude-powered agents. Gemini CLI is fully retired; all users migrate here. Install via the official script; the CLI and desktop share the same agent engine so settings sync both ways.",
+    "categories": ["ecosystem"],
+    "install": "curl -fsSL https://antigravity.google/cli/install.sh | bash"
+  },
+  {
+    "slug": "claude-code-v2-1-147-148",
+    "name": "Claude Code v2.1.147–148 (May 21–22)",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "hook": "v2.1.147 (May 21) is the biggest single-release changelog in weeks: `/simplify` is gone, replaced by `/code-review [effort]` — pass `/code-review high` for thoroughness, add `--comment` to post findings directly as inline GitHub PR comments. Pinned background sessions (`Ctrl+T`) now survive idle periods and restart in place for updates. Enterprise login restrictions (`forceLoginOrgUUID`, `forceLoginMethod`) were silently not enforced against API-key sessions — now fixed. 30+ additional fixes including pasted text no longer arriving as `[Pasted text #N]` placeholders. v2.1.148 (May 22) hotfixes a Bash exit-code-127 regression from 147.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code  # → v2.1.148"
+  },
+  {
+    "slug": "ccusage",
+    "name": "ccusage v20.0.3 (ryoppippi)",
+    "primary_url": "https://github.com/ryoppippi/ccusage",
+    "secondary_urls": [
+      "https://ccusage.com/"
+    ],
+    "hook": "v20.0.3 released today (May 22); 14.5k stars. Reads local usage logs from 13+ AI coding CLIs — Claude Code, Codex, OpenCode, Gemini CLI, Amp, Droid, Hermes-Agent, Kilo, Goose, and more — and reports daily/weekly/monthly token counts and estimated costs. Zero data upload: everything stays local. JSON output, burndown projections, and per-model breakdowns. Described as \"the Claude Code cost scorecard that went viral\"; arguably the single most-installed companion tool in the ecosystem.",
+    "categories": ["cost"],
+    "install": "npm install -g ccusage"
+  },
+  {
+    "slug": "kpmg-anthropic-alliance",
+    "name": "KPMG–Anthropic Global Alliance",
+    "primary_url": "https://www.anthropic.com/news/anthropic-kpmg",
+    "secondary_urls": [
+      "https://kpmg.com/xx/en/media/press-releases/2026/05/kpmg-and-anthropic-sign-global-alliance-and-launch-digital-gateway-powered-by-claude.html"
+    ],
+    "hook": "Announced May 19–20: all 276,000 KPMG employees globally get access to Claude via the new Digital Gateway product. The standout developer angle is KPMG Blaze — a new PE-focused portfolio offering that embeds Claude Code to modernize aging IT systems and ship AI-enabled software faster. Anthropic also named KPMG a preferred partner for private equity, with joint product development planned for portfolio companies. Follows the PwC global deployment announced earlier this month.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "claude-plugins-official",
+    "name": "anthropics/claude-plugins-official",
+    "primary_url": "https://github.com/anthropics/claude-plugins-official",
+    "hook": "24.2k stars; the only Anthropic-managed, curated plugin directory for Claude Code. Ships 55+ plugins across internal (Anthropic-built) and external (partner/community) tiers. Standout built-ins: `claude-code-setup` (read-only scan of your codebase that recommends MCP servers, skills, hooks, subagents, and slash commands tailored to your stack), `claude-for-legal` (12 practice-area plugins, 60+ agents, 20+ MCP connectors to Westlaw/Ironclad/Everlaw), and `financial-services` plugins. Also the submission path for third-party plugins seeking official endorsement.",
+    "categories": ["anthropic", "plugin"],
+    "install": "/plugin install {plugin-name}@claude-plugins-official"
+  },
+  {
+    "slug": "pro-workflow",
+    "name": "pro-workflow (rohitg00)",
+    "primary_url": "https://github.com/rohitg00/pro-workflow",
+    "hook": "2.2k stars; v3.3.0 May 9. Every correction you give Claude becomes an FTS5-searchable SQLite rule that auto-loads next session — a self-correcting memory that compounds without manual CLAUDE.md maintenance. Parallel worktrees launch via `claude -w` (replaces `git worktree add` friction). Also ships LLM-powered hooks for quality gates, a persistent research wiki, compaction-aware state, and 17 battle-tested skills. Agent Teams coordinate multiple Claude Code sessions with a shared task list. Not in any prior digest.",
+    "categories": ["plugin", "cost"],
+    "install": "/plugin install pro-workflow@pro-workflow"
+  },
+  {
+    "slug": "carl-plugin",
+    "name": "CARL — Context Augmentation & Reinforcement Layer",
+    "primary_url": "https://github.com/ChristopherKahler/carl",
+    "hook": "334 stars; v2.0.0 (March 23, 2026) rewrote CARL around a unified `carl.json` + integrated MCP server. Static CLAUDE.md loads every rule on every message; CARL only loads rules that match the current task via keyword triggers — claimed 50% token reduction with better outputs because every injected rule is relevant. Global rules load unconditionally; domain rules surface on-demand. Covered by Charlie Automates as a core part of the \"SEED + PAUL\" production meta for Claude Code. Works on Mac, Windows, Linux.",
+    "categories": ["plugin", "cost"],
+    "install": "npx carl-core"
+  },
+  {
+    "slug": "aicoo-skills",
+    "name": "AICOO-Skills (Aicoo-Team)",
+    "primary_url": "https://github.com/Aicoo-Team/AICOO-Skills",
+    "hook": "Just launched on Product Hunt with a 5.0/5 rating. Installs as a single SKILL.md — no browser extension required — and gives your Claude Code agent a persistent network identity: agent-to-agent messaging via the Pulse Protocol, shareable public links (anyone can chat with your agent while you control permissions), autonomous heartbeat loops on a schedule, and cross-session context sync. Also connects to Aicoo Square, an AI-native discovery board where agents post. Free tier available.",
+    "categories": ["skill", "plugin"]
+  },
+  {
+    "slug": "retro-daily",
+    "name": "retro-daily (gyanesh-m)",
+    "primary_url": "https://github.com/gyanesh-m/retro-daily",
+    "hook": "A SessionStart hook that opens each Claude Code session with a personal performance dashboard: competency grades (0–100, A–F scale) across tracked skill areas, 14-day efficiency sparklines, and a year-long contributions heatmap. A background worker researches your weakest metrics using documentation and GitHub data, then surfaces concrete actions — e.g. specific settings.json adjustments — rather than vague suggestions. Turns \"I want to get better at Claude Code\" into measurable, transcript-grounded tasks.",
+    "categories": ["plugin"]
+  },
+  {
+    "slug": "agent-powerups",
+    "name": "agent-powerups (yeaight7)",
+    "primary_url": "https://github.com/yeaight7/agent-powerups",
+    "hook": "v0.5.0 released May 20 (1,594 commits); billed as \"Oh My Zsh for coding agents.\" The `apx` CLI installs reusable skills into `~/.claude/skills/`, manages MCP configurations, bundles plugin assets, and provides AGENTS.md templates — all portable across Claude Code, Codex, and Gemini CLI. Draws a hard boundary around shell profiles, secrets, and external tools so agent setup doesn't leak credentials. Submitted to awesome-claude-code May 20.",
+    "categories": ["plugin"],
+    "install": "npm install -g agent-powerups && apx install claude --full"
+  }
+]
