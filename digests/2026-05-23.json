@@ -1,0 +1,95 @@
+[
+  {
+    "slug": "wozcode",
+    "name": "WOZCODE (WithWoz)",
+    "primary_url": "https://github.com/WithWoz/wozcode-plugin",
+    "secondary_urls": ["https://www.wozcode.com/"],
+    "hook": "v0.3.71 shipped May 22 — the day of this digest. YCombinator-backed, official Anthropic-approved plugin that reduces Claude Code token burn by 25–55%. Root cause: vanilla Claude runs 9+ tool calls for a 'find and edit 3 files' task (3× Glob/Grep + 3× Read + 3× Edit); WOZCODE collapses that to 2 (1× Search + 1× batch Edit) by replacing built-in file tools with optimized alternatives. Savings compound over long sessions. Runs entirely against your existing Claude subscription.",
+    "categories": ["cost", "plugin"],
+    "install": "/plugin marketplace add WithWoz/wozcode-plugin"
+  },
+  {
+    "slug": "lean-ctx",
+    "name": "lean-ctx (LeanCTX)",
+    "primary_url": "https://github.com/yvgude/lean-ctx",
+    "secondary_urls": ["https://leanctx.com/"],
+    "hook": "v3.6.16 released May 22 (same day as this digest). 2.1k stars. LeanCTX is a local Rust binary that sits between Claude Code and your filesystem: 51+ MCP tools, Tree-sitter AST-aware compression across 21 languages, 95+ shell output stripping patterns, and cross-session property-graph memory. Benchmarks show file read tokens shrinking from ~2,000 to ~13; shell output savings up to 99%. Zero telemetry. Works with Claude Code, Cursor, Copilot, Windsurf, and 24 other agents.",
+    "categories": ["cost", "mcp"],
+    "install": "curl -fsSL https://leanctx.com/install.sh | sh && lean-ctx setup"
+  },
+  {
+    "slug": "superpowers",
+    "name": "Superpowers (obra / Jesse Vincent)",
+    "primary_url": "https://github.com/obra/superpowers",
+    "secondary_urls": ["https://claude.com/plugins/superpowers"],
+    "hook": "204K GitHub stars. v5.1.0 (May 4). Jesse Vincent's agentic skills framework — 14 composable SKILL.md files covering TDD (test-driven-development), systematic-debugging, verification-before-completion, brainstorming, subagent-driven-development, requesting-code-review, using-git-worktrees, and writing-skills. The core insight: Claude re-derives how to do things from scratch every session, wasting tokens and introducing inconsistency; Superpowers injects a shared methodology so the process is repeatable, resumable, and correctable. Multiple YouTube tutorials this week. Official Anthropic plugin since January 2026.",
+    "categories": ["skill", "viral"],
+    "install": "/plugin install superpowers@claude-plugins-official"
+  },
+  {
+    "slug": "claude-code-v2-1-149-150",
+    "name": "Claude Code v2.1.149–150 (May 22–23)",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "hook": "v2.1.149 (May 22) is the headline: `/usage` now breaks costs down by category — skills, subagents, plugins, and per-MCP-server — so you can see exactly where your token budget is going. `/diff` detail view gains full keyboard scrolling (arrows, j/k, PgUp/PgDn, Space, Home/End). GFM task list checkboxes (`- [ ]` / `- [x]`) now render as actual checkboxes instead of plain bullets. Enterprise: new `allowAllClaudeAiMcps` managed setting loads cloud MCP connectors alongside `managed-mcp.json`. Security: fixes a PowerShell permission bypass via built-in `cd` variants, a git worktree sandbox write-allowlist bug, and Bash `find` exhausting file descriptor limits on large repos. v2.1.150 (May 23) is internal infrastructure only.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code  # → v2.1.149"
+  },
+  {
+    "slug": "cloudcli-ui",
+    "name": "CloudCLI (siteboon/claudecodeui)",
+    "primary_url": "https://github.com/siteboon/claudecodeui",
+    "secondary_urls": ["https://cloudcli.ai/"],
+    "hook": "11.2k stars, 67 releases, v1.32.0 (May 13). Runs your Claude Code, Cursor CLI, Codex, or Gemini CLI sessions from a browser-based UI on desktop, tablet, or phone — no native app required. Ships a built-in file explorer with syntax highlighting, integrated shell terminal, git integration, session history, and a plugin system for custom tabs with optional Node.js backends. BYOK: CloudCLI provides the environment, not the AI. Serves at localhost:3001 with a single npx command; 616 commits on main branch.",
+    "categories": ["plugin"],
+    "install": "npx @cloudcli-ai/cloudcli"
+  },
+  {
+    "slug": "aris-auto-research-sleep",
+    "name": "ARIS — Auto-Research-In-Sleep",
+    "primary_url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+    "hook": "10.4k stars, v0.4.11 (May 18). 74+ markdown-only skills for autonomous ML research — zero dependencies, zero framework, just plain SKILL.md files. The workflow: Claude Code executes idea discovery, experiment planning, paper writing, and citation auditing while a cross-model reviewer (e.g. GPT-5.4 via /gemini-search) runs rigorous critique loops. Includes a persistent research wiki skill, multi-seed job queue orchestration, and conference presentation materials. Works unchanged across Claude Code, Codex, Cursor, and Antigravity — swap the agent, keep the skills.",
+    "categories": ["skill"],
+    "install": "git clone https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep.git && cp -r Auto-claude-code-research-in-sleep/skills/* ~/.claude/skills/"
+  },
+  {
+    "slug": "claude-bughunter",
+    "name": "Claude-BugHunter (elementalsouls)",
+    "primary_url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "hook": "Drop-in skill bundle for authorized bug-bounty and external red-team work: 51 skills, 15 slash commands, and 574+ disclosed HackerOne report patterns curated across 24 vulnerability classes (IDOR, SSRF, XSS, SQLi, business-logic flaws, API auth bypasses, and more). Each hunt-* skill encodes detection patterns, payloads, bypass tables, VRT mappings, and chained attack templates from real disclosed reports. Time to first hunt: ~10 minutes from fresh install. Companion Claude-OSINT (github.com/elementalsouls/Claude-OSINT, 1.3k stars) covers pre-engagement recon: 90+ modules, 48 secret-regex patterns, 80+ dorks, 9 read-only credential validators.",
+    "categories": ["skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "masko-code",
+    "name": "Masko Code",
+    "primary_url": "https://github.com/RousselPaul/masko-code",
+    "secondary_urls": ["https://masko.ai/claude-code"],
+    "hook": "A living mascot companion for your Claude Code terminal. Masko watches your sessions in real time: permission prompts surface as speech bubbles (press ⌘1 to approve), ⌘M jumps to the right terminal, and double-tap ⌘ switches between sessions. Ships with Clippy and other mascots; community adds new ones daily and masko.ai generates custom ones. Hooks install automatically on first launch. MIT, free, 100% local — no Claude subscription required beyond your own. Launched March 16 on Product Hunt (#7 daily, 214 upvotes).",
+    "categories": ["plugin"],
+    "install": "Download DMG from masko.ai — hooks auto-install on first launch"
+  },
+  {
+    "slug": "claude-code-tool-manager",
+    "name": "Claude Code Tool Manager (tylergraydev)",
+    "primary_url": "https://github.com/tylergraydev/claude-code-tool-manager",
+    "hook": "v3.10.0 (May 17). A native desktop GUI (Tauri 2 + Svelte 5 + Rust + SQLite) that gives Claude Code a visual control panel: toggle MCP servers on/off per project, test MCP connections before committing, create and edit skills and slash commands, inspect past Claude sessions in a built-in session explorer, and track usage with interactive cost charts. Also syncs configs across Claude Code, Cursor, and Gemini CLI — and exposes its own MCP server so Claude can control itself. macOS only. No cloud, no telemetry.",
+    "categories": ["plugin"],
+    "install": "brew tap tylergraydev/cctm && brew install --cask claude-code-tool-manager"
+  },
+  {
+    "slug": "claude-osint",
+    "name": "Claude-OSINT (elementalsouls)",
+    "primary_url": "https://github.com/elementalsouls/Claude-OSINT",
+    "hook": "1.3k stars. Paired with Claude-BugHunter, this covers the pre-engagement phase: 90+ recon modules across passive and active OSINT, 48 secret-regex patterns for leaked credentials, 80+ custom Google dorks, 9 read-only credential validators (no writes), and 27 attack-path templates for structuring target intelligence. All 5,500+ lines are structured tradecraft in SKILL.md format — drop into `~/.claude/skills/` and Claude becomes a read-only external recon operator. Designed exclusively for authorized red-team and bug-bounty engagements.",
+    "categories": ["skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "awesome-claude-code-toolkit",
+    "name": "Awesome Claude Code Toolkit (rohitg00)",
+    "primary_url": "https://github.com/rohitg00/awesome-claude-code-toolkit",
+    "hook": "1.8k stars, 700 commits. A different repo from rohitg00/pro-workflow — this one is a curated reference collection rather than a live plugin. 135 specialist agents organized by domain (development, infra, QA, data/AI, business), 176+ plugins, 35 curated skills plus 400,000+ via SkillKit marketplace integration, 42 commands, 20 hooks, 15 rules, 7 project-scaffolding templates, and 14 MCP configurations. Includes local-first cost monitoring (token attribution from JSONL with live burndown), shell hooks that physically block bad agent behavior, and a session explorer. The most comprehensive single-repo reference for discovering what's possible.",
+    "categories": ["marketplace"],
+    "install": "See README"
+  }
+]
