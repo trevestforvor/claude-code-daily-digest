@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — May 23, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — May 23, 2026</h1><p class="sub">Top 11 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/WithWoz/wozcode-plugin">WOZCODE (WithWoz)</a></h3>
+  <p class="hook">v0.3.71 shipped May 22 — the day of this digest. YCombinator-backed, official Anthropic-approved plugin that reduces Claude Code token burn by 25–55%. Root cause: vanilla Claude runs 9+ tool calls for a &#39;find and edit 3 files&#39; task (3× Glob/Grep + 3× Read + 3× Edit); WOZCODE collapses that to 2 (1× Search + 1× batch Edit) by replacing built-in file tools with optimized alternatives. Savings compound over long sessions. Runs entirely against your existing Claude subscription.</p>
+  <div class="secondary">Also: <a href="https://www.wozcode.com/">www.wozcode.com/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">anthropic · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add WithWoz/wozcode-plugin</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/yvgude/lean-ctx">lean-ctx (LeanCTX)</a></h3>
+  <p class="hook">v3.6.16 released May 22 (same day as this digest). 2.1k stars. LeanCTX is a local Rust binary that sits between Claude Code and your filesystem: 51+ MCP tools, Tree-sitter AST-aware compression across 21 languages, 95+ shell output stripping patterns, and cross-session property-graph memory. Benchmarks show file read tokens shrinking from ~2,000 to ~13; shell output savings up to 99%. Zero telemetry. Works with Claude Code, Cursor, Copilot, Windsurf, and 24 other agents.</p>
+  <div class="secondary">Also: <a href="https://leanctx.com/">leanctx.com/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">memory · token · viral</div>
+  <pre><button class="copy">copy</button><code>curl -fsSL https://leanctx.com/install.sh | sh &amp;&amp; lean-ctx setup</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/obra/superpowers">Superpowers (obra / Jesse Vincent)</a></h3>
+  <p class="hook">204K GitHub stars. v5.1.0 (May 4). Jesse Vincent&#39;s agentic skills framework — 14 composable SKILL.md files covering TDD (test-driven-development), systematic-debugging, verification-before-completion, brainstorming, subagent-driven-development, requesting-code-review, using-git-worktrees, and writing-skills. The core insight: Claude re-derives how to do things from scratch every session, wasting tokens and introducing inconsistency; Superpowers injects a shared methodology so the process is repeatable, resumable, and correctable. Multiple YouTube tutorials this week. Official Anthropic plugin since January 2026.</p>
+  <div class="secondary">Also: <a href="https://claude.com/plugins/superpowers">claude.com/plugins/superpowers</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">plugin · agent · subagent · token · anthropic</div>
+  <pre><button class="copy">copy</button><code>/plugin install superpowers@claude-plugins-official</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.149–150 (May 22–23)</a></h3>
+  <p class="hook">v2.1.149 (May 22) is the headline: `/usage` now breaks costs down by category — skills, subagents, plugins, and per-MCP-server — so you can see exactly where your token budget is going. `/diff` detail view gains full keyboard scrolling (arrows, j/k, PgUp/PgDn, Space, Home/End). GFM task list checkboxes (`- [ ]` / `- [x]`) now render as actual checkboxes instead of plain bullets. Enterprise: new `allowAllClaudeAiMcps` managed setting loads cloud MCP connectors alongside `managed-mcp.json`. Security: fixes a PowerShell permission bypass via built-in `cd` variants, a git worktree sandbox write-allowlist bug, and Bash `find` exhausting file descriptor limits on large repos. v2.1.150 (May 23) is internal infrastructure only.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">mcp · security</div>
+  <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code  # → v2.1.149</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/siteboon/claudecodeui">CloudCLI (siteboon/claudecodeui)</a></h3>
+  <p class="hook">11.2k stars, 67 releases, v1.32.0 (May 13). Runs your Claude Code, Cursor CLI, Codex, or Gemini CLI sessions from a browser-based UI on desktop, tablet, or phone — no native app required. Ships a built-in file explorer with syntax highlighting, integrated shell terminal, git integration, session history, and a plugin system for custom tabs with optional Node.js backends. BYOK: CloudCLI provides the environment, not the AI. Serves at localhost:3001 with a single npx command; 616 commits on main branch.</p>
+  <div class="secondary">Also: <a href="https://cloudcli.ai/">cloudcli.ai/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">cost · viral · terminal · browser</div>
+  <pre><button class="copy">copy</button><code>npx @cloudcli-ai/cloudcli</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep">ARIS — Auto-Research-In-Sleep</a></h3>
+  <p class="hook">10.4k stars, v0.4.11 (May 18). 74+ markdown-only skills for autonomous ML research — zero dependencies, zero framework, just plain SKILL.md files. The workflow: Claude Code executes idea discovery, experiment planning, paper writing, and citation auditing while a cross-model reviewer (e.g. GPT-5.4 via /gemini-search) runs rigorous critique loops. Includes a persistent research wiki skill, multi-seed job queue orchestration, and conference presentation materials. Works unchanged across Claude Code, Codex, Cursor, and Antigravity — swap the agent, keep the skills.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep.git &amp;&amp; cp -r Auto-claude-code-research-in-sleep/skills/* ~/.claude/skills/</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/elementalsouls/Claude-BugHunter">Claude-BugHunter (elementalsouls)</a></h3>
+  <p class="hook">Drop-in skill bundle for authorized bug-bounty and external red-team work: 51 skills, 15 slash commands, and 574+ disclosed HackerOne report patterns curated across 24 vulnerability classes (IDOR, SSRF, XSS, SQLi, business-logic flaws, API auth bypasses, and more). Each hunt-* skill encodes detection patterns, payloads, bypass tables, VRT mappings, and chained attack templates from real disclosed reports. Time to first hunt: ~10 minutes from fresh install. Companion Claude-OSINT (github.com/elementalsouls/Claude-OSINT, 1.3k stars) covers pre-engagement recon: 90+ modules, 48 secret-regex patterns, 80+ dorks, 9 read-only credential validators.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral · security</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/RousselPaul/masko-code">Masko Code</a></h3>
+  <p class="hook">A living mascot companion for your Claude Code terminal. Masko watches your sessions in real time: permission prompts surface as speech bubbles (press ⌘1 to approve), ⌘M jumps to the right terminal, and double-tap ⌘ switches between sessions. Ships with Clippy and other mascots; community adds new ones daily and masko.ai generates custom ones. Hooks install automatically on first launch. MIT, free, 100% local — no Claude subscription required beyond your own. Launched March 16 on Product Hunt (#7 daily, 214 upvotes).</p>
+  <div class="secondary">Also: <a href="https://masko.ai/claude-code">masko.ai/claude-code</a></div>
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">audio · cost · terminal</div>
+  <pre><button class="copy">copy</button><code>Download DMG from masko.ai — hooks auto-install on first launch</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/tylergraydev/claude-code-tool-manager">Claude Code Tool Manager (tylergraydev)</a></h3>
+  <p class="hook">v3.10.0 (May 17). A native desktop GUI (Tauri 2 + Svelte 5 + Rust + SQLite) that gives Claude Code a visual control panel: toggle MCP servers on/off per project, test MCP connections before committing, create and edit skills and slash commands, inspect past Claude sessions in a built-in session explorer, and track usage with interactive cost charts. Also syncs configs across Claude Code, Cursor, and Gemini CLI — and exposes its own MCP server so Claude can control itself. macOS only. No cloud, no telemetry.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">mcp · cost · terminal</div>
+  <pre><button class="copy">copy</button><code>brew tap tylergraydev/cctm &amp;&amp; brew install --cask claude-code-tool-manager</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/elementalsouls/Claude-OSINT">Claude-OSINT (elementalsouls)</a></h3>
+  <p class="hook">1.3k stars. Paired with Claude-BugHunter, this covers the pre-engagement phase: 90+ recon modules across passive and active OSINT, 48 secret-regex patterns for leaked credentials, 80+ custom Google dorks, 9 read-only credential validators (no writes), and 27 attack-path templates for structuring target intelligence. All 5,500+ lines are structured tradecraft in SKILL.md format — drop into `~/.claude/skills/` and Claude becomes a read-only external recon operator. Designed exclusively for authorized red-team and bug-bounty engagements.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral · security</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/rohitg00/awesome-claude-code-toolkit">Awesome Claude Code Toolkit (rohitg00)</a></h3>
+  <p class="hook">1.8k stars, 700 commits. A different repo from rohitg00/pro-workflow — this one is a curated reference collection rather than a live plugin. 135 specialist agents organized by domain (development, infra, QA, data/AI, business), 176+ plugins, 35 curated skills plus 400,000+ via SkillKit marketplace integration, 42 commands, 20 hooks, 15 rules, 7 project-scaffolding templates, and 14 MCP configurations. Includes local-first cost monitoring (token attribution from JSONL with live burndown), shell hooks that physically block bad agent behavior, and a session explorer. The most comprehensive single-repo reference for discovering what&#39;s possible.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span>  </div>
+  <div class="tags">mcp · plugin · cost · local · viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
