@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — May 24, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — May 24, 2026</h1><p class="sub">Top 11 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/nexu-io/open-design">Open Design (nexu-io)</a></h3>
+  <p class="hook">51.1k stars — the local-first open-source alternative to Claude.ai/design that never appeared in a digest despite being one of the most-starred Claude Code ecosystem repos. 132 skills and 150 brand-grade design systems (Linear, Stripe, Vercel, Notion, Tesla, Apple…) ship in the box; generates HTML, PDF, PPTX, MP4, and ZIP exports from any agent session. Runs on Claude Code, Cursor, Gemini CLI, Codex, OpenCode, Qwen, Copilot, Hermes, and Kimi CLI — fully local, no subscription required.</p>
+  <div class="secondary">Also: <a href="https://open-design.ai/">open-design.ai/</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">video · cost · local · anthropic · alternative · terminal</div>
+  <pre><button class="copy">copy</button><code>docker compose up -d  # from deploy/ after: git clone https://github.com/nexu-io/open-design</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill">UI/UX Pro Max Skill (nextlevelbuilder)</a></h3>
+  <p class="hook">82.2k stars make it the most-starred community design skill on GitHub — and it&#39;s never appeared in a digest. nextlevelbuilder/ui-ux-pro-max-skill packs 50+ visual styles, 161 color palettes, 57 font pairings, 99 UX guidelines, and 25 chart types across 10 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter, Tailwind, shadcn/ui, HTML/CSS). v2.5.0 added an AI-powered Design System Generator that analyzes your project requirements and generates a complete tailored design system in seconds.</p>
+  <div class="secondary">Also: <a href="https://ui-ux-pro-max-skill.com/">ui-ux-pro-max-skill.com/</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">frontend · plugin · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/JuliusBrussee/caveman">caveman (JuliusBrussee)</a></h3>
+  <p class="hook">64.2k stars — the most-starred pure cost-cutting Claude Code skill on GitHub, somehow never in a digest. JuliusBrussee/caveman forces Claude to respond in stripped-down caveman speech (no articles, no hedging, no pleasantries), cutting 65–75% of output tokens while keeping full technical accuracy. A March 2026 paper found brevity constraints improved LLM accuracy by 26 points on certain benchmarks; Matt Pocock ships caveman as one of his 18 personal production skills (see below).</p>
+  <div class="secondary">Also: <a href="https://getcaveman.dev/">getcaveman.dev/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">audio · model · token</div>
+  <pre><button class="copy">copy</button><code>curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mattpocock/skills">mattpocock/skills (Matt Pocock)</a></h3>
+  <p class="hook">103k stars and currently the #1 weekly-trending AI repo on GitHub with +6,400 stars in the past week. Matt Pocock (creator of Total TypeScript, author of the TypeScript Bible) published his personal .claude/skills/ folder as 18 production-ready SKILL.md files covering engineering (/tdd, /diagnose, /to-prd, /to-issues, /triage, /zoom-out, /prototype), productivity (/caveman, /grill-me, /handoff, /write-a-skill), and repo hygiene (/git-guardrails-claude-code, /setup-pre-commit). Install the whole collection with one command.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  
+  <pre><button class="copy">copy</button><code>npx skills@latest add mattpocock/skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/research/glasswing-initial-update">Project Glasswing: Initial Update (Anthropic, May 22)</a></h3>
+  <p class="hook">Anthropic published its first Glasswing progress report on May 22: in one month, Claude Mythos Preview analyzed 1,000+ open-source projects and surfaced 10,000+ high/critical-severity vulnerabilities — Cloudflare alone found 2,000 bugs (400 high or critical); a critical WolfSSL flaw (CVE-2026-5194, CVSS 9.1) lets attackers forge certificates. Only 97 have been patched so far, shifting the bottleneck from finding to fixing. The update also confirms Claude Security (Enterprise public beta) now supports scheduled directory-level scans with export to Slack, Jira, CSV, or Markdown.</p>
+  <div class="secondary">Also: <a href="https://www.engadget.com/2180028/anthropic-claude-mythos-preview-project-glasswing-update/">www.engadget.com/2180028/anthropic-claude-mythos-preview-project-glasswing-update/</a> · <a href="https://thenextweb.com/news/anthropic-glasswing-claude-mythos-10000-vulnerabilities">thenextweb.com/news/anthropic-glasswing-claude-mythos-10000-vulnerabilities</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">marketplace · security</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/JuliusBrussee/cavekit">cavekit (JuliusBrussee)</a></h3>
+  <p class="hook">943 stars — the engineering companion to caveman in JuliusBrussee&#39;s cost-cutting trilogy. cavekit encodes project requirements in a single compressed SPEC.md and exposes three commands: /ck:spec (capture and update requirements), /ck:build (execute the plan against the spec), /ck:check (detect spec violations). Minimal token overhead by design — the spec is small enough to re-ingest cheaply after every context reset. v3.1.0 added kit-level file scoping for team claims.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">design · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add JuliusBrussee/cavekit</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/JuliusBrussee/cavemem">cavemem (JuliusBrussee)</a></h3>
+  <p class="hook">447 stars — the memory layer in the JuliusBrussee cost-cutting trio. cavemem stores compressed conversation snippets in SQLite with BM25 + vector hybrid search, giving Claude persistent recall that survives context resets without re-feeding full history. v0.2.1 (May 6) added privacy-aware redaction of sensitive content before storage and a local web viewer for browsing stored memories. Works across Claude Code, Cursor, Gemini CLI, OpenCode, and Codex.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">memory · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>npm install -g cavemem &amp;&amp; cavemem install</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Kuberwastaken/claurst">Claurst</a></h3>
+  <p class="hook">9.7k stars — the first mature Rust-native terminal coding agent modeled on Claude Code&#39;s behavior. Claurst is a multi-provider TUI pair programmer supporting Anthropic, OpenAI, Gemini, and Ollama in the same session, with chat forking, memory consolidation, and a plugin system. v0.1.4 released May 20 — currently in beta with rapid iteration; the npm install covers all platforms as an alternative to the native binary.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">memory · local · anthropic · viral · alternative · terminal</div>
+  <pre><button class="copy">copy</button><code>npm install -g claurst  # or: curl -fsSL https://github.com/kuberwastaken/claurst/releases/latest/download/install.sh | bash</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/hesreallyhim/awesome-claude-code">Awesome Claude Code (hesreallyhim)</a></h3>
+  <p class="hook">44.5k stars, updated May 22 with new skill submissions. hesreallyhim/awesome-claude-code is the only hand-curated &#39;awesome-list&#39;-standard reference for Claude Code — every entry is a human judgment call covering skills, hooks, slash commands, agent orchestrators, applications, plugins, and developer tooling. Unlike automated aggregators, nothing gets in without editorial review. The canonical bookmark when you want a filtered lens on the ecosystem rather than a raw star-count firehose.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span>  </div>
+  <div class="tags">skill · viral</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/AgriciDaniel/claude-seo">claude-seo (AgriciDaniel)</a></h3>
+  <p class="hook">6.6k stars, v1.9.9 released May 11 — AgriciDaniel&#39;s universal SEO skill covers 25 sub-skills and 18 sub-agents across technical SEO, E-E-A-T, schema markup, GEO/AEO (generative engine optimization for AI citations), backlink analysis via Firecrawl, local SEO and maps intelligence, semantic clustering, e-commerce SEO, international SEO, and Google API integrations. Generates PDF and Excel reports; tracks 2026 algorithm changes (AI Overviews, Andromeda) that commercial tools lag months behind.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/AgriciDaniel/claude-ads">claude-ads (AgriciDaniel)</a></h3>
+  <p class="hook">4.8k stars — AgriciDaniel&#39;s paid advertising audit skill with 250+ checks across Google, Meta, YouTube, LinkedIn, TikTok, Microsoft, and Apple Ads. Running /ads audit spawns 6 specialist parallel agents (Google, Meta, Creative, Tracking, Budget, Compliance) simultaneously; weighted scoring separates critical issues from optimizations. Tracks 2026-current platform changes (Andromeda, AI Max, AdAttributionKit) that commercial ad-audit tools are 6–12 months behind on.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
