@@ -1,0 +1,95 @@
+[
+  {
+    "slug": "open-design",
+    "name": "Open Design (nexu-io)",
+    "primary_url": "https://github.com/nexu-io/open-design",
+    "secondary_urls": ["https://open-design.ai/"],
+    "hook": "51.1k stars — the local-first open-source alternative to Claude.ai/design that never appeared in a digest despite being one of the most-starred Claude Code ecosystem repos. 132 skills and 150 brand-grade design systems (Linear, Stripe, Vercel, Notion, Tesla, Apple…) ship in the box; generates HTML, PDF, PPTX, MP4, and ZIP exports from any agent session. Runs on Claude Code, Cursor, Gemini CLI, Codex, OpenCode, Qwen, Copilot, Hermes, and Kimi CLI — fully local, no subscription required.",
+    "categories": ["design", "skill", "viral"],
+    "install": "docker compose up -d  # from deploy/ after: git clone https://github.com/nexu-io/open-design"
+  },
+  {
+    "slug": "ui-ux-pro-max-skill",
+    "name": "UI/UX Pro Max Skill (nextlevelbuilder)",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "secondary_urls": ["https://ui-ux-pro-max-skill.com/"],
+    "hook": "82.2k stars make it the most-starred community design skill on GitHub — and it's never appeared in a digest. nextlevelbuilder/ui-ux-pro-max-skill packs 50+ visual styles, 161 color palettes, 57 font pairings, 99 UX guidelines, and 25 chart types across 10 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter, Tailwind, shadcn/ui, HTML/CSS). v2.5.0 added an AI-powered Design System Generator that analyzes your project requirements and generates a complete tailored design system in seconds.",
+    "categories": ["design", "skill", "viral"],
+    "install": "/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill"
+  },
+  {
+    "slug": "caveman",
+    "name": "caveman (JuliusBrussee)",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "secondary_urls": ["https://getcaveman.dev/"],
+    "hook": "64.2k stars — the most-starred pure cost-cutting Claude Code skill on GitHub, somehow never in a digest. JuliusBrussee/caveman forces Claude to respond in stripped-down caveman speech (no articles, no hedging, no pleasantries), cutting 65–75% of output tokens while keeping full technical accuracy. A March 2026 paper found brevity constraints improved LLM accuracy by 26 points on certain benchmarks; Matt Pocock ships caveman as one of his 18 personal production skills (see below).",
+    "categories": ["cost", "skill", "viral"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills (Matt Pocock)",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "103k stars and currently the #1 weekly-trending AI repo on GitHub with +6,400 stars in the past week. Matt Pocock (creator of Total TypeScript, author of the TypeScript Bible) published his personal .claude/skills/ folder as 18 production-ready SKILL.md files covering engineering (/tdd, /diagnose, /to-prd, /to-issues, /triage, /zoom-out, /prototype), productivity (/caveman, /grill-me, /handoff, /write-a-skill), and repo hygiene (/git-guardrails-claude-code, /setup-pre-commit). Install the whole collection with one command.",
+    "categories": ["skill", "viral"],
+    "install": "npx skills@latest add mattpocock/skills"
+  },
+  {
+    "slug": "glasswing-initial-update",
+    "name": "Project Glasswing: Initial Update (Anthropic, May 22)",
+    "primary_url": "https://www.anthropic.com/research/glasswing-initial-update",
+    "secondary_urls": [
+      "https://www.engadget.com/2180028/anthropic-claude-mythos-preview-project-glasswing-update/",
+      "https://thenextweb.com/news/anthropic-glasswing-claude-mythos-10000-vulnerabilities"
+    ],
+    "hook": "Anthropic published its first Glasswing progress report on May 22: in one month, Claude Mythos Preview analyzed 1,000+ open-source projects and surfaced 10,000+ high/critical-severity vulnerabilities — Cloudflare alone found 2,000 bugs (400 high or critical); a critical WolfSSL flaw (CVE-2026-5194, CVSS 9.1) lets attackers forge certificates. Only 97 have been patched so far, shifting the bottleneck from finding to fixing. The update also confirms Claude Security (Enterprise public beta) now supports scheduled directory-level scans with export to Slack, Jira, CSV, or Markdown.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "cavekit",
+    "name": "cavekit (JuliusBrussee)",
+    "primary_url": "https://github.com/JuliusBrussee/cavekit",
+    "hook": "943 stars — the engineering companion to caveman in JuliusBrussee's cost-cutting trilogy. cavekit encodes project requirements in a single compressed SPEC.md and exposes three commands: /ck:spec (capture and update requirements), /ck:build (execute the plan against the spec), /ck:check (detect spec violations). Minimal token overhead by design — the spec is small enough to re-ingest cheaply after every context reset. v3.1.0 added kit-level file scoping for team claims.",
+    "categories": ["skill", "cost"],
+    "install": "npx skills add JuliusBrussee/cavekit"
+  },
+  {
+    "slug": "cavemem",
+    "name": "cavemem (JuliusBrussee)",
+    "primary_url": "https://github.com/JuliusBrussee/cavemem",
+    "hook": "447 stars — the memory layer in the JuliusBrussee cost-cutting trio. cavemem stores compressed conversation snippets in SQLite with BM25 + vector hybrid search, giving Claude persistent recall that survives context resets without re-feeding full history. v0.2.1 (May 6) added privacy-aware redaction of sensitive content before storage and a local web viewer for browsing stored memories. Works across Claude Code, Cursor, Gemini CLI, OpenCode, and Codex.",
+    "categories": ["plugin", "cost"],
+    "install": "npm install -g cavemem && cavemem install"
+  },
+  {
+    "slug": "claurst",
+    "name": "Claurst",
+    "primary_url": "https://github.com/Kuberwastaken/claurst",
+    "hook": "9.7k stars — the first mature Rust-native terminal coding agent modeled on Claude Code's behavior. Claurst is a multi-provider TUI pair programmer supporting Anthropic, OpenAI, Gemini, and Ollama in the same session, with chat forking, memory consolidation, and a plugin system. v0.1.4 released May 20 — currently in beta with rapid iteration; the npm install covers all platforms as an alternative to the native binary.",
+    "categories": ["plugin"],
+    "install": "npm install -g claurst  # or: curl -fsSL https://github.com/kuberwastaken/claurst/releases/latest/download/install.sh | bash"
+  },
+  {
+    "slug": "awesome-claude-code-hesreallyhim",
+    "name": "Awesome Claude Code (hesreallyhim)",
+    "primary_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "hook": "44.5k stars, updated May 22 with new skill submissions. hesreallyhim/awesome-claude-code is the only hand-curated 'awesome-list'-standard reference for Claude Code — every entry is a human judgment call covering skills, hooks, slash commands, agent orchestrators, applications, plugins, and developer tooling. Unlike automated aggregators, nothing gets in without editorial review. The canonical bookmark when you want a filtered lens on the ecosystem rather than a raw star-count firehose.",
+    "categories": ["marketplace"]
+  },
+  {
+    "slug": "claude-seo",
+    "name": "claude-seo (AgriciDaniel)",
+    "primary_url": "https://github.com/AgriciDaniel/claude-seo",
+    "hook": "6.6k stars, v1.9.9 released May 11 — AgriciDaniel's universal SEO skill covers 25 sub-skills and 18 sub-agents across technical SEO, E-E-A-T, schema markup, GEO/AEO (generative engine optimization for AI citations), backlink analysis via Firecrawl, local SEO and maps intelligence, semantic clustering, e-commerce SEO, international SEO, and Google API integrations. Generates PDF and Excel reports; tracks 2026 algorithm changes (AI Overviews, Andromeda) that commercial tools lag months behind.",
+    "categories": ["skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-ads",
+    "name": "claude-ads (AgriciDaniel)",
+    "primary_url": "https://github.com/AgriciDaniel/claude-ads",
+    "hook": "4.8k stars — AgriciDaniel's paid advertising audit skill with 250+ checks across Google, Meta, YouTube, LinkedIn, TikTok, Microsoft, and Apple Ads. Running /ads audit spawns 6 specialist parallel agents (Google, Meta, Creative, Tracking, Budget, Compliance) simultaneously; weighted scoring separates critical issues from optimizations. Tracks 2026-current platform changes (Andromeda, AI Max, AdAttributionKit) that commercial ad-audit tools are 6–12 months behind on.",
+    "categories": ["skill"],
+    "install": "See README"
+  }
+]
