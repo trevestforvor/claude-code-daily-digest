@@ -1,0 +1,87 @@
+[
+  {
+    "slug": "addyosmani-web-quality-skills",
+    "name": "web-quality-skills (Addy Osmani)",
+    "primary_url": "https://github.com/addyosmani/web-quality-skills",
+    "hook": "Addy Osmani (Google Chrome DevTools lead, now at Anthropic) distilled Lighthouse and Core Web Vitals expertise into 6 focused skills: web-quality-audit (full cross-category review), performance (LCP/INP/CLS tuning), core-web-vitals, accessibility (WCAG), SEO, and best-practices. 75.7k installs; each skill loads only when Claude needs it — ask 'My LCP is 4.2s, fix it' and only the performance skill activates. From the same author as addyosmani/agent-skills (40.2k stars), which was covered May 15.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add https://github.com/addyosmani/web-quality-skills"
+  },
+  {
+    "slug": "cli-printing-press",
+    "name": "CLI Printing Press (mvanhorn)",
+    "primary_url": "https://github.com/mvanhorn/cli-printing-press",
+    "secondary_urls": [
+      "https://printingpress.dev/",
+      "https://github.com/mvanhorn/printing-press-library"
+    ],
+    "hook": "From the creator of last30days-skill (25.8k stars): a factory that takes any API spec, website, or community fan project and generates a Go binary + Claude Code skill + MCP server from it in a single step. In benchmarks, the generated CLI used 35× fewer tokens than the equivalent MCP approach, and reliability held at 100% vs 72% on hard tasks. The companion printing-press-library ships 50+ ready-to-use CLIs (ESPN, Amazon, eBay, Linear, Domino's, and more) — install any of them with one command.",
+    "categories": ["cost", "skill"],
+    "install": "See README — github.com/mvanhorn/cli-printing-press"
+  },
+  {
+    "slug": "openai-codex-plugin-cc",
+    "name": "Codex Plugin for Claude Code (OpenAI)",
+    "primary_url": "https://github.com/openai/codex-plugin-cc",
+    "secondary_urls": [
+      "https://www.chaseai.io/blog/claude-code-codex-plugin",
+      "https://www.youtube.com/watch?v=E2UgYp2vh5U"
+    ],
+    "hook": "OpenAI's official plugin that wires Codex into Claude Code — the first public case of one vendor shipping a first-party extension into a direct competitor's CLI. Three commands: /codex:review (read-only critique), /codex:adversarial-review (assumes the code is broken and hunts 7 attack surfaces: auth flaws, data loss, rollbacks, race conditions, degraded dependencies, version skew, and observability gaps), /codex:rescue (delegates full tasks to Codex in background). TechWithTim posted a head-to-head comparison video 3 days ago; Chase AI published a setup guide this week.",
+    "categories": ["plugin", "viral"],
+    "install": "/plugin marketplace add openai/codex-plugin-cc && /plugin install codex@openai-codex",
+    "creator_buzz": ["@TechWithTim", "@Chase-H-AI"]
+  },
+  {
+    "slug": "cc-switch",
+    "name": "CC Switch (farion1231)",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "secondary_urls": ["https://ccswitch.io/"],
+    "hook": "80.6k-star cross-platform desktop app that manages Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI, and Hermes Agent from a single interface — unified MCP server + skills management across all six tools, 50+ provider presets, local proxy with hot-switching and auto-failover, live usage/cost dashboard, and cloud config sync (Dropbox, iCloud, OneDrive, WebDAV). System tray quick-switch jumps between any running agent without opening a terminal. Mentioned as a trending item in the GitHub weekly trending report this week.",
+    "categories": ["plugin"],
+    "install": "brew install --cask cc-switch  # Windows/Linux: see Releases page"
+  },
+  {
+    "slug": "cline-sdk-v3",
+    "name": "Cline SDK v3.0.13 (@cline/sdk)",
+    "primary_url": "https://github.com/cline/cline",
+    "secondary_urls": ["https://cline.ghost.io/introducing-cline-sdk-the-upgraded-agent-runtime/"],
+    "hook": "v3.0.13 released May 23 (yesterday). Cline rebuilt its entire harness into @cline/sdk — an open-source Node.js agent runtime now powering the VS Code extension, JetBrains plugin, CLI, and Kanban board simultaneously. SDK is importable: npm install @cline/sdk, then you get native multi-agent teams, cron-scheduled automation, MCP connector integration, session checkpointing, and a plugin architecture for registering custom tools and lifecycle hooks. 62.3k stars. First time Cline can be used as an SDK dependency rather than a tool.",
+    "categories": ["plugin"],
+    "install": "npm install @cline/sdk"
+  },
+  {
+    "slug": "awesome-claude-code-subagents",
+    "name": "Awesome Claude Code Subagents (VoltAgent)",
+    "primary_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "hook": "37k stars. A curated collection of 100+ specialized Claude Code subagents organized by domain: core development (architect, code-reviewer, TDD guide, debugger), language specialists (TypeScript, Python, Go, Java, Rust, C++), infrastructure & DevOps, quality & security, data/AI, developer experience, business/product, and meta-orchestrators. Each subagent runs in its own isolated context window so task contexts don't cross-contaminate. Install full domain packs in one command: claude plugin install voltagent-lang for all language specialists, voltagent-infra for all infrastructure agents.",
+    "categories": ["skill"],
+    "install": "git clone https://github.com/VoltAgent/awesome-claude-code-subagents && bash install-agents.sh  # or: claude plugin install voltagent-lang"
+  },
+  {
+    "slug": "antigravity-awesome-skills",
+    "name": "antigravity-awesome-skills (sickn33)",
+    "primary_url": "https://github.com/sickn33/antigravity-awesome-skills",
+    "secondary_urls": ["https://sickn33.github.io/antigravity-awesome-skills/"],
+    "hook": "38k+ stars, 1,465 installable skills. An indexed catalog with an installer CLI, bundle packs, and workflows covering development, testing, security, infrastructure, product, and marketing. Unlike a raw GitHub collection, it has a searchable web catalog, plugin-safe distributions that don't conflict with existing configs, and cross-agent support for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, Kiro, OpenCode, and GitHub Copilot. Official and community skill collections both indexed. Crossed 30k stars April 3.",
+    "categories": ["skill", "marketplace"],
+    "install": "npx antigravity-awesome-skills"
+  },
+  {
+    "slug": "hashicorp-agent-skills",
+    "name": "HashiCorp Agent Skills (Official)",
+    "primary_url": "https://github.com/hashicorp/agent-skills",
+    "secondary_urls": ["https://www.hashicorp.com/en/blog/introducing-hashicorp-agent-skills"],
+    "hook": "Official HashiCorp skills library for Terraform and Packer. Terraform skills: enforce HashiCorp style conventions when generating code, refactor monolithic configs into modules, guide through provider plugin development (schema design, lifecycle methods, testing patterns). Packer skill: template authoring and HCL migration guidance. The skills give Claude the same context a HashiCorp engineer would have about the plugin framework architecture — the difference between working Terraform and hallucinated Terraform. Compatible with Claude Code, GitHub Copilot, Cursor, Codex, and OpenCode.",
+    "categories": ["skill"],
+    "install": "npx skills add hashicorp/agent-skills"
+  },
+  {
+    "slug": "trailofbits-skills",
+    "name": "Trail of Bits Security Skills",
+    "primary_url": "https://github.com/trailofbits/skills",
+    "hook": "5.4k stars. Trail of Bits (leading security auditing firm, clients include Ethereum Foundation, DARPA, and major crypto protocols) published their internal Claude Code skills as a plugin marketplace. 40+ plugins across smart contract security, static analysis with CodeQL/Semgrep, YARA rule authoring for malware analysis, mobile security (Android APK Firebase misconfiguration scanning), property-based and mutation testing, Kubernetes debugging, and a GitHub CLI plugin that redirects Claude's WebFetch to use authenticated gh CLI for private repos. CC BY-SA 4.0. Recently recommended to the awesome-claude-code list (issue #486).",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add trailofbits/skills"
+  }
+]
