@@ -1,0 +1,80 @@
+[
+  {
+    "slug": "understand-anything",
+    "name": "Understand Anything (Lum1104)",
+    "primary_url": "https://github.com/Lum1104/Understand-Anything",
+    "hook": "\"Graphs that teach > graphs that impress\" — v2.7.3, ~25k stars. Parses every file, function, class, and dependency into an interactive web dashboard with clickable nodes that surface plain-English summaries. /understand-chat answers architecture questions; /understand-diff shows the blast-radius of any PR; /understand-onboard generates a guided tour for new teammates. Works as a Claude Code plugin and across Codex, Cursor, Copilot, Gemini CLI, OpenClaw, and Antigravity — one install.sh auto-detects all of them.",
+    "categories": ["design"],
+    "install": "/plugin marketplace add Lum1104/Understand-Anything  # or: curl -fsSL https://raw.githubusercontent.com/Lum1104/Understand-Anything/main/install.sh | bash"
+  },
+  {
+    "slug": "codegraph",
+    "name": "CodeGraph (colbymchenry)",
+    "primary_url": "https://github.com/colbymchenry/codegraph",
+    "secondary_urls": ["https://colbymchenry.github.io/codegraph/"],
+    "hook": "26.6k stars, +14k in one week (AI Weekly). Builds a pre-indexed SQLite-backed symbol graph and call graph of your codebase, then exposes it to Claude Code via an MCP server. Benchmarked across 6 real-world repos: 92% fewer tool calls and 71% faster exploration on average. 100% local, 19+ languages, framework-aware route detection for 13 frameworks, auto-syncs via native OS file watchers. Works with Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — no external API key required.",
+    "categories": ["cost", "mcp"],
+    "install": "npm i -g @colbymchenry/codegraph"
+  },
+  {
+    "slug": "code-review-graph",
+    "name": "code-review-graph (tirth8205)",
+    "primary_url": "https://github.com/tirth8205/code-review-graph",
+    "hook": "15.6k stars, 70 contributors. Tree-sitter-powered local code intelligence graph exposed as an MCP server + CLI. Benchmarked: 6.8× fewer tokens on code reviews and up to 49× on daily coding tasks. The install step auto-detects every AI coding tool you have installed (Claude Code, Codex, Cursor, Copilot, Gemini CLI, Antigravity, OpenCode) and writes the correct MCP config for each — no manual JSON. 31+ languages supported including Solidity, Zig, Dart, and Jupyter notebooks.",
+    "categories": ["cost", "mcp"],
+    "install": "pip install code-review-graph && code-review-graph install && code-review-graph build"
+  },
+  {
+    "slug": "chrome-devtools-mcp-v110",
+    "name": "Chrome DevTools MCP v1.1.0 (Google)",
+    "primary_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "secondary_urls": ["https://developer.chrome.com/blog/chrome-devtools-mcp"],
+    "hook": "41.8k stars. v1.1.0 shipped today (May 26) — the first minor-version bump since v1.0.0 debuted at Code with Claude 2026 (May 6). The official Chrome DevTools team MCP gives Claude Code and any MCP-compatible agent 46+ utilities: Puppeteer-backed click/type/form automation, network inspection, performance tracing, JS heap profiling, console access, screenshots, and browser extension management. Configure once in claude_desktop_config.json; zero additional tooling required.",
+    "categories": ["mcp"],
+    "install": "npx -y chrome-devtools-mcp@latest",
+    "recurring_note": "↑ Day 7 — v1.1.0 ships today (May 26), first minor release since the v1.0.0 Code with Claude debut"
+  },
+  {
+    "slug": "notebooklm-py",
+    "name": "notebooklm-py (teng-lin)",
+    "primary_url": "https://github.com/teng-lin/notebooklm-py",
+    "hook": "15.2k stars, v0.5.0 released May 24. Unofficial Python SDK and agentic skill for Google NotebookLM that exposes capabilities the web UI doesn't: programmatic notebook creation, source ingestion, and artifact generation in 9 formats (MP3 podcast, MP4 video, PDF summary, PNG infographic, CSV, structured Markdown, flashcards, quizzes, and mind-maps). Ships as a Claude Code skill, Codex tool, and OpenClaw plugin. Chase AI named \"NotebookLM CLI\" one of the top-10 Claude Code tools to install first in 2026.",
+    "categories": ["skill"],
+    "install": "pip install \"notebooklm-py[browser]\" && playwright install chromium && notebooklm login",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "skill-seekers",
+    "name": "Skill Seekers (yusufkaraaslan)",
+    "primary_url": "https://github.com/yusufkaraaslan/Skill_Seekers",
+    "secondary_urls": ["https://agentskills.best/skill-seekers"],
+    "hook": "13.8k stars, v3.6.0. Universal preprocessing layer that ingests 18 source types — documentation sites, GitHub repos, PDFs, YouTube videos, Jupyter notebooks, OpenAPI specs, Confluence, Notion, Slack/Discord archives, EPUB books, man pages, RSS feeds, local codebases, and more — and converts them into structured skills deployable across 12 LLM platforms and 8 RAG frameworks. Ships 26 MCP tools for use with Claude Code. Companion GitHub Action (skill-seekers-action) transforms any doc source into a fresh skill on every push. Reduces doc preprocessing from days to 15-45 minutes.",
+    "categories": ["skill", "mcp"],
+    "install": "pip install skill-seekers"
+  },
+  {
+    "slug": "zilliz-claude-context",
+    "name": "Claude Context (Zilliz)",
+    "primary_url": "https://github.com/zilliztech/claude-context",
+    "hook": "11.6k stars, 210 commits. Exposes your entire codebase as a semantic search MCP server — hybrid BM25 + dense-vector retrieval stores code in Milvus or Zilliz Cloud and returns only the relevant snippets. Benchmarked 40% token reduction at equivalent retrieval quality versus naive file-loading. Supports 14 languages, 5 embedding providers (OpenAI, VoyageAI, Ollama, Gemini, local). First appeared in the May 1 digest; revisiting as token costs remain the top Claude Code pain point and the project has since added 28 tracked releases.",
+    "categories": ["cost", "mcp"],
+    "install": "npx @zilliz/claude-context-mcp@latest"
+  },
+  {
+    "slug": "knowledge-work-plugins",
+    "name": "knowledge-work-plugins (Anthropic)",
+    "primary_url": "https://github.com/anthropics/knowledge-work-plugins",
+    "hook": "7.6k stars. Anthropic's official open-source collection of 11 job-function plugins — sales, product management, engineering, data analysis, marketing, legal, customer support, finance, life sciences research, productivity, and a starter template. Each bundles domain skills (auto-activated when Claude detects relevant context), slash commands, and MCP connectors to the external tools each role relies on. Updated May 25; works in both Claude Cowork and Claude Code. Apache 2.0 — fork and customize the skills, connectors, and commands for your team's specific tools.",
+    "categories": ["anthropic", "plugin"],
+    "install": "claude plugin marketplace add anthropics/knowledge-work-plugins && claude plugin install sales@knowledge-work-plugins"
+  },
+  {
+    "slug": "claude-squad",
+    "name": "Claude Squad (smtg-ai)",
+    "primary_url": "https://github.com/smtg-ai/claude-squad",
+    "secondary_urls": ["https://smtg-ai.github.io/claude-squad/"],
+    "hook": "7.4k stars. Terminal TUI that runs multiple Claude Code, Codex, Aider, Gemini CLI, or OpenCode agents simultaneously — each in its own tmux session with an isolated git worktree, so parallel agents work on separate branches and can never clobber each other. Auto-accept (\"yolo\") mode for unattended overnight runs. Single dashboard to monitor status, scroll preview output, and inspect diffs without juggling terminal windows. Updated March-April 2026.",
+    "categories": ["plugin"],
+    "install": "See README — github.com/smtg-ai/claude-squad"
+  }
+]
