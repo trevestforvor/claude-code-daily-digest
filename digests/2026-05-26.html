@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — May 26, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — May 26, 2026</h1><p class="sub">Top 9 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/Lum1104/Understand-Anything">Understand Anything (Lum1104)</a></h3>
+  <p class="hook">&quot;Graphs that teach &gt; graphs that impress&quot; — v2.7.3, ~25k stars. Parses every file, function, class, and dependency into an interactive web dashboard with clickable nodes that surface plain-English summaries. /understand-chat answers architecture questions; /understand-diff shows the blast-radius of any PR; /understand-onboard generates a guided tour for new teammates. Works as a Claude Code plugin and across Codex, Cursor, Copilot, Gemini CLI, OpenClaw, and Antigravity — one install.sh auto-detects all of them.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">plugin · viral · marketplace · terminal</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add Lum1104/Understand-Anything  # or: curl -fsSL https://raw.githubusercontent.com/Lum1104/Understand-Anything/main/install.sh | bash</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/colbymchenry/codegraph">CodeGraph (colbymchenry)</a></h3>
+  <p class="hook">26.6k stars, +14k in one week (AI Weekly). Builds a pre-indexed SQLite-backed symbol graph and call graph of your codebase, then exposes it to Claude Code via an MCP server. Benchmarked across 6 real-world repos: 92% fewer tool calls and 71% faster exploration on average. 100% local, 19+ languages, framework-aware route detection for 13 frameworks, auto-syncs via native OS file watchers. Works with Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — no external API key required.</p>
+  <div class="secondary">Also: <a href="https://colbymchenry.github.io/codegraph/">colbymchenry.github.io/codegraph/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">proxy · viral</div>
+  <pre><button class="copy">copy</button><code>npm i -g @colbymchenry/codegraph</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/tirth8205/code-review-graph">code-review-graph (tirth8205)</a></h3>
+  <p class="hook">15.6k stars, 70 contributors. Tree-sitter-powered local code intelligence graph exposed as an MCP server + CLI. Benchmarked: 6.8× fewer tokens on code reviews and up to 49× on daily coding tasks. The install step auto-detects every AI coding tool you have installed (Claude Code, Codex, Cursor, Copilot, Gemini CLI, Antigravity, OpenCode) and writes the correct MCP config for each — no manual JSON. 31+ languages supported including Solidity, Zig, Dart, and Jupyter notebooks.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">token · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>pip install code-review-graph &amp;&amp; code-review-graph install &amp;&amp; code-review-graph build</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">Chrome DevTools MCP v1.1.0 (Google)</a></h3>
+  <p class="hook">41.8k stars. v1.1.0 shipped today (May 26) — the first minor-version bump since v1.0.0 debuted at Code with Claude 2026 (May 6). The official Chrome DevTools team MCP gives Claude Code and any MCP-compatible agent 46+ utilities: Puppeteer-backed click/type/form automation, network inspection, performance tracing, JS heap profiling, console access, screenshots, and browser extension management. Configure once in claude_desktop_config.json; zero additional tooling required.</p>
+  <div class="secondary">Also: <a href="https://developer.chrome.com/blog/chrome-devtools-mcp">developer.chrome.com/blog/chrome-devtools-mcp</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">viral · browser</div>
+  <pre><button class="copy">copy</button><code>npx -y chrome-devtools-mcp@latest</code></pre>
+  <div class="recurring">↑ Day 7 — v1.1.0 ships today (May 26), first minor release since the v1.0.0 Code with Claude debut</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/teng-lin/notebooklm-py">notebooklm-py (teng-lin)</a></h3>
+  <p class="hook">15.2k stars, v0.5.0 released May 24. Unofficial Python SDK and agentic skill for Google NotebookLM that exposes capabilities the web UI doesn&#39;t: programmatic notebook creation, source ingestion, and artifact generation in 9 formats (MP3 podcast, MP4 video, PDF summary, PNG infographic, CSV, structured Markdown, flashcards, quizzes, and mind-maps). Ships as a Claude Code skill, Codex tool, and OpenClaw plugin. Chase AI named &quot;NotebookLM CLI&quot; one of the top-10 Claude Code tools to install first in 2026.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">video · plugin · agent · viral · terminal · browser</div>
+  <pre><button class="copy">copy</button><code>pip install &quot;notebooklm-py[browser]&quot; &amp;&amp; playwright install chromium &amp;&amp; notebooklm login</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/yusufkaraaslan/Skill_Seekers">Skill Seekers (yusufkaraaslan)</a></h3>
+  <p class="hook">13.8k stars, v3.6.0. Universal preprocessing layer that ingests 18 source types — documentation sites, GitHub repos, PDFs, YouTube videos, Jupyter notebooks, OpenAPI specs, Confluence, Notion, Slack/Discord archives, EPUB books, man pages, RSS feeds, local codebases, and more — and converts them into structured skills deployable across 12 LLM platforms and 8 RAG frameworks. Ships 26 MCP tools for use with Claude Code. Companion GitHub Action (skill-seekers-action) transforms any doc source into a fresh skill on every push. Reduces doc preprocessing from days to 15-45 minutes.</p>
+  <div class="secondary">Also: <a href="https://agentskills.best/skill-seekers">agentskills.best/skill-seekers</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">model · viral · search</div>
+  <pre><button class="copy">copy</button><code>pip install skill-seekers</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/zilliztech/claude-context">Claude Context (Zilliz)</a></h3>
+  <p class="hook">11.6k stars, 210 commits. Exposes your entire codebase as a semantic search MCP server — hybrid BM25 + dense-vector retrieval stores code in Milvus or Zilliz Cloud and returns only the relevant snippets. Benchmarked 40% token reduction at equivalent retrieval quality versus naive file-loading. Supports 14 languages, 5 embedding providers (OpenAI, VoyageAI, Ollama, Gemini, local). First appeared in the May 1 digest; revisiting as token costs remain the top Claude Code pain point and the project has since added 28 tracked releases.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">token · local · viral · search</div>
+  <pre><button class="copy">copy</button><code>npx @zilliz/claude-context-mcp@latest</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/knowledge-work-plugins">knowledge-work-plugins (Anthropic)</a></h3>
+  <p class="hook">7.6k stars. Anthropic&#39;s official open-source collection of 11 job-function plugins — sales, product management, engineering, data analysis, marketing, legal, customer support, finance, life sciences research, productivity, and a starter template. Each bundles domain skills (auto-activated when Claude detects relevant context), slash commands, and MCP connectors to the external tools each role relies on. Updated May 25; works in both Claude Cowork and Claude Code. Apache 2.0 — fork and customize the skills, connectors, and commands for your team&#39;s specific tools.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">mcp · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>claude plugin marketplace add anthropics/knowledge-work-plugins &amp;&amp; claude plugin install sales@knowledge-work-plugins</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/smtg-ai/claude-squad">Claude Squad (smtg-ai)</a></h3>
+  <p class="hook">7.4k stars. Terminal TUI that runs multiple Claude Code, Codex, Aider, Gemini CLI, or OpenCode agents simultaneously — each in its own tmux session with an isolated git worktree, so parallel agents work on separate branches and can never clobber each other. Auto-accept (&quot;yolo&quot;) mode for unattended overnight runs. Single dashboard to monitor status, scroll preview output, and inspect diffs without juggling terminal windows. Updated March-April 2026.</p>
+  <div class="secondary">Also: <a href="https://smtg-ai.github.io/claude-squad/">smtg-ai.github.io/claude-squad/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README — github.com/smtg-ai/claude-squad</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
