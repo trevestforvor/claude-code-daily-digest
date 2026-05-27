@@ -1,0 +1,91 @@
+[
+  {
+    "slug": "ui-collective-claude-for-designers",
+    "name": "\"Claude Code for Designers: All the Ways to Use It\" (UI Collective)",
+    "primary_url": "https://www.youtube.com/watch?v=7AkUmYwTMOg",
+    "secondary_urls": ["https://www.youtube.com/@UICollectiveDesign"],
+    "hook": "Posted yesterday (May 26) by UI Collective — the 52.5k-subscriber design-systems channel that racked up 211K views on 'Design with Claude Code' earlier this year. Covers the full Claude Code design toolkit in one video: Figma MCP write-to-canvas (turn live browser UI into editable Figma layers and vice versa), Claude Design's experimental inline Voice/Video/3D/Shader outputs, and hands-on walkthroughs of design skills like impeccable and UI/UX Pro Max. The most current end-to-end reference for designers coming to Claude Code as their primary tool.",
+    "categories": ["design"],
+    "creator_buzz": ["@UICollectiveDesign"]
+  },
+  {
+    "slug": "codebase-memory-mcp",
+    "name": "codebase-memory-mcp (DeusData)",
+    "primary_url": "https://github.com/DeusData/codebase-memory-mcp",
+    "secondary_urls": ["https://deusdata.github.io/codebase-memory-mcp/"],
+    "hook": "2.7k stars. Indexes your entire codebase into a persistent SQLite knowledge graph served via MCP — sub-millisecond queries across 155 languages, single static binary, zero dependencies. Benchmarked on 5 real structural questions: 3,400 tokens via knowledge graph vs 412,000 tokens via file-by-file search — 99% fewer tokens, same answers. One install script auto-configures 11 agents simultaneously (Claude Code, Codex CLI, Gemini CLI, Zed, OpenCode, Antigravity, Aider, KiloCode, VS Code, OpenClaw, Kiro). v0.6.0 current.",
+    "categories": ["cost", "mcp"],
+    "install": "See README — github.com/DeusData/codebase-memory-mcp"
+  },
+  {
+    "slug": "andrej-karpathy-skills",
+    "name": "andrej-karpathy-skills (forrestchang)",
+    "primary_url": "https://github.com/forrestchang/andrej-karpathy-skills",
+    "hook": "157k GitHub stars — the most-starred Claude Code CLAUDE.md on GitHub, holding #1 in weekly trending for 28 consecutive days. Forrest Chang distilled Andrej Karpathy's January 2026 X post naming LLM coding failure modes into four behavioral constraints: don't make silent wrong assumptions, don't hide confusion, surface tradeoffs explicitly, execute with verification loops. Getting a second wave of installs this week as Karpathy joined Anthropic's pre-training team (May 19). Works as a per-project CLAUDE.md or as a plugin across all projects.",
+    "categories": ["skill", "viral"],
+    "install": "npx skills add forrestchang/andrej-karpathy-skills  # or: copy CLAUDE.md to your project root"
+  },
+  {
+    "slug": "anthropic-security-guidance",
+    "name": "Security-Guidance Plugin (Anthropic)",
+    "primary_url": "https://www.helpnetsecurity.com/2026/05/27/anthropic-claude-code-security-guidance-plugin/",
+    "secondary_urls": [
+      "https://github.com/anthropics/claude-plugins-official",
+      "https://cybersecuritynews.com/free-security-plugin-for-claude-code/"
+    ],
+    "hook": "Shipped today (May 27) to all plans at no cost. Three-level review: (1) deterministic pattern match on every file edit — no model call, flags 25 dangerous constructs including eval(), os.system(), child_process.exec(), pickle deserialization, and dangerouslySetInnerHTML; (2) model-call review after each turn; (3) pre-commit hook scan. Org-specific rules configurable via claude-security-guidance.md. Internal rollout showed 30–40% reduction in security-related PR comments. Announced alongside the Claude Managed Agents sandbox expansion.",
+    "categories": ["anthropic"],
+    "install": "/plugin install security-guidance@claude-plugins-official"
+  },
+  {
+    "slug": "claude-code-v2-1-152",
+    "name": "Claude Code v2.1.152 (May 27)",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "hook": "Released today — the largest single-release changelog in weeks. Lead features: `/code-review --fix` applies all findings to the working tree in one step (and `/simplify` now aliases it); skills and commands can set `disallowed-tools` in frontmatter to strip specific tools while active — first step toward skill-level tool sandboxing; `/reload-skills` rescans skill directories without restarting; new `MessageDisplay` hook lets plugins transform or suppress assistant text before display; `SessionStart` hooks can now set the session title; `--fallback-model` support for graceful model routing. Auto mode drops opt-in consent. Vim: `/` in NORMAL opens reverse history search.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code  # → v2.1.152"
+  },
+  {
+    "slug": "karpathy-joins-anthropic",
+    "name": "Andrej Karpathy Joins Anthropic (Pre-Training)",
+    "primary_url": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/",
+    "secondary_urls": [
+      "https://www.axios.com/2026/05/19/anthropic-openai-karpathy-andrej-claude",
+      "https://www.cnbc.com/2026/05/19/anthropic-hires-openai-cofounder-andrej-karpathy-former-tesla-ai-lead.html"
+    ],
+    "hook": "Announced May 19 — Karpathy's X post drew 3M+ views in an hour. He joins Anthropic's pre-training team under Nick Joseph to lead a group using Claude itself to accelerate pretraining research, a direct application of the agentic coding workflows he's been publicly experimenting with. Previously co-founded OpenAI, led AI at Tesla Autopilot, and founded Eureka Labs. His hire is being read as a signal that serious AI researchers are betting on Anthropic as the long-term frontier; his public CLAUDE.md observations (see andrej-karpathy-skills above) have already shaped how 157k developers configure their Claude Code environments.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "task-observer",
+    "name": "Task-Observer / one-skill-to-rule-them-all (rebelytics)",
+    "primary_url": "https://github.com/rebelytics/one-skill-to-rule-them-all",
+    "hook": "Crossed 500 GitHub stars this week after a viral r/ClaudeAI thread. A meta-skill that sits in the background of every session: it detects repeating patterns and corrections, drafts new skill candidates automatically, and applies the same improvement logic to itself — a recursive optimization loop. One developer reported 600+ auto-generated skill improvements across 40 skills over three months using it continuously. Eliminates the friction between 'I should automate this' and 'Claude already automated it while I was working.' CC BY 4.0, domain-agnostic, works unchanged across Claude Code, Codex, Cursor, and Gemini CLI.",
+    "categories": ["skill"],
+    "install": "See README — github.com/rebelytics/one-skill-to-rule-them-all"
+  },
+  {
+    "slug": "mobile-mcp",
+    "name": "mobile-mcp (mobile-next)",
+    "primary_url": "https://github.com/mobile-next/mobile-mcp",
+    "hook": "5k stars, updated May 17. MCP server for iOS and Android automation — real devices, emulators, and simulators — via structured accessibility snapshots or screenshot-based coordinate taps. Works with Claude Code, Codex, Cursor, and any MCP client. Eliminates the need for separate iOS/Android expertise in cross-platform projects: your coding agent can navigate, tap, type, scroll, screenshot, and extract text from any native app directly through the MCP protocol. Ranked in the top MCP servers by weekly leaderboard at mcpmarket.com.",
+    "categories": ["mcp"],
+    "install": "npx @mobile-next/mobile-mcp@latest"
+  },
+  {
+    "slug": "autoresearch-skill",
+    "name": "autoresearch (uditgoenka)",
+    "primary_url": "https://github.com/uditgoenka/autoresearch",
+    "hook": "4.7k stars, v2.1.2 released May 23. Karpathy-inspired autonomous iteration: define a constraint + a measurable metric, and Claude modifies, verifies, and auto-rolls back in a loop until the metric improves. Any verifiable objective works — test-pass rate, bundle size, benchmark accuracy, readability score. The core loop fits in a SKILL.md file; the framework handles rollback, progress logging, and stopping conditions. Works with Claude Code, Codex, OpenCode, and any skill-compatible agent. Pairs naturally with the andrej-karpathy-skills behavioral constraints.",
+    "categories": ["skill"],
+    "install": "npx skills add uditgoenka/autoresearch"
+  },
+  {
+    "slug": "composio-awesome-claude-skills",
+    "name": "awesome-claude-skills (ComposioHQ)",
+    "primary_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "hook": "62.1k stars. Composio's curated collection of 1,000+ production-ready skills — not just code workflows but real SaaS actions: sending emails, creating Jira issues, posting to Slack, managing 78 connected apps. Distinguishes itself from other skills lists through its progressive-loading architecture: skill metadata loads at ~100 tokens initially, full instructions load on-demand — the same lazy-fetch pattern as Claude Code's MCP Tool Search. Cross-platform (Claude.ai, Claude Code, Codex, Cursor). The go-to reference when you want skills that do things rather than skills that know things.",
+    "categories": ["skill", "mcp"],
+    "install": "See README — github.com/ComposioHQ/awesome-claude-skills"
+  }
+]
