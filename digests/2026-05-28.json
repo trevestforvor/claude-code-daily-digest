@@ -1,0 +1,81 @@
+[
+  {
+    "slug": "kdense-scientific-agent-skills",
+    "name": "Scientific Agent Skills (K-Dense AI)",
+    "primary_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "hook": "26.4k stars, v2.44.0 shipped yesterday (May 27). Turns Claude Code into an AI laboratory assistant: 140 skills cover drug discovery (RDKit, AutoDock Vina molecular docking, ChEMBL), RNA-seq analysis (Scanpy, Bioconductor), protein design (ESM language models, AlphaFold), and clinical research. A unified database-lookup skill connects to 78 public databases — PubChem, UniProt, ClinVar, KEGG, Reactome, FDA, ClinicalTrials.gov, and USPTO — in a single call. Compatible with Claude Code, Codex, Cursor, and Antigravity.",
+    "categories": ["skill"],
+    "install": "npx skills add K-Dense-AI/scientific-agent-skills"
+  },
+  {
+    "slug": "nanoclaw",
+    "name": "NanoClaw (nanocoai)",
+    "primary_url": "https://github.com/nanocoai/nanoclaw",
+    "hook": "29.5k stars, v2.0.64. Containerized Claude agent runtime that replaces OpenClaw's half-million lines of code with a compact binary — each agent group runs in its own Linux container with filesystem isolation, so a compromised agent can't touch your host. Ships native connectors for 13 messaging platforms (WhatsApp, Telegram, Discord, Slack, Microsoft Teams, iMessage, Matrix, Google Chat, Webex, Linear, GitHub, WeChat, email via Resend) and uses Anthropic's official Agent SDK so every container gets Claude Code's full toolset. Multiple independent community forks appeared in the same week.",
+    "categories": ["plugin"],
+    "install": "git clone https://github.com/nanocoai/nanoclaw.git nanoclaw-v2 && cd nanoclaw-v2 && bash nanoclaw.sh"
+  },
+  {
+    "slug": "cc-plugins-plus-skills",
+    "name": "Claude Code Plugins + Skills (jeremylongshore)",
+    "primary_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+    "secondary_urls": ["https://tonsofskills.com/"],
+    "hook": "2.3k stars, v4.33.0 released May 26. The largest single open-source Claude Code ecosystem: 425 plugins, 2,810 skills, and 200 agents organized across 16 functional domains — all browsable at tonsofskills.com and installable via the `ccpi` CLI. The marketplace auto-detects every AI coding tool you have installed (Claude Code, Codex, Gemini CLI, Cursor) and writes the right config for each. This week's featured 'Killer Skill' is kobiton-automate for real-device mobile testing.",
+    "categories": ["plugin", "skill"],
+    "install": "pnpm add -g @intentsolutionsio/ccpi  # then: ccpi search <keyword> && ccpi install <pack>"
+  },
+  {
+    "slug": "claude-code-v2-1-153",
+    "name": "Claude Code v2.1.153",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "hook": "v2.1.153 shipped today (May 28). macOS background agents now appear as 'Claude Code' in Privacy & Security with permissions that survive OS upgrades — no more re-approving after every macOS update. Status line skill authors get `COLUMNS` and `LINES` env vars for terminal-width-aware formatting. Git/GitHub plugin sources accept a `skipLfs: true` flag to skip LFS blob downloads in large repos. The `/model` key now saves your choice as the default for new sessions (press `s` to switch current-session only).",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "claude-forge",
+    "name": "Claude Forge (sangrokjung)",
+    "primary_url": "https://github.com/sangrokjung/claude-forge",
+    "hook": "715 stars, v3.0.2. Ships 11 specialized agents, 40 commands, 15 skills, and an end-to-end pipeline (plan → TDD → review → verify → commit → PR) into a 5-minute install — the author calls it 'oh-my-zsh for Claude Code.' The standout is its 6-layer security hook system: blocked patterns include leaked credentials in output, unsafe remote command execution, destructive database operations, MCP server abuse via rate limiting, code vulnerability detection from edits, and usage tracking. Works across Claude Code, Codex, and Gemini CLI.",
+    "categories": ["plugin", "skill"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/sangrokjung/claude-forge/main/install.sh | bash"
+  },
+  {
+    "slug": "kobiton-automate",
+    "name": "Kobiton Automate Plugin",
+    "primary_url": "https://github.com/kobiton/automate",
+    "hook": "v1.2.2 shipped May 27. Claude Code plugin that connects to Kobiton's real-device cloud for mobile testing without emulators. Exposes 13 tools across four surfaces: Devices (list, reserve, status, terminate), Sessions (list, get, artifacts, terminate), Apps (upload, confirm, list, get), and Account. The tonsofskills.com marketplace awarded it a 'Grade A' Killer Skill badge this week — the first enterprise mobile testing integration to land a featured slot in the ccpi marketplace.",
+    "categories": ["mcp", "plugin"],
+    "install": "/plugin marketplace add kobiton/automate && /plugin install automate@kobiton"
+  },
+  {
+    "slug": "cc-daily-driver-test",
+    "name": "\"I Tested Claude Code as a Daily Driver\" (Buzdugan)",
+    "primary_url": "https://medium.com/@sebuzdugan/i-tested-claude-code-as-a-daily-driver-claude-md-9bedae43dbf4",
+    "secondary_urls": ["https://news.ycombinator.com/item?id=48289950"],
+    "hook": "Sebastian Buzdugan ran Claude Code as his exclusive development environment for 14 days and documented everything that broke. The Medium post hit Hacker News yesterday (May 27) and sparked one of the week's largest HN comment threads. Key findings: skills outperformed raw prompting on repetitive tasks; subagents lost context across long sessions; CLAUDE.md maintenance is the highest-leverage habit. A practical field guide for anyone considering daily Claude Code adoption.",
+    "categories": ["community"]
+  },
+  {
+    "slug": "simonw-pmi-claude-code",
+    "name": "\"Anthropic and OpenAI have found product-market fit\" (Willison)",
+    "primary_url": "https://simonwillison.net/2026/May/27/product-market-fit/",
+    "hook": "Simon Willison published a May 27 data-backed argument that Claude Code has achieved genuine product-market fit — displacing Cursor and Copilot among developer teams in ways previous AI coding tools never did. He draws on Code with Claude event usage data, his own team's workflows, and historical comparisons to other short-lived AI coding product cycles. A useful framing for understanding why the Claude Code ecosystem is consolidating so quickly in mid-2026.",
+    "categories": ["editorial"]
+  },
+  {
+    "slug": "activepieces-mcp",
+    "name": "Activepieces (~400 MCP servers)",
+    "primary_url": "https://github.com/activepieces/activepieces",
+    "hook": "22.5k stars, hit GitHub Trending this week. Open-source AI agent workflow automation that exposes ~400 MCP server integrations from a single platform — Notion, Stripe, Cloudflare, Slack, Vercel, Linear, GitHub, HubSpot, and hundreds more. Every TypeScript piece automatically registers as an MCP server consumable by Claude Code, Cursor, or Windsurf with no additional connector code. If you've been manually chaining Claude Code to external APIs via bespoke MCP setups, Activepieces replaces that plumbing.",
+    "categories": ["mcp"],
+    "install": "See README — github.com/activepieces/activepieces"
+  },
+  {
+    "slug": "awesome-claude-code",
+    "name": "Awesome Claude Code (hesreallyhim)",
+    "primary_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "hook": "36.8k stars. The canonical hand-curated Claude Code resource list — hesreallyhim edits with judgment: tools that don't work get cut, tools that do get tagged by what they're actually for. 1,474+ open issues/PRs reflect an actively maintained community curation process. Covers skills, hooks, slash commands, agent orchestrators, applications, and plugins across every major use case. The first link to share when onboarding a developer to the Claude Code ecosystem.",
+    "categories": ["skill", "plugin"]
+  }
+]
