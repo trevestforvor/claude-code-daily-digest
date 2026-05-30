@@ -1,0 +1,84 @@
+[
+  {
+    "slug": "claude-code-v2-1-157-158",
+    "name": "Claude Code v2.1.157 + v2.1.158 (May 29–30)",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "secondary_urls": [
+      "https://code.claude.com/docs/en/changelog",
+      "https://releasebot.io/updates/anthropic/claude-code"
+    ],
+    "hook": "Two back-to-back releases shipped yesterday and today. v2.1.157 (May 29): plugins in .claude/skills directories now auto-load without any marketplace interaction — no more /plugin install for local plugins; `claude plugin init <name>` scaffolds a new plugin in-place; `EnterWorktree` can switch between Claude-managed worktrees mid-session; and OTEL telemetry now emits tool_parameters (bash commands, MCP/skill names) when OTEL_LOG_TOOL_DETAILS=1. v2.1.158 (May 30): auto mode goes live on Bedrock, Vertex, and Foundry for both Opus 4.7 and Opus 4.8 — opt in with CLAUDE_CODE_ENABLE_AUTO_MODE=1; streaming tool execution is now always enabled across all cloud providers; and the auto-mode classifier gets improved detection of bulk repository-content exfiltration.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code  # → v2.1.158"
+  },
+  {
+    "slug": "claude-managed-agents-sandboxes",
+    "name": "Claude Managed Agents: Self-Hosted Sandboxes + Webhooks",
+    "primary_url": "https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes",
+    "secondary_urls": [
+      "https://platform.claude.com/docs/en/managed-agents/overview",
+      "https://mer.vin/2026/05/claude-managed-agents-self-hosted-sandboxes-and-private-mcp-tunnels/"
+    ],
+    "hook": "Announced May 27 alongside the security-guidance plugin: self-hosted sandboxes keep Anthropic's orchestration in the cloud but move tool execution — code runs, filesystem writes, browser control, network egress — into infrastructure you configure. Supported providers today: Cloudflare, Daytona, Modal, Vercel, or your own AWS/GCP stack. Your security tooling, audit logging, and network policies apply; files and repos never leave your perimeter. Webhooks round out the release: session-start, session-end, and vault lifecycle events fire to any HTTP endpoint so you can trigger CI/CD, alerting, or downstream automation when an agent job completes. Together with the Dreaming (self-grading loop between sessions) and Outcomes (rubric-driven eval, +10pp task success on hard tasks) shipped at Code with Claude May 6, Managed Agents now covers the full lifecycle from deployment to improvement.",
+    "categories": ["anthropic"],
+    "install": "See platform.claude.com/docs/en/managed-agents"
+  },
+  {
+    "slug": "context-mode",
+    "name": "Context Mode (mksglu)",
+    "primary_url": "https://github.com/mksglu/context-mode",
+    "secondary_urls": [
+      "https://news.ycombinator.com/item?id=47148025",
+      "https://mksg.lu/blog/context-mode"
+    ],
+    "hook": "2.5k stars, Show HN. Claude Code's 200K-token context window disappears fast: Playwright MCP alone can eat 30%+ before you've typed a prompt. Context Mode fixes this by sandboxing tool output — raw data never enters the context window. The headline benchmark: 315 KB of MCP output becomes 5.4 KB, a 98% reduction. Works via PreToolUse/PostToolUse hooks that route output through a local sandbox (6 MCP tools: ctx_batch_execute, ctx_execute, ctx_index, ctx_search, ctx_fetch_and_index, ctx_execute_file), with meta-tools for summary and diff. Hook-capable installs get automatic setup from start.mjs; works with Claude Code, Gemini CLI, VS Code Copilot, Cursor, OpenCode, Codex, and 9 more. MIT.",
+    "categories": ["cost", "mcp"],
+    "install": "See README — github.com/mksglu/context-mode"
+  },
+  {
+    "slug": "ecc-everything-claude-code",
+    "name": "ECC — Everything Claude Code (affaan-m)",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "secondary_urls": [
+      "https://www.augmentcode.com/learn/everything-claude-code-github",
+      "https://github.com/affaan-m/ECC/releases"
+    ],
+    "hook": "192k stars, 27k+ forks — the most-forked agent harness on GitHub. Born at the Claude Code Hackathon (Cerebral Valley × Anthropic, Feb 2026), ECC is now the de facto .editorconfig for AI coding: 28 specialized agents, 119 skills, 60 slash commands, and 768 commits from 113 contributors. Works across Claude Code, Cursor, OpenCode, and Codex from a single config source. v1.9.0 (March 2026) added selective-install architecture, 6 new agents, and support for 12 language ecosystems. The ecc-guide skill was updated May 26. If you're managing more than one AI coding tool, this is the layer that unifies their behavior without duplicating setup.",
+    "categories": ["skill", "viral"],
+    "install": "git clone https://github.com/affaan-m/ECC && cd ECC && bash install.sh"
+  },
+  {
+    "slug": "claude-obsidian-agricidaniel",
+    "name": "claude-obsidian v1.9.2 (AgriciDaniel)",
+    "primary_url": "https://github.com/AgriciDaniel/claude-obsidian",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=glAoiBWVkmU"
+    ],
+    "hook": "5.8k stars, v1.9.2 released May 28 (yesterday). Self-organizing AI second brain: drop any source (URL, PDF, note, conversation) and Claude reads, links, and files it into one connected Markdown knowledge graph you own locally. Built on Karpathy's LLM Wiki pattern. Ships 15 Claude Code skills including autonomous research loops, vault linting, and visual canvas integration. v1.9 adds a 10-principle thinking framework for structured problem-solving. v1.8 adds methodology modes (LYT, PARA, Zettelkasten, or Generic). v1.7 adds multi-writer advisory locking and hybrid BM25 + cosine retrieval. Hot cache system persists recent context between sessions to reduce token reloads. MIT.",
+    "categories": ["plugin", "skill"],
+    "install": "git clone https://github.com/AgriciDaniel/claude-obsidian && cd claude-obsidian && bash bin/setup-vault.sh"
+  },
+  {
+    "slug": "claude-peers-mcp",
+    "name": "claude-peers-mcp (louislva)",
+    "primary_url": "https://github.com/louislva/claude-peers-mcp",
+    "secondary_urls": [
+      "https://mcpmarket.com/server/claude-peers"
+    ],
+    "hook": "~1.6k stars. Solves an under-discussed problem: when you're running three Claude Code sessions in parallel (frontend, backend, migrations), they have no idea each other exist. claude-peers-mcp adds a local broker on :7899 (SQLite-backed) and an MCP server to each session. Any session can call discover_peers to find active instances by project and context, then send_message to pass instructions, diffs, or coordination signals — all over localhost, no cloud. The pattern unlocks real multi-session coordination without custom orchestration code: one session can hand off a spec to another, ask for a status, or request a review while both agents keep running their own workflows. MIT.",
+    "categories": ["mcp"],
+    "install": "npx claude-peers-mcp"
+  },
+  {
+    "slug": "datasette-agent-simonw",
+    "name": "datasette-agent (Simon Willison)",
+    "primary_url": "https://simonwillison.net/2026/May/21/datasette-agent/",
+    "secondary_urls": [
+      "https://agent.datasette.io/",
+      "https://simonwillison.net/2026/May/29/datasette/"
+    ],
+    "hook": "Simon Willison shipped v0.1a4 of datasette-agent May 24 — an extensible AI assistant baked into Datasette where Claude Code and Codex are the primary plugin authoring tools. The architecture mirrors Claude Code's own skill system: datasette-agent-charts adds Observable Plot visualizations, datasette-agent-sprites adds persistent Fly.io sandbox execution, datasette-agent-openai-imagegen adds ChatGPT Images 2.0. Yesterday's datasette 1.0a31 release (May 29) ships write-query and stored-query interfaces and notes that Claude Code is \"excellent at writing plugins for Datasette Agent\" — making this the first major open-source project to build its extension ecosystem explicitly around Claude Code as the authoring environment. Try it at agent.datasette.io.",
+    "categories": ["plugin"],
+    "install": "pip install datasette-agent && datasette install datasette-agent"
+  }
+]
