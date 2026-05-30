@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — May 30, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — May 30, 2026</h1><p class="sub">Top 7 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.157 + v2.1.158 (May 29–30)</a></h3>
+  <p class="hook">Two back-to-back releases shipped yesterday and today. v2.1.157 (May 29): plugins in .claude/skills directories now auto-load without any marketplace interaction — no more /plugin install for local plugins; `claude plugin init &lt;name&gt;` scaffolds a new plugin in-place; `EnterWorktree` can switch between Claude-managed worktrees mid-session; and OTEL telemetry now emits tool_parameters (bash commands, MCP/skill names) when OTEL_LOG_TOOL_DETAILS=1. v2.1.158 (May 30): auto mode goes live on Bedrock, Vertex, and Foundry for both Opus 4.7 and Opus 4.8 — opt in with CLAUDE_CODE_ENABLE_AUTO_MODE=1; streaming tool execution is now always enabled across all cloud providers; and the auto-mode classifier gets improved detection of bulk repository-content exfiltration.</p>
+  <div class="secondary">Also: <a href="https://code.claude.com/docs/en/changelog">code.claude.com/docs/en/changelog</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">releasebot.io/updates/anthropic/claude-code</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">mcp · skill · plugin · marketplace</div>
+  <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code  # → v2.1.158</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes">Claude Managed Agents: Self-Hosted Sandboxes + Webhooks</a></h3>
+  <p class="hook">Announced May 27 alongside the security-guidance plugin: self-hosted sandboxes keep Anthropic&#39;s orchestration in the cloud but move tool execution — code runs, filesystem writes, browser control, network egress — into infrastructure you configure. Supported providers today: Cloudflare, Daytona, Modal, Vercel, or your own AWS/GCP stack. Your security tooling, audit logging, and network policies apply; files and repos never leave your perimeter. Webhooks round out the release: session-start, session-end, and vault lifecycle events fire to any HTTP endpoint so you can trigger CI/CD, alerting, or downstream automation when an agent job completes. Together with the Dreaming (self-grading loop between sessions) and Outcomes (rubric-driven eval, +10pp task success on hard tasks) shipped at Code with Claude May 6, Managed Agents now covers the full lifecycle from deployment to improvement.</p>
+  <div class="secondary">Also: <a href="https://platform.claude.com/docs/en/managed-agents/overview">platform.claude.com/docs/en/managed-agents/overview</a> · <a href="https://mer.vin/2026/05/claude-managed-agents-self-hosted-sandboxes-and-private-mcp-tunnels/">mer.vin/2026/05/claude-managed-agents-self-hosted-sandboxes-and-private-mcp-tunnels/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">plugin · browser · security</div>
+  <pre><button class="copy">copy</button><code>See platform.claude.com/docs/en/managed-agents</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mksglu/context-mode">Context Mode (mksglu)</a></h3>
+  <p class="hook">2.5k stars, Show HN. Claude Code&#39;s 200K-token context window disappears fast: Playwright MCP alone can eat 30%+ before you&#39;ve typed a prompt. Context Mode fixes this by sandboxing tool output — raw data never enters the context window. The headline benchmark: 315 KB of MCP output becomes 5.4 KB, a 98% reduction. Works via PreToolUse/PostToolUse hooks that route output through a local sandbox (6 MCP tools: ctx_batch_execute, ctx_execute, ctx_index, ctx_search, ctx_fetch_and_index, ctx_execute_file), with meta-tools for summary and diff. Hook-capable installs get automatic setup from start.mjs; works with Claude Code, Gemini CLI, VS Code Copilot, Cursor, OpenCode, Codex, and 9 more. MIT.</p>
+  <div class="secondary">Also: <a href="https://news.ycombinator.com/item?id=47148025">news.ycombinator.com/item?id=47148025</a> · <a href="https://mksg.lu/blog/context-mode">mksg.lu/blog/context-mode</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">context · viral · terminal · browser</div>
+  <pre><button class="copy">copy</button><code>See README — github.com/mksglu/context-mode</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/affaan-m/ECC">ECC — Everything Claude Code (affaan-m)</a></h3>
+  <p class="hook">192k stars, 27k+ forks — the most-forked agent harness on GitHub. Born at the Claude Code Hackathon (Cerebral Valley × Anthropic, Feb 2026), ECC is now the de facto .editorconfig for AI coding: 28 specialized agents, 119 skills, 60 slash commands, and 768 commits from 113 contributors. Works across Claude Code, Cursor, OpenCode, and Codex from a single config source. v1.9.0 (March 2026) added selective-install architecture, 6 new agents, and support for 12 language ecosystems. The ecc-guide skill was updated May 26. If you&#39;re managing more than one AI coding tool, this is the layer that unifies their behavior without duplicating setup.</p>
+  <div class="secondary">Also: <a href="https://www.augmentcode.com/learn/everything-claude-code-github">www.augmentcode.com/learn/everything-claude-code-github</a> · <a href="https://github.com/affaan-m/ECC/releases">github.com/affaan-m/ECC/releases</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">harness · subagent · anthropic</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/affaan-m/ECC &amp;&amp; cd ECC &amp;&amp; bash install.sh</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/AgriciDaniel/claude-obsidian">claude-obsidian v1.9.2 (AgriciDaniel)</a></h3>
+  <p class="hook">5.8k stars, v1.9.2 released May 28 (yesterday). Self-organizing AI second brain: drop any source (URL, PDF, note, conversation) and Claude reads, links, and files it into one connected Markdown knowledge graph you own locally. Built on Karpathy&#39;s LLM Wiki pattern. Ships 15 Claude Code skills including autonomous research loops, vault linting, and visual canvas integration. v1.9 adds a 10-principle thinking framework for structured problem-solving. v1.8 adds methodology modes (LYT, PARA, Zettelkasten, or Generic). v1.7 adds multi-writer advisory locking and hybrid BM25 + cosine retrieval. Hot cache system persists recent context between sessions to reduce token reloads. MIT.</p>
+  <div class="secondary">Also: <a href="https://www.youtube.com/watch?v=glAoiBWVkmU">www.youtube.com/watch?v=glAoiBWVkmU</a></div>
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">memory · model · viral · review · search</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/AgriciDaniel/claude-obsidian &amp;&amp; cd claude-obsidian &amp;&amp; bash bin/setup-vault.sh</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/louislva/claude-peers-mcp">claude-peers-mcp (louislva)</a></h3>
+  <p class="hook">~1.6k stars. Solves an under-discussed problem: when you&#39;re running three Claude Code sessions in parallel (frontend, backend, migrations), they have no idea each other exist. claude-peers-mcp adds a local broker on :7899 (SQLite-backed) and an MCP server to each session. Any session can call discover_peers to find active instances by project and context, then send_message to pass instructions, diffs, or coordination signals — all over localhost, no cloud. The pattern unlocks real multi-session coordination without custom orchestration code: one session can hand off a spec to another, ask for a status, or request a review while both agents keep running their own workflows. MIT.</p>
+  <div class="secondary">Also: <a href="https://mcpmarket.com/server/claude-peers">mcpmarket.com/server/claude-peers</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">frontend · viral</div>
+  <pre><button class="copy">copy</button><code>npx claude-peers-mcp</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://simonwillison.net/2026/May/21/datasette-agent/">datasette-agent (Simon Willison)</a></h3>
+  <p class="hook">Simon Willison shipped v0.1a4 of datasette-agent May 24 — an extensible AI assistant baked into Datasette where Claude Code and Codex are the primary plugin authoring tools. The architecture mirrors Claude Code&#39;s own skill system: datasette-agent-charts adds Observable Plot visualizations, datasette-agent-sprites adds persistent Fly.io sandbox execution, datasette-agent-openai-imagegen adds ChatGPT Images 2.0. Yesterday&#39;s datasette 1.0a31 release (May 29) ships write-query and stored-query interfaces and notes that Claude Code is &quot;excellent at writing plugins for Datasette Agent&quot; — making this the first major open-source project to build its extension ecosystem explicitly around Claude Code as the authoring environment. Try it at agent.datasette.io.</p>
+  <div class="secondary">Also: <a href="https://agent.datasette.io/">agent.datasette.io/</a> · <a href="https://simonwillison.net/2026/May/29/datasette/">simonwillison.net/2026/May/29/datasette/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">skill</div>
+  <pre><button class="copy">copy</button><code>pip install datasette-agent &amp;&amp; datasette install datasette-agent</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
