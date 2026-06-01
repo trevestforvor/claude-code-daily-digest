@@ -1,0 +1,95 @@
+[
+  {
+    "slug": "anthropic-billing-split-june-15",
+    "name": "Claude Code Billing Split — June 15, 2026",
+    "primary_url": "https://support.claude.com/en/articles/15036540-use-the-claude-agent-sdk-with-your-claude-plan",
+    "secondary_urls": [
+      "https://www.buildthisnow.com/blog/guide/mechanics/claude-billing-change-june-2026",
+      "https://codersera.com/blog/anthropic-june-2026-billing-change-claude-code/"
+    ],
+    "hook": "On June 15 — 14 days away — Anthropic splits Claude subscription usage into two pools: interactive Claude Code in the terminal and IDE keeps drawing from your plan limits unchanged, while programmatic use (Agent SDK, `claude -p`, GitHub Actions integrations, third-party agents) moves to a separate monthly credit: $20 for Pro, $100 for Max 5x, $200 for Max 20x, billed at full API list rates with no rollover. Two actions required before June 15: (1) claim your credit via the email Anthropic is sending, (2) decide whether to enable 'usage credits' so overflow bills rather than fails. 8+ detailed community guides published this week; active discussion across every Claude community.",
+    "categories": ["cost", "anthropic"]
+  },
+  {
+    "slug": "mobbin-mcp-design",
+    "name": "Mobbin MCP — 621k Real App Screens for Claude",
+    "primary_url": "https://mobbin.com/mcp",
+    "secondary_urls": [
+      "https://github.com/pdcolandrea/mobbin-mcp",
+      "https://evangelineng.substack.com/p/mobbin-mcp-claude-code-generate-prototypes"
+    ],
+    "hook": "Mobbin officially launched its MCP server on May 11, giving AI agents direct access to 621,500+ real app screens from 1,100+ apps — no screenshots, no tab-switching. Connect to Claude Code and prompt 'show me onboarding flows from Linear and Notion' to pull curated reference UI inline while designing. Included on all paid Mobbin plans. Multiple YouTube Shorts circulating this week show designers pulling competitor flows and generating Figma-ready prototypes from Claude Code in under 2 minutes. Designer + Claude adoption is visibly shifting toward reference-first prompting.",
+    "categories": ["design", "mcp"],
+    "install": "claude mcp add mobbin -- npx -y mobbin-mcp"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "Superpowers Plugin (obra)",
+    "primary_url": "https://github.com/obra/superpowers",
+    "secondary_urls": [
+      "https://claude.com/plugins/superpowers",
+      "https://www.builder.io/blog/claude-code-superpowers-plugin"
+    ],
+    "hook": "177k-star structured workflow framework for Claude Code. Before any code is written, it enforces: brainstorm → test-driven development (RED-GREEN-REFACTOR) → parallel subagent execution. v5.0.7 (May 2026) removed the review loops that previously added ~25 minutes per task. Chase-H-AI featured it this week as 'The Claude Code Plugin Every Developer Must Learn,' pointing out that it eliminates vibe-coding by forcing every implementation through an upfront design gate. Works with Claude Code, Cursor, Codex, and OpenCode. Available in the official Anthropic plugin marketplace.",
+    "categories": ["skill", "mcp"],
+    "install": "/plugin install superpowers@claude-plugins-official",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "anthropic-claude-for-legal",
+    "name": "Claude for Legal (Anthropic Official)",
+    "primary_url": "https://github.com/anthropics/claude-for-legal",
+    "secondary_urls": [
+      "https://www.lawnext.com/2026/05/anthropic-goes-all-in-on-legal-releasing-more-than-20-connectors-and-12-practice-area-plugins-for-claude.html"
+    ],
+    "hook": "7.9k stars. Launched May 12, Anthropic's official open-source legal suite ships 13 practice-area plugins (commercial, corporate, employment, privacy, product, regulatory, AI governance, IP, litigation, legal clinic, law student, legal-builder-hub, cocounsel), 75+ named workflow agents (Vendor Agreement Reviewer, DSAR Responder, Docket Watcher, Claim Chart Builder), and 20+ MCP connectors — CourtListener, Ironclad, DocuSign, iManage, Everlaw, Trellis, and Westlaw via Thomson Reuters CoCounsel. Apache 2.0. Each plugin has a cold-start interview that configures itself to your organization's specific policies. Runs in Claude Code, Cowork, or headless via Managed Agents.",
+    "categories": ["anthropic", "mcp"],
+    "install": "/plugin install commercial-legal@claude-for-legal"
+  },
+  {
+    "slug": "code-with-claude-tokyo",
+    "name": "Code with Claude Tokyo — June 10–11",
+    "primary_url": "https://claude.com/code-with-claude/tokyo",
+    "secondary_urls": [
+      "https://claude.com/code-with-claude/tokyo-extended"
+    ],
+    "hook": "Anthropic's developer conference lands in Japan on June 10–11 — 9 days from now. The main event (June 10) features a product keynote, live demos of new Claude Code capabilities, hands-on workshops, and office hours with the Claude teams. June 11 is an extended session for indie developers and early-stage founders: founder panels, builder deep-dives, and laptops-open workshops from the Applied AI team. In-person applications closed; free virtual livestream is open globally for both days. The first Asia-Pacific Code with Claude stop, timed to Anthropic's April NEC enterprise partnership and growing Japan developer community.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "claude-for-small-business",
+    "name": "Claude for Small Business",
+    "primary_url": "https://www.anthropic.com/news/claude-for-small-business",
+    "secondary_urls": [
+      "https://www.axios.com/2026/05/13/anthropic-claude-small-business-smb"
+    ],
+    "hook": "Launched May 13, Anthropic's first SMB-specific suite bundles 15 agentic workflows, 15 reusable skills, and 7 connectors — QuickBooks, PayPal, HubSpot, Canva, DocuSign, Google Workspace, and Microsoft 365 — with zero extra charge beyond the Claude plan. Tasks covered out of the box: cash-flow forecasting, invoice chasing, lead triage, campaign builds, contract review, and HR workflows. Anthropic and PayPal co-launched a 10-city US workshop tour that kicked off in Chicago on May 14. A free 'AI Fluency for Small Business' course launched alongside. No code required.",
+    "categories": ["anthropic", "skill"]
+  },
+  {
+    "slug": "volt-agent-awesome-agent-skills",
+    "name": "awesome-agent-skills (VoltAgent)",
+    "primary_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "secondary_urls": [
+      "https://officialskills.sh"
+    ],
+    "hook": "23.9k-star curated skill library sourced exclusively from official engineering teams — Anthropic, Google Labs, Vercel, Stripe, Cloudflare, Netlify, Figma, and more. Every skill is hand-picked from a real team's production workflow, not mass-generated. The repo explicitly calls this out: 'real-world Agent Skills created and used by actual engineering teams, not mass AI-generated stuff.' Compatible with Claude Code, Codex, Gemini CLI, Cursor, and GitHub Copilot. Browsable with full documentation at officialskills.sh.",
+    "categories": ["skill"]
+  },
+  {
+    "slug": "antigravity-awesome-skills",
+    "name": "Antigravity Awesome Skills",
+    "primary_url": "https://github.com/sickn33/antigravity-awesome-skills",
+    "hook": "39.4k-star installable skill library of 1,493+ SKILL.md playbooks for Claude Code, Cursor, Codex CLI, Gemini CLI, and Antigravity. v11.10.0 shipped May 31 (yesterday), adding SEO optimization, yield workflows, YouTube channel automation, and release-hardening playbooks to the catalog. Tool-specific install flags (`--claude`, `--cursor`, `--gemini`) route each environment to its relevant skills only. 1,778 commits, daily release cadence since 2025.",
+    "categories": ["skill"],
+    "install": "npx antigravity-awesome-skills --claude",
+    "recurring_note": "↑ Day 8 — v11.10.0 released May 31; SEO, yield, YouTube, and release-hardening skills added"
+  },
+  {
+    "slug": "volt-agent-awesome-claude-design",
+    "name": "awesome-claude-design (VoltAgent)",
+    "primary_url": "https://github.com/VoltAgent/awesome-claude-design",
+    "hook": "2.5k-star collection of 68 ready-to-use DESIGN.md files organized across 9 aesthetic families — AI/LLM platforms (Claude, Cohere, ElevenLabs, Mistral), developer tools (Cursor, Raycast, Vercel, Warp), fintech (Stripe, Coinbase, Wise), e-commerce (Shopify, Nike, Airbnb), automotive (Tesla, Ferrari, BMW, Lamborghini), and more. Drop any DESIGN.md into Claude Design or Claude Code and it scaffolds a complete design system — color tokens, type scale, buttons, cards, nav, and a working UI kit — in a single prompt. MIT licensed. A focused companion to the 85.6k-star awesome-design-md, purpose-built for the DESIGN.md format.",
+    "categories": ["design"]
+  }
+]
