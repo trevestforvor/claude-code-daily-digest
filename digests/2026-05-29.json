@@ -26,7 +26,7 @@
     "secondary_urls": [
       "https://www.developersdigest.tech/blog/codeburn-tui-dashboard-for-claude-code-token-spend"
     ],
-    "hook": "7.3k stars, v0.9.11 released May 27. Interactive TUI dashboard + macOS menubar widget that reads Claude Code, Cursor, Codex, and 22 other AI coding assistant session logs directly from disk — no API keys or proxies needed. Per-project cost breakdowns, 13 task categories (coding, debugging, feature dev, testing, and more), one-shot success rates, cache hit tracking, and CSV/JSON export. Optimize Mode identifies wasteful patterns: repeated file reads, idle MCP servers, redundant context loads. Developers Digest called it "the first TUI that actually shows where your Claude Max subscription is going."",
+    "hook": "7.3k stars, v0.9.11 released May 27. Interactive TUI dashboard + macOS menubar widget that reads Claude Code, Cursor, Codex, and 22 other AI coding assistant session logs directly from disk — no API keys or proxies needed. Per-project cost breakdowns, 13 task categories (coding, debugging, feature dev, testing, and more), one-shot success rates, cache hit tracking, and CSV/JSON export. Optimize Mode identifies wasteful patterns: repeated file reads, idle MCP servers, redundant context loads. Developers Digest called it \"the first TUI that actually shows where your Claude Max subscription is going.\"",
     "categories": ["cost"],
     "install": "npm install -g codeburn  # or: brew install codeburn  # or: npx codeburn"
   },
