@@ -66,7 +66,96 @@ summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
 <body>
 <div class="wrap">
 <div class="crumb"><a href="../index.html">← Back to hub</a></div>
-<h1>Daily Digest — May 29, 2026</h1><p class="sub">Top 0 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<h1>Daily Digest — May 29, 2026</h1><p class="sub">Top 9 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/anthropics/claude-code/releases">Claude Opus 4.8 + Dynamic Workflows (v2.1.154)</a></h3>
+  <p class="hook">v2.1.154 shipped May 28, 41 days after Opus 4.7. Three things landed together: Opus 4.8 (agentic coding 64.3%→69.2%, 4× less likely to let code flaws go unflagged, misalignment score now on par with Mythos Preview at 1.9); Dynamic Workflows in Claude Code (research preview) — Claude writes a JS orchestration script on the fly, fans work across up to 1,000 subagents (16 concurrent), deploys adversarial refutation agents, and resumes jobs from checkpoints; and Fast Mode at 3× cheaper and 2.5× faster than Opus 4.7 fast mode. Demo: Jarred Sumner ported Bun from Zig to Rust in 11 days — 750k lines of Rust, 99.8% test suite passing.</p>
+  <div class="secondary">Also: <a href="https://claude.com/blog/introducing-dynamic-workflows-in-claude-code">claude.com/blog/introducing-dynamic-workflows-in-claude-code</a> · <a href="https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/">techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">agent · cost · testing</div>
+  <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code  # → v2.1.154</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/VoltAgent/awesome-design-md">awesome-design-md (VoltAgent)</a></h3>
+  <p class="hook">85.6k stars, #150 globally on GitHub. 73 brand DESIGN.md files — Apple, Stripe, Notion, Linear, Tesla, Claude, OpenAI, Figma, Vercel, Spotify, Nike, Ferrari, and 61 more — each encoding a complete visual system as plain markdown that Claude Code reads as context. Drop one into your project root and Claude generates UI that matches that brand&#39;s color palette, typography, spacing, and hierarchy in one pass. No install needed; copy-paste workflow.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">branding · viral</div>
+  <pre><button class="copy">copy</button><code>cp awesome-design-md/design-md/stripe.md ./DESIGN.md  # See README for all 73 brands</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/getagentseal/codeburn">Codeburn (AgentSeal)</a></h3>
+  <p class="hook">7.3k stars, v0.9.11 released May 27. Interactive TUI dashboard + macOS menubar widget that reads Claude Code, Cursor, Codex, and 22 other AI coding assistant session logs directly from disk — no API keys or proxies needed. Per-project cost breakdowns, 13 task categories (coding, debugging, feature dev, testing, and more), one-shot success rates, cache hit tracking, and CSV/JSON export. Optimize Mode identifies wasteful patterns: repeated file reads, idle MCP servers, redundant context loads. Developers Digest called it &quot;the first TUI that actually shows where your Claude Max subscription is going.&quot;</p>
+  <div class="secondary">Also: <a href="https://www.developersdigest.tech/blog/codeburn-tui-dashboard-for-claude-code-token-spend">www.developersdigest.tech/blog/codeburn-tui-dashboard-for-claude-code-token-spend</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">mcp · viral · testing</div>
+  <pre><button class="copy">copy</button><code>npm install -g codeburn  # or: brew install codeburn  # or: npx codeburn</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mattpocock/skills">mattpocock/skills (Matt Pocock)</a></h3>
+  <p class="hook">111k stars, +1,618 stars in one week (GitHub Weekly Trending). Matt Pocock (author of Total TypeScript) distilled engineering practice into five behavioral constraints: /grill-me interrogates your plan before a single line is written; /grill-with-docs adds domain documentation to the interrogation; /tdd locks in red-green-refactor; /diagnose structures debugging; /improve-codebase-architecture detects and repairs design drift. A CONTEXT.md file builds shared vocabulary so Claude uses your codebase&#39;s actual terminology consistently.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">design · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills@latest add mattpocock/skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/farion1231/cc-switch">CC Switch (farion1231)</a></h3>
+  <p class="hook">84.6k stars, v3.15.0. Cross-platform Tauri desktop app (Windows/macOS/Linux) that centralizes Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI, and Hermes Agent in one GUI. 50+ API provider presets for one-click backend switching, unified MCP server management, system tray quick-switch, cloud sync via Dropbox/iCloud/OneDrive/WebDAV, session browser, and per-tool spending tracker. The single-pane replacement for manually editing env vars and config files across six CLI tools.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">mcp · viral · terminal · browser</div>
+  <pre><button class="copy">copy</button><code>brew install --cask cc-switch  # Windows/Linux: see ccswitch.io</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/alirezarezvani/claude-skills">claude-skills v2.9.0 (alirezarezvani)</a></h3>
+  <p class="hook">16.5k stars, v2.9.0 released May 28. 338 production-ready skills across 16 domains. The headline addition is a chief-AI-officer advisor skill with a 6-question forcing interrogation for AI adoption decisions — eval discipline, hallucination SLO targets, EU AI Act tier classification, model build-vs-buy analysis, cost trajectory, and role-that-unblocks — plus three zero-dependency Python tools (model_buildvsbuy_calculator.py, ai_risk_classifier.py, ai_cost_economics.py). Works across 13 coding tools including Claude Code, Cursor, Codex, and Windsurf.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · cost · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add alirezarezvani/claude-skills &amp;&amp; /plugin install engineering-skills@claude-code-skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://simonwillison.net/2026/May/28/claude-opus-4-8/">&quot;Claude Opus 4.8: a modest but tangible improvement&quot; (Willison)</a></h3>
+  <p class="hook">Simon Willison published a May 28 take noting Anthropic&#39;s refreshing self-description of Opus 4.8 as &quot;a modest but tangible improvement&quot; — a rare instance of an AI lab not overselling a release. He characterizes the key upgrade as honesty: Opus 4.8 flags code problems rather than quietly shipping them. A grounding editorial counterpoint to the week&#39;s hype cycle around Dynamic Workflows; useful framing for teams deciding whether the upgrade justifies any workflow disruption.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">editorial</span>  </div>
+  <div class="tags">anthropic</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/bergside/awesome-design-skills">awesome-design-skills (bergside)</a></h3>
+  <p class="hook">1k stars. 67 design-system SKILL.md files for Claude Code and compatible agents — each file encodes a complete aesthetic identity as an installable skill rather than a static DESIGN.md. Pull individual styles (Glassmorphism, Neobrutalism, Editorial, Neumorphism, Brutalism, Impeccable, Matrix, Cosmic, and 59 more) as session-active behavioral constraints. Complements awesome-design-md: where DESIGN.md sets brand context, these skills set the operating aesthetic mode for the whole session.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">skill · viral</div>
+  <pre><button class="copy">copy</button><code>npx typeui.sh pull glassmorphism  # replace slug with any of 67 styles</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.blog/changelog/2026-05-28-claude-opus-4-8-is-generally-available-for-github-copilot/">Claude Opus 4.8 GA for GitHub Copilot</a></h3>
+  <p class="hook">Generally available in GitHub Copilot as of May 28 — the same day as the Anthropic release, making this the first time an Anthropic frontier model shipped in Copilot on launch day. Enterprise Copilot users can now select Opus 4.8 for chat, inline suggestions, PR descriptions, and automated code review, bringing Dynamic Workflows capability and the 4× improved code-flaw detection to the Microsoft-managed AI coding toolchain. Signals that Opus-class capabilities are entering enterprise developer infrastructure at a faster clip than any previous Claude model.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">review</div>
+  
+  
+</article>
 </div>
 <script>
 document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
