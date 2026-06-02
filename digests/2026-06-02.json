@@ -1,0 +1,71 @@
+[
+  {
+    "slug": "juliusbrussee-caveman",
+    "name": "Caveman — 65% Fewer Output Tokens",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "secondary_urls": [
+      "https://www.producthunt.com/products/caveman-claude-code-skill-plugin"
+    ],
+    "hook": "\"Why use many token when few token do trick.\" Julius Brussee's Claude Code skill strips articles, filler words, and pleasantries from Claude's responses while leaving generated code intact — averaging 65% fewer output tokens (range 22–87%) with claimed 100% technical accuracy retention. 67.8k stars, 14 releases, and one-line install across Claude Code, Cursor, Windsurf, and 30+ agents.",
+    "categories": ["cost", "token"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash"
+  },
+  {
+    "slug": "claude-code-v2-1-160",
+    "name": "Claude Code v2.1.160 — `ultracode` Replaces `workflow`",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "secondary_urls": [],
+    "hook": "Released June 2: the dynamic-workflow trigger keyword is renamed from `workflow` to `ultracode` — any script pattern-matching on the literal word 'workflow' must update now. Security hardening adds confirmation prompts before Claude writes to shell startup files (.zshenv, .zlogin, .bash_login) or build-tool configs (.npmrc, .yarnrc, bunfig.toml, .bazelrc); WSL clipboard copy-on-select fixed; background sessions no longer lose chat history on resume.",
+    "categories": ["anthropic-official"],
+    "install": "npm install -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "anthropic-ipo-sub-agent-outage",
+    "name": "Anthropic Files S-1 — Then Claude Goes Down",
+    "primary_url": "https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html",
+    "secondary_urls": [
+      "https://www.theregister.com/ai-and-ml/2026/06/02/claude-celebrates-anthropics-stock-market-float-with-blockbuster-outage/5250071",
+      "https://www.storyboard18.com/digital/anthropics-claude-ai-suffers-disruption-what-caused-the-outage-and-why-user-quotas-were-reset-99951.htm"
+    ],
+    "hook": "Anthropic confidentially filed its S-1 with the SEC on June 1, reporting $47B annualized revenue and a $965B valuation — then Claude went down globally on June 2 from ~0600–1042 UTC. Root cause: a malfunction in Claude Code's sub-agent system caused agents to multiply in a loop, driving unexpected token consumption spikes. Quotas were reset for all affected users.",
+    "categories": ["anthropic-official"]
+  },
+  {
+    "slug": "glasswing-mythos-expansion-june",
+    "name": "Project Glasswing Expands to 200 Partners + Mythos Coming Public",
+    "primary_url": "https://www.anthropic.com/news/expanding-project-glasswing",
+    "secondary_urls": [
+      "https://9to5mac.com/2026/06/02/anthropic-expands-glasswing-as-it-promises-public-claude-mythos-class-model-releases/"
+    ],
+    "hook": "Anthropic announced June 2 that Project Glasswing — its Mythos-powered codebase security program — expands from ~50 to ~200 partner organizations spanning 15+ countries, adding energy, water, healthcare, and comms sectors. Partners have found 10,000+ high/critical severity flaws to date. Anthropic also promised Mythos-class models will ship to all customers \"in the coming weeks.\"",
+    "categories": ["anthropic-official", "security"],
+    "recurring_note": "↑ Follow-on — anthropic-series-h-mythos (May 31) covered the $965B raise; today Glasswing quadruples and Mythos goes general soon"
+  },
+  {
+    "slug": "oh-my-openagent",
+    "name": "oh-my-openagent — 8-Agent Team Mode for Complex Codebases",
+    "primary_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "secondary_urls": [],
+    "hook": "v4.6.0 (June 1) of the TypeScript agent harness runs up to 8 parallel sub-agents — Sisyphus orchestrates, Hephaestus digs deep, Prometheus plans, Oracle advises, Librarian retrieves — with LSP integration, AST-Grep for pattern-aware search, hash-anchored edits (Hashline), and built-in MCPs for web search and GitHub code search. 60.7k stars; multi-harness refactor in progress for OpenCode, Codex, and Pi.",
+    "categories": ["general"],
+    "install": "bunx oh-my-openagent install"
+  },
+  {
+    "slug": "jimliu-baoyu-skills",
+    "name": "baoyu-skills — 20+ Daily-Work Image & Diagram Skills",
+    "primary_url": "https://github.com/JimLiu/baoyu-skills",
+    "secondary_urls": [],
+    "hook": "Jim Liu's curated skill collection for daily work just dropped v2.4.0 (May 30): image card generation in XHS/Instagram style, SVG diagrams, Markdown-to-HTML, infographics, comics, and Midjourney prompt generation. v2.4.0 adds MiniMax, Jimeng, and Seedream image providers plus custom sizing and reference-image support. 20.2k stars; install only the skills you need — bulk-loading all adds unnecessary context on every run.",
+    "categories": ["design", "skills"],
+    "install": "npx skills add jimliu/baoyu-skills"
+  },
+  {
+    "slug": "claude-code-ultimate-guide-florian",
+    "name": "claude-code-ultimate-guide — 181 Templates + Security Hooks",
+    "primary_url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+    "secondary_urls": [],
+    "hook": "Florian Bruniaux's exhaustive reference ships 24,000+ lines across 10 sections, 181 production-ready templates (agents, skills, hooks), 37 security hooks in Bash and PowerShell, a 655-pattern malicious-skill catalogue, 271 knowledge-quiz questions, and an embedded MCP server with 17 specialized tools. Last updated May 27, 4.6k stars. Unique emphasis on trade-off analysis and *why* patterns work.",
+    "categories": ["general"],
+    "install": "See README"
+  }
+]
