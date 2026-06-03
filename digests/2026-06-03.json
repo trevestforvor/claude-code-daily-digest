@@ -1,0 +1,107 @@
+[
+  {
+    "slug": "microsoft-drops-claude-code-june30",
+    "name": "Microsoft Drops Claude Code by June 30",
+    "primary_url": "https://cybernews.com/ai-news/microsoft-claude-code-burn-yearly-ai-budget/",
+    "secondary_urls": [
+      "https://spacedaily.com/n-microsoft-is-canceling-claude-code-licenses-across-its-experiences-devices-division-by-june-30-steering-thousands-of-engineers-toward-github-copilot-while-uber-burned-through-its-entire-2026-ai-bu/",
+      "https://ecorpit.com/microsoft-uber-claude-code-token-cost-2026/"
+    ],
+    "hook": "Microsoft is canceling Claude Code licenses across its Experiences & Devices division (Windows, Office, Teams, Surface) by June 30, steering engineers toward GitHub Copilot CLI — after per-engineer monthly API costs hit $500–$2,000 and burned through the annual AI budget in months. Uber hit the same ceiling, spending its entire 2026 AI-tools budget on Claude Code and Cursor in just four months. Anthropic launched Opus 4.8 into that exact crisis; both cases are now the go-to reference for token-billing cost ceilings at enterprise scale.",
+    "categories": ["cost"]
+  },
+  {
+    "slug": "claude-model-deprecations-june15",
+    "name": "Claude Sonnet 4 & Opus 4 API Deprecation — June 15",
+    "primary_url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+    "secondary_urls": [
+      "https://www.mindstudio.ai/blog/claude-sonnet-4-opus-4-deprecation-migration-guide",
+      "https://chatforest.com/guides/anthropic-claude-sonnet-4-opus-4-deprecation-june-15-2026/"
+    ],
+    "hook": "The original claude-sonnet-4-20250514 and claude-opus-4-20250514 retire on the Anthropic API in 12 days — June 15 at 9 AM PT. Any app or script calling either pinned version identifier will start throwing errors on that date. Consumer Claude.ai and managed Claude Code are unaffected; API integrations must migrate to claude-sonnet-4-6 and claude-opus-4-8 respectively. MindStudio estimates millions of production API calls are at risk for teams that haven't updated.",
+    "categories": ["cost", "anthropic"]
+  },
+  {
+    "slug": "anthropic-partner-network-services-track",
+    "name": "Claude Partner Network: Services Track & Hub",
+    "primary_url": "https://www.anthropic.com/news/services-track-partner-hub",
+    "secondary_urls": [
+      "https://qz.com/anthropic-claude-partner-network-services-track-hub-enterprise-060326"
+    ],
+    "hook": "Anthropic launched a tiered Services Track and Partner Hub on June 3 for the Claude Partner Network. Three tiers — Select (10 certified practitioners, 2 production customers), Preferred (100 / 15), and Global Premier (1,000 / 100 across 3 regions) — are tracked daily in the Partner Hub. With 40,000+ firms applied and 10,000+ Claude-certified consultants already on-board since March, this formalizes the enterprise delivery ecosystem backed by Anthropic's $100M partner training investment.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "claude-code-v2-1-159-161",
+    "name": "Claude Code v2.1.159–161 (June 2026)",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "secondary_urls": [
+      "https://code.claude.com/docs/en/changelog"
+    ],
+    "hook": "Three releases shipped in the past week. Headline additions: plugins in .claude/skills now load automatically without marketplace install; `claude plugin init <name>` scaffolds a new plugin in-place; a new `MessageDisplay` hook lets hooks transform or hide assistant text before it renders; `defaultEnabled: false` in plugin.json allows silent installs that activate only when you enable them; skipLfs skips Git LFS downloads for GitHub-sourced marketplace plugins. Run `npm update -g @anthropic-ai/claude-code` for v2.1.161.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "piebald-claude-code-system-prompts",
+    "name": "Claude Code System Prompts (Full Extract)",
+    "primary_url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+    "secondary_urls": [
+      "https://github.com/Piebald-AI/tweakcc"
+    ],
+    "hook": "10.7k-star repo (1.9k forks) that extracts and publishes Claude Code's full system prompt architecture — 110+ strings covering the main prompt, all 27 built-in tool descriptions, Plan/Explore/Task sub-agent prompts, and utility prompts like security review and WebFetch. Updated to v2.1.161 within minutes of each release. Pairs with tweakcc (also by Piebald-AI), which patches any of these strings into your local Claude Code install as plain Markdown files.",
+    "categories": ["mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "tweakcc-piebald",
+    "name": "tweakcc — Claude Code Prompt & UI Customizer",
+    "primary_url": "https://github.com/Piebald-AI/tweakcc",
+    "hook": "2.1k-star CLI that patches individual Claude Code system-prompt strings, adds custom themes (with a color-picker TUI), creates toolsets, and personalizes thinking verbs and UI animations — all without waiting for an official Anthropic update. Works by modifying the local npm-based or native Claude Code binary. Also optimizes MCP startup performance and adds AGENTS.md fallback detection. `npx tweakcc` launches an interactive setup; no global install required.",
+    "categories": ["design"],
+    "install": "npx tweakcc"
+  },
+  {
+    "slug": "aris-auto-research-in-sleep",
+    "name": "ARIS — Auto-Research-In-Sleep",
+    "primary_url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+    "hook": "11.3k-star toolkit (1.1k forks, last commit May 31) that runs cross-model ML research loops in the background with zero dependencies — no Docker, no framework, just SKILL.md files. Skills cover paper writing, literature review, experiment queuing, auto-paper-improvement loops, and per-source web-search playbooks (Stack Overflow, Chinese tech forums, HN, Reddit). v0.4.15 added DeepSeek V4 Pro, Qwen 3.6, and custom OpenAI-compatible providers for fully multi-model research pipelines.",
+    "categories": ["skills"],
+    "install": "See README"
+  },
+  {
+    "slug": "marckrenn-claude-code-changelog",
+    "name": "Claude Code Changelog — Prompt & Flag Tracker",
+    "primary_url": "https://github.com/marckrenn/claude-code-changelog",
+    "hook": "821-star community archive tracking every system-prompt string and feature-flag change across 416+ tagged Claude Code releases. Updated to v2.1.161 on June 2, automatically within minutes of each release. The repo powers @ClaudeCodeLog, an X account that publishes diff summaries on each new release — subscribe there for prompt-level changelogs without reading raw diffs. 43 categorized prompt files with token counts and edit history.",
+    "categories": ["mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "jeremylongshore-plugins-plus-skills",
+    "name": "claude-code-plugins-plus-skills + ccpi",
+    "primary_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+    "hook": "2.2k-star monorepo bundling 425 Claude Code plugins, 2,810 skills, and 200 agents — the largest single-author collection available. The ccpi CLI package manager (marketplace at tonsofskills.com) provides one-command installation for any item in the collection. SaaS packs cover Sentry, Cursor, Slack, and GitHub deep integrations alongside full production-orchestration patterns and interactive tutorials.",
+    "categories": ["skills", "mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "phuryn-pm-skills",
+    "name": "PM Skills Marketplace (phuryn)",
+    "primary_url": "https://github.com/phuryn/pm-skills",
+    "hook": "11.8k-star collection of 100+ agentic product-management skills for Claude Code — covering discovery, strategy, execution, analytics, GTM, and growth — built by Pawel Huryn (The Product Compass, 200K+ newsletter subscribers). Works natively with Claude Code, Cowork, Gemini CLI, Cursor, Codex, and Kiro. Includes a companion `product-on-purpose/pm-skills` repo with 63 structured Triple-Diamond and Design Sprint phase skills, 4 sub-agents, and CI-enforced contracts.",
+    "categories": ["skills"],
+    "install": "See README"
+  },
+  {
+    "slug": "composio-awesome-claude-plugins",
+    "name": "awesome-claude-plugins (Composio)",
+    "primary_url": "https://github.com/ComposioHQ/awesome-claude-plugins",
+    "secondary_urls": [
+      "https://github.com/ComposioHQ/awesome-claude-skills"
+    ],
+    "hook": "1.6k-star curated list from Composio — the tool-calling infrastructure company behind the composio.dev connector platform — cataloguing the Claude Code plugin ecosystem: custom commands, agents, hooks, and MCP servers organized by plugin type. Composio also maintains a separate awesome-claude-skills repo. Both serve as authoritative indexes given Composio's integration depth with Claude Code's plugin system.",
+    "categories": ["mcp"],
+    "install": "See README"
+  }
+]
