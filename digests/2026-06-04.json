@@ -1,0 +1,105 @@
+[
+  {
+    "slug": "context7-upstash",
+    "name": "Context7 (Upstash)",
+    "primary_url": "https://github.com/upstash/context7",
+    "secondary_urls": [
+      "https://claude.com/plugins/context7",
+      "https://upstash.com/blog/context7-llmtxt-cursor"
+    ],
+    "hook": "52k-star MCP server with 348,660 official Anthropic marketplace installs — the #3 most-installed Claude Code plugin as of June 1. Solves the hallucinated-API problem: add 'use context7' to any prompt and it fetches version-specific, source-accurate documentation from the actual library repository before generating code. Prevents deprecated API calls and outdated pattern suggestions, typically saving 2–5 rounds of \"that method doesn't exist\" debugging. Ships as both an MCP server and a Claude Code plugin with a docs-researcher agent and a context7-power variant for heavier documentation workloads.",
+    "categories": ["cost", "mcp"],
+    "install": "claude mcp add context7 -- npx -y @upstash/context7-mcp"
+  },
+  {
+    "slug": "devin-desktop-acp",
+    "name": "Devin Desktop + ACP (Agent Client Protocol)",
+    "primary_url": "https://github.com/agentclientprotocol/claude-agent-acp",
+    "secondary_urls": [
+      "https://devin.ai/blog/windsurf-is-now-devin-desktop/",
+      "https://chatforest.com/builders-log/windsurf-devin-desktop-rebrand-devin-local-acp-builder-guide/"
+    ],
+    "hook": "On June 2 Cognition retired the Windsurf brand and relaunched the IDE as Devin Desktop with support for the Agent Client Protocol (ACP) — an open JSON-RPC 2.0 standard that lets any compatible agent (Claude Code, Codex, Gemini CLI, OpenCode) run inside any compatible editor. Claude Code v2.1.162 shipped the same day, updating its /ide menu from 'Windsurf' to 'Devin Desktop.' The `agentclientprotocol/claude-agent-acp` adapter wraps the Claude Agent SDK so it speaks ACP natively — meaning Claude Code can now be invoked as a managed subagent from Devin Desktop, JetBrains, VS Code, and Zed without any custom plumbing. ACP was created by Zed in August 2025 and had 25+ agent implementations by June 2026.",
+    "categories": ["plugin", "viral"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-code-v2-1-162",
+    "name": "Claude Code v2.1.162 (June 3)",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "secondary_urls": [
+      "https://code.claude.com/docs/en/changelog"
+    ],
+    "hook": "Shipped June 3. Key additions: `claude agents --json` now includes a `waitingFor` field so external monitors can see exactly what each agent is blocked on; Remote Control is now a persistent footer pill (session link always visible); slash command autocomplete fills into the prompt buffer instead of immediately executing (lets you review before running); Windsurf renamed to Devin Desktop in the /ide menu. Fixes: WebFetch permission rules now apply to pre-approved domains; Windows path handling with backslashes and case-variant paths; MCP timeout values below 1 second were being floored incorrectly. Run `npm update -g @anthropic-ai/claude-code` for v2.1.162.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "flatt-security-claude-actions-cve",
+    "name": "Poisoning Claude Code: Supply Chain CVE in GitHub Actions",
+    "primary_url": "https://flatt.tech/research/posts/poisoning-claude-code-one-github-issue-to-break-the-supply-chain/",
+    "secondary_urls": [
+      "https://cybersecuritynews.com/claude-codes-github-actions-vulnerability/"
+    ],
+    "hook": "Published June 1 by GMO Flatt Security researcher RyotaK: a single malicious GitHub Issue could compromise any repository using the official Claude Code GitHub Actions workflow — including Anthropic's own repos. Root cause: `checkWritePermissions` unconditionally trusted any actor ending in `[bot]`, regardless of actual permissions, allowing an attacker with a GitHub App installation token (free, implicit read access to any public repo) to inject code into the action and propagate it downstream. Patched in Claude Code GitHub Actions v1.0.94. If your repo uses any version before v1.0.94, audit immediately. Anthropic issued remediation guidance alongside the disclosure.",
+    "categories": ["mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "transilienceai-communitytools",
+    "name": "Transilience AI Community Tools",
+    "primary_url": "https://github.com/transilienceai/communitytools",
+    "hook": "Open-source Claude Code skill suite for AI-powered penetration testing, bug bounty hunting, and CTF competitions — 26 skills and 3 tool integrations covering the full pentest lifecycle from recon to reporting. The headline result: the team built an autonomous pentesting agent that scores 100% (104/104) on a published CTF benchmark using only structured SKILL.md files, no fine-tuning. Coverage includes OWASP Top 10 and OWASP LLM Top 10, CVSS 3.1 and MITRE ATT&CK reporting, Playwright for browser automation, and a one-script Kali Linux container with Claude Code pre-installed. Slash commands: /pentest, /htb (HackTheBox), /bugbounty, /recon, /attack-surface, /static-analysis. Legal-use focused: authorized targets, CTFs, own-app testing, bug bounty scope only.",
+    "categories": ["skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "agent37-monetize-skills",
+    "name": "Agent37 — Monetize Claude Skills",
+    "primary_url": "https://www.agent37.com/skills",
+    "secondary_urls": [
+      "https://news.ycombinator.com/item?id=46422134"
+    ],
+    "hook": "Hosted platform that turns a Claude skill and MCP config into a paid product: upload your skill, get a shareable link with a 'try before you buy' demo mode, and collect payments via Stripe — creators keep 80% of revenue. Solves the distribution problem for the 1,000+ MCP skills on GitHub that currently have no monetization path: selling files gives away IP on download, but selling hosted access scales without support overhead. Skills run on Agent37's infrastructure, so buyers don't need Claude Code or local setup — access works from a browser. The Show HN thread generated active discussion about the hosted-vs-self-hosted skill market.",
+    "categories": ["marketplace"],
+    "install": ""
+  },
+  {
+    "slug": "efij-secure-claude-code",
+    "name": "secure-claude-code (efij)",
+    "primary_url": "https://github.com/efij/secure-claude-code",
+    "hook": "Local-first modular security guardrails for Claude Code, MCP tools, and Claude Cowork workflows — structured as YARA-style guard packs that run as PreToolUse/PostToolUse hooks. Five packs ship out of the box: secrets (catches API keys, tokens, .env contents before they leave your machine), exfiltration (blocks unexpected outbound file reads and curl patterns), prompt injection (detects classic injection vectors in user input and tool results), MCP abuse (rate-limits and audits MCP calls across sessions), and risky-agent-actions (flags destructive bash patterns like `rm -rf`, `git push --force`, and `DROP TABLE`). Designed to complement the official Anthropic security-guidance plugin, not replace it — operates at the hook layer without touching the in-session review model.",
+    "categories": ["skill", "mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "netresearch-claude-code-marketplace",
+    "name": "Netresearch Claude Code Marketplace (agentskills.io)",
+    "primary_url": "https://github.com/netresearch/claude-code-marketplace",
+    "secondary_urls": [
+      "https://github.com/netresearch/skill-repo-skill"
+    ],
+    "hook": "40 curated Agent Skills for enterprise development stacks — TYPO3 CMS, PHP, Go, Docker, Jira, security scanning, and technical documentation — portable across Claude Code, Cursor, Copilot, Codex, Gemini CLI, and 30+ other agents via the agentskills.io open standard. The companion skill-repo-skill teaches Claude how to structure, validate, and publish new skill repos following the same format, enabling teams to build their own private skill registries with consistent tooling. Netresearch also maintains agent-rules-skill for generating AGENTS.md files following the agents.md convention. Actively maintained with CI validation scripts and split licensing.",
+    "categories": ["skill", "marketplace"],
+    "install": "See README"
+  },
+  {
+    "slug": "datasette-agent-micropython",
+    "name": "datasette-agent-micropython (Simon Willison)",
+    "primary_url": "https://simonwillison.net/2026/Jun/2/datasette-agent-micropython/",
+    "secondary_urls": [
+      "https://simonwillison.net/2026/Jun/2/micropython-wasm/"
+    ],
+    "hook": "Simon Willison shipped datasette-agent-micropython 0.1a0 and micropython-wasm 0.1a1 on June 2, both built end-to-end using Claude Code for web. The plugin adds a MicroPython WASM sandbox to Datasette Agent — users can generate and execute Python code safely in-browser (GPT-5.5 failed to break out of the sandbox in initial testing). The companion micropython-wasm package wraps a compiled MicroPython binary as an npm-publishable WASM module. Willison notes Claude Code is 'excellent at writing plugins for Datasette Agent,' making this the first major open-source project to build its extension ecosystem explicitly around Claude Code for web as the authoring environment.",
+    "categories": ["plugin"],
+    "install": "pip install datasette-agent-micropython"
+  },
+  {
+    "slug": "harish-garg-security-scanner-plugin",
+    "name": "Security Scanner Plugin (harish-garg)",
+    "primary_url": "https://github.com/harish-garg/security-scanner-plugin",
+    "hook": "Claude Code plugin that scans your local codebase for vulnerabilities using GitHub's official Advisory Database — no external API calls, no code leaves your machine. Queries the GitHub Security Advisory API for CVEs matching your installed package versions, cross-references against your lock files (package-lock.json, requirements.txt, Pipfile.lock, Cargo.lock, go.sum), and surfaces findings as actionable in-session tasks. Distinct from the official Anthropic security-guidance plugin (which catches code patterns at write-time) — this plugin focuses on dependency-level CVEs rather than source-code patterns, running a full dependency audit on demand.",
+    "categories": ["skill", "mcp"],
+    "install": "/plugin marketplace add harish-garg/security-scanner-plugin"
+  }
+]
