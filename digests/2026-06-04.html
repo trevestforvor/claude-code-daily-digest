@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — June 4, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — June 4, 2026</h1><p class="sub">Top 10 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/upstash/context7">Context7 (Upstash)</a></h3>
+  <p class="hook">52k-star MCP server with 348,660 official Anthropic marketplace installs — the #3 most-installed Claude Code plugin as of June 1. Solves the hallucinated-API problem: add &#39;use context7&#39; to any prompt and it fetches version-specific, source-accurate documentation from the actual library repository before generating code. Prevents deprecated API calls and outdated pattern suggestions, typically saving 2–5 rounds of &quot;that method doesn&#39;t exist&quot; debugging. Ships as both an MCP server and a Claude Code plugin with a docs-researcher agent and a context7-power variant for heavier documentation workloads.</p>
+  <div class="secondary">Also: <a href="https://claude.com/plugins/context7">claude.com/plugins/context7</a> · <a href="https://upstash.com/blog/context7-llmtxt-cursor">upstash.com/blog/context7-llmtxt-cursor</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">plugin · anthropic · marketplace</div>
+  <pre><button class="copy">copy</button><code>claude mcp add context7 -- npx -y @upstash/context7-mcp</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/agentclientprotocol/claude-agent-acp">Devin Desktop + ACP (Agent Client Protocol)</a></h3>
+  <p class="hook">On June 2 Cognition retired the Windsurf brand and relaunched the IDE as Devin Desktop with support for the Agent Client Protocol (ACP) — an open JSON-RPC 2.0 standard that lets any compatible agent (Claude Code, Codex, Gemini CLI, OpenCode) run inside any compatible editor. Claude Code v2.1.162 shipped the same day, updating its /ide menu from &#39;Windsurf&#39; to &#39;Devin Desktop.&#39; The `agentclientprotocol/claude-agent-acp` adapter wraps the Claude Agent SDK so it speaks ACP natively — meaning Claude Code can now be invoked as a managed subagent from Devin Desktop, JetBrains, VS Code, and Zed without any custom plumbing. ACP was created by Zed in August 2025 and had 25+ agent implementations by June 2026.</p>
+  <div class="secondary">Also: <a href="https://devin.ai/blog/windsurf-is-now-devin-desktop/">devin.ai/blog/windsurf-is-now-devin-desktop/</a> · <a href="https://chatforest.com/builders-log/windsurf-devin-desktop-rebrand-devin-local-acp-builder-guide/">chatforest.com/builders-log/windsurf-devin-desktop-rebrand-devin-local-acp-builder-guide/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">subagent · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.162 (June 3)</a></h3>
+  <p class="hook">Shipped June 3. Key additions: `claude agents --json` now includes a `waitingFor` field so external monitors can see exactly what each agent is blocked on; Remote Control is now a persistent footer pill (session link always visible); slash command autocomplete fills into the prompt buffer instead of immediately executing (lets you review before running); Windsurf renamed to Devin Desktop in the /ide menu. Fixes: WebFetch permission rules now apply to pre-approved domains; Windows path handling with backslashes and case-variant paths; MCP timeout values below 1 second were being floored incorrectly. Run `npm update -g @anthropic-ai/claude-code` for v2.1.162.</p>
+  <div class="secondary">Also: <a href="https://code.claude.com/docs/en/changelog">code.claude.com/docs/en/changelog</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">mcp</div>
+  <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://flatt.tech/research/posts/poisoning-claude-code-one-github-issue-to-break-the-supply-chain/">Poisoning Claude Code: Supply Chain CVE in GitHub Actions</a></h3>
+  <p class="hook">Published June 1 by GMO Flatt Security researcher RyotaK: a single malicious GitHub Issue could compromise any repository using the official Claude Code GitHub Actions workflow — including Anthropic&#39;s own repos. Root cause: `checkWritePermissions` unconditionally trusted any actor ending in `[bot]`, regardless of actual permissions, allowing an attacker with a GitHub App installation token (free, implicit read access to any public repo) to inject code into the action and propagate it downstream. Patched in Claude Code GitHub Actions v1.0.94. If your repo uses any version before v1.0.94, audit immediately. Anthropic issued remediation guidance alongside the disclosure.</p>
+  <div class="secondary">Also: <a href="https://cybersecuritynews.com/claude-codes-github-actions-vulnerability/">cybersecuritynews.com/claude-codes-github-actions-vulnerability/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">anthropic · security</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/transilienceai/communitytools">Transilience AI Community Tools</a></h3>
+  <p class="hook">Open-source Claude Code skill suite for AI-powered penetration testing, bug bounty hunting, and CTF competitions — 26 skills and 3 tool integrations covering the full pentest lifecycle from recon to reporting. The headline result: the team built an autonomous pentesting agent that scores 100% (104/104) on a published CTF benchmark using only structured SKILL.md files, no fine-tuning. Coverage includes OWASP Top 10 and OWASP LLM Top 10, CVSS 3.1 and MITRE ATT&amp;CK reporting, Playwright for browser automation, and a one-script Kali Linux container with Claude Code pre-installed. Slash commands: /pentest, /htb (HackTheBox), /bugbounty, /recon, /attack-surface, /static-analysis. Legal-use focused: authorized targets, CTFs, own-app testing, bug bounty scope only.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">model · browser · testing</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.agent37.com/skills">Agent37 — Monetize Claude Skills</a></h3>
+  <p class="hook">Hosted platform that turns a Claude skill and MCP config into a paid product: upload your skill, get a shareable link with a &#39;try before you buy&#39; demo mode, and collect payments via Stripe — creators keep 80% of revenue. Solves the distribution problem for the 1,000+ MCP skills on GitHub that currently have no monetization path: selling files gives away IP on download, but selling hosted access scales without support overhead. Skills run on Agent37&#39;s infrastructure, so buyers don&#39;t need Claude Code or local setup — access works from a browser. The Show HN thread generated active discussion about the hosted-vs-self-hosted skill market.</p>
+  <div class="secondary">Also: <a href="https://news.ycombinator.com/item?id=46422134">news.ycombinator.com/item?id=46422134</a></div>
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span>  </div>
+  <div class="tags">mcp · skill · browser</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/efij/secure-claude-code">secure-claude-code (efij)</a></h3>
+  <p class="hook">Local-first modular security guardrails for Claude Code, MCP tools, and Claude Cowork workflows — structured as YARA-style guard packs that run as PreToolUse/PostToolUse hooks. Five packs ship out of the box: secrets (catches API keys, tokens, .env contents before they leave your machine), exfiltration (blocks unexpected outbound file reads and curl patterns), prompt injection (detects classic injection vectors in user input and tool results), MCP abuse (rate-limits and audits MCP calls across sessions), and risky-agent-actions (flags destructive bash patterns like `rm -rf`, `git push --force`, and `DROP TABLE`). Designed to complement the official Anthropic security-guidance plugin, not replace it — operates at the hook layer without touching the in-session review model.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">plugin · token · local · anthropic · security</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/netresearch/claude-code-marketplace">Netresearch Claude Code Marketplace (agentskills.io)</a></h3>
+  <p class="hook">40 curated Agent Skills for enterprise development stacks — TYPO3 CMS, PHP, Go, Docker, Jira, security scanning, and technical documentation — portable across Claude Code, Cursor, Copilot, Codex, Gemini CLI, and 30+ other agents via the agentskills.io open standard. The companion skill-repo-skill teaches Claude how to structure, validate, and publish new skill repos following the same format, enabling teams to build their own private skill registries with consistent tooling. Netresearch also maintains agent-rules-skill for generating AGENTS.md files following the agents.md convention. Actively maintained with CI validation scripts and split licensing.</p>
+  <div class="secondary">Also: <a href="https://github.com/netresearch/skill-repo-skill">github.com/netresearch/skill-repo-skill</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span>  </div>
+  <div class="tags">terminal · security</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://simonwillison.net/2026/Jun/2/datasette-agent-micropython/">datasette-agent-micropython (Simon Willison)</a></h3>
+  <p class="hook">Simon Willison shipped datasette-agent-micropython 0.1a0 and micropython-wasm 0.1a1 on June 2, both built end-to-end using Claude Code for web. The plugin adds a MicroPython WASM sandbox to Datasette Agent — users can generate and execute Python code safely in-browser (GPT-5.5 failed to break out of the sandbox in initial testing). The companion micropython-wasm package wraps a compiled MicroPython binary as an npm-publishable WASM module. Willison notes Claude Code is &#39;excellent at writing plugins for Datasette Agent,&#39; making this the first major open-source project to build its extension ecosystem explicitly around Claude Code for web as the authoring environment.</p>
+  <div class="secondary">Also: <a href="https://simonwillison.net/2026/Jun/2/micropython-wasm/">simonwillison.net/2026/Jun/2/micropython-wasm/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">browser · testing</div>
+  <pre><button class="copy">copy</button><code>pip install datasette-agent-micropython</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/harish-garg/security-scanner-plugin">Security Scanner Plugin (harish-garg)</a></h3>
+  <p class="hook">Claude Code plugin that scans your local codebase for vulnerabilities using GitHub&#39;s official Advisory Database — no external API calls, no code leaves your machine. Queries the GitHub Security Advisory API for CVEs matching your installed package versions, cross-references against your lock files (package-lock.json, requirements.txt, Pipfile.lock, Cargo.lock, go.sum), and surfaces findings as actionable in-session tasks. Distinct from the official Anthropic security-guidance plugin (which catches code patterns at write-time) — this plugin focuses on dependency-level CVEs rather than source-code patterns, running a full dependency audit on demand.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">plugin · anthropic · marketplace · security</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add harish-garg/security-scanner-plugin</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
