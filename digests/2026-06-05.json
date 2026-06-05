@@ -1,0 +1,117 @@
+[
+  {
+    "slug": "open-carrusel",
+    "name": "open-carrusel — AI Instagram Carousel Builder",
+    "primary_url": "https://github.com/Hainrixz/open-carrusel",
+    "secondary_urls": ["https://www.youtube.com/watch?v=7taGazHQkMg"],
+    "hook": "Local-first, MIT-licensed carousel builder: chat with Claude, get real HTML/CSS slides screenshot to 1080×1350px PNGs at exact Instagram dimensions. Built on Next.js 16 + React 19 + Puppeteer with drag-reorderable filmstrip and brand config. No design tool needed. Chase AI's 'Your Claude Code Carousels Suck (Here's The Fix)' video this week put the whole carousel-skill category back in the spotlight.",
+    "categories": ["design", "skill"],
+    "install": "git clone https://github.com/Hainrixz/open-carrusel.git && npm run setup && npm run dev",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "instagram-carousel-skill",
+    "name": "instagram-carousel-skill (jeevanbavandla)",
+    "primary_url": "https://github.com/jeevanbavandla/instagram-carousel-skill",
+    "secondary_urls": ["https://www.youtube.com/watch?v=7taGazHQkMg"],
+    "hook": "Claude Code + Claude.ai skill that generates pixel-perfect branded carousels in your own colors, handle, and headshot — no Figma, no Canva. Works as both a CLI skill and via claude.ai web. Chase AI highlighted carousel skills this week as the most under-used design workflow in Claude Code, driving a wave of installs across this repo and related tools.",
+    "categories": ["design", "skill"],
+    "install": "See README",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "uber-1500-cap-claude-code",
+    "name": "Uber's $1,500/Month Claude Code Cap — The Token Budget Reckoning",
+    "primary_url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/",
+    "secondary_urls": ["https://fortune.com/2026/05/26/uber-coo-ai-spending-tokens-claude-code/", "https://www.bloomberg.com/news/articles/2026-06-02/uber-caps-usage-of-ai-tools-like-claude-code-to-cut-costs"],
+    "hook": "Uber burned its entire 2026 AI tools budget in four months on Claude Code + Cursor, forcing a $1,500 monthly per-engineer cap on agentic coding tools. Uber's COO publicly questioned ROI — 'that link is not there yet' — and described a head-exploding moment seeing $1,200 burned in a two-hour demo. Bloomberg and Fortune covered it, Simon Willison flagged it; the cost conversation is now unavoidable.",
+    "categories": ["cost"]
+  },
+  {
+    "slug": "zilliztech-claude-context",
+    "name": "claude-context — 40% Token Reduction via Semantic Code Search MCP",
+    "primary_url": "https://github.com/zilliztech/claude-context",
+    "hook": "Code search MCP by Zilliz (9.8k stars) that indexes your entire codebase with AST-aware chunking and Merkle-tree incremental updates, then serves only the relevant context at query time — achieving ~40% token reduction under equivalent retrieval quality. Supports OpenAI, VoyageAI, Ollama, and Gemini embeddings. Directly answers the 'full codebase context is too expensive' problem exposed by the Uber story.",
+    "categories": ["cost", "mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-code-best-practice",
+    "name": "claude-code-best-practice — From Vibe Coding to Agentic Engineering",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "56.5k-star compendium with 83 actionable tips across 11 categories, co-developed with input from Boris Cherny (Claude Code's creator at Anthropic). 903 commits. Covers Subagents, Commands, Skills, Hooks, Checkpointing, Channels, Dynamic Workflows, Computer Use — the full modern Claude Code surface. Hit GitHub Trending #1 in March and keeps getting cited as the canonical starting point for engineers graduating beyond vibe coding.",
+    "categories": ["skill", "agent"],
+    "install": "See README"
+  },
+  {
+    "slug": "antigravity-awesome-skills",
+    "name": "antigravity-awesome-skills — 1,508 Installable Skills (v12.0.0, June 3)",
+    "primary_url": "https://github.com/sickn33/antigravity-awesome-skills",
+    "secondary_urls": ["https://sickn33.github.io/antigravity-awesome-skills/"],
+    "hook": "39.8k-star installable skill library for Claude Code, Cursor, Codex CLI, Gemini, and Antigravity — v12.0.0 shipped June 3 with 10+ specialized domain plugins (web, security, data, DevOps, QA) plus curated role-based bundles and community skill intake. One-line install via npx with tool-specific flags (--claude, --cursor, --gemini). Cross-agent compatibility is the differentiator.",
+    "categories": ["skill", "plugin"],
+    "install": "npx antigravity-awesome-skills"
+  },
+  {
+    "slug": "last30days-skill",
+    "name": "last30days-skill — /last30days Brings 30-Day Web Intelligence into Claude",
+    "primary_url": "https://github.com/mvanhorn/last30days-skill",
+    "hook": "28.1k-star Claude Code skill (v3.3.0) that fires /last30days <topic> and researches Reddit, X, Bluesky, YouTube, TikTok, HN, Polymarket, and the web simultaneously — then synthesizes a grounded narrative with citations, engagement scores, and copy-paste-ready prompts. The v3 engine does entity resolution before searching (resolves people/companies to their actual communities), not keyword-only matching. Was GitHub's #1 trending repo on launch day.",
+    "categories": ["skill", "research"],
+    "install": "/plugin marketplace add mvanhorn/last30days-skill"
+  },
+  {
+    "slug": "voltAgent-awesome-agent-skills",
+    "name": "VoltAgent awesome-agent-skills — 1,000+ Official Dev-Team Skills",
+    "primary_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "hook": "24.3k-star curated collection of 1,000+ agent skills published by official dev teams (Anthropic, Google, Vercel, Stripe, and more) plus community contributions — not AI-generated. Compatible with Claude Code, Codex, Gemini CLI, Cursor, and more. The 'official team only' curation standard is the positioning differentiator vs other awesome-* lists; last updated May 29, 2026.",
+    "categories": ["skill", "agent"]
+  },
+  {
+    "slug": "anthropic-when-ai-builds-itself",
+    "name": "Anthropic: 'When AI Builds Itself' — Claude Wrote 80% of Anthropic's Code",
+    "primary_url": "https://www.anthropic.com/institute/recursive-self-improvement",
+    "hook": "Anthropic published June 4 that Claude authored >80% of the code merged into its own codebase in May 2026 — up from single digits when Claude Code launched in early 2025. Engineers are now shipping 8x as much code per day as in 2024. The post frames recursive self-improvement as real but not inevitable, warns institutions aren't ready, and sets the tone for the Tokyo conference June 10.",
+    "categories": ["agent"]
+  },
+  {
+    "slug": "claude-code-v2-1-163-165",
+    "name": "Claude Code v2.1.163–165 (June 4–5) — Version Guards + Plugin List",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "v2.1.163 (June 4) adds enterprise-critical managed settings: `requiredMinimumVersion` / `requiredMaximumVersion` refuse startup if Claude Code is outside the allowed range — fleet version control without MDM. Also: `/plugin list --enabled/--disabled`, Stop and SubagentStop hooks can now return `additionalContext` to continue turns, and `\\$` escape for literal dollars in skill bodies. v2.1.165 (June 5) ships further reliability fixes.",
+    "categories": ["plugin", "skill"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "parallel-code",
+    "name": "parallel-code — Run Claude Code, Codex & Gemini Side-by-Side in Git Worktrees",
+    "primary_url": "https://github.com/johannesjo/parallel-code",
+    "secondary_urls": ["https://www.youtube.com/watch?v=f8RnRuaxee8"],
+    "hook": "703-star desktop app (v1.10.0, June 1) that dispatches multiple AI coding agents simultaneously — each in its own isolated git branch and worktree, zero interference. Supports Claude Code, Codex CLI, and Gemini CLI out of the box, MIT-licensed. IndyDevDan's 'How I PARALLELIZE Claude Code with Git Worktrees' video popularized the pattern; this tool makes it point-and-click.",
+    "categories": ["agent"],
+    "install": "Download .dmg (macOS) or .AppImage/.deb (Linux) from releases",
+    "creator_buzz": ["@indydevdan"]
+  },
+  {
+    "slug": "code-with-claude-tokyo-2026",
+    "name": "Code with Claude Tokyo — June 10 (+ Extended June 11)",
+    "primary_url": "https://claude.com/code-with-claude/tokyo",
+    "hook": "Anthropic's Code with Claude conference closes in Tokyo on June 10 (Extended June 11). After SF (May 6) and London (May 19) sessions introduced Managed Agents, Proactive Workflows, and the Capability Curve framework, Tokyo is expected to focus on APAC/multilingual Claude use and any Japan/APAC infrastructure news. Livestreamed. Registration still open.",
+    "categories": ["agent"]
+  },
+  {
+    "slug": "unabyss-mcp-context-vault",
+    "name": "Unabyss — Personal MCP Context Vault (PH #1, 454 Upvotes)",
+    "primary_url": "https://www.producthunt.com/products/unabyss",
+    "hook": "MCP service that extracts your identity once from LinkedIn, Notion, Gmail, Slack, GitHub, and more — structures it into layered markdown files (persona.md, voice.md, company.md) and shares it with any AI tool via MCP with granular per-tool access control. Earned Product Hunt #1 on May 25 with 454 upvotes. Claude Code connect in one command. Solves 'it should already know this' context re-entry friction.",
+    "categories": ["mcp"],
+    "install": "claude mcp add --transport http unabyss https://mcp.unabyss.com/"
+  },
+  {
+    "slug": "claude-code-timeline-viewer",
+    "name": "Claude Code Timeline Viewer (Simon Willison)",
+    "primary_url": "https://tools.simonwillison.net/claude-code-timeline",
+    "hook": "Simon Willison's browser-based tool that loads a Claude Code session .jsonl file from ~/.claude/projects/ and renders it as an interactive timeline — every tool call, model turn, and decision visible in sequence. Zero install, runs entirely client-side. Surfaces debugging value from sessions that previously existed only as opaque logs.",
+    "categories": ["tool"]
+  }
+]
