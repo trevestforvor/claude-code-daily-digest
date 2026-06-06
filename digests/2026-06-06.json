@@ -1,0 +1,81 @@
+[
+  {
+    "slug": "claude-code-v2-1-166",
+    "name": "Claude Code v2.1.166 (June 6) — fallbackModel, Thinking Disabled, Deny-Rule Globs",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "secondary_urls": [
+      "https://github.com/anthropics/claude-code/releases"
+    ],
+    "hook": "Today's release is the largest Claude Code changelog in weeks. Three headline additions: (1) `fallbackModel` settings field — configure up to three fallback models tried in order when your primary is overloaded or unavailable, `--fallback-model` now applies to interactive sessions and retries once on the fallback when the API returns unexpected non-retryable errors; (2) Thinking control — `MAX_THINKING_TOKENS=0`, `--thinking disabled`, and per-model toggles now fully disable thinking on models that reason by default; (3) Glob patterns in deny rules — `\"*\"` in a deny rule's tool-name slot blocks all tools, enabling blanket sandboxing. Security fix: `SendMessage` relays from other Claude sessions no longer carry user authority, closing an elevation path in multi-agent setups.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "anthropic-gtm-seller-workflows",
+    "name": "\"How One Anthropic Seller Rebuilt Workflows\" — Zero-Code Claude Code in Production",
+    "primary_url": "https://claude.com/blog/how-anthropic-uses-claude-gtm-engineering",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=l4mSSN6exGg"
+    ],
+    "hook": "Anthropic published June 5 that a GTM product manager who had never opened a terminal before joining built a 4,300-line Gmail agentic app (CLAFTS — Claude Drafts) entirely via Claude Code, a Figma plugin that generates 100+ ad variations per batch in half a second, and daily-brief + meeting-recap skills now used by the whole sales team. The post is the most direct 'Claude Code for non-engineers' proof point Anthropic has published to date. Simon Scrapes (@simonscrapes, 71.8k subs) covered it the same day in 'How Anthropic Teams ACTUALLY use Claude Code day to day.'",
+    "categories": ["anthropic", "skill"],
+    "creator_buzz": ["@simonscrapes"]
+  },
+  {
+    "slug": "claude-june5-outage-data-probe",
+    "name": "Claude Outage June 5 + Anthropic Investigates Potential Cross-User Data Exposure",
+    "primary_url": "https://cybernews.com/ai-news/claude-outage-resolved-anthropic-opus-model-errors/",
+    "secondary_urls": [
+      "https://cybersecuritynews.com/anthropics-claude-services-down/",
+      "https://status.claude.com/"
+    ],
+    "hook": "Anthropic's Claude platform suffered a roughly 5h45m outage Friday June 5 (8:08–18:27 UTC) — the third major disruption this week after elevated errors on June 1 and the June 2 sub-agent loop that triggered the IPO-day outage. More serious: Anthropic announced it is investigating social media reports that some users received responses intended for other users during the disruption. As of Friday afternoon the company had not confirmed any data exposure but called the reports 'serious' and is actively investigating. Claude Code, Claude.ai, and Cowork were all affected; quotas were reset for impacted users.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "ask-hn-claude-code-getting-worse",
+    "name": "Ask HN: 'Is it just me or is Claude Code getting worse?' — Community Pulse",
+    "primary_url": "https://news.ycombinator.com/item?id=47936579",
+    "secondary_urls": [
+      "https://news.ycombinator.com/item?id=47892019"
+    ],
+    "hook": "Two high-engagement HN threads from June 5–6 are reigniting the quality-decline conversation that surfaced in March–April: 'Ask HN: Is it just me or is Claude Code getting worse?' and 'I cancelled Claude: Token issues, declining quality, and poor support.' Root causes from April (reduced default reasoning effort, session-reasoning bug, 25-word cap) were patched by April 20, but the back-to-back outages this week and the June 5 potential data exposure have driven fresh cancellations and comparisons to Codex CLI and Gemini CLI. The threads are a leading indicator of what enterprise procurement conversations will sound like next week.",
+    "categories": []
+  },
+  {
+    "slug": "claude-code-youtube-mcp",
+    "name": "claude-code-youtube-mcp (wynandw87) — 15-Tool YouTube MCP",
+    "primary_url": "https://github.com/wynandw87/claude-code-youtube-mcp",
+    "hook": "MCP server that brings YouTube natively into Claude Code via 15 tools: video transcripts (no API key required), full-text search, metadata, channel info, playlists, comments, global and region-specific trending, engagement analytics, chapter extraction, SponsorBlock ad-skip segments, and most-replayed heatmaps. Five tools work without a YouTube Data API v3 key — transcripts, SponsorBlock, heatmaps, URL parsing, and most-replayed — making zero-auth usage viable for most content tasks. Part of a growing suite from wynandw87 alongside claude-code-perplexity-mcp and claude-code-grok-mcp.",
+    "categories": ["mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-code-perplexity-mcp",
+    "name": "claude-code-perplexity-mcp (wynandw87) — 9-Tool Perplexity AI Search MCP",
+    "primary_url": "https://github.com/wynandw87/claude-code-perplexity-mcp",
+    "hook": "Brings Perplexity AI's real-time web intelligence into Claude Code via 9 tools: search, deep research, reasoning, raw search, Q&A, code review, brainstorming, explanations, and file analysis. Distinct from the existing Perplexity MCP servers by offering the deeper research and reasoning tools alongside standard search — useful for in-session fact-checking, codebase explanations, and competitor research without leaving Claude Code.",
+    "categories": ["mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-code-grok-mcp",
+    "name": "claude-code-grok-mcp (wynandw87) — xAI Grok 4.3 as a Claude Code MCP",
+    "primary_url": "https://github.com/wynandw87/claude-code-grok-mcp",
+    "hook": "MCP server that routes work to xAI Grok 4.3/4.20 from inside Claude Code — covering: chat, live web search and X/Twitter search, Python code execution, file analysis, image generation and editing, video generation, vision, TTS with custom voice cloning, and STT. The X/Twitter real-time search tool is the standout: Grok's direct pipeline to the X firehose gives Claude Code access to real-time social data that no other MCP server offers natively.",
+    "categories": ["mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "trends-mcp-rugvedp",
+    "name": "Trends-MCP (rugvedp) — YouTube, TikTok & Instagram Trending in Claude",
+    "primary_url": "https://github.com/rugvedp/Trends-MCP",
+    "secondary_urls": [
+      "https://glama.ai/mcp/servers/@rugvedp/Trends-MCP",
+      "https://lobehub.com/mcp/rugvedp-trends-mcp"
+    ],
+    "hook": "FastMCP server that surfaces what's trending across the three social platforms Claude Code can't otherwise see: globally and regionally trending YouTube videos (full metadata), top TikTok videos via RapidAPI, and weekly Instagram Reels trends scraped from Later.com. Listed on Glama, LobeHub, and ChatForest's Best Social Media MCP Servers roundup. Pairs well with claude-code-youtube-mcp for content research workflows where you need to find trends and then deep-dive into specific videos.",
+    "categories": ["mcp"],
+    "install": "See README"
+  }
+]
