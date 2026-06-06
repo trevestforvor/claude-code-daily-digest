@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — June 6, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — June 6, 2026</h1><p class="sub">Top 8 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.166 (June 6) — fallbackModel, Thinking Disabled, Deny-Rule Globs</a></h3>
+  <p class="hook">Today&#39;s release is the largest Claude Code changelog in weeks. Three headline additions: (1) `fallbackModel` settings field — configure up to three fallback models tried in order when your primary is overloaded or unavailable, `--fallback-model` now applies to interactive sessions and retries once on the fallback when the API returns unexpected non-retryable errors; (2) Thinking control — `MAX_THINKING_TOKENS=0`, `--thinking disabled`, and per-model toggles now fully disable thinking on models that reason by default; (3) Glob patterns in deny rules — `&quot;*&quot;` in a deny rule&#39;s tool-name slot blocks all tools, enabling blanket sandboxing. Security fix: `SendMessage` relays from other Claude sessions no longer carry user authority, closing an elevation path in multi-agent setups.</p>
+  <div class="secondary">Also: <a href="https://github.com/anthropics/claude-code/releases">github.com/anthropics/claude-code/releases</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">agent · security</div>
+  <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://claude.com/blog/how-anthropic-uses-claude-gtm-engineering">&quot;How One Anthropic Seller Rebuilt Workflows&quot; — Zero-Code Claude Code in Production</a></h3>
+  <p class="hook">Anthropic published June 5 that a GTM product manager who had never opened a terminal before joining built a 4,300-line Gmail agentic app (CLAFTS — Claude Drafts) entirely via Claude Code, a Figma plugin that generates 100+ ad variations per batch in half a second, and daily-brief + meeting-recap skills now used by the whole sales team. The post is the most direct &#39;Claude Code for non-engineers&#39; proof point Anthropic has published to date. Simon Scrapes (@simonscrapes, 71.8k subs) covered it the same day in &#39;How Anthropic Teams ACTUALLY use Claude Code day to day.&#39;</p>
+  <div class="secondary">Also: <a href="https://www.youtube.com/watch?v=l4mSSN6exGg">www.youtube.com/watch?v=l4mSSN6exGg</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · agent · terminal</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://cybernews.com/ai-news/claude-outage-resolved-anthropic-opus-model-errors/">Claude Outage June 5 + Anthropic Investigates Potential Cross-User Data Exposure</a></h3>
+  <p class="hook">Anthropic&#39;s Claude platform suffered a roughly 5h45m outage Friday June 5 (8:08–18:27 UTC) — the third major disruption this week after elevated errors on June 1 and the June 2 sub-agent loop that triggered the IPO-day outage. More serious: Anthropic announced it is investigating social media reports that some users received responses intended for other users during the disruption. As of Friday afternoon the company had not confirmed any data exposure but called the reports &#39;serious&#39; and is actively investigating. Claude Code, Claude.ai, and Cowork were all affected; quotas were reset for impacted users.</p>
+  <div class="secondary">Also: <a href="https://cybersecuritynews.com/anthropics-claude-services-down/">cybersecuritynews.com/anthropics-claude-services-down/</a> · <a href="https://status.claude.com/">status.claude.com/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://news.ycombinator.com/item?id=47936579">Ask HN: &#39;Is it just me or is Claude Code getting worse?&#39; — Community Pulse</a></h3>
+  <p class="hook">Two high-engagement HN threads from June 5–6 are reigniting the quality-decline conversation that surfaced in March–April: &#39;Ask HN: Is it just me or is Claude Code getting worse?&#39; and &#39;I cancelled Claude: Token issues, declining quality, and poor support.&#39; Root causes from April (reduced default reasoning effort, session-reasoning bug, 25-word cap) were patched by April 20, but the back-to-back outages this week and the June 5 potential data exposure have driven fresh cancellations and comparisons to Codex CLI and Gemini CLI. The threads are a leading indicator of what enterprise procurement conversations will sound like next week.</p>
+  <div class="secondary">Also: <a href="https://news.ycombinator.com/item?id=47892019">news.ycombinator.com/item?id=47892019</a></div>
+  <div class="badges">  </div>
+  <div class="tags">terminal</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/wynandw87/claude-code-youtube-mcp">claude-code-youtube-mcp (wynandw87) — 15-Tool YouTube MCP</a></h3>
+  <p class="hook">MCP server that brings YouTube natively into Claude Code via 15 tools: video transcripts (no API key required), full-text search, metadata, channel info, playlists, comments, global and region-specific trending, engagement analytics, chapter extraction, SponsorBlock ad-skip segments, and most-replayed heatmaps. Five tools work without a YouTube Data API v3 key — transcripts, SponsorBlock, heatmaps, URL parsing, and most-replayed — making zero-auth usage viable for most content tasks. Part of a growing suite from wynandw87 alongside claude-code-perplexity-mcp and claude-code-grok-mcp.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">video · viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/wynandw87/claude-code-perplexity-mcp">claude-code-perplexity-mcp (wynandw87) — 9-Tool Perplexity AI Search MCP</a></h3>
+  <p class="hook">Brings Perplexity AI&#39;s real-time web intelligence into Claude Code via 9 tools: search, deep research, reasoning, raw search, Q&amp;A, code review, brainstorming, explanations, and file analysis. Distinct from the existing Perplexity MCP servers by offering the deeper research and reasoning tools alongside standard search — useful for in-session fact-checking, codebase explanations, and competitor research without leaving Claude Code.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">review</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/wynandw87/claude-code-grok-mcp">claude-code-grok-mcp (wynandw87) — xAI Grok 4.3 as a Claude Code MCP</a></h3>
+  <p class="hook">MCP server that routes work to xAI Grok 4.3/4.20 from inside Claude Code — covering: chat, live web search and X/Twitter search, Python code execution, file analysis, image generation and editing, video generation, vision, TTS with custom voice cloning, and STT. The X/Twitter real-time search tool is the standout: Grok&#39;s direct pipeline to the X firehose gives Claude Code access to real-time social data that no other MCP server offers natively.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">video · image · audio · search</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/rugvedp/Trends-MCP">Trends-MCP (rugvedp) — YouTube, TikTok &amp; Instagram Trending in Claude</a></h3>
+  <p class="hook">FastMCP server that surfaces what&#39;s trending across the three social platforms Claude Code can&#39;t otherwise see: globally and regionally trending YouTube videos (full metadata), top TikTok videos via RapidAPI, and weekly Instagram Reels trends scraped from Later.com. Listed on Glama, LobeHub, and ChatForest&#39;s Best Social Media MCP Servers roundup. Pairs well with claude-code-youtube-mcp for content research workflows where you need to find trends and then deep-dive into specific videos.</p>
+  <div class="secondary">Also: <a href="https://glama.ai/mcp/servers/@rugvedp/Trends-MCP">glama.ai/mcp/servers/@rugvedp/Trends-MCP</a> · <a href="https://lobehub.com/mcp/rugvedp-trends-mcp">lobehub.com/mcp/rugvedp-trends-mcp</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
