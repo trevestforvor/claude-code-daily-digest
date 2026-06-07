@@ -1,0 +1,95 @@
+[
+  {
+    "slug": "claude-peers-mcp",
+    "name": "claude-peers-mcp — Ad-Hoc Peer Messaging Between Claude Instances",
+    "primary_url": "https://github.com/louislva/claude-peers-mcp",
+    "secondary_urls": [
+      "https://mcpmarket.com/server/claude-peers",
+      "https://lobehub.com/skills/aradotso-trending-skills-claude-peers-mcp"
+    ],
+    "hook": "2.1k stars. Allows every Claude Code session running on your machine to discover the others and send messages ad-hoc — no cloud, no orchestration framework. A local broker daemon (SQLite + HTTP on localhost:7899) handles peer registration; each session's MCP server polls for inbound messages and pushes them into the Claude channel so they appear instantly. Practical use: spin up a planning agent and a coding agent in separate terminals, let them coordinate directly without any hand-rolled API. Already cross-listed on LobeHub, SkillsMP, and mcpmarket — viral pick-up for a small repo.",
+    "categories": ["mcp"],
+    "install": "git clone https://github.com/louislva/claude-peers-mcp ~/claude-peers-mcp && cd ~/claude-peers-mcp && bun install && claude mcp add --scope user --transport stdio claude-peers -- bun ~/claude-peers-mcp/server.ts"
+  },
+  {
+    "slug": "alirezarezvani-claude-skills",
+    "name": "alirezarezvani/claude-skills — 337 Skills for 9 Agents, Updated June 5",
+    "primary_url": "https://github.com/alirezarezvani/claude-skills",
+    "hook": "17.4k stars, updated June 5 (within 72h). Ships 337 Claude Code skills alongside 30+ agents and 70+ custom commands in one repo — covering engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and daily productivity. Cross-agent support out of the box: the same skill set works across Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents, making it one of the broadest-coverage skill libraries currently maintained. The June 5 update added new compliance and C-suite advisory skills.",
+    "categories": ["skill", "marketplace"],
+    "install": "See README"
+  },
+  {
+    "slug": "chase-ai-top10-plugins-june26",
+    "name": "Chase AI: \"Top 10 Claude Code Plugins to 10x Your Next Project\" (June '26)",
+    "primary_url": "https://www.youtube.com/watch?v=IShdbDP4Jgg",
+    "hook": "Posted June 6 (18 hours ago) by @Chase-H-AI (175K subscribers) — the channel's monthly plugin roundup has become the community's go-to snapshot of what actually moves the needle. June's edition is the freshest ecosystem survey available this morning and covers both official Anthropic marketplace plugins and community-built skills. If you're choosing which plugins to install first, this is where to start. Chase AI is the most prolific Claude Code plugin reviewer and also posted 'Claude Code + Higgsfield MCP = Content MACHINE' this week.",
+    "categories": [],
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "claude-forge-sangrokjung",
+    "name": "claude-forge — oh-my-zsh for Claude Code",
+    "primary_url": "https://github.com/sangrokjung/claude-forge",
+    "hook": "Plugin framework for Claude Code inspired by oh-my-zsh — ships 11 AI agents, 36 slash commands, and 15 skills bundled into a single 5-minute install. The headline feature is a 6-layer security hook system that intercepts and validates tool calls before execution, closing the gap between Claude Code's power and teams that need audit trails and blast-radius controls. Designed as an opinionated starting point rather than a one-skill-at-a-time assembler.",
+    "categories": ["plugin", "skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "levnikolaevich-claude-code-skills",
+    "name": "levnikolaevich/claude-code-skills — Hex-Line, Hex-Graph, Hex-SSH MCP Bundle",
+    "primary_url": "https://github.com/levnikolaevich/claude-code-skills",
+    "hook": "486 stars, v2026.05.06. Bundles three original MCP servers alongside 137 interconnected skills in 7 plugins: hex-line adds per-line content hashes to every file edit so Claude can never apply a change to a stale version of a file; hex-graph builds a framework-aware SQLite knowledge graph of your codebase for sub-millisecond architecture queries; hex-ssh brings the same hash-verified editing discipline to remote files over SSH with SFTP. The pipeline is artifact-driven — passing machine-readable state between stages rather than replaying conversation history — and uses Claude and Codex as mutual code reviewers at critical gates.",
+    "categories": ["skill", "mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "ecc-agent-harness",
+    "name": "ECC (everything-claude-code) — Agent Harness Performance System",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "Built over 10+ months of intensive daily use by affaan-m (the author of AgentShield and claude-swarm). ECC is the harness layer that sits on top of any AI coding agent — Claude Code, Codex, OpenCode, Cursor, Gemini, Zed, GitHub Copilot — and adds: skills that wire domain knowledge directly into the agent's behavior, instincts (pre-built decision heuristics for common tasks), persistent memory, security guardrails, and a research-first development workflow. Production-ready agents, hooks, rules, and MCP configurations included; legacy command shims cover users migrating from earlier setups.",
+    "categories": ["plugin"],
+    "install": "See README"
+  },
+  {
+    "slug": "charlie-automates-crm-zero",
+    "name": "Charlie Automates: \"Claude Code Just Destroyed GHL & Hubspot ($0/Mth)\"",
+    "primary_url": "https://www.youtube.com/watch?v=0l1wYWtdvdU",
+    "hook": "Posted June 3 by @charlieautomates (8K subs). Builds a full HighLevel/HubSpot CRM replacement in a single Claude Code session at zero monthly cost — the video ends with a working, self-hosted CRM. Directly relevant to the cost conversation dominating Claude Code discourse this week (Uber $1,500 cap, Microsoft cancellations): rather than capping spend, Charlie's answer is to build your own stack. If you're paying $200–$800/month in SaaS subscriptions, this is a practical counter-move.",
+    "categories": [],
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "glebis-claude-skills",
+    "name": "glebis/claude-skills — Health, Meetings, TDD, and Obsidian Vault Skills",
+    "primary_url": "https://github.com/glebis/claude-skills",
+    "hook": "248 stars, updated 11 hours ago (freshest repo found in today's research). Fills gaps the large skill libraries skip: TDD orchestration with multi-agent context isolation (8 Codex audit rounds); synthetic session generator for persona-consistent coaching transcripts; GPT Image 2 integration with reasoning mode; Fathom meeting-transcript processing; Granola → Obsidian import; health research with GRADE evidence ratings and CBT/DBT protocol maps; temple-generator for 3D interactive Obsidian vault visualization; qmd semantic search across notes. Each skill is heavily tested — not a mass-generation dump.",
+    "categories": ["skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-code-daily-driver-14day",
+    "name": "\"14-Day Claude Code Daily Driver Test\" — What Actually Broke",
+    "primary_url": "https://medium.com/@sebuzdugan/i-tested-claude-code-as-a-daily-driver-claude-md-9bedae43dbf4",
+    "secondary_urls": [
+      "https://news.ycombinator.com/item?id=48289950"
+    ],
+    "hook": "Sebastian Buzdugan's 14-day daily-driver experiment — using Claude.md, Skills, Subagents, Plugins, and MCPs across real production projects — hit HN #1 for Claude Code on June 6. The piece is notable for documenting failures rather than wins: which plugin combinations fight each other, when Skills bloat context catastrophically, where subagent fan-out burns tokens without payoff. Practical calibration for anyone moving past the tutorial phase.",
+    "categories": []
+  },
+  {
+    "slug": "quemsah-awesome-claude-plugins",
+    "name": "quemsah/awesome-claude-plugins — Automated Plugin Adoption Metrics (20,530 repos)",
+    "primary_url": "https://github.com/quemsah/awesome-claude-plugins",
+    "hook": "Automated collection of Claude Code plugin adoption metrics across GitHub repositories using n8n workflows. Updated June 6 (yesterday) with 20,530 total repos indexed — the most comprehensive adoption-signal dataset for the Claude Code plugin ecosystem. Tracks install counts, stars, fork rates, and usage patterns across official Anthropic marketplace plugins and community contributions. Useful for identifying what's actually being used vs. what's being talked about.",
+    "categories": ["marketplace"]
+  },
+  {
+    "slug": "claude-skills-mcp-kdense",
+    "name": "claude-skills-mcp (K-Dense-AI) — Vector Search for Your Installed Skills",
+    "primary_url": "https://github.com/K-Dense-AI/claude-skills-mcp",
+    "hook": "MCP server for searching and retrieving Claude Agent Skills using vector search — a meta-MCP that solves the discovery problem created by the explosion of available skills. When you have 337+ alirezarezvani skills, 1,500+ antigravity skills, or a custom skill collection installed, finding the right skill for a task requires knowing the exact name. This server lets Claude search semantically: 'find me a skill that handles database migrations' returns the closest match from everything installed. Directly addresses the 'I have too many skills to remember' problem.",
+    "categories": ["mcp", "marketplace"],
+    "install": "See README"
+  }
+]
