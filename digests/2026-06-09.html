@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — June 9, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — June 9, 2026</h1><p class="sub">Top 15 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/rohitg00/awesome-claude-design">awesome-claude-design — DESIGN.md Prompts by Aesthetic Family</a></h3>
+  <p class="hook">rohitg00&#39;s companion to his 176-plugin awesome-claude-code-toolkit focuses purely on visual craft: DESIGN.md prompt templates organized by aesthetic family, remix recipes, design-specific skills, video teardowns, X community signal, and honest takes on what actually looks good vs AI-slop. The aesthetic-family framing (brutalist, glassmorphism, skeuomorphic, neo-brutalist, etc.) gives Claude a concrete style anchor instead of free-floating &#39;make it nice&#39; prompts — a fast path to consistent visual identity across artifacts.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">video · plugin</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://support.claude.com/en/articles/15036540-use-the-claude-agent-sdk-with-your-claude-plan">Anthropic June 15: Agent SDK Gets Its Own Credit Pool — What Changes</a></h3>
+  <p class="hook">Starting June 15 (6 days), programmatic Claude usage leaves the flat-rate subscription pool and enters a separate monthly credit bucket — Pro gets $20, Max 5x gets $100, Max 20x gets $200. Buckets don&#39;t commingle (interactive use can&#39;t borrow from agent credits), unused credits don&#39;t roll over, and extra-usage kicks in at API rates only if enabled. Covered independently by both IndyDevDan and Chase AI under the same title &#39;Anthropic Just Put Claude Code Agents on a Meter&#39; — the clearest dual-YouTuber viral signal of the week. The Zed team&#39;s public write-up is the most developer-readable breakdown of the mechanics.</p>
+  <div class="secondary">Also: <a href="https://www.youtube.com/watch?v=h95BH9GrZak">www.youtube.com/watch?v=h95BH9GrZak</a> · <a href="https://www.infoworld.com/article/4171274/anthropic-puts-claude-agents-on-a-meter-across-its-subscriptions.html">www.infoworld.com/article/4171274/anthropic-puts-claude-agents-on-a-meter-across-its-subscriptions.html</a> · <a href="https://zed.dev/blog/anthropic-subscription-changes">zed.dev/blog/anthropic-subscription-changes</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news">Claude Fable — Mythos Goes Public on June 9 (Today)</a></h3>
+  <p class="hook">Anthropic releases Claude Mythos to the public today under the name Claude Fable, priced at roughly 2× Claude Opus. During the Project Glasswing restricted preview (partners: AWS, Microsoft, Apple, CrowdStrike), the model found and chained 10,000 zero-day vulnerabilities across major operating systems and browsers in one month — a capability unprecedented in autonomous AI. The public version ships with &#39;substantial guardrails&#39; limiting offensive use while retaining strong reasoning, coding, and defensive security depth. This is Anthropic&#39;s most capable model available today and the first in the Claude 5 family to reach public release.</p>
+  <div class="secondary">Also: <a href="https://red.anthropic.com/2026/mythos-preview/">red.anthropic.com/2026/mythos-preview/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">security</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.apple.com/newsroom/2026/06/apple-aids-app-development-with-new-intelligence-frameworks-and-advanced-tools/">WWDC 2026: Claude Lands in Apple Foundation Models — iOS 27, Xcode 27</a></h3>
+  <p class="hook">Apple announced yesterday (WWDC keynote June 8) a new LanguageModel protocol in the Foundation Models framework — a public Swift interface that Claude, Gemini, and OpenAI implement to expose a common inference surface on iOS 27, macOS 27, iPadOS 27, watchOS 27, and visionOS 27. Developers add the Anthropic Swift package, sign in with an API key, and pass typed Swift outputs from Apple&#39;s on-device model into a Claude request; swapping to Gemini or back is a one-line SPM change with no session-logic rewrites. Xcode 27 ships a dual-engine agentic coding system — on-device Neural Engine for real-time suggestions, cloud routing to Claude/Gemini/ChatGPT for heavier analysis. Reaches every iOS 27 developer starting this fall.</p>
+  <div class="secondary">Also: <a href="https://www.techtimes.com/articles/318039/20260609/wwdc-2026-developer-tools-foundation-models-now-swaps-ai-providers-without-code-changes.htm">www.techtimes.com/articles/318039/20260609/wwdc-2026-developer-tools-foundation-models-now-swaps-ai-providers-without-code-changes.htm</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">agent · local</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/safishamsi/graphify">Graphify — 50k-Star Codebase Knowledge Graph Skill (&quot;Claude Code + Graphify = Insane Agentic OS&quot;)</a></h3>
+  <p class="hook">50k+ stars. Graphify turns any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph — then Claude (or Codex, Cursor, Gemini CLI, OpenCode) queries it at sub-millisecond latency instead of reading whole files. The headline stat: 71.5x fewer tokens per query vs raw context injection. A 1-day-old YouTube video &#39;Claude Code + Graphify = Insane Agentic OS&#39; is this week&#39;s breakout reference for the pattern. Originally went viral when Andrej Karpathy shared his LLM Knowledge Bases workflow in 2025; now on v3 with hook-based auto-query support on Claude Code and Gemini CLI.</p>
+  <div class="secondary">Also: <a href="https://www.youtube.com/watch?v=Owv503rTqYY">www.youtube.com/watch?v=Owv503rTqYY</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">video · agent · memory · model · token · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/lucasrosati/claude-code-memory-setup">claude-code-memory-setup — 71.5x Fewer Tokens with Obsidian + Graphify</a></h3>
+  <p class="hook">Turnkey setup guide that wires Obsidian (persistent long-term memory vault) and Graphify (codebase knowledge graph) together into a Claude Code workflow with 71.5x fewer tokens per session. Three components: Obsidian vault as the agent&#39;s external memory, Graphify knowledge graph for codebase lookups, and a chat import pipeline that ports prior Claude conversations into searchable Obsidian notes. Includes PT-BR documentation. Pairs naturally with the Obsidian Mind pattern from the May 7 digest, now with the Graphify efficiency layer on top.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">memory · token</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/lucasrosati/claude-code-memory-setup</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/jztan/pdf-mcp">pdf-mcp (jztan) — Read Multi-Hundred-Page PDFs Without Hitting Context Limits</a></h3>
+  <p class="hook">MCP server that gives Claude Code (and any MCP client) chunked, searchable access to arbitrarily large PDFs — solving the &#39;context window blows on page 60&#39; failure mode. Three tools: pdf_info (metadata), pdf_search (hybrid BM25 + semantic RRF fusion, OCR via Tesseract for scanned docs), pdf_read_pages (paginated fetch). SQLite cache persists indexes across restarts so the first search is the slow one. 9 releases since January 2026, 7,100+ PyPI downloads. Runs locally — no PDF bytes leave your machine.</p>
+  <div class="secondary">Also: <a href="https://kevinjztan.medium.com/how-i-built-pdf-mcp-solving-claudes-large-pdf-limitations-with-mcp-c497499b7432">kevinjztan.medium.com/how-i-built-pdf-mcp-solving-claudes-large-pdf-limitations-with-mcp-c497499b7432</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">context · local</div>
+  <pre><button class="copy">copy</button><code>pip install pdf-mcp</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code: Safe Mode, /cd, /reload-skills, Auto-Plugin Loading</a></h3>
+  <p class="hook">Latest Claude Code release batch adds four quality-of-life features that change daily workflow: (1) --safe-mode / CLAUDE_CODE_SAFE_MODE disables all CLAUDE.md, plugins, skills, hooks, and MCP servers — the one-command troubleshoot when a hook is misbehaving; (2) /cd moves the active session to a new directory without breaking the prompt cache mid-session; (3) /reload-skills re-scans skill directories without restarting the agent; (4) plugins in .claude/skills directories load automatically, no marketplace install step needed. Also: disableBundledSkills / CLAUDE_CODE_DISABLE_BUNDLED_SKILLS removes built-in slash commands for minimal installs.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">mcp · skill · plugin · marketplace</div>
+  <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/jeremylongshore/claude-code-plugins-plus-skills">claude-code-plugins-plus-skills (jeremylongshore) — 425 Plugins, 2,810 Skills, tonsofskills.com</a></h3>
+  <p class="hook">The largest single-repo skill collection found this week: 425 installable plugins containing 2,810 skills and 200 agents for Claude Code. Ships with the ccpi CLI package manager and an open-source browse-and-search marketplace at tonsofskills.com. Architecture note: a &#39;plugin&#39; is the distribution unit (plugin.json + components folder); a &#39;skill&#39; is one SKILL.md inside — so one plugin can ship skills, agents, commands, hooks, and MCP configs together. Install via ccpi, the Claude Code /plugin marketplace, or manually. Includes SaaS packs for Obsidian, Granola, Ideogram, Grammarly, and Lucidchart alongside engineering and productivity plugins.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">image · mcp · plugin · terminal</div>
+  <pre><button class="copy">copy</button><code>npx ccpi install &lt;plugin-name&gt;</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/ahmadelswify/agentic-os">agentic-os — Four AI-Native Operating Systems for Claude Code</a></h3>
+  <p class="hook">Collection of four markdown-based &#39;operating systems&#39; where Claude Code handles structure, organization, and context management: work-os (project tracking, task decomposition, meeting notes), career-os (job search, interview prep, performance reviews), personal-os (habits, goals, life planning), meeting-os (agenda gen, action items, follow-up drafting). Each OS is fully self-contained, local-first, and works via conversation — no custom tooling required beyond Claude Code. The pitch: stop fighting Claude&#39;s context window and start treating it as the OS kernel.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">agent · context · local · marketplace</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/ahmadelswify/agentic-os</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/trendsmcp/trends-agent-claude">TrendsMCP — Live Trend Data from 12+ Platforms as a Claude MCP</a></h3>
+  <p class="hook">MCP server that pipes live trend data from Google Search, YouTube, TikTok, Reddit, Amazon, Wikipedia, X, LinkedIn, Spotify, GitHub, Steam, npm, the App Store, news sentiment, and web traffic directly into Claude Code queries. Free tier available. Distinct from the rugvedp/Trends-MCP (June 6 digest) by covering 12+ platforms vs 3 and including commerce/app store signals alongside social. The underlying trends-mcp package works with any MCP-compatible client (Cursor, Copilot, VS Code, Raycast).</p>
+  <div class="secondary">Also: <a href="https://github.com/trendsmcp/trends-mcp">github.com/trendsmcp/trends-mcp</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/rohitg00/awesome-claude-code-toolkit">awesome-claude-code-toolkit (rohitg00) — 135 Agents, 176+ Plugins, 400K Skills via SkillKit</a></h3>
+  <p class="hook">The most numbers-dense Claude Code toolkit found in this run: 135 agents, 35 curated skills (plus 400K+ via a bundled SkillKit index), 42 commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, 14 MCP configs, 26 companion apps, and 52 ecosystem entries. Was GitHub&#39;s #1 trending repo in February 2026. Maintained by rohitg00 who also publishes awesome-claude-design. The SkillKit index is the differentiator — it points to external registries rather than bundling everything, making it a discovery hub rather than a monorepo.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">design · mcp · viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/FlorianBruniaux/claude-code-ultimate-guide">claude-code-ultimate-guide (FlorianBruniaux) — v3.41, 314 Templates, 334 Quiz Questions</a></h3>
+  <p class="hook">v3.41.0 — the reference documentation guide for Claude Code that tracks every release. 26,058 lines across a full learning curriculum: production-ready CLAUDE.md templates, agentic workflow guides, a cheatsheet, and 334 quiz questions with answer keys. Unique feature: 55 systematic evaluations of external Claude Code resources with a consistent scoring methodology, so you can audit what&#39;s worth reading before reading it. CC BY-SA 4.0. Authored by Florian Bruniaux (Founding Engineer, Méthode Aristote).</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">agent</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/claude-world/trend-pulse">trend-pulse (claude-world) — 20-Source Trend Aggregator: CLI + Python + MCP, Zero Auth</a></h3>
+  <p class="hook">Free, zero-auth trending topics aggregator that pulls from 20 sources — no API keys required. Ships as a CLI, a Python library, and an MCP server, so you can integrate trend awareness into Claude Code workflows without signing up for any paid trend API. Lighter-weight alternative to TrendsMCP for users who just need a quick trend snapshot without multi-platform configuration. The MCP surface means Claude Code can query it inline during research tasks.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">viral · alternative · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/disler/claude-code-hooks-multi-agent-observability">claude-code-hooks-multi-agent-observability (disler) — Real-Time Agent Monitoring Dashboard</a></h3>
+  <p class="hook">~920 stars. Lightweight observability stack for multi-agent Claude Code sessions: PreToolUse/PostToolUse/Stop hooks emit events to a local backend server, stored in SQLite, then surfaced in a Vue dashboard with live updates, session-level filtering, and event type breakdowns. Designed for debugging parallel subagent runs where you need to see which agent is doing what without tailing ten terminal panes simultaneously. By disler, who also maintains claude-code-hooks-mastery. The worktree-manager skill in the repo manages isolated git worktrees per agent, making it a practical complement to the parallel-code pattern.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">skill · agent · subagent · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
