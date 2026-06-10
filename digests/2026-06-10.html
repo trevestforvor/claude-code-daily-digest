@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — June 10, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — June 10, 2026</h1><p class="sub">Top 8 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/freshtechbro/claudedesignskills">claudedesignskills (freshtechbro) — 22 3D/Animation Skills for Claude Code</a></h3>
+  <p class="hook">UICollective&#39;s &#39;Claude Code + 3D Animations: Build Client Ready Websites in Minutes&#39; (1 day old, 52.5K-sub channel) is this week&#39;s standout design tutorial — and the repo it centers on is freshtechbro/claudedesignskills. 22 skills across 5 categories: Core 3D &amp; Animation (Three.js, GSAP, React Three Fiber, Framer Motion, Babylon.js), Extended 3D &amp; Scroll (A-Frame, Vanta, PlayCanvas, PixiJS, Locomotive Scroll, Barba.js), Animation &amp; Components (React Spring, Magic UI, AOS, Anime.js, Lottie), 3D Authoring &amp; Motion (Blender, Spline, Rive, Substance 3D), plus meta-skills for web3D integration patterns and modern web design. Five bundled category packages let you install a whole domain in one command. Launched November 2025; 251 stars and growing after the UICollective feature.</p>
+  <div class="secondary">Also: <a href="https://www.youtube.com/watch?v=AGHqBAVyrQs">www.youtube.com/watch?v=AGHqBAVyrQs</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">animation · 3d · plugin · viral · marketplace · education</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add freshtechbro/claudedesignskills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/googleworkspace/cli">Google Workspace CLI (Official) — 100+ Agent Skills Built In</a></h3>
+  <p class="hook">The official Google Workspace command-line tool crossed 27k stars and v0.22.5 (March 31, 2026). Written in Rust, it dynamically builds commands from Google&#39;s Discovery Service — meaning it self-updates as Google releases new API surface. Ships with 100+ agent skills natively, exposing Drive, Gmail, Calendar, Sheets, Docs, Chat, Slides, Forms, Tasks, Keep, Meet, Classroom, and Admin through structured JSON output that Claude Code can consume without MCP overhead. Helper shorthands like `gws +send` (Gmail) and `gws +agenda` (Calendar) are the kind of commands a Claude Code skill can invoke in one token. Model Armor integration sanitizes API responses before they reach the agent. Also works as a Gemini CLI Extension. Chase AI&#39;s June top-10 video named this one of the day-one CLIs for 2026.</p>
+  <div class="secondary">Also: <a href="https://www.grizzlypeaksoftware.com/articles/p/gws-cli-wire-google-workspace-into-claude-code-the-honest-setup-guide-nocnz7tj">www.grizzlypeaksoftware.com/articles/p/gws-cli-wire-google-workspace-into-claude-code-the-honest-setup-guide-nocnz7tj</a></div>
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">video · mcp · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>npm install -g @googleworkspace/cli</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/WadeWarren/gws-claude-plugin">gws-claude-plugin (WadeWarren) — 92 Skills Wiring Google Workspace into Claude Code</a></h3>
+  <p class="hook">Pairs with the official Google Workspace CLI above: 92 Claude Code skills that teach Claude precisely how to use the gws binary for real workflows. Covers all 12 GWS services (Gmail, Drive, Calendar, Sheets, Docs, Chat, Slides, Forms, Tasks, Keep, Meet, Classroom). Ships with persona bundles (Executive Assistant, IT Admin) and step-by-step recipes: post-mortem setup, expense tracking, team announcements. Originally written for OpenClaw users migrating to Claude&#39;s sandboxed Cowork + Dispatch environment — it was the fastest way to restore the ~50 GWS connectors OpenClaw had. Multi-account support via GOOGLE_WORKSPACE_CLI_CONFIG_DIR env var. Makes the combination of gws CLI + these skills Claude Code&#39;s most complete Google Workspace automation surface today.</p>
+  <div class="secondary">Also: <a href="https://aimaker.substack.com/p/google-workspace-cli-claude-code-daily-operating-system">aimaker.substack.com/p/google-workspace-cli-claude-code-daily-operating-system</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.blog/changelog/2026-06-09-claude-fable-5-is-generally-available-for-github-copilot/">Claude Fable 5 GA in GitHub Copilot — All Paid Plans, VS Code Model Picker</a></h3>
+  <p class="hook">Anthropic&#39;s Fable 5 (the public Mythos-class model) went generally available on GitHub Copilot yesterday — Copilot Pro+, Max, Business, and Enterprise can now select it in VS Code&#39;s model picker across chat, ask, edit, and agent modes. Data retention: Anthropic keeps prompts and outputs for up to 30 days to run safety classifiers, then deletes them; data is never used to train models. Internal benchmarks show Fable 5 completed equivalent autonomous coding workflows with fewer tool calls and lower token consumption than prior Opus-tier models. Simon Willison&#39;s same-day impressions: &#39;a big model smell: slow, expensive and capable of crunching through pretty much everything I threw at it&#39; — 1M token context, $10/$50 per MTok, Jan 2026 cutoff.</p>
+  <div class="secondary">Also: <a href="https://simonwillison.net/2026/Jun/9/claude-fable-5/">simonwillison.net/2026/Jun/9/claude-fable-5/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  
+  
+  <div class="recurring">↑ Day 2 — Fable 5 (released June 9) now enters GitHub Copilot as its first IDE platform; Pro+ free access runs until June 22</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://claude.com/code-with-claude/tokyo">Code with Claude Tokyo — Live Today (June 10); Extended Founders Day June 11</a></h3>
+  <p class="hook">Anthropic&#39;s third Code with Claude 2026 stop is live in Tokyo today. The headline live demo: four simultaneous Claude managed agents analyzing F1 team simulation data — one per domain (aerodynamics, tire temperature, power units, driver safety) — each investigated by a separate grading agent that scores its output against a rubric and kicks it back for another pass if quality falls short. This is the Outcomes + Dreaming loop (announced at Code with Claude SF May 6) running in a multi-agent real-time demo. Extended Day tomorrow (June 11) is exclusively for independent developers and early-stage founders with open-laptop workshops from Anthropic&#39;s Applied AI team. NEC (Anthropic&#39;s first Japan global partner, deploying Claude to ~30,000 employees) and Hitachi (physical AI: transport, power, manufacturing) are in attendance.</p>
+  <div class="secondary">Also: <a href="https://claude.com/code-with-claude/tokyo-extended">claude.com/code-with-claude/tokyo-extended</a> · <a href="https://note.com/pn_yamaken/n/nd828717251bd">note.com/pn_yamaken/n/nd828717251bd</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">agent</div>
+  
+  <div class="recurring">↑ Day 6 — event is live today; Extended Day (founders deep-dives) runs June 11</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/trailofbits/skills">Trail of Bits Skills — 40+ Security/Audit Plugins, Security Boulevard Roundup June 7</a></h3>
+  <p class="hook">Security Boulevard&#39;s June 7 article &#39;10 Security &amp; QA Skills for AI Coding Agents&#39; — fact-checked June 7, 2026 — names trailofbits/skills the strongest specialized security plugin suite in the Claude Code ecosystem. Context from the article: Snyk&#39;s ToxicSkills study (February 2026) found 13.4% of 3,984 audited agent skills carried a critical issue, making source provenance matter. Trail of Bits, the professional security firm, ships 40+ plugins across smart contract security (building-secure-contracts, entry-point-analyzer), code auditing (differential-review, static-analysis, variant-analysis, semgrep-rule-creator), malware analysis (yara-authoring), verification (mutation-testing, property-based-testing, constant-time-analysis), reverse engineering (dwarf-expert), and mobile (firebase-apk-scanner). 5.6k stars, CC BY-SA 4.0. One of the few security-skill collections that reflects actual security-firm methodology rather than generic prompts.</p>
+  <div class="secondary">Also: <a href="https://securityboulevard.com/2026/06/10-security-qa-skills-for-ai-coding-agents/">securityboulevard.com/2026/06/10-security-qa-skills-for-ai-coding-agents/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · viral · marketplace · security · testing</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add trailofbits/skills</code></pre>
+  <div class="recurring">↑ Day 16 — Security Boulevard&#39;s June 7 roundup surfaces this as the standout security plugin suite; Snyk ToxicSkills context makes source vetting more important</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://simonwillison.net/2026/Jun/9/claude-fable-5/">Simon Willison: &#39;Initial Impressions of Claude Fable 5&#39; — Practical Test on Real Code</a></h3>
+  <p class="hook">Simon Willison (founder of Datasette, author of ~5,000 TILs on LLMs) published his Fable 5 impressions yesterday after 5.5 hours of hands-on testing. His test: ask Fable 5 to clone his micropython-wasm repo from GitHub and research how to upgrade it from MicroPython to full Python. The model executed the task autonomously. Key quote: &#39;a big model smell: slow, expensive and capable of crunching through pretty much everything I threw at it.&#39; Noteworthy: the post was &#39;Almost entirely written by the new Claude Fable 5&#39; — he used the model to write its own first impressions from his notes, a meta demonstration of its capability. Stats: 1M token context, 128K max output, $10/MTok input / $50/MTok output, Jan 2026 knowledge cutoff. Useful reference for developers weighing Fable 5 vs Opus 4.8 for agentic coding tasks.</p>
+  <div class="secondary">Also: <a href="https://til.simonwillison.net/claude-code">til.simonwillison.net/claude-code</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">agent · testing</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Aradotso/trending-skills">Aradotso/trending-skills — Auto-Generates Agent Skills from GitHub Trending Every 15 Minutes</a></h3>
+  <p class="hook">Novel meta-tool from ara.so: a GitHub Actions workflow that fires every 15 minutes, pulls the hottest new repos created in the last 7 days (sorted by stars), and uses Claude Sonnet 4.6 to auto-generate SKILL.md files from each README. The resulting collection has grown to 500+ skills across domains including browser automation, AI research, blockchain trading bots, and system utilities — all indexed with source attribution. The loop is closed: trending tools get skill-ified automatically, so Claude Code users can install skills for repos that haven&#39;t shipped their own yet. 36 stars, modest but the concept is architecturally interesting — this is the first self-updating skill registry that delegates curation to GitHub&#39;s star signal rather than humans. Install all skills: `npx skills add Aradotso/trending-skills`.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral · browser</div>
+  <pre><button class="copy">copy</button><code>npx skills add Aradotso/trending-skills</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
