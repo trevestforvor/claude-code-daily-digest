@@ -1,0 +1,89 @@
+[
+  {
+    "slug": "freshtechbro-claudedesignskills",
+    "name": "claudedesignskills (freshtechbro) — 22 3D/Animation Skills for Claude Code",
+    "primary_url": "https://github.com/freshtechbro/claudedesignskills",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=AGHqBAVyrQs"
+    ],
+    "hook": "UICollective's 'Claude Code + 3D Animations: Build Client Ready Websites in Minutes' (1 day old, 52.5K-sub channel) is this week's standout design tutorial — and the repo it centers on is freshtechbro/claudedesignskills. 22 skills across 5 categories: Core 3D & Animation (Three.js, GSAP, React Three Fiber, Framer Motion, Babylon.js), Extended 3D & Scroll (A-Frame, Vanta, PlayCanvas, PixiJS, Locomotive Scroll, Barba.js), Animation & Components (React Spring, Magic UI, AOS, Anime.js, Lottie), 3D Authoring & Motion (Blender, Spline, Rive, Substance 3D), plus meta-skills for web3D integration patterns and modern web design. Five bundled category packages let you install a whole domain in one command. Launched November 2025; 251 stars and growing after the UICollective feature.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add freshtechbro/claudedesignskills",
+    "creator_buzz": ["@UICollectiveDesign"]
+  },
+  {
+    "slug": "googleworkspace-cli-official",
+    "name": "Google Workspace CLI (Official) — 100+ Agent Skills Built In",
+    "primary_url": "https://github.com/googleworkspace/cli",
+    "secondary_urls": [
+      "https://www.grizzlypeaksoftware.com/articles/p/gws-cli-wire-google-workspace-into-claude-code-the-honest-setup-guide-nocnz7tj"
+    ],
+    "hook": "The official Google Workspace command-line tool crossed 27k stars and v0.22.5 (March 31, 2026). Written in Rust, it dynamically builds commands from Google's Discovery Service — meaning it self-updates as Google releases new API surface. Ships with 100+ agent skills natively, exposing Drive, Gmail, Calendar, Sheets, Docs, Chat, Slides, Forms, Tasks, Keep, Meet, Classroom, and Admin through structured JSON output that Claude Code can consume without MCP overhead. Helper shorthands like `gws +send` (Gmail) and `gws +agenda` (Calendar) are the kind of commands a Claude Code skill can invoke in one token. Model Armor integration sanitizes API responses before they reach the agent. Also works as a Gemini CLI Extension. Chase AI's June top-10 video named this one of the day-one CLIs for 2026.",
+    "categories": ["plugin", "skill"],
+    "install": "npm install -g @googleworkspace/cli"
+  },
+  {
+    "slug": "wadewarren-gws-claude-plugin",
+    "name": "gws-claude-plugin (WadeWarren) — 92 Skills Wiring Google Workspace into Claude Code",
+    "primary_url": "https://github.com/WadeWarren/gws-claude-plugin",
+    "secondary_urls": [
+      "https://aimaker.substack.com/p/google-workspace-cli-claude-code-daily-operating-system"
+    ],
+    "hook": "Pairs with the official Google Workspace CLI above: 92 Claude Code skills that teach Claude precisely how to use the gws binary for real workflows. Covers all 12 GWS services (Gmail, Drive, Calendar, Sheets, Docs, Chat, Slides, Forms, Tasks, Keep, Meet, Classroom). Ships with persona bundles (Executive Assistant, IT Admin) and step-by-step recipes: post-mortem setup, expense tracking, team announcements. Originally written for OpenClaw users migrating to Claude's sandboxed Cowork + Dispatch environment — it was the fastest way to restore the ~50 GWS connectors OpenClaw had. Multi-account support via GOOGLE_WORKSPACE_CLI_CONFIG_DIR env var. Makes the combination of gws CLI + these skills Claude Code's most complete Google Workspace automation surface today.",
+    "categories": ["skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "fable5-github-copilot-ga",
+    "name": "Claude Fable 5 GA in GitHub Copilot — All Paid Plans, VS Code Model Picker",
+    "primary_url": "https://github.blog/changelog/2026-06-09-claude-fable-5-is-generally-available-for-github-copilot/",
+    "secondary_urls": [
+      "https://simonwillison.net/2026/Jun/9/claude-fable-5/"
+    ],
+    "hook": "Anthropic's Fable 5 (the public Mythos-class model) went generally available on GitHub Copilot yesterday — Copilot Pro+, Max, Business, and Enterprise can now select it in VS Code's model picker across chat, ask, edit, and agent modes. Data retention: Anthropic keeps prompts and outputs for up to 30 days to run safety classifiers, then deletes them; data is never used to train models. Internal benchmarks show Fable 5 completed equivalent autonomous coding workflows with fewer tool calls and lower token consumption than prior Opus-tier models. Simon Willison's same-day impressions: 'a big model smell: slow, expensive and capable of crunching through pretty much everything I threw at it' — 1M token context, $10/$50 per MTok, Jan 2026 cutoff.",
+    "categories": ["anthropic", "viral"],
+    "recurring_note": "↑ Day 2 — Fable 5 (released June 9) now enters GitHub Copilot as its first IDE platform; Pro+ free access runs until June 22"
+  },
+  {
+    "slug": "code-with-claude-tokyo-live",
+    "name": "Code with Claude Tokyo — Live Today (June 10); Extended Founders Day June 11",
+    "primary_url": "https://claude.com/code-with-claude/tokyo",
+    "secondary_urls": [
+      "https://claude.com/code-with-claude/tokyo-extended",
+      "https://note.com/pn_yamaken/n/nd828717251bd"
+    ],
+    "hook": "Anthropic's third Code with Claude 2026 stop is live in Tokyo today. The headline live demo: four simultaneous Claude managed agents analyzing F1 team simulation data — one per domain (aerodynamics, tire temperature, power units, driver safety) — each investigated by a separate grading agent that scores its output against a rubric and kicks it back for another pass if quality falls short. This is the Outcomes + Dreaming loop (announced at Code with Claude SF May 6) running in a multi-agent real-time demo. Extended Day tomorrow (June 11) is exclusively for independent developers and early-stage founders with open-laptop workshops from Anthropic's Applied AI team. NEC (Anthropic's first Japan global partner, deploying Claude to ~30,000 employees) and Hitachi (physical AI: transport, power, manufacturing) are in attendance.",
+    "categories": ["anthropic", "viral"],
+    "recurring_note": "↑ Day 6 — event is live today; Extended Day (founders deep-dives) runs June 11"
+  },
+  {
+    "slug": "trailofbits-skills-security",
+    "name": "Trail of Bits Skills — 40+ Security/Audit Plugins, Security Boulevard Roundup June 7",
+    "primary_url": "https://github.com/trailofbits/skills",
+    "secondary_urls": [
+      "https://securityboulevard.com/2026/06/10-security-qa-skills-for-ai-coding-agents/"
+    ],
+    "hook": "Security Boulevard's June 7 article '10 Security & QA Skills for AI Coding Agents' — fact-checked June 7, 2026 — names trailofbits/skills the strongest specialized security plugin suite in the Claude Code ecosystem. Context from the article: Snyk's ToxicSkills study (February 2026) found 13.4% of 3,984 audited agent skills carried a critical issue, making source provenance matter. Trail of Bits, the professional security firm, ships 40+ plugins across smart contract security (building-secure-contracts, entry-point-analyzer), code auditing (differential-review, static-analysis, variant-analysis, semgrep-rule-creator), malware analysis (yara-authoring), verification (mutation-testing, property-based-testing, constant-time-analysis), reverse engineering (dwarf-expert), and mobile (firebase-apk-scanner). 5.6k stars, CC BY-SA 4.0. One of the few security-skill collections that reflects actual security-firm methodology rather than generic prompts.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add trailofbits/skills",
+    "recurring_note": "↑ Day 16 — Security Boulevard's June 7 roundup surfaces this as the standout security plugin suite; Snyk ToxicSkills context makes source vetting more important"
+  },
+  {
+    "slug": "simonwillison-fable5-impressions",
+    "name": "Simon Willison: 'Initial Impressions of Claude Fable 5' — Practical Test on Real Code",
+    "primary_url": "https://simonwillison.net/2026/Jun/9/claude-fable-5/",
+    "hook": "Simon Willison (founder of Datasette, author of ~5,000 TILs on LLMs) published his Fable 5 impressions yesterday after 5.5 hours of hands-on testing. His test: ask Fable 5 to clone his micropython-wasm repo from GitHub and research how to upgrade it from MicroPython to full Python. The model executed the task autonomously. Key quote: 'a big model smell: slow, expensive and capable of crunching through pretty much everything I threw at it.' Noteworthy: the post was 'Almost entirely written by the new Claude Fable 5' — he used the model to write its own first impressions from his notes, a meta demonstration of its capability. Stats: 1M token context, 128K max output, $10/MTok input / $50/MTok output, Jan 2026 knowledge cutoff. Useful reference for developers weighing Fable 5 vs Opus 4.8 for agentic coding tasks.",
+    "categories": ["viral"],
+    "secondary_urls": [
+      "https://til.simonwillison.net/claude-code"
+    ]
+  },
+  {
+    "slug": "aradotso-trending-skills",
+    "name": "Aradotso/trending-skills — Auto-Generates Agent Skills from GitHub Trending Every 15 Minutes",
+    "primary_url": "https://github.com/Aradotso/trending-skills",
+    "hook": "Novel meta-tool from ara.so: a GitHub Actions workflow that fires every 15 minutes, pulls the hottest new repos created in the last 7 days (sorted by stars), and uses Claude Sonnet 4.6 to auto-generate SKILL.md files from each README. The resulting collection has grown to 500+ skills across domains including browser automation, AI research, blockchain trading bots, and system utilities — all indexed with source attribution. The loop is closed: trending tools get skill-ified automatically, so Claude Code users can install skills for repos that haven't shipped their own yet. 36 stars, modest but the concept is architecturally interesting — this is the first self-updating skill registry that delegates curation to GitHub's star signal rather than humans. Install all skills: `npx skills add Aradotso/trending-skills`.",
+    "categories": ["skill"],
+    "install": "npx skills add Aradotso/trending-skills"
+  }
+]
