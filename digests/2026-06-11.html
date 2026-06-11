@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — June 11, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — June 11, 2026</h1><p class="sub">Top 12 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/Yeachan-Heo/oh-my-claudecode">oh-my-claudecode — 36k-Star Teams-First Multi-Agent Orchestration, v4.14.6 June 9</a></h3>
+  <p class="hook">36.2k stars. oh-my-claudecode (tagline: &#39;a weapon, not a tool&#39;) is the most popular multi-agent orchestration layer for Claude Code — it ships 19 specialized agents (architecture, research, design, testing, data science, and more) and 39 skills, all zero-configuration. Smart model routing assigns Haiku to simple tasks and Opus to complex reasoning, cutting token spend 30–50% automatically. v4.14.6 released June 9 (two days ago) with staged pipeline execution and persistent verify-fix loops. Optional Codex CLI and Gemini CLI workers run in tmux for parallel lanes. The full website is at ohmyclaudecode.com. Claude Code marketplace install or `npm i -g oh-my-claude-sisyphus@latest`. It trended #1 on GitHub when it launched with 858 stars in 24 hours and has continued to climb to 36.2k — the largest &#39;Teams-first&#39; orchestration repo in the ecosystem and never previously featured here.</p>
+  <div class="secondary">Also: <a href="https://ohmyclaudecode.com/">ohmyclaudecode.com/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">design · agent · subagent · viral · marketplace · terminal · testing</div>
+  <pre><button class="copy">copy</button><code>npm i -g oh-my-claude-sisyphus@latest</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.172 — Sub-Agents Can Now Spawn Sub-Agents (5 Levels Deep)</a></h3>
+  <p class="hook">Released June 10. The biggest architectural change since parallel agents shipped: sub-agents can now themselves spawn sub-agents, creating a controlled hierarchy capped at five levels. Each sub-agent runs in its own isolated window and returns only a summary — so you can now break sprawling codebases or multi-phase debugging sessions into layered delegations that previously had to stay flat. Design philosophy: Anthropic went with a fixed cap of 5 and no configuration, treating the ceiling as a deliberate guardrail. Practical note: models don&#39;t reliably nest on their own yet — you often need to explicitly instruct Claude to delegate downward by name. Also in this release: search bar for `/plugin` browsing, Amazon Bedrock now auto-reads AWS region from `~/.aws` config files (matching AWS SDK precedence), and a fix for 1M-context sessions getting permanently stuck. Update: `npm update -g @anthropic-ai/claude-code`.</p>
+  <div class="secondary">Also: <a href="https://claudefa.st/blog/guide/agents/nested-subagents">claudefa.st/blog/guide/agents/nested-subagents</a> · <a href="https://digg.com/ai/megudrsi">digg.com/ai/megudrsi</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">design · plugin</div>
+  <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://fortune.com/2026/06/08/anthropics-boris-cherny-creator-of-claude-code-says-there-are-days-he-manages-tens-of-thousands-of-ai-agents-at-once/">Boris Cherny at Fortune Brainstorm Tech — &quot;Tens of Thousands of Agents&quot; + &quot;You&#39;re Comparing Costs Wrong&quot;</a></h3>
+  <p class="hook">Two Fortune articles in 48 hours (June 8 and 9) from Anthropic&#39;s Brainstorm Tech keynote in Aspen. Day 1: Boris Cherny, Claude Code&#39;s creator, hasn&#39;t written a line of code in 8 months — &#39;some days I was managing a few hundred, some days it&#39;s thousands, or tens of thousands&#39; of simultaneous agents. Anthropic has seen an 8x increase in code produced since January 2026; Claude Code is writing and security-reviewing itself, and is &#39;starting to figure out what to build next&#39; by reading GitHub and social signals. Day 2: Cherny argues the entire AI-cost debate is anchored to the wrong baseline — comparing a $200/month subscription to a junior engineer&#39;s salary misses the point. The real comparison is output per dollar vs any other capital allocation. Companion piece at pasqualepillitteri.it covers the &#39;one year on&#39; arc: Cherny now runs Claude Code from his phone on the commute.</p>
+  <div class="secondary">Also: <a href="https://fortune.com/2026/06/09/boris-cherny-claude-code-says-comparing-ai-costs-to-wrong-thing-anthropic/">fortune.com/2026/06/09/boris-cherny-claude-code-says-comparing-ai-costs-to-wrong-thing-anthropic/</a> · <a href="https://pasqualepillitteri.it/en/news/4564/claude-code-boris-cherny-one-year-on-phone">pasqualepillitteri.it/en/news/4564/claude-code-boris-cherny-one-year-on-phone</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">cost · security</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/zilliztech/claude-context">zilliztech/claude-context — Semantic Codebase Search MCP, 40% Fewer Tokens</a></h3>
+  <p class="hook">11.8k stars. Claude Context is a Model Context Protocol plugin from Zilliz (the Milvus team) that brings hybrid semantic search to your entire codebase — BM25 for keyword recall + dense vectors for meaning — so Claude Code finds the right code in one query rather than loading entire directory trees. Benchmark: 40% token savings per session compared to raw context injection. Built for Claude Code but works with any MCP client. Requires Node.js 20+, an OpenAI API key for embeddings, and a Milvus/Zilliz Cloud endpoint (free tier available). The hybrid BM25+dense approach is the same retrieval pattern that outperforms either method alone on most code-search benchmarks. Install: `claude mcp add claude-context -- npx @zilliz/claude-context-mcp@latest` (add env vars for OPENAI_API_KEY and MILVUS config).</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">plugin · memory · token · viral · marketplace · search</div>
+  <pre><button class="copy">copy</button><code>npx @zilliz/claude-context-mcp@latest</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mukul975/cve-mcp-server">CVE MCP Server (mukul975) — 27 Security Intelligence Tools Across 21 APIs</a></h3>
+  <p class="hook">1k stars. Turns Claude into a full-spectrum security analyst by wiring 27 tools across 21 APIs into a single MCP server. Five categories: Core Vulnerability Intelligence (NVD CVE lookup, EPSS exploitation probability, CISA KEV active-exploitation status, CWE info — 8 tools), Exploit &amp; Attack Intelligence (PoC checks, MITRE ATT&amp;CK mapping, attack patterns — 4 tools), Network Intelligence (IP reputation, GreyNoise, Shodan, passive DNS — 4 tools), Threat Intelligence (VirusTotal, MalwareBazaar, ransomware IoC lookup — 4 tools), DevSecOps (dependency scanning, GitHub Advisory, URL safety — 3 tools). Entire stack is outbound HTTPS only, no inbound ports, no telemetry. Built with FastMCP + aiosqlite + Pydantic v2. CyberSecurityNews and OSINT Team Blog both ran dedicated coverage this week. The problem it solves: triaging one CVE typically means 5+ separate lookups — this bundles them into a single natural-language query.</p>
+  <div class="secondary">Also: <a href="https://cybersecuritynews.com/cve-mcp-server-and-claude/">cybersecuritynews.com/cve-mcp-server-and-claude/</a> · <a href="https://osintteam.blog/cve-mcp-server-turn-claude-into-a-full-spectrum-security-analyst-42be86718a27">osintteam.blog/cve-mcp-server-turn-claude-into-a-full-spectrum-security-analyst-42be86718a27</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">viral · security</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/mukul975/cve-mcp-server.git &amp;&amp; cd cve-mcp-server &amp;&amp; pip install -e .</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/elementalsouls/Claude-BugHunter">Claude-BugHunter (elementalsouls) — 71 Skills, 681 Bug-Bounty Patterns, Burp MCP</a></h3>
+  <p class="hook">1.9k stars. Purpose-built Claude Code plugin for bug hunting and external red-team work: 71 skills organized across web applications, authentication, APIs, and enterprise platforms, with 15 slash commands (`/hunt`, `/recon`, `/report`) and 681 patterns extracted from disclosed bug-bounty reports across 24 core vulnerability classes. Enterprise attack matrices cover identity platforms (M365/Entra, Okta) and infrastructure (vCenter, VPN appliances, SharePoint). The engagement scaffold is deterministic: recon → map &amp; rank → hunt → validate → report. Auto-loads relevant skills from a plain-language description of the target — no manual skill invocation needed. Burp Suite MCP integration enables dynamic testing alongside static pattern matching. Clear authorized-use framing: explicitly scoped to external red-team work and bug-bounty programs.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">mcp · plugin · viral · marketplace · testing</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add elementalsouls/Claude-BugHunter</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/777genius/agent-teams-ai">agent-teams-ai (777genius) — Multi-Agent Kanban Desktop App, 200+ Models, Free Tier</a></h3>
+  <p class="hook">1.3k stars. Desktop app that makes you the boss and agents your team: multiple AI agents communicate with each other, review each other&#39;s work, and update a kanban board while you issue high-level commands. Supports Claude, Codex, and OpenCode across 200+ models from 75+ LLM providers. Execution logs, diff visualization for code review, and session analysis built in. Free models available with no authentication, no API key, and no credit card for first-time exploration. Platforms: macOS, Windows, Linux — no prerequisites (runtime detection from the UI). Simon Scrapes&#39; &#39;I Made Claude Code FOR TEAMS&#39; video (posted this week) highlighted this class of tool as the most practical approach to running autonomous agent teams without custom orchestration code.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">video · agent · model · viral · review</div>
+  <pre><button class="copy">copy</button><code>See GitHub releases page for platform installers</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/cs50victor/claude-code-teams-mcp">claude-code-teams-mcp (cs50victor) — Agent Teams Protocol as Standalone MCP</a></h3>
+  <p class="hook">Claude Code&#39;s built-in Agent Teams feature — Lead + Teammate role separation, file-based inbox messaging, multi-agent coordination — reimplemented as a standalone MCP server. The result: any MCP-compatible client (Claude Code, Codex CLI, OpenCode, or any future harness) can now run structured agent teams without being locked into Claude Code&#39;s native implementation. Architecture: lead messages anyone; teammates message only lead; JSON inboxes live at `~/.claude/teams/&lt;team&gt;/inboxes/`. Requires Python 3.12+, tmux, and at least one coding agent on PATH. A natural pairing with oh-my-claudecode for teams that want to mix orchestration layers.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">agent · harness · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/hesreallyhim/awesome-claude-code">hesreallyhim/awesome-claude-code — 46k-Star Canonical Curated List of Claude Code Resources</a></h3>
+  <p class="hook">46k stars. The community&#39;s most trusted curated collection of Claude Code resources — skills, hooks, slash-commands, agent orchestrators, applications, and plugins. Curated with judgment: tools that don&#39;t work get removed, tools that do work get tagged for their actual use. Companion repo `a-list-of-claude-code-agents` handles the growing sub-agent catalogue separately. Coverage spans official Anthropic plugins, community skills, security tools, design systems, memory layers, and observability tools. In the Claude Code ecosystem this is what developers reach for first when evaluating the tool landscape — the README has served as the onboarding layer for tens of thousands of new users. Last major update April 27, 2026.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span>  </div>
+  <div class="tags">design · memory · anthropic · viral · security</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.microsoft.com/en-us/security/blog/2026/06/05/securing-ci-cd-in-agentic-world-claude-code-github-action-case/">Microsoft Security: Claude Code GitHub Action Leaks CI/CD Secrets via Prompt Injection</a></h3>
+  <p class="hook">Published June 5 by Microsoft Threat Intelligence. The Claude Code GitHub Action&#39;s Read tool was not sandboxed the same way as subprocess execution — specifically, it was authorized to access `/proc/self/environ`, meaning a prompt-injection payload in an untrusted PR description, issue body, or comment could instruct Claude to read and exfiltrate `ANTHROPIC_API_KEY` and other workflow secrets. Anthropic patched this in v2.1.128 by blocking sensitive `/proc` file reads. The mitigation is now live. Microsoft&#39;s hardening guidance introduces the &#39;Agents Rule of Two&#39;: never let an AI workflow simultaneously (1) process untrusted input, (2) hold secrets or sensitive access, and (3) communicate externally or change state — any two is manageable, all three is a breach vector. If your org runs Claude Code GitHub Actions and hasn&#39;t updated since v2.1.128, update immediately.</p>
+  <div class="secondary">Also: <a href="https://cybersecuritynews.com/microsoft-warns-claude-code-github-action/">cybersecuritynews.com/microsoft-warns-claude-code-github-action/</a> · <a href="https://codeongrass.com/blog/hardening-claude-code-github-actions-cvss-9-4-cve/">codeongrass.com/blog/hardening-claude-code-github-actions-cvss-9-4-cve/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">security</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.173 (June 11, Today) — Fable 5 Model Name Normalization Fix</a></h3>
+  <p class="hook">Released today. Claude Fable 5 model IDs sometimes arrive from the API with a `[1m]` terminal formatting suffix — e.g., `claude-fable-5-20260609[1m]` — which caused Claude Code to fail to recognize the model and fall back or error out. v2.1.173 strips that suffix automatically at the normalization layer. Also fixes a spurious &#39;sandbox dependencies missing&#39; startup warning on Windows when sandbox mode is enabled (cosmetic only — sandbox was working correctly). If you&#39;ve been seeing model-picker oddities after enabling Fable 5 in the past 48 hours, this is the fix. `npm update -g @anthropic-ai/claude-code`.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">terminal</div>
+  <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://claude.com/blog/code-w-claude-london-2026-rethinking-how-we-build">Code w/ Claude London 2026 Retrospective — Rethinking How We Build</a></h3>
+  <p class="hook">Anthropic published the full retrospective blog and keynote recording from Code w/ Claude London 2026 this week. The post captures Anthropic&#39;s current operating model for software development: Claude Code spans terminal, IDE, web, desktop, and scheduled-agent workflows simultaneously, enabling structured delegation rather than one-off prompts. Highlights: doubled Claude Code and Opus API rate limits announced live, Claude Managed Agents now support self-hosted sandboxes with private MCP tunnel access (enterprise boundaries preserved end-to-end), mid-task system messages out of beta. The keynote recording gives a clean look at how Anthropic&#39;s own teams have restructured software delivery around these primitives — useful context for teams evaluating agentic adoption.</p>
+  <div class="secondary">Also: <a href="https://www.youtube.com/watch?v=6amLO7I9xdg">www.youtube.com/watch?v=6amLO7I9xdg</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">mcp · agent · terminal</div>
+  
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
