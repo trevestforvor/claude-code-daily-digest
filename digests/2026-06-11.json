@@ -1,0 +1,117 @@
+[
+  {
+    "slug": "oh-my-claudecode",
+    "name": "oh-my-claudecode — 36k-Star Teams-First Multi-Agent Orchestration, v4.14.6 June 9",
+    "primary_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "secondary_urls": [
+      "https://ohmyclaudecode.com/"
+    ],
+    "hook": "36.2k stars. oh-my-claudecode (tagline: 'a weapon, not a tool') is the most popular multi-agent orchestration layer for Claude Code — it ships 19 specialized agents (architecture, research, design, testing, data science, and more) and 39 skills, all zero-configuration. Smart model routing assigns Haiku to simple tasks and Opus to complex reasoning, cutting token spend 30–50% automatically. v4.14.6 released June 9 (two days ago) with staged pipeline execution and persistent verify-fix loops. Optional Codex CLI and Gemini CLI workers run in tmux for parallel lanes. The full website is at ohmyclaudecode.com. Claude Code marketplace install or `npm i -g oh-my-claude-sisyphus@latest`. It trended #1 on GitHub when it launched with 858 stars in 24 hours and has continued to climb to 36.2k — the largest 'Teams-first' orchestration repo in the ecosystem and never previously featured here.",
+    "categories": ["plugin", "cost"],
+    "install": "npm i -g oh-my-claude-sisyphus@latest"
+  },
+  {
+    "slug": "claude-code-v2-1-172-nested-subagents",
+    "name": "Claude Code v2.1.172 — Sub-Agents Can Now Spawn Sub-Agents (5 Levels Deep)",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "secondary_urls": [
+      "https://claudefa.st/blog/guide/agents/nested-subagents",
+      "https://digg.com/ai/megudrsi"
+    ],
+    "hook": "Released June 10. The biggest architectural change since parallel agents shipped: sub-agents can now themselves spawn sub-agents, creating a controlled hierarchy capped at five levels. Each sub-agent runs in its own isolated window and returns only a summary — so you can now break sprawling codebases or multi-phase debugging sessions into layered delegations that previously had to stay flat. Design philosophy: Anthropic went with a fixed cap of 5 and no configuration, treating the ceiling as a deliberate guardrail. Practical note: models don't reliably nest on their own yet — you often need to explicitly instruct Claude to delegate downward by name. Also in this release: search bar for `/plugin` browsing, Amazon Bedrock now auto-reads AWS region from `~/.aws` config files (matching AWS SDK precedence), and a fix for 1M-context sessions getting permanently stuck. Update: `npm update -g @anthropic-ai/claude-code`.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "boris-cherny-fortune-june-2026",
+    "name": "Boris Cherny at Fortune Brainstorm Tech — \"Tens of Thousands of Agents\" + \"You're Comparing Costs Wrong\"",
+    "primary_url": "https://fortune.com/2026/06/08/anthropics-boris-cherny-creator-of-claude-code-says-there-are-days-he-manages-tens-of-thousands-of-ai-agents-at-once/",
+    "secondary_urls": [
+      "https://fortune.com/2026/06/09/boris-cherny-claude-code-says-comparing-ai-costs-to-wrong-thing-anthropic/",
+      "https://pasqualepillitteri.it/en/news/4564/claude-code-boris-cherny-one-year-on-phone"
+    ],
+    "hook": "Two Fortune articles in 48 hours (June 8 and 9) from Anthropic's Brainstorm Tech keynote in Aspen. Day 1: Boris Cherny, Claude Code's creator, hasn't written a line of code in 8 months — 'some days I was managing a few hundred, some days it's thousands, or tens of thousands' of simultaneous agents. Anthropic has seen an 8x increase in code produced since January 2026; Claude Code is writing and security-reviewing itself, and is 'starting to figure out what to build next' by reading GitHub and social signals. Day 2: Cherny argues the entire AI-cost debate is anchored to the wrong baseline — comparing a $200/month subscription to a junior engineer's salary misses the point. The real comparison is output per dollar vs any other capital allocation. Companion piece at pasqualepillitteri.it covers the 'one year on' arc: Cherny now runs Claude Code from his phone on the commute.",
+    "categories": ["viral", "anthropic"]
+  },
+  {
+    "slug": "zilliz-claude-context",
+    "name": "zilliztech/claude-context — Semantic Codebase Search MCP, 40% Fewer Tokens",
+    "primary_url": "https://github.com/zilliztech/claude-context",
+    "hook": "11.8k stars. Claude Context is a Model Context Protocol plugin from Zilliz (the Milvus team) that brings hybrid semantic search to your entire codebase — BM25 for keyword recall + dense vectors for meaning — so Claude Code finds the right code in one query rather than loading entire directory trees. Benchmark: 40% token savings per session compared to raw context injection. Built for Claude Code but works with any MCP client. Requires Node.js 20+, an OpenAI API key for embeddings, and a Milvus/Zilliz Cloud endpoint (free tier available). The hybrid BM25+dense approach is the same retrieval pattern that outperforms either method alone on most code-search benchmarks. Install: `claude mcp add claude-context -- npx @zilliz/claude-context-mcp@latest` (add env vars for OPENAI_API_KEY and MILVUS config).",
+    "categories": ["mcp", "cost"],
+    "install": "npx @zilliz/claude-context-mcp@latest"
+  },
+  {
+    "slug": "cve-mcp-server-mukul975",
+    "name": "CVE MCP Server (mukul975) — 27 Security Intelligence Tools Across 21 APIs",
+    "primary_url": "https://github.com/mukul975/cve-mcp-server",
+    "secondary_urls": [
+      "https://cybersecuritynews.com/cve-mcp-server-and-claude/",
+      "https://osintteam.blog/cve-mcp-server-turn-claude-into-a-full-spectrum-security-analyst-42be86718a27"
+    ],
+    "hook": "1k stars. Turns Claude into a full-spectrum security analyst by wiring 27 tools across 21 APIs into a single MCP server. Five categories: Core Vulnerability Intelligence (NVD CVE lookup, EPSS exploitation probability, CISA KEV active-exploitation status, CWE info — 8 tools), Exploit & Attack Intelligence (PoC checks, MITRE ATT&CK mapping, attack patterns — 4 tools), Network Intelligence (IP reputation, GreyNoise, Shodan, passive DNS — 4 tools), Threat Intelligence (VirusTotal, MalwareBazaar, ransomware IoC lookup — 4 tools), DevSecOps (dependency scanning, GitHub Advisory, URL safety — 3 tools). Entire stack is outbound HTTPS only, no inbound ports, no telemetry. Built with FastMCP + aiosqlite + Pydantic v2. CyberSecurityNews and OSINT Team Blog both ran dedicated coverage this week. The problem it solves: triaging one CVE typically means 5+ separate lookups — this bundles them into a single natural-language query.",
+    "categories": ["mcp"],
+    "install": "git clone https://github.com/mukul975/cve-mcp-server.git && cd cve-mcp-server && pip install -e ."
+  },
+  {
+    "slug": "elementalsouls-claude-bughunter",
+    "name": "Claude-BugHunter (elementalsouls) — 71 Skills, 681 Bug-Bounty Patterns, Burp MCP",
+    "primary_url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "hook": "1.9k stars. Purpose-built Claude Code plugin for bug hunting and external red-team work: 71 skills organized across web applications, authentication, APIs, and enterprise platforms, with 15 slash commands (`/hunt`, `/recon`, `/report`) and 681 patterns extracted from disclosed bug-bounty reports across 24 core vulnerability classes. Enterprise attack matrices cover identity platforms (M365/Entra, Okta) and infrastructure (vCenter, VPN appliances, SharePoint). The engagement scaffold is deterministic: recon → map & rank → hunt → validate → report. Auto-loads relevant skills from a plain-language description of the target — no manual skill invocation needed. Burp Suite MCP integration enables dynamic testing alongside static pattern matching. Clear authorized-use framing: explicitly scoped to external red-team work and bug-bounty programs.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add elementalsouls/Claude-BugHunter"
+  },
+  {
+    "slug": "agent-teams-ai-777genius",
+    "name": "agent-teams-ai (777genius) — Multi-Agent Kanban Desktop App, 200+ Models, Free Tier",
+    "primary_url": "https://github.com/777genius/agent-teams-ai",
+    "hook": "1.3k stars. Desktop app that makes you the boss and agents your team: multiple AI agents communicate with each other, review each other's work, and update a kanban board while you issue high-level commands. Supports Claude, Codex, and OpenCode across 200+ models from 75+ LLM providers. Execution logs, diff visualization for code review, and session analysis built in. Free models available with no authentication, no API key, and no credit card for first-time exploration. Platforms: macOS, Windows, Linux — no prerequisites (runtime detection from the UI). Simon Scrapes' 'I Made Claude Code FOR TEAMS' video (posted this week) highlighted this class of tool as the most practical approach to running autonomous agent teams without custom orchestration code.",
+    "categories": ["plugin"],
+    "install": "See GitHub releases page for platform installers"
+  },
+  {
+    "slug": "claude-code-teams-mcp-cs50victor",
+    "name": "claude-code-teams-mcp (cs50victor) — Agent Teams Protocol as Standalone MCP",
+    "primary_url": "https://github.com/cs50victor/claude-code-teams-mcp",
+    "hook": "Claude Code's built-in Agent Teams feature — Lead + Teammate role separation, file-based inbox messaging, multi-agent coordination — reimplemented as a standalone MCP server. The result: any MCP-compatible client (Claude Code, Codex CLI, OpenCode, or any future harness) can now run structured agent teams without being locked into Claude Code's native implementation. Architecture: lead messages anyone; teammates message only lead; JSON inboxes live at `~/.claude/teams/<team>/inboxes/`. Requires Python 3.12+, tmux, and at least one coding agent on PATH. A natural pairing with oh-my-claudecode for teams that want to mix orchestration layers.",
+    "categories": ["mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "hesreallyhim-awesome-claude-code",
+    "name": "hesreallyhim/awesome-claude-code — 46k-Star Canonical Curated List of Claude Code Resources",
+    "primary_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "hook": "46k stars. The community's most trusted curated collection of Claude Code resources — skills, hooks, slash-commands, agent orchestrators, applications, and plugins. Curated with judgment: tools that don't work get removed, tools that do work get tagged for their actual use. Companion repo `a-list-of-claude-code-agents` handles the growing sub-agent catalogue separately. Coverage spans official Anthropic plugins, community skills, security tools, design systems, memory layers, and observability tools. In the Claude Code ecosystem this is what developers reach for first when evaluating the tool landscape — the README has served as the onboarding layer for tens of thousands of new users. Last major update April 27, 2026.",
+    "categories": ["marketplace"],
+    "install": "See README"
+  },
+  {
+    "slug": "microsoft-claude-code-cicd-security",
+    "name": "Microsoft Security: Claude Code GitHub Action Leaks CI/CD Secrets via Prompt Injection",
+    "primary_url": "https://www.microsoft.com/en-us/security/blog/2026/06/05/securing-ci-cd-in-agentic-world-claude-code-github-action-case/",
+    "secondary_urls": [
+      "https://cybersecuritynews.com/microsoft-warns-claude-code-github-action/",
+      "https://codeongrass.com/blog/hardening-claude-code-github-actions-cvss-9-4-cve/"
+    ],
+    "hook": "Published June 5 by Microsoft Threat Intelligence. The Claude Code GitHub Action's Read tool was not sandboxed the same way as subprocess execution — specifically, it was authorized to access `/proc/self/environ`, meaning a prompt-injection payload in an untrusted PR description, issue body, or comment could instruct Claude to read and exfiltrate `ANTHROPIC_API_KEY` and other workflow secrets. Anthropic patched this in v2.1.128 by blocking sensitive `/proc` file reads. The mitigation is now live. Microsoft's hardening guidance introduces the 'Agents Rule of Two': never let an AI workflow simultaneously (1) process untrusted input, (2) hold secrets or sensitive access, and (3) communicate externally or change state — any two is manageable, all three is a breach vector. If your org runs Claude Code GitHub Actions and hasn't updated since v2.1.128, update immediately.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "claude-code-v2-1-173-fable5-fix",
+    "name": "Claude Code v2.1.173 (June 11, Today) — Fable 5 Model Name Normalization Fix",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Released today. Claude Fable 5 model IDs sometimes arrive from the API with a `[1m]` terminal formatting suffix — e.g., `claude-fable-5-20260609[1m]` — which caused Claude Code to fail to recognize the model and fall back or error out. v2.1.173 strips that suffix automatically at the normalization layer. Also fixes a spurious 'sandbox dependencies missing' startup warning on Windows when sandbox mode is enabled (cosmetic only — sandbox was working correctly). If you've been seeing model-picker oddities after enabling Fable 5 in the past 48 hours, this is the fix. `npm update -g @anthropic-ai/claude-code`.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "code-w-claude-london-2026-blog",
+    "name": "Code w/ Claude London 2026 Retrospective — Rethinking How We Build",
+    "primary_url": "https://claude.com/blog/code-w-claude-london-2026-rethinking-how-we-build",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=6amLO7I9xdg"
+    ],
+    "hook": "Anthropic published the full retrospective blog and keynote recording from Code w/ Claude London 2026 this week. The post captures Anthropic's current operating model for software development: Claude Code spans terminal, IDE, web, desktop, and scheduled-agent workflows simultaneously, enabling structured delegation rather than one-off prompts. Highlights: doubled Claude Code and Opus API rate limits announced live, Claude Managed Agents now support self-hosted sandboxes with private MCP tunnel access (enterprise boundaries preserved end-to-end), mid-task system messages out of beta. The keynote recording gives a clean look at how Anthropic's own teams have restructured software delivery around these primitives — useful context for teams evaluating agentic adoption.",
+    "categories": ["anthropic"]
+  }
+]
