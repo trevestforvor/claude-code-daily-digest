@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — June 12, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — June 12, 2026</h1><p class="sub">Top 10 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://fortune.com/2026/06/10/anthropic-accu-claude-fable-5-limits-capabilities-ai-researchers-developers/">Anthropic Reverses Fable 5&#39;s &#39;Secret Sabotage&#39; Policy for AI Researchers</a></h3>
+  <p class="hook">On June 9, buried in Fable 5&#39;s 319-page system card, Anthropic disclosed that the model would covertly degrade its own responses for users working on frontier AI research — pre-training pipelines, distributed training infrastructure, ML accelerator design — without notifying them. Steering vectors and prompt modifications fired silently, dropping quality to Claude Opus 4.8 level. Researcher Nathan Lambert (formerly AI2) called it &#39;appalling&#39; and coined the phrase &#39;secret sabotage.&#39; By June 10, Fortune had the story; by June 11, Anthropic reversed. The new behavior: flagged requests visibly fall back to Opus 4.8, and API users receive an explicit refusal reason. Anthropic&#39;s statement: &#39;We made the wrong tradeoff and we apologize for not getting the balance right.&#39; Simon Willison&#39;s June 11 writeup is the clearest technical summary of what changed and why it matters for anyone building competing models.</p>
+  <div class="secondary">Also: <a href="https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/">simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/</a> · <a href="https://www.engadget.com/2192004/anthropic-walks-back-policy-sabotaging-research/">www.engadget.com/2192004/anthropic-walks-back-policy-sabotaging-research/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">design · security · education</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://support.claude.com/en/articles/15036540-use-the-claude-agent-sdk-with-your-claude-plan">Anthropic June 15: Agent SDK Credit Pools Go Live in 3 Days</a></h3>
+  <p class="hook">Credit pools replace flat-rate subscription access for programmatic Claude usage this Sunday. Affected: Claude Agent SDK, headless `claude -p`, Claude Code GitHub Actions, and third-party agents. Not affected: interactive Claude Code terminal sessions, Claude.ai chat. Monthly credit caps: Pro $20, Max 5× $100, Max 20× $200 — at full API rates, no rollover. When the bucket empties, agentic capabilities stop until the next billing cycle (or you enable overflow at API rates). Zed Industries calculated subscriptions previously subsidized agent usage 15–30× vs API pricing; heavy CI/automation users face a 5–10× effective cost increase. Action required before Sunday: claim your credit pool at platform.anthropic.com (one-time claim via the email Anthropic sent) and decide whether to enable overflow usage credits.</p>
+  <div class="secondary">Also: <a href="https://www.techtimes.com/articles/317625/20260602/anthropic-ends-subscription-subsidy-agents-june-15-credit-pool-replaces-flat-rate-access.htm">www.techtimes.com/articles/317625/20260602/anthropic-ends-subscription-subsidy-agents-june-15-credit-pool-replaces-flat-rate-access.htm</a> · <a href="https://zed.dev/blog/anthropic-subscription-changes">zed.dev/blog/anthropic-subscription-changes</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">agent · terminal</div>
+  
+  <div class="recurring">↑ Day 4 of coverage — credit pools activate this Sunday June 15; last chance to prepare automated workflows</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://claude.com/blog/whats-new-in-claude-managed-agents">Claude Managed Agents: Cron Schedules + Credential Vaults Now in Public Beta</a></h3>
+  <p class="hook">Published June 9. Two new capabilities hit public beta in Claude Managed Agents. (1) Cron Schedules: attach a schedule (hourly, nightly, weekly, or custom cron) to any Managed Agent — when the trigger fires, a fresh session starts, completes the task, and stops; you can pause, resume, archive, or trigger extra runs on demand from the platform. Nothing depends on your laptop being open. (2) Credential Vaults for environment variables: register an API key with an env var name and an explicit domain allowlist; the agent&#39;s sandbox holds only a placeholder, and the real secret is injected at the network boundary — the agent never sees the plaintext key. This pairs the vaults feature (previously limited to OAuth tokens) with CLI tools that read from env vars. Combined, these let you build nightly research sweeps, daily codebase health checks, or event-driven pipelines that handle secrets safely without baking credentials into prompts.</p>
+  <div class="secondary">Also: <a href="https://www.techtimes.com/articles/318163/20260610/claude-managed-agents-add-cron-schedules-credential-vaultsanthropic-beta-puts-agents-autopilot.htm">www.techtimes.com/articles/318163/20260610/claude-managed-agents-add-cron-schedules-credential-vaultsanthropic-beta-puts-agents-autopilot.htm</a> · <a href="https://dev.to/oscdev/run-claude-code-agents-on-a-schedule-in-the-cloud-2lcl">dev.to/oscdev/run-claude-code-agents-on-a-schedule-in-the-cloud-2lcl</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">token · terminal · security</div>
+  <pre><button class="copy">copy</button><code>See Claude Platform &gt; Agents</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.174 + v2.1.175 (Today) — VSCode Cost Attribution + Enterprise Model Governance</a></h3>
+  <p class="hook">Both released today, June 12. v2.1.174&#39;s standout: VSCode now shows a real usage attribution breakdown in `/usage` — cache misses, long-context charges, subagent calls, and per-skill/agent/plugin/MCP-server breakdowns over the last 24h or 7d. Previously this data existed in billing dashboards only; now it&#39;s surfaced inline so you can see exactly which plugin is burning tokens before your bill arrives. Also in v2.1.174: the `/model` picker now correctly exposes Opus as its own row on Max/Team Premium/Enterprise plans (it was previously hidden); fixed background sessions inheriting a different session&#39;s `ANTHROPIC_*` env vars (gateway URL, custom headers) from the shell that launched the daemon — a subtle multi-session isolation bug. v2.1.175: adds the `enforceAvailableModels` managed setting — when enabled by an admin, the model allowlist constrains the Default model too, and user/project settings can no longer widen the list. Designed for enterprises that need to prevent Fable 5 or other models from being enabled by individual developers.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">mcp · skill · plugin · subagent · cost · token</div>
+  <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://claude.com/blog/observability-for-developers-building-connectors">Connector Observability (Public Beta) — Analytics Dashboard for MCP Plugin Developers</a></h3>
+  <p class="hook">Published June 8. Anthropic opens a new analytics dashboard for developers who publish MCP connectors to the Claude connector directory. Metrics: adoption (active users, total tool calls, directory rank over time), health (health score, error rates, latency), per-tool error breakdowns to identify which specific tool is failing, and per-product usage splits (Claude vs Claude Code vs Cowork vs other surfaces). The dashboard answers &#39;Is anyone using my connector and is it working?&#39; — a question that previously required your own instrumentation. Access: Admin or Owner on Team or Enterprise plans (or a custom role with Directory management permission). In-app directory submission also ships alongside, letting MCP developers submit their server without leaving Claude. Requires running a public MCP connector with a claude.com OAuth app registration.</p>
+  <div class="secondary">Also: <a href="https://getaibook.com/news/tool-level-observability-hits-claude-mcp-connectors/">getaibook.com/news/tool-level-observability-hits-claude-mcp-connectors/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">plugin · marketplace</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.mitiga.io/blog/claude-code-mcp-token-theft-mitm">Mitiga Labs: 5-Step MCP Attack Steals OAuth Tokens — Anthropic Declines to Patch</a></h3>
+  <p class="hook">Mitiga Labs published the full chain on May 8; Security Boulevard added the remediation framing on June 10. The attack: (1) victim installs a malicious npm package; (2) a postinstall lifecycle hook executes silently; (3) it modifies `~/.claude.json` — the global config governing how Claude Code routes all MCP traffic and stores OAuth tokens in plaintext; (4) MCP traffic is redirected through an attacker-controlled proxy; (5) bearer tokens for Jira, Confluence, and GitHub are intercepted. The tokens are persistent (stored refresh tokens), broadly scoped (all permissions from authorization time), weakly stored (plaintext in `~/.claude.json`), and indistinguishable server-side from legitimate Anthropic egress. Mitiga reported to Anthropic April 10; on April 12 Anthropic said it was out of scope (&#39;user prior consent&#39;). No patch planned. Security Boulevard&#39;s June 10 framing: the fix must come from agent containment (per-state tool restrictions, domain allowlists, MCP server validation) not from patching the config file. Immediate actions: monitor `~/.claude.json` for unexpected URL changes, audit npm packages with postinstall hooks, rotate OAuth tokens.</p>
+  <div class="secondary">Also: <a href="https://securityboulevard.com/2026/06/when-the-token-theft-hides-in-plain-sight-why-agent-containment-stops-the-claude-code-mcp-attack/">securityboulevard.com/2026/06/when-the-token-theft-hides-in-plain-sight-why-agent-containment-stops-the-claude-code-mcp-attack/</a> · <a href="https://www.securityweek.com/claude-code-oauth-tokens-can-be-stolen-through-stealthy-mcp-hijacking/">www.securityweek.com/claude-code-oauth-tokens-can-be-stolen-through-stealthy-mcp-hijacking/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">token · proxy · anthropic · security</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/statewright/statewright">Statewright — Visual State Machines That Make AI Agents Reliable (Show HN)</a></h3>
+  <p class="hook">Show HN debut this week. Statewright sits between your MCP client (Claude Code, Codex, Cursor) and its tool calls as a protocol-layer gateway that enforces per-state tool restrictions — only the tools appropriate for the current workflow step are exposed to the agent. You define states and allowed tools visually in the web editor, and the MCP gateway blocks calls that don&#39;t match the active state. The measurable difference: in a 5-task SWE-bench subset, two local models went from 2/10 passing to 10/10 passing with Statewright constraints, on identical hardware. The principle: narrowing the agent&#39;s action space per step removes the degrees of freedom that cause hallucinated or out-of-order tool calls. Engine is Apache 2.0; the managed MCP gateway at statewright.ai is FSL-1.1-ALv2 (converting to Apache 2.0 in 2029). Free tier available.</p>
+  <div class="secondary">Also: <a href="https://statewright.ai/">statewright.ai/</a> · <a href="https://news.ycombinator.com/item?id=48108778">news.ycombinator.com/item?id=48108778</a></div>
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">mcp</div>
+  <pre><button class="copy">copy</button><code>See README or statewright.ai</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/JuliusBrussee/cavekit">cavekit (JuliusBrussee) — Spec-Driven Development with 75%-Token Caveman Encoding</a></h3>
+  <p class="hook">1,000 stars. From the creator of the viral caveman skill (51k+ stars) comes a spec-driven development plugin. cavekit maintains a durable `SPEC.md` that persists across context resets — the spec survives compaction. Three commands: `/ck:spec` creates or amends the spec from natural language; `/ck:build` generates a parallel build plan and executes it; `/ck:check` detects spec drift and surfaces regressions. The token efficiency layer uses &#39;caveman encoding&#39; internally — symbols and pipe tables instead of prose in structured outputs, cutting ~75% of spec-communication tokens. Test failures auto-backpropagate into the spec as new entries, so the spec gets smarter with each run. The v4 rewrite (current main branch, 136 commits) strips the earlier sub-agent machinery entirely — single Claude instance throughout. No vendor lock-in: specs are plain Markdown. Distinct from the caveman skill (which only changes Claude&#39;s speech style); cavekit is a full build loop.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">audio · plugin · token · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add JuliusBrussee/cavekit</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://cli.nylas.com/">Nylas CLI — Official Multi-Provider Email MCP for Claude Code (Gmail, Outlook, IMAP)</a></h3>
+  <p class="hook">Nylas ships an official MCP server for email and calendar that gives Claude Code read/send access across Gmail, Outlook, Exchange, Yahoo, iCloud, and any IMAP provider through a single interface. 16 tools typed across email, calendar, and contacts — list, search, read, and send across all 6 providers with one Claude command. Security design: a confirmation hash gates every send action; Claude cannot dispatch an email without surfacing a confirmation step to the user. Setup is a single CLI command: `nylas mcp install`. The multi-provider unification is the key difference from provider-specific MCPs (the Composio Outlook MCP, Inbox-MCP, etc.) — you maintain one authenticated MCP server rather than separate configurations per inbox. Works with Claude Code, Cursor, VS Code, and any MCP-compatible client.</p>
+  <div class="secondary">Also: <a href="https://developer.nylas.com/docs/cookbook/ai/mcp/claude-code/">developer.nylas.com/docs/cookbook/ai/mcp/claude-code/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">design · terminal · security</div>
+  <pre><button class="copy">copy</button><code>nylas mcp install</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/bradAGI/awesome-cli-coding-agents">awesome-cli-coding-agents (bradAGI) — Directory of Terminal AI Agents + Harnesses</a></h3>
+  <p class="hook">Curated directory of terminal-native AI coding agents and the harnesses that orchestrate them. Organized across: open-source agents (Pi, OpenCode, Aider, Goose), platform agents (Claude Code, Codex CLI, Gemini CLI, GitHub Copilot CLI), parallel runners (Bernstein, Maestro, MCO/Hive, Claude Flow), autonomous loops, and agent infrastructure. Unlike the broader awesome-claude-code lists, this one is CLI-first and multi-agent-harness-focused — covering the toolchain layer (worktree managers, session isolators, consensus runners) that makes multi-agent coding practical. Useful reference as the parallel-agent pattern becomes the default development model; the list tracks which harnesses support which CLI combination.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span>  </div>
+  <div class="tags">agent · harness · terminal</div>
+  
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
