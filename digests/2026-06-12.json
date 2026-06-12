@@ -1,0 +1,104 @@
+[
+  {
+    "slug": "anthropic-fable5-sabotage-walkback",
+    "name": "Anthropic Reverses Fable 5's 'Secret Sabotage' Policy for AI Researchers",
+    "primary_url": "https://fortune.com/2026/06/10/anthropic-accu-claude-fable-5-limits-capabilities-ai-researchers-developers/",
+    "secondary_urls": [
+      "https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/",
+      "https://www.engadget.com/2192004/anthropic-walks-back-policy-sabotaging-research/"
+    ],
+    "hook": "On June 9, buried in Fable 5's 319-page system card, Anthropic disclosed that the model would covertly degrade its own responses for users working on frontier AI research — pre-training pipelines, distributed training infrastructure, ML accelerator design — without notifying them. Steering vectors and prompt modifications fired silently, dropping quality to Claude Opus 4.8 level. Researcher Nathan Lambert (formerly AI2) called it 'appalling' and coined the phrase 'secret sabotage.' By June 10, Fortune had the story; by June 11, Anthropic reversed. The new behavior: flagged requests visibly fall back to Opus 4.8, and API users receive an explicit refusal reason. Anthropic's statement: 'We made the wrong tradeoff and we apologize for not getting the balance right.' Simon Willison's June 11 writeup is the clearest technical summary of what changed and why it matters for anyone building competing models.",
+    "categories": ["anthropic", "viral"]
+  },
+  {
+    "slug": "anthropic-june15-agent-sdk-billing",
+    "name": "Anthropic June 15: Agent SDK Credit Pools Go Live in 3 Days",
+    "primary_url": "https://support.claude.com/en/articles/15036540-use-the-claude-agent-sdk-with-your-claude-plan",
+    "secondary_urls": [
+      "https://www.techtimes.com/articles/317625/20260602/anthropic-ends-subscription-subsidy-agents-june-15-credit-pool-replaces-flat-rate-access.htm",
+      "https://zed.dev/blog/anthropic-subscription-changes"
+    ],
+    "hook": "Credit pools replace flat-rate subscription access for programmatic Claude usage this Sunday. Affected: Claude Agent SDK, headless `claude -p`, Claude Code GitHub Actions, and third-party agents. Not affected: interactive Claude Code terminal sessions, Claude.ai chat. Monthly credit caps: Pro $20, Max 5× $100, Max 20× $200 — at full API rates, no rollover. When the bucket empties, agentic capabilities stop until the next billing cycle (or you enable overflow at API rates). Zed Industries calculated subscriptions previously subsidized agent usage 15–30× vs API pricing; heavy CI/automation users face a 5–10× effective cost increase. Action required before Sunday: claim your credit pool at platform.anthropic.com (one-time claim via the email Anthropic sent) and decide whether to enable overflow usage credits.",
+    "categories": ["cost", "anthropic"],
+    "recurring_note": "↑ Day 4 of coverage — credit pools activate this Sunday June 15; last chance to prepare automated workflows"
+  },
+  {
+    "slug": "claude-managed-agents-cron-vaults",
+    "name": "Claude Managed Agents: Cron Schedules + Credential Vaults Now in Public Beta",
+    "primary_url": "https://claude.com/blog/whats-new-in-claude-managed-agents",
+    "secondary_urls": [
+      "https://www.techtimes.com/articles/318163/20260610/claude-managed-agents-add-cron-schedules-credential-vaultsanthropic-beta-puts-agents-autopilot.htm",
+      "https://dev.to/oscdev/run-claude-code-agents-on-a-schedule-in-the-cloud-2lcl"
+    ],
+    "hook": "Published June 9. Two new capabilities hit public beta in Claude Managed Agents. (1) Cron Schedules: attach a schedule (hourly, nightly, weekly, or custom cron) to any Managed Agent — when the trigger fires, a fresh session starts, completes the task, and stops; you can pause, resume, archive, or trigger extra runs on demand from the platform. Nothing depends on your laptop being open. (2) Credential Vaults for environment variables: register an API key with an env var name and an explicit domain allowlist; the agent's sandbox holds only a placeholder, and the real secret is injected at the network boundary — the agent never sees the plaintext key. This pairs the vaults feature (previously limited to OAuth tokens) with CLI tools that read from env vars. Combined, these let you build nightly research sweeps, daily codebase health checks, or event-driven pipelines that handle secrets safely without baking credentials into prompts.",
+    "categories": ["anthropic"],
+    "install": "See Claude Platform > Agents"
+  },
+  {
+    "slug": "claude-code-v2-1-174-175",
+    "name": "Claude Code v2.1.174 + v2.1.175 (Today) — VSCode Cost Attribution + Enterprise Model Governance",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Both released today, June 12. v2.1.174's standout: VSCode now shows a real usage attribution breakdown in `/usage` — cache misses, long-context charges, subagent calls, and per-skill/agent/plugin/MCP-server breakdowns over the last 24h or 7d. Previously this data existed in billing dashboards only; now it's surfaced inline so you can see exactly which plugin is burning tokens before your bill arrives. Also in v2.1.174: the `/model` picker now correctly exposes Opus as its own row on Max/Team Premium/Enterprise plans (it was previously hidden); fixed background sessions inheriting a different session's `ANTHROPIC_*` env vars (gateway URL, custom headers) from the shell that launched the daemon — a subtle multi-session isolation bug. v2.1.175: adds the `enforceAvailableModels` managed setting — when enabled by an admin, the model allowlist constrains the Default model too, and user/project settings can no longer widen the list. Designed for enterprises that need to prevent Fable 5 or other models from being enabled by individual developers.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "anthropic-connector-observability",
+    "name": "Connector Observability (Public Beta) — Analytics Dashboard for MCP Plugin Developers",
+    "primary_url": "https://claude.com/blog/observability-for-developers-building-connectors",
+    "secondary_urls": [
+      "https://getaibook.com/news/tool-level-observability-hits-claude-mcp-connectors/"
+    ],
+    "hook": "Published June 8. Anthropic opens a new analytics dashboard for developers who publish MCP connectors to the Claude connector directory. Metrics: adoption (active users, total tool calls, directory rank over time), health (health score, error rates, latency), per-tool error breakdowns to identify which specific tool is failing, and per-product usage splits (Claude vs Claude Code vs Cowork vs other surfaces). The dashboard answers 'Is anyone using my connector and is it working?' — a question that previously required your own instrumentation. Access: Admin or Owner on Team or Enterprise plans (or a custom role with Directory management permission). In-app directory submission also ships alongside, letting MCP developers submit their server without leaving Claude. Requires running a public MCP connector with a claude.com OAuth app registration.",
+    "categories": ["anthropic", "mcp"]
+  },
+  {
+    "slug": "mcp-oauth-token-hijack-mitiga",
+    "name": "Mitiga Labs: 5-Step MCP Attack Steals OAuth Tokens — Anthropic Declines to Patch",
+    "primary_url": "https://www.mitiga.io/blog/claude-code-mcp-token-theft-mitm",
+    "secondary_urls": [
+      "https://securityboulevard.com/2026/06/when-the-token-theft-hides-in-plain-sight-why-agent-containment-stops-the-claude-code-mcp-attack/",
+      "https://www.securityweek.com/claude-code-oauth-tokens-can-be-stolen-through-stealthy-mcp-hijacking/"
+    ],
+    "hook": "Mitiga Labs published the full chain on May 8; Security Boulevard added the remediation framing on June 10. The attack: (1) victim installs a malicious npm package; (2) a postinstall lifecycle hook executes silently; (3) it modifies `~/.claude.json` — the global config governing how Claude Code routes all MCP traffic and stores OAuth tokens in plaintext; (4) MCP traffic is redirected through an attacker-controlled proxy; (5) bearer tokens for Jira, Confluence, and GitHub are intercepted. The tokens are persistent (stored refresh tokens), broadly scoped (all permissions from authorization time), weakly stored (plaintext in `~/.claude.json`), and indistinguishable server-side from legitimate Anthropic egress. Mitiga reported to Anthropic April 10; on April 12 Anthropic said it was out of scope ('user prior consent'). No patch planned. Security Boulevard's June 10 framing: the fix must come from agent containment (per-state tool restrictions, domain allowlists, MCP server validation) not from patching the config file. Immediate actions: monitor `~/.claude.json` for unexpected URL changes, audit npm packages with postinstall hooks, rotate OAuth tokens.",
+    "categories": ["mcp"]
+  },
+  {
+    "slug": "statewright-visual-state-machines",
+    "name": "Statewright — Visual State Machines That Make AI Agents Reliable (Show HN)",
+    "primary_url": "https://github.com/statewright/statewright",
+    "secondary_urls": [
+      "https://statewright.ai/",
+      "https://news.ycombinator.com/item?id=48108778"
+    ],
+    "hook": "Show HN debut this week. Statewright sits between your MCP client (Claude Code, Codex, Cursor) and its tool calls as a protocol-layer gateway that enforces per-state tool restrictions — only the tools appropriate for the current workflow step are exposed to the agent. You define states and allowed tools visually in the web editor, and the MCP gateway blocks calls that don't match the active state. The measurable difference: in a 5-task SWE-bench subset, two local models went from 2/10 passing to 10/10 passing with Statewright constraints, on identical hardware. The principle: narrowing the agent's action space per step removes the degrees of freedom that cause hallucinated or out-of-order tool calls. Engine is Apache 2.0; the managed MCP gateway at statewright.ai is FSL-1.1-ALv2 (converting to Apache 2.0 in 2029). Free tier available.",
+    "categories": ["plugin"],
+    "install": "See README or statewright.ai"
+  },
+  {
+    "slug": "juliusbrussee-cavekit",
+    "name": "cavekit (JuliusBrussee) — Spec-Driven Development with 75%-Token Caveman Encoding",
+    "primary_url": "https://github.com/JuliusBrussee/cavekit",
+    "hook": "1,000 stars. From the creator of the viral caveman skill (51k+ stars) comes a spec-driven development plugin. cavekit maintains a durable `SPEC.md` that persists across context resets — the spec survives compaction. Three commands: `/ck:spec` creates or amends the spec from natural language; `/ck:build` generates a parallel build plan and executes it; `/ck:check` detects spec drift and surfaces regressions. The token efficiency layer uses 'caveman encoding' internally — symbols and pipe tables instead of prose in structured outputs, cutting ~75% of spec-communication tokens. Test failures auto-backpropagate into the spec as new entries, so the spec gets smarter with each run. The v4 rewrite (current main branch, 136 commits) strips the earlier sub-agent machinery entirely — single Claude instance throughout. No vendor lock-in: specs are plain Markdown. Distinct from the caveman skill (which only changes Claude's speech style); cavekit is a full build loop.",
+    "categories": ["skill", "cost"],
+    "install": "npx skills add JuliusBrussee/cavekit"
+  },
+  {
+    "slug": "nylas-email-mcp",
+    "name": "Nylas CLI — Official Multi-Provider Email MCP for Claude Code (Gmail, Outlook, IMAP)",
+    "primary_url": "https://cli.nylas.com/",
+    "secondary_urls": [
+      "https://developer.nylas.com/docs/cookbook/ai/mcp/claude-code/"
+    ],
+    "hook": "Nylas ships an official MCP server for email and calendar that gives Claude Code read/send access across Gmail, Outlook, Exchange, Yahoo, iCloud, and any IMAP provider through a single interface. 16 tools typed across email, calendar, and contacts — list, search, read, and send across all 6 providers with one Claude command. Security design: a confirmation hash gates every send action; Claude cannot dispatch an email without surfacing a confirmation step to the user. Setup is a single CLI command: `nylas mcp install`. The multi-provider unification is the key difference from provider-specific MCPs (the Composio Outlook MCP, Inbox-MCP, etc.) — you maintain one authenticated MCP server rather than separate configurations per inbox. Works with Claude Code, Cursor, VS Code, and any MCP-compatible client.",
+    "categories": ["mcp"],
+    "install": "nylas mcp install"
+  },
+  {
+    "slug": "bradagi-awesome-cli-coding-agents",
+    "name": "awesome-cli-coding-agents (bradAGI) — Directory of Terminal AI Agents + Harnesses",
+    "primary_url": "https://github.com/bradAGI/awesome-cli-coding-agents",
+    "hook": "Curated directory of terminal-native AI coding agents and the harnesses that orchestrate them. Organized across: open-source agents (Pi, OpenCode, Aider, Goose), platform agents (Claude Code, Codex CLI, Gemini CLI, GitHub Copilot CLI), parallel runners (Bernstein, Maestro, MCO/Hive, Claude Flow), autonomous loops, and agent infrastructure. Unlike the broader awesome-claude-code lists, this one is CLI-first and multi-agent-harness-focused — covering the toolchain layer (worktree managers, session isolators, consensus runners) that makes multi-agent coding practical. Useful reference as the parallel-agent pattern becomes the default development model; the list tracks which harnesses support which CLI combination.",
+    "categories": ["marketplace"]
+  }
+]
