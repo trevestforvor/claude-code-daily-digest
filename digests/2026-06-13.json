@@ -1,0 +1,103 @@
+[
+  {
+    "slug": "claude-code-dynamic-workflows",
+    "name": "Claude Code Dynamic Workflows + `/deep-research` (Research Preview)",
+    "primary_url": "https://code.claude.com/docs/en/workflows",
+    "secondary_urls": [
+      "https://claude.com/blog/introducing-dynamic-workflows-in-claude-code",
+      "https://www.infoq.com/news/2026/06/dynamic-workflows-claude-code/"
+    ],
+    "hook": "Anthropic's largest architectural addition to Claude Code since parallel agents: dynamic workflows are JavaScript scripts Claude writes on demand, executed by a dedicated runtime while your session stays live. Trigger with the `ultracode` keyword in any prompt, or type `/effort ultracode` to have Claude auto-plan workflows for every task in the session. Bundled command `/deep-research <question>` fans out web searches across angles, cross-checks every source, and returns a cited report with unverified claims filtered out. Scale: up to 16 concurrent agents, 1,000 total per run, all resumable within the session. Plans are visible (and editable) before launch. Save any run as a reusable `/command` for your team. Available on all paid plans, v2.1.154+.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "Superpowers (obra/superpowers) — 170k-Star Agentic Dev Framework",
+    "primary_url": "https://github.com/obra/superpowers",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=mNawxNjrR_E",
+      "https://claude.com/plugins/superpowers"
+    ],
+    "hook": "Simon Scrapes posted '14 GENIUS Ways to Give Claude Code SUPERPOWERS' yesterday (June 12, 71.8k subs) — the clearest creator signal this week. Superpowers transforms Claude Code into a structured senior developer: Socratic brainstorming before writing a line, Micro-Task Planning that decomposes to the function level, Test-Driven Development (tests must fail first), then subagent-driven execution with built-in code review. It's the #2 most-installed plugin in the Anthropic marketplace (752,120 installs as of June 1) with 170k+ GitHub stars. The companion superpowers-lab repo ships experimental new techniques; superpowers-chrome adds zero-dependency DevTools browser control.",
+    "categories": ["skill", "viral"],
+    "install": "/plugin marketplace add obra/superpowers-marketplace",
+    "creator_buzz": ["@simonscrapes"]
+  },
+  {
+    "slug": "agmsg",
+    "name": "agmsg — Cross-Agent Messaging via SQLite (PH #5, June 9)",
+    "primary_url": "https://github.com/fujibee/agmsg",
+    "secondary_urls": [
+      "https://agmsg.cc/"
+    ],
+    "hook": "#5 Product of the Day on Product Hunt June 9 (219 upvotes, 39 comments), 460 GitHub stars. agmsg is ~500 lines of bash + SQLite that lets Claude Code, Codex, Gemini CLI, and Copilot CLI message each other through one shared local file — no daemon, no network, no framework. Monitor mode (~5s latency) pushes messages in real-time; turn mode checks at the start of each agent turn. Roles and team names are project-scoped; `actas` switches roles mid-session. Unlike built-in subagents (single-vendor, ephemeral) or agent teams (Claude-only), agmsg is persistent and vendor-agnostic — run a Claude Code planner, a Codex implementer, and a Gemini reviewer in three terminals and have them coordinate without a custom orchestration layer.",
+    "categories": ["plugin"],
+    "install": "bash <(curl -fsSL https://raw.githubusercontent.com/fujibee/agmsg/main/setup.sh)"
+  },
+  {
+    "slug": "claude-code-v2-1-176",
+    "name": "Claude Code v2.1.176 (June 12) — Hook Path Globs Fixed, /copy in tmux, Session Titles",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Released June 12 alongside 174 and 175 (covered in yesterday's digest). v2.1.176's most actionable fix: hook `if` conditions now correctly match path patterns like `Edit(src/**)` and `Read(~/.ssh/**)` — they were silently not evaluating before, meaning hooks that were supposed to fire on specific file paths were firing on everything or nothing. Also fixed: `/copy` and mouse-selection copy in tmux over SSH (a long-standing frustration for remote users), background sessions incorrectly showing 'Working' indefinitely, cloud session authentication timeouts, `/cd` and worktree moves not reporting correct git branch, and Remote Control model switching. New: `footerLinksRegexes` setting lets you add custom regex-matched badge links to the footer, and Bedrock credential caching now respects the actual `Expiration` field instead of a hardcoded 1 hour.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "aris-auto-research-in-sleep",
+    "name": "ARIS (Auto-Research-In-Sleep) — Autonomous ML Research via Cross-Model Adversarial Review",
+    "primary_url": "https://github.com/echoxiangzhou/auto-claude-code-research-in-sleep",
+    "secondary_urls": [
+      "https://wanshuiyin.github.io/Auto-claude-code-research-in-sleep/ARIS_INTRO.html"
+    ],
+    "hook": "11.6k stars. ARIS packages 79 composable Markdown skills that let Claude Code run a full ML research loop while you sleep: idea discovery with GPU pilots, autonomous 4-round adversarial peer review (Claude Code executes; GPT-5.4 or GPT-5.5 acts as independent critical reviewer who rejects weak work), end-to-end paper writing from narrative to LaTeX to PDF, and rebuttal drafting from reviewer feedback. The cross-model adversarial pattern — two models that disagree and debate instead of self-playing — is the structural innovation. Research Wiki persists across runs; failed ideas become anti-repetition data. No framework, no vendor lock-in: the same skills run on Codex, OpenClaw, or any LLM agent.",
+    "categories": ["skill"],
+    "install": "git clone https://github.com/echoxiangzhou/auto-claude-code-research-in-sleep && cp -r auto-claude-code-research-in-sleep/skills/* ~/.claude/skills/"
+  },
+  {
+    "slug": "antigravity-awesome-skills",
+    "name": "antigravity-awesome-skills (sickn33) — 1,541 SKILL.md Playbooks, 40.6k Stars",
+    "primary_url": "https://github.com/sickn33/antigravity-awesome-skills",
+    "hook": "40.6k stars, updated June 12 (yesterday). The largest installable SKILL.md library in the ecosystem: 1,541 reusable playbooks for Claude Code, Cursor, Codex CLI, Gemini CLI, and Antigravity, spanning web, security, data, DevOps, QA, and more. Specialized plugins group skills by domain with risk levels, so you can install only what you need and avoid context overload. Web app for browsing, a CLI installer with --claude / --cursor / --codex flags, and GitHub Pages catalog. MIT. The scale separates it from curated lists — if you want one command that loads a production DevOps workflow, security audit pack, or QA suite directly into your agent, this is the place.",
+    "categories": ["skill", "marketplace"],
+    "install": "npx antigravity-awesome-skills --claude"
+  },
+  {
+    "slug": "trendsmcp-trends-agent-claude",
+    "name": "TrendsMCP — Live Trend Data MCP (Google, YouTube, TikTok, Reddit, and 6 More)",
+    "primary_url": "https://github.com/trendsmcp/trends-agent-claude",
+    "secondary_urls": [
+      "https://trendsmcp.ai/"
+    ],
+    "hook": "Freshly launched. TrendsMCP connects Claude to real-time trend data across ten platforms: Google Search, YouTube, TikTok, Reddit, Amazon, Wikipedia, news sentiment, App Store, Steam, and npm — all normalized to a 0–100 scale so you can compare velocity across sources in a single query. Three MCP tools: `get_trends` (weekly or daily time series, up to 5 years), `get_growth` (percentage change between periods), `get_top_trends` (live platform feeds). Install as a Claude Connector (easiest for web/desktop/mobile) or via CLI. Free tier: 100 requests/month, no credit card. Practical use cases: SEO research, investment signals, brand tracking, content timing, npm package adoption analysis.",
+    "categories": ["mcp"],
+    "install": "claude mcp add trendsmcp"
+  },
+  {
+    "slug": "claude-code-plugins-plus-skills",
+    "name": "claude-code-plugins-plus-skills — 425 Plugins, 2,810 Skills, ccpi CLI + tonsofskills.com",
+    "primary_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+    "secondary_urls": [
+      "https://tonsofskills.com/"
+    ],
+    "hook": "2.4k stars. Jeremy Longshore's open-source Claude Code marketplace goes wide: 425 plugins across 19 categories, 2,810 agent skills (auto-activate on context match), and 200 specialized agents — all validated against Anthropic's official spec so the same `marketplace.json` the Claude Code CLI reads is the catalog you install from. SaaS packs cover HubSpot, Salesforce, Notion, Figma. DevOps bundles cover Docker, Kubernetes, Terraform, CI/CD. Security tools include vulnerability scanning and compliance. Browse the full catalog at tonsofskills.com. The ccpi CLI installs any pack in one command (`ccpi install devops-automation-pack`) without copying files manually.",
+    "categories": ["skill", "marketplace"],
+    "install": "pnpm add -g @intentsolutionsio/ccpi"
+  },
+  {
+    "slug": "rohitg00-awesome-claude-code-toolkit",
+    "name": "awesome-claude-code-toolkit (rohitg00) — 135 Agents, 176+ Plugins, 400k+ Skills via SkillKit",
+    "primary_url": "https://github.com/rohitg00/awesome-claude-code-toolkit",
+    "hook": "Was #1 trending GitHub in February 2026; still the most comprehensive single-repo Claude Code toolkit. Ships 135 ready-to-use agents (research/analysis, core dev, UI designer, competitive analyst, language experts, and more), 35 curated skills with SkillKit access to 400,000+ community skills, 42 commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, 14 MCP configs, and 26 companion apps. Different from awesome-claude-design (same author, June 9 digest) — the toolkit is the engineering and agent layer, the design repo is the visual-craft layer. If you're doing a full Claude Code environment setup from scratch, this is the single repo to clone first.",
+    "categories": ["marketplace"],
+    "install": "See README"
+  },
+  {
+    "slug": "2389-research-claude-plugins",
+    "name": "2389-research/claude-plugins — 28 Specialized Plugins (TDD, Multi-Agent, Binary RE)",
+    "primary_url": "https://github.com/2389-research/claude-plugins",
+    "hook": "28 plugins and MCP servers built by the team at 2389-research, each installable in one command. Coverage spans the technical edges rarely found in general-purpose collections: Test-Driven Development with red-green-refactor enforcement, multi-agent orchestration patterns, iterative refinement loops, binary reverse engineering tools, and structured decision frameworks. The focused, domain-specific approach means each plugin has real engineering depth — not just markdown guidance but actual structured workflows. Useful complement to broader libraries when you need battle-tested patterns for a specific category rather than a full-stack install.",
+    "categories": ["plugin"],
+    "install": "See README"
+  }
+]
