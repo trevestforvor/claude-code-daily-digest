@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — June 14, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — June 14, 2026</h1><p class="sub">Top 10 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/fable-mythos-access">US Government Orders Anthropic to Suspend Fable 5 and Mythos 5 — Globally</a></h3>
+  <p class="hook">The Commerce Department issued an export control directive to Anthropic on June 12 at 5:21 pm ET citing a &#39;potential jailbreak&#39; of Fable 5 — a public demonstration by &#39;Pliny the Liberator&#39; on June 10 that bypassed safety guardrails to extract exploit instructions. The directive barred any foreign national access, which Anthropic says it could not enforce selectively, so it disabled Fable 5 and Mythos 5 for all customers worldwide, routing everyone to Opus 4.8. Anthropic publicly disagrees: &#39;a narrow potential jailbreak should not be cause for recalling a commercial model deployed to hundreds of millions of people.&#39; Fortune reported that the jailbreak demonstration was performed by a defense cybersecurity firm for authorized red-team purposes, not malicious use.</p>
+  <div class="secondary">Also: <a href="https://www.axios.com/2026/06/12/anthropic-trump-mythos-fable-national-security">www.axios.com/2026/06/12/anthropic-trump-mythos-fable-national-security</a> · <a href="https://www.techradar.com/ai-platforms-assistants/claude/after-a-potential-jailbreak-anthropic-is-shutting-off-access-to-its-mythos-5-and-fable-5-models-under-national-security-orders-from-the-us-government">www.techradar.com/ai-platforms-assistants/claude/after-a-potential-jailbreak-anthropic-is-shutting-off-access-to-its-mythos-5-and-fable-5-models-under-national-security-orders-from-the-us-government</a> · <a href="https://fortune.com/2026/06/13/anthropic-fable-mythos-models-commerce-deparment-export-restrictions-jailbreak-defense-prompting/">fortune.com/2026/06/13/anthropic-fable-mythos-models-commerce-deparment-export-restrictions-jailbreak-defense-prompting/</a> · <a href="https://simonwillison.net/2026/Jun/13/us-government-directive-to-suspend-access/">simonwillison.net/2026/Jun/13/us-government-directive-to-suspend-access/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://support.claude.com/en/articles/15036540-use-the-claude-agent-sdk-with-your-claude-plan">Claude Agent SDK Credit Pools Activate Tomorrow (June 15) — Last Day to Prepare</a></h3>
+  <p class="hook">Credit pools activate at midnight tonight. After this, all Agent SDK, `claude -p`, Claude Code GitHub Actions, and third-party agent usage draws from a separate monthly credit pool billed at full API rates — $20 for Pro, $100 for Max 5×, $200 for Max 20×, no rollover. Interactive Claude Code terminal sessions are unaffected. IndyDevDan posted a dedicated breakdown video. Action required: claim your credit pool at platform.anthropic.com and decide whether to enable overflow billing before your automated workflows hit the wall tomorrow.</p>
+  <div class="secondary">Also: <a href="https://www.youtube.com/watch?v=l0NL_TPO4JQ">www.youtube.com/watch?v=l0NL_TPO4JQ</a> · <a href="https://findskill.ai/blog/claude-code-pricing-after-june-15-decision-table/">findskill.ai/blog/claude-code-pricing-after-june-15-decision-table/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">video · terminal</div>
+  
+  <div class="recurring">↑ Day 5 — activates tonight at midnight; last window to configure overflow settings</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/NVIDIA/SkillSpector">NVIDIA SkillSpector — Security Scanner for AI Agent Skills (5k Stars, +962 Today)</a></h3>
+  <p class="hook">NVIDIA&#39;s open-source answer to the skill-security gap: SkillSpector scans any AI agent skill (Git repo, URL, zip, directory, or single file) for 64 vulnerability patterns across 16 categories including prompt injection, data exfiltration, privilege escalation, supply chain attacks, and MCP-specific risks. Fast static analysis by default; optional LLM semantic pass for intent evaluation. NVIDIA&#39;s own research stat: 26.1% of the 71k+ skills in the wild contain vulnerabilities, and 5.2% show likely malicious intent. Launched June 13 alongside the NVIDIA Verified Agent Skills catalog of 162 signed skills; OpenClaw is the first agent harness to integrate SkillSpector as a pre-install gate. Risk scores run 0–100 with severity labels; SARIF output supports CI integration.</p>
+  <div class="secondary">Also: <a href="https://developer.nvidia.com/blog/nvidia-verified-agent-skills-provide-capability-governance-for-ai-agents/">developer.nvidia.com/blog/nvidia-verified-agent-skills-provide-capability-governance-for-ai-agents/</a> · <a href="https://openclaw.ai/blog/openclaw-nvidia-skill-security">openclaw.ai/blog/openclaw-nvidia-skill-security</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">mcp · agent · harness · model · viral · marketplace · security</div>
+  <pre><button class="copy">copy</button><code>make install</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://huggingface.co/moonshotai/Kimi-K2.7-Code">Kimi K2.7-Code — Open-Source 1T-Param Model That Outscores Opus 4.8 on MCPMark</a></h3>
+  <p class="hook">Moonshot AI released Kimi K2.7-Code on June 11 under Modified MIT (commercial use permitted). It&#39;s a 1T-parameter MoE with 32B active parameters per token and a 256K context window. The headline benchmark: 81.1% on MCPMark Verified vs Claude Opus 4.8&#39;s 76.4%, making it the first open-weight model to surpass Opus on the tool-use benchmark purpose-built for Claude Code workflows. It also cuts reasoning-token counts ~30% vs K2.6. Quantized GGUF variants (Unsloth) and MLX builds are already available for local inference. The recommended agent shell is Kimi Code CLI (kimi.com/code). With Fable 5 now suspended globally and Opus 4.8 the fallback, K2.7-Code offers a local alternative that benchmarks above the current default.</p>
+  <div class="secondary">Also: <a href="https://www.digitalapplied.com/blog/kimi-k2-7-code-release-open-source-coding-model">www.digitalapplied.com/blog/kimi-k2-7-code-release-open-source-coding-model</a> · <a href="https://huggingface.co/unsloth/Kimi-K2.7-Code-GGUF">huggingface.co/unsloth/Kimi-K2.7-Code-GGUF</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">context · model · token · local · terminal</div>
+  <pre><button class="copy">copy</button><code>huggingface-cli download moonshotai/Kimi-K2.7-Code</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://claude.com/plugins/jfrog">JFrog × Anthropic — Enterprise Supply Chain Governance Baked Into Claude Code</a></h3>
+  <p class="hook">Released June 10 as an official Anthropic partner plugin. The JFrog Platform plugin wires Claude Code into JFrog Artifactory and Xray so that when Claude writes or modifies dependency calls, governance runs inline — package security and CVE scoring, license compliance, and provenance validation all fire before the code leaves the editor. The enforcement is policy-as-code: your org&#39;s existing JFrog policies gate what Claude can pull. Context: supply chain attacks via AI-generated dependencies are the fastest-growing enterprise risk in the MCP era; this is the first production plugin that closes that loop for teams already on JFrog. Available to all Claude Code users at claude.com/plugins/jfrog.</p>
+  <div class="secondary">Also: <a href="https://jfrog.com/press-room/jfrog-and-anthropic-bring-enterprise-grade-software-supply-chain-governance-and-security-to-claude-code/">jfrog.com/press-room/jfrog-and-anthropic-bring-enterprise-grade-software-supply-chain-governance-and-security-to-claude-code/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">mcp · anthropic · security</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/microsoft/skills-for-fabric">microsoft/skills-for-fabric — Official Microsoft Skills + MCP Bundle for Fabric</a></h3>
+  <p class="hook">Microsoft&#39;s first public drop of structured skills and MCP servers that teach coding agents to operate over Microsoft Fabric workloads. Cross-tool by design: works with Claude Code, GitHub Copilot CLI, VS Code, Cursor, Windsurf, and Codex/Jules through root-level CLAUDE.md and .mcp.json configs. Coverage spans SQL Data Warehouse authoring, Spark and Lakehouse, Power BI semantic models, Eventhouse / KQL, Eventstreams, and Dataflows Gen2 — organized into authoring, consumption, and operations bundles. A PowerShell install script handles MCP server registration. Roadmap: Power BI, Data Science, and Real-Time Intelligence recipes are next. The repo is growing fast; early adopters can contribute.</p>
+  <div class="secondary">Also: <a href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-June-2026-Feature-Summary/ba-p/5190690">community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-June-2026-Feature-Summary/ba-p/5190690</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">design · terminal</div>
+  <pre><button class="copy">copy</button><code>irm https://raw.githubusercontent.com/microsoft/skills-for-fabric/main/install.ps1 | iex</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/affaan-m/ECC">ECC v2.0.0 Stable — 211k-Star Agent Harness OS Goes Cross-Harness</a></h3>
+  <p class="hook">The ECC (Everything Claude Code) project reached its v2.0.0 stable milestone in June 2026, graduating from a Claude Code–specific harness to a cross-platform agent OS that runs on Claude Code, Cursor, Codex CLI, OpenCode, Gemini CLI, and Zed. The numbers are now staggering: 211.9k stars, 32.5k forks, 230+ contributors. The system packs 64 specialized agents (delegation, research, code review, security, and more), 262+ skills across 8 programming languages, 84 legacy command shims, continuous instinct extraction that evolves skills from session data, and AgentShield integration with 102 security rules. v2.0.0&#39;s headline change: selective installation — install only the agents and skills you need rather than the full suite, preventing context overload.</p>
+  <div class="secondary">Also: <a href="https://www.augmentcode.com/learn/everything-claude-code-github">www.augmentcode.com/learn/everything-claude-code-github</a></div>
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">harness · subagent · terminal · security · review</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Piebald-AI/tweakcc">tweakcc (Piebald-AI) — Customize Claude Code&#39;s System Prompts and Unlock Unreleased Features</a></h3>
+  <p class="hook">From the team that tracks every Claude Code system prompt change within minutes of release: tweakcc is a utility layer that lets you customize Claude Code&#39;s system prompts, build custom toolsets, add input pattern highlighters, change thinking verbs and spinner text, restyle the input box and user messages, and — the headline feature — unlock private and unreleased Claude Code capabilities that exist in the binary but aren&#39;t yet surfaced in the official UI. Supports AGENTS.md, works on all platforms and both native and npm installs. Companion to Piebald-AI/claude-code-system-prompts (the transparency tracker); together the two repos give the most complete external view of Claude Code&#39;s internals available.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Piebald-AI/claude-code-system-prompts">claude-code-system-prompts (Piebald-AI) — Every System Prompt, Tool Description, and Sub-Agent Prompt Across All Versions</a></h3>
+  <p class="hook">With Fable 5 suspended and everyone on Opus 4.8, understanding exactly what system prompt Claude Code is sending to the model matters more than ever. Piebald-AI tracks all parts of Claude Code&#39;s system prompt — 27 builtin tool descriptions, Plan/Explore/Task sub-agent prompts, CLAUDE.md injection, compaction prompts, WebFetch, Bash, security review, and agent creation prompts — updated within minutes of each release. The repo expanded from 350 to 515 documented prompt components (+165) when v2.1.177 shipped, making it the most complete external view of Claude Code&#39;s prompt architecture. 210 versions tracked since v2.0.14. The CHANGELOG.md shows exactly what changed between versions.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">security</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/alirezarezvani/claude-skills">alirezarezvani/claude-skills — 337 Skills Across 17 Domains, v2.10.3 (June 10)</a></h3>
+  <p class="hook">One of the most comprehensive single-author skill collections: 337 SKILL.md files organized across 17 domains — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial and finance, and daily productivity. v2.10.3 (June 10) added new C-suite advisory skills and expanded the Rust and Go engineering bundles. The 30+ included agents handle specialized delegation; 70+ custom slash commands cover the full workflow from ideation to shipping. Cross-agent by design: works with Claude Code, Codex CLI, Gemini CLI, Cursor, and 8 more coding agents through a common SKILL.md format.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span>  </div>
+  <div class="tags">design · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
