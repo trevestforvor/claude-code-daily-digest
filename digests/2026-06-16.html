@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — June 16, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — June 16, 2026</h1><p class="sub">Top 11 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://thenewstack.io/anthropic-pauses-claude-agent-sdk-subscription-change/">Anthropic Reverses Agent SDK Credit Pool — &#39;Nothing Changes for Now&#39;</a></h3>
+  <p class="hook">Anthropic paused its Agent SDK credit pool change on June 15 — the exact day it was scheduled to go live. In a message to affected developers, Anthropic said &#39;Nothing changes for now,&#39; leaving Agent SDK, claude -p, GitHub Actions, and third-party app usage drawing from existing subscription limits rather than the new $20–$200 tiered credit pool. The Decoder reports the reversal was driven by a brewing price war with OpenAI (Sam Altman offered two months of free Codex to Anthropic switchers on May 14, the same day Anthropic announced the change), an upcoming IPO, and user backlash. Anthropic says it&#39;s working to &#39;better align the plan with actual usage patterns&#39; — no new date set.</p>
+  <div class="secondary">Also: <a href="https://the-decoder.com/anthropic-backs-off-unpopular-billing-overhaul-as-price-war-with-openai-looms/">the-decoder.com/anthropic-backs-off-unpopular-billing-overhaul-as-price-war-with-openai-looms/</a> · <a href="https://support.claude.com/en/articles/15036540-use-the-claude-agent-sdk-with-your-claude-plan">support.claude.com/en/articles/15036540-use-the-claude-agent-sdk-with-your-claude-plan</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
+  
+  <div class="recurring">↑ Day 7 (reversed) — credit pools paused on the day they went live; subscription limits unchanged for now</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://techjacksolutions.com/ai-brief/fable-5-refund-window-closes-june-20-what-anthropics-billing/">Fable 5 Ban Day 4 — Refund Window Closes June 20, Polymarket Markets Live</a></h3>
+  <p class="hook">The Fable 5 and Mythos 5 export ban is in its fourth day with no lift announced. The most actionable update for affected subscribers: Anthropic&#39;s refund window closes June 20 at 11:59 PM — eligibility requires cancelling your plan by then and having upgraded between June 9–13. EU customers are reporting higher refund success rates than US customers. Polymarket prediction markets are now running on two questions: whether the US rescinds the foreigner ban and whether Fable 5 is restored for US customers by various dates. A letter signed by 100+ security experts calling for rescission has been submitted to the Commerce Department. Fable 5 was originally set to move to a paid tier June 22 — that deadline is now moot.</p>
+  <div class="secondary">Also: <a href="https://polymarket.com/event/us-government-rescinds-claude-fable-5-foreigner-ban-by-20260613202427937">polymarket.com/event/us-government-rescinds-claude-fable-5-foreigner-ban-by-20260613202427937</a> · <a href="https://polymarket.com/event/claude-fable-5-restored-for-us-customers-by-20260613193753196">polymarket.com/event/claude-fable-5-restored-for-us-customers-by-20260613193753196</a> · <a href="https://explainx.ai/blog/when-will-fable-5-be-available-again-2026">explainx.ai/blog/when-will-fable-5-be-available-again-2026</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">security</div>
+  
+  <div class="recurring">↑ Day 4 — refund deadline June 20 at 11:59 PM; Polymarket markets live; 100+ security experts petition for rescission</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/farion1231/cc-switch">CC Switch v3.16.3 — Desktop All-in-One Manager for Every Major Agent CLI</a></h3>
+  <p class="hook">103k GitHub stars, v3.16.3 released June 14. CC Switch is a cross-platform desktop app that manages Claude Code, Claude Desktop, Codex, Gemini CLI, OpenCode, OpenClaw, and Hermes Agent from a single interface — 50+ built-in provider presets (AWS Bedrock, NVIDIA NIM, community relays) with one-click switching, unified MCP + skills panel, cloud config sync via Dropbox/OneDrive/iCloud/WebDAV, local proxy with auto-failover, usage and cost tracking dashboard, and a session history browser that spans all supported tools. v3.15.0 promoted Claude Desktop to a first-class managed surface; v3.16.3 adds Local Routing and Usage Dashboard visibility fixes. macOS: brew install --cask cc-switch.</p>
+  <div class="secondary">Also: <a href="https://ccswitch.io/">ccswitch.io/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">mcp · cost · proxy · terminal · browser</div>
+  <pre><button class="copy">copy</button><code>brew install --cask cc-switch</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/thedotmack/claude-mem">claude-mem v13.6.1 — Persistent Memory Compression for Every Agent</a></h3>
+  <p class="hook">82.7k stars, v13.6.1 shipped June 15 (284 total releases). claude-mem captures everything an agent does during a session, compresses it with AI, and injects relevant context back at the start of future sessions — closing the cold-start problem for long-running projects. Storage: SQLite for sessions and observations, ChromaDB for hybrid semantic + keyword search. Five lifecycle hooks (SessionStart, PostToolUse, SessionEnd, and more). Web viewer UI streams memory in real time at localhost:37777; natural-language mem-search skill queries it in-session. Privacy: wrap sensitive data in &lt;private&gt; tags to exclude from capture. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode.</p>
+  <div class="secondary">Also: <a href="https://www.termdock.com/blog/claude-mem-persistent-memory-claude-code">www.termdock.com/blog/claude-mem-persistent-memory-claude-code</a></div>
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">skill · memory · viral</div>
+  <pre><button class="copy">copy</button><code>npx claude-mem install</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.178 (June 15) — Tool Parameter Matching, Nested Skills, Auto-Mode Security Fix</a></h3>
+  <p class="hook">Released June 15 with 22 changes. The headline feature: Tool(param:value) syntax in permission rules lets you match on a tool&#39;s input parameters (with * wildcard) — e.g., deny Agent(model:opus) to block Opus subagents specifically, or allow Bash(command:git*) to whitelist only git commands. Nested .claude/ support: skills in nested directories auto-load, name clashes become dir:name, and workflow saves target the closest .claude/. Auto-mode security fix: subagent spawns are now evaluated by the classifier before launch, closing a gap where blocked actions could be requested via subagent without review. Other fixes: OOM crash from stale WebSocket env vars, Chrome auth token account mismatch, compaction not honoring --fallback-model, vim undo merging, VSCode IME dismissal cancelling tasks.</p>
+  <div class="secondary">Also: <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.178">github.com/anthropics/claude-code/releases/tag/v2.1.178</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">subagent · browser · security</div>
+  <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/code-yeongyu/oh-my-openagent">oh-my-openagent — The Tokenmaxxer&#39;s Harness for Complex Codebases</a></h3>
+  <p class="hook">62.5k stars, updated June 16. oh-my-openagent (formerly oh-my-opencode) is a model-agnostic multi-agent harness built for developers who push agents to their token and context limits — the &#39;tokenmaxxer&#39; framing means it minimizes wasted tokens through specialized routing. Architecture: three layers — Prometheus/Metis handle planning, Atlas handles orchestration, Sisyphus-Junior plus nine specialized agents (Oracle, Librarian, Frontend, and more) handle execution, each with model-specific prompt tuning. Provider-agnostic: Claude, GPT, Gemini, Grok, local. 1.6M+ downloads as of April 2026. Especially relevant now: with Fable 5 suspended and Opus 4.8 the only Claude option, OMO&#39;s model routing lets you minimize Opus spend on sub-tasks.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">frontend · agent · harness · subagent · token · viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Lum1104/Understand-Anything">Understand-Anything — Turn Any Codebase Into an Interactive Knowledge Graph</a></h3>
+  <p class="hook">~61k stars, updated June 16. Understand-Anything runs a multi-agent pipeline over your project — analyzing every file, function, class, and dependency — then produces an interactive graph dashboard you can explore, search, and query in natural language. The tagline &#39;graphs that teach &gt; graphs that impress&#39; is the design principle: the graph is queryable, not just visual. Ships as a Claude Code plugin plus cross-agent manifests for Codex, Cursor, Copilot, and Gemini CLI. Companion site understand-anything.com. Useful for onboarding onto unfamiliar codebases or auditing AI-generated code before shipping.</p>
+  <div class="secondary">Also: <a href="https://understand-anything.com/">understand-anything.com/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">design · agent · memory · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://docs.anthropic.com/en/api/getting-started">Claude API: claude-sonnet-4-20250514 and claude-opus-4-20250514 Retired June 15</a></h3>
+  <p class="hook">Two original Claude 4 release models were retired from the Claude API on June 15: claude-sonnet-4-20250514 and claude-opus-4-20250514 now return errors on all API calls. The practical migration: update to claude-sonnet-4-6 (claude-sonnet-4-6-20260620 or alias) and claude-opus-4-8. For teams with hardcoded model IDs in Agent SDK calls, GitHub Actions, or automation workflows — this is likely the cause of any 404/invalid model errors you&#39;re seeing today. Timing note: both retirements hit on the same day as the billing change reversal, so if your workflows broke today, check model IDs before billing.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
+  <pre><button class="copy">copy</button><code>Update model ID in your config to claude-sonnet-4-6 or claude-opus-4-8</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/K-Dense-AI/scientific-agent-skills">scientific-agent-skills — 147 Skills + 100+ Scientific Databases for Any Agent</a></h3>
+  <p class="hook">28.4k stars, v2.52.0 released June 12. K-Dense-AI&#39;s scientific skills library turns any Claude Code (or Codex/Cursor/Pi/Antigravity) session into a research assistant: 147 ready-to-use skills across genomics, drug discovery, clinical research, and materials science, plus a unified database-lookup skill that queries 78 public scientific databases — PubChem, ChEMBL, UniProt, AlphaFold, ClinVar, FDA, KEGG, Reactome, FRED, SEC EDGAR, and more. 70+ optimized Python packages pre-configured (RDKit, Scanpy, PyTorch Lightning, scikit-learn). Used by 160,000+ scientists worldwide. Install the full suite or individual domain bundles.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add K-Dense-AI/scientific-agent-skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/OthmanAdi/planning-with-files">planning-with-files — Manus-Style Crash-Proof Planning for 60+ Agents</a></h3>
+  <p class="hook">23.4k stars, 96.7% pass rate on formal benchmarks (v2.21.0 evaluation), updated June 15. planning-with-files solves the most common long-running agent failure mode: plans that evaporate when context fills or /clear is called. It stores plans in three persistent markdown files (task_plan.md, findings.md, progress.md) that survive context resets, crashes, and agent restarts. Implements the Manus workflow pattern — the approach behind Meta&#39;s $2B acquisition. PreToolUse hooks re-inject the plan before every agent decision; a deterministic completion gate prevents agents from reporting done before all tasks are checked off. Adds /plan and /plan:status commands to Claude Code. Works across 60+ agents via the SKILL.md standard.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add OthmanAdi/planning-with-files --skill planning-with-files -g</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/nanocoai/nanoclaw">NanoClaw — Container-Isolated OpenClaw Alternative on the Agent SDK</a></h3>
+  <p class="hook">29.9k stars. NanoClaw is a lightweight Claude agent framework that runs on Anthropic&#39;s official Agent SDK — which means it uses Claude Code&#39;s full toolset — inside Docker/micro VM/Apple Container sandboxes. The design philosophy is a direct response to OpenClaw&#39;s ~500K lines of code and 53 config files: NanoClaw provides the same core functionality (WhatsApp, Telegram, Discord, Slack, Teams, Gmail, iMessage, Matrix, WeChat, Linear, GitHub) in a codebase small enough to fork and understand. Each group gets its own CLAUDE.md memory and isolated filesystem. Headline capability: Agent Swarms — spin up a team of agents that collaborate inside your chat channel. Per-agent credential vault via OneCLI.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">design · agent · memory · anthropic · viral · security</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/nanocoai/nanoclaw.git nanoclaw-v2 &amp;&amp; cd nanoclaw-v2 &amp;&amp; bash nanoclaw.sh</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
