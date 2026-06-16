@@ -1,0 +1,111 @@
+[
+  {
+    "slug": "agent-sdk-billing-reversed",
+    "name": "Anthropic Reverses Agent SDK Credit Pool — 'Nothing Changes for Now'",
+    "primary_url": "https://thenewstack.io/anthropic-pauses-claude-agent-sdk-subscription-change/",
+    "secondary_urls": [
+      "https://the-decoder.com/anthropic-backs-off-unpopular-billing-overhaul-as-price-war-with-openai-looms/",
+      "https://support.claude.com/en/articles/15036540-use-the-claude-agent-sdk-with-your-claude-plan"
+    ],
+    "hook": "Anthropic paused its Agent SDK credit pool change on June 15 — the exact day it was scheduled to go live. In a message to affected developers, Anthropic said 'Nothing changes for now,' leaving Agent SDK, claude -p, GitHub Actions, and third-party app usage drawing from existing subscription limits rather than the new $20–$200 tiered credit pool. The Decoder reports the reversal was driven by a brewing price war with OpenAI (Sam Altman offered two months of free Codex to Anthropic switchers on May 14, the same day Anthropic announced the change), an upcoming IPO, and user backlash. Anthropic says it's working to 'better align the plan with actual usage patterns' — no new date set.",
+    "categories": ["cost", "anthropic"],
+    "recurring_note": "↑ Day 7 (reversed) — credit pools paused on the day they went live; subscription limits unchanged for now"
+  },
+  {
+    "slug": "fable5-refund-deadline-june20",
+    "name": "Fable 5 Ban Day 4 — Refund Window Closes June 20, Polymarket Markets Live",
+    "primary_url": "https://techjacksolutions.com/ai-brief/fable-5-refund-window-closes-june-20-what-anthropics-billing/",
+    "secondary_urls": [
+      "https://polymarket.com/event/us-government-rescinds-claude-fable-5-foreigner-ban-by-20260613202427937",
+      "https://polymarket.com/event/claude-fable-5-restored-for-us-customers-by-20260613193753196",
+      "https://explainx.ai/blog/when-will-fable-5-be-available-again-2026"
+    ],
+    "hook": "The Fable 5 and Mythos 5 export ban is in its fourth day with no lift announced. The most actionable update for affected subscribers: Anthropic's refund window closes June 20 at 11:59 PM — eligibility requires cancelling your plan by then and having upgraded between June 9–13. EU customers are reporting higher refund success rates than US customers. Polymarket prediction markets are now running on two questions: whether the US rescinds the foreigner ban and whether Fable 5 is restored for US customers by various dates. A letter signed by 100+ security experts calling for rescission has been submitted to the Commerce Department. Fable 5 was originally set to move to a paid tier June 22 — that deadline is now moot.",
+    "categories": ["anthropic", "viral"],
+    "recurring_note": "↑ Day 4 — refund deadline June 20 at 11:59 PM; Polymarket markets live; 100+ security experts petition for rescission"
+  },
+  {
+    "slug": "cc-switch",
+    "name": "CC Switch v3.16.3 — Desktop All-in-One Manager for Every Major Agent CLI",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "secondary_urls": [
+      "https://ccswitch.io/"
+    ],
+    "hook": "103k GitHub stars, v3.16.3 released June 14. CC Switch is a cross-platform desktop app that manages Claude Code, Claude Desktop, Codex, Gemini CLI, OpenCode, OpenClaw, and Hermes Agent from a single interface — 50+ built-in provider presets (AWS Bedrock, NVIDIA NIM, community relays) with one-click switching, unified MCP + skills panel, cloud config sync via Dropbox/OneDrive/iCloud/WebDAV, local proxy with auto-failover, usage and cost tracking dashboard, and a session history browser that spans all supported tools. v3.15.0 promoted Claude Desktop to a first-class managed surface; v3.16.3 adds Local Routing and Usage Dashboard visibility fixes. macOS: brew install --cask cc-switch.",
+    "categories": ["plugin", "viral"],
+    "install": "brew install --cask cc-switch"
+  },
+  {
+    "slug": "claude-mem",
+    "name": "claude-mem v13.6.1 — Persistent Memory Compression for Every Agent",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "secondary_urls": [
+      "https://www.termdock.com/blog/claude-mem-persistent-memory-claude-code"
+    ],
+    "hook": "82.7k stars, v13.6.1 shipped June 15 (284 total releases). claude-mem captures everything an agent does during a session, compresses it with AI, and injects relevant context back at the start of future sessions — closing the cold-start problem for long-running projects. Storage: SQLite for sessions and observations, ChromaDB for hybrid semantic + keyword search. Five lifecycle hooks (SessionStart, PostToolUse, SessionEnd, and more). Web viewer UI streams memory in real time at localhost:37777; natural-language mem-search skill queries it in-session. Privacy: wrap sensitive data in <private> tags to exclude from capture. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode.",
+    "categories": ["plugin", "cost"],
+    "install": "npx claude-mem install"
+  },
+  {
+    "slug": "claude-code-v2-1-178",
+    "name": "Claude Code v2.1.178 (June 15) — Tool Parameter Matching, Nested Skills, Auto-Mode Security Fix",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "secondary_urls": [
+      "https://github.com/anthropics/claude-code/releases/tag/v2.1.178"
+    ],
+    "hook": "Released June 15 with 22 changes. The headline feature: Tool(param:value) syntax in permission rules lets you match on a tool's input parameters (with * wildcard) — e.g., deny Agent(model:opus) to block Opus subagents specifically, or allow Bash(command:git*) to whitelist only git commands. Nested .claude/ support: skills in nested directories auto-load, name clashes become dir:name, and workflow saves target the closest .claude/. Auto-mode security fix: subagent spawns are now evaluated by the classifier before launch, closing a gap where blocked actions could be requested via subagent without review. Other fixes: OOM crash from stale WebSocket env vars, Chrome auth token account mismatch, compaction not honoring --fallback-model, vim undo merging, VSCode IME dismissal cancelling tasks.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "oh-my-openagent",
+    "name": "oh-my-openagent — The Tokenmaxxer's Harness for Complex Codebases",
+    "primary_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "hook": "62.5k stars, updated June 16. oh-my-openagent (formerly oh-my-opencode) is a model-agnostic multi-agent harness built for developers who push agents to their token and context limits — the 'tokenmaxxer' framing means it minimizes wasted tokens through specialized routing. Architecture: three layers — Prometheus/Metis handle planning, Atlas handles orchestration, Sisyphus-Junior plus nine specialized agents (Oracle, Librarian, Frontend, and more) handle execution, each with model-specific prompt tuning. Provider-agnostic: Claude, GPT, Gemini, Grok, local. 1.6M+ downloads as of April 2026. Especially relevant now: with Fable 5 suspended and Opus 4.8 the only Claude option, OMO's model routing lets you minimize Opus spend on sub-tasks.",
+    "categories": ["plugin", "cost"],
+    "install": "See README"
+  },
+  {
+    "slug": "understand-anything",
+    "name": "Understand-Anything — Turn Any Codebase Into an Interactive Knowledge Graph",
+    "primary_url": "https://github.com/Lum1104/Understand-Anything",
+    "secondary_urls": [
+      "https://understand-anything.com/"
+    ],
+    "hook": "~61k stars, updated June 16. Understand-Anything runs a multi-agent pipeline over your project — analyzing every file, function, class, and dependency — then produces an interactive graph dashboard you can explore, search, and query in natural language. The tagline 'graphs that teach > graphs that impress' is the design principle: the graph is queryable, not just visual. Ships as a Claude Code plugin plus cross-agent manifests for Codex, Cursor, Copilot, and Gemini CLI. Companion site understand-anything.com. Useful for onboarding onto unfamiliar codebases or auditing AI-generated code before shipping.",
+    "categories": ["plugin"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-model-retirement-june15",
+    "name": "Claude API: claude-sonnet-4-20250514 and claude-opus-4-20250514 Retired June 15",
+    "primary_url": "https://docs.anthropic.com/en/api/getting-started",
+    "hook": "Two original Claude 4 release models were retired from the Claude API on June 15: claude-sonnet-4-20250514 and claude-opus-4-20250514 now return errors on all API calls. The practical migration: update to claude-sonnet-4-6 (claude-sonnet-4-6-20260620 or alias) and claude-opus-4-8. For teams with hardcoded model IDs in Agent SDK calls, GitHub Actions, or automation workflows — this is likely the cause of any 404/invalid model errors you're seeing today. Timing note: both retirements hit on the same day as the billing change reversal, so if your workflows broke today, check model IDs before billing.",
+    "categories": ["anthropic"],
+    "install": "Update model ID in your config to claude-sonnet-4-6 or claude-opus-4-8"
+  },
+  {
+    "slug": "scientific-agent-skills",
+    "name": "scientific-agent-skills — 147 Skills + 100+ Scientific Databases for Any Agent",
+    "primary_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "hook": "28.4k stars, v2.52.0 released June 12. K-Dense-AI's scientific skills library turns any Claude Code (or Codex/Cursor/Pi/Antigravity) session into a research assistant: 147 ready-to-use skills across genomics, drug discovery, clinical research, and materials science, plus a unified database-lookup skill that queries 78 public scientific databases — PubChem, ChEMBL, UniProt, AlphaFold, ClinVar, FDA, KEGG, Reactome, FRED, SEC EDGAR, and more. 70+ optimized Python packages pre-configured (RDKit, Scanpy, PyTorch Lightning, scikit-learn). Used by 160,000+ scientists worldwide. Install the full suite or individual domain bundles.",
+    "categories": ["skill"],
+    "install": "npx skills add K-Dense-AI/scientific-agent-skills"
+  },
+  {
+    "slug": "planning-with-files",
+    "name": "planning-with-files — Manus-Style Crash-Proof Planning for 60+ Agents",
+    "primary_url": "https://github.com/OthmanAdi/planning-with-files",
+    "hook": "23.4k stars, 96.7% pass rate on formal benchmarks (v2.21.0 evaluation), updated June 15. planning-with-files solves the most common long-running agent failure mode: plans that evaporate when context fills or /clear is called. It stores plans in three persistent markdown files (task_plan.md, findings.md, progress.md) that survive context resets, crashes, and agent restarts. Implements the Manus workflow pattern — the approach behind Meta's $2B acquisition. PreToolUse hooks re-inject the plan before every agent decision; a deterministic completion gate prevents agents from reporting done before all tasks are checked off. Adds /plan and /plan:status commands to Claude Code. Works across 60+ agents via the SKILL.md standard.",
+    "categories": ["skill", "cost"],
+    "install": "npx skills add OthmanAdi/planning-with-files --skill planning-with-files -g"
+  },
+  {
+    "slug": "nanoclaw",
+    "name": "NanoClaw — Container-Isolated OpenClaw Alternative on the Agent SDK",
+    "primary_url": "https://github.com/nanocoai/nanoclaw",
+    "hook": "29.9k stars. NanoClaw is a lightweight Claude agent framework that runs on Anthropic's official Agent SDK — which means it uses Claude Code's full toolset — inside Docker/micro VM/Apple Container sandboxes. The design philosophy is a direct response to OpenClaw's ~500K lines of code and 53 config files: NanoClaw provides the same core functionality (WhatsApp, Telegram, Discord, Slack, Teams, Gmail, iMessage, Matrix, WeChat, Linear, GitHub) in a codebase small enough to fork and understand. Each group gets its own CLAUDE.md memory and isolated filesystem. Headline capability: Agent Swarms — spin up a team of agents that collaborate inside your chat channel. Per-agent credential vault via OneCLI.",
+    "categories": ["plugin", "cost"],
+    "install": "git clone https://github.com/nanocoai/nanoclaw.git nanoclaw-v2 && cd nanoclaw-v2 && bash nanoclaw.sh"
+  }
+]
