@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — June 17, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — June 17, 2026</h1><p class="sub">Top 15 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/">Figma Skills for Claude Code</a></h3>
+  <p class="hook">Figma opened its canvas to AI agents in March 2026, shipping an official Skills collection that teaches Claude Code how to use design tokens, variables, styles, and components via the /figma-use foundational skill. Skills are bundled automatically when you install the Figma connector at claude.com/connectors/figma, making the full design system inspectable in-session. The Figma blog&#39;s &#39;Agents, Meet the Figma Canvas&#39; post remains the most-shared Figma-Claude integration piece of the quarter.</p>
+  <div class="secondary">Also: <a href="https://www.figma.com/community/skills">www.figma.com/community/skills</a> · <a href="https://claude.com/connectors/figma">claude.com/connectors/figma</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">frontend · skill · token</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/AppGram/agentnotch">AgentNotch</a></h3>
+  <p class="hook">AgentNotch is a free, MIT-licensed macOS menu-bar app that lives in the system notch and streams a live feed of every Claude Code and OpenAI Codex tool call — what the agent is thinking, which files it reads, which tools it executes — all without leaving your editor. Built by AppGram with zero telemetry; v1.0.0 is available in GitHub Releases. Sparked a wave of notch-ambient agent monitors this week (AgentPeek, Notchi) as multi-session parallel development becomes the new normal.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://agentpeek.app">AgentPeek</a></h3>
+  <p class="hook">AgentPeek ($15 one-time) puts Claude Code and Codex into the Mac notch and menu bar and adds token usage dashboards (5-hour and 7-day rolling totals), live permission-prompt surfacing, and diffs per session. Built natively for Apple Silicon, it wires itself via lightweight hooks on first launch and tracks any session from Ghostty, tmux, iTerm, or VS Code terminal. For teams managing multiple parallel agents, the token-burn visibility alone pays back the cost quickly.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">token · terminal</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://claude.com/blog/introducing-dynamic-workflows-in-claude-code">Claude Code /effort ultracode</a></h3>
+  <p class="hook">Typing /effort ultracode in a Claude Code session sends xhigh reasoning effort to the model and triggers automatic Dynamic Workflow orchestration — Claude writes its own JavaScript orchestration script, fans out up to ~199 parallel subagents, cross-checks results, and returns a single coordinated answer. Available on Max, Team, and eligible Enterprise plans; also via the API. Users report it can consume the entire session budget on a single substantive task, so Anthropic recommends scoping carefully before invoking. Extensive week-3 tutorial coverage across Developers Digest, StackNotice, and LaoZhang AI Blog.</p>
+  <div class="secondary">Also: <a href="https://www.developersdigest.tech/blog/ultracode-effort-level-explained">www.developersdigest.tech/blog/ultracode-effort-level-explained</a> · <a href="https://stacknotice.com/blog/claude-code-ultrathink-ultracode-effort-guide-2026">stacknotice.com/blog/claude-code-ultrathink-ultracode-effort-guide-2026</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">official</span>  </div>
+  <div class="tags">anthropic · education</div>
+  <pre><button class="copy">copy</button><code>/effort ultracode</code></pre>
+  <div class="recurring">↑ Day 5 — Dynamic Workflows (June 13) renamed to first-class /effort ultracode setting; heavier real-world cost reports surfacing</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://www.youtube.com/watch?v=nPkoRJMIgmk">Simon Scrapes: &#39;You&#39;re Only Using 10% of Claude Code&#39;</a></h3>
+  <p class="hook">Posted yesterday (June 16) by @simonscrapes (71.8K subs), this video argues most users run Claude Code skills in isolation when the real power is skill chaining — one skill builds brand context, another researches trends via CrawlForge MCP, another writes content, another publishes on a schedule. Follows the channel&#39;s 163K-view &#39;Claude Code 2.0&#39; breakdown and is the second video in a high-velocity week. CrawlForge MCP gets an explicit call-out as the recommended scraping layer.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">video · mcp · skill</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.youtube.com/watch?v=IShdbDP4Jgg">Chase AI: Top 10 Claude Code Plugins — June &#39;26</a></h3>
+  <p class="hook">Chase AI (@Chase-H-AI, 109K+ subs) released its monthly ranked plugin list for June 2026, with picks including the Codex plugin, awesome-design.md, and NotebookLM CLI. Monthly ranked-list videos from Chase AI are the de-facto plugin discovery mechanism for the non-engineering Claude Code audience; the June edition has a design-workflow weighting reflecting the Figma and design-agent wave. Chase AI&#39;s &#39;Claude Code Has Evolved&#39; post from May 14 set the table for this update.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">design · plugin · terminal</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/multica-ai/andrej-karpathy-skills">Karpathy CLAUDE.md — 144K Stars Milestone</a></h3>
+  <p class="hook">A June 2026 Medium article (AI Trends 24) marks the 144,000-star milestone for Forrest Chang&#39;s single CLAUDE.md file derived from Andrej Karpathy&#39;s January 2026 LLM coding frustrations. The file encodes four behavioral rules — Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution — with zero lines of code. Combined with the original personal repo, total stars top 220K across both accounts, making it the most-starred Claude Code skill by a wide margin and the fastest-growing AI workflow repo in GitHub history.</p>
+  <div class="secondary">Also: <a href="https://medium.com/@aitrends24/a-github-repo-with-one-file-just-hit-144-000-stars-its-a-claude-skill-d82f8b6fa789">medium.com/@aitrends24/a-github-repo-with-one-file-just-hit-144-000-stars-its-a-claude-skill-d82f8b6fa789</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">skill · model</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://claude.com/blog/agent-view-in-claude-code">Claude Code Agent View</a></h3>
+  <p class="hook">Run `claude agents` from any terminal to open a full-screen CLI dashboard showing every background session — what&#39;s running, what needs your input, last response, and done count. Dispatch new agents, send existing ones to the background, and jump back in only when one needs you. Requires Claude Code v2.1.139+ and is in Research Preview on Pro, Max, Team, Enterprise, and API. CloudZero and Geeky Gadgets both published explainers this week as more teams hit the 3+ parallel-agents daily-driver threshold.</p>
+  <div class="secondary">Also: <a href="https://code.claude.com/docs/en/agent-view">code.claude.com/docs/en/agent-view</a></div>
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">official</span>  </div>
+  <div class="tags">terminal</div>
+  <pre><button class="copy">copy</button><code>claude agents</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mysleekdesigns/crawlforge-mcp">CrawlForge MCP</a></h3>
+  <p class="hook">CrawlForge MCP bundles 20 web scraping and content extraction tools as MCP functions callable directly from Claude Code — from fast static fetches (fetch_url, 1 credit) to headless JS-rendered browser scraping (scrape_with_actions, 5 credits) and stealth_mode for anti-bot sites. Free tier includes 1,000 credits with no credit card required; Node.js 18+ is the only system dependency. Explicitly named by @simonscrapes in yesterday&#39;s &#39;You&#39;re Only Using 10%&#39; video as the recommended scraping layer for skill pipelines.</p>
+  <div class="secondary">Also: <a href="https://www.youtube.com/watch?v=nPkoRJMIgmk">www.youtube.com/watch?v=nPkoRJMIgmk</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">video · skill · browser</div>
+  <pre><button class="copy">copy</button><code>npm install -g crawlforge-mcp-server &amp;&amp; npx crawlforge-setup</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/firecrawl/firecrawl-claude-plugin">Firecrawl Claude Plugin</a></h3>
+  <p class="hook">The official Firecrawl plugin for Claude Code adds the Firecrawl CLI as a bundled skill, giving Claude the ability to scrape, search, crawl, and map the web with automatic JavaScript rendering, anti-bot handling, and proxy rotation included. Firecrawl published a step-by-step tutorial &#39;How to Create a Claude Code Skill: Web Scraping Example with Firecrawl&#39; driving installs this week. A complementary MCP server (firecrawl/firecrawl-mcp-server) handles Cursor and other LLM clients.</p>
+  <div class="secondary">Also: <a href="https://www.firecrawl.dev/blog/claude-code-skill">www.firecrawl.dev/blog/claude-code-skill</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">skill · plugin · model · proxy · terminal · scraping · education</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://simonwillison.net/">Simon Willison: Cloudflare MCP + Claude Code (June 16 TIL)</a></h3>
+  <p class="hook">Simon Willison published a TIL on June 16 documenting his attempt to use the Cloudflare MCP server with Claude Code to edit firewall rules — the MCP couldn&#39;t handle the specific rules, so he had Claude Code fall back to the Cloudflare API directly. The post illustrates a practical pattern: try MCP first, degrade gracefully to API when the connector is incomplete. Willison has 117+ claude-code-tagged posts; his TILs are among the earliest signals of real-world MCP integration edges.</p>
+  <div class="secondary">Also: <a href="https://merge.dev/blog/cloudflare-mcp-claude-code">merge.dev/blog/cloudflare-mcp-claude-code</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/claude-code-action">anthropics/claude-code-action</a></h3>
+  <p class="hook">Anthropic&#39;s official GitHub Action lets Claude Code respond to `@claude` mentions in PRs and issues, auto-implement code changes, and run as a workflow job. Set up via `/install-github-app` inside Claude Code. Supports Anthropic direct API plus Amazon Bedrock, Google Vertex AI, and Microsoft Foundry. Following Microsoft Security Blog&#39;s June 5 writeup about a now-mitigated CI/CD secrets-exposure risk in earlier versions, the official action has renewed interest as the hardened, vendor-maintained path for agentic CI.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">official</span>  </div>
+  <div class="tags">agent · anthropic · security</div>
+  <pre><button class="copy">copy</button><code>/install-github-app (inside Claude Code)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.youtube.com/watch?v=C2Izj7hxIlE">Simon Scrapes: &#39;Claude Code Masterclass for People Who Don&#39;t Code&#39;</a></h3>
+  <p class="hook">Published June 14 (3 days ago) by @simonscrapes, this 71.8K-sub channel entry walks a non-technical audience through seven progressive levels of Claude Code proficiency — from basic prompting through slash commands, skills, hooks, and MCP servers, up to multi-agent pipelines that run autonomously. Running back-to-back with the &#39;You&#39;re Only Using 10%&#39; video posted two days later, the pair forms the most substantial Claude Code education drop this week and is driving new-user onboarding at scale.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">video · mcp · agent</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/quemsah/awesome-claude-plugins">quemsah/awesome-claude-plugins</a></h3>
+  <p class="hook">An automated collection of Claude Code plugin adoption metrics across GitHub repositories, built on n8n workflows. Tracks install counts, star velocities, and weekly rankings, essentially providing real-time analytics for the Claude Code plugin marketplace. Unlike static curated lists, it refreshes automatically as the ecosystem evolves. A useful meta-layer for developers deciding what to install or what niche to build into next.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">plugin · marketplace</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.179</a></h3>
+  <p class="hook">June 16 release fixes mid-stream connection drops (partial responses now preserved instead of raw errors, spinner no longer gets stuck), WSL2 mouse-wheel scrolling under Windows Terminal and VS Code (regression from 2.1.172), a Linux sandbox denyRead/allowRead glob bug that made the Bash tool description enormous, and the feedback survey immediately capturing single-digit replies as a session rating. Also fixes Ctrl+O not showing subagent transcripts and remote session background tasks showing as &#39;still running&#39; between turns.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">official</span>  </div>
+  <div class="tags">subagent · terminal</div>
+  
+  <div class="recurring">↑ Day 2 — rapid daily bug-fix train continues; v2.1.178 covered yesterday</div>
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
