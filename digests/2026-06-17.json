@@ -1,0 +1,126 @@
+[
+  {
+    "slug": "figma-skills-claude-code",
+    "name": "Figma Skills for Claude Code",
+    "primary_url": "https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/",
+    "secondary_urls": ["https://www.figma.com/community/skills", "https://claude.com/connectors/figma"],
+    "hook": "Figma opened its canvas to AI agents in March 2026, shipping an official Skills collection that teaches Claude Code how to use design tokens, variables, styles, and components via the /figma-use foundational skill. Skills are bundled automatically when you install the Figma connector at claude.com/connectors/figma, making the full design system inspectable in-session. The Figma blog's 'Agents, Meet the Figma Canvas' post remains the most-shared Figma-Claude integration piece of the quarter.",
+    "categories": ["design", "mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "agentnotch",
+    "name": "AgentNotch",
+    "primary_url": "https://github.com/AppGram/agentnotch",
+    "hook": "AgentNotch is a free, MIT-licensed macOS menu-bar app that lives in the system notch and streams a live feed of every Claude Code and OpenAI Codex tool call — what the agent is thinking, which files it reads, which tools it executes — all without leaving your editor. Built by AppGram with zero telemetry; v1.0.0 is available in GitHub Releases. Sparked a wave of notch-ambient agent monitors this week (AgentPeek, Notchi) as multi-session parallel development becomes the new normal.",
+    "categories": ["design"]
+  },
+  {
+    "slug": "agentpeek",
+    "name": "AgentPeek",
+    "primary_url": "https://agentpeek.app",
+    "hook": "AgentPeek ($15 one-time) puts Claude Code and Codex into the Mac notch and menu bar and adds token usage dashboards (5-hour and 7-day rolling totals), live permission-prompt surfacing, and diffs per session. Built natively for Apple Silicon, it wires itself via lightweight hooks on first launch and tracks any session from Ghostty, tmux, iTerm, or VS Code terminal. For teams managing multiple parallel agents, the token-burn visibility alone pays back the cost quickly.",
+    "categories": ["design", "cost"]
+  },
+  {
+    "slug": "claude-code-ultracode",
+    "name": "Claude Code /effort ultracode",
+    "primary_url": "https://claude.com/blog/introducing-dynamic-workflows-in-claude-code",
+    "secondary_urls": ["https://www.developersdigest.tech/blog/ultracode-effort-level-explained", "https://stacknotice.com/blog/claude-code-ultrathink-ultracode-effort-guide-2026"],
+    "hook": "Typing /effort ultracode in a Claude Code session sends xhigh reasoning effort to the model and triggers automatic Dynamic Workflow orchestration — Claude writes its own JavaScript orchestration script, fans out up to ~199 parallel subagents, cross-checks results, and returns a single coordinated answer. Available on Max, Team, and eligible Enterprise plans; also via the API. Users report it can consume the entire session budget on a single substantive task, so Anthropic recommends scoping carefully before invoking. Extensive week-3 tutorial coverage across Developers Digest, StackNotice, and LaoZhang AI Blog.",
+    "categories": ["cost", "official"],
+    "install": "/effort ultracode",
+    "recurring_note": "↑ Day 5 — Dynamic Workflows (June 13) renamed to first-class /effort ultracode setting; heavier real-world cost reports surfacing"
+  },
+  {
+    "slug": "simon-scrapes-10pct-claude-code",
+    "name": "Simon Scrapes: 'You're Only Using 10% of Claude Code'",
+    "primary_url": "https://www.youtube.com/watch?v=nPkoRJMIgmk",
+    "hook": "Posted yesterday (June 16) by @simonscrapes (71.8K subs), this video argues most users run Claude Code skills in isolation when the real power is skill chaining — one skill builds brand context, another researches trends via CrawlForge MCP, another writes content, another publishes on a schedule. Follows the channel's 163K-view 'Claude Code 2.0' breakdown and is the second video in a high-velocity week. CrawlForge MCP gets an explicit call-out as the recommended scraping layer.",
+    "categories": ["viral"],
+    "creator_buzz": ["@simonscrapes"]
+  },
+  {
+    "slug": "chase-ai-top10-plugins-june26",
+    "name": "Chase AI: Top 10 Claude Code Plugins — June '26",
+    "primary_url": "https://www.youtube.com/watch?v=IShdbDP4Jgg",
+    "hook": "Chase AI (@Chase-H-AI, 109K+ subs) released its monthly ranked plugin list for June 2026, with picks including the Codex plugin, awesome-design.md, and NotebookLM CLI. Monthly ranked-list videos from Chase AI are the de-facto plugin discovery mechanism for the non-engineering Claude Code audience; the June edition has a design-workflow weighting reflecting the Figma and design-agent wave. Chase AI's 'Claude Code Has Evolved' post from May 14 set the table for this update.",
+    "categories": ["viral"],
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "karpathy-claude-md",
+    "name": "Karpathy CLAUDE.md — 144K Stars Milestone",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "secondary_urls": ["https://medium.com/@aitrends24/a-github-repo-with-one-file-just-hit-144-000-stars-its-a-claude-skill-d82f8b6fa789"],
+    "hook": "A June 2026 Medium article (AI Trends 24) marks the 144,000-star milestone for Forrest Chang's single CLAUDE.md file derived from Andrej Karpathy's January 2026 LLM coding frustrations. The file encodes four behavioral rules — Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution — with zero lines of code. Combined with the original personal repo, total stars top 220K across both accounts, making it the most-starred Claude Code skill by a wide margin and the fastest-growing AI workflow repo in GitHub history.",
+    "categories": ["viral"]
+  },
+  {
+    "slug": "claude-code-agent-view",
+    "name": "Claude Code Agent View",
+    "primary_url": "https://claude.com/blog/agent-view-in-claude-code",
+    "secondary_urls": ["https://code.claude.com/docs/en/agent-view"],
+    "hook": "Run `claude agents` from any terminal to open a full-screen CLI dashboard showing every background session — what's running, what needs your input, last response, and done count. Dispatch new agents, send existing ones to the background, and jump back in only when one needs you. Requires Claude Code v2.1.139+ and is in Research Preview on Pro, Max, Team, Enterprise, and API. CloudZero and Geeky Gadgets both published explainers this week as more teams hit the 3+ parallel-agents daily-driver threshold.",
+    "categories": ["official"],
+    "install": "claude agents"
+  },
+  {
+    "slug": "crawlforge-mcp",
+    "name": "CrawlForge MCP",
+    "primary_url": "https://github.com/mysleekdesigns/crawlforge-mcp",
+    "secondary_urls": ["https://www.youtube.com/watch?v=nPkoRJMIgmk"],
+    "hook": "CrawlForge MCP bundles 20 web scraping and content extraction tools as MCP functions callable directly from Claude Code — from fast static fetches (fetch_url, 1 credit) to headless JS-rendered browser scraping (scrape_with_actions, 5 credits) and stealth_mode for anti-bot sites. Free tier includes 1,000 credits with no credit card required; Node.js 18+ is the only system dependency. Explicitly named by @simonscrapes in yesterday's 'You're Only Using 10%' video as the recommended scraping layer for skill pipelines.",
+    "categories": ["mcp"],
+    "install": "npm install -g crawlforge-mcp-server && npx crawlforge-setup",
+    "creator_buzz": ["@simonscrapes"]
+  },
+  {
+    "slug": "firecrawl-claude-plugin",
+    "name": "Firecrawl Claude Plugin",
+    "primary_url": "https://github.com/firecrawl/firecrawl-claude-plugin",
+    "secondary_urls": ["https://www.firecrawl.dev/blog/claude-code-skill"],
+    "hook": "The official Firecrawl plugin for Claude Code adds the Firecrawl CLI as a bundled skill, giving Claude the ability to scrape, search, crawl, and map the web with automatic JavaScript rendering, anti-bot handling, and proxy rotation included. Firecrawl published a step-by-step tutorial 'How to Create a Claude Code Skill: Web Scraping Example with Firecrawl' driving installs this week. A complementary MCP server (firecrawl/firecrawl-mcp-server) handles Cursor and other LLM clients.",
+    "categories": ["mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "simonw-cloudflare-mcp-til",
+    "name": "Simon Willison: Cloudflare MCP + Claude Code (June 16 TIL)",
+    "primary_url": "https://simonwillison.net/",
+    "secondary_urls": ["https://merge.dev/blog/cloudflare-mcp-claude-code"],
+    "hook": "Simon Willison published a TIL on June 16 documenting his attempt to use the Cloudflare MCP server with Claude Code to edit firewall rules — the MCP couldn't handle the specific rules, so he had Claude Code fall back to the Cloudflare API directly. The post illustrates a practical pattern: try MCP first, degrade gracefully to API when the connector is incomplete. Willison has 117+ claude-code-tagged posts; his TILs are among the earliest signals of real-world MCP integration edges.",
+    "categories": ["mcp"]
+  },
+  {
+    "slug": "claude-code-action-official",
+    "name": "anthropics/claude-code-action",
+    "primary_url": "https://github.com/anthropics/claude-code-action",
+    "hook": "Anthropic's official GitHub Action lets Claude Code respond to `@claude` mentions in PRs and issues, auto-implement code changes, and run as a workflow job. Set up via `/install-github-app` inside Claude Code. Supports Anthropic direct API plus Amazon Bedrock, Google Vertex AI, and Microsoft Foundry. Following Microsoft Security Blog's June 5 writeup about a now-mitigated CI/CD secrets-exposure risk in earlier versions, the official action has renewed interest as the hardened, vendor-maintained path for agentic CI.",
+    "categories": ["official"],
+    "install": "/install-github-app (inside Claude Code)"
+  },
+  {
+    "slug": "simon-scrapes-masterclass-noncoders",
+    "name": "Simon Scrapes: 'Claude Code Masterclass for People Who Don't Code'",
+    "primary_url": "https://www.youtube.com/watch?v=C2Izj7hxIlE",
+    "hook": "Published June 14 (3 days ago) by @simonscrapes, this 71.8K-sub channel entry walks a non-technical audience through seven progressive levels of Claude Code proficiency — from basic prompting through slash commands, skills, hooks, and MCP servers, up to multi-agent pipelines that run autonomously. Running back-to-back with the 'You're Only Using 10%' video posted two days later, the pair forms the most substantial Claude Code education drop this week and is driving new-user onboarding at scale.",
+    "categories": ["viral"],
+    "creator_buzz": ["@simonscrapes"]
+  },
+  {
+    "slug": "quemsah-awesome-claude-plugins",
+    "name": "quemsah/awesome-claude-plugins",
+    "primary_url": "https://github.com/quemsah/awesome-claude-plugins",
+    "hook": "An automated collection of Claude Code plugin adoption metrics across GitHub repositories, built on n8n workflows. Tracks install counts, star velocities, and weekly rankings, essentially providing real-time analytics for the Claude Code plugin marketplace. Unlike static curated lists, it refreshes automatically as the ecosystem evolves. A useful meta-layer for developers deciding what to install or what niche to build into next.",
+    "categories": ["mcp"]
+  },
+  {
+    "slug": "claude-code-v2-1-179",
+    "name": "Claude Code v2.1.179",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "June 16 release fixes mid-stream connection drops (partial responses now preserved instead of raw errors, spinner no longer gets stuck), WSL2 mouse-wheel scrolling under Windows Terminal and VS Code (regression from 2.1.172), a Linux sandbox denyRead/allowRead glob bug that made the Bash tool description enormous, and the feedback survey immediately capturing single-digit replies as a session rating. Also fixes Ctrl+O not showing subagent transcripts and remote session background tasks showing as 'still running' between turns.",
+    "categories": ["official"],
+    "recurring_note": "↑ Day 2 — rapid daily bug-fix train continues; v2.1.178 covered yesterday"
+  }
+]
