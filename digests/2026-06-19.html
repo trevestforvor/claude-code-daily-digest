@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — June 19, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — June 19, 2026</h1><p class="sub">Top 12 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://claude.com/blog/claude-design-stays-on-brand-for-daily-work">Claude Design June 2026 — /design-sync, Design System Imports, Bidirectional Claude Code Handoff</a></h3>
+  <p class="hook">Anthropic&#39;s June 17 Claude Design overhaul ships three things at once. First, design system import: pull in your approved components from a GitHub repo, design file, or upload — Claude Design then builds against those tokens and checks its own output for brand compliance before showing it to you. Second, /design-sync: a command that syncs both ways — pull the design system into your repo, or push what Claude Code built back into Claude Design for canvas editing. Third, direct canvas WYSIWYG editing inside the Claude sidebar. VentureBeat described this as &quot;a fix for Claude Design&#39;s token-burning problem&quot; — the old workflow required constant manual re-syncing that wasted context. Available now on Pro, Max, Team, and Enterprise.</p>
+  <div class="secondary">Also: <a href="https://venturebeat.com/technology/anthropic-ships-major-claude-design-overhaul-with-design-system-imports-code-round-trips-and-a-fix-for-its-token-burning-problem">venturebeat.com/technology/anthropic-ships-major-claude-design-overhaul-with-design-system-imports-code-round-trips-and-a-fix-for-its-token-burning-problem</a> · <a href="https://www.techrepublic.com/article/news-anthropic-claude-design-overhaul-enterprise-teams/">www.techrepublic.com/article/news-anthropic-claude-design-overhaul-enterprise-teams/</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">frontend · token</div>
+  <pre><button class="copy">copy</button><code>/design-sync (inside Claude Code or claude.ai/design)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://claude.com/blog/artifacts-in-claude-code">Claude Code Artifacts (Beta) — AI Coding Sessions as Live, Shareable Browser Pages</a></h3>
+  <p class="hook">Launched June 18 in beta for Team and Enterprise. Claude Code Artifacts captures whatever Claude Code just built — a dashboard, a PR walkthrough, an incident checklist, an internal tool — and publishes it as a live, interactive HTML page behind an org-only URL you can paste into Slack. This closes the gap that has existed since Claude Code went GA in May 2025: the agent&#39;s output was trapped in a terminal visible only to one person. Private sharing, version history, and multi-source data embedding are all in the beta. No embed codes — it&#39;s a URL that resolves to a page.</p>
+  <div class="secondary">Also: <a href="https://venturebeat.com/data/anthropics-claude-code-artifacts-update-brings-live-shared-dashboards-and-interactive-workspaces-to-enterprises">venturebeat.com/data/anthropics-claude-code-artifacts-update-brings-live-shared-dashboards-and-interactive-workspaces-to-enterprises</a> · <a href="https://www.techtimes.com/articles/318691/20260619/claude-code-artifacts-turns-ai-coding-sessions-live-shareable-browser-pages.htm">www.techtimes.com/articles/318691/20260619/claude-code-artifacts-turns-ai-coding-sessions-live-shareable-browser-pages.htm</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">terminal · browser</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/">Enterprise-Managed MCP Auth (Stable) — Zero-Touch Okta Provisioning for MCP Connectors</a></h3>
+  <p class="hook">Announced June 18. Admins provision MCP connector access once in Okta (or any OIDC-compliant IdP) — employees inherit it automatically on first Claude login, across Claude.ai, Claude Code, and Cowork, with no extra steps. Seven providers support the standard at launch: Asana, Atlassian, Figma, Supabase, and Slack (coming soon). Ramp, Webflow, and HubSpot are live Day 1 — Ramp alone has 2,000 employees provisioned with zero manual setup. Every API call logs against a named service account with its own roles and audit trail.</p>
+  <div class="secondary">Also: <a href="https://aiweekly.co/alerts/anthropic-introduces-admin-managed-mcp-auth-for-claude-enterprise">aiweekly.co/alerts/anthropic-introduces-admin-managed-mcp-auth-for-claude-enterprise</a> · <a href="https://www.okta.com/en-ca/newsroom/press-releases/okta-becomes-a-featured-identity-provider-powering-secure-ai-agent-connections-for-claude-enterprise/">www.okta.com/en-ca/newsroom/press-releases/okta-becomes-a-featured-identity-provider-powering-secure-ai-agent-connections-for-claude-enterprise/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  
+  <pre><button class="copy">copy</button><code>See platform.claude.com/docs/en/manage-claude</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.183 — Auto Mode Now Hard-Blocks Destructive Git and Infra Commands</a></h3>
+  <p class="hook">Released June 19 (today). Auto mode gains four hard-block rules: (1) `git reset --hard`, `git checkout -- .`, `git clean -fd`, and `git stash drop` are blocked when you didn&#39;t ask to discard local work; (2) `git commit --amend` on commits the agent didn&#39;t author this session; (3) `terraform destroy`, `pulumi destroy`, and `cdk destroy` unless you specifically requested the stack deletion. Also new: a warning fires when the requested model is deprecated so you see the substitution instead of silently getting a newer model; `attribution.sessionUrl` setting omits the claude.ai link from commits and PRs; and `/config --help` lists all shorthand config keys.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
+  <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/fable-mythos-access">Fable 5 Ban Day 7 — Trump at G7 Says Talks &#39;Going Fine&#39;; DeepSWE #1 Confirmed; Refund Window Closes Tomorrow</a></h3>
+  <p class="hook">Day 7 of the global Fable 5 / Mythos 5 export-control suspension with no restoration announced. New today: President Trump, speaking from the sidelines of the G7 summit in France, told reporters that negotiations with Anthropic are &#39;going fine&#39; — the first presidential comment on the ban. Benchmark context driving community attention: Fable 5 sits at #1 on DeepSWE with 70% PASS@1, three points ahead of GPT-5.5. Subscribers who upgraded June 9–13 and have since cancelled have until 11:59 PM tomorrow (June 20) to claim a refund.</p>
+  <div class="secondary">Also: <a href="https://www.explainx.ai/blog/us-government-bans-fable-5-mythos-5-anthropic-export-control-2026">www.explainx.ai/blog/us-government-bans-fable-5-mythos-5-anthropic-export-control-2026</a> · <a href="https://explainx.ai/blog/when-will-fable-5-be-available-again-2026">explainx.ai/blog/when-will-fable-5-be-available-again-2026</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  
+  
+  <div class="recurring">↑ Day 7 — Trump at G7 France says talks &#39;going fine&#39;; Fable 5 confirmed #1 DeepSWE; refund window closes June 20 at 11:59 PM</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/omnigent-ai/omnigent">Omnigent (Databricks) — Open-Source Meta-Harness Above Claude Code, Codex, and Pi</a></h3>
+  <p class="hook">Matei Zaharia (Databricks founder) open-sourced Omnigent on June 13 — a meta-harness that sits above Claude Code, Codex, Pi, and custom agents, governing what those agents can do, where they run, and who can watch them work. 4k stars in six days. The built-in Polly orchestrator writes no code itself: it plans, delegates to parallel sub-agents in separate git worktrees, and routes each diff to a reviewer from a different vendor than the writer (e.g. Claude writes, Codex reviews). Enterprise features: approval workflows, spending caps, tool restrictions, and cross-device session sync. Apache 2.0.</p>
+  <div class="secondary">Also: <a href="https://www.databricks.com/blog/introducing-omnigent-meta-harness-combine-control-and-share-your-agents">www.databricks.com/blog/introducing-omnigent-meta-harness-combine-control-and-share-your-agents</a> · <a href="https://www.marktechpost.com/2026/06/13/databricks-open-sources-omnigent-a-meta-harness-that-composes-governs-and-shares-ai-agents-across-claude-code-codex-and-pi/">www.marktechpost.com/2026/06/13/databricks-open-sources-omnigent-a-meta-harness-that-composes-governs-and-shares-ai-agents-across-claude-code-codex-and-pi/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">harness · viral</div>
+  <pre><button class="copy">copy</button><code>uv tool install omnigent</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/sickn33/antigravity-awesome-skills">antigravity-awesome-skills v12.9.0 — Design Skills Drop for 1,646-Skill Cross-Agent Catalog</a></h3>
+  <p class="hook">v12.9.0 released June 19 (today), titled &#39;Design Skills and Registry Quality Tools&#39; — the catalog&#39;s first design-focused skill pack, adding design system, component audit, and token-management playbooks. Works across Claude Code, Cursor, Codex CLI, Gemini CLI, and Antigravity via `--claude`, `--cursor`, `--codex`, `--gemini` install flags. 41.1k GitHub stars, 1,646+ SKILL.md playbooks across development, testing, security, infrastructure, product, and now design. Role-based bundles and execution workflows included.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">frontend · terminal · security · testing</div>
+  <pre><button class="copy">copy</button><code>npx antigravity-awesome-skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Piebald-AI/claude-code-system-prompts">claude-code-system-prompts — 515 Internal Prompt Components, Auto-Updated on Every Release</a></h3>
+  <p class="hook">11.2k stars. Piebald-AI&#39;s repo extracts every prompt fragment from Claude Code&#39;s compiled source and publishes them within minutes of each release. Currently tracking 515 distinct components from v2.1.182 (updated June 18): 27 builtin tool descriptions, Explore/Plan/Task sub-agent prompts, the security-review and code-review agent prompts, compact prompts, Bash command description logic, WebFetch instructions, and the magic-docs utility. The only public window into how Claude Code conditionally assembles its context — useful for harness builders, researchers, and anyone debugging unexpected model behavior.</p>
+  
+  <div class="badges">  </div>
+  <div class="tags">harness · viral · security</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/kenryu42/claude-code-safety-net">cc-safety-net — PreToolUse Hook That Blocks Destructive Git and Filesystem Commands</a></h3>
+  <p class="hook">1.4k stars, v1.0.6 released June 15. A plugin-based PreToolUse hook that intercepts `git reset --hard`, `rm -rf /`, `git push --force`, and other destructive commands before they execute — across Claude Code, Codex, Gemini CLI, and Copilot CLI. Preceded today&#39;s Claude Code v2.1.183 auto-mode native protection by four days; for users running without auto mode, this fills the same gap as a lightweight plugin rather than a core feature. Single-command install per platform.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · viral · marketplace · terminal</div>
+  <pre><button class="copy">copy</button><code>/plugin install kenryu42/cc-safety-net@cc-marketplace</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/AgriciDaniel/claude-seo">claude-seo — 25 Sub-Skills + 18 Sub-Agents for Universal SEO Inside Claude Code</a></h3>
+  <p class="hook">9.3k stars, v2.2.0 shipped June 12. A universal SEO plugin that turns Claude Code into a full-stack SEO analyst: 25 sub-skills covering technical SEO, E-E-A-T, schema markup, GEO/AEO, backlinks, local SEO, maps intelligence, semantic clustering, e-commerce, international SEO, and Google APIs — plus 18 specialized sub-agents and optional DataForSEO, Firecrawl, and Banana extensions. PDF and Excel reporting built in. MIT-licensed, plugin-marketplace installable.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add AgriciDaniel/claude-seo</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/jeremylongshore/claude-code-plugins-plus-skills">tonsofskills.com — Open-Source Marketplace: 425 Plugins, 2,810 Skills, 200 Agents for Claude Code</a></h3>
+  <p class="hook">The largest open-source Claude Code plugin catalog: 425 plugins, 2,810 skills, and 200 agents, browsable at tonsofskills.com and installable via the `ccpi` CLI. A plugin is the distribution unit (plugin.json + components); a skill is one SKILL.md component inside a plugin — one plugin can ship many skills, agents, hooks, and MCP servers. The ccpi package manager handles install, update, and removal from any terminal. Everything is MIT and source-of-truth on GitHub.</p>
+  <div class="secondary">Also: <a href="https://tonsofskills.com">tonsofskills.com</a></div>
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">mcp · plugin · terminal</div>
+  <pre><button class="copy">copy</button><code>npm install -g ccpi &amp;&amp; ccpi install &lt;name&gt;</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mukul975/cve-mcp-server">cve-mcp-server — 27 Security Intelligence Tools Across 21 APIs in One Claude Code MCP</a></h3>
+  <p class="hook">1k stars. Gives Claude Code correlated access to 27 security intelligence tools spanning 21 external APIs via a single natural-language query: NVD for CVSS scores, FIRST for EPSS exploitation probability, CISA KEV catalog, MITRE ATT&amp;CK mapping, Shodan for exposed hosts, VirusTotal for malware associations, GitHub advisories, and more. CVE triage that normally requires a dozen open browser tabs becomes one Claude conversation. Zero inbound ports, no telemetry, no API keys logged. Built on Python, FastMCP, and aiosqlite.</p>
+  <div class="secondary">Also: <a href="https://cybersecuritynews.com/cve-mcp-server-and-claude/">cybersecuritynews.com/cve-mcp-server-and-claude/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">viral · browser · security</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/mukul975/cve-mcp-server &amp;&amp; cd cve-mcp-server &amp;&amp; pip install -e .</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
