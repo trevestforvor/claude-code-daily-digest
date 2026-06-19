@@ -1,0 +1,118 @@
+[
+  {
+    "slug": "claude-design-june2026",
+    "name": "Claude Design June 2026 — /design-sync, Design System Imports, Bidirectional Claude Code Handoff",
+    "primary_url": "https://claude.com/blog/claude-design-stays-on-brand-for-daily-work",
+    "secondary_urls": [
+      "https://venturebeat.com/technology/anthropic-ships-major-claude-design-overhaul-with-design-system-imports-code-round-trips-and-a-fix-for-its-token-burning-problem",
+      "https://www.techrepublic.com/article/news-anthropic-claude-design-overhaul-enterprise-teams/"
+    ],
+    "hook": "Anthropic's June 17 Claude Design overhaul ships three things at once. First, design system import: pull in your approved components from a GitHub repo, design file, or upload — Claude Design then builds against those tokens and checks its own output for brand compliance before showing it to you. Second, /design-sync: a command that syncs both ways — pull the design system into your repo, or push what Claude Code built back into Claude Design for canvas editing. Third, direct canvas WYSIWYG editing inside the Claude sidebar. VentureBeat described this as \"a fix for Claude Design's token-burning problem\" — the old workflow required constant manual re-syncing that wasted context. Available now on Pro, Max, Team, and Enterprise.",
+    "categories": ["design", "anthropic"],
+    "install": "/design-sync (inside Claude Code or claude.ai/design)"
+  },
+  {
+    "slug": "claude-code-artifacts",
+    "name": "Claude Code Artifacts (Beta) — AI Coding Sessions as Live, Shareable Browser Pages",
+    "primary_url": "https://claude.com/blog/artifacts-in-claude-code",
+    "secondary_urls": [
+      "https://venturebeat.com/data/anthropics-claude-code-artifacts-update-brings-live-shared-dashboards-and-interactive-workspaces-to-enterprises",
+      "https://www.techtimes.com/articles/318691/20260619/claude-code-artifacts-turns-ai-coding-sessions-live-shareable-browser-pages.htm"
+    ],
+    "hook": "Launched June 18 in beta for Team and Enterprise. Claude Code Artifacts captures whatever Claude Code just built — a dashboard, a PR walkthrough, an incident checklist, an internal tool — and publishes it as a live, interactive HTML page behind an org-only URL you can paste into Slack. This closes the gap that has existed since Claude Code went GA in May 2025: the agent's output was trapped in a terminal visible only to one person. Private sharing, version history, and multi-source data embedding are all in the beta. No embed codes — it's a URL that resolves to a page.",
+    "categories": ["design", "anthropic"]
+  },
+  {
+    "slug": "enterprise-mcp-okta",
+    "name": "Enterprise-Managed MCP Auth (Stable) — Zero-Touch Okta Provisioning for MCP Connectors",
+    "primary_url": "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/",
+    "secondary_urls": [
+      "https://aiweekly.co/alerts/anthropic-introduces-admin-managed-mcp-auth-for-claude-enterprise",
+      "https://www.okta.com/en-ca/newsroom/press-releases/okta-becomes-a-featured-identity-provider-powering-secure-ai-agent-connections-for-claude-enterprise/"
+    ],
+    "hook": "Announced June 18. Admins provision MCP connector access once in Okta (or any OIDC-compliant IdP) — employees inherit it automatically on first Claude login, across Claude.ai, Claude Code, and Cowork, with no extra steps. Seven providers support the standard at launch: Asana, Atlassian, Figma, Supabase, and Slack (coming soon). Ramp, Webflow, and HubSpot are live Day 1 — Ramp alone has 2,000 employees provisioned with zero manual setup. Every API call logs against a named service account with its own roles and audit trail.",
+    "categories": ["anthropic", "mcp"],
+    "install": "See platform.claude.com/docs/en/manage-claude"
+  },
+  {
+    "slug": "claude-code-v2-1-183",
+    "name": "Claude Code v2.1.183 — Auto Mode Now Hard-Blocks Destructive Git and Infra Commands",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Released June 19 (today). Auto mode gains four hard-block rules: (1) `git reset --hard`, `git checkout -- .`, `git clean -fd`, and `git stash drop` are blocked when you didn't ask to discard local work; (2) `git commit --amend` on commits the agent didn't author this session; (3) `terraform destroy`, `pulumi destroy`, and `cdk destroy` unless you specifically requested the stack deletion. Also new: a warning fires when the requested model is deprecated so you see the substitution instead of silently getting a newer model; `attribution.sessionUrl` setting omits the claude.ai link from commits and PRs; and `/config --help` lists all shorthand config keys.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "fable5-ban-day7",
+    "name": "Fable 5 Ban Day 7 — Trump at G7 Says Talks 'Going Fine'; DeepSWE #1 Confirmed; Refund Window Closes Tomorrow",
+    "primary_url": "https://www.anthropic.com/news/fable-mythos-access",
+    "secondary_urls": [
+      "https://www.explainx.ai/blog/us-government-bans-fable-5-mythos-5-anthropic-export-control-2026",
+      "https://explainx.ai/blog/when-will-fable-5-be-available-again-2026"
+    ],
+    "hook": "Day 7 of the global Fable 5 / Mythos 5 export-control suspension with no restoration announced. New today: President Trump, speaking from the sidelines of the G7 summit in France, told reporters that negotiations with Anthropic are 'going fine' — the first presidential comment on the ban. Benchmark context driving community attention: Fable 5 sits at #1 on DeepSWE with 70% PASS@1, three points ahead of GPT-5.5. Subscribers who upgraded June 9–13 and have since cancelled have until 11:59 PM tomorrow (June 20) to claim a refund.",
+    "categories": ["anthropic", "viral"],
+    "recurring_note": "↑ Day 7 — Trump at G7 France says talks 'going fine'; Fable 5 confirmed #1 DeepSWE; refund window closes June 20 at 11:59 PM"
+  },
+  {
+    "slug": "omnigent-databricks",
+    "name": "Omnigent (Databricks) — Open-Source Meta-Harness Above Claude Code, Codex, and Pi",
+    "primary_url": "https://github.com/omnigent-ai/omnigent",
+    "secondary_urls": [
+      "https://www.databricks.com/blog/introducing-omnigent-meta-harness-combine-control-and-share-your-agents",
+      "https://www.marktechpost.com/2026/06/13/databricks-open-sources-omnigent-a-meta-harness-that-composes-governs-and-shares-ai-agents-across-claude-code-codex-and-pi/"
+    ],
+    "hook": "Matei Zaharia (Databricks founder) open-sourced Omnigent on June 13 — a meta-harness that sits above Claude Code, Codex, Pi, and custom agents, governing what those agents can do, where they run, and who can watch them work. 4k stars in six days. The built-in Polly orchestrator writes no code itself: it plans, delegates to parallel sub-agents in separate git worktrees, and routes each diff to a reviewer from a different vendor than the writer (e.g. Claude writes, Codex reviews). Enterprise features: approval workflows, spending caps, tool restrictions, and cross-device session sync. Apache 2.0.",
+    "categories": ["plugin"],
+    "install": "uv tool install omnigent"
+  },
+  {
+    "slug": "antigravity-awesome-skills",
+    "name": "antigravity-awesome-skills v12.9.0 — Design Skills Drop for 1,646-Skill Cross-Agent Catalog",
+    "primary_url": "https://github.com/sickn33/antigravity-awesome-skills",
+    "hook": "v12.9.0 released June 19 (today), titled 'Design Skills and Registry Quality Tools' — the catalog's first design-focused skill pack, adding design system, component audit, and token-management playbooks. Works across Claude Code, Cursor, Codex CLI, Gemini CLI, and Antigravity via `--claude`, `--cursor`, `--codex`, `--gemini` install flags. 41.1k GitHub stars, 1,646+ SKILL.md playbooks across development, testing, security, infrastructure, product, and now design. Role-based bundles and execution workflows included.",
+    "categories": ["skill", "design"],
+    "install": "npx antigravity-awesome-skills"
+  },
+  {
+    "slug": "claude-code-system-prompts",
+    "name": "claude-code-system-prompts — 515 Internal Prompt Components, Auto-Updated on Every Release",
+    "primary_url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+    "hook": "11.2k stars. Piebald-AI's repo extracts every prompt fragment from Claude Code's compiled source and publishes them within minutes of each release. Currently tracking 515 distinct components from v2.1.182 (updated June 18): 27 builtin tool descriptions, Explore/Plan/Task sub-agent prompts, the security-review and code-review agent prompts, compact prompts, Bash command description logic, WebFetch instructions, and the magic-docs utility. The only public window into how Claude Code conditionally assembles its context — useful for harness builders, researchers, and anyone debugging unexpected model behavior.",
+    "categories": []
+  },
+  {
+    "slug": "cc-safety-net",
+    "name": "cc-safety-net — PreToolUse Hook That Blocks Destructive Git and Filesystem Commands",
+    "primary_url": "https://github.com/kenryu42/claude-code-safety-net",
+    "hook": "1.4k stars, v1.0.6 released June 15. A plugin-based PreToolUse hook that intercepts `git reset --hard`, `rm -rf /`, `git push --force`, and other destructive commands before they execute — across Claude Code, Codex, Gemini CLI, and Copilot CLI. Preceded today's Claude Code v2.1.183 auto-mode native protection by four days; for users running without auto mode, this fills the same gap as a lightweight plugin rather than a core feature. Single-command install per platform.",
+    "categories": ["skill"],
+    "install": "/plugin install kenryu42/cc-safety-net@cc-marketplace"
+  },
+  {
+    "slug": "claude-seo",
+    "name": "claude-seo — 25 Sub-Skills + 18 Sub-Agents for Universal SEO Inside Claude Code",
+    "primary_url": "https://github.com/AgriciDaniel/claude-seo",
+    "hook": "9.3k stars, v2.2.0 shipped June 12. A universal SEO plugin that turns Claude Code into a full-stack SEO analyst: 25 sub-skills covering technical SEO, E-E-A-T, schema markup, GEO/AEO, backlinks, local SEO, maps intelligence, semantic clustering, e-commerce, international SEO, and Google APIs — plus 18 specialized sub-agents and optional DataForSEO, Firecrawl, and Banana extensions. PDF and Excel reporting built in. MIT-licensed, plugin-marketplace installable.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add AgriciDaniel/claude-seo"
+  },
+  {
+    "slug": "tonsofskills",
+    "name": "tonsofskills.com — Open-Source Marketplace: 425 Plugins, 2,810 Skills, 200 Agents for Claude Code",
+    "primary_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+    "secondary_urls": ["https://tonsofskills.com"],
+    "hook": "The largest open-source Claude Code plugin catalog: 425 plugins, 2,810 skills, and 200 agents, browsable at tonsofskills.com and installable via the `ccpi` CLI. A plugin is the distribution unit (plugin.json + components); a skill is one SKILL.md component inside a plugin — one plugin can ship many skills, agents, hooks, and MCP servers. The ccpi package manager handles install, update, and removal from any terminal. Everything is MIT and source-of-truth on GitHub.",
+    "categories": ["marketplace", "skill"],
+    "install": "npm install -g ccpi && ccpi install <name>"
+  },
+  {
+    "slug": "cve-mcp-server",
+    "name": "cve-mcp-server — 27 Security Intelligence Tools Across 21 APIs in One Claude Code MCP",
+    "primary_url": "https://github.com/mukul975/cve-mcp-server",
+    "secondary_urls": ["https://cybersecuritynews.com/cve-mcp-server-and-claude/"],
+    "hook": "1k stars. Gives Claude Code correlated access to 27 security intelligence tools spanning 21 external APIs via a single natural-language query: NVD for CVSS scores, FIRST for EPSS exploitation probability, CISA KEV catalog, MITRE ATT&CK mapping, Shodan for exposed hosts, VirusTotal for malware associations, GitHub advisories, and more. CVE triage that normally requires a dozen open browser tabs becomes one Claude conversation. Zero inbound ports, no telemetry, no API keys logged. Built on Python, FastMCP, and aiosqlite.",
+    "categories": ["mcp"],
+    "install": "git clone https://github.com/mukul975/cve-mcp-server && cd cve-mcp-server && pip install -e ."
+  }
+]
