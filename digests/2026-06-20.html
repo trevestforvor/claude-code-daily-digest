@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — June 20, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — June 20, 2026</h1><p class="sub">Top 10 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://techjacksolutions.com/ai-brief/ai-models-news-fable-5-refund-window-closes-june-20-what-pro/">Fable 5 Ban Day 8 — Refund Window Closes Tonight at 11:59 PM</a></h3>
+  <p class="hook">Day 8 of the global Fable 5 and Mythos 5 export-control suspension. Key update for today: the refund window closes tonight at 11:59 PM for subscribers who upgraded June 9–13 and have since cancelled — no extension announced. President Trump, at the G7 summit in Évian-les-Bains, told reporters negotiations are &#39;going fine&#39; (first presidential comment on the ban). Anthropic&#39;s privacy-policy ID bypass (US passport or Enhanced Driver&#39;s License verification) goes live July 8 as a workaround for US individuals; enterprise customers remain fully locked out. Everyone is still on Opus 4.8.</p>
+  <div class="secondary">Also: <a href="https://www.anthropic.com/news/fable-mythos-access">www.anthropic.com/news/fable-mythos-access</a> · <a href="https://explainx.ai/blog/when-will-fable-5-be-available-again-2026">explainx.ai/blog/when-will-fable-5-be-available-again-2026</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  
+  
+  <div class="recurring">↑ Day 8 — refund window closes TONIGHT 11:59 PM; Trump at G7 &#39;talks going fine&#39;; no restoration date set</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/affaan-m/everything-claude-code">Everything Claude Code (ECC) — 175k Stars, Chase AI + Simon Scrapes Both Covered This Week</a></h3>
+  <p class="hook">affaan-m&#39;s Everything Claude Code (ECC) hit double YouTuber coverage this week: Chase AI (109K subs) featured it 18 hours ago as &#39;This Open Source Repo Solves Claude Code&#39;s Biggest Problem,&#39; framing the &#39;vanilla Claude Code&#39; as the real bottleneck; Simon Scrapes (71.8K subs) covered its agentic-os skill 1 day ago in &#39;Claude Code Agentic OS… It Remembers Everything,&#39; showing how the skill turns Claude Code into a persistent, memory-enabled OS that retains context across sessions. The repo packs 28 specialized subagents, 119 reusable skills, 60 slash commands, 34 rules, 20+ automated hooks, and 14 MCP servers into a single harness for Claude Code, Codex, Cursor, and OpenCode. 175k stars.</p>
+  <div class="secondary">Also: <a href="https://www.youtube.com/watch?v=aTPTUYC44ds">www.youtube.com/watch?v=aTPTUYC44ds</a> · <a href="https://www.youtube.com/watch?v=F4At4St1iH8">www.youtube.com/watch?v=F4At4St1iH8</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">mcp · agent · harness · memory</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/affaan-m/everything-claude-code &amp;&amp; cd everything-claude-code &amp;&amp; bash install.sh</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum">Ralph Wiggum Plugin (Official Anthropic) — Autonomous Loop Until Done</a></h3>
+  <p class="hook">Named after the Simpsons character who embodies persistent iteration despite setbacks, the Ralph Wiggum plugin is an official Anthropic plugin bundled inside the anthropics/claude-code repo. It implements an autonomous loop via a Stop hook that intercepts Claude&#39;s exit attempts and re-feeds the same prompt with all prior work still in context, repeating until the task is genuinely complete. Commands: /ralph-loop to start, /cancel-ralph to stop. Unlike /loop or /goal, Ralph runs entirely within a single session with no external bash required. Getting viral attention on r/ClaudeAI this week after a user reported completing a $50k contract for $297 using it overnight. Documentation updated June 2026.</p>
+  <div class="secondary">Also: <a href="https://awesomeclaude.ai/ralph-wiggum">awesomeclaude.ai/ralph-wiggum</a> · <a href="https://paddo.dev/blog/ralph-wiggum-autonomous-loops/">paddo.dev/blog/ralph-wiggum-autonomous-loops/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin</div>
+  <pre><button class="copy">copy</button><code>/plugin install ralph-wiggum</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/h5i-dev/h5i">h5i — AI-Aware Git with 95% Token Compression and Agent Radio (v0.2.1, June 18)</a></h3>
+  <p class="hook">v0.2.1 shipped June 18. h5i is a Git sidecar that makes AI agent work auditable and cheaper: &#39;Git tracks the diff. h5i tracks the run.&#39; Four headline numbers: 95% token compression on logs, 3.5× richer PR review briefs, 1.8× faster multi-agent loops, and a new Agent Radio feature (h5i msg) that lets Claude Code and Codex have real-time conversations via Git — no server, no socket, just a conflict-free append-only JSON log stored in a Git ref. HN discussion (&#39;Claude Code and Codex can have real-time conversation via Git&#39;) drove most of this week&#39;s attention. Sandboxed workspaces, prompt-aware commits, and SSH multi-machine support round out the feature set. 411 stars. Rust binary + Cargo. MIT.</p>
+  <div class="secondary">Also: <a href="https://h5i.dev/">h5i.dev/</a> · <a href="https://news.ycombinator.com/item?id=48345837">news.ycombinator.com/item?id=48345837</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">agent · viral</div>
+  <pre><button class="copy">copy</button><code>curl -fsSL https://raw.githubusercontent.com/h5i-dev/h5i/main/install.sh | sh</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/XiaomiMiMo/MiMo-Code">MiMo Code — Xiaomi&#39;s Open-Source Claude Code Challenger with Persistent Memory</a></h3>
+  <p class="hook">Xiaomi&#39;s MiMo AI team open-sourced MiMo Code V0.1.0 on June 10, landing on the HN front page with 488 points and described as &#39;the Claude Code killer with actual memory.&#39; It&#39;s a fork of OpenCode with a persistent cross-session memory architecture that refuses to lose context across long tasks. Self-reported benchmarks: 82% SWE-bench Verified (vs 79% for Claude Code) and 86.7% on Terminal-Bench 2.0 (vs Claude Code&#39;s 65.4%) — the gap widens sharply past 200 execution steps. On first launch you choose between MiMo Auto (free, no login), Xiaomi account, Claude Code credential import, or a custom OpenAI-compatible API. 10k stars. MIT.</p>
+  <div class="secondary">Also: <a href="https://venturebeat.com/technology/xiaomis-new-open-source-agentic-ai-coding-harness-mimo-code-beats-claude-code-at-ultra-long-200-step-tasks">venturebeat.com/technology/xiaomis-new-open-source-agentic-ai-coding-harness-mimo-code-beats-claude-code-at-ultra-long-200-step-tasks</a> · <a href="https://saascity.io/blog/your-ai-coding-agent-forgets-everything-mimo-code-doesnt">saascity.io/blog/your-ai-coding-agent-forgets-everything-mimo-code-doesnt</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">memory · terminal · security</div>
+  <pre><button class="copy">copy</button><code>npm install -g @mimo-ai/cli</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Dicklesworthstone/coding_agent_session_search">CASS — Unified TUI to Search 20+ AI Coding Agent Sessions (917 Stars)</a></h3>
+  <p class="hook">CASS (coding_agent_session_search) is a Rust CLI + TUI that treats your AI coding agent history as a single searchable knowledge base — normalizing the fragmented JSONL files, SQLite DBs, markdown logs, and proprietary JSON from Claude Code, Codex, Cursor, Aider, Gemini CLI, Cline, OpenCode, Amp, Copilot, Pi-Agent, Factory Droid, and more. Sub-60ms full-text BM25 search with optional local semantic embeddings, RRF fusion reranking, SSH multi-machine search, and encrypted HTML export. 917 stars. Also available via Homebrew and Scoop.</p>
+  <div class="secondary">Also: <a href="https://news.ycombinator.com/item?id=46500801">news.ycombinator.com/item?id=46500801</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">viral · terminal</div>
+  <pre><button class="copy">copy</button><code>curl -fsSL &quot;https://raw.githubusercontent.com/Dicklesworthstone/coding_agent_session_search/main/install.sh?$(date +%s)&quot; | bash -s -- --easy-mode --verify</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/statewright/statewright">Statewright — Visual State Machine Guardrails for Claude Code via MCP (404 Stars)</a></h3>
+  <p class="hook">&#39;Agents are suggestions, states are laws.&#39; Statewright is a Rust state machine engine that constrains which tools an agent can access in each workflow phase, enforcing the restriction via Claude Code hooks and an MCP plugin. In a 5-phase workflow, the model sees only the 5 relevant tools per phase instead of dozens — eliminating off-path tool calls, premature deployments, and redundant file reads. A visual editor at statewright.ai lets you design workflows graphically and export them. HN Show HN (item 48108778). v1.1.0 released June 1, 2026. Apache 2.0 engine; commercial tiers for hosted orchestration. 404 stars.</p>
+  <div class="secondary">Also: <a href="https://statewright.ai/">statewright.ai/</a> · <a href="https://news.ycombinator.com/item?id=48108778">news.ycombinator.com/item?id=48108778</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">design · plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add statewright/statewright</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.youtube.com/watch?v=5LPDUk04J2Y">&quot;Claude Code + YouTube = $62k/Month&quot; — Viral Automation Pattern Flooding Feeds</a></h3>
+  <p class="hook">Multiple YouTube videos (posted 4–6 days ago) walking through a system where Claude Code scripts, structures, and schedules AI-generated YouTube content — combined with Higgsfield for video generation — to reportedly generate $62k/month from a faceless channel. The pattern uses Claude Code&#39;s routines feature (scheduled tasks) to run the full content pipeline autonomously: research, scripting, b-roll direction, Higgsfield video prompt, metadata, and upload schedule. A separate video claims to replicate it on the free plan. ChatYT flagged it as trending. Whether the income claims hold up under scrutiny, the automation workflow itself is the most-shared Claude Code use case on X and TikTok this week.</p>
+  <div class="secondary">Also: <a href="https://www.youtube.com/watch?v=r9bblbwIyiU">www.youtube.com/watch?v=r9bblbwIyiU</a> · <a href="https://chatyt.io/trending/claude-code-youtube-62000month-ai-secrets-revealed">chatyt.io/trending/claude-code-youtube-62000month-ai-secrets-revealed</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">video</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.producthunt.com/products/notchcode">Notchcode — Claude Code + Codex Agents in Your MacBook Notch (Launched June 19)</a></h3>
+  <p class="hook">Notchcode launched on Product Hunt 1 day ago (June 19). It turns the MacBook notch (and a top-center pill on Windows) into an ambient monitor for Claude Code and Codex sessions: the notch glows when an agent needs your input, one tap focuses the right terminal. Run multiple parallel sessions without losing track of which one is waiting. Free, MIT, no telemetry, no network calls beyond loopback. The third notch-class agent monitor to launch this week after AgentNotch (June 17) and AgentPeek (June 17), differentiating primarily on the cross-platform Windows support.</p>
+  <div class="secondary">Also: <a href="https://github.com/sk-ruban/notchi">github.com/sk-ruban/notchi</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">terminal</div>
+  <pre><button class="copy">copy</button><code>See README (Download from GitHub releases)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/vecartier/cc-beeper">CC-BEEPER — Floating Retro Pager for Claude Code with Voice Response and Auto-Accept Modes</a></h3>
+  <p class="hook">CC-BEEPER is a macOS desktop widget that floats over every app, monitors Claude Code in real time across 8 pixel-art animated states (Snoozing / Working / Done / Error / Allow? / Input? / Listening / Recap), and lets you respond by voice without switching focus. Voice dictation runs on-device via WhisperKit; text-to-speech via Kokoro. The most practical feature: four auto-accept presets (Strict → YOLO) so you can set trust boundaries for unattended runs without constantly approving permission prompts. Global hotkeys work in any app, 10 shell color themes, 3 widget sizes. macOS 14 Sonoma+. MIT. 172 stars.</p>
+  <div class="secondary">Also: <a href="https://www.producthunt.com/products/cc-beeper">www.producthunt.com/products/cc-beeper</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">audio · local · viral</div>
+  <pre><button class="copy">copy</button><code>Download DMG from github.com/vecartier/cc-beeper/releases</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
