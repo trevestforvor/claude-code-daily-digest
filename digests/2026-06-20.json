@@ -1,0 +1,120 @@
+[
+  {
+    "slug": "fable5-ban-day8-refund-closes",
+    "name": "Fable 5 Ban Day 8 — Refund Window Closes Tonight at 11:59 PM",
+    "primary_url": "https://techjacksolutions.com/ai-brief/ai-models-news-fable-5-refund-window-closes-june-20-what-pro/",
+    "secondary_urls": [
+      "https://www.anthropic.com/news/fable-mythos-access",
+      "https://explainx.ai/blog/when-will-fable-5-be-available-again-2026"
+    ],
+    "hook": "Day 8 of the global Fable 5 and Mythos 5 export-control suspension. Key update for today: the refund window closes tonight at 11:59 PM for subscribers who upgraded June 9–13 and have since cancelled — no extension announced. President Trump, at the G7 summit in Évian-les-Bains, told reporters negotiations are 'going fine' (first presidential comment on the ban). Anthropic's privacy-policy ID bypass (US passport or Enhanced Driver's License verification) goes live July 8 as a workaround for US individuals; enterprise customers remain fully locked out. Everyone is still on Opus 4.8.",
+    "categories": ["anthropic", "viral"],
+    "recurring_note": "↑ Day 8 — refund window closes TONIGHT 11:59 PM; Trump at G7 'talks going fine'; no restoration date set"
+  },
+  {
+    "slug": "everything-claude-code-ecc",
+    "name": "Everything Claude Code (ECC) — 175k Stars, Chase AI + Simon Scrapes Both Covered This Week",
+    "primary_url": "https://github.com/affaan-m/everything-claude-code",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=aTPTUYC44ds",
+      "https://www.youtube.com/watch?v=F4At4St1iH8"
+    ],
+    "hook": "affaan-m's Everything Claude Code (ECC) hit double YouTuber coverage this week: Chase AI (109K subs) featured it 18 hours ago as 'This Open Source Repo Solves Claude Code's Biggest Problem,' framing the 'vanilla Claude Code' as the real bottleneck; Simon Scrapes (71.8K subs) covered its agentic-os skill 1 day ago in 'Claude Code Agentic OS… It Remembers Everything,' showing how the skill turns Claude Code into a persistent, memory-enabled OS that retains context across sessions. The repo packs 28 specialized subagents, 119 reusable skills, 60 slash commands, 34 rules, 20+ automated hooks, and 14 MCP servers into a single harness for Claude Code, Codex, Cursor, and OpenCode. 175k stars.",
+    "categories": ["skill", "cost", "viral"],
+    "install": "git clone https://github.com/affaan-m/everything-claude-code && cd everything-claude-code && bash install.sh",
+    "creator_buzz": ["@Chase-H-AI", "@simonscrapes"]
+  },
+  {
+    "slug": "ralph-wiggum-plugin",
+    "name": "Ralph Wiggum Plugin (Official Anthropic) — Autonomous Loop Until Done",
+    "primary_url": "https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum",
+    "secondary_urls": [
+      "https://awesomeclaude.ai/ralph-wiggum",
+      "https://paddo.dev/blog/ralph-wiggum-autonomous-loops/"
+    ],
+    "hook": "Named after the Simpsons character who embodies persistent iteration despite setbacks, the Ralph Wiggum plugin is an official Anthropic plugin bundled inside the anthropics/claude-code repo. It implements an autonomous loop via a Stop hook that intercepts Claude's exit attempts and re-feeds the same prompt with all prior work still in context, repeating until the task is genuinely complete. Commands: /ralph-loop to start, /cancel-ralph to stop. Unlike /loop or /goal, Ralph runs entirely within a single session with no external bash required. Getting viral attention on r/ClaudeAI this week after a user reported completing a $50k contract for $297 using it overnight. Documentation updated June 2026.",
+    "categories": ["anthropic", "skill"],
+    "install": "/plugin install ralph-wiggum"
+  },
+  {
+    "slug": "h5i-ai-git",
+    "name": "h5i — AI-Aware Git with 95% Token Compression and Agent Radio (v0.2.1, June 18)",
+    "primary_url": "https://github.com/h5i-dev/h5i",
+    "secondary_urls": [
+      "https://h5i.dev/",
+      "https://news.ycombinator.com/item?id=48345837"
+    ],
+    "hook": "v0.2.1 shipped June 18. h5i is a Git sidecar that makes AI agent work auditable and cheaper: 'Git tracks the diff. h5i tracks the run.' Four headline numbers: 95% token compression on logs, 3.5× richer PR review briefs, 1.8× faster multi-agent loops, and a new Agent Radio feature (h5i msg) that lets Claude Code and Codex have real-time conversations via Git — no server, no socket, just a conflict-free append-only JSON log stored in a Git ref. HN discussion ('Claude Code and Codex can have real-time conversation via Git') drove most of this week's attention. Sandboxed workspaces, prompt-aware commits, and SSH multi-machine support round out the feature set. 411 stars. Rust binary + Cargo. MIT.",
+    "categories": ["cost", "plugin"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/h5i-dev/h5i/main/install.sh | sh"
+  },
+  {
+    "slug": "mimo-code-xiaomi",
+    "name": "MiMo Code — Xiaomi's Open-Source Claude Code Challenger with Persistent Memory",
+    "primary_url": "https://github.com/XiaomiMiMo/MiMo-Code",
+    "secondary_urls": [
+      "https://venturebeat.com/technology/xiaomis-new-open-source-agentic-ai-coding-harness-mimo-code-beats-claude-code-at-ultra-long-200-step-tasks",
+      "https://saascity.io/blog/your-ai-coding-agent-forgets-everything-mimo-code-doesnt"
+    ],
+    "hook": "Xiaomi's MiMo AI team open-sourced MiMo Code V0.1.0 on June 10, landing on the HN front page with 488 points and described as 'the Claude Code killer with actual memory.' It's a fork of OpenCode with a persistent cross-session memory architecture that refuses to lose context across long tasks. Self-reported benchmarks: 82% SWE-bench Verified (vs 79% for Claude Code) and 86.7% on Terminal-Bench 2.0 (vs Claude Code's 65.4%) — the gap widens sharply past 200 execution steps. On first launch you choose between MiMo Auto (free, no login), Xiaomi account, Claude Code credential import, or a custom OpenAI-compatible API. 10k stars. MIT.",
+    "categories": ["cost", "viral"],
+    "install": "npm install -g @mimo-ai/cli"
+  },
+  {
+    "slug": "cass-session-search",
+    "name": "CASS — Unified TUI to Search 20+ AI Coding Agent Sessions (917 Stars)",
+    "primary_url": "https://github.com/Dicklesworthstone/coding_agent_session_search",
+    "secondary_urls": [
+      "https://news.ycombinator.com/item?id=46500801"
+    ],
+    "hook": "CASS (coding_agent_session_search) is a Rust CLI + TUI that treats your AI coding agent history as a single searchable knowledge base — normalizing the fragmented JSONL files, SQLite DBs, markdown logs, and proprietary JSON from Claude Code, Codex, Cursor, Aider, Gemini CLI, Cline, OpenCode, Amp, Copilot, Pi-Agent, Factory Droid, and more. Sub-60ms full-text BM25 search with optional local semantic embeddings, RRF fusion reranking, SSH multi-machine search, and encrypted HTML export. 917 stars. Also available via Homebrew and Scoop.",
+    "categories": ["skill", "cost"],
+    "install": "curl -fsSL \"https://raw.githubusercontent.com/Dicklesworthstone/coding_agent_session_search/main/install.sh?$(date +%s)\" | bash -s -- --easy-mode --verify"
+  },
+  {
+    "slug": "statewright",
+    "name": "Statewright — Visual State Machine Guardrails for Claude Code via MCP (404 Stars)",
+    "primary_url": "https://github.com/statewright/statewright",
+    "secondary_urls": [
+      "https://statewright.ai/",
+      "https://news.ycombinator.com/item?id=48108778"
+    ],
+    "hook": "'Agents are suggestions, states are laws.' Statewright is a Rust state machine engine that constrains which tools an agent can access in each workflow phase, enforcing the restriction via Claude Code hooks and an MCP plugin. In a 5-phase workflow, the model sees only the 5 relevant tools per phase instead of dozens — eliminating off-path tool calls, premature deployments, and redundant file reads. A visual editor at statewright.ai lets you design workflows graphically and export them. HN Show HN (item 48108778). v1.1.0 released June 1, 2026. Apache 2.0 engine; commercial tiers for hosted orchestration. 404 stars.",
+    "categories": ["mcp", "skill"],
+    "install": "/plugin marketplace add statewright/statewright"
+  },
+  {
+    "slug": "claude-code-youtube-62k",
+    "name": "\"Claude Code + YouTube = $62k/Month\" — Viral Automation Pattern Flooding Feeds",
+    "primary_url": "https://www.youtube.com/watch?v=5LPDUk04J2Y",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=r9bblbwIyiU",
+      "https://chatyt.io/trending/claude-code-youtube-62000month-ai-secrets-revealed"
+    ],
+    "hook": "Multiple YouTube videos (posted 4–6 days ago) walking through a system where Claude Code scripts, structures, and schedules AI-generated YouTube content — combined with Higgsfield for video generation — to reportedly generate $62k/month from a faceless channel. The pattern uses Claude Code's routines feature (scheduled tasks) to run the full content pipeline autonomously: research, scripting, b-roll direction, Higgsfield video prompt, metadata, and upload schedule. A separate video claims to replicate it on the free plan. ChatYT flagged it as trending. Whether the income claims hold up under scrutiny, the automation workflow itself is the most-shared Claude Code use case on X and TikTok this week.",
+    "categories": ["viral"],
+    "creator_buzz": []
+  },
+  {
+    "slug": "notchcode",
+    "name": "Notchcode — Claude Code + Codex Agents in Your MacBook Notch (Launched June 19)",
+    "primary_url": "https://www.producthunt.com/products/notchcode",
+    "secondary_urls": [
+      "https://github.com/sk-ruban/notchi"
+    ],
+    "hook": "Notchcode launched on Product Hunt 1 day ago (June 19). It turns the MacBook notch (and a top-center pill on Windows) into an ambient monitor for Claude Code and Codex sessions: the notch glows when an agent needs your input, one tap focuses the right terminal. Run multiple parallel sessions without losing track of which one is waiting. Free, MIT, no telemetry, no network calls beyond loopback. The third notch-class agent monitor to launch this week after AgentNotch (June 17) and AgentPeek (June 17), differentiating primarily on the cross-platform Windows support.",
+    "categories": ["design"],
+    "install": "See README (Download from GitHub releases)"
+  },
+  {
+    "slug": "cc-beeper",
+    "name": "CC-BEEPER — Floating Retro Pager for Claude Code with Voice Response and Auto-Accept Modes",
+    "primary_url": "https://github.com/vecartier/cc-beeper",
+    "secondary_urls": [
+      "https://www.producthunt.com/products/cc-beeper"
+    ],
+    "hook": "CC-BEEPER is a macOS desktop widget that floats over every app, monitors Claude Code in real time across 8 pixel-art animated states (Snoozing / Working / Done / Error / Allow? / Input? / Listening / Recap), and lets you respond by voice without switching focus. Voice dictation runs on-device via WhisperKit; text-to-speech via Kokoro. The most practical feature: four auto-accept presets (Strict → YOLO) so you can set trust boundaries for unattended runs without constantly approving permission prompts. Global hotkeys work in any app, 10 shell color themes, 3 widget sizes. macOS 14 Sonoma+. MIT. 172 stars.",
+    "categories": ["design", "cost"],
+    "install": "Download DMG from github.com/vecartier/cc-beeper/releases"
+  }
+]
