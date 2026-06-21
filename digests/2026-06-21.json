@@ -1,0 +1,49 @@
+[
+  {
+    "slug": "fable5-ban-day9-restoration-roadmap",
+    "name": "Fable 5 Ban Day 9 — Ciauri 'Very Confident in Coming Days'; Kalshi 57% July 1 Odds; Restoration Roadmap: Identity Checks + Geo-Fencing",
+    "primary_url": "https://www.anthropic.com/news/fable-mythos-access",
+    "secondary_urls": [
+      "https://news.kalshi.com/p/fable-5-odds-anthropic-access-restored-july-57-percent",
+      "https://www.koreajoongangdaily.com/business/anthropic-confident-of-reenabling-mythos-fable-5-access-in-coming-days-executive/12727522"
+    ],
+    "hook": "Day 9 of the global Fable 5 and Mythos 5 export-control suspension. Three concrete updates today. First, prediction markets have converged: Kalshi prices the odds of restoration at 57% before July 1, 67% before July 10, and 75% before July 17 — the sharpest resolution timeline the markets have implied to date. Second, Anthropic MD of International Chris Ciauri's statement from the Seoul office opening (June 18) is now the most-cited executive quote: 'We are very confident that in the coming days, the models will become available again.' Third, the White House EO framework clarifies the resolution path: it is not 'fix the jailbreak' — it is 'agree to the voluntary pre-brief arrangement going forward' ahead of the August 1, 2026 compliance deadline. When Fable 5 returns, it is expected to carry mandatory identity verification and nationality-based geo-fencing (building on the July 8 privacy policy framework already announced). Refund window officially closed June 20 at 11:59 PM. Still on Opus 4.8.",
+    "categories": ["anthropic", "viral"],
+    "recurring_note": "↑ Day 9 — Kalshi 57% by July 1 / 67% by July 10 / 75% by July 17; Ciauri 'very confident in coming days'; restoration will require ID checks + geo-fencing; refund window closed"
+  },
+  {
+    "slug": "fablewatch",
+    "name": "FableWatch — Fable 5 API Monitor That Calls Your Phone the Minute It Returns (Swarm Plan Extracts 400+ Q&As)",
+    "primary_url": "https://fablewatch.com/",
+    "secondary_urls": [
+      "https://huntscreens.com/products/fablewatch",
+      "https://isfableback.com/"
+    ],
+    "hook": "FableWatch is an automated return monitor for claude-fable-5 that pings the API every 60 seconds and alerts you via email, text, and automated phone calls the same minute the model comes back online. The Swarm plan goes further: it fires a dedicated VPS with 400+ parallel API calls covering 400+ curated questions to extract maximum knowledge before the window closes again — the resulting dataset is yours to keep. It also connects to GitHub repos to auto-fix PR bugs, resolve open issues, and open fix PRs while the model is online, hands-free. Not affiliated with Anthropic. A small ecosystem of monitoring services has emerged around the ban: isfableback.com and isfable5back.com provide live availability checks; fable5.app/news/ runs a running timeline of ban developments. The existence of these services reflects the community's expectation that Fable 5 will return unpredictably and briefly before full restoration.",
+    "categories": ["viral"]
+  },
+  {
+    "slug": "agentmemory",
+    "name": "agentmemory — 23.6k Stars, 53 MCP Tools, 92% Token Reduction for Persistent AI Coding Agent Memory",
+    "primary_url": "https://github.com/rohitg00/agentmemory",
+    "secondary_urls": [
+      "https://alphasignalai.substack.com/p/how-agentmemory-works-and-how-to",
+      "https://www.aibuilderclub.com/blog/ai-coding-agent-memory-agentmemory"
+    ],
+    "hook": "23.6k stars. rohitg00's agentmemory is the persistent memory layer most Claude Code users eventually reach for: every session your agent runs gets captured, compressed, and indexed — then injected back as targeted context the next time you open a related project. The three-layer hybrid search (BM25 keyword + semantic vectors + knowledge graph) achieves 95.2% retrieval accuracy on benchmarks and 92% token reduction vs. pasting full conversation history. 53 MCP tools for memory operations, a real-time viewer dashboard at localhost:3113, and 15 skills for in-session querying. Works with Claude Code, Cursor, Codex, Gemini CLI, OpenCode, and Copilot. Apache 2.0, TypeScript. v0.9.27 (June 7, 2026). With Fable 5 suspended and everyone logging longer sessions on Opus 4.8 to compensate, token efficiency tooling like this has become significantly more relevant — a 92% reduction in context token spend translates directly to plan headroom.",
+    "categories": ["cost", "skill"],
+    "install": "See README (npx)"
+  },
+  {
+    "slug": "antigravity-awesome-skills-v13",
+    "name": "antigravity-awesome-skills v13.0.0 — First Major Version Bump, 1,678 Skills, Kiro + OpenCode Added (Released Today)",
+    "primary_url": "https://github.com/sickn33/antigravity-awesome-skills",
+    "secondary_urls": [
+      "https://www.npmjs.com/package/antigravity-awesome-skills"
+    ],
+    "hook": "v13.0.0 published today (8 hours ago on npm). The jump from v12.9.0 (covered June 19 with 1,646 skills and a design-skill focus) to v13 is the first major version change in the series — 1,678+ skills now, up 32 from the Design Skills drop. Two new install targets added in this release: Kiro (Amazon's new IDE-native agent, launched June 2026) and OpenCode, joining the existing --claude, --cursor, --codex, --gemini, and --antigravity flags. 41.2k GitHub stars.",
+    "categories": ["skill"],
+    "install": "npx antigravity-awesome-skills",
+    "recurring_note": "↑ v13.0.0 today — 1,678 skills (+32 vs v12.9.0); adds Kiro and OpenCode install targets; first major version bump"
+  }
+]
