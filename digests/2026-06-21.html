@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — June 21, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — June 21, 2026</h1><p class="sub">Top 4 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/fable-mythos-access">Fable 5 Ban Day 9 — Ciauri &#39;Very Confident in Coming Days&#39;; Kalshi 57% July 1 Odds; Restoration Roadmap: Identity Checks + Geo-Fencing</a></h3>
+  <p class="hook">Day 9 of the global Fable 5 and Mythos 5 export-control suspension. Three concrete updates today. First, prediction markets have converged: Kalshi prices the odds of restoration at 57% before July 1, 67% before July 10, and 75% before July 17 — the sharpest resolution timeline the markets have implied to date. Second, Anthropic MD of International Chris Ciauri&#39;s statement from the Seoul office opening (June 18) is now the most-cited executive quote: &#39;We are very confident that in the coming days, the models will become available again.&#39; Third, the White House EO framework clarifies the resolution path: it is not &#39;fix the jailbreak&#39; — it is &#39;agree to the voluntary pre-brief arrangement going forward&#39; ahead of the August 1, 2026 compliance deadline. When Fable 5 returns, it is expected to carry mandatory identity verification and nationality-based geo-fencing (building on the July 8 privacy policy framework already announced). Refund window officially closed June 20 at 11:59 PM. Still on Opus 4.8.</p>
+  <div class="secondary">Also: <a href="https://news.kalshi.com/p/fable-5-odds-anthropic-access-restored-july-57-percent">news.kalshi.com/p/fable-5-odds-anthropic-access-restored-july-57-percent</a> · <a href="https://www.koreajoongangdaily.com/business/anthropic-confident-of-reenabling-mythos-fable-5-access-in-coming-days-executive/12727522">www.koreajoongangdaily.com/business/anthropic-confident-of-reenabling-mythos-fable-5-access-in-coming-days-executive/12727522</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  
+  
+  <div class="recurring">↑ Day 9 — Kalshi 57% by July 1 / 67% by July 10 / 75% by July 17; Ciauri &#39;very confident in coming days&#39;; restoration will require ID checks + geo-fencing; refund window closed</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://fablewatch.com/">FableWatch — Fable 5 API Monitor That Calls Your Phone the Minute It Returns (Swarm Plan Extracts 400+ Q&amp;As)</a></h3>
+  <p class="hook">FableWatch is an automated return monitor for claude-fable-5 that pings the API every 60 seconds and alerts you via email, text, and automated phone calls the same minute the model comes back online. The Swarm plan goes further: it fires a dedicated VPS with 400+ parallel API calls covering 400+ curated questions to extract maximum knowledge before the window closes again — the resulting dataset is yours to keep. It also connects to GitHub repos to auto-fix PR bugs, resolve open issues, and open fix PRs while the model is online, hands-free. Not affiliated with Anthropic. A small ecosystem of monitoring services has emerged around the ban: isfableback.com and isfable5back.com provide live availability checks; fable5.app/news/ runs a running timeline of ban developments. The existence of these services reflects the community&#39;s expectation that Fable 5 will return unpredictably and briefly before full restoration.</p>
+  <div class="secondary">Also: <a href="https://huntscreens.com/products/fablewatch">huntscreens.com/products/fablewatch</a> · <a href="https://isfableback.com/">isfableback.com/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">anthropic</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/rohitg00/agentmemory">agentmemory — 23.6k Stars, 53 MCP Tools, 92% Token Reduction for Persistent AI Coding Agent Memory</a></h3>
+  <p class="hook">23.6k stars. rohitg00&#39;s agentmemory is the persistent memory layer most Claude Code users eventually reach for: every session your agent runs gets captured, compressed, and indexed — then injected back as targeted context the next time you open a related project. The three-layer hybrid search (BM25 keyword + semantic vectors + knowledge graph) achieves 95.2% retrieval accuracy on benchmarks and 92% token reduction vs. pasting full conversation history. 53 MCP tools for memory operations, a real-time viewer dashboard at localhost:3113, and 15 skills for in-session querying. Works with Claude Code, Cursor, Codex, Gemini CLI, OpenCode, and Copilot. Apache 2.0, TypeScript. v0.9.27 (June 7, 2026). With Fable 5 suspended and everyone logging longer sessions on Opus 4.8 to compensate, token efficiency tooling like this has become significantly more relevant — a 92% reduction in context token spend translates directly to plan headroom.</p>
+  <div class="secondary">Also: <a href="https://alphasignalai.substack.com/p/how-agentmemory-works-and-how-to">alphasignalai.substack.com/p/how-agentmemory-works-and-how-to</a> · <a href="https://www.aibuilderclub.com/blog/ai-coding-agent-memory-agentmemory">www.aibuilderclub.com/blog/ai-coding-agent-memory-agentmemory</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">mcp · memory · token · viral · terminal · search</div>
+  <pre><button class="copy">copy</button><code>See README (npx)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/sickn33/antigravity-awesome-skills">antigravity-awesome-skills v13.0.0 — First Major Version Bump, 1,678 Skills, Kiro + OpenCode Added (Released Today)</a></h3>
+  <p class="hook">v13.0.0 published today (8 hours ago on npm). The jump from v12.9.0 (covered June 19 with 1,646 skills and a design-skill focus) to v13 is the first major version change in the series — 1,678+ skills now, up 32 from the Design Skills drop. Two new install targets added in this release: Kiro (Amazon&#39;s new IDE-native agent, launched June 2026) and OpenCode, joining the existing --claude, --cursor, --codex, --gemini, and --antigravity flags. 41.2k GitHub stars.</p>
+  <div class="secondary">Also: <a href="https://www.npmjs.com/package/antigravity-awesome-skills">www.npmjs.com/package/antigravity-awesome-skills</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">design</div>
+  <pre><button class="copy">copy</button><code>npx antigravity-awesome-skills</code></pre>
+  <div class="recurring">↑ v13.0.0 today — 1,678 skills (+32 vs v12.9.0); adds Kiro and OpenCode install targets; first major version bump</div>
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
