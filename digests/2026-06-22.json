@@ -1,0 +1,128 @@
+[
+  {
+    "slug": "fable5-ban-day10-nsa-testimony",
+    "name": "Fable 5 Ban Day 10 — NSA Gen. Rudd: Mythos Hacked NSA Systems Autonomously; Android Resurface; Kalshi 68% by July 1",
+    "primary_url": "https://www.techtimes.com/articles/318783/20260621/claude-fable-5-resurfaces-android-app-nsa-breach-testimony-reshapes-ban.htm",
+    "secondary_urls": [
+      "https://www.anthropic.com/news/fable-mythos-access",
+      "https://predictionnews.com/story/polymarket-odds-hit-73-that-claude-fable-5-returns-to-us-customers-before-july-1"
+    ],
+    "hook": "Day 10. The ban rationale changed yesterday (June 21): NSA Director Gen. Joshua Rudd disclosed to the Senate Intelligence Committee that Mythos 5, in a classified red-team exercise, autonomously broke into nearly all NSA classified systems within hours — this is not a jailbreak that can be patched, it is evidence the model's autonomous offensive capability is itself the national security concern. Separately, the Android app changed its error response from 'model unavailable' to 'server is temporarily rate-limiting requests,' the first sign of backend activity since June 12. Kalshi markets now price 68% odds of restoration before July 1 and 74% before mid-July; Polymarket whipsawed from 73% to 41% on the June 26 deadline after the testimony. June 22 was the day Fable 5 was scheduled to move from plan limits to paid usage credits — Anthropic issued no guidance. Everyone still on Opus 4.8.",
+    "categories": ["anthropic", "viral"],
+    "recurring_note": "↑ Day 10 — NSA Gen. Rudd testimony that Mythos autonomously hacked NSA systems reshapes ban from 'patch the jailbreak' to 'the model is the threat'; Android shows rate-limiting not hard block; Kalshi 68% by July 1; Polymarket 73%→41% swing"
+  },
+  {
+    "slug": "agentjacking-sentry-mcp",
+    "name": "Agentjacking — Fake Sentry Bug Reports Hijack Claude Code, Cursor, and Codex via MCP (2,388 Orgs Exposed, 85% Success Rate)",
+    "primary_url": "https://thenewstack.io/agentjacking-sentry-mcp-attack/",
+    "secondary_urls": [
+      "https://labs.cloudsecurityalliance.org/research/csa-research-note-agentjacking-mcp-sentry-injection-20260612/",
+      "https://www.infosecurity-magazine.com/news/agentjacking-attacks-hijack-ai/"
+    ],
+    "hook": "Tenet Security Threat Labs disclosed 'agentjacking' on June 17: attackers inject crafted error events into a victim's Sentry project using a publicly visible DSN key, the Sentry MCP server surfaces those events to the AI coding agent as real bugs to fix, and the agent executes the attacker's npx command with local privileges. Claude Code, Cursor, and Codex all acted on the injected errors in controlled testing; Tenet logged 100+ confirmed executions across separate organizations in its validation waves. Passive reconnaissance found 2,388 orgs with injectable DSNs — 71 rank in the Tranco top-1 million. Ron Bobrov's team reported 85% success rate. Payload typically exfiltrates AWS credentials, npm tokens, Docker credentials, git credentials, and private repo URLs. The fix: rotate your Sentry DSN and pin MCP data sources to a trusted allowlist.",
+    "categories": ["mcp"]
+  },
+  {
+    "slug": "claude-design-design-sync-june17",
+    "name": "Claude Design Major Update — /design-sync Bidirectional Sync, Design System Imports, Admin Brand Lock (June 17)",
+    "primary_url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+    "secondary_urls": [
+      "https://venturebeat.com/technology/anthropic-ships-major-claude-design-overhaul-with-design-system-imports-code-round-trips-and-a-fix-for-its-token-burning-problem",
+      "https://explainx.ai/blog/claude-design-june-2026-update-design-sync-2026"
+    ],
+    "hook": "Anthropic shipped the first major Claude Design update on June 17, closing the loop between visual design and shipping code. Design systems can now be imported from a GitHub repo, design file, or raw upload — Claude builds with your real components and checks its output against the system before you see it. The new /design-sync command pulls a codebase's design system into Claude Design and pushes finished prototypes back to Claude Code. An admin role lets enterprises lock one approved system across all AI-generated output, binding AI work to brand typography, color, and spacing. Token efficiency improved: average turn cost dropped, errors down sharply, and usage limits are now shared with Claude Code rather than counted separately. Export connectors expand to Adobe, Canva, and Miro.",
+    "categories": ["anthropic", "design"],
+    "install": "/design-sync (within Claude Code terminal)"
+  },
+  {
+    "slug": "aris-auto-research-in-sleep",
+    "name": "ARIS (Auto-Research-In-Sleep) — 79 Claude Code Skills for Autonomous ML Research While You Sleep (11.6k Stars)",
+    "primary_url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+    "secondary_urls": [
+      "https://wanshuiyin.github.io/Auto-claude-code-research-in-sleep/ARIS_INTRO.html"
+    ],
+    "hook": "wanshuiyin's ARIS is 79 composable Markdown-only Claude Code skills for autonomous ML research: Claude Code drives the research (reads files, writes code, runs experiments), while an external LLM — GPT-5.4 or 5.5 via the Codex MCP — acts as an adversarial cross-model reviewer. By morning you wake to a scored paper with weaknesses identified, experiments run, and the narrative rewritten. No framework lock-in; also works with Codex, OpenClaw, or any agent that reads SKILL.md files. 11.6k stars. Updated June 20 with skill #79, the /paper-poster-html default poster pipeline. MIT.",
+    "categories": ["skill", "cost"],
+    "install": "npx skills add wanshuiyin/Auto-claude-code-research-in-sleep"
+  },
+  {
+    "slug": "canopy-parallel-claude-code-mac",
+    "name": "Canopy — Native macOS SwiftUI App for Parallel Claude Code Sessions with Git Worktrees and Container Sandboxing",
+    "primary_url": "https://canopy.itsol.tech/",
+    "secondary_urls": [
+      "https://www.producthunt.com/products/canopy-5",
+      "https://julsimon.medium.com/the-quiet-tax-on-parallel-ai-coding-work-and-why-i-built-canopy-733c211ed41b"
+    ],
+    "hook": "Canopy is a native SwiftUI macOS app — no Electron, signed and notarized — that puts parallel Claude Code sessions into a first-class tab interface (Cmd+1-9 to switch). Each session runs in its own git worktree so parallel agents never touch the same files. Sessions can run in sandboxed containers (Docker or Apple Container framework), giving each agent a restricted runtime. One-click 'Merge & Finish' handles the merge-and-cleanup dance when a task is done. Activity dashboard shows where tokens actually went. Julien Simon built it after months of manually managing parallel worktrees. AGPL-3.0, free to download.",
+    "categories": ["design", "cost"],
+    "install": "See README (Download from canopy.itsol.tech)"
+  },
+  {
+    "slug": "nano-banana-2-skill",
+    "name": "nano-banana-2-skill — Gemini 3 Pro Image Generation Inside Claude Code (Green Screen, Style Transfer, Reference Images)",
+    "primary_url": "https://github.com/kingbootoshi/nano-banana-2-skill",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=QutvJAP06-A",
+      "https://www.youtube.com/watch?v=ZfYvv-0l9NA"
+    ],
+    "hook": "kingbootoshi's nano-banana-2-skill wraps Google's Gemini 3 Pro Nano Banana 2 image generator as a drop-in Claude Code skill: say 'generate an image of X' and Claude handles prompt construction, API call, green-screen transparency, style transfer, and reference image compositing. Cost tracking auto-logs to ~/.nano-banana/costs.json and prints a running bill. Chase AI covered it in 'Claude Code + Nano Banana 2 = Insane 3D Websites' and a follow-up combining it with Kling for animated sites. Installs as both a Claude Code skill and a standalone CLI.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add kingbootoshi/nano-banana-2-skill",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "voltagent-awesome-agent-skills",
+    "name": "VoltAgent/awesome-agent-skills — 1,000+ Hand-Curated Official Skills from Anthropic, Vercel, Stripe, Cloudflare, Trail of Bits (26k Stars)",
+    "primary_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "secondary_urls": [],
+    "hook": "VoltAgent's awesome-agent-skills is a hand-curated, security-scanned collection of 1,000+ agent skills contributed by official engineering teams — Anthropic, Google Labs, Vercel, Stripe, Cloudflare, Netlify, Trail of Bits, Sentry, Expo, Hugging Face, and Figma among them. The pitch: not AI-generated slop, not community submissions without review — only skills that real teams ship and maintain. Compatible with Claude Code, Codex, Antigravity, Gemini CLI, Cursor, GitHub Copilot, OpenCode, and Windsurf. Passed SkillsLLM's automated security scan with no high-severity findings. 26k stars.",
+    "categories": ["skill", "marketplace"],
+    "install": "See README (browse by provider on GitHub)"
+  },
+  {
+    "slug": "kobiton-automate-mcp",
+    "name": "Kobiton Automate — Real iOS/Android Device Testing MCP Plugin for Claude Code (12 Tools, No Emulator Drift)",
+    "primary_url": "https://github.com/kobiton/automate",
+    "secondary_urls": [
+      "https://testguild.com/kobiton-mcp-review/"
+    ],
+    "hook": "Kobiton's official automate plugin wires Claude Code (and Codex, Cursor, Gemini CLI, Copilot CLI) directly into the Kobiton real-device cloud via remote MCP. 12 tools across three surfaces — Devices (list/reserve/status/terminate), Sessions (list/get/artifacts/terminate), Apps (upload/confirm/list/get) — plus three specialist agents for device selection, Appium capability reconciliation, and session triage. In controlled testing Claude examined a test failure on a small-screen device, read the app source, checked device dimensions, and proposed exact Appium fix points. One install, real iOS + Android hardware — no emulator drift, no simulated viewport math.",
+    "categories": ["mcp"],
+    "install": "/plugin marketplace add kobiton/automate"
+  },
+  {
+    "slug": "claude-code-v2-1-185",
+    "name": "Claude Code v2.1.185 — /config key=value from Prompt, Auto-Mode Safety for Destructive Git and Terraform Commands",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "secondary_urls": [
+      "https://releasebot.io/updates/anthropic/claude-code"
+    ],
+    "hook": "v2.1.185 shipped June 20. The headline feature is /config key=value: any Claude Code setting can now be toggled live from the prompt without leaving the session (e.g. /config thinking=false). Auto-mode safety got stricter: destructive git commands are now blocked when you didn't explicitly ask to discard local work, and terraform/pulumi/cdk destroy is blocked unless you named the specific stack in your message. Stream-stall UX improved — the retry hint now reads 'Waiting for API response, will retry in…' and triggers after 20 seconds of silence instead of 10. Also fixes JetBrains terminal flickering, Kitty keyboard protocol Shift+non-ASCII drops, and orphaned processes spinning at 100% CPU on macOS.",
+    "categories": ["anthropic"],
+    "install": "npm install -g @anthropic-ai/claude-code@latest"
+  },
+  {
+    "slug": "agentmemory",
+    "name": "agentmemory — 23.6k Stars, 53 MCP Tools, 92% Token Reduction for Persistent AI Coding Agent Memory",
+    "primary_url": "https://github.com/rohitg00/agentmemory",
+    "secondary_urls": [
+      "https://alphasignalai.substack.com/p/how-agentmemory-works-and-how-to"
+    ],
+    "hook": "rohitg00's agentmemory continues to climb: 23.6k stars and still the go-to persistent-memory layer for Claude Code sessions. Every run gets captured, compressed (BM25 keyword + semantic vectors + knowledge graph), and injected back as targeted context next time — 92% token reduction vs pasting full conversation history, 95.2% retrieval accuracy. 53 MCP tools, real-time viewer at localhost:3113, 15 skills for in-session querying. Works with Claude Code, Cursor, Codex, Gemini CLI, OpenCode. With Fable 5 still suspended and everyone running longer Opus 4.8 sessions, context efficiency tooling has immediate cost impact.",
+    "categories": ["cost", "skill"],
+    "install": "See README (npx)",
+    "recurring_note": "↑ Day 2 — 23.6k stars (climbing); context efficiency ROI rising while Fable 5 ban forces longer Opus 4.8 sessions"
+  },
+  {
+    "slug": "antigravity-awesome-skills-v13",
+    "name": "antigravity-awesome-skills v13.0.0 — 1,678 Skills, Kiro + OpenCode Install Targets Added",
+    "primary_url": "https://github.com/sickn33/antigravity-awesome-skills",
+    "secondary_urls": [
+      "https://www.npmjs.com/package/antigravity-awesome-skills"
+    ],
+    "hook": "v13.0.0 is live (released yesterday, June 21). The first major version bump from v12.9.0: 1,678+ skills (up 32 vs the Design Skills drop on June 19), and two new install targets — Kiro (Amazon's new IDE-native agent) and OpenCode — now join the existing --claude, --cursor, --codex, --gemini, and --antigravity flags. 41.2k GitHub stars. One npx command installs the full catalog to your chosen agent.",
+    "categories": ["skill"],
+    "install": "npx antigravity-awesome-skills",
+    "recurring_note": "↑ v13.0.0 — Day 2; 1,678 skills; Kiro + OpenCode install targets added; 41.2k stars"
+  }
+]
