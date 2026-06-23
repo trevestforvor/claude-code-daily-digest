@@ -1,0 +1,135 @@
+[
+  {
+    "slug": "fable5-ban-day11-billing-transition-missed",
+    "name": "Fable 5 Ban Day 11 — June 22 Billing Transition Day Passed with Zero Guidance; August 1 EO Deadline Now the Watch Date",
+    "primary_url": "https://www.anthropic.com/news/fable-mythos-access",
+    "secondary_urls": [
+      "https://explainx.ai/blog/is-fable-5-back-2026",
+      "https://www.digitalapplied.com/blog/anthropic-claude-credit-overhaul-june-15-2026"
+    ],
+    "hook": "Day 11 of the suspension, and yesterday (June 22) was the date Fable 5 was scheduled to move from plan limits onto prepaid usage credits at API rates ($10/M input, $50/M output). Anthropic issued no guidance — no email to subscribers, no status-page note, no pricing FAQ update. The model remains suspended; everyone is still on Opus 4.8. The structural next milestone is August 1, 2026 — 60 days from the June 2 Executive Order — which is the deadline for Anthropic to join the classified frontier-model pre-brief framework. Until then, explainx.ai confirmed today: 'Is Fable 5 Back? No.' Markets continue to price moderate odds of restoration before mid-July.",
+    "categories": ["anthropic", "viral"],
+    "recurring_note": "↑ Day 11 — June 22 billing-transition day passed with zero Anthropic guidance; August 1 EO deadline is the next structural milestone; everyone still on Opus 4.8"
+  },
+  {
+    "slug": "claude-code-v2-1-186",
+    "name": "Claude Code v2.1.186 — CLI MCP Login/Logout for SSH, Auto-Respond to Bash Output On by Default, Skills Tab in /plugin",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "secondary_urls": [
+      "https://github.com/anthropics/claude-code/releases"
+    ],
+    "hook": "v2.1.186 shipped June 22 with 33 changes. The headliner is `claude mcp login <name>` and `claude mcp logout <name>`: you can now authenticate OAuth MCP servers directly from the CLI without opening the interactive /mcp menu — `--no-browser` redirects the flow through stdin for headless SSH setups. A second behavioral change: bash commands now auto-trigger Claude to respond to their output (`respondToBashCommands: true` is the new default; set false in settings.json to restore old context-only behavior). The /plugin Installed tab gains a dedicated Skills section. The /workflows agent detail view adds status filtering (press f). Bug fixes: JetBrains terminal flickering, Kitty keyboard Shift+non-ASCII drops, Windows PowerShell hanging, macOS orphaned processes at 100% CPU after daemon death.",
+    "categories": ["anthropic"],
+    "install": "npm install -g @anthropic-ai/claude-code@latest"
+  },
+  {
+    "slug": "claude-mem-v13-8-0",
+    "name": "claude-mem v13.8.0 — 83.9k Stars, Per-Session Cost Rollups, Node 20.12.0 Floor Fix (v13.6–v13.8 Drop in 4 Days)",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "secondary_urls": [
+      "https://www.augmentcode.com/learn/claude-mem-74k-stars-agent-memory"
+    ],
+    "hook": "claude-mem is at 83.9k stars — up roughly 9k in the past two weeks — and shipped four releases in the past four days. v13.8.0 (June 21) adds per-session telemetry rollups: `observer_turn_rollup` now tracks observations_created and types per compression turn, unlocking cost-per-observation calculations. v13.7.1 (June 21) fixes a critical Node version bug where the floor was advertised as ≥20.0.0 but required ≥20.12.0 — causing silent credential-load failures on Node 20.0–20.11. v13.7.0 (June 20) overhauled PostHog telemetry with per-session rollups replacing wall-clock windows and a kill-switch env var. Works with Claude Code, Codex, Gemini CLI, Copilot, OpenCode, Windsurf, and Cursor.",
+    "categories": ["cost", "skill"],
+    "install": "npx claude-mem"
+  },
+  {
+    "slug": "tweakcc-v4-1-1",
+    "name": "tweakcc v4.1.1 — Customize Claude Code's System Prompts, 165 New Prompts Backfilled, API for Sandboxed Patches",
+    "primary_url": "https://github.com/Piebald-AI/tweakcc",
+    "secondary_urls": [
+      "https://github.com/Piebald-AI/claude-code-system-prompts"
+    ],
+    "hook": "Piebald-AI's tweakcc lets you patch Claude Code's actual system prompts (the same strings extracted in their companion claude-code-system-prompts repo) with custom themes, thinking verbs, spinners, input-box styling, and full toolset replacements — without forking. v4.0.0 added an npm-installable API and sandboxed custom-patch scripts so anyone can ship patches without maintaining a fork; remote config URL support lets teams distribute patches via URL. v4.1.1 (June 18) backfills 165 prompt slots covering versions 2.1.141–2.1.173, adds `/clear-screen` as a slash command, patches the theme-settings schema to support custom theme IDs, and is validated against Claude Code 2.1.186. MIT, supports native and npm installs on all platforms.",
+    "categories": ["design"],
+    "install": "npm install -g tweakcc"
+  },
+  {
+    "slug": "claudoscope",
+    "name": "Claudoscope — Native macOS Menu Bar App with Real-Time Secrets Detection Across Claude Code Sessions",
+    "primary_url": "https://github.com/cordwainersmith/Claudoscope",
+    "secondary_urls": [
+      "https://claudoscope.com",
+      "https://www.producthunt.com/products/claudoscope"
+    ],
+    "hook": "Claudoscope is a native macOS SwiftUI app that monitors ~/.claude/projects/ via FSEvents and surfaces a full session dashboard in your menu bar — no Dock presence, no polling, no network requests. The standout feature is real-time secrets detection across 10+ credential-pattern families: GitHub PATs and OAuth tokens, OpenAI, Anthropic, Stripe (live keys escalated to ERROR), Slack, npm, Google, SendGrid, Shopify, DigitalOcean, Linear, PyPI, HuggingFace, Azure, Vault, and Docker — all scanned locally the moment a session file changes. Also provides cost estimation, analytics, timeline history, conversation search, and a one-click security-hardening baseline that locks down your Claude Code environment. Free, MIT.",
+    "categories": ["design", "cost"],
+    "install": "See README (Download from claudoscope.com)"
+  },
+  {
+    "slug": "cve-mcp-server",
+    "name": "CVE MCP Server — 27 Security Intelligence Tools Across 21 APIs (EPSS, CISA KEV, MITRE ATT&CK, Shodan, VirusTotal) for Claude",
+    "primary_url": "https://github.com/mukul975/cve-mcp-server",
+    "secondary_urls": [
+      "https://cybersecuritynews.com/cve-mcp-server-and-claude/"
+    ],
+    "hook": "mukul975's cve-mcp-server wires Claude Code (and Claude Desktop) into 27 security-intelligence tools spanning 21 external APIs via a single MCP endpoint. Five tool groups: Core Vulnerability Intelligence (CVE/NVD lookup, EPSS v4 scoring), Exploit & Attack Intelligence (CISA KEV, Metasploit, ExploitDB, MITRE ATT&CK), Advanced Risk & Reporting (CVSS temporal scoring, remediation prioritization), Network Intelligence (Shodan), and Threat Intelligence (VirusTotal, ThreatFox). Built with Python, FastMCP, httpx, and aiosqlite; outbound HTTPS only with no inbound ports, no telemetry, and no API-key logging. EPSS v4 research shows 96% of CVE alerts below exploitation threshold go uninvestigated due to manual workload — this automates the triage.",
+    "categories": ["mcp"],
+    "install": "See README (python + MCP config)"
+  },
+  {
+    "slug": "claude-bughunter",
+    "name": "Claude-BugHunter — 71 Skills, 15 Slash Commands, 681 Disclosed CVE Patterns for Red-Team Work in Claude Code (2.5k Stars)",
+    "primary_url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "secondary_urls": [
+      "https://cybersecuritynews.com/bughunter-bug-bounty-toolkit/",
+      "https://elementalsouls.github.io/Claude-BugHunter/"
+    ],
+    "hook": "elementalsouls/Claude-BugHunter is a Claude Code skill bundle targeting external red-team work and bug bounties: 71 skills, 15 slash commands (like /cbh:recon, /cbh:vulnchain, /cbh:report), and a 681-pattern disclosed-report library curated across 24 core CVE classes. Enterprise platform chains are first-class: M365/Entra, Okta, vCenter, SSL-VPN appliances, SharePoint, and cloud IAM with current 2024–2026 CVE chains and post-credential escalation paths. Built-in reporting uses the 7-Question Gate with VRT-aware severity assessment, out-of-scope rebuttals, PII redaction, and red-team deliverable templates. 2,538 GitHub stars. Loads all 71 skills and 15 commands namespaced on install.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add elementalsouls/Claude-BugHunter"
+  },
+  {
+    "slug": "simon-willison-moebius-webgpu",
+    "name": "Simon Willison: Claude Code Ports Moebius 0.2B Image Inpainting from PyTorch/CUDA to In-Browser WebGPU Overnight",
+    "primary_url": "https://simonwillison.net/2026/Jun/22/porting-moebius/",
+    "secondary_urls": [
+      "https://simonw.github.io/moebius-web/"
+    ],
+    "hook": "Simon Willison published a detailed write-up yesterday (June 22) of using Claude Code to port the Moebius 0.22B image inpainting model — originally PyTorch + NVIDIA CUDA — to run entirely in the browser via ONNX Runtime Web on the WebGPU backend. Claude suggested the ONNX Runtime Web approach (one layer below Transformers.js) and then autonomously drove the conversion: graph topology translation, tensor shape alignment, and browser-side weight loading. The result is a live demo at simonw.github.io/moebius-web/ — 1.27 GB of model weights download on first run and cache in the browser's Cache Storage for reuse. The post is a good data point for Claude Code's ability to handle cross-framework ML porting with minimal human guidance.",
+    "categories": ["general"]
+  },
+  {
+    "slug": "claude-code-system-prompts-v2-1-186",
+    "name": "claude-code-system-prompts Updated for v2.1.186 — All 27 Tool Descriptions + Subagent Prompts, GitHub Stars Trigger Release Notifications",
+    "primary_url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+    "secondary_urls": [],
+    "hook": "Piebald-AI's claude-code-system-prompts repository was updated within minutes of Claude Code v2.1.186 releasing on June 22. It now contains all 27 builtin tool descriptions (up from 24 a few weeks ago), plus the Plan, Explore, and Task subagent prompts and every utility prompt (CLAUDE.md creation, compact, statusline, magic docs, WebFetch, Bash cmd, security-review, agent-creation). Companion to tweakcc (above). The practical use case: star the repo to get a GitHub release notification on your phone for each new Claude Code version — it's faster than checking npm. The companion bl-ue/tweakcc-system-prompts repo pre-packages a trimmed version that's 48k bytes smaller and 30% faster for use with tweakcc.",
+    "categories": ["anthropic"],
+    "install": "See README (read-only reference repo)"
+  },
+  {
+    "slug": "mcp-self-hosted-sandboxes",
+    "name": "Claude Managed Agents: Self-Hosted Sandboxes (Public Beta) and MCP Tunnels for Private Networks (Research Preview)",
+    "primary_url": "https://code.claude.com/docs/en/overview",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=N4efO8viXXo"
+    ],
+    "hook": "Announced at Code with Claude Tokyo (June 10–11) and now in docs: Claude Managed Agents ships two new capabilities. Self-hosted sandboxes (public beta) let you configure exactly where tool execution runs — partner providers include Cloudflare, Daytona, Modal, and Vercel — so agents can write and run code in your own infrastructure rather than Anthropic's default sandbox. MCP tunnels (research preview) let agents connect to MCP servers inside private networks without exposing them publicly: you run a lightweight tunnel client inside your VPN or private cloud, and the agent reaches it through the encrypted tunnel. Together these address the two biggest enterprise blockers for agentic Claude Code: data-residency and internal tooling access.",
+    "categories": ["anthropic", "mcp"],
+    "install": "See Claude Code docs (requires Max, Team, or Enterprise)"
+  },
+  {
+    "slug": "claude-devtools",
+    "name": "claude-devtools — The Missing DevTools for Claude Code: Visual Inspector for Session Logs, Tool Calls, Token Usage, and Subagent Trees",
+    "primary_url": "https://github.com/matt1398/claude-devtools",
+    "secondary_urls": [
+      "https://www.producthunt.com/products/claude-devtools"
+    ],
+    "hook": "matt1398's claude-devtools reads Claude Code session JSONL directly from disk and reconstructs everything the CLI hides into a visual UI: full tool-call traces with inputs and outputs, token usage by turn and by tool, subagent trees showing parent–child relationships, and the live context window. It does not run or modify Claude Code itself — it's a read-only inspector like Chrome DevTools for the browser, except for your AI coding sessions. Particularly useful for understanding why a multi-agent run burned tokens faster than expected or where a subagent diverged. Free, open source.",
+    "categories": ["cost", "design"],
+    "install": "See README (node/npm)"
+  },
+  {
+    "slug": "antigravity-awesome-skills-kiro",
+    "name": "antigravity-awesome-skills v13.0.0 — Kiro and OpenCode Install Targets, 1,678 Skills, 41.2k Stars",
+    "primary_url": "https://github.com/sickn33/antigravity-awesome-skills",
+    "secondary_urls": [
+      "https://www.npmjs.com/package/antigravity-awesome-skills"
+    ],
+    "hook": "v13.0.0 released June 21: first major version bump from the v12 line, adding Kiro (Amazon's new IDE-native agent) and OpenCode as install targets alongside the existing --claude, --cursor, --codex, --gemini, and --antigravity flags. Now 1,678+ skills (up 32 from the June 19 Design Skills drop). A single `npx antigravity-awesome-skills` installs the full catalog to your chosen agent. 41.2k GitHub stars.",
+    "categories": ["skill"],
+    "install": "npx antigravity-awesome-skills",
+    "recurring_note": "↑ Day 3 — v13.0.0, Kiro + OpenCode added, 1,678 skills, 41.2k stars"
+  }
+]
