@@ -1,0 +1,94 @@
+[
+  {
+    "slug": "claude-tag",
+    "name": "Claude Tag",
+    "primary_url": "https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/",
+    "secondary_urls": ["https://fortune.com/2026/06/23/anthropic-claude-tag-virtual-employee-tool-slack/"],
+    "hook": "Anthropic launched Claude Tag on June 23 — a persistent AI teammate that lives inside Slack channels, one instance per channel that the whole team collaborates with asynchronously. Already processes 65% of code changes at Anthropic; mandatory migration for Team and Enterprise plans on August 3.",
+    "categories": ["design", "workflow"]
+  },
+  {
+    "slug": "cc-switch",
+    "name": "CC Switch",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "hook": "Cross-platform desktop app (Tauri + Rust) that unifies Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI, and Hermes Agent in one system-tray interface — 108K GitHub stars and 43 releases with v3.16.3 shipping June 14. One-click provider switching, bi-directional MCP sync, cloud sync, and usage tracking.",
+    "categories": ["mcp", "workflow"],
+    "install": "See README",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "graphify",
+    "name": "Graphify",
+    "primary_url": "https://github.com/safishamsi/graphify",
+    "secondary_urls": ["https://graphify.net/"],
+    "hook": "Claude Code skill that converts any codebase, SQL schemas, R scripts, docs, papers, images, or videos into a queryable knowledge graph — 71.5K stars. Generates interactive HTML visualizations and JSON graph files; Charlie Automates demoed a 70x token reduction vs. vector search for structural code questions.",
+    "categories": ["cost", "workflow"],
+    "install": "See README",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "claude-code-v2-1-187",
+    "name": "Claude Code v2.1.187",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "June 23 release ships sandbox.credentials to block sandboxed commands from reading secret env vars, org-configured model restrictions in the picker and CLI, and mouse click support in fullscreen mode. Also fixes 17 bugs: --resume failures, remote MCP calls hanging >5 min, CJK text mojibake, and background jobs stuck in 'working' forever.",
+    "categories": ["workflow", "cost"]
+  },
+  {
+    "slug": "codebase-memory-mcp",
+    "name": "Codebase-Memory-MCP",
+    "primary_url": "https://github.com/DeusData/codebase-memory-mcp",
+    "hook": "High-performance MCP server that indexes any codebase into a persistent knowledge graph via tree-sitter AST parsing — 13.9K stars with 8,500+ gained this week. Supports 158 languages with sub-millisecond queries and claims 120x token reduction for structural code questions; indexes the Linux kernel (28M LOC) in 3 minutes.",
+    "categories": ["cost", "mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "open-montage",
+    "name": "OpenMontage",
+    "primary_url": "https://github.com/calesthio/OpenMontage",
+    "hook": "Open-source agentic video production system that hit #1 trending on GitHub June 22 with 18.4K stars, gaining ~3,000 in a single day. Turns Claude Code into a full video studio: 12 pipelines, 52 tools, and 500+ agent skills handle research → scripting → asset generation → editing for roughly $1 per 60-second video.",
+    "categories": ["design", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "anthropic-cybersecurity-skills",
+    "name": "Anthropic Cybersecurity Skills",
+    "primary_url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+    "hook": "817 structured cybersecurity skills for AI agents mapped to MITRE ATT&CK v19, NIST CSF 2.0, MITRE ATLAS, D3FEND, and NIST AI RMF — 20.4K stars with v1.3.0 shipping June 22. Covers 29 security domains; new AI Security and Supply Chain Security domains added this release; compatible with Claude Code and 20+ platforms.",
+    "categories": ["workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "skybridge",
+    "name": "Skybridge",
+    "primary_url": "https://github.com/alpic-ai/skybridge",
+    "hook": "Full-stack TypeScript/React framework for building MCP apps that run identically across Claude, ChatGPT, VS Code, and any MCP client — 1.9K stars with v1.1.2 released June 22. Includes HMR dev loop, local emulator, and cloud tunnel; team claims 500K+ npm downloads across 118 releases.",
+    "categories": ["mcp", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "recall-claude-memory",
+    "name": "Recall",
+    "primary_url": "https://github.com/raiyanyahya/recall",
+    "secondary_urls": ["https://news.ycombinator.com/item?id=48622590"],
+    "hook": "Offline-only persistent memory plugin for Claude Code that auto-captures session work and summarizes it locally — no API keys, no cloud, no external calls. Hit Show HN June 23 with 448 stars; v0.3.5 released June 22. Solves the token-waste problem of re-explaining the same project at the start of every session.",
+    "categories": ["cost", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "vibedock",
+    "name": "Vibedock",
+    "primary_url": "https://vibedock.dev/",
+    "secondary_urls": ["https://www.producthunt.com/products/vibedock"],
+    "hook": "macOS menu bar app that toggles Claude Code MCP servers on/off in one click and auto-kills then relaunches Claude sessions on any change — no config file editing. Supports Terminal, iTerm2, VS Code, and Warp; saves tokens by keeping only the MCP servers you actually need active. One-time purchase, 3-day free trial.",
+    "categories": ["mcp", "cost"],
+    "install": "See README"
+  },
+  {
+    "slug": "fable5-ban-day12-id-verification",
+    "name": "Fable 5 / Mythos 5 Access Statement",
+    "primary_url": "https://www.anthropic.com/news/fable-mythos-access",
+    "hook": "Day 12: Fable 5 and Mythos 5 remain suspended with no restoration date. Two firm milestones ahead: July 8 when Anthropic's ID verification system goes live (the most likely unlock mechanism for US users), and August 1, the EO 60-day deadline under the covered frontier model framework.",
+    "categories": ["anthropic"],
+    "recurring_note": "↑ Day 12 — still suspended; July 8 ID verification and August 1 EO deadline now firm"
+  }
+]
