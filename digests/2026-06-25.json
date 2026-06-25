@@ -1,0 +1,100 @@
+[
+  {
+    "slug": "anthropic-alibaba-distillation",
+    "name": "Anthropic Formally Accuses Alibaba's Qwen Lab of Largest-Ever Distillation Attack — 28.8M Exchanges, 25K Fraudulent Accounts",
+    "primary_url": "https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html",
+    "secondary_urls": [
+      "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-claims-that-chinas-alibaba-illicitly-distilled-its-models-from-april-to-june-2026-says-effort-involved-25-000-fake-accounts-and-28-8-million-exchanges-on-claude",
+      "https://www.benzinga.com/markets/tech/26/06/60088712/anthropic-accuses-alibaba-of-ai-model-theft-says-28-8-million-claude-conversations-were-harvested"
+    ],
+    "hook": "Anthropic's June 10 letter to Senate Banking Committee (Warren + Scott) was made public June 24: operators affiliated with Alibaba's Qwen AI lab ran 28.8 million exchanges across ~25,000 fraudulent Claude accounts between April 22 and June 5 — dwarfing the DeepSeek (150K), Moonshot (3.4M), and MiniMax (13M) campaigns that Anthropic disclosed in February. The method is adversarial distillation: harvest Claude's reasoning patterns at scale to train competing models without building the safety properties from scratch. Anthropic wrote to the White House separately and said the targeted capabilities were software engineering and agentic reasoning — exactly the capabilities at the core of Claude Code. AI systems built via distillation, Anthropic warns, inherit the intelligence but not the alignment.",
+    "categories": ["anthropic", "viral"]
+  },
+  {
+    "slug": "claude-code-v2-1-191",
+    "name": "Claude Code v2.1.191 — /rewind Before /clear, 37% CPU Drop During Streaming, MCP OAuth Retry",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "v2.1.191 released June 24. The headline feature is `/rewind`: you can now resume a conversation from the turn just before you ran `/clear`, recovering context you thought was gone. Network UX fix: hosts you allow once with 'Yes' in the sandbox permission dialog are now remembered for the full session instead of re-prompting on every connection. Performance: streaming CPU usage down ~37% via 100ms text-update coalescing and a fix for long-session terminal output cache growth. MCP improvements: transient network error retry on capability discovery, and OAuth retry with headless-environment handling for CI/CD. Bug kills: scroll-position jump while reading mid-stream, background agents resurrecting after stop, and hooks with comma-separated matchers silently never firing.",
+    "categories": ["anthropic", "cost"],
+    "install": "npm install -g @anthropic-ai/claude-code@latest"
+  },
+  {
+    "slug": "fable5-ban-day13",
+    "name": "Fable 5 Ban — Day 13: Alibaba Distillation Letter Is Now the Public Rationale; Kalshi 68% by July 1",
+    "primary_url": "https://www.anthropic.com/news/fable-mythos-access",
+    "secondary_urls": [
+      "https://www.thehansindia.com/technology/tech-news/anthropic-letter-reveals-alleged-alibaba-attempt-to-distill-claude-ai-amid-us-restrictions-on-mythos-and-fable-5-access-1090376"
+    ],
+    "hook": "Day 13 of the global Fable 5 / Mythos 5 export-control suspension. The Alibaba distillation letter (28.8M exchanges, public June 24) provides the clearest official explanation yet for why the Trump administration's June 2 EO targeted frontier models specifically: adversarial distillation at this scale transfers capabilities to competing models without their safety properties — and Alibaba appears to have been doing exactly that while Fable 5 was live. No restoration date announced. Prediction markets: Kalshi 68% by July 1, 74% by mid-July. ID verification framework goes live July 8. Everyone still on Opus 4.8.",
+    "categories": ["anthropic", "viral"],
+    "recurring_note": "↑ Day 13 — Alibaba 28.8M distillation letter now public explanation for EO; Kalshi 68% by July 1; July 8 ID framework still the mechanism; Opus 4.8 remains default"
+  },
+  {
+    "slug": "superpowers-238k",
+    "name": "Superpowers (obra/superpowers) — 238K Stars, Official Anthropic Marketplace, TDD + Systematic Debugging Framework",
+    "primary_url": "https://github.com/obra/superpowers",
+    "secondary_urls": [
+      "https://www.builder.io/blog/claude-code-superpowers-plugin",
+      "https://claude.com/plugins/superpowers"
+    ],
+    "hook": "obra/superpowers has reached 238K stars — up from ~121K in April and ~200K on June 13 — making it the fastest-growing Claude Code framework by star velocity. It packages an entire software development methodology as composable Markdown skills: true red/green TDD with test-first discipline, systematic root-cause debugging instead of symptom patching, plan writing before coding, subagent dispatch for parallel execution, git worktree lifecycle management, and skill creation for your own workflows. It's been in the official Anthropic marketplace since January 15, 2026 and gets a single-command install. Builder.io published a detailed walkthrough this week calling it 'the structured workflow that actually works.' Compatible with Claude Code, Codex, Cursor, Gemini CLI, Kimi Code, and OpenCode.",
+    "categories": ["skill", "viral"],
+    "install": "/plugin install superpowers@claude-plugins-official",
+    "recurring_note": "↑ 238K stars — up ~38K since Jun 13 coverage; still fastest-growing Claude Code framework"
+  },
+  {
+    "slug": "carl-dynamic-rules",
+    "name": "CARL — Context Augmentation & Reinforcement Layer: Keyword-Matched Domain Rules Replace Static CLAUDE.md (~50% Token Savings)",
+    "primary_url": "https://github.com/ChristopherKahler/carl",
+    "hook": "ChristopherKahler/carl (351 stars) replaces your static CLAUDE.md with a domain-based, keyword-triggered rules system: say 'YouTube script' and only your writing rules load; start debugging and only your dev-standards rules load — nothing extra. Rules are stored in ~/.carl/ as JSON domains with per-entry keyword triggers; a companion MCP server handles the just-in-time injection. Charlie Automates, who co-ships Chris AI Systems products, says this cuts ~50% of context token spend on typical sessions because Claude never loads behavioral rules irrelevant to the current task. Global rules still load every time; project-level domains override global ones. Free, MIT.",
+    "categories": ["cost"],
+    "install": "npx carl-core",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "paul-plan-apply-unify",
+    "name": "PAUL — Plan-Apply-Unify Loop: Structured Claude Code Development with 1,012 Stars; Charlie Automates' 'The Meta Nobody's Talking About'",
+    "primary_url": "https://github.com/ChristopherKahler/paul",
+    "secondary_urls": [
+      "https://www.charlieautomates.com/blog/seed-paul-claude-code-meta/"
+    ],
+    "hook": "ChristopherKahler/paul (1,012 stars) enforces a three-phase loop that prevents the most common Claude Code failure mode — orphan plans that nobody reconciles. Every session: Plan (structured design before code), Apply (build against the plan), Unify (close the loop — reconcile plan vs what actually happened, update state, log decisions). The UNIFY phase is non-skippable by design. Charlie Automates' blog post 'SEED + PAUL = The Claude Code Meta Nobody's Talking About' describes this as the stack Charles and Chris have used on every project they've shipped in the past few months. Works for software, marketing campaigns, and automation workflows. Pairs with SEED (project incubator, 270 stars) and CARL (dynamic rules) for a complete Claude Code operating layer.",
+    "categories": ["skill"],
+    "install": "See README (pure Markdown — /paul to start)",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "seed-project-incubator",
+    "name": "SEED — Type-Aware Claude Code Project Incubator: Raw Idea → Structured PLANNING.md, Ready for PAUL Build",
+    "primary_url": "https://github.com/ChristopherKahler/seed",
+    "secondary_urls": [
+      "https://www.charlieautomates.com/blog/seed-paul-claude-code-meta/"
+    ],
+    "hook": "ChristopherKahler/seed (270+ stars) is a pure-Markdown Claude Code skill that takes a raw product idea through a type-aware guided interview — asking different questions for SaaS, CLI tool, AI agent, or automation workflow — and produces a structured PLANNING.md that PAUL can consume directly without re-asking questions you already answered. Zero runtime dependencies: type /seed, answer the prompts, get a buildable spec. The SEED→PAUL handoff eliminates the 'great idea, vague plan' failure mode: SEED captures the design decisions up front so PAUL spends tokens building, not clarifying. Featured by Charlie Automates alongside PAUL as part of the same workflow stack.",
+    "categories": ["skill"],
+    "install": "See README (pure Markdown — /seed to start)",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "vokal-agent-collaboration",
+    "name": "Vokal — Shared Collaboration Space for Human + AI Agent Teams (Claude Code, Codex, Hermes, OpenCode); #2 Product Hunt",
+    "primary_url": "https://vokal.team/",
+    "secondary_urls": [
+      "https://www.producthunt.com/products/vokal-2"
+    ],
+    "hook": "Vokal landed #2 of the day on Product Hunt with 100+ teams signed up at launch. The premise: AI agents have made solo builders fast, but teams still hand off context via copy-paste. Vokal gives human teammates and AI agents a shared workspace — channels, tasks, docs, tools, memory, and a Knowledge Base — where work happens in one place instead of bouncing between terminal sessions and Slack DMs. Supports Claude Code, Codex CLI, Hermes Agent, OpenCode, and any MCP/ACP-compatible stack. Founded by an ex-Meta/Google PM who spent years on human-AI collaboration design.",
+    "categories": ["plugin"]
+  },
+  {
+    "slug": "publora-mcp-social",
+    "name": "Publora — MCP-Native Social Media API for AI Agents: 18 Tools, 10 Networks, Full Post + Comment + React Loop",
+    "primary_url": "https://publora.com/",
+    "secondary_urls": [
+      "https://github.com/publora/skills",
+      "https://www.producthunt.com/products/publora"
+    ],
+    "hook": "Publora ships a remote MCP server at mcp.publora.com with 18 tools covering the full engagement lifecycle: post, comment, react, @mention, schedule, and analytics across LinkedIn, X, Instagram, Threads, TikTok, YouTube, Facebook, Bluesky, Mastodon, and Telegram. No OAuth glue code to write — one-time setup, zero per-platform integration work. The companion publora/skills repo packages the MCP as a Claude Code + Codex skill bundle. Product Hunt launch in June 2026. The pitch is agent-first: your Claude Code session can post a launch thread, reply to comments, and queue up follow-up posts without leaving the terminal.",
+    "categories": ["mcp"],
+    "install": "See README (remote MCP at mcp.publora.com)"
+  }
+]
