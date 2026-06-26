@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — June 26, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — June 26, 2026</h1><p class="sub">Top 9 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/kane50613/takumi">Takumi — Render JSX, HTML, and CSS to Images Without a Headless Browser (2.1k Stars, Trending Today)</a></h3>
+  <p class="hook">Rust-based rendering engine that converts JSX, HTML, and CSS to PNG, JPEG, WebP, GIF, APNG, and SVG without launching Chrome — a drop-in `next/og` replacement that runs on Cloudflare Workers, Node.js, and browsers alike. 2,100 stars and the top GitHub trending developer&#39;s project today; supports CSS Grid, Tailwind v4, `::before`/`::after` pseudo-elements, masking, and text shaping in a single binary. Ideal for Claude Code sessions that need to generate OG images, social cards, or video thumbnails at the edge without spinning up Playwright.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">video · viral · browser</div>
+  <pre><button class="copy">copy</button><code>bun i takumi-js</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/zilliztech/claude-context">claude-context (Zilliz) — Hybrid BM25 + Vector Semantic Code Search MCP, ~40% Token Reduction (12k Stars)</a></h3>
+  <p class="hook">Zilliz&#39;s MCP plugin gives Claude Code hybrid BM25 + dense-vector retrieval across your entire codebase, with Merkle-tree-based incremental indexing that only reprocesses changed files. Reports ~40% token reduction vs. loading full directories, with AST-based chunking for code-structure-aware retrieval. 12,000+ stars; supports OpenAI, VoyageAI, Ollama, and Gemini embeddings backed by Milvus or Zilliz Cloud — distinct from codebase-memory-mcp (tree-sitter, June 24) in its vector-store-first architecture and incremental design.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">design · plugin · memory · token · local · viral · search</div>
+  <pre><button class="copy">copy</button><code>See README (claude mcp add claude-context + env vars for embedding provider + Milvus)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/hoangsonww/Claude-Code-Agent-Monitor">Claude-Code-Agent-Monitor — Real-Time WebSocket Dashboard, Kanban, D3.js Orchestration Trees, 25 MCP Tools (670 Stars)</a></h3>
+  <p class="hook">Real-time monitoring dashboard for Claude Code built on Node/Express/React/Vite/TailwindCSS with WebSocket feeds: Kanban board of live sessions, D3.js subagent orchestration diagrams, token/tool-frequency analytics, and 25 typed MCP introspection tools. Updated ~3 hours ago today (670 stars, 152 forks); ships an Electron desktop app for macOS and Windows, Docker Compose for server deployment, and web push notifications for session alerts. You can spawn new Claude Code sessions directly from the dashboard — useful for teams running multi-agent pipelines who need visibility without tailing JSONL files.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">mcp · agent · subagent · viral</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/hoangsonww/Claude-Code-Agent-Monitor &amp;&amp; npm install &amp;&amp; npm start</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/max-sixty/worktrunk">Worktrunk — Git Worktree CLI for Parallel AI Agent Workflows (5.6k Stars, Trending Developer Today)</a></h3>
+  <p class="hook">Git worktree CLI purpose-built for parallel AI agent workflows — `wt switch --create feature-auth` spins up a branch and worktree, `wt merge main` squashes, rebases, and cleans up when the agent is done. 5,600 stars, v0.61.0 released June 21, built in Rust by max-sixty who was the top trending GitHub developer today. A companion zsh plugin, terminal dashboard, and per-worktree dev-server support round out the workflow; AI-generated commit messages are built in. Available on Homebrew, Cargo, WinGet, pacman, and conda/pixi.</p>
+  <div class="secondary">Also: <a href="https://worktrunk.dev">worktrunk.dev</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">plugin · agent · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>brew install worktrunk</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/affaan-m/ECC">ECC (Everything Claude Code) — 211.9k Stars, 271 Skills, 67 Agents, 92 Command Shims Across 6 Harnesses (v2.0.0 Stable)</a></h3>
+  <p class="hook">affaan-m&#39;s Everything Claude Code is a cross-harness agent operating system with 271 skills, 67 specialized agents, and 92 legacy command shims that work across Claude Code, Codex, Cursor, OpenCode, Gemini, and Zed. v2.0.0 went stable in June 2026 with 211,900+ stars, 32,500+ forks, and 230 contributors — on par with superpowers in scope. Install profiles range from minimal to full; the plugin-marketplace route requires one command. Includes AgentShield&#39;s 102 security rules, research-first development patterns, and per-harness skill adapters.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">plugin · harness · subagent · marketplace · security</div>
+  <pre><button class="copy">copy</button><code>/plugin install ecc@ecc</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mvanhorn/last30days-skill">last30days-skill — Cross-Platform Research Skill Across Reddit, YouTube, HN, Polymarket, GitHub, X, TikTok (46.9k Stars)</a></h3>
+  <p class="hook">AI agent skill that searches any topic across Reddit, YouTube (full transcripts), HN, Polymarket, GitHub, X/Twitter, TikTok, Bluesky, and Pinterest, then synthesizes findings ranked by actual engagement metrics — not editorial order. 46,900 stars; features cross-source cluster merging (same story appearing on multiple platforms gets deduplicated), &#39;Best Takes&#39; surfacing of viral responses, comparison mode, HTML export, and GitHub contributor tracking for person lookups. Zero-config for Reddit, HN, Polymarket, and GitHub; social platforms require API keys. MIT.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · agent · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add mvanhorn/last30days-skill</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.193 — autoMode.classifyAllShell, Live File Path Autocomplete in Bash Mode, OTel Assistant Response Events</a></h3>
+  <p class="hook">v2.1.193 shipped June 25 with two standout improvements: `autoMode.classifyAllShell` routes all Bash and PowerShell commands through the auto-mode classifier (not just commands Claude generates), and live file path autocomplete lands in bash mode — type `!` followed by a partial path. Also adds `claude_code.assistant_response` OpenTelemetry log events (redacted by default, enabled with `OTEL_LOG_ASSISTANT_RESPONSES=1`) for teams piping sessions into observability stacks, plus automatic memory-pressure reaping for idle background shell processes. Bug kills: stale `/model` UI after `/login`, spurious backgrounding cancellations, and pinned agents being re-prompted after auto-update.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">memory</div>
+  <pre><button class="copy">copy</button><code>npm install -g @anthropic-ai/claude-code@latest</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/fable-mythos-access">Fable 5 / Mythos 5 Access Statement — Day 14; July 8 ID Verification 12 Days Away</a></h3>
+  <p class="hook">Day 14 of the global Fable 5 and Mythos 5 export-control suspension. July 8 — the date Anthropic&#39;s identity verification framework goes live — is now 12 days away; that mechanism remains the most concrete path to US access restoration. August 1 is the 60-day EO deadline for the covered frontier model pre-brief framework. Prediction markets last recorded approximately 68% probability of pre-July-1 restoration; the Alibaba distillation disclosure (28.8M exchanges across 25,000 fraudulent accounts, revealed June 24) remains the public rationale for the ban. No new Anthropic statement today. All users remain on Opus 4.8.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  
+  
+  <div class="recurring">↑ Day 14 — still suspended; July 8 ID verification 12 days out; August 1 EO deadline 36 days out; Kalshi ~68% by July 1; Opus 4.8 default unchanged</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/johannesjo/parallel-code">parallel-code — Desktop App for Parallel Claude Code + Codex + Gemini Sessions in Isolated Git Worktrees (750 Stars, v1.9.0)</a></h3>
+  <p class="hook">Desktop application (macOS .dmg, Linux .AppImage/.deb) that runs Claude Code, Codex, Gemini CLI, and Copilot CLI side-by-side — each agent gets its own git branch and worktree auto-created, with node_modules symlinked for speed. 750 stars, v1.9.0, MIT, free. Built-in diff viewer with inline comments for reviewing agent output before merging, focus mode for single-task work, progress timeline, and per-task notes panels; keyboard-first controls with 10 themes. Closer to vibeyard (similar category, already in submissions) but lighter-weight and more narrowly focused on the parallel worktree pattern.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README (download .dmg / .AppImage from releases page)</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
