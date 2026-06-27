@@ -1,0 +1,107 @@
+[
+  {
+    "slug": "fable5-mythos5-partial-us-release",
+    "name": "Mythos 5 Partial US Release — Day 15",
+    "primary_url": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies",
+    "secondary_urls": [
+      "https://fortune.com/2026/06/27/anthropic-mythos-5-ai-model-us-commerce-department-clearance-fable/",
+      "https://9to5mac.com/2026/06/26/anthropic-cleared-to-release-claude-mythos-5-to-over-100-us-institutions/",
+      "https://www.cnbc.com/2026/06/26/us-government-anthropic-claude-mythos5-ai.html"
+    ],
+    "hook": "US Commerce Secretary Howard Lutnick signed a letter June 26 lifting the block on Mythos 5, clearing it for 100+ US companies and government agencies under Project Glasswing. Fable 5 (the consumer model) remains restricted — talks ongoing but no timeline given.",
+    "categories": ["anthropic", "viral"],
+    "install": "",
+    "recurring_note": "↑ Day 15 — partial resolution after 14 days of full export ban; Mythos 5 cleared, Fable 5 still locked"
+  },
+  {
+    "slug": "claude-code-v2-1-195",
+    "name": "Claude Code v2.1.195 — Week 26 Recap",
+    "primary_url": "https://code.claude.com/docs/en/whats-new",
+    "secondary_urls": [
+      "https://github.com/anthropics/claude-code/releases",
+      "https://code.claude.com/docs/en/changelog"
+    ],
+    "hook": "`claude mcp login <n>` / `claude mcp logout <n>` authenticate MCP servers from the shell without touching the /mcp menu. `/rewind` can now jump back past a `/clear`. Shell mode explains command output (no second prompt). Background subagents surface permission prompts in the main session instead of auto-denying. June 27 patch also cuts streaming CPU ~37% and fixes hook matchers on hyphenated names.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code",
+    "recurring_note": "↑ Day 3 — Week 26 (v2.1.185–v2.1.195); biggest batch: MCP auth CLI, /rewind cross-clear, background agent UX"
+  },
+  {
+    "slug": "claude-howto",
+    "name": "claude-howto",
+    "primary_url": "https://github.com/luongnv89/claude-howto",
+    "secondary_urls": [],
+    "hook": "38.5k stars on GitHub — a visual, example-driven guide covering 10 Claude Code modules (slash commands, memory, skills, subagents, MCP, hooks, plugins, checkpoints, advanced features, CLI) with Mermaid diagrams, copy-paste templates, and an 11–13 hr learning path. MIT, aligned with v2.1.160.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/luongnv89/claude-howto"
+  },
+  {
+    "slug": "github-copilot-claude-jetbrains",
+    "name": "Claude Agent in JetBrains IDEs (GitHub Copilot)",
+    "primary_url": "https://github.blog/changelog/2026-06-22-new-features-and-claude-as-agent-provider-preview-in-jetbrains-ides/",
+    "secondary_urls": [
+      "https://code.claude.com/docs/en/jetbrains"
+    ],
+    "hook": "As of June 22, GitHub Copilot supports Claude as an agent provider in JetBrains IDEs (public preview). Install the Claude Code CLI, point JetBrains at it in settings, select 'Claude' in the Copilot Chat panel — full agentic file editing and tool use from within IntelliJ, PyCharm, WebStorm, etc. Configurable permissions coming; currently bypass mode.",
+    "categories": ["anthropic", "viral"],
+    "install": "npm install -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "n8n-mcp",
+    "name": "n8n-MCP",
+    "primary_url": "https://github.com/czlonkowski/n8n-mcp",
+    "secondary_urls": [
+      "https://dashboard.n8n-mcp.com"
+    ],
+    "hook": "22k stars, 3.5k forks — MCP server that gives Claude (and any MCP client) structured access to 2,063 n8n nodes and 2,352 real-world workflow templates. v2.61.0 dropped June 26 in this project's 231-release history. Zero-setup via npx or self-host via Docker.",
+    "categories": ["mcp"],
+    "install": "npx n8n-mcp"
+  },
+  {
+    "slug": "palmier-pro",
+    "name": "Palmier Pro",
+    "primary_url": "https://github.com/palmier-io/palmier-pro",
+    "secondary_urls": [],
+    "hook": "9.2k stars — a Swift-native macOS 26 (Apple Silicon) video editor that ships an MCP server so Claude Code, Cursor, and Codex can control the timeline directly. Bundles Seedance and Kling for AI-generated clips inside the editor. GPLv3, free to download (generative AI needs a subscription).",
+    "categories": ["design", "mcp"],
+    "install": "See README — download DMG from releases"
+  },
+  {
+    "slug": "bumblebee-perplexity",
+    "name": "Bumblebee (Perplexity AI)",
+    "primary_url": "https://github.com/perplexityai/bumblebee",
+    "secondary_urls": [],
+    "hook": "4.6k stars — Perplexity's read-only supply-chain scanner for developer tools. Reads ~/.claude.json, .mcp.json, claude_desktop_config.json, and 6 other MCP config paths, flags matches against maintained threat-intel catalogs (updated via PRs as new campaigns emerge). Zero non-stdlib deps, single Go binary, v0.1.2 (June 18).",
+    "categories": ["mcp"],
+    "install": "go install github.com/perplexityai/bumblebee/cmd/bumblebee@latest"
+  },
+  {
+    "slug": "claude-seo",
+    "name": "Claude SEO Plugin",
+    "primary_url": "https://github.com/AgricIDaniel/claude-seo",
+    "secondary_urls": [],
+    "hook": "10k stars, MIT — 25 sub-skills and 18 sub-agents covering technical SEO, E-E-A-T, schema/GEO/AEO, backlinks, local SEO, e-commerce, international SEO, and Google APIs, plus PDF/Excel reporting. Supports SPA headless rendering. v2.2.0 (June 12).",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add AgriciDaniel/claude-seo"
+  },
+  {
+    "slug": "mcp-oauth-mitm",
+    "name": "MCP OAuth Token Hijack (Mitiga Labs)",
+    "primary_url": "https://www.mitiga.io/blog/claude-code-mcp-token-theft-mitm",
+    "secondary_urls": [
+      "https://www.securityweek.com/claude-code-oauth-tokens-can-be-stolen-through-stealthy-mcp-hijacking/",
+      "https://securityboulevard.com/2026/06/when-the-token-theft-hides-in-plain-sight-why-agent-containment-stops-the-claude-code-mcp-attack/"
+    ],
+    "hook": "Mitiga Labs documented a 5-step MITM chain: a malicious npm postinstall hook silently edits ~/.claude.json to redirect all MCP traffic through attacker infrastructure, harvesting plaintext OAuth bearer tokens (persistent, broadly scoped, unattributable server-side). Reported to Anthropic April 10; Anthropic declined to patch, citing user consent as a prerequisite. Security Boulevard and SecurityWeek picked it up in June.",
+    "categories": ["mcp"]
+  },
+  {
+    "slug": "claude-code-ultimate-guide",
+    "name": "Claude Code Ultimate Guide",
+    "primary_url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+    "secondary_urls": [],
+    "hook": "5.2k stars, CC BY-SA 4.0 — 430K+ lines by a Founding Engineer at Méthode Aristote: a 24k-line narrative guide with 48 Mermaid diagrams, 181 production-ready templates, a 271-question self-assessment quiz across 9 categories, and the ecosystem's only systematic threat database (28 CVEs tracked, 655 malicious skills catalogued). Ships an MCP server for in-session use.",
+    "categories": ["viral"],
+    "install": "See README — MCP server available for in-Claude-Code use"
+  }
+]
