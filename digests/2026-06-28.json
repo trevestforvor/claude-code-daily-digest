@@ -1,0 +1,82 @@
+[
+  {
+    "slug": "karpathy-claude-md-v10",
+    "name": "Andrej Karpathy CLAUDE.md v10 — 6 New Agent Self-Check Rules (200k+ Stars Across Forks)",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "secondary_urls": [
+      "https://github.com/forrestchang/andrej-karpathy-skills",
+      "https://www.techtimes.com/articles/319214/20260628/karpathy-claudemd-grows-ten-rules-new-self-check-protocol-ai-coding-loops.htm"
+    ],
+    "hook": "Six new agent self-check rules circulated on X June 27 under Andrej Karpathy's name — now ~5 weeks into his Anthropic pre-training role. The rules tighten loop discipline: verify before fixing, explicit debugging sequences, dependency hygiene, and named failure modes for stuck loops. Authenticity is unconfirmed but both major forks (forrestchang and multica-ai) updated June 27–28 and together hold 200,000+ stars, making this the most-forked CLAUDE.md variant in the ecosystem. TechTimes covered it June 28.",
+    "categories": ["viral", "skill"],
+    "install": "npx skills add multica-ai/andrej-karpathy-skills"
+  },
+  {
+    "slug": "fable5-mythos5-day16-soon",
+    "name": "Fable 5 \"On Track to Return Soon\" — Day 16; Mythos 5 Cleared for 100+ US Critical Infrastructure Orgs",
+    "primary_url": "https://www.anthropic.com/news/fable-mythos-access",
+    "secondary_urls": [
+      "https://www.axios.com/2026/06/27/anthropic-fable-5-return-soon",
+      "https://gizmodo.com/expect-claude-fable-5-to-be-turned-back-on-in-a-matter-of-days-report-says-2000778672",
+      "https://www.nbcnews.com/tech/tech-news/us-government-gives-anthropic-green-light-limited-re-release-mythos-5-rcna352018"
+    ],
+    "hook": "Axios reported June 27 that Fable 5 is \"on track to return soon\" following weekend government talks — the clearest signal yet of general access restoration, with no date given. Separately, NBC News confirmed the Lutnick-signed Annex A expansion now covers roughly 100 US critical-infrastructure orgs and government agencies for Mythos 5 access, up from the initial ~20. Pentagon and NSA final sign-off remain outstanding. All commercial users remain on Opus 4.8.",
+    "categories": ["anthropic", "viral"],
+    "recurring_note": "↑ Day 16 — Axios 'on track soon' after weekend talks; Mythos Annex A expanded to ~100 US critical-infrastructure orgs; Fable 5 general access still pending Pentagon/NSA; Opus 4.8 remains default"
+  },
+  {
+    "slug": "claude-cognitive",
+    "name": "claude-cognitive — Attention-Based Working Memory for Claude Code (HOT/WARM/COLD File Tiers, ~449 Stars)",
+    "primary_url": "https://github.com/GMaN1911/claude-cognitive",
+    "secondary_urls": [],
+    "hook": "claude-cognitive replaces flat file injection with a three-tier attention model: HOT files (>0.8 score) are injected in full, WARM (0.25–0.8) are injected as headers/signatures only, and COLD files are skipped entirely. Scores decay between sessions; multi-instance state sharing keeps separate Claude Code windows consistent on the same project. The practical effect is that context stays focused on files the session is actively editing rather than burning tokens on boilerplate that hasn't changed.",
+    "categories": ["cost"],
+    "install": "See README"
+  },
+  {
+    "slug": "zhipu-glm-52",
+    "name": "Zhipu GLM-5.2 — MIT Open-Source Model Matching Mythos 5 on Security Benchmarks; No Export Restrictions",
+    "primary_url": "https://huggingface.co/ZhipuAI/GLM-5.2",
+    "secondary_urls": [],
+    "hook": "Zhipu AI released GLM-5.2 under the MIT license on Hugging Face on June 13. Independent benchmarks posted this week show it matching Mythos 5 on CTF challenge solving, static vulnerability analysis, and agentic bug-finding — the three capability categories cited in the June 2 EO as justification for the export ban. Because GLM-5.2 carries no regional restrictions and is openly downloadable, it weakens the national-security rationale for keeping Fable 5 and Mythos 5 locked. The model is compatible with the Claude Code MCP stack via OpenAI-compatible endpoints.",
+    "categories": ["viral"]
+  },
+  {
+    "slug": "statewright",
+    "name": "Statewright — State Machine Guardrails for Claude Code via MCP (5 Tools Visible per State; SWE-bench 2/10 → 10/10)",
+    "primary_url": "https://statewright.ai/",
+    "secondary_urls": [
+      "https://github.com/statewright/statewright",
+      "https://news.ycombinator.com/item?id=48108778"
+    ],
+    "hook": "Statewright wraps Claude Code (and Codex, Cursor, Pi) in a declarative state machine via MCP: each state exposes only the tools valid for that step, so Claude sees 5 tools instead of a 30-tool menu. On a SWE-bench subset, local models jumped from 2/10 to 10/10 correct once tool choices were constrained by state. The Rust engine is Apache 2.0; the MCP gateway is FSL-1.1-ALv2 (converts to Apache 2.0 in 2029). 402 stars, debuted on Show HN this week.",
+    "categories": ["mcp"],
+    "install": "/plugin marketplace add statewright/statewright"
+  },
+  {
+    "slug": "gws-claude-plugin",
+    "name": "gws-claude-plugin — 92 Skills for Full Google Workspace in Claude Code (Gmail, Drive, Calendar, Sheets, Docs + 9 More; 4.9k Stars)",
+    "primary_url": "https://github.com/WadeWarren/gws-claude-plugin",
+    "secondary_urls": [],
+    "hook": "gws-claude-plugin wraps the gws CLI (shipped by Google in March 2026) as 92 composable Claude Code skills covering Gmail, Drive, Calendar, Sheets, Docs, Chat, Slides, Forms, Tasks, Keep, Meet, Classroom, and Admin. Skills follow the standard SKILL.md format — Claude can read, draft, send, schedule, and query across your entire Workspace from the terminal without switching windows. 4,900 stars; mentioned in Chase AI's June 2026 Top 10 Claude Code plugins rundown.",
+    "categories": ["skill"],
+    "install": "See README",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "claude-trusted-devices-remote",
+    "name": "Claude Code Trusted Devices for Remote Control — Team/Enterprise Admin Verification Gate (June 26)",
+    "primary_url": "https://code.claude.com/docs/en/remote-control",
+    "secondary_urls": [],
+    "hook": "Added to Claude Code on June 26: Team and Enterprise admins can now require device verification before any Remote Control session is allowed. Devices enroll during the sign-in flow (not ad-hoc), and the gate is off by default — orgs opt in via admin settings. The feature targets the session-hijacking surface identified by Mitiga Labs in April: a stolen token that passes auth is still blocked if it originates from an unverified device.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "awesome-claude-connectors",
+    "name": "awesome-claude-connectors — 511 Verified MCP Integrations; 26 Added This Week Including AgentGuard, Mnemoverse, AgentMail",
+    "primary_url": "https://github.com/rdmgator12/awesome-claude-connectors",
+    "secondary_urls": [],
+    "hook": "awesome-claude-connectors reached 511 verified MCP integrations as of June 26 after adding 26 this week. Five are agent-operations focused: AgentGuard (runtime policy enforcement), Origin (MCP request provenance tracking), Mnemoverse Memory (distributed agent memory), AgentMail (email agent tooling), and Alpic (MCP workflow orchestration). The list is maintained by rdmgator12 with a verification checklist — all entries must pass a functional test against a live Claude Code session before listing.",
+    "categories": ["mcp"]
+  }
+]
