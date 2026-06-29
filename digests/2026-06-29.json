@@ -1,0 +1,87 @@
+[
+  {
+    "slug": "fable5-day17-austria-eu",
+    "name": "Fable 5 Day 17 — Austria Formally Proposes EU Host Anthropic; US Talks Continue",
+    "primary_url": "https://www.anthropic.com/news/fable-mythos-access",
+    "secondary_urls": [
+      "https://www.trendingtopics.eu/austria-wants-to-bring-anthropic-to-europe/",
+      "https://en.sedaily.com/international/2026/06/29/austria-urges-eu-to-lure-anthropic-after-us-export-ban",
+      "https://www.axios.com/2026/06/27/anthropic-fable-5-return-soon"
+    ],
+    "hook": "Day 17 of the Fable 5 ban. Austria's State Secretary for Digitalization Alexander Pröll sent a formal letter to EU Commission VP Henna Virkkunen on June 28–29 urging all EU member states to jointly explore hosting Anthropic within the EU — the first concrete institutional response in Europe to the US export ban. Multiple outlets (Seoul Economic Daily, ibtimes.sg, beincrypto, CryptoBriefing) covered it June 28–29. Axios's June 27 'on track to return soon' signal remains the best US update; Fable 5 is still offline for all commercial users globally, and Anthropic has issued no new statement today.",
+    "categories": ["anthropic", "viral"],
+    "recurring_note": "↑ Day 17 — Austria proposes EU hosting; Axios June 27 'soon'; Mythos 5 at ~100 US orgs; Fable 5 globally dark; Opus 4.8 default unchanged"
+  },
+  {
+    "slug": "context-mode",
+    "name": "context-mode — 18.3k Stars; Sandboxes Tool Output 98% (315 KB → 5.4 KB) via MCP + Hooks",
+    "primary_url": "https://github.com/mksglu/context-mode",
+    "secondary_urls": [],
+    "hook": "context-mode is an MCP plugin that intercepts Claude Code's tool results before they enter the context window, writes raw output to disk, and hands Claude a condensed summary — shrinking 315 KB to 5.4 KB (98% reduction). Session continuity is maintained by logging every file edit, git operation, task, and error in SQLite so the model resumes exactly after compaction. A 'Think in Code' pattern discourages repetitive file reads in favor of agent-written analysis scripts. 18,300 stars, 2,054 commits.",
+    "categories": ["cost", "mcp"],
+    "install": "/plugin marketplace add mksglu/context-mode"
+  },
+  {
+    "slug": "alirezarezvani-claude-skills",
+    "name": "alirezarezvani/claude-skills — 18,961 Stars; 337 Skills Across 13 AI Tools (Engineering, C-Suite, Research, Finance)",
+    "primary_url": "https://github.com/alirezarezvani/claude-skills",
+    "secondary_urls": [
+      "https://alirezarezvani.github.io/claude-skills/"
+    ],
+    "hook": "alirezarezvani/claude-skills packs 337 skills, 30+ agent personas, and 70+ slash commands into a single repo covering engineering, DevOps, marketing (including AEO for LLM citations), product, compliance, C-level advisory (CFO/CMO/CRO/CPO/COO/CHRO/CISO/GC/CDO/CAIO + 21 /cs:* commands), academic research ops, and finance. Works natively across 13 harnesses: Claude Code, Codex, Gemini CLI, OpenClaw, Hermes, Cursor, Aider, Windsurf, Kilo Code, OpenCode, Augment, Antigravity, and Mistral Vibe. 18,961 stars.",
+    "categories": ["skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "openknowledge",
+    "name": "OpenKnowledge — AI-Native WYSIWYG Markdown Editor with Native Claude Code MCP + Skills (Show HN June 27; v0.20.0 June 29)",
+    "primary_url": "https://github.com/inkeep/open-knowledge",
+    "secondary_urls": [
+      "https://openknowledge.ai/docs/get-started/overview",
+      "https://news.ycombinator.com/item?id=48675435"
+    ],
+    "hook": "OpenKnowledge (Inkeep, YC-backed) is an open-source WYSIWYG markdown editor built on a yjs dual-observer CRDT that holds a ProseMirror document and its raw Markdown in continuous sync. It auto-detects Claude Code, Codex, and Cursor on your system and configures them on first run; ships a bundled MCP server and skills for agentic search and knowledge graph queries. Version v0.20.0 released June 29. Show HN June 27 landed on front page. 1,500 GitHub stars, GPL-3.0. Positioned as the LLM Wiki / second-brain layer between your agent and your notes.",
+    "categories": ["design", "skill", "mcp"],
+    "install": "npm install -g @inkeep/open-knowledge && ok init && ok start --open"
+  },
+  {
+    "slug": "ccpm",
+    "name": "CCPM (automazeio/ccpm) — 8.2k Stars; GitHub Issues + Git Worktrees for Up to 12 Parallel Claude Code Agents",
+    "primary_url": "https://github.com/automazeio/ccpm",
+    "secondary_urls": [
+      "https://aroussi.com/post/ccpm-claude-code-project-management",
+      "https://cc.deeptoai.com/docs/en/tools/ccpm-claude-code-project-manager"
+    ],
+    "hook": "CCPM turns GitHub Issues into an agent task database and Git worktrees into isolated per-agent workspaces — up to 12 Claude Code agents running simultaneously, each on its own branch, with zero merge conflicts. PRDs decompose into issues; tasks marked `parallel: true` run concurrently; progress shows up in issue comments so humans see live AI work without tailing logs. Context persists in project files across sessions, not in chat history. Compatible with Claude Code, Factory, Amp, OpenCode, Codex, and Cursor via the agentskills.io standard. 8,200 stars.",
+    "categories": ["skill"],
+    "install": "git clone https://github.com/automazeio/ccpm.git && ln -s /path/to/ccpm/skill/ccpm ~/.claude/skills/ccpm"
+  },
+  {
+    "slug": "aris",
+    "name": "ARIS (auto-claude-code-research-in-sleep) — 11.6k Stars; Autonomous ML Research Skills: Review Loops, Idea Discovery, Paper Writing",
+    "primary_url": "https://github.com/wanshuiyin/auto-claude-code-research-in-sleep",
+    "secondary_urls": [],
+    "hook": "ARIS (Auto-Research-In-Sleep) is a Markdown-only skill bundle for autonomous ML research with no framework lock-in — runs on Claude Code, Codex, OpenClaw, or any LLM agent. Skills cover the full research lifecycle: idea-creator, research-review (cross-model review loops), auto-paper-improvement-loop, paper-writing, figure-spec (deterministic JSON→SVG), and experiment-queue (SSH job queues for multi-seed configs). Tested on an ICLR 2026 theory paper: typical +4.5 review score improvement across three autonomous rounds. 11,600 stars.",
+    "categories": ["skill"],
+    "install": "npx skills add wanshuiyin/auto-claude-code-research-in-sleep"
+  },
+  {
+    "slug": "trends-mcp",
+    "name": "Trends-MCP (trendsmcp) — Live Trend Data from 20+ Sources Inside Claude (Google, YouTube, TikTok, Reddit, Amazon, npm)",
+    "primary_url": "https://github.com/trendsmcp/trends-mcp",
+    "secondary_urls": [
+      "https://www.trendsmcp.ai/"
+    ],
+    "hook": "Trends-MCP is an MCP server that pipes live trend signals from Google Search, YouTube, TikTok, Reddit, Amazon, Wikipedia, App Stores, Steam, npm, and more into Claude — normalized to a 0–100 score per platform. A single API key works for MCP or direct API calls. Updated June 21, 2026. Works with Claude, Cursor, VS Code, Copilot, ChatGPT, Windsurf, Cline, and Raycast. Free tier is 100 requests/month, 20/day — no credit card required.",
+    "categories": ["mcp"],
+    "install": "claude mcp add trends -- npx -y @trendsmcp/trends-mcp (key from trendsmcp.ai)"
+  },
+  {
+    "slug": "anthropic-economic-index-cadences",
+    "name": "Anthropic Economic Index: Cadences — Claude Code Weekend Shifts to Agent Design & Quant Trading; 35%+ Expect AI to Do Most Work in 12 Months",
+    "primary_url": "https://www.anthropic.com/research/economic-index-june-2026-report",
+    "secondary_urls": [],
+    "hook": "Anthropic's June 2026 Economic Index report ('Cadences') maps usage rhythms from ~9,700 survey respondents linked to actual Claude usage data (May–June 2026). Key Claude Code finding: weekends show a measurable shift from backend architecture and API debugging toward AI agent design, quant trading, and gaming — a signal that weekends are for builders experimenting, not production firefighting. 6 in 10 respondents expect their AI task share to rise next year; over 35% expect AI to handle most or nearly all their work tasks within 12 months.",
+    "categories": ["anthropic"]
+  }
+]
