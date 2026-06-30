@@ -1,0 +1,123 @@
+[
+  {
+    "slug": "voltagent-awesome-claude-design",
+    "name": "VoltAgent/awesome-claude-design — 2.9k Stars; 68 DESIGN.md Files Across 11 Industries, One Drop = Full UI Scaffold",
+    "primary_url": "https://github.com/VoltAgent/awesome-claude-design",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=IShdbDP4Jgg"
+    ],
+    "hook": "VoltAgent's awesome-claude-design ships 68 ready-to-use DESIGN.md files spanning AI/LLM platforms, developer tools, fintech, e-commerce, automotive, and 7 more industry clusters. Drop any file into Claude Design and it expands into a full UI scaffold in one shot — no design-system setup, no token configuration. Chase AI's June '26 'Top 10 Claude Code Plugins' video (https://youtube.com/watch?v=IShdbDP4Jgg) referenced 'awesome-design.md' as a top pick, driving fresh attention to the format and this collection. 2,900 stars.",
+    "categories": ["design"],
+    "install": "See README (download DESIGN.md, drop into Claude Design)"
+  },
+  {
+    "slug": "sculptor-imbue",
+    "name": "Sculptor (imbue-ai) — Parallel Claude Code Agents in Isolated Docker Containers; v0.38.0 June 28, Show HN",
+    "primary_url": "https://github.com/imbue-ai/sculptor",
+    "secondary_urls": [
+      "https://news.ycombinator.com/item?id=45427697",
+      "https://imbue.com/sculptor/"
+    ],
+    "hook": "Sculptor is Imbue's open-source desktop app (Mac Apple Silicon + Linux) that sandboxes each Claude Code agent in its own Docker container — spin up parallel workspaces, review diffs, merge back to main, all without leaving the app. The built-in terminal and GitHub PR integration mean you stay in flow across sessions. v0.38.0 shipped June 28, 2026; Show HN posted same day. Labeled 'experimental research preview'. 189 stars and climbing.",
+    "categories": ["design", "agent"]
+  },
+  {
+    "slug": "code-review-graph",
+    "name": "code-review-graph — 19k Stars; 82× Median Token Reduction via Tree-sitter AST Graph + MCP (38×–528× Benchmarked)",
+    "primary_url": "https://github.com/tirth8205/code-review-graph",
+    "secondary_urls": [
+      "https://www.innovatrixinfotech.com/blog/code-review-graph-claude-code-token-usage-reduction"
+    ],
+    "hook": "code-review-graph builds a persistent structural map of your codebase (Tree-sitter AST → SQLite graph), then exposes 30+ MCP tools so Claude reads only the nodes that matter for each review. Across 6 real repos the median token reduction is 82× (fastapi 528×, gin 91×, flask 71×, httpx 38×). Works with Claude Code, Codex, Cursor, Gemini CLI, Kiro, and Copilot. 19,000 stars, v2.3.6 (June 10).",
+    "categories": ["cost", "mcp"],
+    "install": "pip install code-review-graph && code-review-graph install"
+  },
+  {
+    "slug": "fable5-day18-return-imminent",
+    "name": "Fable 5 Day 18 — Trump Administration Softening; July 1 Prediction Market Deadline 24h Away",
+    "primary_url": "https://www.anthropic.com/news/fable-mythos-access",
+    "secondary_urls": [
+      "https://capacityglobal.com/news/fable5-return-imminent/",
+      "https://www.jpost.com/business-and-innovation/tech-and-start-ups/article-900712",
+      "https://www.axios.com/2026/06/27/anthropic-fable-5-return-soon"
+    ],
+    "hook": "Day 18 of the Fable 5 export-control shutdown. The Trump administration is visibly softening: Jerusalem Post ran 'Fable 5 to come back online' and Capacity Global headlined 'return imminent' on June 29–30. An Anthropic source told Axios the underlying security concern is resolved; redeployment outside the US is expected 'soon'. Fable 5 is still globally dark; partial Mythos 5 US restoration (Commerce Secretary Lutnick's June 26 letter) has not expanded. Prediction-market July 1 deadline is roughly 24 hours out.",
+    "categories": ["anthropic", "viral"],
+    "recurring_note": "↑ Day 18 — return signals strong; Fable 5 still offline; partial Mythos US restore unchanged; July 1 prediction deadline imminent"
+  },
+  {
+    "slug": "claude-code-v2-1-196",
+    "name": "Claude Code v2.1.196 — Org Default Models, Readable Session Names, Clickable File Attachments (June 29)",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "secondary_urls": [
+      "https://code.claude.com/docs/en/changelog"
+    ],
+    "hook": "Claude Code v2.1.196 (June 29, 2026) adds three quality-of-life improvements: organizations can now set a default model for all members; new sessions get readable human-friendly names instead of UUIDs; and file attachments in chat become clickable (Cmd/Ctrl-click reveals the file in Finder/Explorer). MCP server approval security tightened. Background session reliability improved. Previous digest covered v2.1.195.",
+    "categories": ["official", "release"]
+  },
+  {
+    "slug": "claude-code-system-prompts-v2-1-197",
+    "name": "Piebald-AI/claude-code-system-prompts v2.1.197 — 11.5k Stars; 515+ Prompts, Updated June 30 Within Minutes of Release",
+    "primary_url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+    "secondary_urls": [],
+    "hook": "Piebald-AI's prompt-tracking repo follows every Claude Code release within minutes, extracting the main system prompt, 27 builtin tool descriptions, sub-agent prompts (Plan/Explore/Task), and ~40 system reminders from compiled source. Prompt count grew from 350 to 515 (+165) when v2.1.196 shipped; v2.1.197 was indexed June 30. Companion tool tweakcc lets you patch any of these into your npm or native Claude Code install. 11,500 stars.",
+    "categories": ["developer-tools"],
+    "install": "See README (browse prompts; use tweakcc to patch)"
+  },
+  {
+    "slug": "scientific-agent-skills",
+    "name": "K-Dense-AI/scientific-agent-skills — 29.7k Stars; 148 Skills + 100+ Databases for 160K Scientists (Biology, Chemistry, Drug Discovery)",
+    "primary_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "secondary_urls": [],
+    "hook": "scientific-agent-skills is the most-starred agent skill library found in today's research (29,700 stars). It packs 148 ready-to-use skills tied to over 100 scientific databases spanning biology, chemistry, medicine, and drug discovery — used by 160,000+ scientists worldwide. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and any Agent Skills-standard client. v2.53.0 released June 23.",
+    "categories": ["skill"],
+    "install": "npx skills add K-Dense-AI/scientific-agent-skills"
+  },
+  {
+    "slug": "ccpi-plugins-plus-skills",
+    "name": "claude-code-plugins-plus-skills (jeremylongshore) — 2.5k Stars; 425 Plugins + 2,810 Skills + ccpi CLI + tonsofskills.com Marketplace",
+    "primary_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+    "secondary_urls": [
+      "https://tonsofskills.com"
+    ],
+    "hook": "One canonical catalog: 425 spec-validated plugins and 2,810 skills installable via the ccpi CLI or Claude's built-in /plugin command. Every package is graded on an 8-field rubric (name, description, allowed tools, version, author, license, compatibility, tags) and browsable at tonsofskills.com. 19 categories, 30 contributors. NPM download metrics refresh daily. 2,500 stars.",
+    "categories": ["skill", "plugins"],
+    "install": "pnpm add -g @intentsolutionsio/ccpi && ccpi install <pack-name>"
+  },
+  {
+    "slug": "dive-into-claude-code",
+    "name": "VILA-Lab/Dive-into-Claude-Code — 1.7k Stars; Reverse-Engineered 512K-Line Source; Only 1.6% Is AI Logic",
+    "primary_url": "https://github.com/VILA-Lab/Dive-into-Claude-Code",
+    "secondary_urls": [
+      "https://arxiv.org/abs/2604.14228"
+    ],
+    "hook": "Researchers at VILA-Lab reverse-engineered Claude Code v2.1.88 from the March 2026 npm source-map leak (512,000 lines, 1,906 TypeScript files) and published arXiv:2604.14228. The headline finding: only 1.6% of the codebase is AI decision logic — the other 98.4% is deterministic infrastructure (permission gates, context management, tool routing, recovery). Five human values map to 13 design principles and concrete implementation choices. Multilingual analysis (EN/JA/KO/ZH). 1,700 stars.",
+    "categories": ["research", "developer-tools"]
+  },
+  {
+    "slug": "awesome-claude-code-toolkit",
+    "name": "rohitg00/awesome-claude-code-toolkit — 2.2k Stars; 135 Agents, 176+ Plugins, 42 Commands, 14 MCP Configs in One Repo",
+    "primary_url": "https://github.com/rohitg00/awesome-claude-code-toolkit",
+    "secondary_urls": [],
+    "hook": "The most comprehensive single-repo Claude Code toolkit by count: 135 agents, 35 curated skills (+ 400,000 via SkillKit), 42 commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, 14 MCP configs, and 26 companion apps. Trended on GitHub Trending in February 2026 and continues to grow. 2,200 stars.",
+    "categories": ["skill", "plugins"],
+    "install": "See README"
+  },
+  {
+    "slug": "levnikolaevich-claude-code-skills",
+    "name": "levnikolaevich/claude-code-skills — 505 Stars; hex-line + hex-graph + hex-ssh + hex-research MCP Bundle",
+    "primary_url": "https://github.com/levnikolaevich/claude-code-skills",
+    "secondary_urls": [],
+    "hook": "A plugin suite built around four hash-verified MCP servers: hex-line (every line carries a content hash so the agent proves it sees current content before editing), hex-graph (AST → deterministic SQLite codebase knowledge graph), hex-ssh (hash-verified remote file editing over SFTP), and hex-research (local markdown hypothesis/task graph). Also ships 7 Agile workflow plugins covering planning, execution, bootstrapping, optimization, and community engagement. v2026.05.06, MIT license. 505 stars.",
+    "categories": ["mcp", "skill"],
+    "install": "/plugin marketplace add levnikolaevich/claude-code-skills"
+  },
+  {
+    "slug": "awesome-claude-plugins-metrics",
+    "name": "quemsah/awesome-claude-plugins — 926 Stars; n8n Workflow Tracks 24.6k Repos for Plugin Adoption, Updated June 30",
+    "primary_url": "https://github.com/quemsah/awesome-claude-plugins",
+    "secondary_urls": [],
+    "hook": "An automated n8n workflow indexes 24,586 GitHub repositories for Claude Code plugin adoption and generates a ranked top-100 leaderboard with star counts, subscriber counts, and plugin counts. Updated June 30, 2026. Useful as a live signal of which plugins developers are actually installing, rather than just listing what exists. 926 stars.",
+    "categories": ["plugins", "analytics"]
+  }
+]
