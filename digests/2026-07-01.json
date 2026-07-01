@@ -1,0 +1,117 @@
+[
+  {
+    "slug": "fable5-day19-restored",
+    "name": "Fable 5 Day 19 — Export Controls Lifted; Global Access Restored July 1",
+    "primary_url": "https://www.anthropic.com/news/redeploying-fable-5",
+    "secondary_urls": [
+      "https://www.coindesk.com/tech/2026/07/01/anthropic-restores-ai-models-fable-mythos-after-the-u-s-lifts-export-controls",
+      "https://www.nbcnews.com/business/business-news/commerce-department-gives-green-light-anthropic-bring-back-fable-5-rcna352501",
+      "https://9to5mac.com/2026/06/30/claude-fable-5-cleared-to-return-as-us-lifts-anthropics-export-control-restriction"
+    ],
+    "hook": "The 19-day Fable 5 export-control suspension is over. The Commerce Department lifted restrictions on June 30; global access resumed July 1 across Claude Platform, Claude.ai, Claude Code, and Claude Cowork. A new safety classifier—deployed before reactivation—blocks the reported jailbreak technique in 99%+ of cases. Anthropic is holding weekly usage at 50% through July 7 while systems scale. All prior Fable 5 API and workspace configurations are restored without reconfiguration.",
+    "categories": ["anthropic", "viral"],
+    "recurring_note": "↑ Day 19 — RESOLVED: export controls lifted June 30; Fable 5 global access restored July 1; 50% weekly usage cap through July 7; new safety classifier at 99%+ block rate"
+  },
+  {
+    "slug": "claude-sonnet-5",
+    "name": "Claude Sonnet 5 — New Default in Claude Code; 1M Context, $2/$10 Promo Through Aug 31",
+    "primary_url": "https://www.anthropic.com/news/claude-sonnet-5",
+    "secondary_urls": [
+      "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/",
+      "https://github.blog/changelog/2026-06-30-claude-sonnet-5-is-generally-available-for-github-copilot/"
+    ],
+    "hook": "Claude Sonnet 5, released June 30, 2026, is now the default model in Claude Code v2.1.197+. It ships with a native 1M-token context window—the largest in the Sonnet family—and matches Opus 4.8 quality on most professional tasks at roughly 60% of the price ($2 input / $10 output per Mtok, promotional through August 31). TechCrunch called it 'a cheaper way to run agents'; GitHub Copilot shipped it same-day. Long multi-file agentic sessions that previously hit context walls now run considerably longer without compaction.",
+    "categories": ["anthropic", "cost"],
+    "install": "Default in Claude Code v2.1.197+; no action needed"
+  },
+  {
+    "slug": "claude-code-features-july",
+    "name": "Claude Code July Feature Wave — MCP Lazy Loading (95% Context Drop), --safe-mode, /cd, Post-Session Hooks",
+    "primary_url": "https://code.claude.com/docs/en/whats-new",
+    "secondary_urls": [
+      "https://releasebot.io/updates/anthropic/claude-code"
+    ],
+    "hook": "A cluster of quality-of-life and performance improvements landed with the latest Claude Code releases. MCP Tool Search + lazy loading cuts context usage by up to 95% (only the tools Claude actually needs are loaded). The new `--safe-mode` flag strips all CLAUDE.md, plugins, skills, hooks, and MCP servers for clean troubleshooting. `/cd` relocates a session to a new working directory without breaking the prompt cache. A post-session hook snapshots uncommitted work after sessions end. Streaming now coalesces text updates to 100ms windows, reducing CPU by 37%. `/code-review` merged five finders, cutting token usage by 25%. Per-result MCP tool output limit raised to 500,000 characters; concurrent MCP connections now supported.",
+    "categories": ["cost", "mcp", "official"]
+  },
+  {
+    "slug": "claude-science",
+    "name": "Claude Science — Anthropic's New Product for Automated Research; 60+ Scientific Skill Connectors (June 30)",
+    "primary_url": "https://www.anthropic.com/events/the-briefing-ai-for-science",
+    "secondary_urls": [
+      "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/",
+      "https://www.bloomberg.com/news/articles/2026-06-30/anthropic-releases-claude-science-for-automating-research"
+    ],
+    "hook": "Anthropic launched Claude Science on June 30, 2026—a new product for scientific laboratories and pharmaceutical research. It ships 60+ curated skill connectors spanning genomics, proteomics, structural biology, and chemistry, integrated with major scientific databases. MIT Technology Review called it 'Anthropic's newest flagship product'; Bloomberg covered the launch the same day. Currently in beta for Pro, Max, Team, and Enterprise plans. Dario Amodei presented at the accompanying 'The Briefing: AI for Science' event.",
+    "categories": ["anthropic", "skill"]
+  },
+  {
+    "slug": "claude-code-apps-gateway",
+    "name": "Claude Code Apps Gateway — Enterprise SSO + RBAC + Cost Tracking for Bedrock, GCloud, Foundry (June 29)",
+    "primary_url": "https://claude.com/blog/introducing-the-claude-apps-gateway",
+    "secondary_urls": [
+      "https://code.claude.com/docs/en/claude-apps-gateway",
+      "https://devops.com/anthropic-adds-enterprise-gateway-to-simplify-claude-code-access-on-aws-and-google-cloud/"
+    ],
+    "hook": "Anthropic launched the Claude Apps Gateway on June 29—a self-hosted control plane for Claude Code deployments on Amazon Bedrock, Google Cloud, and Microsoft Foundry. It enforces corporate SSO, centrally manages policies, provides role-based access control, tracks per-user costs, and sets spend caps—without requiring developers to change their local Claude Code setup. DevOps.com covered it as a direct response to enterprise requests for governance tooling. The gateway runs as a sidecar and routes existing API calls transparently.",
+    "categories": ["anthropic", "official"]
+  },
+  {
+    "slug": "claude-code-terminal-rewrite",
+    "name": "Claude Code Terminal Rendering Rewrite — 85% Flicker Reduction; Alt-Screen + VS Code / tmux Patches",
+    "primary_url": "https://news.ycombinator.com/item?id=46312507",
+    "secondary_urls": [
+      "https://www.threads.com/@boris_cherny/post/DSZbZatiIvJ/"
+    ],
+    "hook": "Anthropic rewrote Claude Code's terminal rendering layer to address long-standing flickering and screen corruption, cutting the issue by roughly 85%. The fix switched to alt-screen rendering and shipped upstream patches to VS Code and tmux for synchronized output. Boris Cherny (Claude Code lead) posted the details on Threads; the HN thread drew several hundred comments from users who had worked around the flickering for months, particularly on Windows Terminal where rendering corruption was severe. The fix lands for all platforms without any configuration change.",
+    "categories": ["official"]
+  },
+  {
+    "slug": "karpathy-claude-md-v10",
+    "name": "Andrej Karpathy CLAUDE.md — 220K+ Combined Stars; v10 Self-Check Rules Still Growing",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "secondary_urls": [
+      "https://github.com/forrestchang/andrej-karpathy-skills"
+    ],
+    "hook": "The Andrej Karpathy-attributed CLAUDE.md skill file—70 lines deriving four behavioral rules (Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution) from his public observations on LLM coding pitfalls—has grown to 220,000+ combined stars across the multica-ai and forrestchang forks, up from 200,000 on June 28. Still the fastest-growing CLAUDE.md variant of 2026. Install takes under a minute; the HN thread 'Claude Code and the Great Productivity Panic of 2026' remains one of the most-commented Claude Code discussions of the year.",
+    "categories": ["viral", "skill"],
+    "install": "npx skills add multica-ai/andrej-karpathy-skills",
+    "recurring_note": "↑ Recurring — 220K+ combined stars (up from 200K on June 28); no new rule update this week but adoption continues climbing"
+  },
+  {
+    "slug": "voltagent-awesome-agent-skills",
+    "name": "VoltAgent/awesome-agent-skills — 27k Stars; 1,497+ Official + Community Skills (Anthropic, Google, Vercel, Stripe, Cloudflare, Microsoft)",
+    "primary_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "secondary_urls": [],
+    "hook": "VoltAgent's curated skill directory holds 1,497+ hand-picked agent skills from official developer teams—not AI-generated—compatible with Claude Code, Codex, Gemini CLI, Cursor, and GitHub Copilot. The collection includes official skills from Anthropic, Google, Vercel, Stripe, Cloudflare, and Microsoft (133 Microsoft skills across 6 languages), plus the TestMu AI suite with 50+ test-framework integrations. Unlike broad catalogues, every entry is verified by the VoltAgent team. 27,000 stars.",
+    "categories": ["skill", "design"],
+    "install": "npx skills add VoltAgent/awesome-agent-skills"
+  },
+  {
+    "slug": "claude-howto",
+    "name": "luongnv89/claude-howto — 39k Stars; 10-Module Visual Guide to Claude Code with Copy-Paste Templates",
+    "primary_url": "https://github.com/luongnv89/claude-howto",
+    "secondary_urls": [],
+    "hook": "claude-howto is a structured, example-driven guide covering Claude Code from first install to advanced multi-agent orchestration across 10 progressive modules. Each module ships production-ready templates for slash commands, CLAUDE.md files, hook configurations, and MCP setups, plus Mermaid diagrams explaining the mechanics. Self-assessment quizzes between modules. Available in English, Vietnamese, Chinese, Ukrainian, and Japanese. Targets Claude Code v2.1.160+. 39,000 stars.",
+    "categories": ["developer-tools"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-seo",
+    "name": "AgriciDaniel/claude-seo — 10.3k Stars; 25 Sub-Skills + 18 Sub-Agents for Technical SEO, E-E-A-T, Local, E-Commerce (v2.2.0)",
+    "primary_url": "https://github.com/AgriciDaniel/claude-seo",
+    "secondary_urls": [],
+    "hook": "claude-seo is a universal SEO skill suite for Claude Code with 25 sub-skills and 18 sub-agents covering technical SEO, E-E-A-T, schema validation (20+ types), backlink analysis, local SEO, Google Business Profile auditing, maps intelligence, and e-commerce SEO. Up to 15 agents run in parallel; single-page apps are handled via Playwright rendering. v2.2.0 (June 12) added AI-search optimization aligned with Google's AI Optimization Guide. Optional MCP extensions for DataForSEO, Firecrawl, and Ahrefs. MIT licensed, zero per-domain pricing. 10,300 stars.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add AgriciDaniel/claude-seo"
+  },
+  {
+    "slug": "claude-forge",
+    "name": "claude-forge (sangrokjung) — v3.1.0 June 30; 11 Agents, 36 Commands, 15 Skills; oh-my-zsh for Claude Code",
+    "primary_url": "https://github.com/sangrokjung/claude-forge",
+    "secondary_urls": [],
+    "hook": "claude-forge v3.1.0, released June 30, is an oh-my-zsh-inspired framework that wires 11 specialist agents (planner, architect, security reviewer, TDD guide, database expert, and more), 36 slash commands, and 15 skills into a pre-configured pipeline: plan → test → review → verify → ship. Four MCP server connections (Playwright, context7, jina-reader, Chrome DevTools) and a 6-layer security defense are bundled. v3.1.0 adds loop-forge, which turns any repetitive task sequence into a reusable slash command. Full install takes 5 minutes. 769 stars.",
+    "categories": ["skill", "mcp"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/sangrokjung/claude-forge/main/install.sh | bash"
+  }
+]
