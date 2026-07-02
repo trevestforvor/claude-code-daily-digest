@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — July 2, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — July 2, 2026</h1><p class="sub">Top 7 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://thereallo.dev/blog/claude-code-prompt-steganography">Claude Code Was Steganographically Marking Requests — HN #1 (605 pts); Anthropic Acknowledged and Fixed in v2.1.197</a></h3>
+  <p class="hook">A developer reverse-engineered Claude Code v2.1.196 on June 30 and found hidden Unicode steganography baked in since v2.1.91 (April 2): the date separator in &#39;Today&#39;s date is&#39; flipped from dash to slash and the apostrophe cycled through four visually identical Unicode characters to silently encode whether the user&#39;s system timezone was Asia/Shanghai or Asia/Urumqi and whether their proxy hostname matched a hardcoded list of Chinese domains or AI-lab keywords. The post hit HN #1 at 605 points and 190 comments; The Register, Semafor, and The Information all covered it within hours. Anthropic confirmed it was &#39;an experiment to prevent account abuse from unauthorized resellers and protect against distillation&#39; and said the fix was already merged — it shipped in v2.1.197.</p>
+  <div class="secondary">Also: <a href="https://news.ycombinator.com/item?id=48734373">news.ycombinator.com/item?id=48734373</a> · <a href="https://www.theregister.com/ai-and-ml/2026/07/01/anthropic-is-removing-its-covert-code-for-catching-chinese-competitors/5265366">www.theregister.com/ai-and-ml/2026/07/01/anthropic-is-removing-its-covert-code-for-catching-chinese-competitors/5265366</a> · <a href="https://www.semafor.com/article/07/01/2026/anthropic-rolls-back-china-tracking-code">www.semafor.com/article/07/01/2026/anthropic-rolls-back-china-tracking-code</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">proxy</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.198 — Background Agents Auto-Commit + Open Draft PRs; Explore Agent Upgraded to Opus; /dataviz Skill</a></h3>
+  <p class="hook">Released July 1, 2026. The headline change: background agents launched from `claude agents` now auto-commit, push, and open a draft PR when they finish code work in a worktree — no more stopping to ask. The draft framing keeps merge authority with the human. Second: the built-in Explore agent inherits the main session model and is now capped at Opus instead of running on Haiku, giving codebase-search and exploration tasks the full reasoning tier. Third: a new /dataviz skill is bundled for chart and dashboard design guidance, including a runnable color-palette validator. Fourth: two new Notification hook events (agent_needs_input, agent_completed) fire for background sessions. 18 infrastructure and network fixes also ship.</p>
+  <div class="secondary">Also: <a href="https://x.com/ClaudeCodeLog/status/2072425708467486973">x.com/ClaudeCodeLog/status/2072425708467486973</a> · <a href="https://dev.classmethod.jp/en/articles/20260702-cc-updates-v2-1-198/">dev.classmethod.jp/en/articles/20260702-cc-updates-v2-1-198/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">design · branding · skill</div>
+  <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://news.ycombinator.com/item?id=48126429">Claude Code Weekly Limits +50% Through July 13 — Pro, Max, Team, Enterprise; Stacks with 2× 5-Hour Boost</a></h3>
+  <p class="hook">Anthropic raised Claude Code weekly usage limits by 50% for all paid tiers — Pro, Max, Team, and seat-based Enterprise — through July 13, 2026 at 6 PM PDT, no opt-in required. The boost applies across the CLI, IDE extensions, desktop, and web, and stacks with a separate 2× 5-hour rolling limit increase also currently in effect. Context: the lift is widely read as a competitive counter-move after OpenAI shipped an autonomous &#39;/goal&#39; loop in Codex, causing some engineering teams to split workloads across vendors. Three limit increases have now landed in a single month.</p>
+  <div class="secondary">Also: <a href="https://apidog.com/blog/claude-code-weekly-limits-50-percent-increase-july-2026/">apidog.com/blog/claude-code-weekly-limits-50-percent-increase-july-2026/</a> · <a href="https://pasqualepillitteri.it/en/news/2494/claude-code-weekly-limits-50-percent-anti-codex-anthropic-2026">pasqualepillitteri.it/en/news/2494/claude-code-weekly-limits-50-percent-anti-codex-anthropic-2026</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">terminal</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/affaan-m/ECC">ECC (affaan-m) — 211.9K Stars; Agent Harness Performance OS: 261 Skills, Instincts, Memory, Security for Claude Code, Codex, Cursor and 5 More (v2.0.0)</a></h3>
+  <p class="hook">ECC is a complete agent harness performance system — not a config pack — built from 10+ months of intensive daily agentic-engineering use. v2.0.0 (June 2026) ships 261 skills packaged across coding, research, security, media, and enterprise ops; &#39;instincts&#39; (auto-triggered behavioral patterns that fire without a slash command); a memory optimization layer; AgentShield security scanning; and a worktree-lifecycle service. Works natively across Claude Code, Codex, Opencode, Cursor, Gemini, Zed, and GitHub Copilot. 211.9K stars, 32.5K forks, 230+ contributors, MIT.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">agent · harness · memory · viral · security</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://claude.com/claude-for-chrome">Claude in Chrome Now Generally Available to All Max Users — Haiku 4.5 Default, Screenshot + Screen-Region Support</a></h3>
+  <p class="hook">As of July 1, 2026, all remaining Max users on the Claude in Chrome waitlist have been granted access, moving the browser agent to general availability. The extension now defaults to Haiku 4.5 for a faster in-browser experience — users can switch to Sonnet 4.5 at any time. New in this GA release: Claude handles image uploads directly in the extension, and users can screenshot or highlight a specific screen region to give Claude precise visual context. Particularly useful for multi-step web automation, live-page debugging, and visual-QA workflows.</p>
+  <div class="secondary">Also: <a href="https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome">support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome</a> · <a href="https://aiforanything.io/blog/claude-for-chrome-browser-agent-guide-2026">aiforanything.io/blog/claude-for-chrome-browser-agent-guide-2026</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">browser</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/zilliztech/claude-context">claude-context (Zilliz) — 12K Stars; BM25 + Vector Hybrid Code Search MCP for Claude Code, Codex, Gemini CLI, Cursor, and 8 More Agents</a></h3>
+  <p class="hook">claude-context is an MCP server that adds hybrid BM25 + dense vector semantic search to your codebase, so any coding agent can retrieve only the relevant file fragments rather than loading whole directories. Zilliz (Milvus/Milvus Cloud) backs the vector index. v0.1.15 supports OpenAI, VoyageAI code-focused, Gemini, and Ollama embeddings; ships npm packages @zilliz/claude-context-mcp and @zilliz/claude-context-core. README ships copy-paste config for Claude Code, Codex CLI, Gemini CLI, Qwen Code, Cursor, Void, Claude Desktop, Windsurf, VS Code, Cherry Studio, Trae, Cline, and Augment. ~12K stars, ~890 forks, Apache 2.0.</p>
+  <div class="secondary">Also: <a href="https://www.developersdigest.tech/blog/github-trending-claude-context-2026-04-28">www.developersdigest.tech/blog/github-trending-claude-context-2026-04-28</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">local · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>npx @zilliz/claude-context-mcp</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/pexoai/pexo-skills">Pexo Skills (pexoai) — 729 Stars, 3.7K Installs; Video-Generation Skill Suite Auto-Routing Across Seedance 2, Kling 3.0, Veo 3.1 and 10+ Models</a></h3>
+  <p class="hook">Pexo-skills is an open-source skill bundle for AI-native content creation: image, audio, and video generation with full pipeline automation. The flagship pexo-agent skill accepts five input types (text, image, URL, script, audio-to-video) and auto-routes each shot to the best available model across 10+ options — including Seedance 2, Kling 3.0, and Veo 3.1 — without requiring manual model selection. A 15-second 3-shot video completes end-to-end in roughly 8–10 minutes. Also includes a VideoAgent Audio Studio skill for standalone music and voice generation. Compatible with Claude Code, OpenClaw, Cursor, and any Agent Skills–spec client.</p>
+  <div class="secondary">Also: <a href="https://pexo.ai/blog/best-video-generation-skills-for-claude-code-agents-2026-3772">pexo.ai/blog/best-video-generation-skills-for-claude-code-agents-2026-3772</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">video · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add pexoai/pexo-skills</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
