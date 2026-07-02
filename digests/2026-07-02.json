@@ -1,0 +1,78 @@
+[
+  {
+    "slug": "claude-code-steganography",
+    "name": "Claude Code Was Steganographically Marking Requests — HN #1 (605 pts); Anthropic Acknowledged and Fixed in v2.1.197",
+    "primary_url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+    "secondary_urls": [
+      "https://news.ycombinator.com/item?id=48734373",
+      "https://www.theregister.com/ai-and-ml/2026/07/01/anthropic-is-removing-its-covert-code-for-catching-chinese-competitors/5265366",
+      "https://www.semafor.com/article/07/01/2026/anthropic-rolls-back-china-tracking-code"
+    ],
+    "hook": "A developer reverse-engineered Claude Code v2.1.196 on June 30 and found hidden Unicode steganography baked in since v2.1.91 (April 2): the date separator in 'Today's date is' flipped from dash to slash and the apostrophe cycled through four visually identical Unicode characters to silently encode whether the user's system timezone was Asia/Shanghai or Asia/Urumqi and whether their proxy hostname matched a hardcoded list of Chinese domains or AI-lab keywords. The post hit HN #1 at 605 points and 190 comments; The Register, Semafor, and The Information all covered it within hours. Anthropic confirmed it was 'an experiment to prevent account abuse from unauthorized resellers and protect against distillation' and said the fix was already merged — it shipped in v2.1.197.",
+    "categories": ["viral", "anthropic"]
+  },
+  {
+    "slug": "claude-code-v2-1-198",
+    "name": "Claude Code v2.1.198 — Background Agents Auto-Commit + Open Draft PRs; Explore Agent Upgraded to Opus; /dataviz Skill",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "secondary_urls": [
+      "https://x.com/ClaudeCodeLog/status/2072425708467486973",
+      "https://dev.classmethod.jp/en/articles/20260702-cc-updates-v2-1-198/"
+    ],
+    "hook": "Released July 1, 2026. The headline change: background agents launched from `claude agents` now auto-commit, push, and open a draft PR when they finish code work in a worktree — no more stopping to ask. The draft framing keeps merge authority with the human. Second: the built-in Explore agent inherits the main session model and is now capped at Opus instead of running on Haiku, giving codebase-search and exploration tasks the full reasoning tier. Third: a new /dataviz skill is bundled for chart and dashboard design guidance, including a runnable color-palette validator. Fourth: two new Notification hook events (agent_needs_input, agent_completed) fire for background sessions. 18 infrastructure and network fixes also ship.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "claude-code-limits-july13",
+    "name": "Claude Code Weekly Limits +50% Through July 13 — Pro, Max, Team, Enterprise; Stacks with 2× 5-Hour Boost",
+    "primary_url": "https://news.ycombinator.com/item?id=48126429",
+    "secondary_urls": [
+      "https://apidog.com/blog/claude-code-weekly-limits-50-percent-increase-july-2026/",
+      "https://pasqualepillitteri.it/en/news/2494/claude-code-weekly-limits-50-percent-anti-codex-anthropic-2026"
+    ],
+    "hook": "Anthropic raised Claude Code weekly usage limits by 50% for all paid tiers — Pro, Max, Team, and seat-based Enterprise — through July 13, 2026 at 6 PM PDT, no opt-in required. The boost applies across the CLI, IDE extensions, desktop, and web, and stacks with a separate 2× 5-hour rolling limit increase also currently in effect. Context: the lift is widely read as a competitive counter-move after OpenAI shipped an autonomous '/goal' loop in Codex, causing some engineering teams to split workloads across vendors. Three limit increases have now landed in a single month.",
+    "categories": ["cost", "anthropic"]
+  },
+  {
+    "slug": "ecc-affaan-m",
+    "name": "ECC (affaan-m) — 211.9K Stars; Agent Harness Performance OS: 261 Skills, Instincts, Memory, Security for Claude Code, Codex, Cursor and 5 More (v2.0.0)",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "ECC is a complete agent harness performance system — not a config pack — built from 10+ months of intensive daily agentic-engineering use. v2.0.0 (June 2026) ships 261 skills packaged across coding, research, security, media, and enterprise ops; 'instincts' (auto-triggered behavioral patterns that fire without a slash command); a memory optimization layer; AgentShield security scanning; and a worktree-lifecycle service. Works natively across Claude Code, Codex, Opencode, Cursor, Gemini, Zed, and GitHub Copilot. 211.9K stars, 32.5K forks, 230+ contributors, MIT.",
+    "categories": ["skill", "plugin"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-in-chrome-ga",
+    "name": "Claude in Chrome Now Generally Available to All Max Users — Haiku 4.5 Default, Screenshot + Screen-Region Support",
+    "primary_url": "https://claude.com/claude-for-chrome",
+    "secondary_urls": [
+      "https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome",
+      "https://aiforanything.io/blog/claude-for-chrome-browser-agent-guide-2026"
+    ],
+    "hook": "As of July 1, 2026, all remaining Max users on the Claude in Chrome waitlist have been granted access, moving the browser agent to general availability. The extension now defaults to Haiku 4.5 for a faster in-browser experience — users can switch to Sonnet 4.5 at any time. New in this GA release: Claude handles image uploads directly in the extension, and users can screenshot or highlight a specific screen region to give Claude precise visual context. Particularly useful for multi-step web automation, live-page debugging, and visual-QA workflows.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "claude-context-zilliz",
+    "name": "claude-context (Zilliz) — 12K Stars; BM25 + Vector Hybrid Code Search MCP for Claude Code, Codex, Gemini CLI, Cursor, and 8 More Agents",
+    "primary_url": "https://github.com/zilliztech/claude-context",
+    "secondary_urls": [
+      "https://www.developersdigest.tech/blog/github-trending-claude-context-2026-04-28"
+    ],
+    "hook": "claude-context is an MCP server that adds hybrid BM25 + dense vector semantic search to your codebase, so any coding agent can retrieve only the relevant file fragments rather than loading whole directories. Zilliz (Milvus/Milvus Cloud) backs the vector index. v0.1.15 supports OpenAI, VoyageAI code-focused, Gemini, and Ollama embeddings; ships npm packages @zilliz/claude-context-mcp and @zilliz/claude-context-core. README ships copy-paste config for Claude Code, Codex CLI, Gemini CLI, Qwen Code, Cursor, Void, Claude Desktop, Windsurf, VS Code, Cherry Studio, Trae, Cline, and Augment. ~12K stars, ~890 forks, Apache 2.0.",
+    "categories": ["mcp", "cost"],
+    "install": "npx @zilliz/claude-context-mcp"
+  },
+  {
+    "slug": "pexo-skills",
+    "name": "Pexo Skills (pexoai) — 729 Stars, 3.7K Installs; Video-Generation Skill Suite Auto-Routing Across Seedance 2, Kling 3.0, Veo 3.1 and 10+ Models",
+    "primary_url": "https://github.com/pexoai/pexo-skills",
+    "secondary_urls": [
+      "https://pexo.ai/blog/best-video-generation-skills-for-claude-code-agents-2026-3772"
+    ],
+    "hook": "Pexo-skills is an open-source skill bundle for AI-native content creation: image, audio, and video generation with full pipeline automation. The flagship pexo-agent skill accepts five input types (text, image, URL, script, audio-to-video) and auto-routes each shot to the best available model across 10+ options — including Seedance 2, Kling 3.0, and Veo 3.1 — without requiring manual model selection. A 15-second 3-shot video completes end-to-end in roughly 8–10 minutes. Also includes a VideoAgent Audio Studio skill for standalone music and voice generation. Compatible with Claude Code, OpenClaw, Cursor, and any Agent Skills–spec client.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add pexoai/pexo-skills"
+  }
+]
