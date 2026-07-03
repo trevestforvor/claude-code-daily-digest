@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "gstack-garry-tan",
+    "name": "gstack — Garry Tan's 23-Role Claude Code Toolkit",
+    "primary_url": "https://github.com/garrytan/gstack",
+    "hook": "Y Combinator CEO Garry Tan open-sourced his personal Claude Code setup as a 23-skill plugin that turns a solo developer into a full virtual engineering team — CEO, Designer, Eng Manager, QA Lead, Release Manager, and Doc Engineer all as slash commands. The repo hit 119K stars (10K in the first 48 hours) and is widely cited as a reference architecture for design-led Claude Code workflows. Real browser automation via /browse and /qa; optional GBrain persistent knowledge base.",
+    "categories": ["design", "agent"],
+    "install": "git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills — Engineer Discipline Skills (155K Stars)",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "Matt Pocock (Total TypeScript, 60K-subscriber newsletter) published his personal .claude directory and it hit 22K stars in 24 hours; now at 155K. The flagship /grill-me skill refuses to write any code until it has interviewed you exhaustively about your design — sessions typically run 45 min and surface corners you hadn't thought about. Other standouts: /improve-codebase-architecture (visual HTML reports), /grill-with-docs (builds CONTEXT.md + ADRs), /to-prd, /handoff. Install with one npx command.",
+    "categories": ["design"],
+    "install": "npx skills@latest add mattpocock/skills"
+  },
+  {
+    "slug": "skills-janitor",
+    "name": "Skills Janitor — Tinder for Your Claude Code Skills",
+    "primary_url": "https://github.com/khendzel/skills-janitor",
+    "hook": "Created after the author found 31 of their 35 installed skills unused and 8 pairs that were near-duplicates — all silently burning context budget. Skills Janitor v1.4.0 (June 28) adds a swipe-style interface (/janitor-swipe), per-skill token cost breakdown (/janitor-tokens), health audits (/janitor-report), and GitHub discovery (/janitor-discover). Users typically reclaim 30–40% of skill token overhead. Zero external dependencies; works with Claude Code and Codex.",
+    "categories": ["cost"],
+    "install": "/plugin marketplace add khendzel/skills-janitor"
+  },
+  {
+    "slug": "claude-code-router",
+    "name": "claude-code-router — Route Claude Code to Any LLM Provider",
+    "primary_url": "https://github.com/musistudio/claude-code-router",
+    "hook": "A local gateway and desktop control panel (35.5K stars, updated July 2026) that intercepts requests from Claude Code, Codex, and ZCode and routes them to the provider and model you actually want — OpenAI, Gemini, DeepSeek, SiliconFlow, OpenRouter, Kimi Code, Mistral, Z.AI, or any OpenAI-compatible endpoint. Conditional routing rules with fallback, request rewrites, usage dashboard with cost tracking, and a proxy mode for capturing API traffic. MIT-licensed, macOS/Windows/Linux.",
+    "categories": ["cost", "mcp"],
+    "install": "See README (desktop app; download from GitHub Releases)"
+  },
+  {
+    "slug": "claude-code-v2-1-199",
+    "name": "Claude Code v2.1.199 — Stacked Slash-Skills (up to 5) + disableBundledSkills",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "hook": "Shipped July 2, 2026. The headline feature: stacked slash-skill invocations now load all leading skills at once, up to 5 deep (e.g. /skill1:skill2:skill3). Also new: disableBundledSkills setting and CLAUDE_CODE_DISABLE_BUNDLED_SKILLS env var to hide built-in skills/commands for cleaner custom setups. SSL certificate errors now surface actionable guidance immediately, and streaming responses preserve partial output on mid-stream API errors. Background agent Linux daemon crash and macOS SSH cold-start bugs fixed.",
+    "categories": ["design"],
+    "install": "npm install -g @anthropic-ai/claude-code@latest"
+  },
+  {
+    "slug": "omnigent-v040",
+    "name": "Omnigent v0.4.0 — Databricks Meta-Harness (Today's Release)",
+    "primary_url": "https://github.com/omnigent-ai/omnigent",
+    "hook": "Databricks' open-source meta-harness ships v0.4.0 today (July 3) at 6.1K stars. Sits one layer above Claude Code, Codex, Cursor, OpenCode, Hermes, and Pi — swap harnesses with a one-line config change while policies, sandboxing, and collaboration features stay constant. New in v0.4.0: cross-device session sync (terminal, browser, phone, desktop), spend-cap governance policies, and cloud sandbox deployment to Modal, E2B, and Kubernetes. Python 3.12+, Apache 2.0.",
+    "categories": ["agent"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/omnigent-ai/omnigent/main/scripts/install_oss.sh | sh",
+    "recurring_note": "↑ Day 15 — v0.4.0 ships today adding cross-device sync and governance policies; first covered June 19"
+  },
+  {
+    "slug": "pal-mcp-server",
+    "name": "PAL MCP Server — Claude Code + GeminiCLI + CodexCLI All Working as One",
+    "primary_url": "https://github.com/BeehiveInnovations/pal-mcp-server",
+    "hook": "BeehiveInnovations' PAL (11.6K stars) is the successor to their popular zen-mcp-server — upgraded to bridge Claude Code, Gemini CLI, and Codex CLI simultaneously via the new `clink` (CLI + Link) tool that lets Claude spawn Codex subagents or Codex spawn Gemini CLI subagents mid-session. When Claude's context resets, hand off to another model that revives understanding without re-ingesting documents. Includes codereview, precommit, debug, thinkdeep, and 20+ more tools. Apache 2.0.",
+    "categories": ["mcp", "cost"],
+    "install": "git clone https://github.com/BeehiveInnovations/pal-mcp-server.git && cd pal-mcp-server && ./run-server.sh"
+  },
+  {
+    "slug": "agentsys",
+    "name": "AgentSys v6.0.0 — AI Writes Code, This Automates Everything Else",
+    "primary_url": "https://github.com/agent-sh/agentsys",
+    "hook": "AgentSys (885 stars, v6.0.0 May 29) bundles 24 plugins, 49 agents, and 44 skills for Claude Code, OpenCode, Codex, Cursor, and Kiro. Where coding agents handle writing code, AgentSys handles task selection, branch management, code review, CI/CD pipeline work, and deployment — persisting state across session interruptions so multi-day projects don't lose context. Installs as a single npm global command.",
+    "categories": ["agent"],
+    "install": "npm install -g agentsys && agentsys"
+  }
+]
