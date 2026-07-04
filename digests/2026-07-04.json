@@ -1,0 +1,156 @@
+[
+  {
+    "slug": "ponytail",
+    "name": "ponytail (DietrichGebert) — 73.7K Stars; 7-Rung Decision Ladder That Cuts Code Output 54% and Tokens 22%",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=2xuFcmUAQUc",
+      "https://www.youtube.com/watch?v=PSCfwcqARX8"
+    ],
+    "hook": "Launched June 12, ponytail hit 44K stars in 9 days and is now at 73.7K — the fastest-growing Claude Code plugin of June 2026. It injects a mandatory 7-rung minimalism ladder before Claude writes any code: Does it need to exist? Already in codebase? In stdlib? Native platform feature? Existing dependency? One-liner? Only then: minimum code. Benchmarks on a real FastAPI + React repo across 12 tasks show 54% fewer lines, 22% fewer tokens, 20% lower cost, 27% faster completion, 100% safety maintained. At the extreme end, an over-built date picker shrank 94%. v4.8.4 (June 29) added Hermes support. Works with Claude Code, Codex, GitHub Copilot CLI, OpenCode, and Gemini CLI. At least 6 YouTube reviews in the past 2 weeks, including a Caveman vs. Headroom vs. Ponytail comparison.",
+    "categories": ["design", "cost"],
+    "install": "/plugin marketplace add DietrichGebert/ponytail"
+  },
+  {
+    "slug": "headroom-v0-30-0",
+    "name": "headroom v0.30.0 — 56.4K Stars; 60-95% Token Reduction via Smart Compression Layer (Released July 3)",
+    "primary_url": "https://github.com/headroomlabs-ai/headroom",
+    "secondary_urls": [
+      "https://extraheadroom.com/",
+      "https://docs.litellm.ai/blog/headroom-integration"
+    ],
+    "hook": "v0.30.0 shipped July 3 (yesterday) — headroom's 160th release. It compresses tool outputs, logs, files, and RAG chunks 60-95% before they reach the LLM, using three purpose-built engines: SmartCrusher (JSON), CodeCompressor (AST-aware), and Kompress-v2-base (general text). Compression is reversible — originals are cached locally for on-demand retrieval. Three deployment modes: Python library, transparent proxy (headroom wrap claude), or MCP server. v0.30.0 also adds cross-agent memory dedup so Claude Code, Cursor, and Codex share compressed context without re-processing the same files. LiteLLM integrated headroom natively in June. At 56.4K stars, it's one of the top 5 starred Claude Code tools and is new to this digest.",
+    "categories": ["cost"],
+    "install": "pip install \"headroom-ai[all]\""
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills — 155K Stars; /grill-me Forces 45-Min Design Interview Before First Line of Code",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "Matt Pocock's .claude directory hit 155K stars within 24 hours of its July 3 release — 22K in the first day alone. The flagship skill is /grill-me, which refuses to write any code until it has exhaustively interviewed you about the design (sessions average 45 min, surface hidden requirements). /improve-codebase-architecture produces a visual HTML report; /grill-with-docs builds a CONTEXT.md and ADRs; /to-prd and /handoff round out the set. Pocock (Total TypeScript, 60K-subscriber newsletter) shipped it as a single npx command install. First appeared July 3.",
+    "categories": ["design"],
+    "install": "npx skills@latest add mattpocock/skills",
+    "recurring_note": "↑ Day 2 — 155K stars; still #1 trending on GitHub as of July 4"
+  },
+  {
+    "slug": "gstack-garry-tan",
+    "name": "gstack — Garry Tan's 23-Role Claude Code Toolkit (119K Stars)",
+    "primary_url": "https://github.com/garrytan/gstack",
+    "hook": "Y Combinator CEO Garry Tan's personal Claude Code setup — a 23-skill plugin that instantiates a full virtual engineering team as slash commands (CEO, Designer, Eng Manager, QA Lead, Release Manager, Doc Engineer). Hit 119K stars and continues to be widely cited as the reference architecture for design-led Claude Code workflows. Real browser automation via /browse and /qa; optional GBrain persistent knowledge base. First appeared July 3.",
+    "categories": ["design", "agent"],
+    "install": "git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup",
+    "recurring_note": "↑ Day 2 — 119K stars; /browse + /qa pair driving agentic QA adoption"
+  },
+  {
+    "slug": "ecc-affaan-m",
+    "name": "ECC (affaan-m) — 211.9K Stars; 261 Skills, Instincts, Memory, Security for Claude Code, Codex, Cursor and 5 More",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "ECC remains the largest single-author agent harness on GitHub by star count at 211.9K. The v2.0.0 package ships 261 skills across coding, research, security, media, and enterprise ops; 'instincts' (auto-triggered behaviors that fire without a slash command); a memory optimization layer; AgentShield security scanning; and a worktree-lifecycle service. Works natively across Claude Code, Codex, Opencode, Cursor, Gemini, Zed, and GitHub Copilot. First appeared July 2.",
+    "categories": ["agent", "skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 3 — 211.9K stars; still tracking as the most-starred community agent harness"
+  },
+  {
+    "slug": "claude-code-v2-1-200-201",
+    "name": "Claude Code v2.1.200/201 — Permission Mode Now 'Manual' by Default; AskUserQuestion No Longer Auto-Continues",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "hook": "Two back-to-back releases shipped July 3. v2.1.200 (16:52 UTC): the 'default' permission mode is renamed 'Manual' across the CLI, VS Code extension, and JetBrains — the auto-approve behavior that caught many users by surprise on install is now opt-in via /config. AskUserQuestion dialogs no longer auto-continue after an idle timeout (set one explicitly via /config if you want it). Also fixes background sessions stopping mid-turn after sleep/wake cycles and background-agent daemon roster corruption. v2.1.201 (23:50 UTC): Claude Sonnet 5 sessions no longer inject harness reminders via the mid-conversation system role, fixing subtle reasoning contamination for long sessions.",
+    "categories": ["anthropic"],
+    "install": "npm install -g @anthropic-ai/claude-code@latest"
+  },
+  {
+    "slug": "pmb-project-memory",
+    "name": "PMB (oleksiijko) — Local-First Persistent Project Memory MCP; 290 Stars, v1.2.2 June 30",
+    "primary_url": "https://github.com/oleksiijko/pmb",
+    "secondary_urls": [
+      "https://news.ycombinator.com/item?id=48622590"
+    ],
+    "hook": "PMB (project memory base) solves the cold-start problem: every new Claude Code session wastes minutes re-explaining decisions already made, directions tried, and why the architecture looks the way it does. v1.2.2 stores them in a local SQLite database with hybrid three-layer retrieval — BM25 keyword + vector semantic + entity graph — with ~35ms warm recall. No cloud, no API key on the read path. Connects via `pmb connect claude-code` which writes the MCP config automatically; also works with Cursor, Codex, Windsurf, and Zed. Appeared on HN 'Show HN: Recall – Local project memory for Claude Code' about a week ago.",
+    "categories": ["cost", "mcp"],
+    "install": "pip install pmb-ai && pmb setup && pmb connect claude-code"
+  },
+  {
+    "slug": "claude-code-steganography",
+    "name": "Claude Code Prompt Steganography — HN #1 (605 pts); Fixed in v2.1.197; Still Generating International Press",
+    "primary_url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+    "secondary_urls": [
+      "https://news.ycombinator.com/item?id=48734373",
+      "https://www.theregister.com/ai-and-ml/2026/07/01/anthropic-is-removing-its-covert-code-for-catching-chinese-competitors/5265366"
+    ],
+    "hook": "The June 30 discovery that Claude Code silently encoded timezone (Asia/Shanghai / Asia/Urumqi) and proxy-hostname signals into hidden Unicode steganography remains the most-discussed Claude Code story of the year. Anthropic confirmed it as an anti-reseller/anti-distillation experiment and shipped the fix in v2.1.197. As of July 4, The Register, Semafor, The Information, and international press are still running follow-on coverage. Anthropic has not published a full post-mortem. Users on affected versions (v2.1.91–v2.1.196) should update. First appeared July 2.",
+    "categories": ["viral", "anthropic"],
+    "recurring_note": "↑ Day 3 — fix confirmed in v2.1.197; international press coverage continues; Anthropic post-mortem pending"
+  },
+  {
+    "slug": "claude-code-limits-july13",
+    "name": "Claude Code Weekly Limits +50% Through July 13 — All Paid Tiers; 7 Days Remaining",
+    "primary_url": "https://news.ycombinator.com/item?id=48126429",
+    "secondary_urls": [
+      "https://apidog.com/blog/claude-code-weekly-limits-50-percent-increase-july-2026/"
+    ],
+    "hook": "Anthropic's 50% weekly usage limit increase for all paid tiers — Pro, Max, Team, and Enterprise — expires July 13, 2026 at 6 PM PDT. Seven days remain. The boost stacks with a concurrent 2× 5-hour rolling limit increase, applies across CLI, IDE extensions, desktop, and web, and requires no opt-in. This is the third limit increase in a single month, widely read as a competitive response to OpenAI Codex's autonomous '/goal' loop. Pro users who haven't yet taken advantage: now is the window. First appeared July 2.",
+    "categories": ["cost", "anthropic"],
+    "recurring_note": "↑ Day 3 — 7 days remaining on +50% boost (expires July 13 at 6 PM PDT)"
+  },
+  {
+    "slug": "claude-code-router",
+    "name": "claude-code-router — Route Claude Code to Any LLM Provider (35.5K Stars)",
+    "primary_url": "https://github.com/musistudio/claude-code-router",
+    "hook": "A local gateway and desktop control panel that intercepts Claude Code, Codex, and ZCode requests and routes them to any provider — OpenAI, Gemini, DeepSeek, SiliconFlow, OpenRouter, Kimi Code, Mistral, Z.AI, or any OpenAI-compatible endpoint. Conditional routing rules with fallback, request rewrites, usage dashboard with cost tracking, and a proxy mode for capturing API traffic. MIT-licensed, macOS/Windows/Linux. 35.5K stars. First appeared July 3.",
+    "categories": ["cost", "mcp"],
+    "install": "See README (desktop app; download from GitHub Releases)",
+    "recurring_note": "↑ Day 2 — 35.5K stars; July 4 US holiday driving weekend experimentation spike"
+  },
+  {
+    "slug": "skills-janitor",
+    "name": "Skills Janitor v1.4.0 — Tinder for Your Claude Code Skills; Token Cost Breakdown Per Skill",
+    "primary_url": "https://github.com/khendzel/skills-janitor",
+    "hook": "Built after the author found 31 of 35 installed skills unused and 8 near-duplicate pairs silently burning context budget. v1.4.0 (June 28) adds /janitor-swipe (a swipe-style review interface), /janitor-tokens (per-skill token cost breakdown), /janitor-report (health audit), and /janitor-discover (GitHub discovery). Users reclaim 30–40% of skill token overhead on average. Zero external dependencies. First appeared July 3.",
+    "categories": ["cost"],
+    "install": "/plugin marketplace add khendzel/skills-janitor",
+    "recurring_note": "↑ Day 2"
+  },
+  {
+    "slug": "pal-mcp-server",
+    "name": "PAL MCP Server — Claude Code + GeminiCLI + CodexCLI All Working as One (11.6K Stars)",
+    "primary_url": "https://github.com/BeehiveInnovations/pal-mcp-server",
+    "hook": "BeehiveInnovations' PAL is the successor to their popular zen-mcp-server, adding the `clink` (CLI + Link) tool that lets Claude Code spawn Codex subagents or Codex spawn Gemini CLI subagents mid-session. When Claude's context resets, hand off to another model that revives understanding without re-ingesting documents. Includes codereview, precommit, debug, thinkdeep, and 20+ more tools. 11.6K stars, Apache 2.0. First appeared July 3.",
+    "categories": ["mcp", "cost"],
+    "install": "git clone https://github.com/BeehiveInnovations/pal-mcp-server.git && cd pal-mcp-server && ./run-server.sh",
+    "recurring_note": "↑ Day 2"
+  },
+  {
+    "slug": "glance-mcp",
+    "name": "Glance (DebugBase) — 30-Tool Browser Automation MCP; Claude Code Gets Real Chromium",
+    "primary_url": "https://github.com/DebugBase/glance",
+    "secondary_urls": [
+      "https://glance.debugbase.io/"
+    ],
+    "hook": "Glance is an MCP server that gives Claude Code a Playwright-powered Chromium browser via 30 tools: 19 browser control (navigate, click, fill, select, hover, scroll), 7 test automation (assert by 12 assertion types, screenshot diff), and 4 session/visual tools (recording, visual regression). Inline screenshots come back as base64 — Claude literally sees the page. Unlike headless scraping, Glance handles JavaScript-heavy SPAs and returns accessibility snapshots for DOM-level testing. Compatible with Claude Code, Cursor, Windsurf, and any MCP client.",
+    "categories": ["mcp"],
+    "install": "npm install -g glance-mcp"
+  },
+  {
+    "slug": "fable5-day-4",
+    "name": "Fable 5 Restored — 50% Usage Cap Still Applies Through July 7 (3 Days Left)",
+    "primary_url": "https://www.anthropic.com/news/redeploying-fable-5",
+    "secondary_urls": [
+      "https://www.coindesk.com/tech/2026/07/01/anthropic-restores-ai-models-fable-mythos-after-the-u-s-lifts-export-controls"
+    ],
+    "hook": "Fable 5 global access was restored July 1 after 19 days of export-control suspension. Anthropic is holding weekly usage at 50% while systems scale — that cap expires July 7. Three days remain before full capacity resumes. A new safety classifier deployed before reactivation blocks the reported jailbreak technique in 99%+ of cases. All prior API and workspace configurations are restored without reconfiguration. For teams that deferred Fable 5 workloads during the suspension: the July 7 deadline is worth tracking. First appeared July 1.",
+    "categories": ["anthropic", "viral"],
+    "recurring_note": "↑ Day 4 — 50% weekly usage cap expires July 7; 3 days remaining"
+  },
+  {
+    "slug": "claude-sonnet-5",
+    "name": "Claude Sonnet 5 — New Default in Claude Code; 1M Context, $2/$10 Promo Through Aug 31",
+    "primary_url": "https://www.anthropic.com/news/claude-sonnet-5",
+    "secondary_urls": [
+      "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/"
+    ],
+    "hook": "Claude Sonnet 5 (released June 30) is now the default model in all Claude Code installations at v2.1.197+. It ships a native 1M-token context window — the largest in the Sonnet family — and matches Opus 4.8 on most professional tasks at $2 input / $10 output per Mtok (promotional through August 31). Long multi-file agentic sessions that previously hit context walls now run considerably longer without compaction. GitHub Copilot shipped Sonnet 5 the same day. On US Independence Day with many users revisiting their Claude Code setup, the default model question is likely to come up. First appeared July 1.",
+    "categories": ["anthropic", "cost"],
+    "install": "Default in Claude Code v2.1.197+; no action needed",
+    "recurring_note": "↑ Day 4 — now the default model in all Claude Code installations; promo pricing through Aug 31"
+  }
+]
