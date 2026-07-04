@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — July 4, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — July 4, 2026</h1><p class="sub">Top 15 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/DietrichGebert/ponytail">ponytail (DietrichGebert) — 73.7K Stars; 7-Rung Decision Ladder That Cuts Code Output 54% and Tokens 22%</a></h3>
+  <p class="hook">Launched June 12, ponytail hit 44K stars in 9 days and is now at 73.7K — the fastest-growing Claude Code plugin of June 2026. It injects a mandatory 7-rung minimalism ladder before Claude writes any code: Does it need to exist? Already in codebase? In stdlib? Native platform feature? Existing dependency? One-liner? Only then: minimum code. Benchmarks on a real FastAPI + React repo across 12 tasks show 54% fewer lines, 22% fewer tokens, 20% lower cost, 27% faster completion, 100% safety maintained. At the extreme end, an over-built date picker shrank 94%. v4.8.4 (June 29) added Hermes support. Works with Claude Code, Codex, GitHub Copilot CLI, OpenCode, and Gemini CLI. At least 6 YouTube reviews in the past 2 weeks, including a Caveman vs. Headroom vs. Ponytail comparison.</p>
+  <div class="secondary">Also: <a href="https://www.youtube.com/watch?v=2xuFcmUAQUc">www.youtube.com/watch?v=2xuFcmUAQUc</a> · <a href="https://www.youtube.com/watch?v=PSCfwcqARX8">www.youtube.com/watch?v=PSCfwcqARX8</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">plugin · token · viral · marketplace · terminal</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add DietrichGebert/ponytail</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/headroomlabs-ai/headroom">headroom v0.30.0 — 56.4K Stars; 60-95% Token Reduction via Smart Compression Layer (Released July 3)</a></h3>
+  <p class="hook">v0.30.0 shipped July 3 (yesterday) — headroom&#39;s 160th release. It compresses tool outputs, logs, files, and RAG chunks 60-95% before they reach the LLM, using three purpose-built engines: SmartCrusher (JSON), CodeCompressor (AST-aware), and Kompress-v2-base (general text). Compression is reversible — originals are cached locally for on-demand retrieval. Three deployment modes: Python library, transparent proxy (headroom wrap claude), or MCP server. v0.30.0 also adds cross-agent memory dedup so Claude Code, Cursor, and Codex share compressed context without re-processing the same files. LiteLLM integrated headroom natively in June. At 56.4K stars, it&#39;s one of the top 5 starred Claude Code tools and is new to this digest.</p>
+  <div class="secondary">Also: <a href="https://extraheadroom.com/">extraheadroom.com/</a> · <a href="https://docs.litellm.ai/blog/headroom-integration">docs.litellm.ai/blog/headroom-integration</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">mcp · memory · model · token · proxy · viral · search</div>
+  <pre><button class="copy">copy</button><code>pip install &quot;headroom-ai[all]&quot;</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mattpocock/skills">mattpocock/skills — 155K Stars; /grill-me Forces 45-Min Design Interview Before First Line of Code</a></h3>
+  <p class="hook">Matt Pocock&#39;s .claude directory hit 155K stars within 24 hours of its July 3 release — 22K in the first day alone. The flagship skill is /grill-me, which refuses to write any code until it has exhaustively interviewed you about the design (sessions average 45 min, surface hidden requirements). /improve-codebase-architecture produces a visual HTML report; /grill-with-docs builds a CONTEXT.md and ADRs; /to-prd and /handoff round out the set. Pocock (Total TypeScript, 60K-subscriber newsletter) shipped it as a single npx command install. First appeared July 3.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">skill · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>npx skills@latest add mattpocock/skills</code></pre>
+  <div class="recurring">↑ Day 2 — 155K stars; still #1 trending on GitHub as of July 4</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/garrytan/gstack">gstack — Garry Tan&#39;s 23-Role Claude Code Toolkit (119K Stars)</a></h3>
+  <p class="hook">Y Combinator CEO Garry Tan&#39;s personal Claude Code setup — a 23-skill plugin that instantiates a full virtual engineering team as slash commands (CEO, Designer, Eng Manager, QA Lead, Release Manager, Doc Engineer). Hit 119K stars and continues to be widely cited as the reference architecture for design-led Claude Code workflows. Real browser automation via /browse and /qa; optional GBrain persistent knowledge base. First appeared July 3.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">agent</span>  </div>
+  <div class="tags">skill · plugin · viral · browser</div>
+  <pre><button class="copy">copy</button><code>git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack &amp;&amp; cd ~/.claude/skills/gstack &amp;&amp; ./setup</code></pre>
+  <div class="recurring">↑ Day 2 — 119K stars; /browse + /qa pair driving agentic QA adoption</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/affaan-m/ECC">ECC (affaan-m) — 211.9K Stars; 261 Skills, Instincts, Memory, Security for Claude Code, Codex, Cursor and 5 More</a></h3>
+  <p class="hook">ECC remains the largest single-author agent harness on GitHub by star count at 211.9K. The v2.0.0 package ships 261 skills across coding, research, security, media, and enterprise ops; &#39;instincts&#39; (auto-triggered behaviors that fire without a slash command); a memory optimization layer; AgentShield security scanning; and a worktree-lifecycle service. Works natively across Claude Code, Codex, Opencode, Cursor, Gemini, Zed, and GitHub Copilot. First appeared July 2.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">agent</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">harness · memory · viral · security</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  <div class="recurring">↑ Day 3 — 211.9K stars; still tracking as the most-starred community agent harness</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/claude-code/releases">Claude Code v2.1.200/201 — Permission Mode Now &#39;Manual&#39; by Default; AskUserQuestion No Longer Auto-Continues</a></h3>
+  <p class="hook">Two back-to-back releases shipped July 3. v2.1.200 (16:52 UTC): the &#39;default&#39; permission mode is renamed &#39;Manual&#39; across the CLI, VS Code extension, and JetBrains — the auto-approve behavior that caught many users by surprise on install is now opt-in via /config. AskUserQuestion dialogs no longer auto-continue after an idle timeout (set one explicitly via /config if you want it). Also fixes background sessions stopping mid-turn after sleep/wake cycles and background-agent daemon roster corruption. v2.1.201 (23:50 UTC): Claude Sonnet 5 sessions no longer inject harness reminders via the mid-conversation system role, fixing subtle reasoning contamination for long sessions.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">harness · terminal</div>
+  <pre><button class="copy">copy</button><code>npm install -g @anthropic-ai/claude-code@latest</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/oleksiijko/pmb">PMB (oleksiijko) — Local-First Persistent Project Memory MCP; 290 Stars, v1.2.2 June 30</a></h3>
+  <p class="hook">PMB (project memory base) solves the cold-start problem: every new Claude Code session wastes minutes re-explaining decisions already made, directions tried, and why the architecture looks the way it does. v1.2.2 stores them in a local SQLite database with hybrid three-layer retrieval — BM25 keyword + vector semantic + entity graph — with ~35ms warm recall. No cloud, no API key on the read path. Connects via `pmb connect claude-code` which writes the MCP config automatically; also works with Cursor, Codex, Windsurf, and Zed. Appeared on HN &#39;Show HN: Recall – Local project memory for Claude Code&#39; about a week ago.</p>
+  <div class="secondary">Also: <a href="https://news.ycombinator.com/item?id=48622590">news.ycombinator.com/item?id=48622590</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">memory · context · local · viral · search</div>
+  <pre><button class="copy">copy</button><code>pip install pmb-ai &amp;&amp; pmb setup &amp;&amp; pmb connect claude-code</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://thereallo.dev/blog/claude-code-prompt-steganography">Claude Code Prompt Steganography — HN #1 (605 pts); Fixed in v2.1.197; Still Generating International Press</a></h3>
+  <p class="hook">The June 30 discovery that Claude Code silently encoded timezone (Asia/Shanghai / Asia/Urumqi) and proxy-hostname signals into hidden Unicode steganography remains the most-discussed Claude Code story of the year. Anthropic confirmed it as an anti-reseller/anti-distillation experiment and shipped the fix in v2.1.197. As of July 4, The Register, Semafor, The Information, and international press are still running follow-on coverage. Anthropic has not published a full post-mortem. Users on affected versions (v2.1.91–v2.1.196) should update. First appeared July 2.</p>
+  <div class="secondary">Also: <a href="https://news.ycombinator.com/item?id=48734373">news.ycombinator.com/item?id=48734373</a> · <a href="https://www.theregister.com/ai-and-ml/2026/07/01/anthropic-is-removing-its-covert-code-for-catching-chinese-competitors/5265366">www.theregister.com/ai-and-ml/2026/07/01/anthropic-is-removing-its-covert-code-for-catching-chinese-competitors/5265366</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">proxy</div>
+  
+  <div class="recurring">↑ Day 3 — fix confirmed in v2.1.197; international press coverage continues; Anthropic post-mortem pending</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://news.ycombinator.com/item?id=48126429">Claude Code Weekly Limits +50% Through July 13 — All Paid Tiers; 7 Days Remaining</a></h3>
+  <p class="hook">Anthropic&#39;s 50% weekly usage limit increase for all paid tiers — Pro, Max, Team, and Enterprise — expires July 13, 2026 at 6 PM PDT. Seven days remain. The boost stacks with a concurrent 2× 5-hour rolling limit increase, applies across CLI, IDE extensions, desktop, and web, and requires no opt-in. This is the third limit increase in a single month, widely read as a competitive response to OpenAI Codex&#39;s autonomous &#39;/goal&#39; loop. Pro users who haven&#39;t yet taken advantage: now is the window. First appeared July 2.</p>
+  <div class="secondary">Also: <a href="https://apidog.com/blog/claude-code-weekly-limits-50-percent-increase-july-2026/">apidog.com/blog/claude-code-weekly-limits-50-percent-increase-july-2026/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">terminal</div>
+  
+  <div class="recurring">↑ Day 3 — 7 days remaining on +50% boost (expires July 13 at 6 PM PDT)</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/musistudio/claude-code-router">claude-code-router — Route Claude Code to Any LLM Provider (35.5K Stars)</a></h3>
+  <p class="hook">A local gateway and desktop control panel that intercepts Claude Code, Codex, and ZCode requests and routes them to any provider — OpenAI, Gemini, DeepSeek, SiliconFlow, OpenRouter, Kimi Code, Mistral, Z.AI, or any OpenAI-compatible endpoint. Conditional routing rules with fallback, request rewrites, usage dashboard with cost tracking, and a proxy mode for capturing API traffic. MIT-licensed, macOS/Windows/Linux. 35.5K stars. First appeared July 3.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">model · proxy · viral</div>
+  <pre><button class="copy">copy</button><code>See README (desktop app; download from GitHub Releases)</code></pre>
+  <div class="recurring">↑ Day 2 — 35.5K stars; July 4 US holiday driving weekend experimentation spike</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/khendzel/skills-janitor">Skills Janitor v1.4.0 — Tinder for Your Claude Code Skills; Token Cost Breakdown Per Skill</a></h3>
+  <p class="hook">Built after the author found 31 of 35 installed skills unused and 8 near-duplicate pairs silently burning context budget. v1.4.0 (June 28) adds /janitor-swipe (a swipe-style review interface), /janitor-tokens (per-skill token cost breakdown), /janitor-report (health audit), and /janitor-discover (GitHub discovery). Users reclaim 30–40% of skill token overhead on average. Zero external dependencies. First appeared July 3.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">skill · plugin · token · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add khendzel/skills-janitor</code></pre>
+  <div class="recurring">↑ Day 2</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/BeehiveInnovations/pal-mcp-server">PAL MCP Server — Claude Code + GeminiCLI + CodexCLI All Working as One (11.6K Stars)</a></h3>
+  <p class="hook">BeehiveInnovations&#39; PAL is the successor to their popular zen-mcp-server, adding the `clink` (CLI + Link) tool that lets Claude Code spawn Codex subagents or Codex spawn Gemini CLI subagents mid-session. When Claude&#39;s context resets, hand off to another model that revives understanding without re-ingesting documents. Includes codereview, precommit, debug, thinkdeep, and 20+ more tools. 11.6K stars, Apache 2.0. First appeared July 3.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">viral · terminal · debugger</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/BeehiveInnovations/pal-mcp-server.git &amp;&amp; cd pal-mcp-server &amp;&amp; ./run-server.sh</code></pre>
+  <div class="recurring">↑ Day 2</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/DebugBase/glance">Glance (DebugBase) — 30-Tool Browser Automation MCP; Claude Code Gets Real Chromium</a></h3>
+  <p class="hook">Glance is an MCP server that gives Claude Code a Playwright-powered Chromium browser via 30 tools: 19 browser control (navigate, click, fill, select, hover, scroll), 7 test automation (assert by 12 assertion types, screenshot diff), and 4 session/visual tools (recording, visual regression). Inline screenshots come back as base64 — Claude literally sees the page. Unlike headless scraping, Glance handles JavaScript-heavy SPAs and returns accessibility snapshots for DOM-level testing. Compatible with Claude Code, Cursor, Windsurf, and any MCP client.</p>
+  <div class="secondary">Also: <a href="https://glance.debugbase.io/">glance.debugbase.io/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">browser · testing</div>
+  <pre><button class="copy">copy</button><code>npm install -g glance-mcp</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/redeploying-fable-5">Fable 5 Restored — 50% Usage Cap Still Applies Through July 7 (3 Days Left)</a></h3>
+  <p class="hook">Fable 5 global access was restored July 1 after 19 days of export-control suspension. Anthropic is holding weekly usage at 50% while systems scale — that cap expires July 7. Three days remain before full capacity resumes. A new safety classifier deployed before reactivation blocks the reported jailbreak technique in 99%+ of cases. All prior API and workspace configurations are restored without reconfiguration. For teams that deferred Fable 5 workloads during the suspension: the July 7 deadline is worth tracking. First appeared July 1.</p>
+  <div class="secondary">Also: <a href="https://www.coindesk.com/tech/2026/07/01/anthropic-restores-ai-models-fable-mythos-after-the-u-s-lifts-export-controls">www.coindesk.com/tech/2026/07/01/anthropic-restores-ai-models-fable-mythos-after-the-u-s-lifts-export-controls</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  
+  
+  <div class="recurring">↑ Day 4 — 50% weekly usage cap expires July 7; 3 days remaining</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/claude-sonnet-5">Claude Sonnet 5 — New Default in Claude Code; 1M Context, $2/$10 Promo Through Aug 31</a></h3>
+  <p class="hook">Claude Sonnet 5 (released June 30) is now the default model in all Claude Code installations at v2.1.197+. It ships a native 1M-token context window — the largest in the Sonnet family — and matches Opus 4.8 on most professional tasks at $2 input / $10 output per Mtok (promotional through August 31). Long multi-file agentic sessions that previously hit context walls now run considerably longer without compaction. GitHub Copilot shipped Sonnet 5 the same day. On US Independence Day with many users revisiting their Claude Code setup, the default model question is likely to come up. First appeared July 1.</p>
+  <div class="secondary">Also: <a href="https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/">techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">agent · context</div>
+  <pre><button class="copy">copy</button><code>Default in Claude Code v2.1.197+; no action needed</code></pre>
+  <div class="recurring">↑ Day 4 — now the default model in all Claude Code installations; promo pricing through Aug 31</div>
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
