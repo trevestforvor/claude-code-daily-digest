@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "awesome-design-md",
+    "name": "Awesome Design MD",
+    "primary_url": "https://github.com/VoltAgent/awesome-design-md",
+    "secondary_urls": [
+      "https://www.mindstudio.ai/blog/awesome-design-md-github-claude-code-brand-systems"
+    ],
+    "hook": "57 brand design systems (Apple, Stripe, Notion, Airbnb, Anthropic/Claude, and 52 more) encoded as plain DESIGN.md files — drop one into any project and Claude Code generates brand-accurate UI without design tokens or Figma exports. Hit 95.6K GitHub stars organically, making it one of the fastest-climbing repos in the Claude ecosystem.",
+    "categories": ["design", "resource"],
+    "install": "See README — download individual DESIGN.md files or clone and copy into your project root"
+  },
+  {
+    "slug": "paul-framework",
+    "name": "PAUL — Plan-Apply-Unify Loop",
+    "primary_url": "https://github.com/ChristopherKahler/paul",
+    "secondary_urls": [
+      "https://www.charlieautomates.com/blog/seed-paul-claude-code-meta/",
+      "https://www.youtube.com/watch?v=NB9Pf4cdFeM"
+    ],
+    "hook": "Structured 3-phase Claude Code skill: Plan (Claude drafts acceptance criteria and waits for explicit approval), Apply (builds only what was approved, no freelancing), Unify (reconciles plan vs. built). 1.1K stars. Charlie Automates called PAUL + SEED \"the meta nobody's talking about\" — PAUL alone prevents the drift that compounds over long agentic sessions.",
+    "categories": ["workflow", "quality"],
+    "install": "npx paul-framework",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "seed-project-incubator",
+    "name": "SEED — AI Project Incubator",
+    "primary_url": "https://github.com/ChristopherKahler/seed",
+    "secondary_urls": [
+      "https://www.charlieautomates.com/blog/seed-paul-claude-code-meta/",
+      "https://www.youtube.com/watch?v=ildGgQB9rYE"
+    ],
+    "hook": "Type-aware guided ideation skill for Claude Code that takes a raw idea through a structured exploration and produces a PAUL-ready build plan. SEED and PAUL are designed as a pair: SEED structures what to build, PAUL structures how to build it without context drift. 298 stars; featured alongside PAUL and Skillsmith by Charlie Automates as a complete \"Chris AI stack.\"",
+    "categories": ["workflow", "planning"],
+    "install": "npm i -g @chrisai/seed",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "skillsmith-framework",
+    "name": "Skillsmith",
+    "primary_url": "https://github.com/ChristopherKahler/skillsmith",
+    "secondary_urls": [
+      "https://www.charlieautomates.com/blog/seed-paul-claude-code-meta/",
+      "https://www.youtube.com/watch?v=ildGgQB9rYE"
+    ],
+    "hook": "End-to-end framework for building standardized Claude Code skills — defines 7 file types with syntax specs, then provides four workflows: Discover (questionnaire → spec), Scaffold (spec → compliant directory), Distill (books/transcripts → framework chunks), Audit (compliance report). 119 stars; SEED itself was built with Skillsmith, making it the meta-framework behind the Chris AI stack.",
+    "categories": ["skill", "workflow"],
+    "install": "npx @chrisai/skillsmith",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "claude-for-foundation-models",
+    "name": "Claude for Foundation Models (Swift)",
+    "primary_url": "https://github.com/anthropics/ClaudeForFoundationModels",
+    "secondary_urls": [
+      "https://claude.com/blog/claude-for-foundation-models",
+      "https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models"
+    ],
+    "hook": "Official Anthropic Swift package (v0.1.0, Apache-2.0) that plugs Claude into Apple's Foundation Models framework. iOS/macOS/visionOS/watchOS 27 apps use the same LanguageModelSession API for Claude as for Apple's on-device model — streaming, guided generation, and tool calling all work identically. Requests go directly to Anthropic; Apple is not in the request path.",
+    "categories": ["official", "sdk"],
+    "install": "Add via Xcode: File ▸ Add Package Dependencies… → https://github.com/anthropics/ClaudeForFoundationModels.git"
+  },
+  {
+    "slug": "enterprise-managed-auth-mcp",
+    "name": "Enterprise-Managed Auth for MCP Connectors",
+    "primary_url": "https://claude.com/blog/enterprise-managed-auth",
+    "secondary_urls": [
+      "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/"
+    ],
+    "hook": "Anthropic's zero-touch MCP provisioning for enterprises: IT admins authorize connectors once through Okta, employees inherit access the first time they open Claude — no OAuth queues, no per-user consent. Seven connectors at launch: Asana, Atlassian (Jira/Confluence/Rovo), Canva, Figma, Granola, Linear, Supabase. Ramp has 2,000 employees live. Works in Claude, Claude Code, and Cowork.",
+    "categories": ["enterprise", "mcp"]
+  },
+  {
+    "slug": "parallel-code-desktop",
+    "name": "Parallel Code",
+    "primary_url": "https://github.com/johannesjo/parallel-code",
+    "hook": "Desktop app (macOS/Linux) that dispatches Claude Code, Codex, and Gemini agents simultaneously, each in its own isolated git worktree. Built-in diff viewer with inline comments, per-task shell terminals, steps tracking panel, PR CI status notifications, and 10 themes. 814 stars. Automates the parallel-worktree pattern that IndyDevDan's \"How I PARALLELIZE Claude Code\" video popularized, without any manual shell setup.",
+    "categories": ["workflow", "multi-agent"],
+    "install": "Download .dmg (macOS) or .AppImage/.deb (Linux) from GitHub releases page"
+  },
+  {
+    "slug": "claude-code-best-practice",
+    "name": "Claude Code Best Practice",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "Living cheat sheet for Claude Code covering CLAUDE.md patterns, skills, subagents, hooks, and slash commands — \"from vibe coding to agentic engineering.\" Grew from 18.5K stars in March to 57K+ stars now, trending on GitHub with active daily updates. Frequently cited in community posts as the starting point for Claude Code configuration.",
+    "categories": ["resource", "learning"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-code-ultimate-guide",
+    "name": "Claude Code Ultimate Guide",
+    "primary_url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+    "secondary_urls": [
+      "https://cc.bruniaux.com"
+    ],
+    "hook": "430K+ line educational repo: 181 production-ready templates (23 agents, 74 skills, 37 hooks), 48 Mermaid architecture diagrams, and a 271-question quiz with 4 skill profiles. Security section tracks 28 CVEs and 655 known-malicious skills. 5.3K stars. Available as an MCP server for in-session access, or one claude command to onboard. Templates under CC0 (free to copy).",
+    "categories": ["resource", "learning", "security"],
+    "install": "claude \"Fetch and follow the onboarding instructions from: https://raw.githubusercontent.com/FlorianBruniaux/claude-code-ultimate-guide/main/tools/onboarding-prompt.md\""
+  }
+]
