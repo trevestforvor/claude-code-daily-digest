@@ -1,0 +1,160 @@
+[
+  {
+    "slug": "graphify",
+    "name": "Graphify — 74.8K Stars; /graphify Turns Any Codebase Into a Queryable Knowledge Graph (71.5x Token Savings)",
+    "primary_url": "https://github.com/safishamsi/graphify",
+    "secondary_urls": [
+      "https://graphify.net/",
+      "https://www.charlieautomates.com/blog/claude-code-knowledge-graph-graphify-obsidian/"
+    ],
+    "hook": "YC S26 company Graphify has reached 74.8K stars with a skill that parses your entire codebase (code, SQL schemas, R scripts, shell scripts, docs, PDFs, images, videos) into a local queryable knowledge graph — then Claude queries the graph instead of re-reading files. Code is parsed locally via tree-sitter (no API calls); docs and media route through the session model. Benchmark: for a large mixed code-and-paper corpus, average query cost was 1.7K tokens vs. 123K naive — a 71.5x reduction. Charlie Automates published a setup guide this week pairing Graphify with Obsidian for cross-project persistent memory. Works with Claude Code, Cursor, Codex CLI, Gemini CLI, and 15+ other agents. MIT licensed.",
+    "categories": ["cost", "skill"],
+    "install": "npx skills add safishamsi/graphify"
+  },
+  {
+    "slug": "fable5-final-warning",
+    "name": "Fable 5 Usage Cap Expires TOMORROW (July 7) — 50% Weekly Limit Lifts; Full Capacity Resumes",
+    "primary_url": "https://www.anthropic.com/news/redeploying-fable-5",
+    "secondary_urls": [
+      "https://www.coindesk.com/tech/2026/07/01/anthropic-restores-ai-models-fable-mythos-after-the-u-s-lifts-export-controls"
+    ],
+    "hook": "The 50% weekly usage cap Anthropic imposed when Fable 5 returned from export-control suspension expires TOMORROW, July 7. After 19 days offline and 6 days back, full capacity resumes. Teams that deferred Fable 5 workloads or continued routing to Sonnet 5 as a cost workaround can expect full Fable 5 availability starting July 7. No configuration change required — all prior API keys, workspace settings, and Claude Code sessions will automatically access full throughput.",
+    "categories": ["anthropic", "viral"],
+    "recurring_note": "↑ Day 6 — FINAL WARNING: 50% weekly cap expires tomorrow July 7; full Fable 5 capacity resumes"
+  },
+  {
+    "slug": "claude-code-routines",
+    "name": "Claude Code Routines — Official Cloud-Scheduled Agents; Cron, API Trigger, and GitHub Events",
+    "primary_url": "https://code.claude.com/docs/en/routines",
+    "secondary_urls": [
+      "https://dev.to/arshtechpro/claude-code-routines-put-your-ai-agent-on-autopilot-51d1",
+      "https://www.sabrina.dev/p/loop-engineering-claude-code-goal-routines",
+      "https://www.mindstudio.ai/blog/claude-code-remote-routines-cloud-automations-laptop-closed"
+    ],
+    "hook": "Claude Code Routines is the official Anthropic system for putting agents on autopilot — define a prompt once, wire up a trigger, and Claude Code runs autonomously on Anthropic-managed cloud infrastructure (4 vCPUs, 16GB RAM per agent) against any connected GitHub repo whenever the trigger fires. Three trigger types: Schedule (any cron cadence or one-off timestamp), API (HTTP POST to a per-routine endpoint with bearer-token auth), and GitHub event (PR opened, release created, push to branch). Managed at claude.ai/code/routines or via /schedule. Available on Pro, Max, Team, and Enterprise. This week's blog spotlight — a dev.to post titled 'Put Your AI Agent on Autopilot,' a sabrina.dev deep-dive on loop engineering with /goal + routines, and a MindStudio explainer — is driving renewed adoption awareness. No laptop, no .env files, no token-limit exposure.",
+    "categories": ["workflow", "anthropic"],
+    "install": "claude.ai/code/routines (web) or /schedule (CLI)"
+  },
+  {
+    "slug": "antigravity-awesome-skills",
+    "name": "antigravity-awesome-skills — 42K Stars; 1,898+ Installable Agentic Skills for Claude Code, Cursor, Codex, Gemini CLI, and 6 More",
+    "primary_url": "https://github.com/sickn33/antigravity-awesome-skills",
+    "secondary_urls": [
+      "https://sickn33.github.io/antigravity-awesome-skills/"
+    ],
+    "hook": "antigravity-awesome-skills is an installable library — not just a list — of 1,898+ reusable SKILL.md playbooks covering development, testing, security, infrastructure, product, and marketing. Compatible with Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, Kiro, OpenCode, and GitHub Copilot. The `npx antigravity-awesome-skills` command puts skills wherever your tool expects them, with curated bundles and workflows for common stacks. 42,000 stars. Unlike broad catalogues, skills are searchable by domain and include plugin-safe distributions for sandboxed environments.",
+    "categories": ["skill", "resource"],
+    "install": "npx antigravity-awesome-skills"
+  },
+  {
+    "slug": "kpab-fable5-skills",
+    "name": "kpab/claude-fable-5-skills — 10 Battle-Ready Agent Skills Built for Fable 5 Behavior, Not Older Model Guardrails",
+    "primary_url": "https://github.com/kpab/claude-fable-5-skills",
+    "secondary_urls": [
+      "https://github.com/hesreallyhim/awesome-claude-code/issues/2164"
+    ],
+    "hook": "The first skill collection designed specifically around how Claude Fable 5 actually behaves — not the defensive guardrails written for older, more risk-averse models. Ten skills cover effort calibration (letting Fable 5 choose the right reasoning depth rather than forcing extended thinking everywhere), scope control, autonomous continuation (when to keep going vs. pause), and subagent orchestration using Fable 5's native multi-agent reasoning. Submitted to hesreallyhim/awesome-claude-code on July 2. Compatible with Claude Code, Claude Cowork, Cursor, GitHub Copilot, and Gemini CLI via SKILL.md format.",
+    "categories": ["skill"],
+    "install": "npx skills add kpab/claude-fable-5-skills"
+  },
+  {
+    "slug": "claude-code-steganography",
+    "name": "Claude Code Prompt Steganography — Day 6; Anthropic Post-Mortem Still Pending; 12+ Outlets Still Running Coverage",
+    "primary_url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+    "secondary_urls": [
+      "https://news.ycombinator.com/item?id=48734373",
+      "https://www.theregister.com/ai-and-ml/2026/07/01/anthropic-is-removing-its-covert-code-for-catching-chinese-competitors/5265366"
+    ],
+    "hook": "The June 30 discovery that Claude Code silently encoded timezone and proxy-hostname signals into hidden Unicode steganography (v2.1.91–v2.1.196, April 2 through June 30) remains the most-discussed Claude Code story of the year. Anthropic fixed it in v2.1.197 and said it was 'an experiment to prevent account abuse from unauthorized resellers.' Six days in, international press continues: The Register, Semafor, The Information, and outlets in five countries have run follow-on coverage. Anthropic has not published a post-mortem. v2.1.197+ is clean.",
+    "categories": ["viral", "anthropic"],
+    "recurring_note": "↑ Day 6 — 12+ outlets still running coverage; Anthropic post-mortem has not shipped; v2.1.197+ is clean"
+  },
+  {
+    "slug": "claude-code-limits-july13",
+    "name": "Claude Code Weekly Limits +50% Through July 13 — 7 Days Remaining; All Paid Tiers",
+    "primary_url": "https://news.ycombinator.com/item?id=48126429",
+    "secondary_urls": [
+      "https://apidog.com/blog/claude-code-weekly-limits-50-percent-increase-july-2026/"
+    ],
+    "hook": "Anthropic's 50% weekly usage limit boost for all paid tiers — Pro, Max, Team, and Enterprise — expires July 13 at 6 PM PDT. Seven days remain. The boost stacks with a concurrent 2× 5-hour rolling limit increase and applies across CLI, IDE extensions, desktop, and web with no opt-in required. The lift is widely read as a competitive response to OpenAI Codex's autonomous /goal loop. Pro users who haven't yet taken advantage: the window is closing.",
+    "categories": ["cost", "anthropic"],
+    "recurring_note": "↑ Day 5 — 7 days remaining (expires July 13 at 6 PM PDT)"
+  },
+  {
+    "slug": "karpathy-claude-md-v10",
+    "name": "Andrej Karpathy CLAUDE.md — ~225K Combined Stars Across Forks; Still the Fastest-Growing Behavioral Skill of 2026",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "secondary_urls": [
+      "https://github.com/forrestchang/andrej-karpathy-skills"
+    ],
+    "hook": "The 70-line CLAUDE.md file distilling Andrej Karpathy's LLM coding pitfall observations into four behavioral rules (Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution) continues to grow — now approximately 225K combined stars across the multica-ai and forrestchang forks, up from 220K on July 1. No new rule update this week, but install rate has not slowed. Fastest-growing CLAUDE.md behavioral skill of 2026 — HN thread 'Claude Code and the Great Productivity Panic of 2026' remains one of the most-commented Claude Code discussions of the year.",
+    "categories": ["viral", "skill"],
+    "install": "npx skills add multica-ai/andrej-karpathy-skills",
+    "recurring_note": "↑ Day 5 — ~225K combined stars, up from 220K on July 1; adoption rate undiminished"
+  },
+  {
+    "slug": "ponytail",
+    "name": "ponytail — 73.7K Stars; 7-Rung Minimalism Ladder That Cuts Code Output 54% and Tokens 22%",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=2xuFcmUAQUc",
+      "https://www.youtube.com/watch?v=PSCfwcqARX8"
+    ],
+    "hook": "ponytail hit 44K stars in the 9 days after its June 12 launch and is now at 73.7K — the fastest-growing Claude Code plugin of June 2026. It injects a mandatory 7-rung minimalism ladder before Claude writes any code: Does it need to exist? Already in codebase? In stdlib? Native platform feature? Existing dependency? One-liner? Only then: minimum code. Benchmarks on a real FastAPI + React repo across 12 tasks show 54% fewer lines, 22% fewer tokens, 20% lower cost, 27% faster completion. v4.8.4 (June 29) added Hermes support. Works with Claude Code, Codex, GitHub Copilot CLI, OpenCode, and Gemini CLI.",
+    "categories": ["design", "cost"],
+    "install": "/plugin marketplace add DietrichGebert/ponytail",
+    "recurring_note": "↑ Day 3 — 73.7K stars; still in top 5 GitHub trending for AI tools"
+  },
+  {
+    "slug": "headroom-v0-30-0",
+    "name": "headroom v0.30.0 — 56.4K Stars; 60-95% Token Reduction via SmartCrusher, CodeCompressor, and Kompress-v2",
+    "primary_url": "https://github.com/headroomlabs-ai/headroom",
+    "secondary_urls": [
+      "https://extraheadroom.com/",
+      "https://docs.litellm.ai/blog/headroom-integration"
+    ],
+    "hook": "headroom v0.30.0 (July 3, their 160th release) compresses tool outputs, logs, files, and RAG chunks 60-95% before they reach the LLM using three purpose-built engines: SmartCrusher (JSON), CodeCompressor (AST-aware), and Kompress-v2-base (general text). Compression is reversible — originals cached locally for on-demand retrieval. Three deployment modes: Python library, transparent proxy (headroom wrap claude), or MCP server. v0.30.0 adds cross-agent memory dedup so Claude Code, Cursor, and Codex share compressed context without re-processing the same files. 56.4K stars. LiteLLM integrated headroom natively in June.",
+    "categories": ["cost"],
+    "install": "pip install \"headroom-ai[all]\"",
+    "recurring_note": "↑ Day 3 — 56.4K stars; v0.30.0 cross-agent memory dedup driving enterprise adoption"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills — 155K Stars; /grill-me Forces 45-Min Design Interview Before First Line of Code",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "Matt Pocock's .claude directory hit 22K stars in 24 hours of its July 3 release and is now at 155K. The flagship /grill-me skill refuses to write any code until it has exhaustively interviewed you about the design (sessions average 45 min, surface hidden requirements). /improve-codebase-architecture produces a visual HTML report; /grill-with-docs builds a CONTEXT.md and ADRs; /to-prd and /handoff round out the set. Install with one npx command.",
+    "categories": ["design"],
+    "install": "npx skills@latest add mattpocock/skills",
+    "recurring_note": "↑ Day 4 — 155K stars; /grill-me driving continued practitioner adoption"
+  },
+  {
+    "slug": "gstack-garry-tan",
+    "name": "gstack — Garry Tan's 23-Role Claude Code Toolkit (119K Stars)",
+    "primary_url": "https://github.com/garrytan/gstack",
+    "hook": "Y Combinator CEO Garry Tan's personal Claude Code setup — a 23-skill plugin that instantiates a full virtual engineering team as slash commands (CEO, Designer, Eng Manager, QA Lead, Release Manager, Doc Engineer). Hit 119K stars. Widely cited as the reference architecture for design-led Claude Code workflows. Real browser automation via /browse and /qa; optional GBrain persistent knowledge base.",
+    "categories": ["design", "agent"],
+    "install": "git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup",
+    "recurring_note": "↑ Day 4 — 119K stars; /browse + /qa pair driving agentic QA adoption"
+  },
+  {
+    "slug": "ecc-affaan-m",
+    "name": "ECC (affaan-m) — 211.9K Stars; 261 Skills, Instincts, Memory, Security for Claude Code, Codex, Cursor and 5 More",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "ECC remains the largest single-author agent harness on GitHub by star count at 211.9K. The v2.0.0 package ships 261 skills across coding, research, security, media, and enterprise ops; 'instincts' (auto-triggered behaviors that fire without a slash command); a memory optimization layer; AgentShield security scanning; and a worktree-lifecycle service. Works natively across Claude Code, Codex, Opencode, Cursor, Gemini, Zed, and GitHub Copilot.",
+    "categories": ["agent", "skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 5 — 211.9K stars; still the most-starred community agent harness"
+  },
+  {
+    "slug": "pmb-project-memory",
+    "name": "PMB (oleksiijko) — Local-First Persistent Project Memory MCP; 35ms Warm Recall, No Cloud",
+    "primary_url": "https://github.com/oleksiijko/pmb",
+    "secondary_urls": [
+      "https://news.ycombinator.com/item?id=48622590"
+    ],
+    "hook": "PMB (project memory base) solves the cold-start problem: every new Claude Code session wastes minutes re-explaining decisions already made and why the architecture looks the way it does. v1.2.2 stores them in a local SQLite database with hybrid three-layer retrieval — BM25 keyword + vector semantic + entity graph — with ~35ms warm recall. No cloud, no API key on the read path. Connects via `pmb connect claude-code` which writes the MCP config automatically; also works with Cursor, Codex, Windsurf, and Zed. Surfaced via 'Show HN: Recall – Local project memory for Claude Code.'",
+    "categories": ["cost", "mcp"],
+    "install": "pip install pmb-ai && pmb setup && pmb connect claude-code",
+    "recurring_note": "↑ Day 3 — HN traction continuing; 290 stars"
+  }
+]
