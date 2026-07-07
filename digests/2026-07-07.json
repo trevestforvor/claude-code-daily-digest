@@ -1,0 +1,162 @@
+[
+  {
+    "slug": "obra-superpowers",
+    "name": "obra/superpowers — 249K Stars; Official Claude Marketplace; Agentic Skills Framework That Refuses to Write Code First",
+    "primary_url": "https://github.com/obra/superpowers",
+    "secondary_urls": [
+      "https://claude.com/plugins/superpowers",
+      "https://www.youtube.com/watch?v=mNawxNjrR_E"
+    ],
+    "hook": "Jesse Vincent's obra/superpowers is the most-starred Claude Code plugin on GitHub at 249K — and it earned those stars by doing something counterintuitive: refusing to write code until it has fully designed the solution first. The 14 skills install a structured dev methodology: design refinement → test-driven development → subagent-driven implementation → code review → git worktree coordination. No immediate code dumps. Simon Willison called Jesse 'one of the most creative users of coding agents I know.' Simon Scrapes' video '14 GENIUS Ways to Give Claude Code SUPERPOWERS' likely drove a significant share of the growth. Official listing at claude.com/plugins/superpowers; v6.1.1 released July 2, 2026. Three-repo ecosystem: superpowers, superpowers-marketplace, superpowers-lab.",
+    "categories": ["design", "skill"],
+    "install": "/plugin install superpowers@claude-plugins-official",
+    "creator_buzz": ["@simonscrapes"]
+  },
+  {
+    "slug": "fable5-metered-billing",
+    "name": "Fable 5 Fablepocalypse — TODAY the Subscription Allowance Ends; Now $10/$50 per Mtok via Usage Credits",
+    "primary_url": "https://www.anthropic.com/news/redeploying-fable-5",
+    "secondary_urls": [
+      "https://simonwillison.net/2026/jul/3/judgement/",
+      "https://fable5.app/fable-5-usage-limits/",
+      "https://www.digitalapplied.com/blog/claude-fable-5-usage-credits-july-7-pricing-guide-2026"
+    ],
+    "hook": "July 7 is here and so is the billing cliff Simon Willison dubbed the 'Fablepocalypse.' The 50% weekly subscription allowance that included Fable 5 in Pro, Max, Team, and select Enterprise plans has expired today. From this point forward, Fable 5 access in Claude Code requires usage credits at the confirmed API rate: $10/Mtok input, $50/Mtok output — a 10× premium over Sonnet 5's $2/$10 promo pricing. Willison upgraded to the $200/month Claude Max plan to extend his free window and then hit the cap anyway before July 7 arrived. Teams running heavy Fable 5 agentic loops should route Claude Code to Sonnet 5 (set via /config) or pre-load usage credits to continue. Without credits enabled, Fable 5 access simply stops mid-session.",
+    "categories": ["cost", "anthropic"],
+    "recurring_note": "↑ Day 7 — Fablepocalypse is HERE: subscription allowance expired today; usage credits required going forward"
+  },
+  {
+    "slug": "claude-code-v2-1-202",
+    "name": "Claude Code v2.1.202 — Dynamic Workflow Size Setting; Fixed Duplicate Skill Loading; /review Reverted to Single-Pass",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "secondary_urls": [
+      "https://github.com/anthropics/claude-code/releases"
+    ],
+    "hook": "v2.1.202 shipped July 6 with one headline feature and one critical fix: The /config now has a 'Dynamic workflow size' toggle (small/medium/large) that advises how many agents to spawn per workflow — useful for keeping costs predictable on Max plans. The critical fix: re-invoking an already-loaded skill no longer appended a full duplicate copy of its instructions every time — a context-bleeding bug that inflated token costs on any session that called a skill more than once. Also: /review <pr#> is now back to a fast single-pass review (the multi-agent version moved to /code-review <level> <pr#>); workflow.run_id and workflow.name OTel attributes enable per-run cost tracing; fixed background sessions dropping on sleep/wake; fixed Remote Control commands failing; improved /workflows agent list with wider titles and dedicated time column.",
+    "categories": ["anthropic", "cost"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "wshobson-agents",
+    "name": "wshobson/agents — 37.6K Stars; 88 Plugins, 194 Agents Across Claude Code, Codex, Cursor, OpenCode, Copilot, and Gemini CLI",
+    "primary_url": "https://github.com/wshobson/agents",
+    "hook": "wshobson/agents sits at 37.6K stars as the only plugin marketplace that generates harness-native artifacts from a single Markdown source — one plugin definition deploys correctly to Claude Code, Codex CLI, Cursor, OpenCode, GitHub Copilot, and Gemini CLI rather than producing a lowest-common-denominator translation. 88 plugins contain 194 domain-expert agents, 158 skills, and 106 commands covering backend, frontend, infrastructure, data, ML, and product workflows. Ships with PluginEval — a quality framework running static checks, LLM judge evals, and Monte Carlo testing on each plugin. Uses a tiered model strategy: Fable 5 for fully autonomous design/architecture tasks; Haiku for high-frequency operational tasks.",
+    "categories": ["agent", "skill"],
+    "install": "/plugin marketplace add wshobson/agents\n/plugin install python-development"
+  },
+  {
+    "slug": "graphify",
+    "name": "Graphify — 74.8K Stars; PostgreSQL Live Schema Introspection and Streamable HTTP MCP Transport Added",
+    "primary_url": "https://github.com/safishamsi/graphify",
+    "secondary_urls": [
+      "https://graphify.net/"
+    ],
+    "hook": "Graphify continues at ~1 release/day velocity since its YC S26 launch. New this week in v0.8.35+: live PostgreSQL schema introspection (the knowledge graph now auto-refreshes when your schema changes, not just on manual re-index), Streamable HTTP transport for the MCP server (no more stdio-only for remote deployments), Visual Studio 2022 .slnx solution file support, and CodeBuddy platform compatibility. The core proposition unchanged: parses any codebase into a local queryable knowledge graph via tree-sitter AST with 71.5x average token reduction vs. naive file-by-file reads.",
+    "categories": ["cost", "skill"],
+    "install": "uv tool install graphifyy && graphify install",
+    "recurring_note": "↑ Day 2 — 74.8K stars; PostgreSQL live schema and Streamable HTTP MCP added this week"
+  },
+  {
+    "slug": "jeremylongshore-plugins-plus-skills",
+    "name": "jeremylongshore/claude-code-plugins-plus-skills — 2.5K Stars; 425 Plugins, 2,810 Skills, 200 Agents at tonsofskills.com",
+    "primary_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+    "secondary_urls": [
+      "https://tonsofskills.com/"
+    ],
+    "hook": "At 2.5K stars and v4.33.0, jeremylongshore/claude-code-plugins-plus-skills is among the largest raw skill/plugin libraries for Claude Code — 425 published npm packages, 2,810 skills, 200 agents validated against the AgentSkills.io spec. Discovery happens at tonsofskills.com with a 'Killer Skill of the Week' spotlight (current: databricks-pack, which surfaces ~$27K/month in Databricks workspace cost leaks from a $100K budget). Install via ccpi: `pnpm add -g @intentsolutionsio/ccpi && ccpi install <plugin-name>`. Updated daily.",
+    "categories": ["skill", "resource"],
+    "install": "pnpm add -g @intentsolutionsio/ccpi && ccpi install <plugin-name>"
+  },
+  {
+    "slug": "piebald-ai-system-prompts",
+    "name": "Piebald-AI/claude-code-system-prompts — 11.6K Stars; 515 Prompt Strings Extracted from Claude Code Source, Updated Within Minutes of Each Release",
+    "primary_url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+    "hook": "Piebald-AI reverse-engineers Claude Code's compiled source to extract every system prompt string, tool description, and sub-agent instruction — all 515 of them as of v2.1.202 (July 6, 2026). The repo updates within minutes of each Claude Code release, making it a real-time window into what Claude Code is actually told before it talks to you: harness reminders, planning agent prompts, CLAUDE.md instructions, WebFetch and Bash tool descriptions, security review scripts, agent creation prompts. A detailed changelog tracks what changed across 228 versions since v2.0.14. At 11.6K stars and 490 commits, it has become the standard tool for understanding and debugging harness behavior.",
+    "categories": ["resource"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-forge",
+    "name": "claude-forge — 774 Stars; oh-my-zsh for Claude Code; 11 Agents, 34 Commands, 6-Layer Security Hooks",
+    "primary_url": "https://github.com/sangrokjung/claude-forge",
+    "hook": "claude-forge describes itself as 'oh-my-zsh for Claude Code' — a comprehensive add-on framework that, in one install, turns bare Claude Code into a fully-equipped development environment. v3.1.0 (June 30) ships 11 specialist agents (architect, reviewer, tester, debugger, and more), 34 slash commands covering planning, TDD, code review, and release workflows, 25 skill procedures that activate automatically based on task context, and a 6-layer security defense system with pre-commit hooks. Also bundles four MCP server connections: browser automation, documentation lookup, web reading, and Chrome DevTools.",
+    "categories": ["skill", "agent"],
+    "install": "/plugin marketplace add sangrokjung/claude-forge"
+  },
+  {
+    "slug": "cass-session-search",
+    "name": "cass — 946 Stars; Unified TUI to Search Claude Code, Codex, Cursor, Aider, and 17 More Agent Session Histories",
+    "primary_url": "https://github.com/Dicklesworthstone/coding_agent_session_search",
+    "hook": "cass (coding-agent-session-search) solves a specific pain: you remember solving a problem in a Claude Code session three weeks ago but can't find it. cass indexes conversation histories from 20+ coding agents — Claude Code, Codex, Cursor, Aider, Gemini CLI, Goose, OpenCode, and more — into a unified search index with sub-60ms latency via edge n-gram indexing. Optional local semantic search via MiniLM, Snowflake Arctic, or Nomic. Three-pane TUI with syntax highlighting; HTML export with optional AES-256 encryption; multi-machine sync via SSH/rsync; JSON output mode for scripting. Install via Homebrew or curl.",
+    "categories": ["workflow"],
+    "install": "brew install dicklesworthstone/tap/cass"
+  },
+  {
+    "slug": "karpathy-claude-md-v10",
+    "name": "Andrej Karpathy CLAUDE.md — ~225K Combined Stars; Still the Fastest-Growing Behavioral Skill of 2026",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "secondary_urls": [
+      "https://github.com/forrestchang/andrej-karpathy-skills"
+    ],
+    "hook": "The 70-line CLAUDE.md file distilling Andrej Karpathy's LLM coding pitfall observations into four behavioral rules (Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution) continues to hold ~225K combined stars across the multica-ai and forrestchang forks. No new rule update this week, but adoption rate remains undiminished — the fastest-growing CLAUDE.md behavioral skill of 2026.",
+    "categories": ["viral", "skill"],
+    "install": "npx skills add multica-ai/andrej-karpathy-skills",
+    "recurring_note": "↑ Day 6 — ~225K combined stars; install rate undiminished"
+  },
+  {
+    "slug": "claude-code-steganography",
+    "name": "Claude Code Prompt Steganography — Day 7; Anthropic Post-Mortem Still Pending; International Press Continues",
+    "primary_url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+    "secondary_urls": [
+      "https://news.ycombinator.com/item?id=48734373",
+      "https://www.theregister.com/ai-and-ml/2026/07/01/anthropic-is-removing-its-covert-code-for-catching-chinese-competitors/5265366"
+    ],
+    "hook": "The June 30 discovery that Claude Code silently encoded timezone and proxy-hostname signals into hidden Unicode steganography (v2.1.91–v2.1.196, April 2 through June 30) remains the most-discussed Claude Code story of 2026. Anthropic said it was 'an experiment to prevent account abuse from unauthorized resellers' and fixed it in v2.1.197. Seven days in, no formal post-mortem. v2.1.197+ is clean.",
+    "categories": ["viral", "anthropic"],
+    "recurring_note": "↑ Day 7 — international press continuing; Anthropic post-mortem still not published; v2.1.197+ is clean"
+  },
+  {
+    "slug": "claude-code-limits-july13",
+    "name": "Claude Code Weekly Limits +50% Through July 13 — 6 Days Remaining; All Paid Tiers",
+    "primary_url": "https://news.ycombinator.com/item?id=48126429",
+    "secondary_urls": [
+      "https://apidog.com/blog/claude-code-weekly-limits-50-percent-increase-july-2026/"
+    ],
+    "hook": "Anthropic's 50% weekly usage limit boost for all paid tiers — Pro, Max, Team, and Enterprise — expires July 13 at 6 PM PDT. Six days remain. The boost applies across CLI, IDE extensions, desktop, and web with no opt-in required. Note: this is a separate limit from Fable 5 (which moved to usage credits today). The +50% applies to your core weekly Claude Code session allowance regardless of which model you're using.",
+    "categories": ["cost", "anthropic"],
+    "recurring_note": "↑ Day 6 — 6 days remaining (expires July 13 at 6 PM PDT); separate from today's Fable 5 billing change"
+  },
+  {
+    "slug": "antigravity-awesome-skills",
+    "name": "antigravity-awesome-skills — 42K Stars; 1,898+ Installable Agentic Skills for Claude Code, Cursor, Codex, Gemini CLI, and 6 More",
+    "primary_url": "https://github.com/sickn33/antigravity-awesome-skills",
+    "secondary_urls": [
+      "https://sickn33.github.io/antigravity-awesome-skills/"
+    ],
+    "hook": "antigravity-awesome-skills is an installable library of 1,898+ SKILL.md playbooks covering development, testing, security, infrastructure, product, and marketing. Compatible with Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, Kiro, OpenCode, and GitHub Copilot. `npx antigravity-awesome-skills` places skills wherever your tool expects them. 42,000 stars.",
+    "categories": ["skill", "resource"],
+    "install": "npx antigravity-awesome-skills",
+    "recurring_note": "↑ Day 2 — 42K stars; continued cross-platform traction"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills — 155K Stars; /grill-me Forces 45-Min Design Interview Before First Line of Code",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "Matt Pocock's .claude directory hit 22K stars in 24 hours of its July 3 release and is now at 155K. The flagship /grill-me skill refuses to write any code until it has exhaustively interviewed you about the design (sessions average 45 min, surfaces hidden requirements). /improve-codebase-architecture produces a visual HTML report; /grill-with-docs builds a CONTEXT.md and ADRs; /to-prd and /handoff round out the set.",
+    "categories": ["design"],
+    "install": "npx skills@latest add mattpocock/skills",
+    "recurring_note": "↑ Day 5 — 155K stars; /grill-me continues to drive practitioner adoption"
+  },
+  {
+    "slug": "claude-code-routines",
+    "name": "Claude Code Routines — Official Cloud-Scheduled Agents; Cron, API Trigger, and GitHub Events",
+    "primary_url": "https://code.claude.com/docs/en/routines",
+    "secondary_urls": [
+      "https://dev.to/rams901/claude-code-routines-automate-ai-workflows-on-autopilot-in-2026-4ebg"
+    ],
+    "hook": "Claude Code Routines puts agents on autopilot — define a prompt once, wire up a trigger, and Claude Code runs autonomously on Anthropic-managed cloud infrastructure (4 vCPUs, 16GB RAM per agent) against any connected GitHub repo. Three trigger types: Schedule (cron), API (HTTP POST with bearer-token auth), and GitHub event (PR opened, release created, push). Available on Pro, Max, Team, and Enterprise. Managed at claude.ai/code/routines or /schedule.",
+    "categories": ["workflow", "anthropic"],
+    "install": "claude.ai/code/routines (web) or /schedule (CLI)",
+    "recurring_note": "↑ Day 2 — official cloud orchestration; routines replacing manual cron patterns"
+  }
+]
