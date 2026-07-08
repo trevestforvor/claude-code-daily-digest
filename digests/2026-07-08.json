@@ -1,0 +1,168 @@
+[
+  {
+    "slug": "claude-design-sync",
+    "name": "Claude Design 2.0 / /design-sync — Bidirectional Claude Code ↔ Design Sync; 1M Users in First Week; 3 Channels Covering It",
+    "primary_url": "https://claude.com/blog/claude-design-stays-on-brand-for-daily-work",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=58CQM6I6DZg",
+      "https://venturebeat.com/technology/anthropic-ships-major-claude-design-overhaul-with-design-system-imports-code-round-trips-and-a-fix-for-its-token-burning-problem"
+    ],
+    "hook": "The June 17 Claude Design 2.0 overhaul is still the hottest design story in the Claude ecosystem this week. Run /design-sync in Claude Code to import your full local design system so prototypes start from real components; run /design in terminal to create and edit Design projects without leaving your workflow. The round-trip closes the gap that kept designers and developers in separate tools — VentureBeat called it 'a fix for its token-burning problem.' Over 1 million users in the first week. Adrien AI Designer published two dedicated videos this week ('Claude Design 2.0 Just Changed Everything' and 'Anthropic just dropped Claude Design 2.0 (MASSIVE Upgrades)'); UI Collective covered /design-sync in depth; DevelopersDigest ranked it top of their skills list.",
+    "categories": ["design", "anthropic"],
+    "install": "Available in Claude.ai Pro/Max/Team/Enterprise — run /design-sync in Claude Code to import your design system",
+    "creator_buzz": ["@adrienaidesigner", "@UICollectiveDesign"]
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills — 155K Stars; /grill-me Forces 45-Min Design Interview; v1.0.32 Adds /grill-with-docs",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "v1.0.32 (July 6) formally documents /grill-with-docs as /grill-me's companion skill: it builds a domain model, CONTEXT.md, and Architecture Decision Records during the interview session rather than after — so you exit /grill-me with both a plan and a living document trail. 155K stars; /grill-me refuses to write any code until it has exhaustively interviewed you (sessions average 45 min, routinely surfaces hidden requirements).",
+    "categories": ["design"],
+    "install": "npx skills@latest add mattpocock/skills",
+    "recurring_note": "↑ Day 6 — v1.0.32; /grill-with-docs now documented as companion to /grill-me"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "obra/superpowers — 249K Stars; Kimi Code, Pi, Antigravity Harnesses Added; Gemini CLI Removed After Google EOL",
+    "primary_url": "https://github.com/obra/superpowers",
+    "secondary_urls": [
+      "https://claude.com/plugins/superpowers"
+    ],
+    "hook": "The most-starred Claude Code plugin at 249K gets three new harnesses this week: Kimi Code, Pi, and Antigravity (added alongside Claude Code, Codex, Cursor, Copilot, OpenCode). Gemini CLI support was removed after Google EOL'd the CLI on June 18. Many skills also rewrote tool calls to be vendor-neutral — the same commands now work correctly across whichever harness is active. Jesse Vincent's 14-skill structured dev methodology (design refinement → TDD → subagent implementation → code review → worktree coordination) remains the methodology that refuses to let Claude write code before fully designing the solution first.",
+    "categories": ["design", "skill"],
+    "install": "/plugin install superpowers@claude-plugins-official",
+    "creator_buzz": ["@simonscrapes"],
+    "recurring_note": "↑ Day 2 — 249K stars; Kimi Code/Pi/Antigravity harnesses added; Gemini CLI removed"
+  },
+  {
+    "slug": "fable5-metered-billing",
+    "name": "Fable 5 Metered Billing — Billing Cliff Hit Yesterday; Usage Credits Required Now at $10/$50 per Mtok",
+    "primary_url": "https://www.anthropic.com/news/redeploying-fable-5",
+    "secondary_urls": [
+      "https://www.digitalapplied.com/blog/claude-fable-5-usage-credits-july-7-pricing-guide-2026"
+    ],
+    "hook": "July 7's billing cliff has passed. The 50% weekly subscription allowance that bundled Fable 5 expired yesterday. Fable 5 in Claude Code now requires usage credits at confirmed rates: $10/Mtok input, $50/Mtok output — 10× Sonnet 5's $2/$10 promo pricing. Without credits enabled, Fable 5 access fails mid-session with no warning. Enable at claude.ai → Settings → Usage. Teams running heavy Fable 5 agentic loops should route to Sonnet 5 via /config (or the new Dynamic Workflow Size toggle from v2.1.202) or pre-load credits now.",
+    "categories": ["cost", "anthropic"],
+    "recurring_note": "↑ Day 8 — billing cliff hit July 7; credits required starting now; enable at claude.ai → Settings → Usage"
+  },
+  {
+    "slug": "graphify",
+    "name": "Graphify — 74.8K Stars; 71.5x Token Savings; Daily Release Cadence Continues with TS/JS/Swift/C# Extractor Fixes",
+    "primary_url": "https://github.com/safishamsi/graphify",
+    "secondary_urls": [
+      "https://graphify.net/"
+    ],
+    "hook": "74.8K stars and the daily release cadence continues: recent fixes close extractor gaps in TypeScript/JavaScript, Swift singleton locals, and C# receiver-typed member call resolution. Core proposition unchanged — parses any codebase into a local queryable knowledge graph via tree-sitter AST with an average 71.5x token reduction vs. naive file-by-file reads. PostgreSQL live schema introspection added this week auto-refreshes the knowledge graph when your schema changes; Streamable HTTP MCP transport for remote deployments shipped alongside it.",
+    "categories": ["cost", "skill"],
+    "install": "uv tool install graphifyy && graphify install",
+    "recurring_note": "↑ Day 3 — daily release cadence; TS/JS/Swift/C# extractor fixes; PostgreSQL live schema and Streamable HTTP MCP"
+  },
+  {
+    "slug": "claude-code-limits-july13",
+    "name": "Claude Code Weekly Limits +50% Through July 13 — 5 Days Remaining; All Paid Tiers; Separate from Fable 5 Billing",
+    "primary_url": "https://news.ycombinator.com/item?id=48126429",
+    "secondary_urls": [
+      "https://apidog.com/blog/claude-code-weekly-limits-50-percent-increase-july-2026/"
+    ],
+    "hook": "Anthropic's 50% weekly usage limit boost for all paid tiers — Pro, Max, Team, Enterprise — expires July 13 at 6 PM PDT. Five days remain. The boost applies across CLI, IDE extensions, desktop, and web with no opt-in required. Important distinction: this is the core weekly session allowance boost, completely separate from Fable 5's move to usage credits that happened yesterday. The +50% applies regardless of which model you're running.",
+    "categories": ["cost", "anthropic"],
+    "recurring_note": "↑ Day 7 — 5 days remaining (expires July 13 at 6 PM PDT); note Fable 5 billing and this limit are independent"
+  },
+  {
+    "slug": "alibaba-bans-claude-code",
+    "name": "Alibaba Bans Claude Code for All Employees — Effective July 10; Staff Redirected to Qoder as US-China AI Rift Widens",
+    "primary_url": "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/",
+    "secondary_urls": [
+      "https://www.scmp.com/tech/big-tech/article/3359375/alibaba-bans-staff-using-claude-code-over-anthropic-spyware-concerns",
+      "https://www.tomshardware.com/tech-industry/artificial-intelligence/alibaba-bans-anthropics-claude-code-after-an-alleged-hidden-china-detection-backdoor-is-uncovered-employees-told-to-switch-to-qoder-as-the-rift-between-the-firms-widens"
+    ],
+    "hook": "Alibaba has banned all employees from using Claude Code, effective July 10, in direct response to the steganographic tracking code incident. Staff are directed to switch to Qoder. The underlying conflict: on June 10 Anthropic told the US Senate Banking Committee that Alibaba's Qwen lab ran the largest known distillation attack on Claude — roughly 25,000 fraudulent accounts generating 28.8 million exchanges between April and June 2026. Alibaba denied the allegation. Anthropic then embedded the timezone/proxy-hostname signal in Claude Code from April through June 30. The ban is now the lead story at SCMP, Tom's Hardware, TechRadar, The Next Web, and BankInfoSecurity.",
+    "categories": ["viral", "anthropic"]
+  },
+  {
+    "slug": "mvanhorn-last30days-skill",
+    "name": "mvanhorn/last30days-skill — #1 GitHub Trending; ~50K Stars; Grounded Multi-Source Research Skill with Polymarket Credibility Weights",
+    "primary_url": "https://github.com/mvanhorn/last30days-skill",
+    "secondary_urls": [
+      "https://clawhub.ai/mvanhorn/last30days-official"
+    ],
+    "hook": "Held the #1 slot on GitHub trending this week — one observer noted '5 of the 10 trending repos on GitHub today are Claude tools. #1: mvanhorn/last30days-skill.' The skill fans out parallel searches across Reddit, X, YouTube, HN, Polymarket, GitHub, and the broader web; scores results by real human engagement; then synthesizes a grounded brief using an LLM judge. The differentiator is Polymarket integration: each claim gets a market-price credibility weight alongside the social signal. Zero config for Reddit/HN/Polymarket/GitHub; an optional 30-second wizard unlocks X, YouTube, and TikTok. Compatible with Claude Code, Codex, Cursor, Copilot, and Gemini CLI.",
+    "categories": ["viral", "skill"],
+    "install": "/plugin marketplace add mvanhorn/last30days-skill"
+  },
+  {
+    "slug": "claude-code-steganography",
+    "name": "Claude Code Prompt Steganography — Day 8; Alibaba Ban Effective July 10; Anthropic Post-Mortem Still Pending",
+    "primary_url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+    "secondary_urls": [
+      "https://news.ycombinator.com/item?id=48734373",
+      "https://thenextweb.com/news/alibaba-bans-claude-code-anthropic-tracking-chinese-users"
+    ],
+    "hook": "Eight days after June 30's discovery, the steganography story has triggered its most significant consequence: Alibaba banning Claude Code for all employees effective July 10. The full sequence: Anthropic's June 10 Senate letter accused Alibaba's Qwen lab of the largest known Claude distillation attack (28.8M exchanges via 25,000 fraudulent accounts) → Anthropic's response was to embed timezone and proxy-hostname signals in hidden Unicode in Claude Code v2.1.91–v2.1.196 (April 2 through June 30) → LegitMichel777 and Thereallo independently exposed the mechanism on June 30 → fix shipped in v2.1.197. Anthropic has not published a formal post-mortem. v2.1.197+ is clean.",
+    "categories": ["viral", "anthropic"],
+    "recurring_note": "↑ Day 8 — Alibaba ban (effective July 10) is the major new development; Anthropic post-mortem still not published"
+  },
+  {
+    "slug": "karpathy-claude-md-v10",
+    "name": "Andrej Karpathy CLAUDE.md — ~225K Combined Stars; Still the Fastest-Growing Behavioral Skill of 2026",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "secondary_urls": [
+      "https://github.com/forrestchang/andrej-karpathy-skills"
+    ],
+    "hook": "The 70-line CLAUDE.md distilling Andrej Karpathy's four behavioral rules — Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution — holds approximately 225K combined stars across the multica-ai and forrestchang forks. No new rule update this week; adoption rate undiminished. Still the fastest-growing CLAUDE.md behavioral skill of 2026 by any measure.",
+    "categories": ["viral", "skill"],
+    "install": "npx skills add multica-ai/andrej-karpathy-skills",
+    "recurring_note": "↑ Day 7 — ~225K combined stars; adoption rate undiminished"
+  },
+  {
+    "slug": "career-ops",
+    "name": "career-ops — 57.6K Stars; Multi-Agent Claude Code Job Search That Evaluated 740+ Listings and Landed Creator a Head of Applied AI Role",
+    "primary_url": "https://github.com/santifer/career-ops",
+    "secondary_urls": [
+      "https://www.producthunt.com/products/santifer-io"
+    ],
+    "hook": "Viral proof of what Claude Code agents can actually do end-to-end: a 14-mode multi-agent job search system that scans portals, scores listings A–F across multiple dimensions, generates ATS-optimized LaTeX PDFs per listing, auto-fills application forms via Playwright, and runs parallel batch workers. 45+ companies pre-configured including Anthropic, OpenAI, and ElevenLabs. The creator used it to evaluate 740+ job offers, generate 100+ tailored CVs, and land a Head of Applied AI role — then open-sourced the complete stack. Runs entirely inside Claude Code. 57.6K stars.",
+    "categories": ["viral", "skill"],
+    "install": "git clone https://github.com/santifer/career-ops"
+  },
+  {
+    "slug": "claude-science",
+    "name": "Claude Science — Anthropic's AI Workbench for Scientists; 60+ Skills for Genomics/Proteomics/Structural Biology; $30K Grants Open Through July 15",
+    "primary_url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+    "secondary_urls": [
+      "https://techcrunch.com/2026/06/30/anthropics-claude-science-bets-on-workflow-not-a-new-model-to-win-over-scientists/"
+    ],
+    "hook": "Anthropic's first fully vertical, domain-specific product — not a new model, but a purpose-built harness with 60+ curated skills and connectors pre-configured for genomics, single-cell sequencing, proteomics, structural biology, and cheminformatics. Native display of proteins, chemical structures, and genome browser tracks. Every output carries auditable provenance history — directly designed for scientific reproducibility. Available in beta for Claude Pro, Max, Team, Enterprise on macOS/Linux and remotely over SSH/HPC. NVIDIA BioNeMo is accelerating Claude Science for structural biology workloads. AI for Science grant program: up to $30,000 in credits for up to 50 projects; applications open through July 15, 2026.",
+    "categories": ["anthropic", "skill"]
+  },
+  {
+    "slug": "claude-code-v2-1-203-204",
+    "name": "Claude Code v2.1.203 + v2.1.204 — Login-Expiry Warning, ⏸ Manual-Mode Badge, Hook-Event Fix for Headless Sessions; Now in FedRAMP High",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "secondary_urls": [
+      "https://github.com/anthropics/claude-code/releases"
+    ],
+    "hook": "Two releases shipped back-to-back since yesterday's digest. v2.1.203 (July 7): login-expiry warning before background sessions interrupt, persistent grey ⏸ badge in footer when in manual permission mode, working-directory set added to MCP roots/list with change notifications, -7MB binary size and -7MB startup memory via lazy loading, fixed macOS background session stall (15–20s false low-memory detection). v2.1.204 (July 8, today): fixed hook events not streaming during SessionStart hooks in headless sessions — this was idle-reaping Routines and CI-triggered agents mid-hook. Also: Claude Code now in public beta on FedRAMP High authorized Government Desktop.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "mcpsnoop",
+    "name": "mcpsnoop — Wireshark for MCP; Transparent Go Proxy That Shows Every JSON-RPC Frame Claude Code Actually Sends",
+    "primary_url": "https://github.com/kerlenton/mcpsnoop",
+    "secondary_urls": [
+      "https://news.ycombinator.com/item?id=48777144"
+    ],
+    "hook": "Fills a real gap: the official MCP Inspector connects as its own client and never sees what Claude Code actually sends. mcpsnoop inserts itself as a transparent Go proxy between Claude Code and your MCP servers, forwarding every byte to the real server while showing every JSON-RPC frame, latency, and server stderr in a live terminal TUI. Replay captured tool calls against a fresh server, inspect handshake capabilities, filter by method, spot hung tools via a live pending-call timer. Posted July 4 with a Show HN that surfaced in TechTimes, Terminal Trove, and LobeHub within 24 hours.",
+    "categories": ["mcp"],
+    "install": "go install github.com/kerlenton/mcpsnoop/cmd/mcpsnoop@latest"
+  },
+  {
+    "slug": "cubesandbox",
+    "name": "CubeSandbox — Open-Source E2B Alternative; Sub-60ms KVM Isolation Per Agent; 8.8K Stars Trending",
+    "primary_url": "https://github.com/TencentCloud/CubeSandbox",
+    "hook": "Tencent Cloud's RustVMM/KVM-based sandbox creates one hardware-isolated VM per AI agent in under 60ms with under 5MB memory overhead via Copy-on-Write. Unlike Docker-based sandboxes, each agent gets its own Guest OS kernel — no shared-kernel escapes. Under 50 concurrent creations: avg 67ms, P95 90ms, P99 137ms. E2B SDK-compatible — drop-in self-hosted alternative to E2B's managed sandboxes, which charge per sandbox-second. Directly useful for anyone running Claude Code agent farms at scale. 8,808 stars, 555 gained in one day on GitHub trending. Apache 2.0.",
+    "categories": ["cost", "plugin"],
+    "install": "See GitHub releases (binary download)"
+  }
+]
