@@ -1,0 +1,138 @@
+[
+  {
+    "slug": "mobbin-mcp",
+    "name": "Mobbin MCP — 600,000+ Real UI References Inside Claude Code",
+    "primary_url": "https://docs.mobbin.com/mcp/clients/claude-code",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=ljHRWIYMYf4",
+      "https://mobbin.com/mcp"
+    ],
+    "hook": "Mobbin's official MCP drops 600K+ real UI screenshots from 1,100+ production apps — Netflix, Airbnb, Duolingo, etc. — directly into Claude Code sessions. Search apps, browse flows, and pull your saved collections without leaving the terminal. IndyDevDan put it on the radar 4 days ago, calling it potentially the most powerful design tool for Claude Code today. Included on all paid Mobbin plans.",
+    "categories": ["design", "mcp"],
+    "install": "claude mcp add mobbin --scope user --transport http https://api.mobbin.com/mcp",
+    "creator_buzz": ["@indydevdan"]
+  },
+  {
+    "slug": "claude-desktop-browser",
+    "name": "Claude Code Desktop Gets a Built-In Browser (Week 28)",
+    "primary_url": "https://code.claude.com/docs/en/whats-new/2026-w28",
+    "secondary_urls": [
+      "https://code.claude.com/docs/en/desktop"
+    ],
+    "hook": "The headline Week 28 feature landed quietly in v2.1.202: a sandboxed browser built into Claude Code Desktop. Claude can now open docs, design references, or any external site and interact with pages — clicking, reading, filling forms — exactly as it does with your local dev-server previews. Safety classifiers review actions on external sites; session persistence is configurable. No separate tool install needed; update Desktop to the latest version.",
+    "categories": ["design"],
+    "install": "Update Claude Code Desktop to v2.1.202+ (auto-update or claude update)"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills — 164K Stars; /grill-with-docs Builds ADRs Live",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "The skills repo that made /grill-me — a mandatory 45-minute design interview before any code is written — now pairs it with /grill-with-docs: as the interview runs it writes a CONTEXT.md and a live stack of Architecture Decision Records. 164K stars and climbing; the two-command pre-code ritual is becoming a team standard on multi-person Claude Code projects.",
+    "categories": ["design"],
+    "install": "npx skills add mattpocock/skills -g",
+    "recurring_note": "↑ Day 8 — 164K stars (+9K since Day 1)"
+  },
+  {
+    "slug": "graphify",
+    "name": "Graphify — 81.8K Stars; 71.5× Token Savings; PostgreSQL Live Schema Added",
+    "primary_url": "https://github.com/safishamsi/graphify",
+    "hook": "Graphify converts any codebase into a compressed knowledge graph and cuts the tokens Claude Code needs to understand it by 71.5×. Daily release cadence continues this week with TS/JS/Swift/C# extractor fixes and a new PostgreSQL live-schema mode that pulls your DB structure straight into the graph. 81.8K stars and still adding thousands per week.",
+    "categories": ["cost", "token"],
+    "install": "npx graphify init",
+    "recurring_note": "↑ Day 5 — 81.8K stars; PostgreSQL introspection added this week"
+  },
+  {
+    "slug": "caveman",
+    "name": "JuliusBrussee/caveman — 87.6K Stars; 65% Output Token Cut via Primitive Compression",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "Caveman ships agents, skills, and hooks that compress Claude Code session communication into ultra-terse 'caveman' syntax — 'Why use many token when few token do trick.' Independent benchmarks show 65% reduction in output tokens with no meaningful accuracy loss on coding tasks. 87.6K stars; entered the digest for the first time yesterday and is still growing.",
+    "categories": ["cost", "token"],
+    "install": "npx skills add juliusbrussee/caveman -g",
+    "recurring_note": "↑ Day 2 — 87.6K stars; first appeared July 10"
+  },
+  {
+    "slug": "fable5-metered-billing",
+    "name": "Fable 5 Free Access Ends TOMORROW (July 12) — Pay $10/$50 per Mtok After",
+    "primary_url": "https://www.anthropic.com/news/redeploying-fable-5",
+    "hook": "Anthropic extended free Fable 5 access through July 12 — that is tomorrow. Starting July 13, Pro and Max subscribers who want Fable 5 will pay $10 per million input tokens and $50 per million output tokens directly, with no subscription cover. Route work to Claude Sonnet 5 (new default; $2/$10 per Mtok through August 31) to avoid surprise charges.",
+    "categories": ["cost"],
+    "recurring_note": "↑ Day 11 — Free access ends TOMORROW; route to Sonnet 5 to avoid charges"
+  },
+  {
+    "slug": "claude-code-limits-july13",
+    "name": "Claude Code Weekly Limits +50% — Expires July 13 at 6 PM PDT (2 Days Left)",
+    "primary_url": "https://news.ycombinator.com/item?id=48126429",
+    "hook": "The July 7–13 limit-lift — 50% more weekly usage on every paid Claude Code tier — expires in two days (Sunday, July 13, 6 PM PDT). Separate from the Fable 5 billing cliff. No word yet from Anthropic on whether the bonus will continue after Sunday.",
+    "categories": ["cost"],
+    "recurring_note": "↑ Day 7 — 2 days remaining; expires July 13 at 6 PM PDT"
+  },
+  {
+    "slug": "claude-video",
+    "name": "bradautomates/claude-video — 7.4K Stars; Give Claude the Ability to Watch Any Video",
+    "primary_url": "https://github.com/bradautomates/claude-video",
+    "hook": "A Claude Code plugin that lets Claude watch and reason over any video. Paste a YouTube, TikTok, Vimeo, or local file URL and /watch downloads it, extracts scene-aware keyframes, deduplicates near-identical frames, transcribes audio (captions or Whisper), and hands it all to Claude. Launched v0.2.0 on July 1 and has gone from ~5,400 to 7,400 stars in under a week — roughly 1,000 new stars per day.",
+    "categories": ["workflow"],
+    "install": "/plugin marketplace add bradautomates/claude-video\n/plugin install watch@claude-video"
+  },
+  {
+    "slug": "claude-auto-mode-bedrock",
+    "name": "Claude Code Auto Mode Now Default on Bedrock, Vertex AI & Foundry",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "The July 11 release makes auto mode the default on all three major third-party cloud platforms — Amazon Bedrock, Google Cloud's Agent Platform, and Microsoft Foundry. Background safety classifiers now handle permission decisions instead of interrupting users, matching the behaviour already available on direct Anthropic plans. Bedrock also updated its default to Claude Opus 4.8.",
+    "categories": ["workflow"],
+    "install": "claude update (v2.1.207+)"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "obra/superpowers — 252K Stars; Kimi Code, Pi & Antigravity Harnesses Added",
+    "primary_url": "https://github.com/obra/superpowers",
+    "hook": "The community harness library that turns Claude Code into a multi-model orchestrator keeps growing at 252K+ stars. This week added harnesses for Kimi Code, Pi, and Antigravity while removing the Gemini CLI harness after Google's EOL. The official Claude Marketplace now distributes superpowers directly, cutting the manual install step for new users.",
+    "categories": ["workflow"],
+    "install": "See README",
+    "recurring_note": "↑ Day 4 — 252K+ stars"
+  },
+  {
+    "slug": "claude-science",
+    "name": "Claude Science — $30K Research Grants Close July 15 (4 Days Left)",
+    "primary_url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+    "hook": "Anthropic's AI workbench for scientists — 60+ skills covering genomics, proteomics, structural biology, and computational chemistry — is in beta for Pro, Max, Team, and Enterprise users. The accompanying $30K research grants program closes July 15, four days from now. Applications take less than 30 minutes and are open to any scientist using Claude in active research.",
+    "categories": ["workflow"],
+    "recurring_note": "↑ Day 4 — $30K grants close in 4 days (July 15)"
+  },
+  {
+    "slug": "cc-switch",
+    "name": "cc-switch — 116K Stars; Desktop GUI for 6 AI Coding Agents; @charlieautomates Covered July 7",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "hook": "cc-switch is a desktop control panel that lets you switch between Claude Code, Codex, ZCode, and three other AI coding agents with one click, managing credentials, MCP server configs, and skill sets per-agent. Charlie Automates covered it July 7; it hit 116K stars by July 10 and keeps climbing. Works on macOS and Windows.",
+    "categories": ["workflow"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — 116K stars; @charlieautomates coverage July 7",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "claude-mem",
+    "name": "thedotmack/claude-mem — 86.7K Stars; Persistent Memory Across Every Session via ChromaDB",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "claude-mem wires five Claude Code lifecycle hooks to a local ChromaDB vector store, giving every session access to memories written in previous ones — goals, decisions, recurring context — without manual CLAUDE.md management. 86.7K stars after entering the top-trending list this week.",
+    "categories": ["workflow"],
+    "install": "npx skills add thedotmack/claude-mem -g",
+    "recurring_note": "↑ Day 2 — 86.7K stars; first appeared July 10"
+  },
+  {
+    "slug": "karpathy-claude-md-v10",
+    "name": "Andrej Karpathy CLAUDE.md — ~225K Combined Stars; Still the Fastest-Growing Behavioral Skill of 2026",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "hook": "Karpathy's CLAUDE.md — a single 70-line file prescribing how Claude Code should reason, test, and communicate — has accumulated ~225K combined stars across its forks, making it the most-starred behavioral skill of 2026. The canonical repo at multica-ai remains the reference; the recent wave of derivative behavioral skills (Garry Tan's gstack, ECC, etc.) all trace their lineage here.",
+    "categories": ["workflow"],
+    "install": "See README",
+    "recurring_note": "↑ Recurring — ~225K stars; evergreen anchor for the behavioral-skill category"
+  },
+  {
+    "slug": "claude-code-steganography",
+    "name": "Claude Code Prompt Steganography — Day 11; Anthropic Post-Mortem Still Absent",
+    "primary_url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+    "hook": "Day 11 since a developer reverse-engineered a hidden function in Claude Code's JS bundle that encodes a stealth timezone marker (Asia/Shanghai or Asia/Urumqi) into otherwise invisible Unicode, routing those sessions to a separate Anthropic backend. Anthropic confirmed it was 'an experiment we launched in March' to detect unauthorized resellers and has since removed the code. The promised post-mortem has not been published as of today.",
+    "categories": ["security"],
+    "recurring_note": "↑ Day 11 — Anthropic post-mortem still not published"
+  }
+]
