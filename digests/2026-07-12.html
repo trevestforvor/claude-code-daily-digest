@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — July 12, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — July 12, 2026</h1><p class="sub">Top 15 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/redeploying-fable-5">Fable 5 Free Access Ends TONIGHT — $10/$50 per Mtok Starts at Midnight PT</a></h3>
+  <p class="hook">The clock runs out tonight. Anthropic&#39;s extended Fable 5 promotional window — 50% of weekly limits at no extra cost — expires July 12 at 11:59 PM PT. From midnight, Fable 5 access in Claude Code requires usage credits at $10/Mtok input, $50/Mtok output — 10× Sonnet 5&#39;s $2/$10 promotional rate. If you haven&#39;t pre-loaded credits at claude.ai → Settings → Usage, Fable 5 access will fail mid-session with no warning. Switch to Sonnet 5 via /config now unless credits are ready.</p>
+  <div class="secondary">Also: <a href="https://www.digitalapplied.com/blog/claude-fable-5-usage-credits-july-7-pricing-guide-2026">www.digitalapplied.com/blog/claude-fable-5-usage-credits-july-7-pricing-guide-2026</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
+  
+  <div class="recurring">↑ Day 12 — FREE ACCESS ENDS TONIGHT (July 12 at 11:59 PM PT); enable credits or route to Sonnet 5</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://news.ycombinator.com/item?id=48126429">Claude Code Weekly Limits +50% — EXPIRES TOMORROW (July 13 at 6 PM PDT)</a></h3>
+  <p class="hook">One day left on Anthropic&#39;s 50% weekly usage limit boost across all paid Claude Code tiers — Pro, Max, Team, and Enterprise. The +50% applies to your core weekly session allowance regardless of model, stacks with the concurrent 2× 5-hour rolling increase, and requires no opt-in. It expires tomorrow, July 13, at 6 PM PDT. This is entirely separate from the Fable 5 metered billing cliff (ending tonight) and the doubled Cowork limits (through August 5).</p>
+  <div class="secondary">Also: <a href="https://apidog.com/blog/claude-code-weekly-limits-50-percent-increase-july-2026/">apidog.com/blog/claude-code-weekly-limits-50-percent-increase-july-2026/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
+  
+  <div class="recurring">↑ Day 12 — EXPIRES TOMORROW July 13 at 6 PM PDT; use your extra quota today</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.207 — Auto Mode Default on Bedrock/Vertex/Foundry; Linux Desktop Beta; Plugin Shell Injection Fix; 22 Changes</a></h3>
+  <p class="hook">v2.1.207 (July 11) ships 22 changes. Headline: auto mode is now on by default for Bedrock, Vertex AI, and Foundry — no CLAUDE_CODE_ENABLE_AUTO_MODE env var needed; disable via disableAutoMode in settings. Both Bedrock and Vertex default to Claude Opus 4.8. Security: plugin shell-form commands that reference ${user_config.*} are now rejected (shell-injection fix) — update hooks to exec form or $CLAUDE_PLUGIN_OPTION_&lt;KEY&gt;. Also: Claude Desktop for Linux is now shipping in beta for Ubuntu 22.04+ and Debian 12+ (x86_64 and arm64) — full Chat, Cowork, and Claude Code experience; install via the Anthropic apt repo. Claude in Chrome extension is out of preview for direct Anthropic plan users — Claude Code can now open tabs, click pages, fill forms, and share your browser login state to test apps it builds.</p>
+  <div class="secondary">Also: <a href="https://github.com/anthropics/claude-code/releases">github.com/anthropics/claude-code/releases</a> · <a href="https://www.omgubuntu.co.uk/2026/07/claude-desktop-linux-beta">www.omgubuntu.co.uk/2026/07/claude-desktop-linux-beta</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">plugin · browser · security</div>
+  <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://thehackernews.com/2026/07/new-skillcloak-technique-lets-malicious.html">SkillCloak — HKUST Researchers Show Malicious Claude Code Skills Can Evade Static Scanners at 90%+ Rate</a></h3>
+  <p class="hook">Hong Kong University of Science and Technology researchers published &#39;Cloak and Detonate: Scanner Evasion and Dynamic Detection of Agent Skill Malware&#39; (July 6) introducing SkillCloak — a self-extracting packing technique that rewrites suspicious tokens, credential paths, and URLs into semantically equivalent forms the agent quietly reassembles at runtime, evading static skill scanners at 90%+ rates. Demonstrated payloads steal credentials, exfiltrate source code, and install backdoors while appearing benign to the same scanners tools like AgentShield and ECC run. Runtime behavior auditing is far more resilient than static analysis. Covered by The Hacker News, Help Net Security, and GB Hackers. Key takeaway: don&#39;t install skills from untrusted sources even if they pass a scanner.</p>
+  <div class="secondary">Also: <a href="https://www.helpnetsecurity.com/2026/07/09/malicious-ai-agent-skills-scan/">www.helpnetsecurity.com/2026/07/09/malicious-ai-agent-skills-scan/</a> · <a href="https://gbhackers.com/malicious-agent-skills/">gbhackers.com/malicious-agent-skills/</a></div>
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">security</span>  </div>
+  <div class="tags">skill · token</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/addyosmani/agent-skills">addyosmani/agent-skills — 77.5K Stars; Addy Osmani&#39;s 24 Production-Grade Engineering Skills for Claude Code</a></h3>
+  <p class="hook">Addy Osmani (Google Chrome DevRel) distilled a production engineering methodology into 24 SKILL.md files covering Define / Plan / Build / Verify / Review / Ship phases — interview-me, spec-driven-development, test-driven-development, context-engineering, source-driven-development, code-review-and-quality, security-and-hardening, observability-and-instrumentation, ci-cd-and-automation, and 15 more. Compatible with Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and any SKILL.md-compatible agent. MIT licensed. 77.5K stars, still adding thousands per week.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">viral · terminal · browser · security</div>
+  <pre><button class="copy">copy</button><code>npx skills add addyosmani/agent-skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/safishamsi/graphify">Graphify — ~82K Stars; v0.9.12 July 10; Day 7 of Daily Release Cadence; 71.5x Token Savings</a></h3>
+  <p class="hook">Graphify&#39;s daily release cadence continues with v0.9.12 shipping July 10. The core proposition: tree-sitter AST parsing of any codebase into a local queryable knowledge graph at 71.5x average token reduction (1.7K tokens per query vs. 123K naive file reads). This week&#39;s additions — PostgreSQL live schema introspection (graph refreshes automatically on schema changes) and Streamable HTTP MCP transport for remote deployments — round out what started as a &#39;parse once, query always&#39; codebase tool into a living database-aware agent memory system. ~82K stars. YC S26.</p>
+  <div class="secondary">Also: <a href="https://graphify.net/">graphify.net/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">mcp · memory · token · viral</div>
+  <pre><button class="copy">copy</button><code>uv tool install graphifyy &amp;&amp; graphify install</code></pre>
+  <div class="recurring">↑ Day 7 — ~82K stars; v0.9.12 July 10; daily release cadence</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/JuliusBrussee/caveman">JuliusBrussee/caveman — 87.6K Stars; JetBrains Benchmark Shows 8.5% Real-World Token Cut; cavegemma LoRA Launched</a></h3>
+  <p class="hook">New benchmark context: JetBrains ran caveman across 82 real agentic coding tasks and measured 8.5% output token reduction — far below the headline 65% (which holds on simple conversational prompts) but with zero quality degradation. The creator says &#39;caveman good for long code session; 8% still $8 saved per $100 spent; compound over time.&#39; Also new: cavegemma, a LoRA fine-tune of Gemma 4 31B that speaks caveman-mode natively without the skill overhead. Full ecosystem now 90K+ stars across caveman, cavekit, cavemem, caveman-code, and cavegemma. 87.6K stars on the main skill.</p>
+  <div class="secondary">Also: <a href="https://juliusbrussee.github.io/caveman/">juliusbrussee.github.io/caveman/</a> · <a href="https://github.com/JuliusBrussee/cavegemma">github.com/JuliusBrussee/cavegemma</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">branding · agent · token · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add JuliusBrussee/caveman</code></pre>
+  <div class="recurring">↑ Day 3 — 87.6K stars; JetBrains 82-task benchmark shows 8.5% real-world reduction; cavegemma LoRA launched</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mattpocock/skills">mattpocock/skills — 161.8K Stars; +10.8K This Week; /grill-me + /grill-with-docs Becoming Team Standard</a></h3>
+  <p class="hook">Matt Pocock&#39;s .claude directory is at 161.8K stars, adding 10.8K this week — Day 12 and still growing. The /grill-me + /grill-with-docs two-skill ritual (45-min design interview that simultaneously builds a CONTEXT.md, domain model, and stack of Architecture Decision Records before the first line of code is written) has solidified as a team onboarding pattern on multi-developer Claude Code projects: start the project, run both skills, exit with a living design trail rather than an AI-generated app nobody understands.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>npx skills@latest add mattpocock/skills</code></pre>
+  <div class="recurring">↑ Day 12 — 161.8K stars (+10.8K this week)</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/obra/superpowers">obra/superpowers — 251.3K Stars; Kimi Code, Pi &amp; Antigravity Harnesses; Day 6</a></h3>
+  <p class="hook">The most-starred Claude Code plugin sits at 251.3K stars. This week&#39;s three new harnesses — Kimi Code, Pi, and Antigravity alongside existing Claude Code, Codex, Cursor, Copilot, and OpenCode — now cover the full field of AI coding tools after Google EOL&#39;d Gemini CLI on June 18 and it was removed. Jesse Vincent&#39;s 14-skill design-first methodology (design refinement → TDD → subagent implementation → code review → worktree coordination) remains the core: no line of code before the solution is fully designed.</p>
+  <div class="secondary">Also: <a href="https://claude.com/plugins/superpowers">claude.com/plugins/superpowers</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · subagent · viral · terminal · review</div>
+  <pre><button class="copy">copy</button><code>/plugin install superpowers@claude-plugins-official</code></pre>
+  <div class="recurring">↑ Day 6 — 251.3K stars</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/MadsLorentzen/ai-job-search">MadsLorentzen/ai-job-search — 21.3K Stars; #1 GitHub Trending July 7; Drafter-Reviewer Agent Job Application Framework</a></h3>
+  <p class="hook">Hit #1 on GitHub trending July 7. Fork and run /setup with your profile; then /scrape to search portals; /apply &lt;url&gt; spawns a drafter agent (evaluates fit, writes tailored LaTeX CV and cover letter, compiles PDFs, checks ATS text layer) and a separate reviewer agent that audits the draft before you submit — treating job applications as adversarial documents, not form-fill exercises. /interview preps you with company research and mock questions. Distinct from santifer/career-ops (59.5K stars) — lighter footprint, single-repo, no batch orchestration, Bun-based. 21.3K stars.</p>
+  <div class="secondary">Also: <a href="https://agentconn.com/blog/ai-job-search-agent-drafter-reviewer-claude-code-2026/">agentconn.com/blog/ai-job-search-agent-drafter-reviewer-claude-code-2026/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  
+  <pre><button class="copy">copy</button><code>git clone https://github.com/MadsLorentzen/ai-job-search &amp;&amp; cd ai-job-search &amp;&amp; bun install &amp;&amp; claude code /setup</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/farion1231/cc-switch">cc-switch — 116K Stars; Desktop GUI Switching Between Claude Code, Codex, ZCode, and 3 More; @charlieautomates Covered July 7</a></h3>
+  <p class="hook">CC Switch is a Tauri + Rust desktop tray app (macOS + Windows) that lets you switch between Claude Code, Codex, ZCode, OpenCode, OpenClaw, and Hermes Agent with one click — unified MCP server management, Skills panel, 50+ built-in provider presets, and a dedicated Claude Desktop proxy gateway panel. Charlie Automates featured it July 7 as the essential tool for routing Claude Code through third-party providers in &#39;FREE Claude Desktop + Claude Code! Full Setup With Real Anthropic Models.&#39; 116K stars, v3.16.5.</p>
+  <div class="secondary">Also: <a href="https://ccswitch.io/">ccswitch.io/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">mcp · proxy · anthropic · viral</div>
+  <pre><button class="copy">copy</button><code>See ccswitch.io</code></pre>
+  <div class="recurring">↑ Day 3 — 116K stars; @charlieautomates coverage July 7</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/bradautomates/claude-video">bradautomates/claude-video — ~8K Stars; /watch Lets Claude Watch Any Video; Up ~1K Stars/Day</a></h3>
+  <p class="hook">A Claude Code plugin that gives Claude the ability to watch and reason over video. Paste a YouTube, TikTok, Vimeo, or local file URL into /watch — it downloads, extracts scene-aware keyframes, deduplicates near-identical frames, transcribes audio (captions or Whisper), and feeds the full picture to Claude in-session. v0.2.0 launched July 1 and has grown roughly 1,000 stars per day since, reaching ~8K stars today. Practical use cases: analyzing tutorial videos, debugging against screencasts, understanding design references in motion.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">design · video · viral · marketplace · education</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add bradautomates/claude-video
+/plugin install watch@claude-video</code></pre>
+  <div class="recurring">↑ Day 2 — ~8K stars; still adding ~1K stars/day</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/claude-science-ai-workbench">Claude Science — $30K Grants Close in 3 Days (July 15); 60+ Skills for Genomics, Proteomics, Structural Biology</a></h3>
+  <p class="hook">Anthropic&#39;s AI for Science grant program closes July 15 — three days from now. Up to $30,000 in Claude credits, up to 50 projects, applications under 30 minutes. Claude Science itself is Anthropic&#39;s first vertical product: 60+ curated skills and connectors for genomics, single-cell sequencing, proteomics, structural biology, and cheminformatics, with native display of proteins, chemical structures, and genome browser tracks plus auditable provenance on every output. Beta on macOS/Linux and via SSH/HPC; NVIDIA BioNeMo accelerating structural biology workloads.</p>
+  <div class="secondary">Also: <a href="https://techcrunch.com/2026/06/30/anthropics-claude-science-bets-on-workflow-not-a-new-model-to-win-over-scientists/">techcrunch.com/2026/06/30/anthropics-claude-science-bets-on-workflow-not-a-new-model-to-win-over-scientists/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">browser</div>
+  
+  <div class="recurring">↑ Day 6 — grant deadline in 3 days (July 15)</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://thereallo.dev/blog/claude-code-prompt-steganography">Claude Code Steganography — Day 12; Anthropic Post-Mortem Still Absent; 12 Days Without a Statement</a></h3>
+  <p class="hook">Twelve days since June 30&#39;s discovery that Claude Code v2.1.91–v2.1.196 (April 2 through June 30) silently embedded timezone and proxy-hostname signals in hidden Unicode — and Anthropic has still not published a formal post-mortem. The story&#39;s major consequences are now behind us: v2.1.197+ is clean, Alibaba&#39;s company-wide Claude Code ban took effect July 10, and employees have been redirected to Qoder. What remains open is whether Anthropic will explain the decision to embed the tracking mechanism rather than the decision to remove it.</p>
+  <div class="secondary">Also: <a href="https://news.ycombinator.com/item?id=48734373">news.ycombinator.com/item?id=48734373</a> · <a href="https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/">techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">proxy</div>
+  
+  <div class="recurring">↑ Day 12 — no post-mortem after 12 days; v2.1.197+ is clean; Alibaba ban effective</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/thedotmack/claude-mem">thedotmack/claude-mem — 86.7K Stars; Persistent Memory via 5 Lifecycle Hooks + ChromaDB; Day 3</a></h3>
+  <p class="hook">claude-mem hooks into Claude Code&#39;s five session lifecycle events (SessionStart through SessionEnd) to capture what the agent does, AI-compress it, store it in SQLite + ChromaDB locally, and inject semantically relevant context back into every future session — no manual CLAUDE.md management. Free, Apache 2.0, v13.10.2. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, and OpenCode. 86.7K stars after entering awesome-claude-code as an &#39;instant persistent memory system&#39; this week.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">memory · viral</div>
+  <pre><button class="copy">copy</button><code>npx claude-mem install</code></pre>
+  <div class="recurring">↑ Day 3 — 86.7K stars; steady growth</div>
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
