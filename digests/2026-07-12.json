@@ -1,0 +1,168 @@
+[
+  {
+    "slug": "fable5-metered-billing",
+    "name": "Fable 5 Free Access Ends TONIGHT — $10/$50 per Mtok Starts at Midnight PT",
+    "primary_url": "https://www.anthropic.com/news/redeploying-fable-5",
+    "secondary_urls": [
+      "https://www.digitalapplied.com/blog/claude-fable-5-usage-credits-july-7-pricing-guide-2026"
+    ],
+    "hook": "The clock runs out tonight. Anthropic's extended Fable 5 promotional window — 50% of weekly limits at no extra cost — expires July 12 at 11:59 PM PT. From midnight, Fable 5 access in Claude Code requires usage credits at $10/Mtok input, $50/Mtok output — 10× Sonnet 5's $2/$10 promotional rate. If you haven't pre-loaded credits at claude.ai → Settings → Usage, Fable 5 access will fail mid-session with no warning. Switch to Sonnet 5 via /config now unless credits are ready.",
+    "categories": ["cost", "anthropic"],
+    "recurring_note": "↑ Day 12 — FREE ACCESS ENDS TONIGHT (July 12 at 11:59 PM PT); enable credits or route to Sonnet 5"
+  },
+  {
+    "slug": "claude-code-limits-july13",
+    "name": "Claude Code Weekly Limits +50% — EXPIRES TOMORROW (July 13 at 6 PM PDT)",
+    "primary_url": "https://news.ycombinator.com/item?id=48126429",
+    "secondary_urls": [
+      "https://apidog.com/blog/claude-code-weekly-limits-50-percent-increase-july-2026/"
+    ],
+    "hook": "One day left on Anthropic's 50% weekly usage limit boost across all paid Claude Code tiers — Pro, Max, Team, and Enterprise. The +50% applies to your core weekly session allowance regardless of model, stacks with the concurrent 2× 5-hour rolling increase, and requires no opt-in. It expires tomorrow, July 13, at 6 PM PDT. This is entirely separate from the Fable 5 metered billing cliff (ending tonight) and the doubled Cowork limits (through August 5).",
+    "categories": ["cost", "anthropic"],
+    "recurring_note": "↑ Day 12 — EXPIRES TOMORROW July 13 at 6 PM PDT; use your extra quota today"
+  },
+  {
+    "slug": "claude-code-v2-1-207",
+    "name": "Claude Code v2.1.207 — Auto Mode Default on Bedrock/Vertex/Foundry; Linux Desktop Beta; Plugin Shell Injection Fix; 22 Changes",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "secondary_urls": [
+      "https://github.com/anthropics/claude-code/releases",
+      "https://www.omgubuntu.co.uk/2026/07/claude-desktop-linux-beta"
+    ],
+    "hook": "v2.1.207 (July 11) ships 22 changes. Headline: auto mode is now on by default for Bedrock, Vertex AI, and Foundry — no CLAUDE_CODE_ENABLE_AUTO_MODE env var needed; disable via disableAutoMode in settings. Both Bedrock and Vertex default to Claude Opus 4.8. Security: plugin shell-form commands that reference ${user_config.*} are now rejected (shell-injection fix) — update hooks to exec form or $CLAUDE_PLUGIN_OPTION_<KEY>. Also: Claude Desktop for Linux is now shipping in beta for Ubuntu 22.04+ and Debian 12+ (x86_64 and arm64) — full Chat, Cowork, and Claude Code experience; install via the Anthropic apt repo. Claude in Chrome extension is out of preview for direct Anthropic plan users — Claude Code can now open tabs, click pages, fill forms, and share your browser login state to test apps it builds.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "skillcloak",
+    "name": "SkillCloak — HKUST Researchers Show Malicious Claude Code Skills Can Evade Static Scanners at 90%+ Rate",
+    "primary_url": "https://thehackernews.com/2026/07/new-skillcloak-technique-lets-malicious.html",
+    "secondary_urls": [
+      "https://www.helpnetsecurity.com/2026/07/09/malicious-ai-agent-skills-scan/",
+      "https://gbhackers.com/malicious-agent-skills/"
+    ],
+    "hook": "Hong Kong University of Science and Technology researchers published 'Cloak and Detonate: Scanner Evasion and Dynamic Detection of Agent Skill Malware' (July 6) introducing SkillCloak — a self-extracting packing technique that rewrites suspicious tokens, credential paths, and URLs into semantically equivalent forms the agent quietly reassembles at runtime, evading static skill scanners at 90%+ rates. Demonstrated payloads steal credentials, exfiltrate source code, and install backdoors while appearing benign to the same scanners tools like AgentShield and ECC run. Runtime behavior auditing is far more resilient than static analysis. Covered by The Hacker News, Help Net Security, and GB Hackers. Key takeaway: don't install skills from untrusted sources even if they pass a scanner.",
+    "categories": ["security"]
+  },
+  {
+    "slug": "addyosmani-agent-skills",
+    "name": "addyosmani/agent-skills — 77.5K Stars; Addy Osmani's 24 Production-Grade Engineering Skills for Claude Code",
+    "primary_url": "https://github.com/addyosmani/agent-skills",
+    "hook": "Addy Osmani (Google Chrome DevRel) distilled a production engineering methodology into 24 SKILL.md files covering Define / Plan / Build / Verify / Review / Ship phases — interview-me, spec-driven-development, test-driven-development, context-engineering, source-driven-development, code-review-and-quality, security-and-hardening, observability-and-instrumentation, ci-cd-and-automation, and 15 more. Compatible with Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and any SKILL.md-compatible agent. MIT licensed. 77.5K stars, still adding thousands per week.",
+    "categories": ["skill", "design"],
+    "install": "npx skills add addyosmani/agent-skills"
+  },
+  {
+    "slug": "graphify",
+    "name": "Graphify — ~82K Stars; v0.9.12 July 10; Day 7 of Daily Release Cadence; 71.5x Token Savings",
+    "primary_url": "https://github.com/safishamsi/graphify",
+    "secondary_urls": [
+      "https://graphify.net/"
+    ],
+    "hook": "Graphify's daily release cadence continues with v0.9.12 shipping July 10. The core proposition: tree-sitter AST parsing of any codebase into a local queryable knowledge graph at 71.5x average token reduction (1.7K tokens per query vs. 123K naive file reads). This week's additions — PostgreSQL live schema introspection (graph refreshes automatically on schema changes) and Streamable HTTP MCP transport for remote deployments — round out what started as a 'parse once, query always' codebase tool into a living database-aware agent memory system. ~82K stars. YC S26.",
+    "categories": ["cost", "skill"],
+    "install": "uv tool install graphifyy && graphify install",
+    "creator_buzz": ["@charlieautomates"],
+    "recurring_note": "↑ Day 7 — ~82K stars; v0.9.12 July 10; daily release cadence"
+  },
+  {
+    "slug": "caveman",
+    "name": "JuliusBrussee/caveman — 87.6K Stars; JetBrains Benchmark Shows 8.5% Real-World Token Cut; cavegemma LoRA Launched",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "secondary_urls": [
+      "https://juliusbrussee.github.io/caveman/",
+      "https://github.com/JuliusBrussee/cavegemma"
+    ],
+    "hook": "New benchmark context: JetBrains ran caveman across 82 real agentic coding tasks and measured 8.5% output token reduction — far below the headline 65% (which holds on simple conversational prompts) but with zero quality degradation. The creator says 'caveman good for long code session; 8% still $8 saved per $100 spent; compound over time.' Also new: cavegemma, a LoRA fine-tune of Gemma 4 31B that speaks caveman-mode natively without the skill overhead. Full ecosystem now 90K+ stars across caveman, cavekit, cavemem, caveman-code, and cavegemma. 87.6K stars on the main skill.",
+    "categories": ["cost", "skill"],
+    "install": "npx skills add JuliusBrussee/caveman",
+    "recurring_note": "↑ Day 3 — 87.6K stars; JetBrains 82-task benchmark shows 8.5% real-world reduction; cavegemma LoRA launched"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills — 161.8K Stars; +10.8K This Week; /grill-me + /grill-with-docs Becoming Team Standard",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "Matt Pocock's .claude directory is at 161.8K stars, adding 10.8K this week — Day 12 and still growing. The /grill-me + /grill-with-docs two-skill ritual (45-min design interview that simultaneously builds a CONTEXT.md, domain model, and stack of Architecture Decision Records before the first line of code is written) has solidified as a team onboarding pattern on multi-developer Claude Code projects: start the project, run both skills, exit with a living design trail rather than an AI-generated app nobody understands.",
+    "categories": ["design", "skill"],
+    "install": "npx skills@latest add mattpocock/skills",
+    "recurring_note": "↑ Day 12 — 161.8K stars (+10.8K this week)"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "obra/superpowers — 251.3K Stars; Kimi Code, Pi & Antigravity Harnesses; Day 6",
+    "primary_url": "https://github.com/obra/superpowers",
+    "secondary_urls": [
+      "https://claude.com/plugins/superpowers"
+    ],
+    "hook": "The most-starred Claude Code plugin sits at 251.3K stars. This week's three new harnesses — Kimi Code, Pi, and Antigravity alongside existing Claude Code, Codex, Cursor, Copilot, and OpenCode — now cover the full field of AI coding tools after Google EOL'd Gemini CLI on June 18 and it was removed. Jesse Vincent's 14-skill design-first methodology (design refinement → TDD → subagent implementation → code review → worktree coordination) remains the core: no line of code before the solution is fully designed.",
+    "categories": ["design", "skill"],
+    "install": "/plugin install superpowers@claude-plugins-official",
+    "creator_buzz": ["@simonscrapes"],
+    "recurring_note": "↑ Day 6 — 251.3K stars"
+  },
+  {
+    "slug": "madslorentzen-ai-job-search",
+    "name": "MadsLorentzen/ai-job-search — 21.3K Stars; #1 GitHub Trending July 7; Drafter-Reviewer Agent Job Application Framework",
+    "primary_url": "https://github.com/MadsLorentzen/ai-job-search",
+    "secondary_urls": [
+      "https://agentconn.com/blog/ai-job-search-agent-drafter-reviewer-claude-code-2026/"
+    ],
+    "hook": "Hit #1 on GitHub trending July 7. Fork and run /setup with your profile; then /scrape to search portals; /apply <url> spawns a drafter agent (evaluates fit, writes tailored LaTeX CV and cover letter, compiles PDFs, checks ATS text layer) and a separate reviewer agent that audits the draft before you submit — treating job applications as adversarial documents, not form-fill exercises. /interview preps you with company research and mock questions. Distinct from santifer/career-ops (59.5K stars) — lighter footprint, single-repo, no batch orchestration, Bun-based. 21.3K stars.",
+    "categories": ["viral", "skill"],
+    "install": "git clone https://github.com/MadsLorentzen/ai-job-search && cd ai-job-search && bun install && claude code /setup"
+  },
+  {
+    "slug": "cc-switch",
+    "name": "cc-switch — 116K Stars; Desktop GUI Switching Between Claude Code, Codex, ZCode, and 3 More; @charlieautomates Covered July 7",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "secondary_urls": [
+      "https://ccswitch.io/"
+    ],
+    "hook": "CC Switch is a Tauri + Rust desktop tray app (macOS + Windows) that lets you switch between Claude Code, Codex, ZCode, OpenCode, OpenClaw, and Hermes Agent with one click — unified MCP server management, Skills panel, 50+ built-in provider presets, and a dedicated Claude Desktop proxy gateway panel. Charlie Automates featured it July 7 as the essential tool for routing Claude Code through third-party providers in 'FREE Claude Desktop + Claude Code! Full Setup With Real Anthropic Models.' 116K stars, v3.16.5.",
+    "categories": ["cost", "plugin"],
+    "install": "See ccswitch.io",
+    "creator_buzz": ["@charlieautomates"],
+    "recurring_note": "↑ Day 3 — 116K stars; @charlieautomates coverage July 7"
+  },
+  {
+    "slug": "claude-video",
+    "name": "bradautomates/claude-video — ~8K Stars; /watch Lets Claude Watch Any Video; Up ~1K Stars/Day",
+    "primary_url": "https://github.com/bradautomates/claude-video",
+    "hook": "A Claude Code plugin that gives Claude the ability to watch and reason over video. Paste a YouTube, TikTok, Vimeo, or local file URL into /watch — it downloads, extracts scene-aware keyframes, deduplicates near-identical frames, transcribes audio (captions or Whisper), and feeds the full picture to Claude in-session. v0.2.0 launched July 1 and has grown roughly 1,000 stars per day since, reaching ~8K stars today. Practical use cases: analyzing tutorial videos, debugging against screencasts, understanding design references in motion.",
+    "categories": ["plugin"],
+    "install": "/plugin marketplace add bradautomates/claude-video\n/plugin install watch@claude-video",
+    "recurring_note": "↑ Day 2 — ~8K stars; still adding ~1K stars/day"
+  },
+  {
+    "slug": "claude-science",
+    "name": "Claude Science — $30K Grants Close in 3 Days (July 15); 60+ Skills for Genomics, Proteomics, Structural Biology",
+    "primary_url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+    "secondary_urls": [
+      "https://techcrunch.com/2026/06/30/anthropics-claude-science-bets-on-workflow-not-a-new-model-to-win-over-scientists/"
+    ],
+    "hook": "Anthropic's AI for Science grant program closes July 15 — three days from now. Up to $30,000 in Claude credits, up to 50 projects, applications under 30 minutes. Claude Science itself is Anthropic's first vertical product: 60+ curated skills and connectors for genomics, single-cell sequencing, proteomics, structural biology, and cheminformatics, with native display of proteins, chemical structures, and genome browser tracks plus auditable provenance on every output. Beta on macOS/Linux and via SSH/HPC; NVIDIA BioNeMo accelerating structural biology workloads.",
+    "categories": ["anthropic", "skill"],
+    "recurring_note": "↑ Day 6 — grant deadline in 3 days (July 15)"
+  },
+  {
+    "slug": "claude-code-steganography",
+    "name": "Claude Code Steganography — Day 12; Anthropic Post-Mortem Still Absent; 12 Days Without a Statement",
+    "primary_url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+    "secondary_urls": [
+      "https://news.ycombinator.com/item?id=48734373",
+      "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/"
+    ],
+    "hook": "Twelve days since June 30's discovery that Claude Code v2.1.91–v2.1.196 (April 2 through June 30) silently embedded timezone and proxy-hostname signals in hidden Unicode — and Anthropic has still not published a formal post-mortem. The story's major consequences are now behind us: v2.1.197+ is clean, Alibaba's company-wide Claude Code ban took effect July 10, and employees have been redirected to Qoder. What remains open is whether Anthropic will explain the decision to embed the tracking mechanism rather than the decision to remove it.",
+    "categories": ["anthropic"],
+    "recurring_note": "↑ Day 12 — no post-mortem after 12 days; v2.1.197+ is clean; Alibaba ban effective"
+  },
+  {
+    "slug": "claude-mem",
+    "name": "thedotmack/claude-mem — 86.7K Stars; Persistent Memory via 5 Lifecycle Hooks + ChromaDB; Day 3",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "claude-mem hooks into Claude Code's five session lifecycle events (SessionStart through SessionEnd) to capture what the agent does, AI-compress it, store it in SQLite + ChromaDB locally, and inject semantically relevant context back into every future session — no manual CLAUDE.md management. Free, Apache 2.0, v13.10.2. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, and OpenCode. 86.7K stars after entering awesome-claude-code as an 'instant persistent memory system' this week.",
+    "categories": ["plugin"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 3 — 86.7K stars; steady growth"
+  }
+]
