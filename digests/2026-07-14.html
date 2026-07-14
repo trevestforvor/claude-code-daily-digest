@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — July 14, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — July 14, 2026</h1><p class="sub">Top 15 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.208-209 — Screen Reader Mode, Vim Remaps, Background Agents Auto-PR, Mouse Support</a></h3>
+  <p class="hook">Two releases landed today (July 14). v2.1.208 adds opt-in screen reader mode (--ax-screen-reader or CLAUDE_AX_SCREEN_READER=1), vimInsertModeRemaps setting for jj→Escape sequences, and CLAUDE_CODE_PROCESS_WRAPPER for corporate launcher environments. The biggest workflow change: background agents in worktrees now automatically commit, push, and open a draft PR when they finish code work — no more &#39;do you want to push?&#39; interrupts. v2.1.209 fixes /model dialogs blocked in background sessions. Also: fast mode auto-restores, replies to background agents no longer lost on delivery failure.</p>
+  <div class="secondary">Also: <a href="https://code.claude.com/docs/en/whats-new">code.claude.com/docs/en/whats-new</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
+  <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/shareAI-lab/learn-claude-code">shareAI-lab/learn-claude-code — ~68K Stars; &quot;Bash Is All You Need&quot;; Nano Claude Code-Like Agent Harness</a></h3>
+  <p class="hook">~68K stars (66K confirmed in June, growing) on a repo that builds a Claude Code-like terminal agent from scratch — one loop, one Bash tool. The 20-chapter curriculum (s01–s20 in root-level folders) walks from zero to a working harness: each chapter has a narrative README, runnable code.py, translations, and diagrams. The core thesis is &#39;Agent = Model + Harness&#39; and a single generalized Bash tool replaces the 40+ tool explosion. Used heavily for understanding how Claude Code itself works under the hood.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">harness · terminal</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/shareAI-lab/learn-claude-code</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/statewright/statewright">Statewright — Visual State Machines That Make AI Agents Reliable; Show HN; Apache 2.0</a></h3>
+  <p class="hook">Show HN this week: a Rust engine that enforces state machine definitions on AI agents — tools are gated per state, not suggested. Instead of giving Claude 40+ tools and hoping, you define states (plan, implement, review, deploy) and the engine hard-blocks disallowed tools for each state. A 5-task SWE-bench subset showed two local models (13.8GB and 19.9GB) go from 2/10 to 10/10 with constraints enabled; Haiku and Sonnet also punch above weight. Integrates with Claude Code, Codex, Cursor, opencode, and Pi via MCP. Visual editor to design workflows; managed cloud at statewright.ai or self-host. Engine + agent layer Apache 2.0.</p>
+  <div class="secondary">Also: <a href="https://statewright.ai/">statewright.ai/</a> · <a href="https://news.ycombinator.com/item?id=48108778">news.ycombinator.com/item?id=48108778</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">local</div>
+  <pre><button class="copy">copy</button><code>See README at https://docs.statewright.ai/</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/zilliztech/claude-context">zilliztech/claude-context — 11.9K Stars; Semantic Code Search MCP; ~40% Token Reduction</a></h3>
+  <p class="hook">Zilliz&#39;s MCP server indexes your codebase into a local vector + BM25 hybrid search engine (AST-aware chunking per language, incremental Merkle-tree indexing) so Claude Code queries &#39;all relevant code&#39; rather than reading entire file trees. Measured ~40% token reduction on large codebases. 11.9K stars, 890 forks, with 3,725 stars gained in a single trending week. Supports Claude Code, Cursor, Codex, Gemini CLI, Cline, Roo Code, Windsurf, and Augment. 14 languages including TypeScript, Python, Go, Rust, and C++.</p>
+  <div class="secondary">Also: <a href="https://www.augmentcode.com/mcp/claude-context-mcp-server">www.augmentcode.com/mcp/claude-context-mcp-server</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">token · viral · terminal · search</div>
+  <pre><button class="copy">copy</button><code>npm install -g @zilliz/claude-context &amp;&amp; claude-context init</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/trendsmcp/Trends-MCP">TrendsMCP — One MCP Server; 20+ Live Trend Sources (Google, YouTube, TikTok, Reddit, npm, Steam…); Free Tier</a></h3>
+  <p class="hook">Single MCP server that gives Claude Code live trend data from 20+ sources: Google Trends (5-year weekly history or 30-day daily), TikTok trending hashtags, YouTube trending, Reddit hot posts, Amazon best sellers, App Store top charts, Google Play, Steam most played, GitHub trending repos, Wikipedia trending, news sentiment, web traffic, and more. One API key covers every source. Works with Claude Code, Cursor, VS Code Copilot, Windsurf, Cline, and any MCP-compatible client. Free tier covers 100 requests/month; paid plans available at trendsmcp.ai.</p>
+  <div class="secondary">Also: <a href="https://www.trendsmcp.ai/">www.trendsmcp.ai/</a> · <a href="https://github.com/trendsmcp/trends-agent-claude">github.com/trendsmcp/trends-agent-claude</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx -y @trendsmcp/mcp</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/jrenaldi79/sidecar">jrenaldi79/sidecar — Parallel AI Window for Claude Code; Fork to Gemini/GPT/DeepSeek via OpenRouter; Fold Results Back</a></h3>
+  <p class="hook">A CLI companion that reads your live Claude Code session from ~/.claude/projects/[project]/[session].jsonl and routes it in parallel to any OpenRouter-supported model (Gemini, GPT-4o, DeepSeek, etc.). Three modes: Chat (fact-check + human review), Plan (strict read-only, no writes), Build (full autonomy). Hit Cmd+Shift+F to FOLD — generates a structured diff summary you can approve and apply back to the main session. Surfaces systematic blind spots: if Claude missed an edge case that Gemini catches, you see it. MCP server auto-registered for Claude Desktop and Cowork.</p>
+  <div class="secondary">Also: <a href="https://claudesidecar.ai/">claudesidecar.ai/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">mcp · terminal</div>
+  <pre><button class="copy">copy</button><code>npm install -g @jrenaldi/sidecar &amp;&amp; sidecar install</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/VoltAgent/awesome-claude-code-subagents">VoltAgent/awesome-claude-code-subagents — 20.5K Stars; 100+ Specialized Claude Code Subagents</a></h3>
+  <p class="hook">100+ drop-in Claude Code subagent definitions across 10 categories: core development, language specialists (TypeScript wizard, Python architect, Go craftsman…), infra, quality &amp; security, data &amp; AI, developer experience, specialized domains, business/product, meta-orchestration, and research. Each subagent runs in its own isolated context window with domain-specific instructions and granular tool permissions — preventing cross-task contamination and scope creep. 20.5K stars. CLAUDE.md wires them in as a flat directory Claude can delegate to.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">subagent · context · viral · marketplace · security</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/VoltAgent/awesome-claude-code-subagents ~/.claude/agents</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/safishamsi/graphify">Graphify — ~84K Stars; v0.9.16; Day 9 of Daily Release Cadence; PostgreSQL Live Schema Introspection</a></h3>
+  <p class="hook">Daily release cadence continues through Week 2. The core proposition — tree-sitter AST parsing into a local queryable knowledge graph at 71.5x average token reduction (1.7K tokens per query vs 123K naive file reads) — has been joined this week by PostgreSQL live schema introspection (graph refreshes automatically on schema changes) and Streamable HTTP MCP transport for remote deployments. YC S26, growing ~2K stars/day. Rivals Graphify for token reduction use cases, but with a database-aware persistent agent memory angle.</p>
+  <div class="secondary">Also: <a href="https://graphify.net/">graphify.net/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">mcp · memory · token · viral</div>
+  <pre><button class="copy">copy</button><code>uv tool install graphifyy &amp;&amp; graphify install</code></pre>
+  <div class="recurring">↑ Day 9 — ~84K stars; daily release cadence; PostgreSQL schema introspection added this week</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/JuliusBrussee/caveman">JuliusBrussee/caveman — ~88K Stars; Day 5; cavegemma LoRA Shipping to Ollama Hub This Week</a></h3>
+  <p class="hook">cavegemma — the Gemma 4 31B LoRA that speaks caveman compression natively without the overhead of the SKILL.md injection — is shipping to Ollama Hub this week. The creator says this eliminates the ~200-token skill overhead for teams running local inference. JetBrains&#39; 8.5% real-world token cut across 82 coding tasks remains the most credible benchmark figure; the headline 65% holds on conversational prompts. ~88K stars across caveman; full ecosystem (cavekit, cavemem, caveman-code, cavegemma) now at 95K+.</p>
+  <div class="secondary">Also: <a href="https://juliusbrussee.github.io/caveman/">juliusbrussee.github.io/caveman/</a> · <a href="https://github.com/JuliusBrussee/cavegemma">github.com/JuliusBrussee/cavegemma</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">branding · local · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add JuliusBrussee/caveman</code></pre>
+  <div class="recurring">↑ Day 5 — ~88K stars; cavegemma LoRA shipping to Ollama Hub this week</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/claude-science-ai-workbench">Claude Science — $30K Grants Close TOMORROW (July 15); 60+ Skills for Genomics, Proteomics, Structural Biology</a></h3>
+  <p class="hook">Grant window closes tomorrow at midnight. Up to $30K in Claude credits, up to 50 projects, application under 30 minutes. Claude Science is Anthropic&#39;s first vertical product: 60+ curated skills and connectors for genomics, single-cell sequencing, proteomics, structural biology, and cheminformatics, with native display of proteins, chemical structures, and genome browser tracks. NVIDIA BioNeMo accelerating structural biology workloads. Beta on macOS/Linux and via SSH/HPC. If you&#39;re a scientist or researcher, the application is tonight.</p>
+  <div class="secondary">Also: <a href="https://techcrunch.com/2026/06/30/anthropics-claude-science-bets-on-workflow-not-a-new-model-to-win-over-scientists/">techcrunch.com/2026/06/30/anthropics-claude-science-bets-on-workflow-not-a-new-model-to-win-over-scientists/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">browser</div>
+  
+  <div class="recurring">↑ Day 8 — GRANT DEADLINE TOMORROW July 15; last call</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/obra/superpowers">obra/superpowers — ~252K Stars; Day 8; Pi + Kimi Code + Antigravity Harnesses Settled In</a></h3>
+  <p class="hook">Jesse Vincent&#39;s design-first methodology (design refinement → TDD → subagent implementation → code review → worktree coordination) now covers every major AI coding tool after Google EOL&#39;d Gemini CLI: Claude Code, Codex, Cursor, Copilot, OpenCode, Kimi Code, Pi, and Antigravity. New this week: the /retrospective skill that runs after each completed feature and asks the agent to identify where the design failed to anticipate implementation constraints — creates a lessons-learned.md to inform the next iteration.</p>
+  <div class="secondary">Also: <a href="https://claude.com/plugins/superpowers">claude.com/plugins/superpowers</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · subagent · viral · terminal · review</div>
+  <pre><button class="copy">copy</button><code>/plugin install superpowers@claude-plugins-official</code></pre>
+  <div class="recurring">↑ Day 8 — ~252K stars; new /retrospective skill this week</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mattpocock/skills">mattpocock/skills — 162K Stars; Day 14; Teams Running /grill-me Before Every Greenfield Feature</a></h3>
+  <p class="hook">162K stars, Day 14. The /grill-me + /grill-with-docs two-skill pre-flight ritual — a 45-minute structured design interview that simultaneously builds a CONTEXT.md, domain model, and stack of Architecture Decision Records before any code runs — has become the de facto team standard for greenfield Claude Code projects. Three TypeScript-heavy shops shared their CONTEXT.md templates this week, showing how the skill adapts to monorepo, microservice, and library architectures.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx skills@latest add mattpocock/skills</code></pre>
+  <div class="recurring">↑ Day 14 — 162K stars; /grill-me + /grill-with-docs becoming greenfield team standard</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/farion1231/cc-switch">cc-switch — 117K Stars; Day 5; Provider Routing Panel Now Shows Live Token Cost Per Provider</a></h3>
+  <p class="hook">cc-switch v3.17 adds a live token-cost comparison panel in the provider routing view — switch between Claude Code, Codex, ZCode, OpenCode, OpenClaw, and Hermes Agent and see estimated per-token cost for the active session across 50+ provider presets in real time. Charlie Automates covered it July 7 as the essential tool for routing Claude Code through third-party providers. 117K stars.</p>
+  <div class="secondary">Also: <a href="https://ccswitch.io/">ccswitch.io/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>See ccswitch.io</code></pre>
+  <div class="recurring">↑ Day 5 — 117K stars; v3.17 live cost comparison panel</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/bradautomates/claude-video">bradautomates/claude-video — ~10K Stars; Day 4; /watch Now Supports Local Video Files Up to 4GB</a></h3>
+  <p class="hook">Up to ~10K stars at roughly 1K/day since launch July 1. v0.2.1 this week: /watch now supports local video files up to 4GB (not just YouTube/TikTok/Vimeo URLs), adds a --fps flag to control keyframe density (default 1fps, --fps 0.5 for long videos), and a --segments flag that splits longer videos into chapters Claude treats separately. Practical uses emerging: developers using /watch to analyze their own screen recordings from debugging sessions, then asking Claude to identify where they went wrong.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">video · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add bradautomates/claude-video
+/plugin install watch@claude-video</code></pre>
+  <div class="recurring">↑ Day 4 — ~10K stars; v0.2.1 adds local file support up to 4GB, --fps and --segments flags</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/thedotmack/claude-mem">thedotmack/claude-mem — ~87K Stars; Day 5; New /recall Command Surfaces Memories Without Injecting Them</a></h3>
+  <p class="hook">claude-mem v13.11 adds /recall — a read-only command that queries the ChromaDB + SQLite memory store and shows what the agent knows about a topic without injecting it into the active session context. Useful for auditing what claude-mem has retained before starting a sensitive task. Five session lifecycle hooks (SessionStart through SessionEnd) continue to capture, AI-compress, and retrieve semantically relevant context. ~87K stars. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, and OpenCode.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">memory · viral</div>
+  <pre><button class="copy">copy</button><code>npx claude-mem install</code></pre>
+  <div class="recurring">↑ Day 5 — ~87K stars; v13.11 /recall command for memory audit</div>
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
