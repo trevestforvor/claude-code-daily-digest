@@ -1,0 +1,144 @@
+[
+  {
+    "slug": "claude-code-v2-1-208-209",
+    "name": "Claude Code v2.1.208-209 — Screen Reader Mode, Vim Remaps, Background Agents Auto-PR, Mouse Support",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "secondary_urls": ["https://code.claude.com/docs/en/whats-new"],
+    "hook": "Two releases landed today (July 14). v2.1.208 adds opt-in screen reader mode (--ax-screen-reader or CLAUDE_AX_SCREEN_READER=1), vimInsertModeRemaps setting for jj→Escape sequences, and CLAUDE_CODE_PROCESS_WRAPPER for corporate launcher environments. The biggest workflow change: background agents in worktrees now automatically commit, push, and open a draft PR when they finish code work — no more 'do you want to push?' interrupts. v2.1.209 fixes /model dialogs blocked in background sessions. Also: fast mode auto-restores, replies to background agents no longer lost on delivery failure.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "learn-claude-code",
+    "name": "shareAI-lab/learn-claude-code — ~68K Stars; \"Bash Is All You Need\"; Nano Claude Code-Like Agent Harness",
+    "primary_url": "https://github.com/shareAI-lab/learn-claude-code",
+    "secondary_urls": [],
+    "hook": "~68K stars (66K confirmed in June, growing) on a repo that builds a Claude Code-like terminal agent from scratch — one loop, one Bash tool. The 20-chapter curriculum (s01–s20 in root-level folders) walks from zero to a working harness: each chapter has a narrative README, runnable code.py, translations, and diagrams. The core thesis is 'Agent = Model + Harness' and a single generalized Bash tool replaces the 40+ tool explosion. Used heavily for understanding how Claude Code itself works under the hood.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/shareAI-lab/learn-claude-code"
+  },
+  {
+    "slug": "statewright",
+    "name": "Statewright — Visual State Machines That Make AI Agents Reliable; Show HN; Apache 2.0",
+    "primary_url": "https://github.com/statewright/statewright",
+    "secondary_urls": ["https://statewright.ai/", "https://news.ycombinator.com/item?id=48108778"],
+    "hook": "Show HN this week: a Rust engine that enforces state machine definitions on AI agents — tools are gated per state, not suggested. Instead of giving Claude 40+ tools and hoping, you define states (plan, implement, review, deploy) and the engine hard-blocks disallowed tools for each state. A 5-task SWE-bench subset showed two local models (13.8GB and 19.9GB) go from 2/10 to 10/10 with constraints enabled; Haiku and Sonnet also punch above weight. Integrates with Claude Code, Codex, Cursor, opencode, and Pi via MCP. Visual editor to design workflows; managed cloud at statewright.ai or self-host. Engine + agent layer Apache 2.0.",
+    "categories": ["design", "mcp"],
+    "install": "See README at https://docs.statewright.ai/"
+  },
+  {
+    "slug": "claude-context",
+    "name": "zilliztech/claude-context — 11.9K Stars; Semantic Code Search MCP; ~40% Token Reduction",
+    "primary_url": "https://github.com/zilliztech/claude-context",
+    "secondary_urls": ["https://www.augmentcode.com/mcp/claude-context-mcp-server"],
+    "hook": "Zilliz's MCP server indexes your codebase into a local vector + BM25 hybrid search engine (AST-aware chunking per language, incremental Merkle-tree indexing) so Claude Code queries 'all relevant code' rather than reading entire file trees. Measured ~40% token reduction on large codebases. 11.9K stars, 890 forks, with 3,725 stars gained in a single trending week. Supports Claude Code, Cursor, Codex, Gemini CLI, Cline, Roo Code, Windsurf, and Augment. 14 languages including TypeScript, Python, Go, Rust, and C++.",
+    "categories": ["cost", "mcp"],
+    "install": "npm install -g @zilliz/claude-context && claude-context init"
+  },
+  {
+    "slug": "trends-mcp",
+    "name": "TrendsMCP — One MCP Server; 20+ Live Trend Sources (Google, YouTube, TikTok, Reddit, npm, Steam…); Free Tier",
+    "primary_url": "https://github.com/trendsmcp/Trends-MCP",
+    "secondary_urls": ["https://www.trendsmcp.ai/", "https://github.com/trendsmcp/trends-agent-claude"],
+    "hook": "Single MCP server that gives Claude Code live trend data from 20+ sources: Google Trends (5-year weekly history or 30-day daily), TikTok trending hashtags, YouTube trending, Reddit hot posts, Amazon best sellers, App Store top charts, Google Play, Steam most played, GitHub trending repos, Wikipedia trending, news sentiment, web traffic, and more. One API key covers every source. Works with Claude Code, Cursor, VS Code Copilot, Windsurf, Cline, and any MCP-compatible client. Free tier covers 100 requests/month; paid plans available at trendsmcp.ai.",
+    "categories": ["mcp"],
+    "install": "npx -y @trendsmcp/mcp"
+  },
+  {
+    "slug": "sidecar-claude",
+    "name": "jrenaldi79/sidecar — Parallel AI Window for Claude Code; Fork to Gemini/GPT/DeepSeek via OpenRouter; Fold Results Back",
+    "primary_url": "https://github.com/jrenaldi79/sidecar",
+    "secondary_urls": ["https://claudesidecar.ai/"],
+    "hook": "A CLI companion that reads your live Claude Code session from ~/.claude/projects/[project]/[session].jsonl and routes it in parallel to any OpenRouter-supported model (Gemini, GPT-4o, DeepSeek, etc.). Three modes: Chat (fact-check + human review), Plan (strict read-only, no writes), Build (full autonomy). Hit Cmd+Shift+F to FOLD — generates a structured diff summary you can approve and apply back to the main session. Surfaces systematic blind spots: if Claude missed an edge case that Gemini catches, you see it. MCP server auto-registered for Claude Desktop and Cowork.",
+    "categories": ["cost", "plugin"],
+    "install": "npm install -g @jrenaldi/sidecar && sidecar install"
+  },
+  {
+    "slug": "awesome-claude-code-subagents",
+    "name": "VoltAgent/awesome-claude-code-subagents — 20.5K Stars; 100+ Specialized Claude Code Subagents",
+    "primary_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "secondary_urls": [],
+    "hook": "100+ drop-in Claude Code subagent definitions across 10 categories: core development, language specialists (TypeScript wizard, Python architect, Go craftsman…), infra, quality & security, data & AI, developer experience, specialized domains, business/product, meta-orchestration, and research. Each subagent runs in its own isolated context window with domain-specific instructions and granular tool permissions — preventing cross-task contamination and scope creep. 20.5K stars. CLAUDE.md wires them in as a flat directory Claude can delegate to.",
+    "categories": ["skill"],
+    "install": "git clone https://github.com/VoltAgent/awesome-claude-code-subagents ~/.claude/agents"
+  },
+  {
+    "slug": "graphify",
+    "name": "Graphify — ~84K Stars; v0.9.16; Day 9 of Daily Release Cadence; PostgreSQL Live Schema Introspection",
+    "primary_url": "https://github.com/safishamsi/graphify",
+    "secondary_urls": ["https://graphify.net/"],
+    "hook": "Daily release cadence continues through Week 2. The core proposition — tree-sitter AST parsing into a local queryable knowledge graph at 71.5x average token reduction (1.7K tokens per query vs 123K naive file reads) — has been joined this week by PostgreSQL live schema introspection (graph refreshes automatically on schema changes) and Streamable HTTP MCP transport for remote deployments. YC S26, growing ~2K stars/day. Rivals Graphify for token reduction use cases, but with a database-aware persistent agent memory angle.",
+    "categories": ["cost", "skill"],
+    "install": "uv tool install graphifyy && graphify install",
+    "creator_buzz": ["@charlieautomates"],
+    "recurring_note": "↑ Day 9 — ~84K stars; daily release cadence; PostgreSQL schema introspection added this week"
+  },
+  {
+    "slug": "caveman",
+    "name": "JuliusBrussee/caveman — ~88K Stars; Day 5; cavegemma LoRA Shipping to Ollama Hub This Week",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "secondary_urls": ["https://juliusbrussee.github.io/caveman/", "https://github.com/JuliusBrussee/cavegemma"],
+    "hook": "cavegemma — the Gemma 4 31B LoRA that speaks caveman compression natively without the overhead of the SKILL.md injection — is shipping to Ollama Hub this week. The creator says this eliminates the ~200-token skill overhead for teams running local inference. JetBrains' 8.5% real-world token cut across 82 coding tasks remains the most credible benchmark figure; the headline 65% holds on conversational prompts. ~88K stars across caveman; full ecosystem (cavekit, cavemem, caveman-code, cavegemma) now at 95K+.",
+    "categories": ["cost", "skill"],
+    "install": "npx skills add JuliusBrussee/caveman",
+    "recurring_note": "↑ Day 5 — ~88K stars; cavegemma LoRA shipping to Ollama Hub this week"
+  },
+  {
+    "slug": "claude-science",
+    "name": "Claude Science — $30K Grants Close TOMORROW (July 15); 60+ Skills for Genomics, Proteomics, Structural Biology",
+    "primary_url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+    "secondary_urls": ["https://techcrunch.com/2026/06/30/anthropics-claude-science-bets-on-workflow-not-a-new-model-to-win-over-scientists/"],
+    "hook": "Grant window closes tomorrow at midnight. Up to $30K in Claude credits, up to 50 projects, application under 30 minutes. Claude Science is Anthropic's first vertical product: 60+ curated skills and connectors for genomics, single-cell sequencing, proteomics, structural biology, and cheminformatics, with native display of proteins, chemical structures, and genome browser tracks. NVIDIA BioNeMo accelerating structural biology workloads. Beta on macOS/Linux and via SSH/HPC. If you're a scientist or researcher, the application is tonight.",
+    "categories": ["anthropic", "skill"],
+    "recurring_note": "↑ Day 8 — GRANT DEADLINE TOMORROW July 15; last call"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "obra/superpowers — ~252K Stars; Day 8; Pi + Kimi Code + Antigravity Harnesses Settled In",
+    "primary_url": "https://github.com/obra/superpowers",
+    "secondary_urls": ["https://claude.com/plugins/superpowers"],
+    "hook": "Jesse Vincent's design-first methodology (design refinement → TDD → subagent implementation → code review → worktree coordination) now covers every major AI coding tool after Google EOL'd Gemini CLI: Claude Code, Codex, Cursor, Copilot, OpenCode, Kimi Code, Pi, and Antigravity. New this week: the /retrospective skill that runs after each completed feature and asks the agent to identify where the design failed to anticipate implementation constraints — creates a lessons-learned.md to inform the next iteration.",
+    "categories": ["design", "skill"],
+    "install": "/plugin install superpowers@claude-plugins-official",
+    "creator_buzz": ["@simonscrapes"],
+    "recurring_note": "↑ Day 8 — ~252K stars; new /retrospective skill this week"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills — 162K Stars; Day 14; Teams Running /grill-me Before Every Greenfield Feature",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "162K stars, Day 14. The /grill-me + /grill-with-docs two-skill pre-flight ritual — a 45-minute structured design interview that simultaneously builds a CONTEXT.md, domain model, and stack of Architecture Decision Records before any code runs — has become the de facto team standard for greenfield Claude Code projects. Three TypeScript-heavy shops shared their CONTEXT.md templates this week, showing how the skill adapts to monorepo, microservice, and library architectures.",
+    "categories": ["design", "skill"],
+    "install": "npx skills@latest add mattpocock/skills",
+    "recurring_note": "↑ Day 14 — 162K stars; /grill-me + /grill-with-docs becoming greenfield team standard"
+  },
+  {
+    "slug": "cc-switch",
+    "name": "cc-switch — 117K Stars; Day 5; Provider Routing Panel Now Shows Live Token Cost Per Provider",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "secondary_urls": ["https://ccswitch.io/"],
+    "hook": "cc-switch v3.17 adds a live token-cost comparison panel in the provider routing view — switch between Claude Code, Codex, ZCode, OpenCode, OpenClaw, and Hermes Agent and see estimated per-token cost for the active session across 50+ provider presets in real time. Charlie Automates covered it July 7 as the essential tool for routing Claude Code through third-party providers. 117K stars.",
+    "categories": ["cost", "plugin"],
+    "install": "See ccswitch.io",
+    "creator_buzz": ["@charlieautomates"],
+    "recurring_note": "↑ Day 5 — 117K stars; v3.17 live cost comparison panel"
+  },
+  {
+    "slug": "claude-video",
+    "name": "bradautomates/claude-video — ~10K Stars; Day 4; /watch Now Supports Local Video Files Up to 4GB",
+    "primary_url": "https://github.com/bradautomates/claude-video",
+    "hook": "Up to ~10K stars at roughly 1K/day since launch July 1. v0.2.1 this week: /watch now supports local video files up to 4GB (not just YouTube/TikTok/Vimeo URLs), adds a --fps flag to control keyframe density (default 1fps, --fps 0.5 for long videos), and a --segments flag that splits longer videos into chapters Claude treats separately. Practical uses emerging: developers using /watch to analyze their own screen recordings from debugging sessions, then asking Claude to identify where they went wrong.",
+    "categories": ["plugin"],
+    "install": "/plugin marketplace add bradautomates/claude-video\n/plugin install watch@claude-video",
+    "recurring_note": "↑ Day 4 — ~10K stars; v0.2.1 adds local file support up to 4GB, --fps and --segments flags"
+  },
+  {
+    "slug": "claude-mem",
+    "name": "thedotmack/claude-mem — ~87K Stars; Day 5; New /recall Command Surfaces Memories Without Injecting Them",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "claude-mem v13.11 adds /recall — a read-only command that queries the ChromaDB + SQLite memory store and shows what the agent knows about a topic without injecting it into the active session context. Useful for auditing what claude-mem has retained before starting a sensitive task. Five session lifecycle hooks (SessionStart through SessionEnd) continue to capture, AI-compress, and retrieve semantically relevant context. ~87K stars. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, and OpenCode.",
+    "categories": ["plugin"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 5 — ~87K stars; v13.11 /recall command for memory audit"
+  }
+]
