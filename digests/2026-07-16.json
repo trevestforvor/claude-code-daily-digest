@@ -1,0 +1,180 @@
+[
+  {
+    "slug": "html-video",
+    "name": "nexu-io/html-video \u2014 HTML + CSS + Data \u2192 Real MP4s; 4K Stars; 2,384 Gained This Month",
+    "primary_url": "https://github.com/nexu-io/html-video",
+    "hook": "nexu-io's html-video converts HTML, CSS, and data into real local MP4s with 21 curated templates \u2014 no cloud rendering, no per-clip fees, no API key. Sits above Hyperframes as a pluggable render engine layer; Remotion and Motion Canvas are planned. Supports 14 coding-agent CLIs including Claude Code, Cursor, Codex, and Gemini. AI soundtrack via MiniMax is optional. 4,000 stars with 2,384 gained in the past 30 days \u2014 from the same nexu-io org that built open-design and html-anything.",
+    "categories": [
+      "design"
+    ],
+    "install": "pnpm install && pnpm -r build",
+    "secondary_urls": [
+      "https://trendshift.io/repositories/45921"
+    ]
+  },
+  {
+    "slug": "html-anything",
+    "name": "nexu-io/html-anything \u2014 7.8K Stars; Agentic HTML Editor; 75 Skills \u00d7 9 Surfaces; Zero API Key",
+    "primary_url": "https://github.com/nexu-io/html-anything",
+    "hook": "html-anything turns local Claude Code (or any of 8 supported CLIs) into an agentic HTML editor that ships production-ready single-file HTML. 75 composable skills span 9 output surfaces: keynote decks, web prototypes, Hyperframes video scripts, social cards (X, Xiaohongshu), office documents, and more. One-click export to WeChat (CSS-inlined), high-DPI PNG, standalone HTML, or Zhihu. Hard-coded anti-AI-slop constraints baked in: CJK-first fonts, 8px baseline grid, \u22654.5 contrast ratio. 7.8k stars; zero API key required since it reuses your existing CLI session.",
+    "categories": [
+      "design"
+    ],
+    "install": "git clone https://github.com/nexu-io/html-anything && cd html-anything && pnpm install && pnpm -F @html-anything/next dev"
+  },
+  {
+    "slug": "graphify",
+    "name": "Graphify \u2014 ~86K Stars; Day 11; Daily Release Cadence; 71.5\u00d7 Token Savings",
+    "primary_url": "https://github.com/safishamsi/graphify",
+    "hook": "Graphify's daily release cadence continues through Day 11 \u2014 each build ships a fresh schema introspection, token-compression, or language-support improvement. 71.5\u00d7 token savings on large schemas is the headline claim, and PostgreSQL live schema introspection is the anchor feature. ~86K stars as of today, with TS/JS/Swift/C++ language adapters added in recent releases.",
+    "categories": [
+      "cost",
+      "design"
+    ],
+    "install": "uv tool install graphifyy && graphify install",
+    "recurring_note": "\u2191 Day 11 \u2014 daily release cadence; ~86K stars"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "obra/superpowers \u2014 252K Stars; Day 10; /retrospective Asks the Agent What the Design Got Wrong",
+    "primary_url": "https://github.com/obra/superpowers",
+    "hook": "obra/superpowers remains the most-starred Claude Code skills framework at 252K+ stars and is the official Anthropic marketplace's top listing. Day 10 of continuous digest presence, with the /retrospective skill \u2014 which asks the agent to self-critique its design decisions after a session \u2014 earning the most community discussion this week. Compatible with Claude Code, Kimi Code, Pi, and Antigravity.",
+    "categories": [
+      "design",
+      "general"
+    ],
+    "install": "/plugin install superpowers@claude-plugins-official",
+    "recurring_note": "\u2191 Day 10 \u2014 252K+ stars; /retrospective skill drawing community discussion"
+  },
+  {
+    "slug": "claude-code-v2-1-210",
+    "name": "Claude Code v2.1.210 \u2014 Live Tool Timer; Auto Mode \u2192 Sonnet 5; Worktree Git Isolation Fix",
+    "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.210",
+    "hook": "Released July 14 at 23:45 \u2014 the release sandwiched between v2.1.208/209 (covered July 14) and v2.1.211 (covered July 15), so its features have not been highlighted yet. Key changes: a live elapsed-time counter now appears on every collapsed tool summary line so long-running commands no longer look frozen; auto mode's permission classifier now defaults to Sonnet 5 instead of Opus \u2014 a direct cost and latency improvement for every auto mode user; fixed `isolation: 'worktree'` subagents that were accidentally running git commands against the main repo; and fixed the `ultracode` keyword firing on non-human-originated input (routing and webhook triggers).",
+    "categories": [
+      "cost",
+      "general"
+    ],
+    "secondary_urls": [
+      "https://releasebot.io/updates/anthropic/claude-code"
+    ],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "caveman",
+    "name": "JuliusBrussee/caveman \u2014 ~88K Stars; Day 7; 65% Output Token Cut via Terse Mode",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "caveman compresses Claude Code session communication into ultra-terse 'caveman speak' \u2014 dropping articles, prepositions, and verbose phrasing while preserving technical accuracy. The result is roughly 65% fewer output tokens per session. ~88K stars on Day 7; JetBrains published an independent benchmark this week confirming the token reduction claim. Install is a one-liner skill add.",
+    "categories": [
+      "cost"
+    ],
+    "install": "npx skills add JuliusBrussee/caveman",
+    "recurring_note": "\u2191 Day 7 \u2014 ~88K stars; JetBrains benchmark confirms 65% token cut"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills \u2014 ~172K Stars; Day 16; /grill-me + /grill-with-docs Now Greenfield Team Standard",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "Matt Pocock's skills repo continues to grow at ~1K stars/day, reaching ~172K. The /grill-me skill (45-min design interrogation before any code is written) and /grill-with-docs (same but seeded from existing documentation) are now widely adopted as pre-coding gatekeepers in greenfield teams. Day 16 in the digest \u2014 the longest-running streak of any single item this cycle.",
+    "categories": [
+      "design",
+      "general"
+    ],
+    "install": "npx skills@latest add mattpocock/skills",
+    "recurring_note": "\u2191 Day 16 \u2014 ~172K stars; /grill-with-docs adopted as team standard"
+  },
+  {
+    "slug": "cc-switch",
+    "name": "cc-switch \u2014 ~118K Stars; Day 7; Desktop GUI for 6 AI Coding Tools; Live Token-Cost Panel",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "hook": "cc-switch is a desktop GUI that lets you switch between Claude Code, Codex CLI, Cursor, Gemini CLI, Copilot CLI, and OpenCode in a single window with live token-cost comparisons across 50+ providers. ~118K stars on Day 7, with v3.17's token-cost comparison panel cited most in community posts this week.",
+    "categories": [
+      "cost",
+      "general"
+    ],
+    "install": "See ccswitch.io",
+    "recurring_note": "\u2191 Day 7 \u2014 ~118K stars; v3.17 live token-cost panel"
+  },
+  {
+    "slug": "claude-mem",
+    "name": "thedotmack/claude-mem \u2014 ~87K Stars; Day 7; /recall Shows Stored Memories Without Injecting Them",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "claude-mem gives Claude Code persistent memory across sessions via a local SQLite store, with the /recall command letting you inspect what's stored without injecting it into the active context. ~87K stars on Day 7. The /forget and /mem-search commands round out the memory management surface.",
+    "categories": [
+      "general"
+    ],
+    "install": "npx claude-mem install",
+    "recurring_note": "\u2191 Day 7 \u2014 ~87K stars"
+  },
+  {
+    "slug": "understand-anything",
+    "name": "Egonex-AI/Understand-Anything \u2014 ~74K Stars; Day 2; Maps Any Codebase to an Interactive Knowledge Graph",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "hook": "Understand Anything is a Claude Code plugin that maps any codebase to an interactive knowledge graph \u2014 file relationships, call graphs, data flow \u2014 without requiring the user to be an engineer. Charlie Automates named it '#1 Claude Code Repo Today' in their most recent video. ~74K stars on Day 2. Point it at any repo, not just Claude Code projects.",
+    "categories": [
+      "design",
+      "general"
+    ],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything",
+    "recurring_note": "\u2191 Day 2 \u2014 ~74K stars; @charlieautomates coverage",
+    "creator_buzz": [
+      "@charlieautomates"
+    ]
+  },
+  {
+    "slug": "claude-code-best-practice",
+    "name": "shanraisshan/claude-code-best-practice \u2014 ~63K Stars; Day 2; 69 Actionable Tips; Input from Boris Cherny",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "69 battle-tested Claude Code best practices aggregated from community contributors, with cited input from Boris Cherny (Claude Code engineer). Covers CLAUDE.md structure, hook patterns, skill authoring, agent orchestration, and cost controls. ~63K stars on Day 2.",
+    "categories": [
+      "general"
+    ],
+    "install": "See README",
+    "recurring_note": "\u2191 Day 2 \u2014 ~63K stars"
+  },
+  {
+    "slug": "awesome-claude-code-subagents",
+    "name": "VoltAgent/awesome-claude-code-subagents \u2014 ~21K Stars; Day 3; 100+ Specialized Subagents Across 10 Categories",
+    "primary_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "hook": "A curated library of 100+ specialized Claude Code subagents \u2014 each is a standalone agent with its own SYSTEM.md, tool permissions, and scope \u2014 spanning security auditors, database architects, documentation writers, and more. ~21K stars on Day 3. Install any subagent with a single `npx skills add` call.",
+    "categories": [
+      "general"
+    ],
+    "install": "git clone https://github.com/VoltAgent/awesome-claude-code-subagents ~/.claude/agents",
+    "recurring_note": "\u2191 Day 3 \u2014 ~21K stars"
+  },
+  {
+    "slug": "statewright",
+    "name": "Statewright \u2014 Day 3; State-Machine Engine That Blocks Disallowed Tools Per State",
+    "primary_url": "https://github.com/statewright/statewright",
+    "hook": "Statewright wraps Claude Code sessions in a finite-state machine: each state declares which tools are allowed, which are blocked, and what conditions trigger transitions. Turns local models from 2/10 to 10/10 reliability by preventing the agent from using the wrong tools at the wrong time \u2014 e.g., blocking file-write tools during a 'read-only analysis' state. Day 3 in the digest.",
+    "categories": [
+      "general"
+    ],
+    "install": "See README at https://docs.statewright.ai/",
+    "recurring_note": "\u2191 Day 3"
+  },
+  {
+    "slug": "learn-claude-code",
+    "name": "shareAI-lab/learn-claude-code \u2014 ~69K Stars; Day 3; 'Bash Is All You Need'; 20-Chapter Harness Curriculum",
+    "primary_url": "https://github.com/shareAI-lab/learn-claude-code",
+    "hook": "A 20-chapter learn-by-doing curriculum built around the thesis that Bash scripting is the most important skill for Claude Code power users. Each chapter ships runnable harness examples. ~69K stars on Day 3 \u2014 unusually strong retention for a curriculum repo.",
+    "categories": [
+      "general"
+    ],
+    "install": "See README",
+    "recurring_note": "\u2191 Day 3 \u2014 ~69K stars"
+  },
+  {
+    "slug": "claude-video",
+    "name": "bradautomates/claude-video \u2014 ~11K Stars; Day 6; /watch Lets Claude Watch Your Screen in Real Time",
+    "primary_url": "https://github.com/bradautomates/claude-video",
+    "hook": "claude-video gives Claude Code the ability to ingest video: feed it screen recordings, demos, or local files up to 4GB. The /watch command streams your screen to Claude in real time for live feedback. v0.2.1 added --fps and --segments flags for controlling capture granularity. ~11K stars on Day 6.",
+    "categories": [
+      "design",
+      "general"
+    ],
+    "install": "/plugin marketplace add bradautomates/claude-video",
+    "recurring_note": "\u2191 Day 6 \u2014 ~11K stars"
+  }
+]
