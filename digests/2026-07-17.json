@@ -1,0 +1,143 @@
+[
+  {
+    "slug": "andrej-karpathy-skills",
+    "name": "multica-ai/andrej-karpathy-skills — 194K Stars; 4 Rules From Karpathy That Stop Claude Breaking Code",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "secondary_urls": ["https://aitrends24.substack.com/p/i-installed-the-144k-star-karpathy"],
+    "hook": "A single CLAUDE.md encoding Andrej Karpathy's four behavioral rules for LLM coding: Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution. The rules block four failure modes Karpathy documented directly — unfounded assumptions, unnecessary abstraction, unintended side-effects, and vague success criteria. 194K stars and still climbing after debuting in January 2026 as one of the fastest-growing AI workflow repos ever. MIT. Available as a plugin or direct CLAUDE.md drop-in.",
+    "categories": ["design", "general"],
+    "install": "/plugin marketplace add forrestchang/andrej-karpathy-skills && /plugin install andrej-karpathy-skills@karpathy-skills"
+  },
+  {
+    "slug": "claude-code-v2-1-212",
+    "name": "Claude Code v2.1.212 — /fork → Background Sessions; /subtask New; MCP Auto-Background at 2 Min; WebSearch Cap",
+    "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
+    "hook": "Released today (July 17). Five headline changes: (1) /fork now copies your conversation into a new background session visible in `claude agents` while you keep working — the old in-session subagent is renamed /subtask; (2) /resume now lets you pick and resume any past session as a background agent; (3) MCP tool calls running longer than 2 minutes automatically move to background, preventing UI lockups; (4) WebSearch is capped at 200 calls/session (tunable) to stop runaway research loops; (5) subagent spawns capped at 200/session with /clear resetting the budget. Also: prompt caching now works behind Bedrock and Vertex gateways, reduced inter-agent token usage, and a worktree symlink security fix.",
+    "categories": ["anthropic", "cost"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "claude-reflect",
+    "name": "Claude Reflect — Anthropic's Usage Dashboard; AI Fluency Score; Quiet Hours; Launched July 9",
+    "primary_url": "https://www.anthropic.com/news/reflect-with-claude",
+    "hook": "Anthropic's built-in usage dashboard, launched July 9 in beta. Tracks topics, task types, and patterns across 1/3/6/12-month windows. Reports your AI Fluency score across four dimensions — Delegation, Description, Discernment, Diligence — and nudges you to set quiet hours or take breaks. Excludes incognito chats and health-tool data. Free for Pro and Max users with memory on; found in Settings on claude.ai and the desktop app. TechCrunch: 'Anthropic's new Claude feature is quietly selling you on AI.'",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "obra/superpowers — 252K Stars; Day 11; /retrospective Asks the Agent What the Design Got Wrong",
+    "primary_url": "https://github.com/obra/superpowers",
+    "hook": "Jesse Vincent's design-first methodology — design refinement → TDD → subagent implementation → code review → worktree coordination — covers Claude Code, Codex, Cursor, Copilot, OpenCode, Kimi Code, Pi, and Antigravity across 14 skills. The /retrospective skill (runs after each completed feature and asks the agent to identify where the design failed to anticipate implementation constraints, writing lessons-learned.md) remains the most-discussed addition this week. The most-starred Claude Code skills framework in the marketplace at 252K+ stars.",
+    "categories": ["design", "skill"],
+    "install": "/plugin install superpowers@claude-plugins-official",
+    "creator_buzz": ["@simonscrapes"],
+    "recurring_note": "↑ Day 11 — 252K+ stars; /retrospective skill drawing continued discussion"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills — ~172K Stars; Day 17; /grill-me + /grill-with-docs Now Greenfield Team Standard",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "~172K stars, Day 17 — the longest-running streak in this digest cycle. The /grill-me + /grill-with-docs two-skill pre-flight ritual (45-minute design interrogation that builds a CONTEXT.md, domain model, and Architecture Decision Record stack before any code runs) has become the de facto standard for greenfield Claude Code projects. Teams sharing their CONTEXT.md templates this week show how the skill adapts across monorepo, microservice, and library architectures.",
+    "categories": ["design", "skill"],
+    "install": "npx skills@latest add mattpocock/skills",
+    "recurring_note": "↑ Day 17 — ~172K stars; longest streak in current digest cycle"
+  },
+  {
+    "slug": "graphify",
+    "name": "Graphify — ~86K Stars; Day 12; Daily Release Cadence; 71.5× Token Savings",
+    "primary_url": "https://github.com/safishamsi/graphify",
+    "secondary_urls": ["https://graphify.net/"],
+    "hook": "Daily release cadence enters Day 12 with tree-sitter AST → local knowledge graph at 71.5× average token reduction (1.7K tokens/query vs 123K naive file reads). PostgreSQL live schema introspection and Streamable HTTP MCP transport for remote deployments were added this week. ~86K stars, YC S26. Charlie Automates covered it as a key tool for codebase understanding paired with Obsidian.",
+    "categories": ["cost", "skill"],
+    "install": "uv tool install graphifyy && graphify install",
+    "creator_buzz": ["@charlieautomates"],
+    "recurring_note": "↑ Day 12 — ~86K stars; daily release cadence continues"
+  },
+  {
+    "slug": "caveman",
+    "name": "JuliusBrussee/caveman — ~88K Stars; Day 8; cavegemma LoRA Now on Ollama Hub",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "secondary_urls": ["https://juliusbrussee.github.io/caveman/", "https://github.com/JuliusBrussee/cavegemma"],
+    "hook": "cavegemma — the Gemma 4 31B LoRA that speaks caveman compression natively, eliminating the ~200-token SKILL.md injection overhead — is now live on Ollama Hub. Teams on local inference can skip the skill entirely. JetBrains' 82-task benchmark showing 8.5% real-world token reduction remains the most credible figure; the headline 65% holds on conversational prompts. ~88K stars.",
+    "categories": ["cost", "skill"],
+    "install": "npx skills add JuliusBrussee/caveman",
+    "recurring_note": "↑ Day 8 — ~88K stars; cavegemma LoRA live on Ollama Hub"
+  },
+  {
+    "slug": "cc-switch",
+    "name": "cc-switch — ~118K Stars; Day 8; Desktop GUI for 6 AI Coding Tools; Live Token-Cost Panel",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "secondary_urls": ["https://ccswitch.io/"],
+    "hook": "cc-switch v3.17's live token-cost comparison panel — switch between Claude Code, Codex, OpenCode, OpenClaw, ZCode, and Hermes Agent and see estimated per-token cost across 50+ provider presets in real time — remains the most cited feature in community posts this week. Especially relevant now that Claude Code v2.1.212's /fork and /subtask split makes multi-session routing cheaper to plan. Charlie Automates covered it July 7. ~118K stars.",
+    "categories": ["cost", "plugin"],
+    "install": "See ccswitch.io",
+    "creator_buzz": ["@charlieautomates"],
+    "recurring_note": "↑ Day 8 — ~118K stars; v3.17 live token-cost panel"
+  },
+  {
+    "slug": "html-video",
+    "name": "nexu-io/html-video — HTML + CSS + Data → Real MP4s; ~4K Stars; Day 2",
+    "primary_url": "https://github.com/nexu-io/html-video",
+    "secondary_urls": ["https://trendshift.io/repositories/45921"],
+    "hook": "html-video converts HTML, CSS, and data into local MP4s using 21 curated templates — no cloud rendering, no per-clip fees, no API key. Sits above Hyperframes as a pluggable render engine layer; Remotion and Motion Canvas are planned. Supports 14 coding-agent CLIs including Claude Code, Cursor, Codex, and Gemini. AI soundtrack via MiniMax is optional. From the same nexu-io org that built open-design and html-anything.",
+    "categories": ["design"],
+    "install": "pnpm install && pnpm -r build",
+    "recurring_note": "↑ Day 2"
+  },
+  {
+    "slug": "html-anything",
+    "name": "nexu-io/html-anything — 7.8K Stars; Agentic HTML Editor; 75 Skills × 9 Surfaces; Zero API Key; Day 2",
+    "primary_url": "https://github.com/nexu-io/html-anything",
+    "hook": "html-anything turns local Claude Code (or any of 8 supported CLIs) into an agentic HTML editor that ships production-ready single-file HTML. 75 composable skills span 9 output surfaces: keynote decks, web prototypes, Hyperframes video scripts, social cards, office documents, and more. Hard-coded anti-AI-slop constraints: CJK-first fonts, 8px baseline grid, ≥4.5 contrast ratio. 7.8K stars; zero API key since it reuses your existing CLI session.",
+    "categories": ["design"],
+    "install": "git clone https://github.com/nexu-io/html-anything && cd html-anything && pnpm install && pnpm -F @html-anything/next dev",
+    "recurring_note": "↑ Day 2 — 7.8K stars"
+  },
+  {
+    "slug": "claude-mem",
+    "name": "thedotmack/claude-mem — ~87K Stars; Day 8; /recall Shows Stored Memories Without Injecting Them",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "claude-mem v13.11's /recall queries the ChromaDB + SQLite memory store and surfaces what the agent knows about a topic without injecting it into the active session context — useful for auditing retention before sensitive tasks. Five session lifecycle hooks continue to capture, AI-compress, and inject semantically relevant context. ~87K stars. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, and OpenCode.",
+    "categories": ["plugin"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 8 — ~87K stars"
+  },
+  {
+    "slug": "claude-video",
+    "name": "bradautomates/claude-video — ~11K Stars; Day 7; /watch Streams Your Screen to Claude in Real Time",
+    "primary_url": "https://github.com/bradautomates/claude-video",
+    "hook": "v0.2.1: /watch now supports local video files up to 4GB (not just YouTube/TikTok/Vimeo URLs), a --fps flag controls keyframe density, and --segments splits long videos into chapters. Developers are using /watch to analyze screen recordings from debugging sessions and ask Claude to identify where they went wrong. ~11K stars growing ~1K/day since July 1 launch.",
+    "categories": ["plugin"],
+    "install": "/plugin marketplace add bradautomates/claude-video",
+    "recurring_note": "↑ Day 7 — ~11K stars"
+  },
+  {
+    "slug": "understand-anything",
+    "name": "Egonex-AI/Understand-Anything — ~74K Stars; Day 3; Maps Any Codebase to an Interactive Knowledge Graph",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "secondary_urls": ["https://www.youtube.com/watch?v=LM14h8RBXuM"],
+    "hook": "A multi-agent pipeline parses any codebase into an interactive knowledge graph — file relationships, call graphs, data flow — queryable in natural language without needing to be an engineer. Charlie Automates named it '#1 Claude Code Repo Today' last week. ~74K stars on Day 3. Works with Claude Code, Codex, Cursor, Copilot, and Gemini CLI. v2.7.3.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything",
+    "creator_buzz": ["@charlieautomates"],
+    "recurring_note": "↑ Day 3 — ~74K stars"
+  },
+  {
+    "slug": "claude-code-best-practice",
+    "name": "shanraisshan/claude-code-best-practice — ~63K Stars; Day 3; 69 Tips; Input From Boris Cherny",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "69 battle-tested Claude Code best practices across 11 categories — CLAUDE.md structure, hook patterns, skill authoring, agent orchestration, cost controls — aggregated with cited input from Boris Cherny (Claude Code engineer). Subtitle: 'from vibe coding to agentic engineering.' Updated July 15. ~63K stars on Day 3.",
+    "categories": ["general"],
+    "install": "See README",
+    "recurring_note": "↑ Day 3 — ~63K stars"
+  },
+  {
+    "slug": "awesome-claude-code-subagents",
+    "name": "VoltAgent/awesome-claude-code-subagents — ~21K Stars; Day 4; 100+ Specialized Subagents Across 10 Categories",
+    "primary_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "hook": "100+ drop-in Claude Code subagent definitions across 10 categories: core development, language specialists (TypeScript wizard, Python architect, Go craftsman), infra, quality & security, data & AI, developer experience, specialized domains, business/product, meta-orchestration, and research. Each subagent runs in its own isolated context window with domain-specific instructions and granular tool permissions. ~21K stars. One `git clone` installs all agents.",
+    "categories": ["skill"],
+    "install": "git clone https://github.com/VoltAgent/awesome-claude-code-subagents ~/.claude/agents",
+    "recurring_note": "↑ Day 4 — ~21K stars"
+  }
+]
