@@ -1,0 +1,131 @@
+[
+  {
+    "slug": "gstack",
+    "name": "garrytan/gstack — 123K Stars; Garry Tan's 23-Tool Claude Code Setup; CEO + Designer + QA + 20 More",
+    "primary_url": "https://github.com/garrytan/gstack",
+    "hook": "Garry Tan (YC President & CEO) open-sourced the exact Claude Code skill pack he uses to ship: 23 opinionated tools covering CEO review (/plan-ceo-review), design consultation (/design-consultation), security (/cso), QA (/qa), monitoring (/canary), and 18 more. He claims 3 production services and 40+ features shipped in 60 days while running YC full-time — directly invoking Andrej Karpathy's line about not writing code since December. Solo founders and first-time Claude Code users are the stated audience. MIT, 123K stars.",
+    "categories": ["design", "skill"],
+    "install": "git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup"
+  },
+  {
+    "slug": "ui-ux-pro-max-skill",
+    "name": "nextlevelbuilder/ui-ux-pro-max-skill — 108K Stars; 84 UI Styles × 192 Product Types × 22 Tech Stacks",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "hook": "A design intelligence layer that runs when you ask for any UI work: analyzes requirements, selects from 84+ UI styles and 192+ product-type color palettes, pairs Google Fonts from 74 curated combos, applies 98 UX guidelines and 161 industry-specific reasoning rules, and adapts to 22 tech stacks (React, Vue, Tailwind, SwiftUI, Flutter, and more). v2.11.0 (July 2026). 72 contributors. Works with Claude Code, Cursor, Windsurf, and 15+ other AI assistants. 108K stars, 11.5K forks.",
+    "categories": ["design", "skill"],
+    "install": "npm install -g ui-ux-pro-max-cli && uipro init --ai claude"
+  },
+  {
+    "slug": "ponytail",
+    "name": "DietrichGebert/ponytail — 86.5K Stars; ~54% Code Reduction, ~20% Cost Savings; 'Laziest Senior Dev in the Room'",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "hook": "A plugin that makes AI agents think like a pragmatic senior engineer: before writing a line, it runs a decision ladder — eliminate the need → reuse existing code → stdlib → native platform features → already-installed deps → one-liner → only then a minimal implementation. Real-world testing shows ~54% fewer lines, ~20% cost reduction, ~27% faster execution, 100% safety maintained. Available on 20+ agent platforms with /ponytail, /ponytail-review, and /ponytail-audit commands. 86.5K stars.",
+    "categories": ["cost"],
+    "install": "/plugin marketplace add DietrichGebert/ponytail"
+  },
+  {
+    "slug": "ecc",
+    "name": "affaan-m/ECC — 211.9K Stars; 67 Agents + 278 Skills + 94 Commands for Claude Code",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "ECC (Agent Harness Performance Optimization) bundles 67+ specialist agents, 278+ skill definitions, 94+ legacy command shims, and configurable lifecycle hooks for Claude Code, Cursor, OpenCode, and Codex across 12 language ecosystems. Ships code review, TDD, security scanning (via the same author's AgentShield), documentation generation, CI/CD optimization, and a pattern-extraction system that learns from your own development history. MIT, one developer shipping weekly. 211.9K stars, 32.5K forks.",
+    "categories": ["skill", "general"],
+    "install": "/plugin marketplace add https://github.com/affaan-m/ECC"
+  },
+  {
+    "slug": "last30days-skill",
+    "name": "mvanhorn/last30days-skill — 52.9K Stars; #1 GitHub Trending; Researches Any Topic Across Reddit, X, HN, YouTube & More",
+    "primary_url": "https://github.com/mvanhorn/last30days-skill",
+    "hook": "The #1 trending repository on GitHub this week. Install as a Claude Code plugin and ask it anything — it fans out searches across Reddit, X, YouTube (full transcripts), TikTok, HN, Polymarket, GitHub, and arXiv, ranks results by actual engagement rather than editorial curation, merges duplicate stories, and delivers a grounded brief with citations. 'Discovery mode' (ask 'what's trending?') returns ranked topics instead of requiring a seed query. JSON export for agent pipelines. v3.16.0 (July 16). 175+ merged PRs from 50+ contributors. 52.9K stars.",
+    "categories": ["skill", "mcp"],
+    "install": "/plugin marketplace add mvanhorn/last30days-skill"
+  },
+  {
+    "slug": "addyosmani-agent-skills",
+    "name": "addyosmani/agent-skills — 79.4K Stars; Addy Osmani's Production Engineering Lifecycle in 8 Commands",
+    "primary_url": "https://github.com/addyosmani/agent-skills",
+    "hook": "Addy Osmani (Google Chrome, Lighthouse, Core Web Vitals) encodes senior engineering discipline into 8 slash commands that map the full development lifecycle: /spec (requirements), /plan (task breakdown), /build (incremental implementation), /test (verification), /review (quality gates), /webperf (performance audit), /code-simplify (complexity reduction), /ship (safe deploy). 24 total skills across 6 phases. Works with Claude Code, Cursor, Codex, Copilot, Cline, and 70+ other AI tools. MIT, 79.4K stars, 8.5K forks.",
+    "categories": ["skill", "general"],
+    "install": "npx skills add addyosmani/agent-skills"
+  },
+  {
+    "slug": "claude-code-v2-1-215",
+    "name": "Claude Code v2.1.215 + v2.1.214 — /verify & /code-review Now Manual-Only; EndConversation Tool; Permission Hardening",
+    "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.215",
+    "hook": "v2.1.215 (July 19) changes one behavior: Claude no longer auto-runs /verify or /code-review skills — you must invoke them explicitly, ending silent automatic quality checks. v2.1.214 (July 18) added the EndConversation tool (the first built-in safety valve for abusive sessions/jailbreak attempts), fixed dir/** allow rules that incorrectly auto-approved nested writes, patched a Windows PowerShell 5.1 permission bypass, added periodic progress heartbeats for long-running calls, and made idle background sessions deletable via `claude rm`.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "scientific-agent-skills",
+    "name": "K-Dense-AI/scientific-agent-skills — 31.3K Stars; 148 Scientific Skills; 100+ Databases; 160K Scientists",
+    "primary_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "hook": "A library of 148 production-ready skills that turn Claude Code (or any Agent Skills-compatible tool) into an AI researcher: covers biology, chemistry, medicine, and drug discovery with access to 100+ scientific databases (PubChem, ChEMBL, UniProt, ClinicalTrials.gov), 70+ optimized Python packages (RDKit, Scanpy, PyTorch Lightning), and 9 lab platform integrations (Benchling, DNAnexus, Opentrons). Security scanning via Cisco AI Defense. 160K+ scientists using it worldwide. v2.53.0 (June 2026), MIT, 31.3K stars.",
+    "categories": ["skill"],
+    "install": "npx skills add K-Dense-AI/scientific-agent-skills"
+  },
+  {
+    "slug": "anthropic-code-migration",
+    "name": "How Anthropic Runs Large-Scale Code Migrations — 1M-Line Zig→Rust in <2 Weeks; Day 3",
+    "primary_url": "https://claude.com/blog/ai-code-migration",
+    "hook": "Anthropic's July 16 blog lays out the migration playbook for work that would take months manually. Jarred Sumner (Bun co-founder, now MTS at Anthropic) migrated 1 million lines of Bun from Zig to Rust in under two weeks — 100% of existing tests passing before merge. Mike Krieger (Anthropic Labs) converted a Python codebase to 165K lines of TypeScript over one weekend using hundreds of Claude Fable 5 agents, eight phase gates, three adversarial review rounds, and an output-diff parity check. The clearest published evidence of Claude Code at production scale.",
+    "categories": ["anthropic", "general"],
+    "recurring_note": "↑ Day 3 — most-shared Anthropic engineering post this week"
+  },
+  {
+    "slug": "piebald-ai-system-prompts",
+    "name": "Piebald-AI/claude-code-system-prompts — 11.9K Stars; Day 3; Updated for v2.1.215 Behavioral Change",
+    "primary_url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+    "secondary_urls": ["https://github.com/Piebald-AI/tweakcc"],
+    "hook": "Extracts and diffs every string from Claude Code's compiled binary — system prompts, 27 tool descriptions, Plan/Explore/Task subagent prompts, security utilities — across 240+ versions since v2.0.14. Updated same-day for v2.1.215 to document the behavioral change: Claude no longer auto-runs /verify or /code-review skills. Also captures v2.1.214's new EndConversation tool prompt text. Pairs with the same team's tweakcc (lets you override exactly what you see here). 11.9K stars.",
+    "categories": ["general"],
+    "install": "See README",
+    "recurring_note": "↑ Day 3 — updated same-day for v2.1.215 no-auto-run change"
+  },
+  {
+    "slug": "understand-anything",
+    "name": "Egonex-AI/Understand-Anything — ~75K Stars; Day 6; Named '#1 Claude Code Repo Today' by @charlieautomates",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "secondary_urls": ["https://www.youtube.com/watch?v=LM14h8RBXuM"],
+    "hook": "A multi-agent pipeline that parses any codebase into an interactive knowledge graph — file relationships, call graphs, data flow — queryable in natural language. Charlie Automates named it '#1 Claude Code Repo Today' in a dedicated video last week, driving a sustained traffic spike. Compatible with Claude Code, Codex, Cursor, Copilot, and Gemini CLI. v2.7.3. ~75K stars.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything",
+    "creator_buzz": ["@charlieautomates"],
+    "recurring_note": "↑ Day 6 — ~75K stars; @charlieautomates video still driving traffic"
+  },
+  {
+    "slug": "andrej-karpathy-skills",
+    "name": "multica-ai/andrej-karpathy-skills — 194K+ Stars; Day 4; 4 Rules That Stop Claude Breaking Code",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "secondary_urls": ["https://aitrends24.substack.com/p/i-installed-the-144k-star-karpathy"],
+    "hook": "A CLAUDE.md encoding Andrej Karpathy's four rules for LLM coding: Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution. Each rule blocks a specific failure mode Karpathy documented — unfounded assumptions, unnecessary abstraction, unintended side-effects, vague success criteria. Garry Tan's gstack (also in today's digest) invokes Karpathy's stance on AI coding directly, signaling this framework is increasingly mainstream. 194K+ stars, MIT. Drop-in CLAUDE.md or installable plugin.",
+    "categories": ["design", "general"],
+    "install": "/plugin marketplace add forrestchang/andrej-karpathy-skills && /plugin install andrej-karpathy-skills@karpathy-skills",
+    "recurring_note": "↑ Day 4 — 194K+ stars; cross-referenced by Garry Tan's gstack this week"
+  },
+  {
+    "slug": "html-anything",
+    "name": "nexu-io/html-anything — 7.8K Stars; Day 5; 75 Skills × 9 Output Surfaces; Zero API Key",
+    "primary_url": "https://github.com/nexu-io/html-anything",
+    "hook": "An agentic HTML editor built on your existing Claude Code session — no additional API keys. 75 composable skills span 9 output surfaces: keynote decks, web prototypes, Hyperframes video scripts, social cards, office documents, and more. Hard-coded anti-AI-slop constraints: CJK-first fonts, 8px baseline grid, minimum 4.5:1 contrast ratio. 7.8K stars.",
+    "categories": ["design"],
+    "install": "git clone https://github.com/nexu-io/html-anything && cd html-anything && pnpm install && pnpm -F @html-anything/next dev",
+    "recurring_note": "↑ Day 5 — 7.8K stars; anti-slop constraints driving sustained discussion"
+  },
+  {
+    "slug": "claude-reflect",
+    "name": "Claude Reflect — Anthropic's AI Usage Dashboard; Fluency Score; Quiet Hours; Day 4",
+    "primary_url": "https://www.anthropic.com/news/reflect-with-claude",
+    "hook": "Anthropic's built-in usage dashboard (beta, July 9). Tracks topics, task types, and patterns across 1/3/6/12-month windows. Reports an AI Fluency score across four dimensions: Delegation, Description, Discernment, Diligence. Nudges you toward quiet hours or breaks. Excludes incognito chats and health-tool data. Free for Pro and Max users with memory enabled; found in Settings on claude.ai and the desktop app. TechCrunch called it 'quietly selling you on AI.'",
+    "categories": ["anthropic"],
+    "recurring_note": "↑ Day 4 — community debate growing over Fluency score methodology"
+  },
+  {
+    "slug": "claude-code-best-practice",
+    "name": "shanraisshan/claude-code-best-practice — ~63K Stars; Day 6; 69 Tips; Input From Boris Cherny",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "69 battle-tested Claude Code best practices across 11 categories — CLAUDE.md structure, hook patterns, skill authoring, agent orchestration, cost controls — aggregated with cited input from Boris Cherny (Claude Code engineer). Subtitle: 'from vibe coding to agentic engineering.' Updated July 15. ~63K stars.",
+    "categories": ["general"],
+    "install": "See README",
+    "recurring_note": "↑ Day 6 — ~63K stars; widely cited by teams adopting Claude Code"
+  }
+]
