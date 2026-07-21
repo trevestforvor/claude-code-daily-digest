@@ -1,0 +1,129 @@
+[
+  {
+    "slug": "planning-with-files",
+    "name": "OthmanAdi/planning-with-files — 25.6K Stars; Manus-Style Crash-Proof Planning; Survives /clear and Context Loss",
+    "primary_url": "https://github.com/OthmanAdi/planning-with-files",
+    "hook": "Implements the planning pattern behind Manus AI's $2B acquisition as three on-disk markdown files (task_plan.md, findings.md, progress.md) that agents re-read each turn — surviving /clear, context resets, and crashes without forgetting the goal. A SHA-256 attestation prevents plan drift between turns; lifecycle hooks re-inject the plan before every tool call. 96.7% pass rate on structured-planning assertions (v2.21.0 benchmark), 3/3 blind A/B wins. 25.6K stars, 2.2K forks, 79 releases; works with Claude Code, Cursor, Codex, Kiro, and 60+ Agent Skills hosts.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add OthmanAdi/planning-with-files --skill planning-with-files -g"
+  },
+  {
+    "slug": "gstack",
+    "name": "garrytan/gstack — 123K Stars; Day 2; Garry Tan's 23-Tool Claude Code Setup; CEO + Designer + QA + 20 More",
+    "primary_url": "https://github.com/garrytan/gstack",
+    "hook": "Garry Tan (YC President & CEO) open-sourced the exact Claude Code skill pack he uses to ship: 23 opinionated tools covering CEO review (/plan-ceo-review), design consultation (/design-consultation), security (/cso), QA (/qa), monitoring (/canary), and 18 more. He claims 3 production services and 40+ features shipped in 60 days while running YC full-time — directly invoking Andrej Karpathy's line about not writing code since December. Solo founders and first-time Claude Code users are the stated audience. MIT, 123K stars.",
+    "categories": ["design", "skill"],
+    "install": "git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup",
+    "recurring_note": "↑ Day 2 — 123K stars; top-shared Claude Code skills pack this week"
+  },
+  {
+    "slug": "ui-ux-pro-max-skill",
+    "name": "nextlevelbuilder/ui-ux-pro-max-skill — 108K Stars; Day 2; 84 UI Styles × 192 Product Types × 22 Tech Stacks",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "hook": "A design intelligence layer that activates on any UI request: selects from 84+ UI styles and 192+ product-type color palettes, pairs Google Fonts from 74 curated combos, applies 98 UX guidelines and 161 industry-specific reasoning rules, and adapts to 22 tech stacks (React, Vue, Tailwind, SwiftUI, Flutter, and more). v2.11.0 (July 2026). 72 contributors. Works with Claude Code, Cursor, Windsurf, and 15+ other AI assistants. 108K stars, 11.5K forks.",
+    "categories": ["design", "skill"],
+    "install": "npm install -g ui-ux-pro-max-cli && uipro init --ai claude",
+    "recurring_note": "↑ Day 2 — 108K stars; top design skill by star count"
+  },
+  {
+    "slug": "codebase-memory-mcp",
+    "name": "DeusData/codebase-memory-mcp — 33.6K Stars; 99.2% Fewer Tokens on Structural Queries; 158 Languages",
+    "primary_url": "https://github.com/DeusData/codebase-memory-mcp",
+    "hook": "Indexes any codebase into a persistent SQLite knowledge graph using 158 vendored tree-sitter grammars compiled into a single binary — the Linux kernel (28M LOC, 75K files) in 3 minutes, average repo in milliseconds. Five structural queries cost 3,400 tokens via codebase-memory-mcp vs. 412,000 via file-by-file grep: a 99.2% reduction. 15 MCP tools expose search, path tracing, dead-code detection, and architecture analysis. v0.9.0 (July 8) added hybrid LSP semantic resolution for 12 languages. 33.6K stars; auto-configures Claude Code, Cursor, and 41 other clients.",
+    "categories": ["cost", "mcp"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/DeusData/codebase-memory-mcp/main/install.sh | bash"
+  },
+  {
+    "slug": "headroom",
+    "name": "headroomlabs-ai/headroom — 60.9K Stars; 20–95% Token Reduction Across All Context Types; MCP + Proxy + SDK",
+    "primary_url": "https://github.com/headroomlabs-ai/headroom",
+    "hook": "Compresses every type of AI input context — tool outputs, logs, diffs, JSON, RAG chunks, and agent traces — before they reach the LLM, with content-aware routing to the right compressor (SmartCrusher for JSON, AST-aware CodeCompressor for code). Benchmarked at 92% reduction on code search (17,765→1,408 tokens) and SRE incident logs (65,694→5,118 tokens), with unchanged accuracy on GSM8K, TruthfulQA, SQuAD v2, and BFCL. Ships as Python library, TypeScript SDK, MCP server, and reverse proxy; includes RTK for Bash-output filtering and a Claude Code status-line plugin. 60.9K stars, Apache 2.0.",
+    "categories": ["cost", "mcp"],
+    "install": "pip install \"headroom-ai[all]\""
+  },
+  {
+    "slug": "ponytail",
+    "name": "DietrichGebert/ponytail — 87.1K Stars; Day 2; ~54% Code Reduction, ~20% Cost Savings; 'Laziest Senior Dev in the Room'",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "hook": "A plugin that makes AI agents think like a pragmatic senior engineer: before writing a line, it runs a decision ladder — eliminate the need → reuse existing code → stdlib → native platform features → already-installed deps → one-liner → only then a minimal implementation. Real-world testing shows ~54% fewer lines, ~20% cost reduction, ~27% faster execution, 100% safety maintained. Available on 20+ agent platforms with /ponytail, /ponytail-review, and /ponytail-audit commands. 87.1K stars.",
+    "categories": ["cost"],
+    "install": "/plugin marketplace add DietrichGebert/ponytail",
+    "recurring_note": "↑ Day 2 — 87.1K stars; up from 86.5K yesterday"
+  },
+  {
+    "slug": "rtk",
+    "name": "rtk-ai/rtk — 72.3K Stars; Rust Token Killer; 60–90% Savings on CLI Commands; JetBrains Benchmark Controversy",
+    "primary_url": "https://github.com/rtk-ai/rtk",
+    "hook": "A single Rust binary (zero dependencies) that hooks transparently into Claude Code's Bash execution layer and compresses command output before it reaches the LLM: 91.8% reduction on cargo test, 80.8% on git status, 138M tokens saved over 15,720 real commands per one developer's 2-week report. 100+ supported commands across git, cargo, docker, AWS, and test runners. A July 2026 JetBrains benchmark complicated the picture: +7.6% more expensive at low reasoning effort (p=0.004), ±0% at high effort — the controversy is live. 72.3K stars, Apache 2.0. install: brew install rtk.",
+    "categories": ["cost"],
+    "install": "brew install rtk"
+  },
+  {
+    "slug": "career-ops",
+    "name": "santifer/career-ops — 60.8K Stars; #1 GitHub Trending; AI Job Search Command Center as a Claude Code Skill",
+    "primary_url": "https://github.com/santifer/career-ops",
+    "hook": "#1 GitHub trending this week, with 400+ stars/day at peak. An AI job search system implemented as a Claude Code skill (also runs on Codex, Gemini CLI, OpenCode): scans 150+ job portals, scores listings A-F across 5 dimensions against your CV, generates ATS-optimized PDFs per role, drafts outreach to hiring managers, and accumulates a STAR+Reflection interview story bank. Built by someone who used it to evaluate 740 listings and land a Head of Applied AI role — then open-sourced it under MIT. Never auto-submits; human-in-the-loop throughout. 60.8K stars, 12K forks.",
+    "categories": ["skill", "general"],
+    "install": "npx @santifer/career-ops init"
+  },
+  {
+    "slug": "ecc",
+    "name": "affaan-m/ECC — 232K Stars; Day 2; 67 Agents + 278 Skills + 94 Commands for Claude Code",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "ECC (Agent Harness Performance Optimization) bundles 67+ specialist agents, 278+ skill definitions, 94+ legacy command shims, and configurable lifecycle hooks for Claude Code, Cursor, OpenCode, and Codex across 12 language ecosystems. Ships code review, TDD, security scanning (via the same author's AgentShield), documentation generation, CI/CD optimization, and a pattern-extraction system that learns from your own development history. MIT, one developer shipping weekly. 232K stars, 32.5K forks.",
+    "categories": ["skill", "general"],
+    "install": "/plugin marketplace add https://github.com/affaan-m/ECC",
+    "recurring_note": "↑ Day 2 — 232K stars; up 20K from 211.9K in yesterday's digest"
+  },
+  {
+    "slug": "last30days-skill",
+    "name": "mvanhorn/last30days-skill — 52.9K Stars; Day 2; #1 GitHub Trending Last Week; Researches Any Topic Across 8 Platforms",
+    "primary_url": "https://github.com/mvanhorn/last30days-skill",
+    "hook": "Install as a Claude Code plugin and ask it anything — it fans out searches across Reddit, X, YouTube (full transcripts), TikTok, HN, Polymarket, GitHub, and arXiv, ranks results by actual engagement rather than editorial curation, merges duplicate stories, and delivers a grounded brief with citations. 'Discovery mode' (ask 'what's trending?') returns ranked topics instead of requiring a seed query. JSON export for agent pipelines. v3.16.0 (July 16). 175+ merged PRs from 50+ contributors. 52.9K stars.",
+    "categories": ["skill", "mcp"],
+    "install": "/plugin marketplace add mvanhorn/last30days-skill",
+    "recurring_note": "↑ Day 2 — 52.9K stars; now a native Codex plugin as well"
+  },
+  {
+    "slug": "addyosmani-agent-skills",
+    "name": "addyosmani/agent-skills — 79.6K Stars; Day 2; Addy Osmani's Production Engineering Lifecycle in 8 Commands",
+    "primary_url": "https://github.com/addyosmani/agent-skills",
+    "hook": "Addy Osmani (Google Chrome, Lighthouse, Core Web Vitals) encodes senior engineering discipline into 8 slash commands that map the full development lifecycle: /spec (requirements), /plan (task breakdown), /build (incremental implementation), /test (verification), /review (quality gates), /webperf (performance audit), /code-simplify (complexity reduction), /ship (safe deploy). 24 total skills across 6 phases. Works with Claude Code, Cursor, Codex, Copilot, Cline, and 70+ other AI tools. MIT, 79.6K stars, 8.5K forks.",
+    "categories": ["skill", "general"],
+    "install": "npx skills add addyosmani/agent-skills",
+    "recurring_note": "↑ Day 2 — 79.6K stars"
+  },
+  {
+    "slug": "claude-code-v2-1-216",
+    "name": "Claude Code v2.1.216 — Bash Redirect + Unicode Bypass Sealed; Quadratic Slowdown Fixed; 40+ Bugs",
+    "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.216",
+    "hook": "v2.1.216 (July 20) closes two permission-bypass classes in auto mode that had been exploitable since auto mode launched July 10: compound Bash statements with redirects and invisible Unicode characters in PowerShell inputs. Also fixes a quadratic slowdown where message normalization cost grew with each turn, causing multi-second stalls in long sessions; worktree-isolated subagents now correctly run git commands against their own worktree instead of the main repo. 40+ additional bugs fixed across terminal rendering, MCP servers, and UI. TechTimes: 'Claude Code Seals Bash and Unicode Bypass Gaps in Agentic Permission Layer.'",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "claude-tag-fireside",
+    "name": "Cat Wu + Thariq Shihipar Fireside — Claude Tag Lands 65% of PRs for the Claude Code Team Itself",
+    "primary_url": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/",
+    "secondary_urls": ["https://www.youtube.com/watch?v=uU5Gv2h8-9g"],
+    "hook": "Cat Wu (PM) and Thariq Shihipar (engineer) from Anthropic's Claude Code team appeared at the AI Engineer World's Fair today (July 21) and disclosed that Claude Tag — Anthropic's multiplayer Slack AI teammate launched June 23 — now writes 65% of the Claude Code team's own product engineering PRs, including most of the code that built Claude Tag itself. They also described how Anthropic ships features to employees first and only rolls out what shows retention with that internal cohort. Coverage on simonwillison.net; video on YouTube.",
+    "categories": ["anthropic", "general"]
+  },
+  {
+    "slug": "jacobian-conjecture",
+    "name": "Levent Alpoge Used Claude Fable 5 to Disprove the 87-Year-Old Jacobian Conjecture",
+    "primary_url": "https://officechai.com/ai/an-anthropic-researcher-says-fable-just-helped-him-disprove-the-85-year-old-jacobian-conjecture/",
+    "hook": "On July 20, mathematician Levent Alpoge (Harvard / Anthropic) posted an explicit polynomial map C³→C³ with Jacobian determinant −2 that is not invertible — a counterexample to the Jacobian conjecture (Keller, 1939), one of algebraic geometry's central open problems for 87 years. Alpoge credited Claude Fable 5 for the key construction, done during the World Cup final. A verification preprint was filed the same day; independently checked but not yet journal-published. The highest-profile scientific result attributed directly to a Claude model.",
+    "categories": ["anthropic", "general"]
+  },
+  {
+    "slug": "andrej-karpathy-skills",
+    "name": "multica-ai/andrej-karpathy-skills — 194K+ Stars; Day 5; 4 Rules That Stop Claude Breaking Code",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "secondary_urls": ["https://aitrends24.substack.com/p/i-installed-the-144k-star-karpathy"],
+    "hook": "A CLAUDE.md encoding Andrej Karpathy's four rules for LLM coding: Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution. Each rule blocks a specific failure mode Karpathy documented — unfounded assumptions, unnecessary abstraction, unintended side-effects, vague success criteria. Garry Tan's gstack (also in today's digest) invokes Karpathy's stance on AI coding directly, signaling this framework is increasingly mainstream. 194K+ stars, MIT. Drop-in CLAUDE.md or installable plugin.",
+    "categories": ["design", "general"],
+    "install": "/plugin marketplace add forrestchang/andrej-karpathy-skills && /plugin install andrej-karpathy-skills@karpathy-skills",
+    "recurring_note": "↑ Day 5 — 194K+ stars; cross-referenced by gstack (also in today's digest)"
+  }
+]
