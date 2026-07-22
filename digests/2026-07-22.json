@@ -1,0 +1,131 @@
+[
+  {
+    "slug": "andrej-karpathy-skills",
+    "name": "multica-ai/andrej-karpathy-skills — 194K+ Stars; Day 6; 4 Rules That Stop Claude Breaking Code",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "secondary_urls": [
+      "https://aitrends24.substack.com/p/i-installed-the-144k-star-karpathy"
+    ],
+    "hook": "A CLAUDE.md encoding Andrej Karpathy's four rules for LLM coding: Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution. Each rule blocks a specific failure mode Karpathy documented — unfounded assumptions, unnecessary abstraction, unintended side-effects, vague success criteria. 194K+ stars, MIT; drop-in CLAUDE.md or installable plugin that works with Claude Code, Cursor, Codex, and 60+ other agents.",
+    "categories": ["design", "general"],
+    "install": "/plugin marketplace add forrestchang/andrej-karpathy-skills && /plugin install andrej-karpathy-skills@karpathy-skills",
+    "recurring_note": "↑ Day 6 — 194K+ stars; most-cited CLAUDE.md framework this week"
+  },
+  {
+    "slug": "browser-act-skills",
+    "name": "browser-act/skills — 4.6K Stars; 93% Token Reduction; Anti-Bot Browser Automation for AI Agents",
+    "primary_url": "https://github.com/browser-act/skills",
+    "hook": "Browser automation CLI for AI agents that bypasses anti-bot walls (Cloudflare, DataDome) with built-in stealth fingerprinting, CAPTCHA solving, and human-in-the-loop handoff when stuck. Claims 93% token reduction vs raw HTML scraping and 90% fewer error-retry loops; three browser modes (Chrome, stealth privacy, stealth fixed identity) run concurrently with isolated multi-account sessions. MIT, 4.6K stars; works with Claude Code, Cursor, OpenCode, Codex, and Gemini CLI.",
+    "categories": ["cost", "mcp"],
+    "install": "npx skills add https://github.com/browser-act/skills --skill browser-act"
+  },
+  {
+    "slug": "kpab-claude-fable5-skills",
+    "name": "kpab/claude-fable-5-skills — 10 Fable 5-Native Skills; /grill-codex Offloads Heavy Build to Codex",
+    "primary_url": "https://github.com/kpab/claude-fable-5-skills",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=KBH8P0z2AL8",
+      "https://www.chaseai.io/blog/combine-fable-5-and-soul-5-6-skill"
+    ],
+    "hook": "10 Fable 5-native skills that restructure the cost curve: the key `/grill-codex` command runs a 4-stage interview-plan-build-review where expensive Fable tokens handle planning and review while Codex does the execution. Chase AI (109K subs) demoed a full trip-planner web app at ~130K Fable tokens — compared to ~850K for an all-Fable build. Also covers effort calibration, scope control, and autonomous continuation patterns designed for Fable's extended reasoning.",
+    "categories": ["cost", "design"],
+    "install": "/plugin marketplace add kpab/claude-fable-5-skills",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "fable-5-permanent-limits",
+    "name": "Fable 5 Now Permanent in Max/Team Premium + Claude Code Limits Extended to August 19",
+    "primary_url": "https://enterprisedna.co/resources/news/anthropic-fable-5-permanent-max-team-premium-july-20-2026/",
+    "secondary_urls": [
+      "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/"
+    ],
+    "hook": "Starting July 20, Claude Fable 5 is permanently included in all Max and Team Premium plans at 50% of limits — no usage credits required, no expiry. Simultaneously, Claude Code's 50% weekly limits boost is now extended through August 19 for all Pro, Max, Team, and seat-based Enterprise users. The Fable capacity unlock is backed by Anthropic's SpaceX Colossus 1 deal (300MW, 220K+ NVIDIA GPUs), ending four weeks of access instability since the June Fable launch.",
+    "categories": ["anthropic", "cost"]
+  },
+  {
+    "slug": "claude-code-v2-1-217",
+    "name": "Claude Code v2.1.217 — Subagent Concurrency Cap; Nested Subagents Off by Default; Emoji Shortcuts",
+    "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.217",
+    "hook": "v2.1.217 (July 21) adds two new subagent safety rails: a max concurrent subagents cap (default 20, tune via `CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS`) and nested subagents disabled by default (opt in with `CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH`). Also ships emoji shortcode autocomplete (`:heart:` → ❤️) and fixes a critical startup bug where SKILL.md paths with many brace groups were OOM-killing or stalling the CLI, plus Windows auto-update failures that left claude.exe missing.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "bun-rust-claude-code",
+    "name": "Bun Rewritten in Rust by 64 Claude Instances in 11 Days — Claude Code Now 10% Faster on Linux",
+    "primary_url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
+    "secondary_urls": [
+      "https://techscoop.substack.com/p/how-claude-rewrote-bun-in-rust-in"
+    ],
+    "hook": "Bun's founder Jarred Sumner ported 960K+ lines of Zig to Rust in 11 days using 64 parallel Claude instances running pre-release Fable 5 (~$165K API spend), motivated by a Zig memory leak that was hitting Claude Code — Bun's largest customer. Claude Code adopted the Rust port in v2.1.181 (June 17); Simon Willison's July 19 post confirms 10% faster startup on Linux. A documented example of Anthropic dogfooding Claude Code at scale for a production-critical migration.",
+    "categories": ["anthropic", "general"]
+  },
+  {
+    "slug": "agentic-awesome-skills",
+    "name": "sickn33/agentic-awesome-skills — 43.7K Stars; 1,987+ Skills; AAS Core Local Control Plane",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "hook": "AAS Core is a local, agent-first catalog system for 1,987+ agentic skills — not an auto-installer but an interactive control plane where the agent browses, selects, validates, and previews a skill stack before applying. Includes a local MCP server, a browser-based Workbench, role-based bundles, and domain plugins for web, security, DevOps, and data analytics. V15.3.0; 43.7K stars, 6.5K forks; works with Claude Code, Cursor, Codex, Gemini CLI, and 8+ other agents.",
+    "categories": ["general", "mcp"],
+    "install": "npx agentic-awesome-skills"
+  },
+  {
+    "slug": "aris",
+    "name": "wanshuiyin/Auto-claude-code-research-in-sleep — 13.7K Stars; 80 Skills for Autonomous ML Research While You Sleep",
+    "primary_url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+    "hook": "ARIS is 80 composable SKILL.md files that set Claude Code loose on ML research overnight: it reads papers, generates ideas, runs experiments, and rewrites manuscripts while GPT-5.6-Sol (via Codex MCP) acts as an adversarial reviewer, forcing the two models to debate rather than self-agree. Framework-free — every skill is plain Markdown readable by Claude Code, Codex CLI, Cursor, or any other agent; v0.4.22 (July 2026) added group-based installation so you pick just the workflows you need. 13.7K stars, 1.2K forks, MIT.",
+    "categories": ["general", "cost"],
+    "install": "See README"
+  },
+  {
+    "slug": "generative-media-skills",
+    "name": "SamurAIGPT/Generative-Media-Skills — 3.9K Stars; 41 Multi-Modal Recipes: Video, Image, Audio via muapi.ai",
+    "primary_url": "https://github.com/SamurAIGPT/Generative-Media-Skills",
+    "hook": "41 muapi.ai-backed workflow recipes for multi-modal content: 16 video skills (Seedance 2 cinematic, product ads, UGC, talking baby, drone-style), 21 image and design skills (Logo Creator, brand kit, UI mockups, interior design, Amazon listings), and 5 social media workflows. Each skill is a bash script Claude Code orchestrates by natural language — no direct API key wrangling. 3.9K stars; also works as Cursor skills or an MCP server for compatible agents.",
+    "categories": ["general"],
+    "install": "npx skills add SamurAIGPT/Generative-Media-Skills --all"
+  },
+  {
+    "slug": "epic-unreal-skills",
+    "name": "EpicGames/unreal-engine-skills-for-claude-code-plugin — Official Epic; 30+ Toolsets Inside Unreal Editor",
+    "primary_url": "https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin",
+    "hook": "Epic Games' official Claude Code plugin connects the Unreal Editor to Claude via MCP, exposing hundreds of tools across 30+ toolsets: actors, blueprints, materials, Niagara VFX, Control Rigs, Sequencer, State Trees, Gameplay Ability System, and automation testing. Lets Claude spawn actors, author materials, build cutscenes, and run GAS workflows by natural-language instruction inside an open project. 147 stars on the main repo; official Epic repo with ongoing PR activity; requires Unreal Engine 5+.",
+    "categories": ["general", "mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "ralph-wiggum",
+    "name": "ralph-wiggum — Official Anthropic Plugin; Self-Drive Mode That Keeps Claude Looping Until Done",
+    "primary_url": "https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum",
+    "hook": "Official Anthropic plugin that puts Claude Code into self-drive: you write one prompt and a completion condition, then walk away — the plugin intercepts each session exit and re-feeds the original task, letting Claude iterate and fix mistakes until it finishes or hits max iterations. Named after The Simpsons' relentlessly optimistic Ralph Wiggum. Key warning from the docs: without an explicit iteration cap, Claude will happily exhaust all available tokens; always set a limit before stepping away.",
+    "categories": ["general"],
+    "install": "/plugin install ralph-wiggum@claude-plugins-official"
+  },
+  {
+    "slug": "claude-tag-fireside",
+    "name": "Cat Wu + Thariq Shihipar Fireside — Claude Tag Lands 65% of PRs for the Claude Code Team Itself",
+    "primary_url": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=uU5Gv2h8-9g"
+    ],
+    "hook": "Cat Wu (PM) and Thariq Shihipar (engineer) from Anthropic's Claude Code team disclosed at AI Engineer World's Fair (July 21) that Claude Tag — Anthropic's multiplayer Slack AI teammate launched June 23 — now writes 65% of the Claude Code team's own product engineering PRs, including most of the code that built Claude Tag itself. They also described how Anthropic ships features to employees first and only rolls out what shows retention with that internal cohort.",
+    "categories": ["anthropic", "general"],
+    "recurring_note": "↑ Day 2 — fireside transcript and video now published"
+  },
+  {
+    "slug": "jacobian-conjecture",
+    "name": "Levent Alpoge Used Claude Fable 5 to Disprove the 87-Year-Old Jacobian Conjecture",
+    "primary_url": "https://officechai.com/ai/an-anthropic-researcher-says-fable-just-helped-him-disprove-the-85-year-old-jacobian-conjecture/",
+    "hook": "On July 20, mathematician Levent Alpoge (Harvard / Anthropic) posted an explicit polynomial map C³→C³ with Jacobian determinant −2 that is not invertible — a counterexample to the Jacobian conjecture (Keller, 1939), one of algebraic geometry's central open problems for 87 years. Alpoge credited Claude Fable 5 for the key construction. A verification preprint was filed the same day; independently checked but not yet journal-published. The highest-profile scientific result attributed directly to a Claude model.",
+    "categories": ["anthropic", "general"],
+    "recurring_note": "↑ Day 2 — preprint circulating; math community verification ongoing"
+  },
+  {
+    "slug": "claude-code-best-practice",
+    "name": "shanraisshan/claude-code-best-practice — 63.3K Stars; Day 8; 83 Tips; From Vibe Coding to Agentic Engineering",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "83 battle-tested Claude Code best practices across 11 categories — CLAUDE.md structure, hook patterns, skill authoring, agent orchestration, cost controls, session management — aggregated with cited input from Boris Cherny (Claude Code engineer). Subtitle: 'from vibe coding to agentic engineering.' Notes context rot kicks in around 300–400K tokens even on the 1M-context model. 63.3K stars, 6.3K forks, MIT.",
+    "categories": ["general"],
+    "install": "See README",
+    "recurring_note": "↑ Day 8 — 63.3K stars; updated July 22, still top-starred practices reference"
+  }
+]
