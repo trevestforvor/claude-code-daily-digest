@@ -1,0 +1,127 @@
+[
+  {
+    "slug": "graphify",
+    "name": "Graphify-Labs/graphify — 94.4K Stars; Knowledge Graph for Any Codebase; 70x Cost Cut on Large Projects",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "secondary_urls": [
+      "https://www.mindstudio.ai/blog/graphify-claude-code-knowledge-graph-large-codebase-70x"
+    ],
+    "hook": "Turns any codebase—plus docs, SQL schemas, configs, and PDFs—into a queryable knowledge graph using local deterministic AST parsing (tree-sitter, 158 languages). Installs a CLAUDE.md directive and a PreToolUse hook so Claude Code consults the graph before every file-search call; also exposes 15 MCP tools for path tracing, dead-code detection, and architecture analysis. MindStudio benchmarks show up to 70x cost reduction on 500+ file projects. v0.9.25 released July 22, 2026, adding automatic diff-impact analysis and Figma-node support. 94.4K stars, 9.1K forks; works with Claude Code, Cursor, Codex, and Gemini CLI.",
+    "categories": ["design", "cost"],
+    "install": "uv tool install graphifyy && graphify install"
+  },
+  {
+    "slug": "claude-cowork-record-skill",
+    "name": "Anthropic 'Record a Skill' — Teach Claude by Recording Your Screen (Pro/Max/Team, July 21)",
+    "primary_url": "https://www.androidauthority.com/claude-cowork-record-skills-feature-3689919/",
+    "secondary_urls": [
+      "https://dataconomy.com/2026/07/22/anthropic-teach-claude-screen-recording-feature/",
+      "https://alphasignal.ai/news/anthropic-s-claude-cowork-lets-you-teach-ai-by-recording-your-screen"
+    ],
+    "hook": "Anthropic launched 'Record a Skill' in the Claude desktop app on July 21, 2026: hit record, perform a task while narrating your reasoning, stop—and Claude synthesizes your screen activity, clicks, keystrokes, and voice commentary into a structured, reusable skill that appears in your skill library and runs again on demand. No prompt engineering or manual step documentation required. Available in the + menu on Pro, Max, and Team plans. Covered by Android Authority, Dataconomy, AlphaSignal, Android Headlines, CyberSecurityNews, and SearchEngineJournal.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "claude-mem",
+    "name": "thedotmack/claude-mem — 88.3K Stars; Persistent Memory Across Sessions; 5 Hooks + SQLite + Chroma; v13.12.2 Today",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "secondary_urls": [
+      "https://www.augmentcode.com/learn/claude-mem-persistent-memory-claude-code"
+    ],
+    "hook": "Solves session amnesia: five lifecycle hooks (SessionStart, PostToolUse, Stop, UserPromptSubmit, SessionEnd) capture every tool use, file read, and edit; a local Bun worker compresses observations via Claude Agent SDK and stores them in SQLite with full-text search and Chroma for hybrid semantic/keyword retrieval. Future sessions surface relevant memories with visible token costs via the mem-search skill's 'progressive disclosure' system so you control what you pay for. v13.12.2 shipped today (July 23, 2026); 88.3K stars, up from 46.1K in May. One-liner install.",
+    "categories": ["cost", "mcp"],
+    "install": "npx claude-mem install"
+  },
+  {
+    "slug": "caveman",
+    "name": "JuliusBrussee/caveman — 92.3K Stars; 65% Fewer Output Tokens; Caveman-Speak, Full Technical Accuracy",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "A Claude Code skill (and plugin for 30+ other agents) that compresses agent responses into terse caveman-speak without losing any technical accuracy—code, commands, and error messages remain byte-for-byte exact, only the prose is stripped. Benchmarked at 65% average output token reduction (range: 22–87% across 1,200 test scenarios); note that output tokens are typically 1–2% of a Claude Code bill, so the gains are largest for output-heavy workflows or high-volume automation. The original Reddit post got 10K upvotes. One-liner install; v1.9.1. 92.3K stars, 5.2K forks.",
+    "categories": ["cost"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash"
+  },
+  {
+    "slug": "understand-anything",
+    "name": "Egonex-AI/Understand-Anything — 75.8K Stars; Interactive Knowledge Graphs for Any Codebase; Figma Graphs in v2.9.0",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "secondary_urls": [
+      "https://charlieautomates.com/blog/understand-anything-claude-code-plugin/"
+    ],
+    "hook": "Transforms codebases into interactive, explorable knowledge graphs combining static analysis with LLM-powered semantic understanding: files, functions, and classes become graph nodes; business logic maps to real-world processes; auto-generated guided tours order content by dependency depth for fast onboarding. v2.9.0 (July 10) added Figma design graphs and the .ua data directory standard, extending coverage beyond code to design assets. Install via Claude Code's plugin marketplace. Charlie Automates highlighted it as the '#1 Claude Code Repo Today.' 75.8K stars, 6.3K forks.",
+    "categories": ["design"]
+  },
+  {
+    "slug": "cc-switch",
+    "name": "farion1231/cc-switch — 120K Stars; Desktop GUI Switches Between Claude Code, Codex, OpenCode + 4 More; 50+ Provider Presets",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "hook": "A cross-platform desktop app (Windows, macOS, Linux) that eliminates hand-editing JSON and environment files when switching between Claude Code, Codex, OpenCode, OpenClaw, Grok Build, and Hermes Agent. One click swaps between 50+ API provider presets; a unified sidebar manages MCP servers and Skills across all supported tools simultaneously; cloud sync keeps configs consistent across machines. v3.18.0 released July 21, 2026. 120K stars, 8.1K forks.",
+    "categories": ["general"],
+    "install": "brew install --cask cc-switch"
+  },
+  {
+    "slug": "claude-code-v2-1-218",
+    "name": "Claude Code v2.1.218 — /code-review Runs in Background; context:fork Skills Auto-Background; Boolean Frontmatter",
+    "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.218",
+    "hook": "v2.1.218 (July 22) moves /code-review to a background subagent, keeping your active conversation clear while reviews run. Skills declared with `context: fork` now start in background by default. New: `yes`/`no`/`on`/`off`/`1`/`0` (case-insensitive) accepted as booleans in skill/plugin frontmatter, eliminating a common authoring friction point. Also adds a periodic progress heartbeat for long-running tool calls, a left-arrow confirmation before discarding conversation, and fixes for deeply nested directory crashes and spurious '[Request interrupted by user]' messages.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "ecc",
+    "name": "affaan-m/ECC — 232K Stars; 67 Agents + 278 Skills + 94 Commands; Up 20K Stars Since Last Week",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "ECC bundles 67+ specialist agents, 278+ skill definitions, 94+ command shims, and lifecycle hooks for Claude Code, Cursor, OpenCode, and Codex across 12 language ecosystems. Ships code review, TDD, security scanning (via the author's AgentShield), documentation generation, CI/CD optimization, and a pattern-extraction system that learns from your own development history. Updated July 23; 232K stars, 32.5K forks—up 20K from 211.9K when last featured (July 21). MIT.",
+    "categories": ["skill", "general"],
+    "install": "/plugin marketplace add https://github.com/affaan-m/ECC",
+    "recurring_note": "↑ 232K stars; up 20K from 211.9K when last featured (Jul 21)"
+  },
+  {
+    "slug": "agent-reach",
+    "name": "Panniantong/Agent-Reach — 60.1K Stars; Agent Internet Access Across 11 Platforms; Zero-Config for Web, YouTube, GitHub",
+    "primary_url": "https://github.com/Panniantong/Agent-Reach",
+    "hook": "A Python capability layer giving AI agents multi-platform internet access without per-service API keys: zero-config for web pages, YouTube (full subtitles), RSS, GitHub, and Bilibili; login-required for Twitter/X, Reddit, Facebook, Instagram, Xiaohongshu, and LinkedIn. Each platform maintains ordered backend lists—when one access method fails, the next runs automatically without user intervention. Global web search powered by Exa. The agent installs itself by reading a hosted install.md file. 60.1K stars, 4.8K forks, v1.5.0, MIT.",
+    "categories": ["mcp", "general"],
+    "install": "See README"
+  },
+  {
+    "slug": "ui-ux-pro-max-skill",
+    "name": "nextlevelbuilder/ui-ux-pro-max-skill — 109K Stars; 84 UI Styles × 192 Product Types × 22 Tech Stacks",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "hook": "A design intelligence layer that activates on any UI request: selects from 84+ UI styles and 192+ product-type color palettes, pairs Google Fonts from 74 curated combos, applies 98 UX guidelines and 161 industry-specific reasoning rules, and adapts to 22 tech stacks (React, Vue, Tailwind, SwiftUI, Flutter, and more). v2.11.0 (July 2026). 72 contributors. Works with Claude Code, Cursor, Windsurf, and 15+ other AI assistants. 109K stars, 11.5K forks.",
+    "categories": ["design", "skill"],
+    "install": "npm install -g ui-ux-pro-max-cli && uipro init --ai claude",
+    "recurring_note": "↑ 109K stars; up 1K from 108K when last featured (Jul 21)"
+  },
+  {
+    "slug": "andrej-karpathy-skills",
+    "name": "multica-ai/andrej-karpathy-skills — 194K+ Stars; Day 7; 4 Rules That Stop Claude Breaking Code",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "secondary_urls": [
+      "https://aitrends24.substack.com/p/i-installed-the-144k-star-karpathy"
+    ],
+    "hook": "A CLAUDE.md encoding Andrej Karpathy's four rules for LLM coding: Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution. Each rule blocks a specific failure mode Karpathy documented—unfounded assumptions, unnecessary abstraction, unintended side-effects, vague success criteria. 194K+ stars, MIT; drop-in CLAUDE.md or installable plugin that works with Claude Code, Cursor, Codex, and 60+ other agents.",
+    "categories": ["design", "general"],
+    "install": "/plugin marketplace add forrestchang/andrej-karpathy-skills && /plugin install andrej-karpathy-skills@karpathy-skills",
+    "recurring_note": "↑ Day 7 — 194K+ stars; most-cited CLAUDE.md framework this week"
+  },
+  {
+    "slug": "ponytail",
+    "name": "DietrichGebert/ponytail — 88.3K Stars; ~54% Code Reduction, ~20% Cost Savings; 'Laziest Senior Dev in the Room'",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "hook": "A plugin that makes AI agents think like a pragmatic senior engineer: before writing a line, it runs a decision ladder—eliminate the need → reuse existing code → stdlib → native platform features → already-installed deps → one-liner → only then a minimal implementation. Real-world testing shows ~54% fewer lines, ~20% cost reduction, ~27% faster execution, 100% safety maintained. Available on 20+ agent platforms with /ponytail, /ponytail-review, and /ponytail-audit commands. 88.3K stars.",
+    "categories": ["cost"],
+    "install": "/plugin marketplace add DietrichGebert/ponytail",
+    "recurring_note": "↑ 88.3K stars; up 1.2K from 87.1K when last featured (Jul 21)"
+  },
+  {
+    "slug": "herdr",
+    "name": "ogulcancelik/herdr — 15K Stars; Terminal Multiplexer with AI Agent State Sidebar; Claude Code + 14 Others; Rust Binary",
+    "primary_url": "https://github.com/ogulcancelik/herdr",
+    "secondary_urls": [
+      "https://www.chaseai.io/blog/herdr-terminal-multiplexer-ai-coding-agents"
+    ],
+    "hook": "A Rust terminal multiplexer (think tmux with AI awareness) that adds a color-coded sidebar tracking whether each running agent is blocked, working, done, or idle—zero configuration, auto-detected for Claude Code, GitHub Copilot CLI, Devin CLI, Codex, and 11 others. Runs as a server so closing a window mid-task keeps the agent running in background; reconnect and pick up exactly where it was. Single Rust binary with no external dependencies. Hit #1 GitHub Trending June 30; Chase AI covered it as a must-install for multi-agent workflows. 15K stars.",
+    "categories": ["general"],
+    "install": "See README"
+  }
+]
