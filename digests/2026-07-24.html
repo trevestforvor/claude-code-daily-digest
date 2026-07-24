@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — July 24, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — July 24, 2026</h1><p class="sub">Top 13 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/anthropics/claude-plugins-official/tree/main/plugins/security">Anthropic Claude Security Plugin — Official Beta; Multi-Agent Vulnerability Scanner; /claude-security in Claude Code</a></h3>
+  <p class="hook">Anthropic shipped the official Claude Security plugin in beta on July 22-24, 2026, bringing AI-powered vulnerability scanning directly into Claude Code. The plugin adds a single /claude-security command with three jobs: Scan codebase, Scan changes (pre-commit), and Suggest patches — returning reviewed patch files you apply yourself. The multi-agent scanner reads Git history, traces data flows across files, and understands business logic in ways static analysis cannot. Source is public in claude-plugins-official at v0.10.0; admins enable it via claude.ai/admin-settings/claude-code. The highest-signal security tooling Anthropic has shipped to Claude Code yet.</p>
+  <div class="secondary">Also: <a href="https://cybersecuritynews.com/anthropic-claude-security-plugin/">cybersecuritynews.com/anthropic-claude-security-plugin/</a> · <a href="https://www.marktechpost.com/2026/07/22/anthropic-releases-claude-security-plugin-for-claude-code-in-beta-a-multi-agent-vulnerability-scanner-that-runs-in-your-terminal/">www.marktechpost.com/2026/07/22/anthropic-releases-claude-security-plugin-for-claude-code-in-beta-a-multi-agent-vulnerability-scanner-that-runs-in-your-terminal/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">plugin · agent · security</div>
+  <pre><button class="copy">copy</button><code>/plugin install security@claude-plugins-official</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/amaancoderx/npxskillui">amaancoderx/npxskillui — Reverse-Engineer Any Website&#39;s Design System into Claude-Ready Skill Files; No API Keys</a></h3>
+  <p class="hook">SkillUI is a TypeScript CLI that crawls any live website, GitHub repo, or local codebase using pure static analysis and extracts the complete design system — colors, typography, spacing, animation tokens, component fingerprints — packaged into a DESIGN.md + SKILL.md + JSON token folder that Claude Code auto-reads. No AI, no API keys, no rate limits. Ultra mode (Playwright) additionally captures scroll journeys, interaction states, animation keyframes, and motion characteristics for a richer reference. Chase AI (109K subs) highlighted it in their July 23 &#39;Ways to Fix Claude Code&#39;s #1 Web Design Problem&#39; video as the most direct way to give Claude Code accurate design constraints without description drift. v1.3.2 after 23 releases.</p>
+  <div class="secondary">Also: <a href="https://skillui.vercel.app/">skillui.vercel.app/</a> · <a href="https://www.chaseai.io/blog/claude-code-frontend-design-skills">www.chaseai.io/blog/claude-code-frontend-design-skills</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">frontend · animation · branding · video · token · terminal · browser</div>
+  <pre><button class="copy">copy</button><code>npx skillui</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/gabelul/stitch-kit">gabelul/stitch-kit — 35 Claude Code Design Skills via Google Stitch MCP; 5 Layers, 7 Framework Targets</a></h3>
+  <p class="hook">stitch-kit is a Claude Code plugin + Codex CLI agent that wraps Google Stitch&#39;s MCP server in 35 structured design skills covering five layers: ideation (mood boards, competitive scans), batch generation (multi-screen flows, component variants), design system (token extraction, Figma export), iteration loops (critique → regen), and production conversion (React, Vue, Tailwind, SwiftUI, Flutter, and 2 others). The official google-labs-code/stitch-skills repo follows the Agent Skills open standard for compatibility with Antigravity, Gemini CLI, Cursor, and Claude Code. Together these repos cover the full ideation-to-production pipeline powered by Google Stitch&#39;s free Gemini 3.1 Pro canvas.</p>
+  <div class="secondary">Also: <a href="https://github.com/google-labs-code/stitch-skills">github.com/google-labs-code/stitch-skills</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">frontend · plugin · terminal</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/rixinhahaha/snip">rixinhahaha/snip — Visual Whiteboard Layer Between You and Claude Code; Annotate Agent Output Directly</a></h3>
+  <p class="hook">Snip is an Electron app that becomes the visual communication layer between Claude Code and your eyes: instead of describing desired changes in text, Claude renders diagrams, HTML previews, and UI components through Snip&#39;s canvas, you circle and annotate exactly what&#39;s wrong (arrow, sticky note, freehand), and Claude receives structured visual feedback to iterate on. Works via CLI or MCP; also functions as a standalone local screenshot and annotation app with on-device AI organization (Ollama). macOS 14+ and Linux. Free, open-source, MIT; works with Claude Code, Cursor, Windsurf, and Cline. Featured in hesreallyhim/awesome-claude-code.</p>
+  <div class="secondary">Also: <a href="https://snipit.dev/">snipit.dev/</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">mcp · local · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Ibrahim-3d/nano-banana-claude-plugin">Ibrahim-3d/nano-banana-claude-plugin — 13-Mode AI Image Generation for Claude Code; Gemini API; Chase AI Feature</a></h3>
+  <p class="hook">Nano Banana is a Claude Code plugin with 13 image generation modes powered by the Google Gemini API: text-to-image, image editing, style transfer, inpainting, 4K upscaling, search-grounded generation, and more. Chase AI&#39;s &#39;Claude Code + Nano Banana 2 = Insane 3D Websites&#39; video (109K subs) demonstrated using it to generate consistent keyframes for scroll-driven 3D website animations — Claude Code then converts those frames into optimized CSS-and-Playwright animations. No separate image generation service required beyond a Gemini API key. Install: clone to ~/.claude/plugins/nano-banana, then `pip install google-genai python-dotenv Pillow`, restart Claude Code.</p>
+  <div class="secondary">Also: <a href="https://www.youtube.com/watch?v=QutvJAP06-A">www.youtube.com/watch?v=QutvJAP06-A</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">video · image · 3d · plugin · browser</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/Ibrahim-3d/nano-banana-claude-plugin ~/.claude/plugins/nano-banana &amp;&amp; pip install google-genai python-dotenv Pillow</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Graphify-Labs/graphify">Graphify-Labs/graphify — 94.8K Stars; Day 2; Knowledge Graph for Any Codebase; 70x Cost Cut</a></h3>
+  <p class="hook">Turns any codebase — plus docs, SQL schemas, configs, and PDFs — into a queryable knowledge graph using local deterministic AST parsing (tree-sitter, 158 languages). Installs a CLAUDE.md directive and a PreToolUse hook so Claude Code consults the graph before every file-search call; also exposes 15 MCP tools for path tracing, dead-code detection, and architecture analysis. MindStudio benchmarks show up to 70x cost reduction on 500+ file projects. v0.9.25 released July 22 added automatic diff-impact analysis and Figma-node support. Up to 94.8K stars, 9.1K forks.</p>
+  <div class="secondary">Also: <a href="https://www.mindstudio.ai/blog/graphify-claude-code-knowledge-graph-large-codebase-70x">www.mindstudio.ai/blog/graphify-claude-code-knowledge-graph-large-codebase-70x</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">mcp · memory · viral</div>
+  <pre><button class="copy">copy</button><code>uv tool install graphifyy &amp;&amp; graphify install</code></pre>
+  <div class="recurring">↑ Day 2 — 94.8K stars; up from 94.4K yesterday</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/jeremylongshore/claude-code-plugins-plus-skills">jeremylongshore/claude-code-plugins-plus-skills — 425 Plugins, 2810 Skills, 200 Agents; tonsofskills.com + ccpi CLI; Grade A Trending W30</a></h3>
+  <p class="hook">One of the largest community-maintained skill/plugin packs for Claude Code: 425 plugins, 2,810 skills, and 200 agents spanning engineering, marketing, product, compliance, DevOps, security, and more. Backed by a public marketplace at tonsofskills.com and the ccpi CLI package manager (pnpm-installable) with 453 packages updated daily by GitHub Actions — search, install, list, and update via CLI just like npm. Designated a Grade A trending pick for week 30 (July 22-24). Skills are compatible with Claude Code, Codex, Gemini CLI, and Cursor.</p>
+  <div class="secondary">Also: <a href="https://tonsofskills.com/">tonsofskills.com/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · viral · marketplace · terminal · security</div>
+  <pre><button class="copy">copy</button><code>pnpm add -g @intentsolutionsio/ccpi &amp;&amp; ccpi search &lt;topic&gt;</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/louislva/claude-peers-mcp">louislva/claude-peers-mcp — Let All Your Claude Code Sessions Talk to Each Other in Real Time; SQLite Local Broker</a></h3>
+  <p class="hook">An MCP server that lets every Claude Code instance running on the same machine discover all other instances and exchange messages in real time. A lightweight local broker daemon (SQLite + HTTP, localhost:7899) handles registration and message routing; each session&#39;s MCP server pushes inbound messages directly into the Claude context window so they arrive instantly without polling. Practical use: your frontend Claude Code session can ping your backend session to ask what the new endpoint&#39;s JSON response shape is, get the answer in-context, and continue — no context-switch, no copy-paste. Covered on HN Show HN; also in the aradotso/trending-skills auto-generated index. April 2026 initial release.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">frontend · context · viral</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/VKirill/antigravity-for-claude-code">VKirill/antigravity-for-claude-code — Claude Code + Google Antigravity (Gemini); PM/Coder Split; 94 Dev Skills + AI Debates</a></h3>
+  <p class="hook">Teams Claude Code (project manager) with Google Antigravity&#39;s agy CLI (Gemini 3.x as the coder) over MCP: Claude Code decomposes requirements, dispatches tasks via agy, reviews output, and commits — while expensive Fable/Opus tokens only handle reasoning, and Gemini does execution. Ships 94 developer skills across frontend (React, Vue, Nextjs, Tailwind, shadcn, WebGL), backend (Fastify, FastAPI, Django), and testing (pytest, vitest, playwright); plus an AI debates feature for multi-persona code reviews, and a main-only autopilot mode that commits per task and auto-deploys when all gates pass. Companion repo MarcosNahuel/antigravity-plugin-cc adds /agy:notebook — a local NotebookLM that turns a folder of documents into summaries, relevance index, cited synthesis, and Q&amp;A with 13 commands, no Node runtime.</p>
+  <div class="secondary">Also: <a href="https://github.com/MarcosNahuel/antigravity-plugin-cc">github.com/MarcosNahuel/antigravity-plugin-cc</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">frontend · 3d · mcp · plugin · token · terminal · browser · testing</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Piebald-AI/tweakcc">Piebald-AI/tweakcc — Patch Claude Code&#39;s Own System Prompts; Custom Toolsets; Unlock Private Features; Native + npm</a></h3>
+  <p class="hook">tweakcc patches the system prompts, toolset definitions, themes, thinking-verb banks, spinner text, input-box styling, and user message display of your local Claude Code installation — without waiting for Anthropic to ship the change. Custom prompt files live as Markdown alongside your project; tweakcc diffs and merges on Claude Code updates so your modifications survive upgrades. Also unlocks private and unreleased features by name. v4.0.0 added a public npm API so other scripts can programmatically apply tweaks. Supports both native binary and npm installs on macOS, Linux, and Windows — from the same Piebald team behind claude-code-system-prompts (12K stars).</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">anthropic · viral</div>
+  <pre><button class="copy">copy</button><code>npm install -g tweakcc</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/arturogarrido/claudinho">arturogarrido/claudinho — 2026 World Cup Live Scores in Claude Code Statusline + 7-Tool MCP; No API Key; HN Show HN</a></h3>
+  <p class="hook">Plugs 2026 World Cup live scores directly into your Claude Code statusline and exposes seven MCP tools: get_today, get_live, get_match, get_next_fixture, get_standings, get_market_signal, and get_share_snippet. Data sources from ESPN&#39;s public scoreboard; all 104 fixtures bundled as static JSON so the schedule and results work offline. Zero API key or account required. Presented on HN Show HN; also available for Cursor CLI and any MCP client. Ten-second trial: `npx @claudinho/cli today` without installing. The most playful Claude Code statusline extension of the World Cup season.</p>
+  <div class="secondary">Also: <a href="https://news.ycombinator.com/item?id=48499159">news.ycombinator.com/item?id=48499159</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">local · terminal</div>
+  <pre><button class="copy">copy</button><code>npx @claudinho/cli today</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Aradotso/trending-skills">Aradotso/trending-skills — Auto-Generated Agent Skills from GitHub Trending; 251 Skills; 178K+ Installs; Updated Continuously</a></h3>
+  <p class="hook">A continuously-updated repository of Claude Code agent skills auto-generated from GitHub&#39;s trending repos — every time a project hits trending, ara.so&#39;s pipeline extracts a structured SKILL.md from the README, docs, and source and adds it to the catalog. Currently 251 skills with 178.2K total installs. Skills range from the practical (codebase dashboards, API quota trackers) to the novel (claude-peers-mcp for multi-session coordination, antigravity-manager for Gemini delegation). Useful as a &#39;GitHub trending → Claude Code skill in one step&#39; discovery layer: if something is blowing up on GitHub, it&#39;s likely already in trending-skills. Installable via `npx skills add aradotso/trending-skills`.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">mcp · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add aradotso/trending-skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Piebald-AI/claude-code-system-prompts">Piebald-AI/claude-code-system-prompts — All 27 Claude Code Tool Descriptions + System Prompt; Updated Every Version; 12K Stars</a></h3>
+  <p class="hook">The most complete public reference for Claude Code&#39;s internals: all 27 builtin tool descriptions, the full system prompt, sub-agent prompts (Plan, Explore, Task), and utility prompts (CLAUDE.md injection, compact, statusline, magic docs, WebFetch, Bash command, security review, agent creation) — every file versioned and updated on each Claude Code release. Currently tracks v2.1.218. 12K stars. Essential for prompt engineers who want to understand exactly what instructions Claude Code is receiving before they write CLAUDE.md files, custom hooks, or skills that interact with the system layer. Companion to tweakcc (also in today&#39;s digest) which patches these files live.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">viral · security</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/Piebald-AI/claude-code-system-prompts</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
