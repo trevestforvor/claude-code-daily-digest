@@ -1,0 +1,136 @@
+[
+  {
+    "slug": "claude-security-plugin",
+    "name": "Anthropic Claude Security Plugin — Official Beta; Multi-Agent Vulnerability Scanner; /claude-security in Claude Code",
+    "primary_url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/security",
+    "secondary_urls": [
+      "https://cybersecuritynews.com/anthropic-claude-security-plugin/",
+      "https://www.marktechpost.com/2026/07/22/anthropic-releases-claude-security-plugin-for-claude-code-in-beta-a-multi-agent-vulnerability-scanner-that-runs-in-your-terminal/"
+    ],
+    "hook": "Anthropic shipped the official Claude Security plugin in beta on July 22-24, 2026, bringing AI-powered vulnerability scanning directly into Claude Code. The plugin adds a single /claude-security command with three jobs: Scan codebase, Scan changes (pre-commit), and Suggest patches — returning reviewed patch files you apply yourself. The multi-agent scanner reads Git history, traces data flows across files, and understands business logic in ways static analysis cannot. Source is public in claude-plugins-official at v0.10.0; admins enable it via claude.ai/admin-settings/claude-code. The highest-signal security tooling Anthropic has shipped to Claude Code yet.",
+    "categories": ["anthropic"],
+    "install": "/plugin install security@claude-plugins-official"
+  },
+  {
+    "slug": "skillui",
+    "name": "amaancoderx/npxskillui — Reverse-Engineer Any Website's Design System into Claude-Ready Skill Files; No API Keys",
+    "primary_url": "https://github.com/amaancoderx/npxskillui",
+    "secondary_urls": [
+      "https://skillui.vercel.app/",
+      "https://www.chaseai.io/blog/claude-code-frontend-design-skills"
+    ],
+    "hook": "SkillUI is a TypeScript CLI that crawls any live website, GitHub repo, or local codebase using pure static analysis and extracts the complete design system — colors, typography, spacing, animation tokens, component fingerprints — packaged into a DESIGN.md + SKILL.md + JSON token folder that Claude Code auto-reads. No AI, no API keys, no rate limits. Ultra mode (Playwright) additionally captures scroll journeys, interaction states, animation keyframes, and motion characteristics for a richer reference. Chase AI (109K subs) highlighted it in their July 23 'Ways to Fix Claude Code's #1 Web Design Problem' video as the most direct way to give Claude Code accurate design constraints without description drift. v1.3.2 after 23 releases.",
+    "categories": ["design", "skill"],
+    "install": "npx skillui",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "stitch-kit",
+    "name": "gabelul/stitch-kit — 35 Claude Code Design Skills via Google Stitch MCP; 5 Layers, 7 Framework Targets",
+    "primary_url": "https://github.com/gabelul/stitch-kit",
+    "secondary_urls": [
+      "https://github.com/google-labs-code/stitch-skills"
+    ],
+    "hook": "stitch-kit is a Claude Code plugin + Codex CLI agent that wraps Google Stitch's MCP server in 35 structured design skills covering five layers: ideation (mood boards, competitive scans), batch generation (multi-screen flows, component variants), design system (token extraction, Figma export), iteration loops (critique → regen), and production conversion (React, Vue, Tailwind, SwiftUI, Flutter, and 2 others). The official google-labs-code/stitch-skills repo follows the Agent Skills open standard for compatibility with Antigravity, Gemini CLI, Cursor, and Claude Code. Together these repos cover the full ideation-to-production pipeline powered by Google Stitch's free Gemini 3.1 Pro canvas.",
+    "categories": ["design", "mcp", "skill"]
+  },
+  {
+    "slug": "snip-visual-whiteboard",
+    "name": "rixinhahaha/snip — Visual Whiteboard Layer Between You and Claude Code; Annotate Agent Output Directly",
+    "primary_url": "https://github.com/rixinhahaha/snip",
+    "secondary_urls": [
+      "https://snipit.dev/"
+    ],
+    "hook": "Snip is an Electron app that becomes the visual communication layer between Claude Code and your eyes: instead of describing desired changes in text, Claude renders diagrams, HTML previews, and UI components through Snip's canvas, you circle and annotate exactly what's wrong (arrow, sticky note, freehand), and Claude receives structured visual feedback to iterate on. Works via CLI or MCP; also functions as a standalone local screenshot and annotation app with on-device AI organization (Ollama). macOS 14+ and Linux. Free, open-source, MIT; works with Claude Code, Cursor, Windsurf, and Cline. Featured in hesreallyhim/awesome-claude-code.",
+    "categories": ["design"],
+    "install": "See README"
+  },
+  {
+    "slug": "nano-banana-claude-plugin",
+    "name": "Ibrahim-3d/nano-banana-claude-plugin — 13-Mode AI Image Generation for Claude Code; Gemini API; Chase AI Feature",
+    "primary_url": "https://github.com/Ibrahim-3d/nano-banana-claude-plugin",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=QutvJAP06-A"
+    ],
+    "hook": "Nano Banana is a Claude Code plugin with 13 image generation modes powered by the Google Gemini API: text-to-image, image editing, style transfer, inpainting, 4K upscaling, search-grounded generation, and more. Chase AI's 'Claude Code + Nano Banana 2 = Insane 3D Websites' video (109K subs) demonstrated using it to generate consistent keyframes for scroll-driven 3D website animations — Claude Code then converts those frames into optimized CSS-and-Playwright animations. No separate image generation service required beyond a Gemini API key. Install: clone to ~/.claude/plugins/nano-banana, then `pip install google-genai python-dotenv Pillow`, restart Claude Code.",
+    "categories": ["design"],
+    "install": "git clone https://github.com/Ibrahim-3d/nano-banana-claude-plugin ~/.claude/plugins/nano-banana && pip install google-genai python-dotenv Pillow",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "graphify",
+    "name": "Graphify-Labs/graphify — 94.8K Stars; Day 2; Knowledge Graph for Any Codebase; 70x Cost Cut",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "secondary_urls": [
+      "https://www.mindstudio.ai/blog/graphify-claude-code-knowledge-graph-large-codebase-70x"
+    ],
+    "hook": "Turns any codebase — plus docs, SQL schemas, configs, and PDFs — into a queryable knowledge graph using local deterministic AST parsing (tree-sitter, 158 languages). Installs a CLAUDE.md directive and a PreToolUse hook so Claude Code consults the graph before every file-search call; also exposes 15 MCP tools for path tracing, dead-code detection, and architecture analysis. MindStudio benchmarks show up to 70x cost reduction on 500+ file projects. v0.9.25 released July 22 added automatic diff-impact analysis and Figma-node support. Up to 94.8K stars, 9.1K forks.",
+    "categories": ["design", "cost"],
+    "install": "uv tool install graphifyy && graphify install",
+    "recurring_note": "↑ Day 2 — 94.8K stars; up from 94.4K yesterday"
+  },
+  {
+    "slug": "tonsofskills-ccpi",
+    "name": "jeremylongshore/claude-code-plugins-plus-skills — 425 Plugins, 2810 Skills, 200 Agents; tonsofskills.com + ccpi CLI; Grade A Trending W30",
+    "primary_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+    "secondary_urls": [
+      "https://tonsofskills.com/"
+    ],
+    "hook": "One of the largest community-maintained skill/plugin packs for Claude Code: 425 plugins, 2,810 skills, and 200 agents spanning engineering, marketing, product, compliance, DevOps, security, and more. Backed by a public marketplace at tonsofskills.com and the ccpi CLI package manager (pnpm-installable) with 453 packages updated daily by GitHub Actions — search, install, list, and update via CLI just like npm. Designated a Grade A trending pick for week 30 (July 22-24). Skills are compatible with Claude Code, Codex, Gemini CLI, and Cursor.",
+    "categories": ["skill"],
+    "install": "pnpm add -g @intentsolutionsio/ccpi && ccpi search <topic>"
+  },
+  {
+    "slug": "claude-peers-mcp",
+    "name": "louislva/claude-peers-mcp — Let All Your Claude Code Sessions Talk to Each Other in Real Time; SQLite Local Broker",
+    "primary_url": "https://github.com/louislva/claude-peers-mcp",
+    "hook": "An MCP server that lets every Claude Code instance running on the same machine discover all other instances and exchange messages in real time. A lightweight local broker daemon (SQLite + HTTP, localhost:7899) handles registration and message routing; each session's MCP server pushes inbound messages directly into the Claude context window so they arrive instantly without polling. Practical use: your frontend Claude Code session can ping your backend session to ask what the new endpoint's JSON response shape is, get the answer in-context, and continue — no context-switch, no copy-paste. Covered on HN Show HN; also in the aradotso/trending-skills auto-generated index. April 2026 initial release.",
+    "categories": ["mcp"]
+  },
+  {
+    "slug": "antigravity-claude-code",
+    "name": "VKirill/antigravity-for-claude-code — Claude Code + Google Antigravity (Gemini); PM/Coder Split; 94 Dev Skills + AI Debates",
+    "primary_url": "https://github.com/VKirill/antigravity-for-claude-code",
+    "secondary_urls": [
+      "https://github.com/MarcosNahuel/antigravity-plugin-cc"
+    ],
+    "hook": "Teams Claude Code (project manager) with Google Antigravity's agy CLI (Gemini 3.x as the coder) over MCP: Claude Code decomposes requirements, dispatches tasks via agy, reviews output, and commits — while expensive Fable/Opus tokens only handle reasoning, and Gemini does execution. Ships 94 developer skills across frontend (React, Vue, Nextjs, Tailwind, shadcn, WebGL), backend (Fastify, FastAPI, Django), and testing (pytest, vitest, playwright); plus an AI debates feature for multi-persona code reviews, and a main-only autopilot mode that commits per task and auto-deploys when all gates pass. Companion repo MarcosNahuel/antigravity-plugin-cc adds /agy:notebook — a local NotebookLM that turns a folder of documents into summaries, relevance index, cited synthesis, and Q&A with 13 commands, no Node runtime.",
+    "categories": ["cost"],
+    "install": "See README"
+  },
+  {
+    "slug": "tweakcc",
+    "name": "Piebald-AI/tweakcc — Patch Claude Code's Own System Prompts; Custom Toolsets; Unlock Private Features; Native + npm",
+    "primary_url": "https://github.com/Piebald-AI/tweakcc",
+    "hook": "tweakcc patches the system prompts, toolset definitions, themes, thinking-verb banks, spinner text, input-box styling, and user message display of your local Claude Code installation — without waiting for Anthropic to ship the change. Custom prompt files live as Markdown alongside your project; tweakcc diffs and merges on Claude Code updates so your modifications survive upgrades. Also unlocks private and unreleased features by name. v4.0.0 added a public npm API so other scripts can programmatically apply tweaks. Supports both native binary and npm installs on macOS, Linux, and Windows — from the same Piebald team behind claude-code-system-prompts (12K stars).",
+    "categories": ["general"],
+    "install": "npm install -g tweakcc"
+  },
+  {
+    "slug": "claudinho",
+    "name": "arturogarrido/claudinho — 2026 World Cup Live Scores in Claude Code Statusline + 7-Tool MCP; No API Key; HN Show HN",
+    "primary_url": "https://github.com/arturogarrido/claudinho",
+    "secondary_urls": [
+      "https://news.ycombinator.com/item?id=48499159"
+    ],
+    "hook": "Plugs 2026 World Cup live scores directly into your Claude Code statusline and exposes seven MCP tools: get_today, get_live, get_match, get_next_fixture, get_standings, get_market_signal, and get_share_snippet. Data sources from ESPN's public scoreboard; all 104 fixtures bundled as static JSON so the schedule and results work offline. Zero API key or account required. Presented on HN Show HN; also available for Cursor CLI and any MCP client. Ten-second trial: `npx @claudinho/cli today` without installing. The most playful Claude Code statusline extension of the World Cup season.",
+    "categories": ["mcp"],
+    "install": "npx @claudinho/cli today"
+  },
+  {
+    "slug": "aradotso-trending-skills",
+    "name": "Aradotso/trending-skills — Auto-Generated Agent Skills from GitHub Trending; 251 Skills; 178K+ Installs; Updated Continuously",
+    "primary_url": "https://github.com/Aradotso/trending-skills",
+    "hook": "A continuously-updated repository of Claude Code agent skills auto-generated from GitHub's trending repos — every time a project hits trending, ara.so's pipeline extracts a structured SKILL.md from the README, docs, and source and adds it to the catalog. Currently 251 skills with 178.2K total installs. Skills range from the practical (codebase dashboards, API quota trackers) to the novel (claude-peers-mcp for multi-session coordination, antigravity-manager for Gemini delegation). Useful as a 'GitHub trending → Claude Code skill in one step' discovery layer: if something is blowing up on GitHub, it's likely already in trending-skills. Installable via `npx skills add aradotso/trending-skills`.",
+    "categories": ["skill"],
+    "install": "npx skills add aradotso/trending-skills"
+  },
+  {
+    "slug": "claude-code-system-prompts",
+    "name": "Piebald-AI/claude-code-system-prompts — All 27 Claude Code Tool Descriptions + System Prompt; Updated Every Version; 12K Stars",
+    "primary_url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+    "hook": "The most complete public reference for Claude Code's internals: all 27 builtin tool descriptions, the full system prompt, sub-agent prompts (Plan, Explore, Task), and utility prompts (CLAUDE.md injection, compact, statusline, magic docs, WebFetch, Bash command, security review, agent creation) — every file versioned and updated on each Claude Code release. Currently tracks v2.1.218. 12K stars. Essential for prompt engineers who want to understand exactly what instructions Claude Code is receiving before they write CLAUDE.md files, custom hooks, or skills that interact with the system layer. Companion to tweakcc (also in today's digest) which patches these files live.",
+    "categories": ["general"],
+    "install": "git clone https://github.com/Piebald-AI/claude-code-system-prompts"
+  }
+]
