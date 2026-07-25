@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — July 25, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — July 25, 2026</h1><p class="sub">Top 12 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://platform.claude.com/docs/en/about-claude/models/whats-new-opus-5">Anthropic Claude Opus 5 — 1M Context, $5/$25, 96% SWE-bench Verified; Now Default Opus in Claude Code</a></h3>
+  <p class="hook">Anthropic shipped Claude Opus 5 on July 24, 2026, and it became the default Opus model in Claude Code that same day via v2.1.219. It scores 96.0% on SWE-bench Verified and 79.2% on SWE-bench Pro — more than doubling Opus 4.8&#39;s per-task performance — and hits 3× the next-best model on ARC-AGI 3 at unchanged pricing ($5 input / $25 output per MTok). A flat 1M-token context window with thinking on by default; fast mode runs at $10/$50 at 2.5× speed. Also hits SOTA on OSWorld 2.0 GUI interaction and 1.5× Opus 4.8&#39;s pass rate on Zapier AutomationBench.</p>
+  <div class="secondary">Also: <a href="https://www.marktechpost.com/2026/07/24/meet-the-new-claude-opus-5-frontier-class-agentic-coding-and-computer-use-at-unchanged-opus-pricing/">www.marktechpost.com/2026/07/24/meet-the-new-claude-opus-5-frontier-class-agentic-coding-and-computer-use-at-unchanged-opus-pricing/</a> · <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.219">github.com/anthropics/claude-code/releases/tag/v2.1.219</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">context</div>
+  <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum">anthropics/ralph-wiggum — Official Anthropic Loop Plugin; 139K Stars; Stop Hook Keeps Claude Working Until Done</a></h3>
+  <p class="hook">Ralph Wiggum is the official Anthropic autonomous-loop plugin inside the claude-code repo: a Stop hook blocks Claude&#39;s exit, re-injects the original prompt, and loops until Claude outputs a configurable completion phrase (e.g., `&lt;promise&gt;COMPLETE&lt;/promise&gt;`) or hits `--max-iterations`. Concrete benefit: you can hand it a greenfield REST API spec and walk away — Claude reads its own git history and file output each iteration to improve, catches its own test failures, and only stops when done. 139K stars, 22.3K forks. r/ClaudeAI flagged it as viral this week.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">plugin · viral</div>
+  <pre><button class="copy">copy</button><code>/plugin install ralph-wiggum@claude-code</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">ChromeDevTools/chrome-devtools-mcp — Official Chrome Team MCP; 47.6K Stars; 29 Tools for Browser Debugging in Claude Code</a></h3>
+  <p class="hook">The Chrome DevTools team&#39;s official MCP server gives Claude Code (and any MCP client) direct access to a live Chrome browser through 29 tools: browser automation with clicks, form fills, navigation, and dialogs; Lighthouse audits; performance traces; memory snapshots; network request inspection; and console-message analysis. 47.6K stars as of July 24. WhiteBoard Coder ran a hands-on test with Claude and chrome-devtools-mcp in July 2026, noting that Claude can open URLs, click through UI, and pull performance metrics without a separate testing framework.</p>
+  <div class="secondary">Also: <a href="https://developer.chrome.com/blog/chrome-devtools-mcp">developer.chrome.com/blog/chrome-devtools-mcp</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">memory · viral · browser · testing</div>
+  <pre><button class="copy">copy</button><code>npx -y chrome-devtools-mcp@latest</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.219">Claude Code v2.1.219 (July 24) — DirectoryAdded Hook; sandbox.network.strictAllowlist; Depth-3 Subagents</a></h3>
+  <p class="hook">Beyond landing Claude Opus 5 as the default, v2.1.219 ships three notable engineering additions. `DirectoryAdded` hook fires whenever `/add-dir` or the SDK `register_repo_root` registers a new working directory mid-session — lets hooks react to scope changes in large monorepo workflows. `sandbox.network.strictAllowlist` denies all non-allowlisted hosts for sandboxed commands without prompting, giving teams a hard network-egress control. And nested subagents can now spawn their own subagents up to depth 3 (was 1), enabling three-tier orchestration trees without manual forwarding. Also adds `workflowSizeGuideline` as a settable key.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">marketplace</div>
+  <pre><button class="copy">copy</button><code>npm update -g @anthropic-ai/claude-code</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/alirezarezvani/claude-skills">alirezarezvani/claude-skills — 345 Skills; 30+ Agents; 70+ Commands; Works Across 13 Coding Agents</a></h3>
+  <p class="hook">A single install drops 345 production-ready agent skills, 30+ specialist agents, and 70+ custom commands into your ~/.claude directory — covering engineering, marketing, product, compliance, C-level advisory, finance, DevOps, and personal productivity. Hit #1 GitHub Trending on July 5, 2026; 15.3K stars as of July 14. Uniquely cross-platform: the same SKILL.md files work across Claude Code, OpenAI Codex, Gemini CLI, Cursor, Aider, Windsurf, Kilo Code, OpenCode, Augment Code, Hermes Agent, OpenClaw, Mistral Vibe, and Antigravity with zero conversion.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral · marketplace · terminal</div>
+  <pre><button class="copy">copy</button><code>npx skills add alirezarezvani/claude-skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/SawyerHood/dev-browser">SawyerHood/dev-browser — Browser Automation Skill; QuickJS WASM Sandbox; Persistent Page State; 6.5K Stars</a></h3>
+  <p class="hook">Gives Claude Code a real browser without the security concerns: scripts execute inside a QuickJS WASM sandbox with no access to the host filesystem or network, while the browser itself connects to a running Chrome or fresh Chromium. Features persistent page state across steps (so Claude can log in once and reuse the session), step-by-step debug mode, smart DOM analysis, and Chrome extension support. 6.5K stars; recently featured in the hesreallyhim/awesome-claude-code curated list. Works with Claude Code, Cursor, Windsurf, and any agent that reads skill files.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral · marketplace · browser · security · debugger</div>
+  <pre><button class="copy">copy</button><code>npx skills add SawyerHood/dev-browser</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Graphify-Labs/graphify">Graphify-Labs/graphify — ~95K Stars; Day 3; Knowledge Graph for Any Codebase; 70x Cost Cut</a></h3>
+  <p class="hook">Turns any codebase — plus docs, SQL schemas, configs, and PDFs — into a queryable knowledge graph using local deterministic AST parsing (tree-sitter, 158 languages). A PreToolUse hook routes every file-search through the graph; 15 MCP tools add path tracing, dead-code detection, and architecture analysis. MindStudio benchmarks show up to 70x cost reduction on 500+ file projects. v0.9.25 added automatic diff-impact analysis and Figma-node support. Continues to hold position as the leading codebase-graph tool in the Claude Code ecosystem.</p>
+  <div class="secondary">Also: <a href="https://www.mindstudio.ai/blog/graphify-claude-code-knowledge-graph-large-codebase-70x">www.mindstudio.ai/blog/graphify-claude-code-knowledge-graph-large-codebase-70x</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">mcp · memory · viral</div>
+  <pre><button class="copy">copy</button><code>uv tool install graphifyy &amp;&amp; graphify install</code></pre>
+  <div class="recurring">↑ Day 3 — ~95K stars; codebase-graph category still accelerating</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/affaan-m/ECC">affaan-m/ECC — 232K+ Stars; Day 2; 67 Agents + 278 Skills + 94 Commands; Agent OS for Claude Code</a></h3>
+  <p class="hook">ECC bundles 67+ specialist agents, 278+ skill definitions, 94+ command shims, and lifecycle hooks for Claude Code, Cursor, OpenCode, and Codex across 12 language ecosystems. Ships code review, TDD, security scanning (via the author&#39;s AgentShield), documentation generation, CI/CD optimization, and a pattern-extraction system that learns from your own development history. Hackathon grand-prize winner; 232K+ stars. Made an impact this week as Claude Opus 5 became its default backend model.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">plugin · marketplace · security · review</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add https://github.com/affaan-m/ECC</code></pre>
+  <div class="recurring">↑ 232K+ stars; Claude Opus 5 now the default backend</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/multica-ai/andrej-karpathy-skills">multica-ai/andrej-karpathy-skills — 194K+ Stars; Day 8; 4 Rules That Stop Claude Breaking Code</a></h3>
+  <p class="hook">A CLAUDE.md encoding Andrej Karpathy&#39;s four rules for LLM coding: Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution. Each rule blocks a specific failure mode Karpathy documented — unfounded assumptions, unnecessary abstraction, unintended side-effects, vague success criteria. 194K+ stars; the most-cited CLAUDE.md framework in the ecosystem this week. Works as a drop-in CLAUDE.md or installable plugin across Claude Code, Cursor, Codex, and 60+ other agents. With Opus 5&#39;s sharper reasoning, many users are pairing this with the new model today.</p>
+  <div class="secondary">Also: <a href="https://aitrends24.substack.com/p/i-installed-the-144k-star-karpathy">aitrends24.substack.com/p/i-installed-the-144k-star-karpathy</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">plugin · model · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add forrestchang/andrej-karpathy-skills &amp;&amp; /plugin install andrej-karpathy-skills@karpathy-skills</code></pre>
+  <div class="recurring">↑ Day 8 — 194K+ stars; still the dominant CLAUDE.md framework</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/JuliusBrussee/caveman">JuliusBrussee/caveman — 92.3K Stars; Day 2; 65% Fewer Output Tokens; Caveman-Speak, Full Accuracy</a></h3>
+  <p class="hook">Compresses agent responses into terse caveman-speak without losing any technical accuracy — code, commands, and error messages remain byte-for-byte exact, only the prose is stripped. Benchmarked at 65% average output token reduction (range 22–87% across 1,200 test scenarios). Output tokens are typically 1–2% of a Claude Code bill, so the gains are largest for output-heavy automation. 92.3K stars, 5.2K forks. Pairs naturally with Claude Opus 5 today: faster output + longer context means caveman&#39;s compression keeps costs predictable on big-context runs.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">token · viral</div>
+  <pre><button class="copy">copy</button><code>curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash</code></pre>
+  <div class="recurring">↑ 92.3K stars; pairing with Opus 5 for output-cost control</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/farion1231/cc-switch">farion1231/cc-switch — 120K Stars; Day 2; Desktop GUI Switches Between 6 Coding Agents; 50+ Provider Presets</a></h3>
+  <p class="hook">Cross-platform desktop app (Windows, macOS, Linux) that eliminates hand-editing JSON and environment files when switching between Claude Code, Codex, OpenCode, OpenClaw, Grok Build, and Hermes Agent. One click swaps between 50+ API provider presets; a unified sidebar manages MCP servers and Skills across all tools simultaneously; cloud sync keeps configs consistent across machines. v3.18.0 released July 21. With Claude Opus 5 now the default Opus, cc-switch users can hot-swap the model per-agent from one panel. 120K stars, 8.1K forks.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">mcp · viral</div>
+  <pre><button class="copy">copy</button><code>brew install --cask cc-switch</code></pre>
+  <div class="recurring">↑ 120K stars; Opus 5 default makes model-switching more relevant</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/thedotmack/claude-mem">thedotmack/claude-mem — 88.3K Stars; Day 2; Persistent Memory Across Sessions; 5 Hooks + SQLite + Chroma</a></h3>
+  <p class="hook">Solves session amnesia with five lifecycle hooks (SessionStart, PostToolUse, Stop, UserPromptSubmit, SessionEnd) that capture every tool use, file read, and edit; a local Bun worker compresses observations via Claude Agent SDK and stores them in SQLite with full-text search and Chroma for hybrid semantic/keyword retrieval. Future sessions surface relevant memories with visible token costs via the mem-search skill&#39;s &#39;progressive disclosure&#39; system. v13.12.2 shipped July 23; 88.3K stars. With Opus 5&#39;s 1M context window, claude-mem&#39;s memory injection becomes less of a context-pressure problem.</p>
+  <div class="secondary">Also: <a href="https://www.augmentcode.com/learn/claude-mem-persistent-memory-claude-code">www.augmentcode.com/learn/claude-mem-persistent-memory-claude-code</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">skill · memory · context · viral · search</div>
+  <pre><button class="copy">copy</button><code>npx claude-mem install</code></pre>
+  <div class="recurring">↑ 88.3K stars; 1M Opus 5 context changes how mem-injection feels</div>
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
