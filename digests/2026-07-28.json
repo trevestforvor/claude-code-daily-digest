@@ -1,0 +1,160 @@
+[
+  {
+    "slug": "claude-video",
+    "name": "bradautomates/claude-video — 11.8K Stars; +989 Today; /watch Skill Lets Claude See Videos",
+    "primary_url": "https://github.com/bradautomates/claude-video",
+    "hook": "Topped GitHub trending in the Claude Code space today with +989 stars in a single day. The `/watch` skill downloads video content, extracts frames intelligently (keyframe detection or scene-aware sampling), prioritizes free built-in captions then falls back to Whisper transcription, deduplicates static frames to avoid redundant image tokens, and delivers frames + transcript to Claude for full comprehension — not just title/description guessing. Smart frame budgeting auto-adjusts density by video length to keep token usage predictable. Works as a Claude Code plugin or cross-platform skill. 11.8K stars total.",
+    "categories": ["design", "viral"],
+    "install": "/plugin marketplace add bradautomates/claude-video && /plugin install watch@claude-video"
+  },
+  {
+    "slug": "snip",
+    "name": "rixinhahaha/snip — 46.1K Stars; Visual Whiteboard Between You and Your AI Agent",
+    "primary_url": "https://github.com/rixinhahaha/snip",
+    "secondary_urls": ["https://snipit.dev/"],
+    "hook": "Snip is a visual communication layer between humans and AI agents: Claude Code renders diagrams, HTML, posters, or UI components into Snip's Electron canvas; you approve or annotate directly on the output (circle what's wrong, draw an arrow, write a note); the agent sees your annotations and iterates — closing the spec-to-UI loop without switching between a chat window and a browser. Runs on macOS and Linux; uses Ollama locally for AI-powered organization. Works with Claude Code, Cursor, Windsurf, and Cline via CLI or MCP server. 46.1K stars.",
+    "categories": ["design"],
+    "install": "brew install --cask rixinhahaha/snip/snip"
+  },
+  {
+    "slug": "hallmark",
+    "name": "Nutlope/hallmark — 19.2K Stars; Anti-AI-Slop Design Skill; 57 Gates + 20 Themes",
+    "primary_url": "https://github.com/Nutlope/hallmark",
+    "hook": "Hallmark (by Hassan El Mghari at Together AI) encodes rules that refuse the on-distribution defaults every frontier model was trained on, then runs 57 slop-test gates plus a pre-emit self-critique before handing code back. Every page gets a unique fingerprint: macrostructure selection picks layout archetypes per brief, dresses them in one of 20 named themes, and only falls back to a bespoke Custom theme when the brief carries creative intent no catalog theme fits. Four verbs: build, audit, redesign, study. Hit 12.2K stars on July 15 (#1 Trendshift) — now at 19.2K. Chase-H-AI credited a 'New Design Skill' in back-to-back Fable 5 + web design videos the same week.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add nutlope/hallmark",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "graphify",
+    "name": "Graphify-Labs/graphify — ~97.4K Stars; Day 6; Knowledge Graph for Any Codebase; 70x Cost Cut",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "secondary_urls": [
+      "https://www.mindstudio.ai/blog/graphify-claude-code-knowledge-graph-large-codebase-70x"
+    ],
+    "hook": "Turns any codebase — plus docs, SQL schemas, configs, and PDFs — into a queryable knowledge graph using local deterministic AST parsing (tree-sitter, 158 languages). A PreToolUse hook routes every file-search through the graph; 15 MCP tools add path tracing, dead-code detection, and architecture analysis. MindStudio benchmarks show up to 70x cost reduction on 500+ file projects. v0.9.25 added automatic diff-impact analysis and Figma-node support. Updated again July 28 — still the leading codebase-graph tool in the ecosystem for a sixth straight day. ~97.4K stars.",
+    "categories": ["design", "cost"],
+    "install": "uv tool install graphifyy && graphify install",
+    "recurring_note": "↑ Day 6 — ~97.4K stars; updated today; codebase-graph category still accelerating"
+  },
+  {
+    "slug": "book-to-skill",
+    "name": "virgiliojr94/book-to-skill — 11K Stars; +366 Today; 24–51× Token Reduction; PDFs and EPUBs as Agent Skills",
+    "primary_url": "https://github.com/virgiliojr94/book-to-skill",
+    "hook": "Converts technical books and documents — PDF, EPUB, DOCX, HTML, Markdown, AsciiDoc — into structured agent skills with 24–51× token reduction compared to pasting raw text into context. Extraction splits output into: a core skill file with key concepts, per-chapter files loaded only when needed, glossaries, pattern collections, and decision cheatsheets. One-time compilation cost; subsequent queries load only the relevant chapter. Fully local — files never uploaded. Compatible with Claude Code, Cursor, GitHub Copilot CLI, Amp, and any platform supporting the open Agent Skills standard. Surged to #3 on GitHub trending today with +366 stars. 11K stars total.",
+    "categories": ["cost"],
+    "install": "pip install \"book-to-skill[pdf,epub,docx]\""
+  },
+  {
+    "slug": "caveman",
+    "name": "JuliusBrussee/caveman — 93.7K Stars; Day 5; 65% Fewer Output Tokens; Caveman-Speak, Full Accuracy",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "Compresses agent responses into terse caveman-speak without losing any technical accuracy — code, commands, and error messages remain byte-for-byte exact, only the prose is stripped. Benchmarked at 65% average output token reduction (range 22–87% across 1,200 test scenarios). Output tokens are typically 1–2% of a Claude Code bill, so the gains are largest for output-heavy automation. 93.7K stars, updated yesterday. With Opus 5's 128K output cap, long agentic sessions can accumulate significant output costs — caveman's compression keeps those predictable.",
+    "categories": ["cost"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash",
+    "recurring_note": "↑ Day 5 — 93.7K stars; updated July 27; output-cost control increasingly relevant with Opus 5"
+  },
+  {
+    "slug": "anthropic-economic-index-connector",
+    "name": "Anthropic Economic Index Connector — Official; Launched July 22; Query AI Economic Data in Plain English",
+    "primary_url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
+    "hook": "Anthropic launched a free MCP connector (July 22, 2026) that lets any Claude user ask plain-English questions about how AI is actually being used across occupations, industries, and regions — grounded in the Anthropic Economic Index's real observed data (not modeled projections). Questions like 'Which occupations use AI the most?', 'What sorts of tasks do teachers use Claude for?', and 'What are the most common AI use cases in Colorado?' resolve to structured answers. Setup takes about one minute: open the connectors menu in claude.ai, find the Anthropic Economic Index in the directory, and enable it. Works in any Claude conversation with any Claude model; nothing to install for Claude Code users with connectors configured.",
+    "categories": ["anthropic"],
+    "install": "Enable via claude.ai connectors directory (no CLI install needed)"
+  },
+  {
+    "slug": "claude-opus-5",
+    "name": "Anthropic Claude Opus 5 — 1M Context, $5/$25, 96% SWE-bench Verified; Day 4 — Ecosystem Adoption Continuing",
+    "primary_url": "https://platform.claude.com/docs/en/about-claude/models/whats-new-opus-5",
+    "secondary_urls": [
+      "https://www.marktechpost.com/2026/07/24/meet-the-new-claude-opus-5-frontier-class-agentic-coding-and-computer-use-at-unchanged-opus-pricing/",
+      "https://github.com/anthropics/claude-code/releases/tag/v2.1.219"
+    ],
+    "hook": "Anthropic shipped Claude Opus 5 on July 24, 2026, and it became the default Opus model in Claude Code that same day via v2.1.219. It scores 96.0% on SWE-bench Verified and 79.2% on SWE-bench Pro — more than doubling Opus 4.8's per-task performance — and hits 3× the next-best model on ARC-AGI 3 at unchanged pricing ($5 input / $25 output per MTok). A flat 1M-token context window with thinking on by default; fast mode runs at $10/$50 at 2.5× speed. Also hits SOTA on OSWorld 2.0 GUI interaction and 1.5× Opus 4.8's pass rate on Zapier AutomationBench. Day 4: new claude-video and book-to-skill both already list Opus 5 as the recommended backend.",
+    "categories": ["anthropic", "cost"],
+    "install": "npm update -g @anthropic-ai/claude-code",
+    "recurring_note": "↑ Day 4 — new ecosystem tools (claude-video, book-to-skill) default to Opus 5 on launch"
+  },
+  {
+    "slug": "ecc",
+    "name": "affaan-m/ECC — 234.5K Stars; Day 5; +692 Stars Today; 67 Agents + 278 Skills; Agent OS for Claude Code",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "ECC bundles 67+ specialist agents, 278+ skill definitions, 94+ command shims, and lifecycle hooks for Claude Code, Cursor, OpenCode, and Codex across 12 language ecosystems. Ships code review, TDD, security scanning (via the author's AgentShield), documentation generation, CI/CD optimization, and a pattern-extraction system that learns from your own development history. Hackathon grand-prize winner; still gaining +692 stars today at 234.5K total. Claude Opus 5 is the default backend, and ECC's depth-3 subagent support pairs directly with v2.1.219's nested subagent forwarding.",
+    "categories": ["skill", "general"],
+    "install": "/plugin marketplace add https://github.com/affaan-m/ECC",
+    "recurring_note": "↑ Day 5 — 234.5K stars; +692 today; still GitHub trending"
+  },
+  {
+    "slug": "andrej-karpathy-skills",
+    "name": "multica-ai/andrej-karpathy-skills — 194K+ Stars; Day 11; 4 Rules That Stop Claude Breaking Code",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "secondary_urls": [
+      "https://aitrends24.substack.com/p/i-installed-the-144k-star-karpathy"
+    ],
+    "hook": "A CLAUDE.md encoding Andrej Karpathy's four rules for LLM coding: Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution. Each rule blocks a specific failure mode Karpathy documented — unfounded assumptions, unnecessary abstraction, unintended side-effects, vague success criteria. 194K+ stars; the most-cited CLAUDE.md framework in the ecosystem for an eleventh straight day. Works as a drop-in CLAUDE.md or installable plugin across Claude Code, Cursor, Codex, and 60+ other agents. Pairs naturally with Opus 5's expanded planning budget to keep multi-step agentic tasks surgically focused.",
+    "categories": ["design", "general"],
+    "install": "/plugin marketplace add forrestchang/andrej-karpathy-skills && /plugin install andrej-karpathy-skills@karpathy-skills",
+    "recurring_note": "↑ Day 11 — 194K+ stars; still the dominant CLAUDE.md framework in the ecosystem"
+  },
+  {
+    "slug": "superpowers",
+    "name": "obra/superpowers — 200K+ Stars; Day 3; Most-Installed Claude Code Plugin (941K Installs); TDD + Subagent Orchestration",
+    "primary_url": "https://github.com/obra/superpowers",
+    "secondary_urls": [
+      "https://claude.com/plugins/superpowers"
+    ],
+    "hook": "obra/superpowers is the most-installed plugin in the Claude Code official marketplace with 200K+ GitHub stars and 941K+ recorded installs. The framework bundles 14+ skills that enforce a brainstorm → plan → implement → verify loop: worker subagents execute plan steps while an orchestrator reviews results; TDD is enforced, not suggested; and a verification skill blocks Claude from marking work done until tests pass. Accepted into the official Anthropic plugin marketplace on January 15, 2026. v6.1.1 patched Codex hook re-registration; a June 2026 HN thread measured 9%-cheaper / 14%-fewer-tokens in controlled comparison.",
+    "categories": ["skill", "general"],
+    "install": "/plugin install superpowers@claude-plugins-official",
+    "recurring_note": "↑ Day 3 — 941K installs; most-installed Claude Code plugin in the official marketplace"
+  },
+  {
+    "slug": "understand-anything",
+    "name": "Egonex-AI/Understand-Anything — 74.7K Stars; Day 2; Multi-Agent Codebase Knowledge Graph; Interactive Web Dashboard",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=LM14h8RBXuM",
+      "https://understand-anything.com/"
+    ],
+    "hook": "A multi-agent pipeline scans your project, extracts every file, function, class, and dependency, then saves a queryable graph to .ua/knowledge-graph.json and opens a React + TypeScript web dashboard with color-coded architectural layers, full-text search, and plain-English node explanations. Ships as a .claude-plugin and works with Claude Code, Codex, Cursor, Copilot, and Gemini CLI. @charlieautomates featured it as the '#1 Claude Code Repo' in July 2026 — GitHub's top trending repo the day it broke. 74.7K stars.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything && /plugin install understand-anything",
+    "creator_buzz": ["@charlieautomates"],
+    "recurring_note": "↑ Day 2 — 74.7K stars; companion to Graphify in the codebase-graph category"
+  },
+  {
+    "slug": "paul-seed-framework",
+    "name": "ChristopherKahler/paul + seed — PAUL (1K Stars) + SEED (281 Stars); Plan-Apply-Unify Loop; Acceptance-Criteria-First Development",
+    "primary_url": "https://github.com/ChristopherKahler/paul",
+    "secondary_urls": [
+      "https://github.com/ChristopherKahler/seed",
+      "https://www.youtube.com/watch?v=NB9Pf4cdFeM"
+    ],
+    "hook": "PAUL (Plan-Apply-Unify Loop) enforces a strict Plan→Apply→Unify cycle where every work unit closes with a UNIFY step that reconciles what was planned vs what happened — blocking 'context rot' as sessions fill. Acceptance criteria are first-class citizens, not afterthoughts. Companion SEED interviews requirements via 8–10 pointed questions (type-aware guided exploration), then packages the output into a spec Claude hands directly to PAUL. @charlieautomates called the combo 'The Claude Code Meta Nobody's Talking About.' PAUL: 1K stars, MIT; SEED: 281 stars; both free on npm.",
+    "categories": ["design", "general"],
+    "install": "npm install -g paul-framework",
+    "creator_buzz": ["@charlieautomates"],
+    "recurring_note": "↑ Day 2 — still the most methodologically rigorous workflow framework in the ecosystem"
+  },
+  {
+    "slug": "ralph-wiggum",
+    "name": "anthropics/ralph-wiggum — Official Anthropic Loop Plugin; 139K Stars; Day 4; Stop Hook Keeps Claude Working Until Done",
+    "primary_url": "https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum",
+    "hook": "Ralph Wiggum is the official Anthropic autonomous-loop plugin inside the claude-code repo: a Stop hook blocks Claude's exit, re-injects the original prompt, and loops until Claude outputs a configurable completion phrase (e.g., `<promise>COMPLETE</promise>`) or hits `--max-iterations`. Concrete benefit: you can hand it a greenfield REST API spec and walk away — Claude reads its own git history and file output each iteration to improve, catches its own test failures, and only stops when done. 139K stars, 22.3K forks. Pairs well with claude-video's /watch skill for loops that verify their own visual output.",
+    "categories": ["anthropic", "general"],
+    "install": "/plugin install ralph-wiggum@claude-code",
+    "recurring_note": "↑ Day 4 — 139K stars; Opus 5's depth-3 subagents make ralph-wiggum loops more capable"
+  },
+  {
+    "slug": "chrome-devtools-mcp",
+    "name": "ChromeDevTools/chrome-devtools-mcp — Official Chrome Team MCP; 47.6K Stars; Day 4; 29 Tools for Browser Debugging in Claude Code",
+    "primary_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "secondary_urls": [
+      "https://developer.chrome.com/blog/chrome-devtools-mcp"
+    ],
+    "hook": "The Chrome DevTools team's official MCP server gives Claude Code (and any MCP client) direct access to a live Chrome browser through 29 tools: browser automation with clicks, form fills, navigation, and dialogs; Lighthouse audits; performance traces; memory snapshots; network request inspection; and console-message analysis. 47.6K stars. Now pairs with Claude Code's built-in desktop browser (Week 28 feature) for zero-config end-to-end debug loops — and with claude-video's frame extraction for complete web-app QA in a single session.",
+    "categories": ["mcp"],
+    "install": "npx -y chrome-devtools-mcp@latest",
+    "recurring_note": "↑ Day 4 — 47.6K stars; pairs with claude-video for complete web-app visual QA"
+  }
+]
