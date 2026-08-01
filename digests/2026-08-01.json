@@ -1,0 +1,161 @@
+[
+  {
+    "slug": "open-design",
+    "name": "nexu-io/open-design — 82.9K+ Stars; Day 2; Open-Source Claude Design Alternative; 151 Design Systems; HTML/PDF/PPTX/MP4 Export",
+    "primary_url": "https://github.com/nexu-io/open-design",
+    "secondary_urls": [
+      "https://open-design.ai",
+      "https://www.augmentcode.com/learn/open-design-claude-design-alternative"
+    ],
+    "hook": "Open Design turns any coding agent — Claude Code, Codex, Cursor, Gemini CLI, or 20+ others — into a full design engine: prototypes, landing pages, dashboards, presentations, images, and video exported as real files (HTML, PDF, PPTX, MP4). Anthropic launched Claude Design in April 2026 as a closed-source, cloud-only, Anthropic-model-only tool; nexu-io/open-design built the same artifact-first loop with 151 brand-grade DESIGN.md design systems, 100+ functional skills, HyperFrames for motion graphics, and a multi-provider BYOK proxy so you swap models with one click. v0.16.0 (July 22) merged 92 PRs from 20 contributors; v0.16.1 (July 23) cleaned up build/complete status UI. 82.9K+ stars; currently the fastest-growing new entry in the Claude Code design ecosystem.",
+    "categories": ["design"],
+    "install": "od mcp install claude",
+    "recurring_note": "↑ Day 2 — entered yesterday; highest-starred new repo in the ecosystem in weeks"
+  },
+  {
+    "slug": "graphify",
+    "name": "Graphify-Labs/graphify — ~97.5K Stars; Day 10; Knowledge Graph for Any Codebase; 70x Cost Cut",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "secondary_urls": [
+      "https://www.mindstudio.ai/blog/graphify-claude-code-knowledge-graph-large-codebase-70x"
+    ],
+    "hook": "Turns any codebase — plus docs, SQL schemas, configs, and PDFs — into a queryable knowledge graph using local deterministic AST parsing (tree-sitter, 158 languages). A PreToolUse hook routes every file-search through the graph; 15 MCP tools add path tracing, dead-code detection, and architecture analysis. MindStudio benchmarks show up to 70x cost reduction on 500+ file projects. ~97.5K stars; ten straight days as the leading codebase-graph tool in the Claude Code ecosystem.",
+    "categories": ["design", "cost"],
+    "install": "uv tool install graphifyy && graphify install",
+    "recurring_note": "↑ Day 10 — ~97.5K stars; pairs with open-design for architecture-aware design workflows"
+  },
+  {
+    "slug": "andrej-karpathy-skills",
+    "name": "multica-ai/andrej-karpathy-skills — 194K+ Stars; Day 15; 4 Rules That Stop Claude Breaking Code",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "secondary_urls": [
+      "https://aitrends24.substack.com/p/i-installed-the-144k-star-karpathy"
+    ],
+    "hook": "A CLAUDE.md encoding Andrej Karpathy's four rules for LLM coding: Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution. Each rule blocks a specific failure mode Karpathy documented — unfounded assumptions, unnecessary abstraction, unintended side-effects, vague success criteria. 194K+ stars; the most-cited CLAUDE.md framework in the ecosystem for a fifteenth straight day. Works as a drop-in CLAUDE.md or installable plugin across Claude Code, Cursor, Codex, and 60+ other agents.",
+    "categories": ["design", "general"],
+    "install": "/plugin marketplace add forrestchang/andrej-karpathy-skills && /plugin install andrej-karpathy-skills@karpathy-skills",
+    "recurring_note": "↑ Day 15 — 194K+ stars; still the dominant CLAUDE.md framework in the ecosystem"
+  },
+  {
+    "slug": "caveman",
+    "name": "JuliusBrussee/caveman — 93.7K Stars; Day 9; 65% Fewer Output Tokens; Caveman-Speak, Full Accuracy",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "Compresses agent responses into terse caveman-speak without losing any technical accuracy — code, commands, and error messages remain byte-for-byte exact, only the prose is stripped. Benchmarked at 65% average output token reduction (range 22–87% across 1,200 test scenarios). 93.7K stars. With Opus 5's 128K output cap, long agentic sessions can accumulate significant output costs — caveman's compression keeps those predictable.",
+    "categories": ["cost"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash",
+    "recurring_note": "↑ Day 9 — 93.7K stars; pairs with headroom for complete input + output token stack"
+  },
+  {
+    "slug": "ecc",
+    "name": "affaan-m/ECC — 234.5K Stars; Day 9; 67 Agents + 278 Skills + 94 Commands; Agent OS for Claude Code",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "ECC bundles 67+ specialist agents, 278+ skill definitions, 94+ command shims, and lifecycle hooks for Claude Code, Cursor, OpenCode, and Codex across 12 language ecosystems. Ships code review, TDD, security scanning (via AgentShield), documentation generation, CI/CD optimization, and a pattern-extraction system that learns from your own development history. Hackathon grand-prize winner; 234.5K total stars. Claude Opus 5 is the default backend with depth-3 subagent support.",
+    "categories": ["skill", "general"],
+    "install": "/plugin marketplace add https://github.com/affaan-m/ECC",
+    "recurring_note": "↑ Day 9 — 234.5K stars; AAS Core catalog now includes ECC skill templates"
+  },
+  {
+    "slug": "understand-anything",
+    "name": "Egonex-AI/Understand-Anything — 74.7K Stars; Day 6; Multi-Agent Codebase Knowledge Graph; Interactive Web Dashboard",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=LM14h8RBXuM",
+      "https://understand-anything.com/"
+    ],
+    "hook": "A multi-agent pipeline scans your project, extracts every file, function, class, and dependency, then saves a queryable graph to .ua/knowledge-graph.json and opens a React + TypeScript web dashboard with color-coded architectural layers, full-text search, and plain-English node explanations. Ships as a .claude-plugin and works with Claude Code, Codex, Cursor, Copilot, and Gemini CLI. @charlieautomates featured it as the '#1 Claude Code Repo' in July 2026. 74.7K stars.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything && /plugin install understand-anything",
+    "creator_buzz": ["@charlieautomates"],
+    "recurring_note": "↑ Day 6 — 74.7K stars; codebase-intelligence category alongside graphify and open-design"
+  },
+  {
+    "slug": "headroom",
+    "name": "headroomlabs-ai/headroom — 63.1K Stars; Day 4; 92% Token Savings on Code Search; Context Compressor for Claude Code",
+    "primary_url": "https://github.com/headroomlabs-ai/headroom",
+    "hook": "Compresses tool outputs, logs, RAG chunks, and files before they reach the LLM: 92% token savings on 100-result code searches (17,765 → 1,408 tokens), 92% on SRE incident debugging, 73% on GitHub issue triage — accuracy held across GSM8K and SQuAD v2. Ships as a Python library, HTTP proxy, and MCP server. Claude Code integration: `headroom wrap claude` launches a configured session. 63.1K stars.",
+    "categories": ["cost", "mcp"],
+    "install": "pip install \"headroom-ai[all]\" && headroom wrap claude",
+    "recurring_note": "↑ Day 4 — 63.1K stars; pairs with caveman for full input + output token control"
+  },
+  {
+    "slug": "claude-code-best-practice",
+    "name": "shanraisshan/claude-code-best-practice — 63.8K Stars; Day 4; 83 Tips; From Vibe Coding to Agentic Engineering",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=9rgDMm8QUIg"
+    ],
+    "hook": "The most-cited Claude Code best-practice guide on GitHub, updated July 31, 2026 and sitting at 63.8K stars. Covers every surface: subagents, commands, skills, workflows, hooks, MCP configs, memory management, and 12+ documented methodologies from Research → Plan → Execute → Review → Ship. Standout section: 83 actionable tips including how to avoid the 'dumb zone' at ~40% context usage, agent team patterns using tmux + git worktrees, and context-rot prevention rules for the Opus 5 1M-window era.",
+    "categories": ["design", "general"],
+    "install": "git clone https://github.com/shanraisshan/claude-code-best-practice",
+    "recurring_note": "↑ Day 4 — 63.8K stars; updated July 31"
+  },
+  {
+    "slug": "agent-reach",
+    "name": "Panniantong/Agent-Reach — 62.3K Stars; Day 4; Read Twitter, Reddit, YouTube, GitHub in Claude Code; Zero API Fees",
+    "primary_url": "https://github.com/Panniantong/Agent-Reach",
+    "hook": "Gives Claude Code read and search access to 13 internet platforms — Twitter/X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, Facebook, Instagram, LinkedIn, RSS, and the open web — through one CLI with zero API fees. All backends are open-source tools (bird CLI, yt-dlp, Jina Reader, Exa) with automatic fallback routing when a primary source fails and an `agent-reach doctor` command for platform health diagnostics. 62.3K stars; updated July 28.",
+    "categories": ["general", "mcp"],
+    "install": "npx skills add Panniantong/Agent-Reach@agent-reach",
+    "recurring_note": "↑ Day 4 — 62.3K stars; still trending"
+  },
+  {
+    "slug": "hallmark",
+    "name": "Nutlope/hallmark — 19.2K Stars; Day 5; Anti-AI-Slop Design Skill; 57 Gates + 20 Themes",
+    "primary_url": "https://github.com/Nutlope/hallmark",
+    "hook": "Hallmark (by Hassan El Mghari at Together AI) encodes rules that refuse the on-distribution defaults every frontier model was trained on, then runs 57 slop-test gates plus a pre-emit self-critique before handing code back. Every page gets a unique fingerprint: macrostructure selection picks layout archetypes per brief, dresses them in one of 20 named themes, and only falls back to a bespoke Custom theme when the brief carries creative intent no catalog theme fits. Four verbs: build, audit, redesign, study. 19.2K stars. Chase-H-AI featured it in back-to-back Fable 5 + web design videos.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add nutlope/hallmark",
+    "creator_buzz": ["@Chase-H-AI"],
+    "recurring_note": "↑ Day 5 — 19.2K stars; leading anti-slop design skill in the ecosystem"
+  },
+  {
+    "slug": "aas-core",
+    "name": "sickn33/agentic-awesome-skills — 44.2K Stars; Day 4; 1,993 Skills; Agent-First Catalog; Claude Picks, AAS Validates",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "hook": "AAS Core (v15.6.0) is a local, agent-first control plane for skill discovery and composition. Claude Code inspects your project, searches 1,993+ skills across dev, testing, security, infrastructure, product, and marketing via local MCP, selects exact skill IDs by its own judgment — AAS no longer ranks or recommends, it only validates and plans — and locks the selection into an aas-stack.json manifest (max 128 skills). CLI, local MCP, Workbench, and catalog all run fully local with no cloud dependency. 44.2K stars; updated July 31.",
+    "categories": ["skill", "general"],
+    "install": "npx agentic-awesome-skills",
+    "recurring_note": "↑ Day 4 — 44.2K stars; updated July 31"
+  },
+  {
+    "slug": "awesome-agent-skills",
+    "name": "VoltAgent/awesome-agent-skills — 29.3K Stars; Day 2; 1,497 Official + Community Skills; Hand-Picked from Anthropic, Google, Vercel, Stripe",
+    "primary_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "hook": "A curated catalog of 1,497+ agent skills from official development teams — Anthropic, Google Labs, Vercel, Stripe, Cloudflare — plus community contributors, all hand-picked rather than auto-generated. Compatible with Claude Code, Codex, Gemini CLI, Cursor, and GitHub Copilot. Updated July 31 with 424 commits. Positioned as the quality counterpart to AAS Core's volume-first 1,993-skill catalog: every skill here represents a real organization's published tooling, not a generated placeholder. 29.3K stars.",
+    "categories": ["skill", "general"],
+    "install": "See README: skills linked via officialskills.sh/[org]/skills/[skill-name]",
+    "recurring_note": "↑ Day 2 — 29.3K stars; still trending"
+  },
+  {
+    "slug": "planning-with-files",
+    "name": "OthmanAdi/planning-with-files — 25.9K Stars; Day 4; Crash-Proof Manus-Style Plans; 3 Markdown Files Beat Context Loss",
+    "primary_url": "https://github.com/OthmanAdi/planning-with-files",
+    "hook": "Solves context loss, goal drift, and session amnesia with three markdown files — task_plan.md, findings.md, progress.md — injected at the start of every Claude turn via lifecycle hooks. Plans survive /clear, context compaction, and crashes. Named after the Manus-style planning pattern behind the $2B acquisition: persistent work state in files, not volatile working memory. Ships with parallel task isolation via slug directories, SHA-256 plan attestation to prevent tampering, a gated completion mode, and compatibility with 60+ agents. v3.8.2; 25.9K stars.",
+    "categories": ["design", "general"],
+    "install": "/plugin marketplace add OthmanAdi/planning-with-files",
+    "recurring_note": "↑ Day 4 — 25.9K stars; still trending"
+  },
+  {
+    "slug": "mcp-2026-07-28-spec",
+    "name": "MCP 2026-07-28 Spec — Day 4; Stateless Core; MCP Tunnels; 3 New Extensions; 400M Monthly Downloads",
+    "primary_url": "https://modelcontextprotocol.io/specification/2026-07-28",
+    "secondary_urls": [
+      "https://blog.modelcontextprotocol.io/posts/2026-07-28/"
+    ],
+    "hook": "The biggest MCP protocol update since launch shipped July 28: stateless HTTP core (no initialization handshake, every request self-describing), three official extensions (MCP Apps for server-rendered UI, Tasks for async long-running ops, Enterprise Managed Auth via Entra and Okta), and MCP Tunnels for connecting to internal servers behind a firewall with no inbound rules. Beta SDKs in Python, TypeScript, Go, and C# live now. MCP hit 400M monthly SDK downloads — 4× growth in 2026.",
+    "categories": ["anthropic", "mcp"],
+    "install": "npm install @modelcontextprotocol/sdk@next",
+    "recurring_note": "↑ Day 4 — stateless spec adoption accelerating; open-design and awesome-agent-skills both list MCP integration"
+  },
+  {
+    "slug": "stitch-skills",
+    "name": "google-labs-code/stitch-skills — ~6,500 Stars; NEW; Google Labs Design-to-Code Agent Skills for Claude Code",
+    "primary_url": "https://github.com/google-labs-code/stitch-skills",
+    "secondary_urls": [
+      "https://www.charlieautomates.com/blog/build-a-custom-website-with-claude-code-google-stitch-21st-dev/"
+    ],
+    "hook": "Google Labs' open-source Agent Skills library that bridges Stitch (Google's AI-native design tool) to Claude Code, Cursor, Gemini CLI, and other coding agents via the MCP standard. Skills cover layout-to-component conversion, design-token extraction, constraint-aware responsive code generation, and component-library scaffolding directly from Stitch canvases. Hit GitHub Trending with +340 stars in one week, reaching ~6,500 total. Charlie Automates published a step-by-step guide building a full personal-brand website with Google Stitch + Claude Code + 21st.dev animations on top. Works alongside open-design's 151 DESIGN.md systems to close the design → code handoff gap from both ends — Stitch handles the canonical design source; open-design handles the code generation runtime.",
+    "categories": ["design", "mcp"],
+    "install": "See README"
+  }
+]
