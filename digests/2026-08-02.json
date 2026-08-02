@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "huashu-design",
+    "name": "Huashu Design",
+    "primary_url": "https://github.com/alchaincyf/huashu-design",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=7FU98O0JLHs"
+    ],
+    "hook": "HTML-native design skill for Claude Code by creator 花叔 with 22K stars, 20 design philosophies, 18+ style presets (Art Deco, Bauhaus, pixel art), high-fidelity prototype output, and MP4 export. Chase AI spotlighted it as one of the top fixes for Claude Code's web design problem — a single-sentence prompt produces studio-quality HTML.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add alchaincyf/huashu-design",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "higgsfield-skills",
+    "name": "Higgsfield AI Skills",
+    "primary_url": "https://github.com/higgsfield-ai/skills",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=7FU98O0JLHs"
+    ],
+    "hook": "Official Higgsfield AI skills pack (641 stars, pushed Jul 28) giving Claude Code access to 30+ image and video models: Veo 3.1, Kling 3.0, Seedance 2.0, Flux 2, GPT Image 2, and Higgsfield-exclusive Soul and Cinema Studio models. Chase AI featured it as the MCP-style solution for adding AI image/video generation directly from the terminal.",
+    "categories": ["design", "mcp", "skill"],
+    "install": "npx skills add higgsfield-ai/skills",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "skills-janitor",
+    "name": "Skills Janitor",
+    "primary_url": "https://github.com/khendzel/skills-janitor",
+    "hook": "\"Tinder for your Claude Code skills\" — 6-command, zero-dependency shell tool that audits installed skills by token cost and usage, then surfaces them as swipeable cards sorted heaviest-least-used-first. Claimed 30–40% context reduction before the deck ends. Also scans for prompt injection and broken symlinks. Works with Claude Code and Codex.",
+    "categories": ["cost", "skill"],
+    "install": "npx skills add khendzel/skills-janitor"
+  },
+  {
+    "slug": "buzz",
+    "name": "Buzz (by Block)",
+    "primary_url": "https://github.com/block/buzz",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=P1KpxzLVg7c"
+    ],
+    "hook": "Jack Dorsey's Block released Buzz (20.9K stars, active today) — a self-hostable Rust workspace where humans and AI agents share the same channels and project repos as first-class members. Claude Code, Codex, and Goose connect via the ACP protocol. Chase AI's video \"Claude Code + Codex Can FINALLY Work Together\" drove this into viral circulation on July 29.",
+    "categories": ["agents", "mcp"],
+    "install": "See README",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "skills-journalism",
+    "name": "Claude Skills: Journalism",
+    "primary_url": "https://github.com/jamditis/claude-skills-journalism",
+    "hook": "350-star Claude Code skills collection for journalism and academia, pushed today (Aug 2). Covers FOIA requests, OSINT investigations, deepfake and source verification, data journalism, narrative tracking, and academic writing. Fills a domain niche that generic coding-focused skill packs miss entirely.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add jamditis/claude-skills-journalism"
+  },
+  {
+    "slug": "glebis-claude-skills",
+    "name": "glebis/claude-skills",
+    "primary_url": "https://github.com/glebis/claude-skills",
+    "hook": "337-star community skills collection (pushed Jul 29) with a notable design and i18n focus: recent additions include font-features, typography, Nielsen heuristics evaluation, i18n translation workflows, pre-session-portrait, and release orchestration — a well-maintained set aimed at designers and product engineers.",
+    "categories": ["design", "skill"]
+  },
+  {
+    "slug": "fusion-harness",
+    "name": "Fusion Harness",
+    "primary_url": "https://github.com/disler/fusion-harness",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=5Qu2SkSQeBU"
+    ],
+    "hook": "245-star Pi coding agent extension that fuses frontier models instead of racing them: Claude Fable 5 in the ARCHITECT slot, GPT-5.6 Sol in the BUILDER slot, with /opinion, /fusion, and /auto-validate slash commands for two-model agentic engineering. IndyDevDan featured it in his \"Ultimate Coding Agent\" video combining Pi, Codex, and Claude Code.",
+    "categories": ["agents", "skill"],
+    "install": "See README",
+    "creator_buzz": ["@indydevdan"]
+  },
+  {
+    "slug": "mcp-explorer",
+    "name": "mcp-explorer",
+    "primary_url": "https://github.com/simonw/mcp-explorer",
+    "secondary_urls": [
+      "https://simonwillison.net/2026/Jul/31/stateless-mcp/"
+    ],
+    "hook": "Zero-install CLI tool (46 stars, pushed Aug 1) by Simon Willison for interactively probing any MCP server — list tools, run calls, inspect schemas, all from the terminal. Built specifically in response to the stateless MCP 2026-07-28 spec. Works via uvx with no local install required.",
+    "categories": ["mcp"],
+    "install": "pip install mcp-explorer"
+  },
+  {
+    "slug": "claude-code-marketplace-nr",
+    "name": "Netresearch Claude Code Marketplace",
+    "primary_url": "https://github.com/netresearch/claude-code-marketplace",
+    "hook": "Curated portable agent skills collection (51 stars, pushed today) following the open agentskills.io standard — installable across Claude Code, Cursor, Copilot, Codex, Gemini CLI, and 30+ other agents with a single command. Maintained by German software firm Netresearch as an enterprise-grade alternative to single-vendor skill packs.",
+    "categories": ["skill", "marketplace"],
+    "install": "/plugin marketplace add netresearch/claude-code-marketplace"
+  }
+]
