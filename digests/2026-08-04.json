@@ -1,0 +1,158 @@
+[
+  {
+    "slug": "andrej-karpathy-skills",
+    "name": "multica-ai/andrej-karpathy-skills — 194K+ Stars; Day 18; 4 Rules That Stop Claude Breaking Code",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "secondary_urls": [
+      "https://aitrends24.substack.com/p/i-installed-the-144k-star-karpathy"
+    ],
+    "hook": "A CLAUDE.md encoding Andrej Karpathy's four rules for LLM coding: Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution. Each rule blocks a specific failure mode — unfounded assumptions, unnecessary abstraction, unintended side-effects, vague success criteria. 194K+ stars; the most-cited CLAUDE.md framework in the ecosystem for an eighteenth straight day. Works as a drop-in CLAUDE.md or installable plugin across Claude Code, Cursor, Codex, and 60+ other agents.",
+    "categories": ["design", "general"],
+    "install": "/plugin marketplace add forrestchang/andrej-karpathy-skills && /plugin install andrej-karpathy-skills@karpathy-skills",
+    "recurring_note": "↑ Day 18 — 194K+ stars; unchallenged #1 CLAUDE.md framework for a third week"
+  },
+  {
+    "slug": "ecc",
+    "name": "affaan-m/ECC — 234.5K Stars; Day 12; 67 Agents + 278 Skills + 94 Commands; Agent OS for Claude Code",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "ECC bundles 67+ specialist agents, 278+ skill definitions, 94+ command shims, and lifecycle hooks for Claude Code, Cursor, OpenCode, and Codex across 12 language ecosystems. Ships code review, TDD, security scanning (via AgentShield), documentation generation, CI/CD optimization, and a pattern-extraction system that learns from your own development history. Hackathon grand-prize winner; 234.5K total stars — the highest raw star count of any item in the ecosystem.",
+    "categories": ["skill", "general"],
+    "install": "/plugin marketplace add https://github.com/affaan-m/ECC",
+    "recurring_note": "↑ Day 12 — 234.5K stars; largest star-count item in the ecosystem"
+  },
+  {
+    "slug": "graphify",
+    "name": "Graphify-Labs/graphify — ~97.5K Stars; Day 13; Knowledge Graph for Any Codebase; 70x Cost Cut",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "secondary_urls": [
+      "https://www.mindstudio.ai/blog/graphify-claude-code-knowledge-graph-large-codebase-70x"
+    ],
+    "hook": "Turns any codebase — plus docs, SQL schemas, configs, and PDFs — into a queryable knowledge graph using local deterministic AST parsing (tree-sitter, 158 languages). A PreToolUse hook routes every file-search through the graph; 15 MCP tools add path tracing, dead-code detection, and architecture analysis. MindStudio benchmarks show up to 70x cost reduction on 500+ file projects. ~97.5K stars; thirteen straight days as the leading codebase-graph tool in the Claude Code ecosystem.",
+    "categories": ["design", "cost"],
+    "install": "uv tool install graphifyy && graphify install",
+    "recurring_note": "↑ Day 13 — ~97.5K stars; codebase-graph benchmark holds"
+  },
+  {
+    "slug": "caveman",
+    "name": "JuliusBrussee/caveman — 93.7K Stars; Day 12; 65% Fewer Output Tokens; Caveman-Speak, Full Accuracy",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "Compresses agent responses into terse caveman-speak without losing any technical accuracy — code, commands, and error messages remain byte-for-byte exact, only the prose is stripped. Benchmarked at 65% average output token reduction (range 22–87% across 1,200 test scenarios). 93.7K stars. Pairs with headroom to form a complete input + output token control stack, and with context-mode for a three-layer context budget.",
+    "categories": ["cost"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash",
+    "recurring_note": "↑ Day 12 — 93.7K stars; the canonical output-token compression tool"
+  },
+  {
+    "slug": "open-design",
+    "name": "nexu-io/open-design — 82.9K+ Stars; Day 5; Open-Source Claude Design Alternative; 151 Design Systems; HTML/PDF/PPTX/MP4 Export",
+    "primary_url": "https://github.com/nexu-io/open-design",
+    "secondary_urls": [
+      "https://open-design.ai"
+    ],
+    "hook": "Open Design turns any coding agent — Claude Code, Codex, Cursor, Gemini CLI, or 20+ others — into a full design engine: prototypes, landing pages, dashboards, presentations, images, and video exported as real files (HTML, PDF, PPTX, MP4). Builds on 151 brand-grade DESIGN.md design systems, 100+ functional skills, HyperFrames for motion graphics, and a multi-provider BYOK proxy. 82.9K+ stars; the fastest-growing design engine in the Claude Code ecosystem.",
+    "categories": ["design"],
+    "install": "od mcp install claude",
+    "recurring_note": "↑ Day 5 — still the fastest-growing design alternative in the ecosystem"
+  },
+  {
+    "slug": "understand-anything",
+    "name": "Egonex-AI/Understand-Anything — 74.7K Stars; Day 9; Multi-Agent Codebase Knowledge Graph; Interactive Web Dashboard",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=LM14h8RBXuM",
+      "https://understand-anything.com/"
+    ],
+    "hook": "A multi-agent pipeline scans your project, extracts every file, function, class, and dependency, then saves a queryable graph to .ua/knowledge-graph.json and opens a React + TypeScript web dashboard with color-coded architectural layers, full-text search, and plain-English node explanations. Ships as a .claude-plugin; works with Claude Code, Codex, Cursor, Copilot, and Gemini CLI. @charlieautomates featured it as the '#1 Claude Code Repo' in July 2026. 74.7K stars.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything && /plugin install understand-anything",
+    "creator_buzz": ["@charlieautomates"],
+    "recurring_note": "↑ Day 9 — 74.7K stars; @charlieautomates spotlight still driving installs"
+  },
+  {
+    "slug": "headroom",
+    "name": "headroomlabs-ai/headroom — 63.1K Stars; Day 7; 92% Token Savings on Code Search; Context Compressor for Claude Code",
+    "primary_url": "https://github.com/headroomlabs-ai/headroom",
+    "hook": "Compresses tool outputs, logs, RAG chunks, and files before they reach the LLM: 92% token savings on 100-result code searches (17,765 → 1,408 tokens), 92% on SRE incident debugging, 73% on GitHub issue triage — accuracy held across GSM8K and SQuAD v2. Ships as a Python library, HTTP proxy, and MCP server. Claude Code integration: `headroom wrap claude`. 63.1K stars. Stack with caveman (output) and context-mode (session) for a full three-layer token budget.",
+    "categories": ["cost", "mcp"],
+    "install": "pip install \"headroom-ai[all]\" && headroom wrap claude",
+    "recurring_note": "↑ Day 7 — 63.1K stars; pairs with caveman + context-mode for full token stack"
+  },
+  {
+    "slug": "claude-code-best-practice",
+    "name": "shanraisshan/claude-code-best-practice — 63.9K Stars; Day 7; 83 Tips; From Vibe Coding to Agentic Engineering",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=9rgDMm8QUIg"
+    ],
+    "hook": "The most-cited Claude Code best-practice guide on GitHub, updated August 3, 2026 and sitting at 63.9K stars. Covers every surface: subagents, commands, skills, workflows, hooks, MCP configs, memory management, and 12+ documented methodologies from Research → Plan → Execute → Review → Ship. Standout section: 83 actionable tips including how to avoid the 'dumb zone' at ~40% context usage, agent team patterns using tmux + git worktrees, and context-rot prevention rules for the Opus 5 1M-window era.",
+    "categories": ["design", "general"],
+    "install": "git clone https://github.com/shanraisshan/claude-code-best-practice",
+    "recurring_note": "↑ Day 7 — 63.9K stars; updated Aug 3"
+  },
+  {
+    "slug": "aas-core",
+    "name": "sickn33/agentic-awesome-skills — 44.4K Stars; Day 7; 2,000+ Skills; Agent-First Catalog; Updated Aug 3",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "hook": "AAS Core (updated Aug 3) crossed the 2,000-skill milestone and sits at 44.4K stars. Claude Code inspects your project, searches skills across dev, testing, security, infrastructure, product, and marketing via local MCP, selects exact skill IDs by its own judgment — AAS validates and plans — and locks the selection into an aas-stack.json manifest (max 128 skills). CLI, local MCP, Workbench, and catalog all run fully local with no cloud dependency.",
+    "categories": ["skill", "general"],
+    "install": "npx agentic-awesome-skills",
+    "recurring_note": "↑ Day 7 — 44.4K stars; crossed 2,000-skill milestone; updated Aug 3"
+  },
+  {
+    "slug": "orca",
+    "name": "stablyai/orca — 37.2K Stars; NEW; ADE for Parallel Agent Fleets; Fan One Prompt Across 5 Agents",
+    "primary_url": "https://github.com/stablyai/orca",
+    "secondary_urls": [
+      "https://www.onorca.dev"
+    ],
+    "hook": "Orca is the ADE (Agent Development Environment) for orchestrating a fleet of parallel coding agents. Fan one prompt across five agents simultaneously — Claude Code, Codex, OpenCode, Cursor, GitHub Copilot, Pi, and 25+ others — each in its own isolated git worktree, then compare diffs and merge the winner. Ships as a native desktop app (macOS, Windows, Linux) plus a mobile companion for iOS and Android. Ghostty-class WebGL terminals with infinite splits, Design Mode (click any UI element to send HTML/CSS/screenshots to an agent), GitHub/Linear native integration, and SSH worktrees for remote machines. Topped GitHub Trending in July 2026 with 5,300+ stars in Week 29; crossed 37.2K total in four months. YC W22-backed.",
+    "categories": ["agents", "general"],
+    "install": "brew install --cask stablyai/orca/orca"
+  },
+  {
+    "slug": "hallmark",
+    "name": "Nutlope/hallmark — 19.2K Stars; Day 8; Anti-AI-Slop Design Skill; 57 Gates + 20 Themes",
+    "primary_url": "https://github.com/Nutlope/hallmark",
+    "hook": "Hallmark (by Hassan El Mghari at Together AI) encodes rules that refuse the on-distribution defaults every frontier model was trained on, then runs 57 slop-test gates plus a pre-emit self-critique before handing code back. Every page gets a unique fingerprint: macrostructure selection picks layout archetypes per brief, dresses them in one of 20 named themes, and only falls back to a bespoke Custom theme when the brief carries creative intent no catalog theme fits. Four verbs: build, audit, redesign, study. 19.2K stars.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add nutlope/hallmark",
+    "creator_buzz": ["@Chase-H-AI"],
+    "recurring_note": "↑ Day 8 — 19.2K stars; leading anti-slop design skill in the ecosystem"
+  },
+  {
+    "slug": "alirezarezvani-claude-skills",
+    "name": "alirezarezvani/claude-skills — 23.7K Stars; Day 2; 345 Skills; 18 Domains Incl. C-Level Advisory, Compliance, Regulatory",
+    "primary_url": "https://github.com/alirezarezvani/claude-skills",
+    "hook": "alirezarezvani/claude-skills (23.7K stars) is the most domain-diverse skill collection on GitHub: 345 skills, 30+ specialist agents, and 70+ custom commands spanning 18 domains — core Engineering, Product, Marketing, Productivity, Research, Project Management, Regulatory & Quality, Compliance, C-Level Advisory, Business Operations, Commercial, and Finance. The C-level advisory and compliance tracks fill niches no other public skill pack covers. Supports 13 AI coding tools including Claude Code, Codex, Gemini CLI, Cursor, Aider, and Windsurf via conversion scripts.",
+    "categories": ["skill", "general"],
+    "install": "/plugin marketplace add alirezarezvani/claude-skills && /plugin install engineering-skills@claude-code-skills",
+    "recurring_note": "↑ Day 2 — 23.7K stars; most domain-diverse skill pack in the ecosystem"
+  },
+  {
+    "slug": "context-mode",
+    "name": "mksglu/context-mode — 19.6K Stars; NEW; 98% Context Reduction; 315 KB → 5.4 KB MCP Server",
+    "primary_url": "https://github.com/mksglu/context-mode",
+    "secondary_urls": [
+      "https://www.mindstudio.ai/blog/context-mode-claude-code-315kb-to-5kb-session-compression"
+    ],
+    "hook": "Context Mode is an MCP server that sandboxes tool outputs before they reach Claude Code, compressing 315 KB of raw output to 5.4 KB over a full session (98% reduction). Intent-driven filtering indexes the full output and returns only sections matching your intent when output exceeds 5 KB. Benchmarks: Playwright snapshots 56 KB→299 B (99%), 20 GitHub Issues 59 KB→1.1 KB (98%), 500-line access logs 45 KB→155 B (100%). Session life before slowdown extends from ~30 minutes to ~3 hours. Also provides SQLite session persistence with full-text search recovery after compaction. Supports 17 platforms: Claude Code, Codex, OpenCode, Cursor, Gemini CLI, Kiro, Pi, and more. 19.6K stars.",
+    "categories": ["cost", "mcp"],
+    "install": "/plugin marketplace add mksglu/context-mode && /plugin install context-mode@context-mode"
+  },
+  {
+    "slug": "emdash",
+    "name": "generalaction/emdash — 5.3K Stars; NEW; YC W26 Open-Source ADE; Issue-to-PR Pipeline for Parallel Agents",
+    "primary_url": "https://github.com/generalaction/emdash",
+    "hook": "Emdash (YC W26, 5.3K stars, updated July 29) is the open-source ADE built around the issue-to-PR pipeline for parallel coding agents. Send tickets from Linear, GitHub, Jira, GitLab, Asana, Featurebase, Monday.com, or Forgejo directly into a waiting agent — each task runs in its own git worktree in parallel. Review diffs, create PRs, inspect CI checks, and merge from one interface without jumping between tools. Works with Claude Code, Codex, OpenCode, Amp, and other CLI agents. Also runs agents on remote machines over SSH. The complement to Orca: Orca optimizes for prompt-to-diff comparison across many agents; Emdash optimizes for ticket-driven parallel dev pipelines.",
+    "categories": ["agents", "general"],
+    "install": "See README (desktop app download)"
+  },
+  {
+    "slug": "generative-media-skills",
+    "name": "SamurAIGPT/Generative-Media-Skills — 4K Stars; Day 2; 41 Skills; Director-Level Video, Logo, Fashion Try-On, Interior Design",
+    "primary_url": "https://github.com/SamurAIGPT/Generative-Media-Skills",
+    "hook": "SamurAIGPT's Generative-Media-Skills (4K stars) packs 41 production-grade media skills into a single Claude Code install: 16 motion/video skills including Cinema Director, AI Fight Scene, and Seedance 2 director-level video generation; 21 image/visual skills from Logo Generator to Fashion Try-On, Interior Design, and YouTube Thumbnail; and 5 social media skills for Instagram posts, Product Campaigns, and UGC Ads — all powered by muapi.ai. Works across Claude Code, Cursor, and Gemini CLI.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add SamurAIGPT/Generative-Media-Skills --all",
+    "recurring_note": "↑ Day 2 — 4K stars; broadest media-generation skill pack in the ecosystem"
+  }
+]
