@@ -1,0 +1,133 @@
+[
+  {
+    "slug": "graphify",
+    "name": "Graphify — Knowledge Graph for Any Codebase",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "hook": "~97.5K stars and Day 15. Indexes your entire codebase into a queryable knowledge graph so Claude can answer architectural questions without re-reading files — community reports 70x cost savings on large-repo queries. The graph updates incrementally on file saves.",
+    "categories": ["design", "cost"],
+    "install": "npx graphify install",
+    "recurring_note": "↑ Day 15 — still the #1 design-tier repo by star velocity"
+  },
+  {
+    "slug": "claude-mem",
+    "name": "claude-mem — Persistent Context Across Sessions",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "89.8K stars, updated Aug 5. Captures everything Claude does across sessions, compresses it with AI, and injects relevant context automatically into new sessions via lifecycle hooks — no manual context management. Uses a three-layer progressive-disclosure architecture (search → timeline → fetch) that cuts memory token overhead by ~10x vs naively injecting full history. Works with Claude Code, OpenCode, Codex, and Gemini CLI.",
+    "categories": ["memory", "cost"],
+    "install": "npx claude-mem install"
+  },
+  {
+    "slug": "oh-my-openagent",
+    "name": "oh-my-openagent — Multi-Agent Orchestration for Complex Codebases",
+    "primary_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "hook": "67.4K stars, updated Aug 6. Deploys up to 8 parallel Claude agents with distinct roles — Sisyphus (orchestrator), Hephaestus (autonomous worker), Prometheus (strategic planner) — with real-time tmux visualization and hash-anchored edits that prevent stale-line bugs. The `ultrawork` command activates the full fleet and runs until task completion. Supports multi-model routing across Claude, GPT-5.6, Kimi K3, and Gemini.",
+    "categories": ["agent", "orchestration"],
+    "install": "bunx oh-my-openagent install"
+  },
+  {
+    "slug": "caveman",
+    "name": "Caveman — 65% Fewer Output Tokens",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "93.7K stars and Day 14. Forces Claude to respond in compressed caveman-speak for technical tasks — \"Me fix bug. Cause: null check missing. Solution: add guard\" — with zero loss in code quality. Independent benchmarks confirm 65% output token reduction while preserving full accuracy on coding tasks. Still the most-starred pure-cost skill in the ecosystem.",
+    "categories": ["cost", "skill"],
+    "install": "claude plugin install JuliusBrussee/caveman",
+    "recurring_note": "↑ Day 14 — star count holding steady at 93.7K"
+  },
+  {
+    "slug": "open-design",
+    "name": "open-design — Open-Source Claude Design Alternative",
+    "primary_url": "https://github.com/nexu-io/open-design",
+    "hook": "82.9K+ stars and Day 7. Provides 151 production design systems and exports to HTML, PDF, PPTX, and MP4 — positioning itself as an open alternative to closed AI design tools. Includes brand token management, component variant generation, and a Figma plugin for roundtrip sync. Updated daily by the nexu-io team.",
+    "categories": ["design"],
+    "install": "npx open-design install",
+    "recurring_note": "↑ Day 7 — consistent daily updates"
+  },
+  {
+    "slug": "understand-anything",
+    "name": "Understand-Anything — Multi-Agent Codebase Knowledge Graph",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "hook": "77.8K stars (up from 74.7K yesterday) and Day 11. Spins up a multi-agent pipeline that maps any codebase into an interactive web dashboard with dependency graphs, call trees, and natural-language Q&A. The 3K-star gain over 24h signals continued viral spread among engineering teams onboarding to large monorepos.",
+    "categories": ["design", "mcp"],
+    "install": "npx understand-anything",
+    "recurring_note": "↑ Day 11 — +3.1K stars in 24h"
+  },
+  {
+    "slug": "headroom",
+    "name": "Headroom — 92% Token Savings on Code Search",
+    "primary_url": "https://github.com/headroomlabs-ai/headroom",
+    "hook": "63.1K stars and Day 9. Compresses context windows for Claude Code by semantically ranking and pruning code files before they enter the context — keeping only the chunks most relevant to the active task. Ships as an MCP server with a one-line install. Teams report 92% token reduction on large-codebase search tasks.",
+    "categories": ["cost", "mcp"],
+    "install": "npx headroom install",
+    "recurring_note": "↑ Day 9 — steady community adoption"
+  },
+  {
+    "slug": "composio-awesome-claude-skills",
+    "name": "ComposioHQ/awesome-claude-skills — 1,000+ Production Skills",
+    "primary_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "hook": "71.9K stars and Day 2. Composio's curated catalog of 1,000+ production-tested Claude skills across 11 domains — including Salesforce, HubSpot, GitHub, Linear, Notion, and Slack automation. Each skill wraps a real SaaS API action, so Claude Code can take live business actions with a single install line. The Composio App Automation layer handles OAuth and credential management.",
+    "categories": ["skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — 71.9K stars, strong community traction"
+  },
+  {
+    "slug": "drawio-skill",
+    "name": "drawio-skill — Natural Language to Diagrams",
+    "primary_url": "https://github.com/Agents365-ai/drawio-skill",
+    "hook": "7.2K stars, updated Aug 5. Converts plain-English descriptions into production-quality .drawio diagrams (exported to PNG/SVG/PDF/JPG) with support for 11 types including UML, C4 models, BPMN, and network topology. Can also reverse-engineer Python, Terraform, SQL DDL, and docker-compose files into architecture diagrams. Includes a 5-round vision-based self-check that reads its own PNG output and auto-fixes overlaps.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add Agents365-ai/365-skills -g"
+  },
+  {
+    "slug": "hallmark",
+    "name": "Hallmark — Anti-AI-Slop Design Skill",
+    "primary_url": "https://github.com/Nutlope/hallmark",
+    "hook": "19.2K stars and Day 10. Runs 57 design quality gates against Claude's output before delivery — checking for placeholder text, generic icons, mismatched spacing, and low-contrast colors — with 20 curated themes that pass all gates by default. Created by @Nutlope (the buildspace alum behind remove.bg fame). The gates run in parallel via subagents so overhead is minimal.",
+    "categories": ["design", "skill"],
+    "install": "claude plugin install Nutlope/hallmark",
+    "recurring_note": "↑ Day 10 — 19.2K stars"
+  },
+  {
+    "slug": "i-have-adhd",
+    "name": "i-have-adhd — Action-First Output Formatting",
+    "primary_url": "https://github.com/ayghri/i-have-adhd",
+    "hook": "17.6K stars, updated Aug 6. A single-file Claude Code skill that enforces 10 structured output rules: answers come before explanations, multi-step tasks are numbered, lists cap at 5 items, time estimates are included, and all filler preamble is suppressed. The rule set cuts average response length — and therefore token cost — while making outputs more immediately actionable. MIT licensed and forkable.",
+    "categories": ["cost", "skill"],
+    "install": "claude plugin install i-have-adhd@i-have-adhd"
+  },
+  {
+    "slug": "ecc",
+    "name": "ECC — Agent OS for Claude Code",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "234.5K stars and Day 14. Ships 67 specialized agents, 278 skills, and 94 custom commands as a unified operating layer for Claude Code — covering everything from security audits to financial modeling. The \"Agent OS\" framing means ECC manages agent lifecycle, memory, and routing so individual skills don't need to. Remains the highest-starred Claude Code ecosystem repo.",
+    "categories": ["agent", "skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 14 — 234.5K stars, ecosystem leader"
+  },
+  {
+    "slug": "andrej-karpathy-skills",
+    "name": "Andrej Karpathy Skills — 4 Rules That Stop Claude Breaking Code",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "hook": "194K+ stars and Day 20. A distillation of Karpathy's public coding philosophy into 4 CLAUDE.md rules that prevent Claude from over-engineering, removing working code, or hiding complexity behind abstractions. Still adding stars daily as the \"don't break what works\" rule set spreads through enterprise engineering teams.",
+    "categories": ["skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 20 — sustained momentum, 194K+ stars"
+  },
+  {
+    "slug": "context-mode",
+    "name": "context-mode — 98% Context Reduction MCP Server",
+    "primary_url": "https://github.com/mksglu/context-mode",
+    "hook": "19.6K stars and Day 4. An MCP server that compresses Claude's active context from 315 KB down to 5.4 KB by applying LLM-powered distillation — keeping semantic meaning while shedding verbosity. Ships with a /context-mode toggle so developers can switch between full and compressed modes mid-session. Particularly effective for long-running agentic tasks that accumulate tool outputs.",
+    "categories": ["cost", "mcp"],
+    "install": "npx context-mode",
+    "recurring_note": "↑ Day 4 — 19.6K stars"
+  },
+  {
+    "slug": "claude-opus-5",
+    "name": "Claude Opus 5 — 1M Context; Near-Fable 5 Intelligence",
+    "primary_url": "https://www.anthropic.com/news/claude-opus-5",
+    "hook": "Released July 24, Day 2. Claude Opus 5 doubles Opus 4.8's performance on Frontier-Bench v0.1 and comes within 0.5% of Fable 5 on CursorBench 3.2 at $5/$25 per million tokens. Claude Code added an effort toggle (low/medium/high/max) for Opus 5 that lets developers trade speed for reasoning depth task-by-task. Fast mode runs 2.5x faster at 2x base cost.",
+    "categories": ["model", "anthropic"],
+    "install": "Available in Claude Code via model selector",
+    "recurring_note": "↑ Day 2 — major model release, still top of mind"
+  }
+]
