@@ -1068,5 +1068,136 @@
     "install": "",
     "added_date": "2026-05-15",
     "added_by": "user"
+  },
+  {
+    "slug": "personal-ai-infrastructure",
+    "name": "Personal AI Infrastructure (PAI)",
+    "primary_url": "https://github.com/danielmiessler/Personal_AI_Infrastructure",
+    "secondary_urls": [],
+    "hook": "Daniel Miessler's agentic personal-AI scaffold built natively on Claude Code — persistent memory, custom skills, context management, intelligent routing, and self-improvement loops on top of Claude Code's hook + agent architecture.",
+    "categories": ["plugin", "skill"],
+    "install": "git clone https://github.com/danielmiessler/Personal_AI_Infrastructure",
+    "added_date": "2026-05-15",
+    "added_by": "user"
+  },
+  {
+    "slug": "hallmark",
+    "name": "Hallmark",
+    "primary_url": "https://github.com/nutlope/hallmark",
+    "secondary_urls": ["https://www.usehallmark.com/"],
+    "hook": "Anti-AI-slop design skill — encodes the consensus on typography, color, layout, motion, and interaction into one ruleset. Paste a design you admire to extract a DNA card; point it at a page to get a ranked punch list scored against 22 themes, 21 macrostructures, and 65 slop gates. Powered by Together AI.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add nutlope/hallmark",
+    "added_date": "2026-05-15",
+    "added_by": "user"
+  },
+  {
+    "slug": "vibe-trading",
+    "name": "Vibe-Trading",
+    "primary_url": "https://github.com/HKUDS/Vibe-Trading",
+    "secondary_urls": [
+      "https://github.com/vibetrade-ai/vibe-trade",
+      "https://github.com/HKUDS/AI-Trader",
+      "https://github.com/VibeTradingLabs/vibetrading"
+    ],
+    "hook": "HKUDS's multi-agent finance workspace — natural-language trading strategies, cross-session memory, self-evolving skills, exports to TradingView (Pine v6), TDX, and MetaTrader 5 (MQL5). Companion AI-Trader and several alt implementations.",
+    "categories": ["plugin", "viral"],
+    "install": "git clone https://github.com/HKUDS/Vibe-Trading",
+    "added_date": "2026-05-15",
+    "added_by": "user"
+  },
+  {
+    "slug": "llms-from-scratch",
+    "name": "LLMs from Scratch",
+    "primary_url": "https://github.com/rasbt/LLMs-from-scratch",
+    "secondary_urls": [
+      "https://github.com/rasbt/reasoning-from-scratch",
+      "https://github.com/karpathy/llm.c"
+    ],
+    "hook": "Sebastian Raschka's companion repo to \"Build a Large Language Model (From Scratch)\" — implements a ChatGPT-style LLM in PyTorch step-by-step, runs on a laptop, 17h+ video course. Plus a reasoning-model follow-up and Karpathy's llm.c.",
+    "categories": ["marketplace"],
+    "install": "git clone https://github.com/rasbt/LLMs-from-scratch",
+    "added_date": "2026-05-15",
+    "added_by": "user"
+  },
+  {
+    "slug": "nebius",
+    "name": "Nebius",
+    "primary_url": "https://nebius.com/",
+    "secondary_urls": [
+      "https://nebius.com/ai-cloud",
+      "https://github.com/nebius"
+    ],
+    "hook": "AI-native cloud (NASDAQ: NBIS) for training + inference — on-demand H100/H200/B200/GB200 plus managed Kubernetes and Slurm, plus a Token Factory for open-source model serving. NVIDIA invested $2B and Europe's first GB300 NVL72 systems run here.",
+    "categories": ["cost"],
+    "install": "",
+    "added_date": "2026-05-15",
+    "added_by": "user"
+  },
+  {
+    "slug": "fli",
+    "name": "Fli",
+    "primary_url": "https://github.com/punitarani/fli",
+    "secondary_urls": [],
+    "hook": "Python library that reverses Google Flights' internal API for programmatic flight search — one-way, multi-city, cabin class, airline filters, flexible dates. Ships a CLI and an MCP server so agents can book travel. MIT, ~2.6k stars.",
+    "categories": ["mcp"],
+    "install": "pipx install flights",
+    "added_date": "2026-05-15",
+    "added_by": "user"
+  },
+  {
+    "slug": "deeptutor",
+    "name": "DeepTutor",
+    "primary_url": "https://github.com/HKUDS/DeepTutor",
+    "secondary_urls": ["https://deeptutor.info/"],
+    "hook": "Agent-native, CLI-first personalized tutor — RAG + knowledge-graph repositories, dual-loop multi-agent reasoning with cited step-by-step solutions, auto-generated quizzes, and learning-style adaptation. Open source by HKUDS.",
+    "categories": ["plugin"],
+    "install": "git clone https://github.com/HKUDS/DeepTutor",
+    "added_date": "2026-05-15",
+    "added_by": "user"
+  },
+  {
+    "slug": "ppf-contact-solver",
+    "name": "PPF Contact Solver",
+    "primary_url": "https://github.com/st-tech/ppf-contact-solver",
+    "secondary_urls": [],
+    "hook": "ZOZO's GPU-accelerated, penetration-free physics contact solver for shells, solids, and rods — CUDA compute + Rust orchestration + Python frontend, with a Blender add-on and JupyterLab interface. Useful for sim/graphics/robotics pipelines.",
+    "categories": [],
+    "install": "",
+    "added_date": "2026-05-25",
+    "added_by": "user"
+  },
+  {
+    "slug": "rowboat",
+    "name": "Rowboat",
+    "primary_url": "https://github.com/rowboatlabs/rowboat",
+    "secondary_urls": ["https://www.rowboatlabs.com/", "https://docs.rowboatlabs.com/"],
+    "hook": "Open-source visual multi-agent builder — describe an idea and a copilot scaffolds the agent workflow, connect MCP servers, deploy via Docker, and drive it from a stateless Chat API/SDK. Built on the OpenAI Agents SDK, now with persistent memory.",
+    "categories": ["plugin", "mcp"],
+    "install": "git clone https://github.com/rowboatlabs/rowboat",
+    "added_date": "2026-05-25",
+    "added_by": "user"
+  },
+  {
+    "slug": "career-ops",
+    "name": "career-ops",
+    "primary_url": "https://github.com/santifer/career-ops",
+    "secondary_urls": [],
+    "hook": "AI-powered job-search system — evaluates offers A–F across 10 dimensions, generates ATS-optimized PDF CVs per JD, scans 45+ ATS portals (Greenhouse, Ashby, Lever…), batch parallel eval, terminal dashboard, plus interview-prep + negotiation scripts. MIT, ~47.9k stars.",
+    "categories": ["viral"],
+    "install": "git clone https://github.com/santifer/career-ops && cd career-ops && npm install && npx playwright install chromium",
+    "added_date": "2026-05-25",
+    "added_by": "user"
+  },
+  {
+    "slug": "g0dm0d3",
+    "name": "G0DM0D3",
+    "primary_url": "https://github.com/elder-plinius/G0DM0D3",
+    "secondary_urls": [],
+    "hook": "Pliny the Liberator's single-file, privacy-first multi-model chat UI for red-teaming and jailbreak research — parallel queries across 50+ OpenRouter models, GODMODE CLASSIC (5 competing model-prompt pairs) and ULTRAPLINIAN tiered comparison modes, input-perturbation tools. AGPL-3.0, ~7k stars.",
+    "categories": [],
+    "install": "git clone https://github.com/elder-plinius/G0DM0D3 && cd G0DM0D3 && python3 -m http.server 8000",
+    "added_date": "2026-05-25",
+    "added_by": "user"
   }
 ]
