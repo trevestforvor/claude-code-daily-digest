@@ -1,0 +1,155 @@
+[
+  {
+    "slug": "graphify",
+    "name": "Graphify-Labs/graphify — ~104K Stars; Day 17; Knowledge Graph for Any Codebase; 70x Cost Cut",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "secondary_urls": [
+      "https://www.mindstudio.ai/blog/graphify-claude-code-knowledge-graph-large-codebase-70x"
+    ],
+    "hook": "Turns any codebase — plus docs, SQL schemas, configs, and PDFs — into a queryable knowledge graph using local deterministic AST parsing (tree-sitter, 158 languages). A PreToolUse hook routes every file-search through the graph; 15 MCP tools add path tracing, dead-code detection, and architecture analysis. MindStudio benchmarks show up to 70x cost reduction on 500+ file projects. ~104K stars; seventeen straight days as the leading codebase-graph tool in the ecosystem.",
+    "categories": ["design", "cost"],
+    "install": "uv tool install graphifyy && graphify install",
+    "recurring_note": "↑ Day 17 — ~104K stars; codebase-graph benchmark holds"
+  },
+  {
+    "slug": "ui-ux-pro-max-skill",
+    "name": "nextlevelbuilder/ui-ux-pro-max-skill — 114K Stars; Day 2; Design System Generator for Any Stack",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "secondary_urls": [
+      "https://ui-ux-pro-max-skill.com/"
+    ],
+    "hook": "114,400 stars and freshly updated for v2.0, which introduces a Design System Generator: 161 industry-specific reasoning rules across 34 product categories generate complete, tailored design systems from a brief — color palettes, font pairings, anti-patterns, and stack-matched component patterns. Ships 84 UI styles (Glassmorphism, Claymorphism, Brutalism, Bento Grid, AI-Native UI…), 192 color palettes, 74 font pairings, and 22 tech stacks. Works across 14 AI coding tools.",
+    "categories": ["design", "skill"],
+    "install": "npm install -g ui-ux-pro-max-cli && uipro init --ai claude",
+    "recurring_note": "↑ Day 2 — 114K stars; v2.0 Design System Generator driving fresh adoption"
+  },
+  {
+    "slug": "open-design",
+    "name": "nexu-io/open-design — 82.9K+ Stars; Day 9; Open-Source Claude Design Alternative",
+    "primary_url": "https://github.com/nexu-io/open-design",
+    "secondary_urls": [
+      "https://open-design.ai"
+    ],
+    "hook": "Open Design turns any coding agent — Claude Code, Codex, Cursor, Gemini CLI, or 20+ others — into a full design engine: prototypes, landing pages, dashboards, presentations, images, and video exported as real files (HTML, PDF, PPTX, MP4). Builds on 151 brand-grade DESIGN.md design systems, 100+ functional skills, HyperFrames for motion graphics, and a multi-provider BYOK proxy. 82.9K+ stars.",
+    "categories": ["design"],
+    "install": "od mcp install claude",
+    "recurring_note": "↑ Day 9 — fastest-growing open-source design engine in the ecosystem"
+  },
+  {
+    "slug": "understand-anything",
+    "name": "Egonex-AI/Understand-Anything — 77.8K Stars; Day 13; Multi-Agent Codebase Knowledge Graph",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "secondary_urls": [
+      "https://understand-anything.com/"
+    ],
+    "hook": "A multi-agent pipeline scans your project, extracts every file, function, class, and dependency, then saves a queryable graph to .ua/knowledge-graph.json and opens a React + TypeScript web dashboard with color-coded architectural layers, full-text search, and plain-English node explanations. Ships as a .claude-plugin; works with Claude Code, Codex, Cursor, Copilot, and Gemini CLI. @charlieautomates featured it as the '#1 Claude Code Repo' in July 2026. 77.8K stars.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything && /plugin install understand-anything",
+    "creator_buzz": ["@charlieautomates"],
+    "recurring_note": "↑ Day 13 — 77.8K stars"
+  },
+  {
+    "slug": "ponytail",
+    "name": "DietrichGebert/ponytail — 98K Stars; Day 2; Laziness Ladder Cuts Code 54–94%",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "hook": "98,100 stars for a Claude Code skill that enforces a 7-rung laziness ladder before writing a single line of custom code: stdlib first, native platform features second, existing dependencies third, one-liners before functions, and so on. Benchmarked at ~54% less code (range up to 94%), ~20% cheaper, and ~27% faster on real FastAPI + React sessions. Unlike caveman, which targets prose verbosity, ponytail targets code bloat while preserving security and accessibility guardrails.",
+    "categories": ["cost", "skill"],
+    "install": "/plugin marketplace add DietrichGebert/ponytail && /plugin install ponytail@ponytail",
+    "recurring_note": "↑ Day 2 — 98K stars; laziness-ladder approach driving community spread"
+  },
+  {
+    "slug": "caveman",
+    "name": "JuliusBrussee/caveman — 96.7K Stars; Day 16; 65% Fewer Output Tokens",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "Compresses agent responses into terse caveman-speak without losing technical accuracy — code, commands, and error messages remain byte-for-byte exact, only the prose is stripped. 65% average output token reduction (range 22–87% across 1,200 test scenarios). The `/caveman-compress` companion shrinks CLAUDE.md and other memory files by ~46%, saving input tokens on every future session permanently. Stack with headroom (input) and context-mode (session) for a full three-layer token budget.",
+    "categories": ["cost", "skill"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash",
+    "recurring_note": "↑ Day 16 — 96.7K stars; canonical output-token compression tool"
+  },
+  {
+    "slug": "claude-mem",
+    "name": "thedotmack/claude-mem — 90K Stars; Day 3; Persistent Context Across Sessions",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "90,000 stars. Captures everything Claude does across sessions, compresses with AI, and injects relevant context automatically into new sessions via lifecycle hooks — no manual context management. Three-layer progressive-disclosure architecture (search → timeline → fetch) cuts memory token overhead by ~10x vs naively injecting full history. Works with Claude Code, OpenCode, Codex, and Gemini CLI.",
+    "categories": ["cost"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 3 — 90K stars"
+  },
+  {
+    "slug": "oh-my-openagent",
+    "name": "code-yeongyu/oh-my-openagent — 67.4K Stars; Day 3; Multi-Agent Orchestration for Complex Codebases",
+    "primary_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "hook": "67,400 stars. Deploys up to 8 parallel Claude agents with distinct roles — Sisyphus (orchestrator), Hephaestus (autonomous worker), Prometheus (strategic planner) — with real-time tmux visualization and hash-anchored edits that prevent stale-line bugs. The `ultrawork` command activates the full fleet and runs until task completion. Supports multi-model routing across Claude, GPT-5.6, Kimi K3, and Gemini.",
+    "categories": ["agent"],
+    "install": "bunx oh-my-openagent install",
+    "recurring_note": "↑ Day 3 — 67.4K stars"
+  },
+  {
+    "slug": "last30days-skill",
+    "name": "mvanhorn/last30days-skill — 57.6K Stars; v3.18.4; 10-Platform Research Agent",
+    "primary_url": "https://github.com/mvanhorn/last30days-skill",
+    "hook": "57,600 stars and v3.18.4 (released July 28). The /last30days skill fans parallel search agents across Reddit, X, YouTube, Hacker News, Polymarket, GitHub, TikTok, Instagram, Bluesky, and the open web simultaneously — ranking results by engagement velocity and synthesizing a grounded summary. 122 of 175 merged PRs came from 52 community contributors across 15 releases, making it one of the most community-driven skills in the ecosystem. Works across Claude Code, Cursor, Copilot, Gemini CLI, and 50+ other hosts. Returning after an 18-day absence with +18K stars gained since its last digest appearance.",
+    "categories": ["skill"],
+    "install": "npx skills add mvanhorn/last30days-skill -g -a claude-code"
+  },
+  {
+    "slug": "headroom",
+    "name": "headroomlabs-ai/headroom — 63.1K Stars; Day 11; 92% Token Savings on Code Search",
+    "primary_url": "https://github.com/headroomlabs-ai/headroom",
+    "hook": "Compresses tool outputs, logs, RAG chunks, and files before they reach the LLM: 92% token savings on 100-result code searches (17,765 → 1,408 tokens), 92% on SRE incident debugging, 73% on GitHub issue triage — accuracy held across GSM8K and SQuAD v2. Ships as a Python library, HTTP proxy, and MCP server. Claude Code integration: `headroom wrap claude`. Stack with caveman + context-mode for a full three-layer token budget.",
+    "categories": ["cost", "mcp"],
+    "install": "pip install \"headroom-ai[all]\" && headroom wrap claude",
+    "recurring_note": "↑ Day 11 — 63.1K stars; pairs with caveman + context-mode for full token stack"
+  },
+  {
+    "slug": "context-mode",
+    "name": "mksglu/context-mode — 19.6K Stars; Day 6; 98% Context Reduction MCP Server",
+    "primary_url": "https://github.com/mksglu/context-mode",
+    "hook": "An MCP server that compresses Claude's active context from 315 KB down to 5.4 KB by applying LLM-powered distillation — keeping semantic meaning while shedding verbosity. Playwright snapshots: 56 KB→299 B (99%). GitHub Issues: 59 KB→1.1 KB (98%). Access logs: 45 KB→155 B (100%). Session life before slowdown extends from ~30 min to ~3 hours. Supports 17 platforms.",
+    "categories": ["cost", "mcp"],
+    "install": "/plugin marketplace add mksglu/context-mode && /plugin install context-mode@context-mode",
+    "recurring_note": "↑ Day 6 — 19.6K stars; stacks with caveman + headroom for full token control"
+  },
+  {
+    "slug": "ecc",
+    "name": "affaan-m/ECC — 239K Stars; Day 16; Agent OS for Claude Code",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "239,000 stars. Ships 67+ specialist agents, 278+ skill definitions, 94+ command shims, and lifecycle hooks for Claude Code, Cursor, OpenCode, and Codex across 12 language ecosystems — including code review, TDD, security scanning, documentation generation, CI/CD optimization, and a pattern-extraction system that learns from your own dev history. Highest raw star count of any item in the ecosystem.",
+    "categories": ["skill", "agent"],
+    "install": "/plugin marketplace add https://github.com/affaan-m/ECC",
+    "recurring_note": "↑ Day 16 — 239K stars; ecosystem leader"
+  },
+  {
+    "slug": "andrej-karpathy-skills",
+    "name": "multica-ai/andrej-karpathy-skills — 194K+ Stars; Day 22; 4 Rules That Stop Claude Breaking Code",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "hook": "A CLAUDE.md encoding Andrej Karpathy's four rules: Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution. Each rule blocks a specific failure mode — unfounded assumptions, unnecessary abstraction, unintended side-effects, vague success criteria. 194K+ stars; the most-cited CLAUDE.md framework in the ecosystem for a twenty-second straight day. Drop-in for Claude Code, Cursor, Codex, and 60+ other agents.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add forrestchang/andrej-karpathy-skills && /plugin install andrej-karpathy-skills@karpathy-skills",
+    "recurring_note": "↑ Day 22 — 194K+ stars; unchallenged #1 CLAUDE.md framework"
+  },
+  {
+    "slug": "cc-switch",
+    "name": "farion1231/cc-switch — 125K Stars; Day 2; One Desktop App for Eight AI Coding Tools",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "secondary_urls": [
+      "https://ccswitch.io"
+    ],
+    "hook": "125,400 stars for a Tauri desktop app that manages eight AI coding tools — Claude Code, Claude Desktop, Codex, Gemini CLI, Grok Build, OpenCode, OpenClaw, and Hermes Agent — from a single interface. Eliminates manual config file editing with 50+ provider presets, bidirectional MCP and Skills sync, cloud sync via Dropbox/iCloud/WebDAV, system-tray switching, and per-session cost analytics. macOS, Windows, and Linux.",
+    "categories": ["plugin"],
+    "install": "brew install --cask cc-switch",
+    "recurring_note": "↑ Day 2 — 125K stars; multi-tool management momentum"
+  },
+  {
+    "slug": "claude-code-2-1-224",
+    "name": "Claude Code 2.1.224 — Day 2; Self-Hosted Runner, Cross-Session Messaging, No Subagent Cap",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "secondary_urls": [
+      "https://claude.com/blog/run-claude-code-sessions-on-your-own-compute"
+    ],
+    "hook": "Anthropic shipped 2.1.224 on August 7 with three enterprise unlocks: `claude self-hosted-runner` lets Team and Enterprise orgs run sessions on their own hardware instead of Anthropic's cloud; `SendMessage`/`ListAgents` tools wire Claude Code sessions together across machines; and the 200-subagent-per-session cap is gone — long-running agent fleets no longer hit a ceiling. Bonus: zip-over-HTTPS plugin installs (no git/npm required) and JWT/AWS-SigV4-aware credential masking in sandboxes.",
+    "categories": ["anthropic", "cost"],
+    "install": "claude self-hosted-runner (Team/Enterprise) — see docs",
+    "recurring_note": "↑ Day 2 — self-hosted runner and cross-session messaging still top of mind"
+  }
+]
