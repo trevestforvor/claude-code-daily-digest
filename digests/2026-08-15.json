@@ -1,0 +1,157 @@
+[
+  {
+    "slug": "claude-code-v2-1-232",
+    "name": "Claude Code v2.1.232–233 — Subagent Forking Default, @-mentions, GitLab MR Support",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "secondary_urls": [
+      "https://dev.classmethod.jp/en/articles/20260814-cc-updates-v2-1-232/"
+    ],
+    "hook": "Two releases landed August 13–14. v2.1.232 turns subagent forking on by default — a `subagent_type: \"fork\"` agent now inherits the full conversation and prompt cache with no extra setup — and adds @-mention syntax: type `@` in any prompt to name another live Claude session and send it a message directly via SendMessage. v2.1.233 ships GitLab merge request support in `--worktree` and `claude agents` view (MRs render as `!N`), a Linux memory cgroup guard for runaway builds (`CLAUDE_CODE_TOOL_MEMORY_LIMIT`), and removes the built-in todo/task-tracking tools from Opus 4.8+, Sonnet 5, Fable 5, and Mythos 5 — restore them with `CLAUDE_CODE_ENABLE_TODO_TOOLS=1`.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "compliance-api-cowork-code",
+    "name": "Claude Compliance API Now Covers Claude Code + Cowork — Enterprise Beta",
+    "primary_url": "https://claude.com/blog/compliance-api-cowork-and-claude-code",
+    "hook": "Announced August 11: the Compliance API — previously limited to Claude chat — now extends to Claude Cowork (desktop, web, and mobile) and Claude Code (CLI and desktop app). Enterprise beta. Security and compliance teams pull unified session content and metadata for audits and eDiscovery through the same API interface they already use for Claude conversations, with tamper-evident audit logs that support agency ATO processes. Coverage spans both interactive and programmatic Claude Code sessions.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "awesome-agent-skills",
+    "name": "VoltAgent/awesome-agent-skills — 30.3K Stars; 1,497+ Real-World Skills from Official Dev Teams",
+    "primary_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "hook": "30,300 stars. Anti-slop curation: every skill here was written and used in production by an actual engineering team — Anthropic, Google, Stripe, Cloudflare, Vercel, Figma, Microsoft, OpenAI, Trail of Bits, Sentry, Expo, MongoDB, ClickHouse, HuggingFace, and more. 1,497+ skills across security auditing (Trail of Bits), test automation (50+ Playwright/Cypress/Selenium skills from TestMu AI), Venice.ai (20 skills covering chat, image, audio, video, billing), and Azure multi-language (Python, Java, .NET, TypeScript, Rust). Active PRs landed August 13–14. Compatible with Claude Code, Codex, Gemini CLI, and Cursor.",
+    "categories": ["skill"],
+    "install": "See README at github.com/VoltAgent/awesome-agent-skills — install individual skills via the linked commands"
+  },
+  {
+    "slug": "claude-code-auto-mode-default",
+    "name": "Claude Code Auto Mode Default — Day 4; Now Live for All Pro/Max/Team Plans",
+    "primary_url": "https://claude.com/blog/auto-mode-default-in-claude-code",
+    "secondary_urls": [
+      "https://code.claude.com/docs/en/auto-mode-config",
+      "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/",
+      "https://news.ycombinator.com/item?id=49214994"
+    ],
+    "hook": "Auto mode went live August 14 as the default permission mode for all Pro, Max, and Team sessions. A classifier blocks any action deemed irreversible, destructive, or outside your environment — when blocked, Claude usually finds a safer path or asks. Internal tests with 1,053 paid users found auto mode caught 89% of dangerous commands vs 13.6% for human review (humans approve 97% of prompts reflexively). Trajectory Labs ran 720 prompt injection attacks; auto mode blocked all 720. Config: Shift+Tab cycles modes mid-session; set defaultMode or disableAutoMode in managed settings. Enterprise and API follow in September.",
+    "categories": ["anthropic"],
+    "recurring_note": "↑ Day 4 — Live for 1 day across all Pro/Max/Team plans; Enterprise + API in September"
+  },
+  {
+    "slug": "ui-ux-pro-max-skill",
+    "name": "nextlevelbuilder/ui-ux-pro-max-skill — ~117K Stars; Day 9; Design System Generator for Any Stack",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "secondary_urls": [
+      "https://ui-ux-pro-max-skill.com/",
+      "https://www.youtube.com/watch?v=RVeCbPg0liw"
+    ],
+    "hook": "~117,000 stars. Version 2.0 ships a Design System Generator: 161 industry-specific reasoning rules across 34 product categories generate complete, tailored design systems from a brief — color palettes, font pairings, anti-patterns, and stack-matched component patterns. 84 UI styles, 192 color palettes, 74 font pairings, 22 tech stacks; works across 14 AI coding tools. Chase AI (@Chase-H-AI) named it '#1 Claude Code Design Skill' in a video covering the v2.0 upgrade.",
+    "categories": ["design", "skill"],
+    "install": "npm install -g ui-ux-pro-max-cli && uipro init --ai claude",
+    "creator_buzz": ["@Chase-H-AI"],
+    "recurring_note": "↑ Day 9 — ~117K stars"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "obra/superpowers — ~272K Stars; Day 4; Full Dev Methodology as Skills",
+    "primary_url": "https://github.com/obra/superpowers",
+    "secondary_urls": [
+      "https://obra-superpowers.mintlify.app/installation/opencode"
+    ],
+    "hook": "~272,000 stars — the most-starred Claude Code skills framework on GitHub. Jesse Vincent (@obra) and Prime Radiant built a complete software-development methodology as chainable skills: brainstorm before you type, plan in bite-sized tasks, enforce TDD (RED-GREEN-REFACTOR), and pass code review before merge. 14+ skills cover the full dev lifecycle; v5.0 added native support for Cursor, Gemini CLI, Codex, and GitHub Copilot CLI. Accepted into the official Anthropic Claude Code plugin marketplace January 15, 2026.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add obra/superpowers",
+    "recurring_note": "↑ Day 4 — ~272K stars; #1 skills framework"
+  },
+  {
+    "slug": "kepano-obsidian-skills",
+    "name": "kepano/obsidian-skills — ~44.9K Stars; Day 4; Obsidian CEO Ships the Skills He Used Privately",
+    "primary_url": "https://github.com/kepano/obsidian-skills",
+    "hook": "Steph Ango — CEO of Obsidian, author of the 'File over app' philosophy — open-sourced the exact 5 agent skills he had been running privately in his own vault. Skills teach Claude Code, Codex, and OpenCode to read and write Obsidian Flavored Markdown (wikilinks, embeds, callouts), query Bases databases with correct syntax, edit JSON Canvas without corrupting the file, interact with the Obsidian CLI for plugin and theme development, and strip web pages to clean Markdown via defuddle (cuts token cost on every fetch). ~44.9K stars under MIT.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add https://github.com/kepano/obsidian-skills",
+    "recurring_note": "↑ Day 4 — ~44.9K stars"
+  },
+  {
+    "slug": "graphify",
+    "name": "Graphify-Labs/graphify — ~107K Stars; Day 23; Knowledge Graph for Any Codebase; 70x Cost Cut",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "secondary_urls": [
+      "https://www.mindstudio.ai/blog/graphify-claude-code-knowledge-graph-large-codebase-70x"
+    ],
+    "hook": "Turns any codebase — plus docs, SQL schemas, configs, and PDFs — into a queryable knowledge graph using local deterministic AST parsing (tree-sitter, 158 languages). A PreToolUse hook routes every file-search through the graph; 15 MCP tools add path tracing, dead-code detection, and architecture analysis. MindStudio benchmarks show up to 70x cost reduction on 500+ file projects. ~107K stars.",
+    "categories": ["design", "cost"],
+    "install": "uv tool install graphifyy && graphify install",
+    "recurring_note": "↑ Day 23 — ~107K stars; 70x cost benchmark holds"
+  },
+  {
+    "slug": "understand-anything",
+    "name": "Egonex-AI/Understand-Anything — ~79.4K Stars; Day 3; Codebase Knowledge Graph in 5 Parallel Agents",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "secondary_urls": [
+      "https://www.augmentcode.com/learn/understand-anything-71k-stars",
+      "https://mer.vin/2026/05/understand-anything-codebase-knowledge-graphs-for-claude-code-and-ai-agents/"
+    ],
+    "hook": "~79,400 stars. Installs as a native Claude Code plugin and runs 5 specialized agents in parallel — Tree-Sitter for deterministic structural parsing (imports, exports, class hierarchy) and LLM agents for semantic summaries and business logic identification. Outputs a searchable, pannable knowledge graph with diff impact analysis, architecture tours ordered by dependency, domain views, and semantic/fuzzy search across any codebase. Compatible with Claude Code, Codex, Cursor, Copilot, and Gemini CLI.",
+    "categories": ["design", "cost"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything && /plugin install understand-anything",
+    "recurring_note": "↑ Day 3 — ~79.4K stars"
+  },
+  {
+    "slug": "ponytail",
+    "name": "DietrichGebert/ponytail — ~103K Stars; Day 9; Laziness Ladder Cuts Code 54–94%",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "hook": "~103,000 stars. A Claude Code skill enforcing a 7-rung laziness ladder before writing a single line of custom code: stdlib first, native platform features second, existing dependencies third, one-liners before functions, and so on. Benchmarked at ~54% less code (range up to 94%), ~20% cheaper, and ~27% faster on real FastAPI + React sessions. Targets code bloat while preserving security and accessibility guardrails.",
+    "categories": ["cost", "skill"],
+    "install": "/plugin marketplace add DietrichGebert/ponytail && /plugin install ponytail@ponytail",
+    "recurring_note": "↑ Day 9 — ~103K stars"
+  },
+  {
+    "slug": "caveman",
+    "name": "JuliusBrussee/caveman — ~98.4K Stars; Day 22; 65% Fewer Output Tokens",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "Compresses agent responses into terse caveman-speak without losing technical accuracy — code, commands, and error messages remain byte-for-byte exact, only the prose is stripped. 65% average output token reduction (range 22–87% across 1,200 test scenarios). The /caveman-compress companion shrinks CLAUDE.md and other memory files by ~46%, saving input tokens on every future session permanently. ~98.4K stars; approaching 100K.",
+    "categories": ["cost", "skill"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash",
+    "recurring_note": "↑ Day 22 — ~98.4K stars; approaching 100K milestone"
+  },
+  {
+    "slug": "claude-mem",
+    "name": "thedotmack/claude-mem — ~90.8K Stars; Day 9; Persistent Context Across Sessions",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "~90,800 stars. Captures everything Claude does across sessions, compresses with AI, and auto-injects relevant context via lifecycle hooks — no manual context management. Three-layer progressive-disclosure architecture (search → timeline → fetch) cuts memory token overhead by ~10x vs naively injecting full history. Works with Claude Code, OpenCode, Codex, and Gemini CLI.",
+    "categories": ["cost"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 9 — ~90.8K stars"
+  },
+  {
+    "slug": "andrej-karpathy-skills",
+    "name": "multica-ai/andrej-karpathy-skills — ~195K Stars; Day 28; 4 Rules That Stop Claude Breaking Code",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "hook": "A CLAUDE.md encoding Andrej Karpathy's four rules: Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution. Each rule blocks a specific failure mode — unfounded assumptions, unnecessary abstraction, unintended side-effects, vague success criteria. ~195K stars; the most-cited CLAUDE.md framework in the ecosystem for a twenty-eighth straight day. Drop-in for Claude Code, Cursor, Codex, and 60+ other agents.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add forrestchang/andrej-karpathy-skills && /plugin install andrej-karpathy-skills@karpathy-skills",
+    "recurring_note": "↑ Day 28 — ~195K stars; unchallenged #1 CLAUDE.md framework"
+  },
+  {
+    "slug": "ecc",
+    "name": "affaan-m/ECC — ~240K Stars; Day 22; Agent OS for Claude Code",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "~240,000 stars. Ships 67+ specialist agents, 278+ skill definitions, 94+ command shims, and lifecycle hooks for Claude Code, Cursor, OpenCode, and Codex across 12 language ecosystems — including code review, TDD, security scanning, documentation generation, CI/CD optimization, and a pattern-extraction system that learns from your own dev history.",
+    "categories": ["skill", "agent"],
+    "install": "/plugin marketplace add https://github.com/affaan-m/ECC",
+    "recurring_note": "↑ Day 22 — ~240K stars"
+  },
+  {
+    "slug": "hermes-agent",
+    "name": "NousResearch/hermes-agent — ~231K Stars; Day 5; Self-Improving AI Agent That Learns From Every Task",
+    "primary_url": "https://github.com/NousResearch/hermes-agent",
+    "secondary_urls": [
+      "https://hermes-agent.nousresearch.com/docs/user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-claude-code"
+    ],
+    "hook": "~231,000 stars, 44.9K forks. Open-source autonomous agent from NousResearch that creates skills from experience and searches past conversations — building a user model across sessions that gets smarter without manual updates. A bundled Claude Code skill delegates coding tasks directly to Claude Code CLI from the Hermes terminal; supports Telegram, Discord, Slack, WhatsApp, Signal, and CLI surfaces; built-in cron scheduler; parallel subagents via isolated execution. MIT.",
+    "categories": ["agent"],
+    "install": "curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash",
+    "recurring_note": "↑ Day 5 — ~231K stars; NousResearch flagship"
+  }
+]
