@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — August 16, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — August 16, 2026</h1><p class="sub">Top 15 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/shanraisshan/claude-code-best-practice">shanraisshan/claude-code-best-practice — 64.6K Stars; #1 GitHub Trending Today; 83 Tips from Vibe Coding to Agentic Engineering</a></h3>
+  <p class="hook">64,600 stars, #1 GitHub trending repository today (August 16). The most comprehensive community-built Claude Code guide in the ecosystem: 83 documented tips spanning CLAUDE.md authoring, agent and subagent patterns, command automation, lifecycle hooks, settings management, and MCP server wiring — with worked examples in every category. Updated today by the maintainer with new community-contributed tips (1,804 total commits on main). Not a plugin or skill you install; instead, it&#39;s a living reference you clone or browse to copy patterns directly into your own .claude/ directories.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">mcp · plugin · agent · subagent · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>See README — browse .claude/ directory at github.com/shanraisshan/claude-code-best-practice</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/garrytan/gstack">garrytan/gstack — 128K Stars; Garry Tan&#39;s 23-Role Claude Code Toolkit; CEO + Designer + QA in Your Terminal</a></h3>
+  <p class="hook">128,000 stars. Y Combinator CEO Garry Tan&#39;s production Claude Code setup, open-sourced: 23 opinionated roles running in your terminal — CEO (product direction), Designer (Figma-adjacent wireframes), Eng Manager (scope), Release Manager (changelog + PR), Doc Engineer (README), QA (Chromium browser automation: walks the app, screenshots bugs, commits fixes atomically, generates regression tests). The /ship command syncs main, runs tests, audits coverage, opens the PR, and updates documentation in one step. Clone-and-setup install — no npm package.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">agent</span>  </div>
+  <div class="tags">viral · terminal · browser</div>
+  <pre><button class="copy">copy</button><code>git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack &amp;&amp; cd ~/.claude/skills/gstack &amp;&amp; ./setup</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill">nextlevelbuilder/ui-ux-pro-max-skill — ~117K Stars; Day 10; Design System Generator for Any Stack</a></h3>
+  <p class="hook">~117,000 stars. Version 2.0 ships a Design System Generator: 161 industry-specific reasoning rules across 34 product categories generate complete, tailored design systems from a brief — color palettes, font pairings, anti-patterns, and stack-matched component patterns. 84 UI styles, 192 color palettes, 74 font pairings, 22 tech stacks; works across 14 AI coding tools. Chase AI (@Chase-H-AI) named it &#39;#1 Claude Code Design Skill&#39; in a video covering the v2.0 upgrade.</p>
+  <div class="secondary">Also: <a href="https://ui-ux-pro-max-skill.com/">ui-ux-pro-max-skill.com/</a> · <a href="https://www.youtube.com/watch?v=RVeCbPg0liw">www.youtube.com/watch?v=RVeCbPg0liw</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">frontend · video · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>npm install -g ui-ux-pro-max-cli &amp;&amp; uipro init --ai claude</code></pre>
+  <div class="recurring">↑ Day 10 — ~117K stars</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/obra/superpowers">obra/superpowers — ~272K Stars; Day 5; Full Dev Methodology as Skills</a></h3>
+  <p class="hook">~272,000 stars — the most-starred Claude Code skills framework on GitHub. Jesse Vincent (@obra) and Prime Radiant built a complete software-development methodology as chainable skills: brainstorm before you type, plan in bite-sized tasks, enforce TDD (RED-GREEN-REFACTOR), and pass code review before merge. 14+ skills cover the full dev lifecycle; v5.0 added native support for Cursor, Gemini CLI, Codex, and GitHub Copilot CLI. Accepted into the official Anthropic Claude Code plugin marketplace January 15, 2026.</p>
+  <div class="secondary">Also: <a href="https://obra-superpowers.mintlify.app/installation/opencode">obra-superpowers.mintlify.app/installation/opencode</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · anthropic · viral · marketplace · terminal · review</div>
+  <pre><button class="copy">copy</button><code>npx skills add obra/superpowers</code></pre>
+  <div class="recurring">↑ Day 5 — ~272K stars; #1 skills framework</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Graphify-Labs/graphify">Graphify-Labs/graphify — ~107K Stars; Day 24; Knowledge Graph for Any Codebase; 70x Cost Cut</a></h3>
+  <p class="hook">Turns any codebase — plus docs, SQL schemas, configs, and PDFs — into a queryable knowledge graph using local deterministic AST parsing (tree-sitter, 158 languages). A PreToolUse hook routes every file-search through the graph; 15 MCP tools add path tracing, dead-code detection, and architecture analysis. MindStudio benchmarks show up to 70x cost reduction on 500+ file projects. ~107K stars.</p>
+  <div class="secondary">Also: <a href="https://www.mindstudio.ai/blog/graphify-claude-code-knowledge-graph-large-codebase-70x">www.mindstudio.ai/blog/graphify-claude-code-knowledge-graph-large-codebase-70x</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">mcp · memory · viral</div>
+  <pre><button class="copy">copy</button><code>uv tool install graphifyy &amp;&amp; graphify install</code></pre>
+  <div class="recurring">↑ Day 24 — ~107K stars; 70x cost benchmark holds</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/DietrichGebert/ponytail">DietrichGebert/ponytail — ~103K Stars; Day 10; Laziness Ladder Cuts Code 54–94%</a></h3>
+  <p class="hook">~103,000 stars. A Claude Code skill enforcing a 7-rung laziness ladder before writing a single line of custom code: stdlib first, native platform features second, existing dependencies third, one-liners before functions, and so on. Benchmarked at ~54% less code (range up to 94%), ~20% cheaper, and ~27% faster on real FastAPI + React sessions. Targets code bloat while preserving security and accessibility guardrails.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · viral · marketplace · security</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add DietrichGebert/ponytail &amp;&amp; /plugin install ponytail@ponytail</code></pre>
+  <div class="recurring">↑ Day 10 — ~103K stars</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/JuliusBrussee/caveman">JuliusBrussee/caveman — ~98.4K Stars; Day 23; 65% Fewer Output Tokens</a></h3>
+  <p class="hook">Compresses agent responses into terse caveman-speak without losing technical accuracy — code, commands, and error messages remain byte-for-byte exact, only the prose is stripped. 65% average output token reduction (range 22–87% across 1,200 test scenarios). The /caveman-compress companion shrinks CLAUDE.md and other memory files by ~46%, saving input tokens on every future session permanently. ~98.4K stars; approaching 100K.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">memory · token · viral</div>
+  <pre><button class="copy">copy</button><code>curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash</code></pre>
+  <div class="recurring">↑ Day 23 — ~98.4K stars; approaching 100K milestone</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/thedotmack/claude-mem">thedotmack/claude-mem — ~90.8K Stars; Day 10; Persistent Context Across Sessions</a></h3>
+  <p class="hook">~90,800 stars. Captures everything Claude does across sessions, compresses with AI, and auto-injects relevant context via lifecycle hooks — no manual context management. Three-layer progressive-disclosure architecture (search → timeline → fetch) cuts memory token overhead by ~10x vs naively injecting full history. Works with Claude Code, OpenCode, Codex, and Gemini CLI.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">memory · context · token · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>npx claude-mem install</code></pre>
+  <div class="recurring">↑ Day 10 — ~90.8K stars</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.232–233 — Subagent Forking Default, @-mentions, GitLab MR Support</a></h3>
+  <p class="hook">v2.1.232 (Aug 13) turns subagent forking on by default and adds @-mention syntax for cross-session messaging. v2.1.233 (Aug 14) ships GitLab MR support in --worktree, a Linux memory cgroup guard (CLAUDE_CODE_TOOL_MEMORY_LIMIT), a security fix for a Windows NT device-path UNC bypass (NTLM credential-leak vector), and a configurable WebFetch cache TTL. Breaking: TodoCreate/Get/Update/List and TodoWrite are retired on Opus 4.8+, Sonnet 5, Fable 5, and Mythos 5 — restore with CLAUDE_CODE_ENABLE_TODO_TOOLS=1.</p>
+  <div class="secondary">Also: <a href="https://dev.classmethod.jp/en/articles/20260814-cc-updates-v2-1-232/">dev.classmethod.jp/en/articles/20260814-cc-updates-v2-1-232/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">subagent · memory · security</div>
+  
+  <div class="recurring">↑ Day 2 — v2.1.232-233, released Aug 13–14</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Piebald-AI/claude-code-system-prompts">Piebald-AI/claude-code-system-prompts — 12.3K Stars; 515+ Prompt Files; Updated to v2.1.233</a></h3>
+  <p class="hook">The only project that systematically extracts and publishes every system prompt inside Claude Code&#39;s minified npm bundle — not just the main prompt, but 515+ conditionally-loaded components: 27 built-in tool descriptions, Plan/Explore/Task sub-agent prompts, utility prompts for code review, security analysis, WebFetch, Bash, statusline, session management, and more. Updated within minutes of each release; already reflects v2.1.233 (Aug 14, 2026). 12.3K stars, 2K forks. No install needed — browse the Markdown files to see exactly what conditions Claude&#39;s behavior, then use the companion tweakcc CLI to override specific prompts.</p>
+  <div class="secondary">Also: <a href="https://github.com/Piebald-AI/tweakcc">github.com/Piebald-AI/tweakcc</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral · terminal · security · review</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep">wanshuiyin/Auto-claude-code-research-in-sleep (ARIS) — 14.8K Stars; v0.4.24; Autonomous ML Research Overnight</a></h3>
+  <p class="hook">ARIS is 80 composable SKILL.md files that set Claude Code loose on ML research while you sleep: it reads papers, generates ideas, runs GPU experiments, and rewrites manuscripts while GPT-5.6-Sol (via Codex MCP) acts as adversarial reviewer, forcing the two models to debate rather than self-agree. Real-world test: improved a paper from 5.0/10 to 7.5/10 across 20+ autonomous overnight rounds. v0.4.24 (Aug 9, 2026) added group-based installation — pick only the skill subsets you need. No framework, no lock-in — every skill is plain Markdown readable by Claude Code, Codex, OpenClaw, Cursor, or any agent. Hugging Face Daily Paper #1. MIT.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">agent</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">mcp · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add wanshuiyin/Auto-claude-code-research-in-sleep</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Vincentwei1021/video-shotcraft">Vincentwei1021/video-shotcraft — 5.2K Stars; Cinematic Product Videos from Claude Code; 152 Shot Recipes + Remotion</a></h3>
+  <p class="hook">Turns Claude Code into a motion-design studio: point it at your product and it storyboards, animates, and sound-designs a cinematic promo video with Remotion — real page captures, 2.5D camera moves, beat-synced cuts, and film-grade SFX. 152 shot recipe cards (zoom-in, pan-over, split-screen, and 149 more), 209 motion previews to browse and swap, and a production-ready 36.2-second 1920×1080 template. Updated this week with 48 new shot recipe cards (up from 104). Gained 1,387 stars in its first 5 days (260 stars/day) when it launched July 2026 — fastest ramp for a sub-2K-star project tracked at the time. Projects export to JianYing/CapCut for further editing.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">design · video · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add Vincentwei1021/video-shotcraft</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/elementalsouls/Claude-BugHunter">elementalsouls/Claude-BugHunter — 3.6K Stars; 82 Skills for Bug Bounty &amp; Red-Team Work; 681 Disclosed-Report Patterns</a></h3>
+  <p class="hook">A Claude Code plugin bundle purpose-built for authorized bug bounty hunting and external red-team work: 82 skills and 15 slash commands load namespaced under claude-bughunter, covering 24 core vulnerability classes (XSS, SQLi, SSRF, IDOR, LFI, SSTI, XXE, CSRF, CORS, open-redirect, OAuth, JWT, file upload) plus enterprise identity and infrastructure attack matrices for M365/Entra, Okta, vCenter, SSL-VPN appliances, SharePoint, and cloud IAM with current 2024–2026 CVE chains. The 681 patterns are curated from public HackerOne disclosed reports. Triage-validation, VRT-aware severity, OOS rebuttals, PII redaction, and red-team deliverable generation are all included. Skills trigger automatically by topic when you describe what you&#39;re testing in plain English.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · viral · marketplace · testing</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add elementalsouls/Claude-BugHunter &amp;&amp; /plugin install claude-bughunter@elementalsouls</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/multica-ai/andrej-karpathy-skills">multica-ai/andrej-karpathy-skills — ~202K Stars; Day 29; 4 Rules That Stop Claude Breaking Code</a></h3>
+  <p class="hook">A CLAUDE.md encoding Andrej Karpathy&#39;s four rules: Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution. Each rule blocks a specific failure mode — unfounded assumptions, unnecessary abstraction, unintended side-effects, vague success criteria. ~202K stars; the most-cited CLAUDE.md framework in the ecosystem for a twenty-ninth straight day. Drop-in for Claude Code, Cursor, Codex, and 60+ other agents.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add forrestchang/andrej-karpathy-skills &amp;&amp; /plugin install andrej-karpathy-skills@karpathy-skills</code></pre>
+  <div class="recurring">↑ Day 29 — ~202K stars; unchallenged #1 CLAUDE.md framework</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/affaan-m/ECC">affaan-m/ECC — ~240K Stars; Day 23; Agent OS for Claude Code</a></h3>
+  <p class="hook">~240,000 stars. Ships 67+ specialist agents, 278+ skill definitions, 94+ command shims, and lifecycle hooks for Claude Code, Cursor, OpenCode, and Codex across 12 language ecosystems — including code review, TDD, security scanning, documentation generation, CI/CD optimization, and a pattern-extraction system that learns from your own dev history.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">agent</span>  </div>
+  <div class="tags">plugin · viral · marketplace · security · review</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add https://github.com/affaan-m/ECC</code></pre>
+  <div class="recurring">↑ Day 23 — ~240K stars</div>
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
