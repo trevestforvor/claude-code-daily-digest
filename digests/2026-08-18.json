@@ -1,0 +1,81 @@
+[
+  {
+    "slug": "sculptor-imbue",
+    "name": "Sculptor by Imbue",
+    "primary_url": "https://github.com/imbue-ai/sculptor",
+    "secondary_urls": ["https://news.ycombinator.com/item?id=45427697", "https://imbue.com/sculptor/"],
+    "hook": "Imbue's open-source desktop app for running multiple Claude Code agents in parallel, each isolated in its own container with local IDE sync via Pairing Mode. Launched with a 'Show HN' that surfaced it as the missing UI for agentic development — free while in beta, no subscription beyond your Anthropic API access.",
+    "categories": ["design", "productivity"],
+    "install": "Download for Mac (Apple Silicon) or Linux from github.com/imbue-ai/sculptor"
+  },
+  {
+    "slug": "codegraph",
+    "name": "CodeGraph",
+    "primary_url": "https://github.com/colbymchenry/codegraph",
+    "hook": "Pre-indexed code knowledge graph that auto-syncs on file changes — 66.9K stars, 100% local with SQLite and a native Rust kernel. Benchmarked on a real ~11K-file TypeScript repo: 77% fewer tokens, 71% cheaper API costs, 88% fewer tool calls, 2.2× faster responses vs vanilla Claude Code. Went viral at #2 on GitHub Trending in May and has kept growing.",
+    "categories": ["cost", "productivity"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/colbymchenry/codegraph/main/install.sh | sh"
+  },
+  {
+    "slug": "context-mode",
+    "name": "context-mode",
+    "primary_url": "https://github.com/mksglu/context-mode",
+    "hook": "Context window optimization skill for Claude Code and 17 agent platforms — sandboxes tool output (98% reduction), persists session memory via hooks, and enforces MCP routing. 18.2K stars and growing; Elastic License 2.0 source-available. One npm install and Claude stops bloating context with raw tool dumps.",
+    "categories": ["cost", "mcp"],
+    "install": "npm install -g context-mode"
+  },
+  {
+    "slug": "claude-context-zilliz",
+    "name": "Claude Context (Zilliz)",
+    "primary_url": "https://github.com/zilliztech/claude-context",
+    "secondary_urls": ["https://zilliz.com/blog/inside-zilliz-two-claude-code-skills"],
+    "hook": "MCP plugin from the Milvus/Zilliz team that gives Claude Code semantic search across your entire codebase — 12.4K stars, hybrid BM25 + dense vector retrieval with AST-aware chunking. Internal benchmarks show ~40% token reduction under equivalent retrieval quality; works with Claude Code, Cursor, Codex, Gemini CLI, and more.",
+    "categories": ["cost", "mcp"],
+    "install": "claude mcp add claude-context -- npx @zilliz/claude-context-mcp@latest"
+  },
+  {
+    "slug": "last30days-skill",
+    "name": "/last30days Skill",
+    "primary_url": "https://github.com/mvanhorn/last30days-skill",
+    "secondary_urls": ["https://www.chaseai.io/blog/last30days-skill-claude-code-research"],
+    "hook": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the open web — scoring results by upvotes, real money, and camera time — then synthesizes a grounded 30-day summary with citations. 57.6K stars and 22.7K installs; Chase AI named it the fix for Claude Code's research blind spot.",
+    "categories": ["productivity"],
+    "install": "npx skills add mvanhorn/last30days-skill",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "claude-seo",
+    "name": "Claude SEO",
+    "primary_url": "https://github.com/AgriciDaniel/claude-seo",
+    "secondary_urls": ["https://claude-seo.md/"],
+    "hook": "Universal SEO skill for Claude Code with 25 sub-skills and 18 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, backlinks, local SEO, e-commerce, international SEO, and PDF/Excel reporting. 14.2K stars with 2.1K forks as of August 15; updated August 18 with Firecrawl backlink analysis in v1.72.",
+    "categories": ["productivity"],
+    "install": "git clone --depth 1 https://github.com/AgriciDaniel/claude-seo.git && bash claude-seo/install.sh"
+  },
+  {
+    "slug": "agent-plugins-spec",
+    "name": "Agent Plugins 1.0",
+    "primary_url": "https://github.com/agentplugins/agent-plugins-spec",
+    "secondary_urls": ["https://www.digitalapplied.com/blog/agent-plugins-1-0-open-standard-portable-ai-skills"],
+    "hook": "Open standard (v1.0.0, released August 6) for packaging Agent Skills and MCP servers into one portable directory — proposed by Vercel, refined by Amazon, Anysphere, GitHub, Microsoft, and OpenAI; shipping in ChatGPT, Codex, Cursor, GitHub Copilot, Kiro, and VS Code at launch. Anthropic wasn't in the consortium but Claude Code plugins install today. 1,100 stars.",
+    "categories": ["ecosystem"],
+    "install": "See README"
+  },
+  {
+    "slug": "memsearch-zilliz",
+    "name": "memsearch (Zilliz)",
+    "primary_url": "https://github.com/zilliztech/memsearch",
+    "secondary_urls": ["https://milvus.io/blog/adding-persistent-memory-to-claude-code-with-the-lightweight-memsearch-plugin.md"],
+    "hook": "Hooks-based persistent memory layer for Claude Code — every session stop fires a Haiku-powered summarizer that appends to a daily markdown file (.memsearch/memory/YYYY-MM-DD.md), then semantic recall surfaces relevant history automatically or via /memory-recall. 2.5K stars; zero-config with local ONNX embeddings, memories sync across Claude Code, OpenCode, and Codex CLI.",
+    "categories": ["productivity", "mcp"],
+    "install": "uv tool install memsearch"
+  },
+  {
+    "slug": "awesome-claude-code-toolkit",
+    "name": "Awesome Claude Code Toolkit",
+    "primary_url": "https://github.com/rohitg00/awesome-claude-code-toolkit",
+    "hook": "The most comprehensive Claude Code meta-collection — 135 agents, 35 curated skills, 42 commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, 14 MCP configs, 26 companion apps, and 52 ecosystem entries in one repo. 31.3K stars; was #1 on GitHub Trending in February and remains the go-to starting kit for teams bootstrapping a full Claude Code setup.",
+    "categories": ["productivity", "mcp"],
+    "install": "See README"
+  }
+]
