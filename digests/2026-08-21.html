@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — August 21, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — August 21, 2026</h1><p class="sub">Top 15 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://www.framer.com/agents/external/">Framer External Agents — Claude Code Gets Native Canvas, CMS, and Component Access</a></h3>
+  <p class="hook">Framer 3.0 shipped native External Agents support: Claude Code (plus Cursor, Codex, and Gemini CLI) connects directly to a Framer project&#39;s canvas, CMS collections, components, and styles — no manual MCP setup required. Framer&#39;s agent connection gives Claude Code full context to inspect layouts, clean up styles, write copy, manage CMS items, and generate new sections. The demo Framer highlighted: connecting Claude Code from the terminal, feeding a folder of CSV + Markdown + images, and having it build a fully-structured Framer CMS with collections, fields, references, and pages in one session.</p>
+  <div class="secondary">Also: <a href="https://www.framer.com/help/articles/use-external-agents-with-framer/">www.framer.com/help/articles/use-external-agents-with-framer/</a> · <a href="https://www.framer.com/help/articles/how-to-set-up-framer-for-claude-code-codex-and-cursor/">www.framer.com/help/articles/how-to-set-up-framer-for-claude-code-codex-and-cursor/</a> · <a href="https://medium.com/design-bootcamp/the-new-design-stack-claude-code-framer-641f8b742f4e">medium.com/design-bootcamp/the-new-design-stack-claude-code-framer-641f8b742f4e</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">terminal</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/whats-new">Claude Code v2.1.237 — Built-In Concise Output Style Skips Preamble, Stays Thorough</a></h3>
+  <p class="hook">v2.1.237 (August 20) ships a built-in Concise output style selectable in `/config → Output style`. It cuts the preamble, narration, and filler sentences Claude typically leads with while keeping full technical depth — responses jump straight to the result. Distinct from existing custom styles: it requires no SKILL.md and isn&#39;t token-compressed (no caveman tradeoff), just purpose-driven prose. Pairs naturally with auto mode for a session that feels much more tool-like.</p>
+  <div class="secondary">Also: <a href="https://code.claude.com/docs/en/changelog#2-1-237">code.claude.com/docs/en/changelog#2-1-237</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">audio · skill · token</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.236–238 — keybindingFlavor Readline, headersHelper, macOS Sandbox, Memory Leak Patched</a></h3>
+  <p class="hook">Three releases Aug 19–20 tighten up the power-user surface: `keybindingFlavor: &quot;readline&quot;` (v2.1.238) makes Ctrl+W delete back to the previous whitespace Bash-style; `headersHelper` on plugin marketplace entries lets a command mint short-lived tokens for catalog and archive fetches; macOS wildcard read-deny rules (v2.1.236) now take precedence over allows and can&#39;t be bypassed by renaming (`**/.env` actually sticks). v2.1.238 also patches an unbounded memory growth bug in long interactive sessions — subagent tool results now release after leaving the display window, fixing runaway RAM on big multi-agent jobs.</p>
+  <div class="secondary">Also: <a href="https://www.gradually.ai/en/changelogs/claude-code/">www.gradually.ai/en/changelogs/claude-code/</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">plugin · agent · subagent · memory · token · marketplace · security</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/0xDarkMatter/claude-mods">0xDarkMatter/claude-mods v3.7.0 — 103 Skills; New hono-ops and rembg-ops Drop</a></h3>
+  <p class="hook">v3.7.0 (August 2026) adds two production skills to the 103-skill library: `hono-ops` codifies Hono v4 on Cloudflare Workers — typed bindings, zValidator request validation, RPC, streaming, `onError` discipline, and test patterns under vitest-pool-workers; `rembg-ops` handles transparent-PNG cutouts with a deterministic model fallback ladder for non-photographic input. The collection also ships 13 output styles, 13 hooks, 14 rules, and 3 agent personas targeting real workflows from Python async to Rust ownership, AWS Fargate, and Craft CMS.</p>
+  <div class="secondary">Also: <a href="https://mcpxel.com/skills/claude-mods">mcpxel.com/skills/claude-mods</a> · <a href="https://lobehub.com/skills/0xdarkmatter-claude-mods-claude-code-templates">lobehub.com/skills/0xdarkmatter-claude-mods-claude-code-templates</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  
+  <pre><button class="copy">copy</button><code>npx skills add 0xDarkMatter/claude-mods</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/jeremylongshore/claude-code-plugins-plus-skills">tonsofskills.com — Open-Source Marketplace: 471 Plugins, 3,069 Skills, 347 Agents, ccpi CLI</a></h3>
+  <p class="hook">jeremylongshore/claude-code-plugins-plus-skills is the largest community-curated index for Claude Code: 471 plugins, 3,069 skills, and 347 agents with an open-source marketplace at tonsofskills.com and a dedicated `ccpi` CLI package manager. Scored Grade A in the July 2026 community review. Production playbooks cover in-depth operational patterns for running Claude Code plugin infrastructure at scale — real-world code, checklists, and tested configurations, not demos.</p>
+  <div class="secondary">Also: <a href="https://github.com/jeremylongshore/claude-code-plugins-plus-skills/wiki/Playbook-Index">github.com/jeremylongshore/claude-code-plugins-plus-skills/wiki/Playbook-Index</a></div>
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span>  </div>
+  <div class="tags">plugin · terminal</div>
+  <pre><button class="copy">copy</button><code>npm install -g ccpi</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep">wanshuiyin/Auto-claude-code-research-in-sleep (ARIS) — ~14.9K Stars; Updated Aug 19; Autonomous ML Research Overnight</a></h3>
+  <p class="hook">ARIS is now 82 composable Claude Code skills (up from 80 in August 9 release) for autonomous overnight ML research — it reads papers, generates ideas, runs experiments, and rewrites manuscripts while GPT-5.6-Sol via Codex MCP acts as adversarial reviewer so the two models debate rather than self-agree. Updated August 19 (14.9K stars). Papers produced with ARIS accepted at AAAI 2026. No framework, no lock-in — plain Markdown works with Claude Code, Codex, OpenClaw, or any LLM agent.</p>
+  <div class="secondary">Also: <a href="https://aibit.im/en/article/aris-ai-that-does-ml-research-while-you-sleep">aibit.im/en/article/aris-ai-that-does-ml-research-while-you-sleep</a> · <a href="https://wanshuiyin.github.io/Auto-claude-code-research-in-sleep/ARIS_INTRO.html">wanshuiyin.github.io/Auto-claude-code-research-in-sleep/ARIS_INTRO.html</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">mcp · model</div>
+  <pre><button class="copy">copy</button><code>npx skills add wanshuiyin/Auto-claude-code-research-in-sleep</code></pre>
+  <div class="recurring">↑ Day 6 since Aug 16 appearance — updated Aug 19, +100 stars</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://www.youtube.com/watch?v=DSw6kLv54wI">IndyDevDan — August 2026 AI Coding Championship: Claude Code vs Codex vs Qwen3.8-Max vs Kimi K3</a></h3>
+  <p class="hook">IndyDevDan (129K subs) ran a head-to-head benchmark — 4 agents, 3 real coding tasks, receipts included. The video surfaces which agents excel at which task profiles and gives engineering-depth analysis rather than vibes. Relevant for teams deciding where Claude Code sits in a multi-agent toolchain budget. Still surfacing in Claude Code community discussion as of Aug 21.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">video · agent</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://charlieautomates.com/blog/the-3-step-system-to-build-an-agentic-os/">Charlie Automates — Build an Agentic OS in 3 Steps (Graphify, SEED, PAUL, Hermes, Railway)</a></h3>
+  <p class="hook">Charlie Automates (8K subs, @charlieautomates) published a live build tutorial showing the exact stack used at their agency: Graphify for graph memory, SEED for structured task management, PAUL for persistent agent loops, Hermes Agent for multi-channel output, Railway for one-click deployment — blank folder to deployed app on camera. Tight signal source for agency-style Claude Code production patterns.</p>
+  <div class="secondary">Also: <a href="https://www.youtube.com/@charlieautomates">www.youtube.com/@charlieautomates</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2323;color:#fca5a5">viral</span>  </div>
+  <div class="tags">agent · memory · education</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/linny006/trending-claude-skills">linny006/trending-claude-skills — Auto-Updated Claude Skills Leaderboard, Refreshed Every 15 Min</a></h3>
+  <p class="hook">A live-updating leaderboard tracking trending Claude Code skills and agent repos, refreshing every 15 minutes with 33,702 repositories indexed (as of Aug 16). Companion to Aradotso/trending-skills. Useful for digest research, competitive intelligence, and surfacing overnight breakouts before they hit HN. Pairs with the tonsofskills.com marketplace for discovery to installation in one hop.</p>
+  <div class="secondary">Also: <a href="https://github.com/Aradotso/trending-skills">github.com/Aradotso/trending-skills</a></div>
+  <div class="badges"><span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span>  </div>
+  <div class="tags">viral</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/multica-ai/andrej-karpathy-skills">multica-ai/andrej-karpathy-skills — ~203K Stars; Day 32; One-Month Milestone in Digest Rotation</a></h3>
+  <p class="hook">Day 32 in the digest — first item to pass a full month in rotation. ~203K stars. Encodes Andrej Karpathy&#39;s four rules — Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution — each targeting a specific failure mode (unfounded assumptions, unnecessary abstraction, unintended side-effects, vague success criteria). Drop-in CLAUDE.md for Claude Code, Cursor, Codex, and 60+ other agents.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add forrestchang/andrej-karpathy-skills &amp;&amp; /plugin install andrej-karpathy-skills@karpathy-skills</code></pre>
+  <div class="recurring">↑ Day 32 — ~203K stars; first item to pass one month in the digest window</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/obra/superpowers">obra/superpowers — ~272K Stars; Day 10; Full Dev Methodology as Skills</a></h3>
+  <p class="hook">~272,000 stars — the most-starred Claude Code skills framework on GitHub. Jesse Vincent&#39;s complete software-development methodology as chainable skills: brainstorm before typing, plan in bite-sized tasks, TDD (RED-GREEN-REFACTOR), code review before merge. 14+ skills covering the full dev lifecycle; accepted into the official Anthropic Claude Code plugin marketplace on January 15, 2026.</p>
+  <div class="secondary">Also: <a href="https://obra-superpowers.mintlify.app/installation/opencode">obra-superpowers.mintlify.app/installation/opencode</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · anthropic · viral · marketplace · review</div>
+  <pre><button class="copy">copy</button><code>npx skills add obra/superpowers</code></pre>
+  <div class="recurring">↑ Day 10 — ~272K stars; #1 skills framework</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/JuliusBrussee/caveman">JuliusBrussee/caveman — ~99K Stars; Day 27; 100K Milestone This Week</a></h3>
+  <p class="hook">~99,000 stars and closing in on 100K — watch this space. Compresses agent responses into terse caveman-speak without losing technical accuracy; code, commands, and error messages remain byte-for-byte exact, only prose is stripped. 65% average output token reduction (range 22–87% across 1,200 test scenarios). The `/caveman-compress` companion shrinks CLAUDE.md and memory files by ~46%, saving input tokens on every future session.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">memory · token · viral</div>
+  <pre><button class="copy">copy</button><code>curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash</code></pre>
+  <div class="recurring">↑ Day 27 — ~99K stars; 100K milestone imminent</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mattpocock/skills">mattpocock/skills — ~220K Stars; Day 3; 21 Engineering Skills From Matt Pocock&#39;s Own .agents Directory</a></h3>
+  <p class="hook">Matt Pocock (Total TypeScript author) published his personal .agents directory — 21 composable skills embedding real software-engineering discipline. Core flow: /grill-with-docs → /to-spec → /to-tickets → /implement → /code-review, with /wayfinder above for multi-session coordination. Star skill: /grill-me — Claude asks every unanswered question in one round, numbers each with a recommended answer, waits for input before touching the keyboard. 893K Skillselion installs. MIT.</p>
+  <div class="secondary">Also: <a href="https://skillselion.com/skills/mattpocock/skills/grill-me">skillselion.com/skills/mattpocock/skills/grill-me</a></div>
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>npx skills add mattpocock/skills</code></pre>
+  <div class="recurring">↑ Day 3 — ~220K stars</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/farion1231/cc-switch">farion1231/cc-switch — ~127K Stars; Day 11; One Desktop App for Eight AI Coding Tools</a></h3>
+  <p class="hook">~127,000 stars. Tauri desktop app managing Claude Code, Claude Desktop, Codex, Gemini CLI, Grok Build, OpenCode, OpenClaw, and Hermes Agent from a single interface — bidirectional MCP and Skills sync, 50+ provider presets, cloud sync (Dropbox/iCloud/WebDAV), system-tray switching, per-session cost analytics. macOS, Windows, Linux.</p>
+  <div class="secondary">Also: <a href="https://ccswitch.io">ccswitch.io</a></div>
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">mcp · cost · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>brew install --cask cc-switch</code></pre>
+  <div class="recurring">↑ Day 11 — ~127K stars</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Piebald-AI/claude-code-system-prompts">Piebald-AI/claude-code-system-prompts — v2.1.238 Cut Live; 27 Tools + Subagent Prompts + Token Counts</a></h3>
+  <p class="hook">Updated to the v2.1.238 cut (August 20) within hours of release — contains all 27 builtin tool descriptions, the Plan/Explore/Task subagent prompts, every utility prompt, and per-prompt token counts. CHANGELOG spans 260 versions back to v2.0.14. Essential for anyone auditing Claude Code behavior, writing a competing harness, or debugging tool call framing. Companion `tweakcc` lets you override any prompt locally.</p>
+  <div class="secondary">Also: <a href="https://github.com/Piebald-AI/tweakcc">github.com/Piebald-AI/tweakcc</a></div>
+  <div class="badges">  </div>
+  <div class="tags">harness · subagent</div>
+  
+  <div class="recurring">↑ Day 2 — updated to v2.1.238 cut</div>
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
