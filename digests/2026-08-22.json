@@ -1,0 +1,93 @@
+[
+  {
+    "slug": "headroom",
+    "name": "Headroom",
+    "primary_url": "https://github.com/headroomlabs-ai/headroom",
+    "hook": "Compresses everything an AI agent reads — tool outputs, logs, RAG chunks, files, conversation history — before it reaches the LLM. Claims 20% fewer tokens for coding agents and 60-95% for JSON/log payloads with 'same answers.' A live demo in the README shows a real log search shrinking from 10,144 → 1,260 tokens. Now at 67.2k stars, updated today.",
+    "categories": ["cost"],
+    "install": "pip install \"headroom-ai[all]\""
+  },
+  {
+    "slug": "rtk",
+    "name": "RTK (Rust Token Killer)",
+    "primary_url": "https://github.com/rtk-ai/rtk",
+    "hook": "Single zero-dependency Rust binary that transparently wraps 100+ dev commands (git, cargo, npm, docker, ls, cat) and compresses their stdout before it reaches the LLM context window. Real sessions drop from ~150K to ~45K tokens per 30 minutes. A PreToolUse hook auto-rewrites commands so no workflow changes are needed. Apache 2.0, 77k stars, updated today.",
+    "categories": ["cost"],
+    "install": "brew install rtk"
+  },
+  {
+    "slug": "agent-skills-addyosmani",
+    "name": "Agent Skills by Addy Osmani",
+    "primary_url": "https://github.com/addyosmani/agent-skills",
+    "hook": "24 production-grade SKILL.md files covering the full engineering lifecycle (define → plan → build → verify → review → ship) authored by Google's Addy Osmani (Chrome DevRel). Embeds Google engineering principles — Hyrum's Law, the Beyonce Rule, trunk-based development, Chesterton's Fence — directly into agent workflows. Works with 70+ agents including Claude Code, Cursor, and Codex. 89.1k stars.",
+    "categories": ["skills"],
+    "install": "npx skills add addyosmani/agent-skills"
+  },
+  {
+    "slug": "ecc",
+    "name": "ECC",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "Agent harness performance optimization system covering skills, instincts, memory, security, and research-first development across five performance axes with per-skill benchmarks. Still the top repo on the claude-code GitHub topic at 242k stars with an update yesterday. Previously featured August 19.",
+    "categories": ["harness"],
+    "install": "See README",
+    "recurring_note": "↑ Day 4 — still #1 on claude-code topic at 242k stars"
+  },
+  {
+    "slug": "claude-code-v2-1-239",
+    "name": "Claude Code v2.1.239",
+    "primary_url": "https://github.com/anthropics/claude-code/releases",
+    "secondary_urls": ["https://code.claude.com/docs/en/changelog"],
+    "hook": "Yesterday's release makes data-residency cost transparent: /cost and --max-budget-usd now surface the 1.1× US-only-inference premium so data-residency workspace users see true billing. Also ships /claude-api upgrade — a one-command helper that auto-migrates Python anthropic 0.x projects to the 1.x SDK. Fullscreen renderer now offered on Bedrock, Vertex, and Foundry.",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "agent-skills-context-mode",
+    "name": "Context Mode",
+    "primary_url": "https://github.com/mksglu/context-mode",
+    "hook": "Context window optimizer that sandboxes tool output (98% size reduction), persists session memory, and enforces intent routing across 17 platforms via MCP + hooks. Built in TypeScript, no API keys required. Surfaced in the 'cut tokens in half' YouTube demo earlier this year and continues growing at 20.1k stars with a commit pushed today.",
+    "categories": ["cost", "mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-code-best-practice",
+    "name": "Claude Code Best Practice",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "\"From vibe coding to agentic engineering\" — 69 actionable tips across 11 categories, shaped with input from Boris Cherny (the engineer who built Claude Code at Anthropic). Covers CLAUDE.md, subagents, hooks, slash commands, and terminal setup. Hit GitHub Trending Day #1 in March 2026; still pulling stars at 64.9k, updated today.",
+    "categories": ["best-practices"],
+    "install": "See README"
+  },
+  {
+    "slug": "graphify",
+    "name": "Graphify",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "hook": "Turns any codebase into a queryable knowledge graph using deterministic local AST parsing — no vector store, no embedding hallucinations. Agents traverse symbol relationships instead of keyword-searching. Updated two days ago and still climbing at 109k stars. Previously featured August 19.",
+    "categories": ["codebase-intelligence"],
+    "install": "See README",
+    "recurring_note": "↑ Day 3 — still growing at 109k stars"
+  },
+  {
+    "slug": "learn-claude-code",
+    "name": "Learn Claude Code",
+    "primary_url": "https://github.com/shareAI-lab/learn-claude-code",
+    "hook": "17-chapter hands-on course building a nano Claude Code-like harness from scratch — one harness mechanism per chapter (agent loops, tool use, permissions, context management, task systems, multi-agent coordination). Available in English, Chinese, and Japanese. 74.9k stars and 12.1k forks, emphasizing that 'agency comes from model training, not orchestration code.'",
+    "categories": ["education"],
+    "install": "git clone https://github.com/shareAI-lab/learn-claude-code && pip install -r requirements.txt"
+  },
+  {
+    "slug": "agent-reach",
+    "name": "Agent Reach",
+    "primary_url": "https://github.com/Panniantong/Agent-Reach",
+    "hook": "Gives AI agents read/search access to 13 internet platforms — Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — with zero API fees. Cookies are stored locally. Smart routing auto-selects the right platform tool by query intent and hot-swaps when an endpoint goes down (e.g., Bilibili blocked yt-dlp in June 2026; it silently switched to bili-cli). 74.1k stars.",
+    "categories": ["mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "awesome-claude-skills-composio",
+    "name": "Awesome Claude Skills (ComposioHQ)",
+    "primary_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "hook": "Curated index of 1,000+ Claude skills, resources, and tools organized by category — memory, coding, design, data, automation, and more. Recently surfaced on GitHub Daily Trending, pushing it past 73k stars. The de-facto discovery hub for teams building agent workflows who want a structured catalogue rather than raw search.",
+    "categories": ["curated"],
+    "install": "See README"
+  }
+]
