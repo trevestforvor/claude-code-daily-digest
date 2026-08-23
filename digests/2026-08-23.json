@@ -1,0 +1,88 @@
+[
+  {
+    "slug": "cathrynlavery-diagram-design",
+    "name": "cathrynlavery/diagram-design — 25.7K Stars; 38 Editorial Diagram Types; No Mermaid Slop",
+    "primary_url": "https://github.com/cathrynlavery/diagram-design",
+    "hook": "38 production-quality editorial diagram types — Sankey, fishbone, Wardley map, kanban, user journey, UML class, entity-relationship, database schema, deployment, story map, and 28 more — rendered as self-contained HTML+SVG files. No shadows, no Mermaid slop, no third-party CDN dependencies. Brand colors pull from your website in 60 seconds. Ships as a Claude Code plugin and skill, with Codex plugin support included. Recent August 2026 update added 10 new layout grammars. 25.7K stars — and never in the digest until today.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add cathrynlavery/diagram-design && /plugin install diagram-design@diagram-design"
+  },
+  {
+    "slug": "claude-code-weekly-limits-aug31",
+    "name": "Claude Code +50% Weekly Limits Extended Through August 31",
+    "primary_url": "https://x.com/ClaudeDevs/status/2089798442306711646",
+    "secondary_urls": [
+      "https://mer.vin/news/claude-codes-50-usage-boost-extended-again-not-yet-permanent/",
+      "https://www.kucoin.com/news/flash/anthropic-extends-claude-code-weekly-limit-increase-by-50-until-august-31"
+    ],
+    "hook": "Anthropic extended the 50% weekly usage boost through August 31 — the third time they've stretched what started in May as a limited-time promotion. Pro, Max, Team, and Enterprise users all benefit; the five-hour session cap is unchanged. ClaudeDevs noted 'strong demand for our models means capacity may be tight' and that Anthropic hopes to make the increase permanent. Simon Scrapes (@simonscrapes, 71.8K subs) dedicated a video to the extension 4 days ago.",
+    "categories": ["cost", "anthropic"],
+    "creator_buzz": ["@simonscrapes"]
+  },
+  {
+    "slug": "garrytan-gstack",
+    "name": "garrytan/gstack — 89.7K Stars; Garry Tan's 23-Skill Claude Code Virtual Dev Team",
+    "primary_url": "https://github.com/garrytan/gstack",
+    "secondary_urls": ["https://gstacks.org/", "https://www.augmentcode.com/learn/garry-tan-gstack-hits-89.7K-stars"],
+    "hook": "Garry Tan open-sourced his 23-skill Claude Code setup in March 2026 — now at 89.7K stars, with Augment Code covering the milestone this week. Roles include CEO (product rethink), Designer (AI slop gating), Eng Manager (architecture lock), QA Lead (real browser session), Security Officer (OWASP + STRIDE audit), and Release Engineer (ship the PR). MIT, Bun + TypeScript, single git clone. Compatible with Claude Code, Codex, Cursor, and seven other runtimes. Garry's personal output: 10K+ logical lines per week, 100+ PRs per week sustained over 50 days.",
+    "categories": ["design", "viral"],
+    "install": "See README",
+    "recurring_note": "↑ 89.7K stars milestone covered by Augment Code this week"
+  },
+  {
+    "slug": "claude-code-v2-1-240",
+    "name": "Claude Code v2.1.240 — Released Today; Cloud Plugin Sync, Alpine Native Add-ons",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Released August 23: cloud sessions now sync plugins from claude.ai (shown as `name@synced`), and `claude plugin enable/disable` works without clobbering same-named locally installed plugins. Alpine and musl builds gain native image paste, clipboard, and audio-capture add-ons. Follows yesterday's v2.1.239 (data-residency 1.1× premium transparency in /cost + --max-budget-usd, and the /claude-api upgrade command for migrating Python projects from anthropic 0.x to 1.x).",
+    "categories": ["anthropic"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "wshobson-agents",
+    "name": "wshobson/agents — 36.6K Stars; 92 Plugins, 202 Agents, 181 Skills Across Six Harnesses",
+    "primary_url": "https://github.com/wshobson/agents",
+    "hook": "One Markdown source, six harnesses: Claude Code, Codex CLI, Cursor, OpenCode, GitHub Copilot, and Gemini CLI all receive idiomatic native artifacts from the same plugin-writing workflow. 92 plugins, 202 specialized agents, 181 skills, and 105 commands in one MIT-licensed repo. The plugin ecosystem nearly doubled since February 2026; 36.6K stars and 3.9K forks. The go-to choice for teams writing once and deploying to every AI coding tool in the stack.",
+    "categories": ["plugin", "marketplace"],
+    "install": "See README",
+    "recurring_note": "↑ 36.6K stars (was 29K in Feb 2026); now spans six harnesses"
+  },
+  {
+    "slug": "alirezarezvani-claude-skills",
+    "name": "alirezarezvani/claude-skills — 24.2K Stars; 345 Skills + 30 Agents for 13 AI Coding Tools",
+    "primary_url": "https://github.com/alirezarezvani/claude-skills",
+    "secondary_urls": ["https://alirezarezvani.github.io/claude-skills/"],
+    "hook": "345 skills, 30+ agents, and 70+ custom commands spanning engineering, marketing, product, compliance, C-level advisory, research, business operations, and finance — installed in one command and compatible with 13 tools: Claude Code, Codex, Gemini CLI, OpenClaw, Hermes Agent, Mistral Vibe, Cursor, Aider, Windsurf, Kilo Code, OpenCode, Augment, and Antigravity. The broadest multi-tool skill bundle in the ecosystem at 24.2K stars.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add alirezarezvani/claude-skills",
+    "recurring_note": "↑ 24.2K stars; now covers 13 tools"
+  },
+  {
+    "slug": "florian-claude-code-ultimate-guide",
+    "name": "FlorianBruniaux/claude-code-ultimate-guide — 5.8K Stars; 268 Templates, 473-Q Quiz, CVE Threat DB; Updated Aug 20",
+    "primary_url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+    "hook": "430K+ lines — the most comprehensive Claude Code learning and template resource. Ships 74 skills, 38 security hooks (bash + PowerShell), 23 custom agent personas, 268+ production-ready templates, and a 473-question knowledge assessment across 9 categories. The differentiator: a threat-intelligence database tracking 123 CVE-mapped vulnerabilities and 93 malicious skill/package records — the only community-maintained catalog of deliberately harmful Claude Code skills. Updated August 20, 2026. 5.8K stars, 760 forks.",
+    "categories": ["skill"],
+    "install": "See README",
+    "recurring_note": "↑ Updated Aug 20; 5.8K stars; CVE database expanded to 123 entries"
+  },
+  {
+    "slug": "localskills-sh",
+    "name": "localskills.sh — Team & Enterprise Skills Registry: Private Namespace, SSO, MCP, Version Pinning",
+    "primary_url": "https://localskills.sh/",
+    "secondary_urls": ["https://docs.localskills.sh/mcp/"],
+    "hook": "Publish a skill once; install it into Claude Code, Cursor, Windsurf, Codex, or Copilot with one command. Teams get a private namespace with role-based ACL, SSO, two-way GitHub sync, and exact version pinning. The MCP server lets agents discover, read, and author your team's skills mid-task — any MCP client with Streamable HTTP + OAuth connects directly. Solves the shelfware problem: skills dying in someone's dotfiles instead of shipping to the team.",
+    "categories": ["skill", "cost"],
+    "install": "See docs.localskills.sh",
+    "recurring_note": "↑ Now with MCP server enabling agent-authored team skills"
+  },
+  {
+    "slug": "fujibee-agmsg",
+    "name": "fujibee/agmsg — Claude Code + Codex + Gemini + Copilot Message Each Other via SQLite, No Daemon",
+    "primary_url": "https://github.com/fujibee/agmsg",
+    "secondary_urls": ["https://agmsg.cc/"],
+    "hook": "Cross-vendor messaging for CLI AI coding agents: Claude Code, Codex, Gemini CLI, and Copilot CLI write and read a shared local SQLite file — no daemon, no server, no Node or Python required. One agent posts a message; another picks it up on its next turn or via a real-time monitor stream. Includes a `spawn` command to launch a peer session in a new terminal and talk to it over agmsg. Installs as a Claude Code agent skill.",
+    "categories": ["plugin"],
+    "install": "npx skills add https://github.com/fujibee/agmsg --skill agmsg",
+    "recurring_note": "↑ Now with spawn command for launching peer agent sessions"
+  }
+]
