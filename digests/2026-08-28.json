@@ -1,0 +1,139 @@
+[
+  {
+    "slug": "claude-cowork-built-in-browser",
+    "name": "Claude Cowork — Built-In Browser",
+    "primary_url": "https://claude.com/blog/cowork-built-in-browser",
+    "secondary_urls": [
+      "https://thenewstack.io/claude-built-in-browser-cowork/",
+      "https://www.ithinkdiff.com/claude-adds-built-in-browser-to-cowork-enabling-autonomous-task-completion/"
+    ],
+    "hook": "Anthropic shipped a built-in browser inside Claude Cowork on August 26 — no Chrome extension, nothing shared from your personal session. When a task needs a website, a browser pane opens and Claude navigates, reads, clicks, and fills forms without leaving the app. Rolling out now to Pro, Max, and Team on macOS/Windows/Linux; Enterprise already live.",
+    "categories": ["design", "official"]
+  },
+  {
+    "slug": "claude-code-v2-1-247-250",
+    "name": "Claude Code v2.1.247–250 — cost-optimize, --restricted, cross-session on Bedrock/Vertex",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "v2.1.247 (Aug 26) adds `/claude-api cost-optimize` for profiling and reducing API spend plus a new SendFeedback tool. v2.1.248 (Aug 27) ships `--restricted` mode — strips Bash, code-execution, and WebFetch tools, keeps file tools inside cwd, and refuses bypassPermissions, making sandboxed CI deployments viable. Cross-session messaging (SendMessage/ListAgents) now works on Bedrock, Vertex, Foundry, and telemetry-disabled configs. v2.1.250 (today) brings reliability fixes.",
+    "categories": ["cost", "official"],
+    "install": "npm install -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "obra/superpowers — Full Dev Methodology as Chainable Skills",
+    "primary_url": "https://github.com/obra/superpowers",
+    "hook": "~272K stars and still the highest-starred Claude Code skills collection. Seven-phase workflow (Brainstorm → Spec → Plan → TDD → Subagent Dev → Review → Finalize) enforced as chainable skills with official Anthropic marketplace acceptance.",
+    "categories": ["skills", "workflow"],
+    "install": "claude skill install obra/superpowers",
+    "recurring_note": "↑ Day 17 — holding steady at the top by star count"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills — 21 Engineering Skills From Matt Pocock's .agents Directory",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "~220K stars for 21 engineering skills extracted from Matt Pocock's personal .agents directory, covering TypeScript, testing, PR workflow, and documentation conventions that reflect real production use.",
+    "categories": ["skills"],
+    "install": "claude skill install mattpocock/skills",
+    "recurring_note": "↑ Day 9 — still drawing new installs"
+  },
+  {
+    "slug": "hermes-agent",
+    "name": "hermes-agent — Streaming TTS Voice + A2A v1.0",
+    "primary_url": "https://github.com/NousResearch/hermes-agent",
+    "hook": "238K stars for NousResearch's Hermes Agent, which shipped the Herald release with streaming TTS voice and A2A v1.0 protocol support earlier this week. Multi-LLM provider support and a growing plugin ecosystem make it the most-starred full agent framework.",
+    "categories": ["mcp", "workflow"],
+    "install": "pip install hermes-agent",
+    "recurring_note": "↑ Day 3 since Herald release — up ~1K stars"
+  },
+  {
+    "slug": "andrej-karpathy-skills",
+    "name": "multica-ai/andrej-karpathy-skills — 4-Rule CLAUDE.md",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "hook": "~203K stars for the single-file CLAUDE.md that encodes Andrej Karpathy's four LLM coding principles: Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution. Still the fastest entry point for taming Claude Code behavior on any project.",
+    "categories": ["skills"],
+    "install": "claude skill install multica-ai/andrej-karpathy-skills",
+    "recurring_note": "↑ Day 39 — new forks still coming in daily"
+  },
+  {
+    "slug": "cc-switch",
+    "name": "cc-switch — One Desktop App for Eight AI Coding Tools",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "hook": "~130K stars for the cross-platform desktop app that unifies Claude Code, Codex, Cursor, Gemini CLI, Copilot, and three others under one interface with shared context switching.",
+    "categories": ["tools"],
+    "install": "See README",
+    "recurring_note": "↑ Day 18 — steady adoption"
+  },
+  {
+    "slug": "ui-ux-pro-max-skill",
+    "name": "nextlevelbuilder/ui-ux-pro-max-skill — Design System Generator",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "hook": "121K stars for a skill that ships 79 UI styles, 192 color palettes, and 22 technology stacks. One install turns Claude Code into a design-system generator that outputs production-ready component structures instead of generic scaffolding.",
+    "categories": ["design", "skills"],
+    "install": "claude skill install nextlevelbuilder/ui-ux-pro-max-skill",
+    "recurring_note": "↑ Day 5 — still the top design-system skill by installs"
+  },
+  {
+    "slug": "graphify",
+    "name": "Graphify — Turn Any Codebase Into a Queryable Knowledge Graph",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "hook": "112K stars for the YC S26-backed tool that converts codebases into queryable knowledge graphs via AST parsing, with no vector store required. Claude Code users report significantly faster cross-file reasoning once a codebase is indexed.",
+    "categories": ["mcp", "tools"],
+    "install": "npm install -g graphify-cli",
+    "recurring_note": "↑ Day 3 — up ~1K stars since Aug 26"
+  },
+  {
+    "slug": "caveman",
+    "name": "JuliusBrussee/caveman — 65% Output Token Reduction",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "101K+ stars, past the 100K milestone this week. The Claude Code wrapper benchmarked at 1.93× fewer tokens than Codex CLI on equivalent tasks. Pairs well with RTK for a full token-reduction stack.",
+    "categories": ["cost", "skills"],
+    "install": "npm install -g caveman-wrap",
+    "recurring_note": "↑ Day 5 post-100K — momentum holding"
+  },
+  {
+    "slug": "claude-mem",
+    "name": "thedotmack/claude-mem — Persistent Context Across Sessions",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "91.9K stars for the skill that gives every Claude Code agent persistent cross-session memory via a lightweight key-value store synced to disk. No daemon needed; agents read and write their own context through a simple tool call.",
+    "categories": ["skills"],
+    "install": "claude skill install thedotmack/claude-mem",
+    "recurring_note": "↑ Day 5 — still the dominant persistent-memory solution"
+  },
+  {
+    "slug": "claude-code-weekly-limits-aug31",
+    "name": "Claude Code +50% Weekly Limits — EXPIRES August 31 (3 Days Left)",
+    "primary_url": "https://code.claude.com/docs/en/whats-new",
+    "secondary_urls": [
+      "https://devops.com/claude-codes-temporary-usage-boost-expires-tonight-heres-what-actually-changes/"
+    ],
+    "hook": "The +50% weekly token boost for Pro, Max, Team, and seat-based Enterprise ends Sunday August 31 at 11:59 PM PT. Third and final extension — Anthropic has not committed to making it permanent. Any workflow that only fits inside the boosted cap needs a plan in place before Monday.",
+    "categories": ["cost", "official"],
+    "recurring_note": "↑ FINAL WARNING — 3 days left"
+  },
+  {
+    "slug": "claude-code-best-practice",
+    "name": "shanraisshan/claude-code-best-practice — #1 on claude-code-skills Topic",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "65.2K stars for the community-maintained best-practice guide covering CLAUDE.md patterns, subagent design, hook configuration, and prompt engineering conventions. Currently the top-ranked repo on the claude-code-skills GitHub topic.",
+    "categories": ["skills"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — pulled above 65K stars today"
+  },
+  {
+    "slug": "agentic-awesome-skills",
+    "name": "sickn33/agentic-awesome-skills — 2,005+ Skills, v16.2.0",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "hook": "45.5K stars for the community's largest single-repo skills library, now at v16.2.0 with over 2,005 skills and an agent-driven local control plane for orchestrating skill chains without leaving the terminal.",
+    "categories": ["skills"],
+    "install": "claude skill install sickn33/agentic-awesome-skills",
+    "recurring_note": "↑ Day 2 — v16.2.0 pushed yesterday"
+  },
+  {
+    "slug": "ai-job-search",
+    "name": "MadsLorentzen/ai-job-search — Claude Code Job Application Agent",
+    "primary_url": "https://github.com/MadsLorentzen/ai-job-search",
+    "hook": "37.2K stars for the MIT-licensed Claude Code framework that automates job applications: /setup builds a structured profile, /scrape finds and ranks postings, /apply runs a drafter-reviewer agent pair to tailor CV and cover letter, and /interview preps role-specific questions. Creator used it to land 69 tailored applications, 20 first interviews, and 1 signed offer.",
+    "categories": ["tools", "workflow"],
+    "install": "See README (SETUP.md)"
+  }
+]
