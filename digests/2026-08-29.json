@@ -1,0 +1,130 @@
+[
+  {
+    "slug": "claude-code-v2-1-251-security-hooks",
+    "name": "Claude Code v2.1.251 — Critical Security Fixes + PreModelSwitch Hooks + Spend Limit Bar",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Shipped August 28. Four critical security patches land in 2.1.251: file tools following symlinks swapped after permission checks, plugin commands pointing outside the plugin directory, the Workflow tool reading files outside approved locations, and Grep/Glob not applying deny rules through symlinked paths. Same release adds PreModelSwitch/PostModelSwitch hook events (block, confirm, or annotate model switches in CI), a spend-limit progress bar in /usage, and a per-session prompt-cache line in /cost with hit ratio, miss count, and tokens re-cached. Fixed Opus 5 failures on xhigh/max effort with thinking disabled.",
+    "categories": ["official", "cost"],
+    "install": "npm install -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "understand-anything",
+    "name": "Understand-Anything — 81K Stars; Codebase → Interactive Knowledge Graph",
+    "primary_url": "https://github.com/Lum1104/Understand-Anything",
+    "hook": "81K stars on the Claude Code plugin that turns any codebase into an interactive, searchable knowledge graph — color-coded by architectural layer (API, Service, Data, UI, Utility), clickable nodes with inline code and plain-English explanations, diff impact analysis, and guided dependency tours. Works on Claude Code, Cursor, Copilot, and Gemini CLI. 771 commits, 112 open issues — actively maintained. Install in two commands via the plugin marketplace.",
+    "categories": ["design", "tools"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything"
+  },
+  {
+    "slug": "claude-code-weekly-limits-aug31",
+    "name": "Claude Code +50% Weekly Limits — EXPIRES IN 2 DAYS (August 31)",
+    "primary_url": "https://code.claude.com/docs/en/whats-new",
+    "hook": "The +50% weekly token boost for Pro, Max, Team, and seat-based Enterprise ends Sunday August 31 at 11:59 PM PT. Third and final extension — Anthropic has not committed to making it permanent. Any workflow that only fits inside the boosted cap needs a fallback plan before Monday morning.",
+    "categories": ["cost", "official"],
+    "recurring_note": "↑ 2 DAYS LEFT — expires August 31"
+  },
+  {
+    "slug": "i-have-adhd",
+    "name": "ayghri/i-have-adhd — 25.5K Stars; ADHD-Friendly Output Skill; Answer First, Always",
+    "primary_url": "https://github.com/ayghri/i-have-adhd",
+    "hook": "25.5K stars — grew from ~5K to 25K in under a month. Ten rules enforced as a Claude Code skill: lead with the action, number every step, cap lists at 5 items, no filler phrases like 'Hope this helps!', and end with one clear next action. Viral on Threads (sscottdev: 'built for ADHD, but this is just how most people want AI to respond'). Coverage from codingbeautydev and Enterprise DNA newsletters. MIT, one-command enable; type /i-have-adhd to toggle.",
+    "categories": ["skills"],
+    "install": "claude skill install ayghri/i-have-adhd"
+  },
+  {
+    "slug": "scientific-agent-skills",
+    "name": "K-Dense-AI/scientific-agent-skills — 37.6K Stars; Turn Any Agent Into an AI Scientist",
+    "primary_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "hook": "37.6K stars — the #1 agent skills library for science, with 165+ validated skills covering bioinformatics, cheminformatics, proteomics, medical imaging, materials science, and drug discovery. A single database-lookup skill routes to 100+ scientific databases (PubChem, ChEMBL, UniProt, ClinicalTrials.gov, FDA, USPTO). Weekly security scans published to docs/security-report.md via Cisco AI Defense. Used by 190K+ scientists across Benchling, DNAnexus, LatchBio, and Opentrons. Compatible with Claude Code, Cursor, Codex, and Antigravity.",
+    "categories": ["skills"],
+    "install": "npx skills add K-Dense-AI/scientific-agent-skills"
+  },
+  {
+    "slug": "voltagent-awesome-agent-skills",
+    "name": "VoltAgent/awesome-agent-skills — 33.2K Stars; 1,000+ Official-Team Skills",
+    "primary_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "hook": "33.2K stars for a curated collection of 1,000+ agent skills authored by actual engineering teams — not community-generated filler. Featured contributors include Anthropic (document editing, design tools, MCP server building), Microsoft (133+ Azure SDK and AI Foundry skills across 6 languages), Vercel, Cloudflare, Netlify, Stripe, Hugging Face, Figma, Sentry, OpenAI, and Google Labs. Skills are accessed via officialskills.sh and compatible with Claude Code, Codex, Gemini CLI, and Cursor. Updated August 29.",
+    "categories": ["skills"],
+    "install": "See README"
+  },
+  {
+    "slug": "nanoclaw",
+    "name": "nanocoai/nanoclaw — 30.6K Stars; Lightweight OpenClaw Alternative; Agents in Containers",
+    "primary_url": "https://github.com/nanocoai/nanoclaw",
+    "hook": "30.6K stars for a stripped-down, containerized alternative to OpenClaw. Agents run in Docker with full filesystem isolation — not just application-level permission checks. Connects Claude agents to WhatsApp, Telegram, Discord, Slack, Teams, iMessage, and Gmail. Per-agent workspace (isolated memory, containers, mounts), credentials via Agent Vault, scheduled jobs with script gates, and web search/fetch. Codebase is intentionally small enough to read in one session; you fork it and have Claude Code customize it for your needs. MIT.",
+    "categories": ["tools"],
+    "install": "git clone https://github.com/nanocoai/nanoclaw.git nanoclaw-v2 && cd nanoclaw-v2 && bash nanoclaw.sh"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "obra/superpowers — ~272K Stars; Full Dev Methodology as Chainable Skills",
+    "primary_url": "https://github.com/obra/superpowers",
+    "hook": "~272K stars — still the most-starred Claude Code skills framework on GitHub. Seven-phase workflow (Brainstorm → Spec → Plan → TDD → Subagent Dev → Review → Finalize) enforced as chainable skills with official Anthropic marketplace acceptance. 14+ skills covering the full dev lifecycle.",
+    "categories": ["design", "skills"],
+    "install": "npx skills add obra/superpowers",
+    "recurring_note": "↑ Day 18 — holding at #1 skills framework"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills — ~220K Stars; 21 Engineering Skills From Matt Pocock's .agents Directory",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "~220K stars for 21 composable skills from Matt Pocock's personal .agents directory. Star skill: /grill-me — Claude asks every unanswered question in one round, numbered with recommended answers, before touching the keyboard. Core flow: /grill-with-docs → /to-spec → /to-tickets → /implement → /code-review. 893K+ Skillselion installs.",
+    "categories": ["skills"],
+    "install": "npx skills add mattpocock/skills",
+    "recurring_note": "↑ Day 10 — ~220K stars"
+  },
+  {
+    "slug": "hermes-agent",
+    "name": "hermes-agent — 238K Stars; Streaming TTS Voice + A2A v1.0",
+    "primary_url": "https://github.com/NousResearch/hermes-agent",
+    "hook": "238K stars for NousResearch's Hermes Agent, which shipped the Herald release with streaming TTS voice and A2A v1.0 protocol support. Multi-LLM provider support and a growing plugin ecosystem make it the most-starred full agent framework in this digest.",
+    "categories": ["mcp", "workflow"],
+    "install": "pip install hermes-agent",
+    "recurring_note": "↑ Day 4 since Herald release"
+  },
+  {
+    "slug": "cc-switch",
+    "name": "cc-switch — ~130K Stars; One Desktop App for Eight AI Coding Tools",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "hook": "~130K stars for the Tauri desktop app that unifies Claude Code, Codex, Cursor, Gemini CLI, Grok Build, OpenCode, OpenClaw, and Hermes Agent under one interface. Bidirectional MCP and Skills sync, 50+ provider presets, system-tray switching, per-session cost analytics. macOS, Windows, Linux.",
+    "categories": ["tools"],
+    "install": "brew install --cask cc-switch",
+    "recurring_note": "↑ Day 19 — steady adoption"
+  },
+  {
+    "slug": "ui-ux-pro-max-skill",
+    "name": "nextlevelbuilder/ui-ux-pro-max-skill — 121K Stars; Design System Generator",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "hook": "121K stars for the skill packing 79 visual styles, 192 color palettes, 74 font pairings, 119 accessibility guidelines, and 22 tech stacks. One install turns Claude Code into a design-system generator that outputs production-ready component structures. 322K+ Skillselion installs.",
+    "categories": ["design", "skills"],
+    "install": "npm install -g ui-ux-pro-max-cli && uipro init --ai claude",
+    "recurring_note": "↑ Day 6 — still top design-system skill"
+  },
+  {
+    "slug": "graphify",
+    "name": "Graphify — 112K+ Stars; Turn Any Codebase Into a Queryable Knowledge Graph",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "hook": "112K+ stars for the YC S26-backed tool that converts codebases into queryable knowledge graphs via AST parsing, no vector store required. Mentioned by Charlie Automates as a core component of an 'Agentic OS' stack alongside Hermes and Railway.",
+    "categories": ["mcp", "tools"],
+    "install": "npm install -g graphify-cli",
+    "recurring_note": "↑ Day 4 — still growing"
+  },
+  {
+    "slug": "claude-mem",
+    "name": "thedotmack/claude-mem — 92.6K Stars; Persistent Context Across Sessions",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "92.6K stars (up from 91.9K yesterday). Hooks into Claude Code's session lifecycle, compresses tool calls and observations into semantic summaries, and stores them in a local SQLite+Chroma vector DB — injecting the most relevant context back at session start. No cloud, no telemetry. Obsidian-compatible via wikilinks.",
+    "categories": ["skills", "cost"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 6 — 92.6K stars, up 700 overnight"
+  },
+  {
+    "slug": "agentic-awesome-skills",
+    "name": "sickn33/agentic-awesome-skills — 45.6K Stars; 2,005+ Skills; v16.2.0",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "hook": "45.6K stars at v16.2.0 with 2,005+ skills and a local agent-first control plane for skill discovery. Catalog-wide search, agent-owned selection, apply-and-recovery, and diagnosis tooling. 13+ specialized plugins spanning dev, security, DevOps, QA, and marketing. Updated August 28.",
+    "categories": ["skills"],
+    "install": "npx agentic-awesome-skills --antigravity --skills brainstorming,systematic-debugging --dry-run",
+    "recurring_note": "↑ Day 3 — 45.6K stars, v16.2.0"
+  }
+]
