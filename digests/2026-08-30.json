@@ -1,0 +1,117 @@
+[
+  {
+    "slug": "design-extract",
+    "name": "design-extract (designlang)",
+    "primary_url": "https://github.com/Manavarya09/design-extract",
+    "hook": "Point designlang at any live website and it deep-dives the DOM to spit out a complete design system: DTCG tokens (semantic, primitive, and composite layers), Figma variable exports, Tailwind v4 config, multi-platform emitters (iOS SwiftUI, Android Compose, Flutter), WCAG contrast scoring, and a site-wide consistency audit. 4k stars, 341 forks, v12–v13 shipped this month.",
+    "categories": ["design", "mcp"],
+    "install": "npm i -g designlang"
+  },
+  {
+    "slug": "video-shotcraft",
+    "name": "video-shotcraft",
+    "primary_url": "https://github.com/Vincentwei1021/video-shotcraft",
+    "secondary_urls": ["https://vincentwei1021.github.io/video-shotcraft/"],
+    "hook": "Turns Claude Code into a motion-design studio: 152 shot recipe cards, 209 style presets, and a production-ready Remotion template let you storyboard, animate, and sound-design a cinematic product promo entirely through Claude. Blew up from 1.4k in July to 6.8k stars; still climbing with an Aug 30 commit.",
+    "categories": ["design"],
+    "install": "npx skills add Vincentwei1021/video-shotcraft",
+    "recurring_note": "↑ Day 3 — 1.4k → 6.8k stars since late July; active Aug 30 push"
+  },
+  {
+    "slug": "generative-media-skills",
+    "name": "Generative-Media-Skills",
+    "primary_url": "https://github.com/SamurAIGPT/Generative-Media-Skills",
+    "hook": "Multi-modal generation skill for Claude Code, Cursor, and Gemini CLI: 41 workflow recipes covering text-to-image (Flux), text-to-video (MiniMax-Pro), image-to-video (Kling-Pro), and music (Suno V5) via muapi.ai. Bash-native, zero npm dependencies. 3.4k stars, 594 installs, updated Aug 27.",
+    "categories": ["design"],
+    "install": "See README"
+  },
+  {
+    "slug": "planning-with-files",
+    "name": "planning-with-files",
+    "primary_url": "https://github.com/OthmanAdi/planning-with-files",
+    "hook": "Persists agent task state across context resets and /clear commands in three markdown files (task_plan.md, findings.md, progress.md), with per-turn re-injection via lifecycle hooks to prevent context rot. v3.12.0 shipped consent-bound session recovery. 26.4k stars, still #4 on the claude-code-skills topic page.",
+    "categories": ["design", "cost"],
+    "install": "npx skills add OthmanAdi/planning-with-files --skill planning-with-files -g",
+    "recurring_note": "↑ Day 3 — v3.12.0 drops consent-bound session recovery"
+  },
+  {
+    "slug": "autoprompt-skill",
+    "name": "autoprompt-skill",
+    "primary_url": "https://github.com/Spielewoy/autoprompt-skill",
+    "hook": "A coding-agent skill claiming a measured 45% cut in agentic task failures — transparent methodology: tested on Terminal-Bench 2.1 with OpenCode 1.18.7, 73/89 tasks solved vs 60/89 without the skill (29→16 failures). Compiles a technical prompt-engineering book into a single consultable skill. 323 stars, Aug 17 launch.",
+    "categories": ["cost"],
+    "install": "See README"
+  },
+  {
+    "slug": "autoharness",
+    "name": "autoharness",
+    "primary_url": "https://github.com/tigerless-labs/autoharness",
+    "hook": "Zero-config self-learning skill layer: watches your Claude Code sessions, distills patterns into .claude/skills/ automatically, consolidates duplicates, and prunes skills that stop getting used. Pure Python, zero third-party dependencies. 1.4k stars, updated Aug 30.",
+    "categories": ["cost"],
+    "install": "/plugin marketplace add tigerless-labs/autoharness"
+  },
+  {
+    "slug": "self-learning-skills",
+    "name": "self-learning-skills",
+    "primary_url": "https://github.com/Kulaxyz/self-learning-skills",
+    "hook": "When an agent solves a hard problem, this skill recognizes the 'golden path' and harvests it into a reusable skill/rule for next time — works with Claude Code, Cursor, and any AGENTS.md-compatible agent. 937 stars, 5 commits, cross-platform from day one.",
+    "categories": ["cost"],
+    "install": "npx skills add kulaxyz/self-learning-skills"
+  },
+  {
+    "slug": "memsearch",
+    "name": "memsearch",
+    "primary_url": "https://github.com/zilliztech/memsearch",
+    "hook": "Persistent, unified memory layer by Zilliz (Milvus creators): backs agent conversations to Markdown + Milvus vector index, with hybrid BM25+dense-vector search and SHA-256 dedup. Claude Code plugin auto-recalls relevant history when it judges the query needs it, running in a forked subagent. 2.5k stars, updated Aug 28.",
+    "categories": ["cost"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-octopus",
+    "name": "claude-octopus",
+    "primary_url": "https://github.com/nyldn/claude-octopus",
+    "hook": "Runs up to 10 AI providers simultaneously against the same research, design, or coding task and surfaces disagreements before you ship. 32 specialist personas, 54 commands, consensus gates that block merges when models disagree. Saves expensive rework by catching divergence early. 4k stars, updated Aug 30.",
+    "categories": ["cost"],
+    "install": "claude plugin marketplace add https://github.com/nyldn/plugins.git && claude plugin install octo@nyldn-plugins"
+  },
+  {
+    "slug": "skill-seekers",
+    "name": "Skill Seekers",
+    "primary_url": "https://github.com/yusufkaraaslan/Skill_Seekers",
+    "hook": "Converts documentation sites, GitHub repos, PDFs, YouTube videos, and 14 other source types into structured SKILL.md assets compatible with Claude, Gemini, OpenAI, and RAG pipelines. v3.9.0, 818 commits, 14.9k stars, 1.5k forks — the go-to tool for turning any corpus into agent knowledge.",
+    "categories": ["mcp"],
+    "install": "pip install skill-seekers"
+  },
+  {
+    "slug": "wondelai-skills",
+    "name": "wondelai/skills",
+    "primary_url": "https://github.com/wondelai/skills",
+    "hook": "65 professional frameworks and guided journeys packaged as agent skills — synthesized from bestselling books across business strategy, marketing, UX research, and coding methodology. Supports Claude Code plugin marketplace, skills.sh, and OpenAI Codex. 2.1k stars, updated Aug 29.",
+    "categories": ["design"],
+    "install": "npx skills add wondelai/skills --all --global"
+  },
+  {
+    "slug": "mcp-codex-reviewer",
+    "name": "MCP-Codex-reviewer",
+    "primary_url": "https://github.com/MarcEspuna/MCP-Codex-reviewer",
+    "hook": "MCP server that wires OpenAI Codex as an independent plan and code reviewer inside Claude Code — Codex returns APPROVED / WARNING / BLOCKED verdicts on Claude's diffs, with Claude as final judge. Cross-model review loops cut blind spots that single-model review misses. Surfaced via HN Show HN.",
+    "categories": ["cost", "mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "pg-aiguide",
+    "name": "pg-aiguide",
+    "primary_url": "https://github.com/timescale/pg-aiguide",
+    "hook": "Official Timescale MCP server that injects PostgreSQL documentation, query patterns, and pgvector/TimescaleDB skills directly into Claude Code sessions. Significantly improves SQL generation accuracy for Postgres-heavy codebases. 1.8k stars, updated Aug 27.",
+    "categories": ["mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "open-agent-hub",
+    "name": "open-agent-hub",
+    "primary_url": "https://github.com/guanyang/open-agent-hub",
+    "hook": "Lightweight, zero-dependency CLI for managing and activating capabilities across AI coding assistants — installs, switches, and organizes skills and plugins from a single interface without requiring npm or pip. 958 stars, updated Aug 30.",
+    "categories": ["mcp"],
+    "install": "See README"
+  }
+]
