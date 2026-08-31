@@ -1,0 +1,150 @@
+[
+  {
+    "slug": "obra-superpowers",
+    "name": "obra/superpowers — ~272K Stars; Full Dev Methodology as Chainable Skills",
+    "primary_url": "https://github.com/obra/superpowers",
+    "secondary_urls": [
+      "https://obra-superpowers.mintlify.app/installation/opencode"
+    ],
+    "hook": "~272K stars — still the most-starred Claude Code skills framework on GitHub. Jesse Vincent's complete software-development methodology enforced as chainable skills: Brainstorm → Spec → Plan → TDD (RED-GREEN-REFACTOR) → Subagent Dev → Review → Finalize. 14+ skills, official Anthropic marketplace acceptance. Day 20 of consecutive tracking — no sign of slowing.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add obra/superpowers",
+    "recurring_note": "↑ Day 20 — still the #1 skills framework by star count"
+  },
+  {
+    "slug": "ui-ux-pro-max-skill",
+    "name": "nextlevelbuilder/ui-ux-pro-max-skill — ~121K Stars; Design System Generator",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "secondary_urls": [
+      "https://ui-ux-pro-max-skill.nextlevelbuilder.io/"
+    ],
+    "hook": "~121K stars and still climbing. Packs 79 visual styles, 192 color palettes, 74 font pairings, 119 accessibility guidelines, and 22 tech stacks (React, Vue, SwiftUI, Flutter, shadcn/ui, Tailwind). The AI-powered Design System Generator analyzes your project and generates a tailored component system on demand. 322K+ installs on Skillselion. MIT, one-command install.",
+    "categories": ["design", "skill"],
+    "install": "npm install -g ui-ux-pro-max-cli && uipro init --ai claude",
+    "recurring_note": "↑ Day 9 — still top community design skill by installs"
+  },
+  {
+    "slug": "garrytan-gstack",
+    "name": "garrytan/gstack — ~90K Stars; Garry Tan's 23-Skill Claude Code Virtual Dev Team",
+    "primary_url": "https://github.com/garrytan/gstack",
+    "secondary_urls": ["https://gstacks.org/"],
+    "hook": "~90K stars for Garry Tan's (YC CEO) personal Claude Code configuration packaged as 23 specialist skills: CEO (product rethink), Designer (AI slop gating), Eng Manager (architecture lock), QA Lead (real browser session), Security Officer (OWASP + STRIDE audit), Release Engineer. Garry's reported output: 10K+ logical lines per week, 100+ PRs per week sustained over 50 days. MIT, Bun + TypeScript, single git clone.",
+    "categories": ["design", "skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 9 — steady, no fork explosion but sustained star growth"
+  },
+  {
+    "slug": "cathrynlavery-diagram-design",
+    "name": "cathrynlavery/diagram-design — ~26K Stars; 38 Editorial Diagram Types; No Mermaid Slop",
+    "primary_url": "https://github.com/cathrynlavery/diagram-design",
+    "hook": "38 production-quality editorial diagram types — Sankey, fishbone, Wardley map, kanban, user journey, UML class, ER, database schema, deployment, story map, and 28 more — rendered as self-contained HTML+SVG files. No shadows, no Mermaid slop, no CDN dependencies. Pulls your brand colors from any URL in 60 seconds. Claude Code plugin + skill, Codex plugin support included. August 2026 update added 10 new layout grammars.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add cathrynlavery/diagram-design && /plugin install diagram-design@diagram-design",
+    "recurring_note": "↑ Day 9 — consistent engagement in design community"
+  },
+  {
+    "slug": "video-shotcraft",
+    "name": "video-shotcraft — 6.8K Stars; Turn Claude Code Into a Motion-Design Studio",
+    "primary_url": "https://github.com/Vincentwei1021/video-shotcraft",
+    "secondary_urls": ["https://vincentwei1021.github.io/video-shotcraft/"],
+    "hook": "152 shot recipe cards, 209 style presets, and a production-ready Remotion template let you storyboard, animate, and sound-design a cinematic product promo entirely through Claude Code. Blew up from 1.4K in July to 6.8K stars; Aug 30 commit still active.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add Vincentwei1021/video-shotcraft",
+    "recurring_note": "↑ Day 4 — active Aug 30 push"
+  },
+  {
+    "slug": "generative-media-skills",
+    "name": "Generative-Media-Skills — 3.4K Stars; Text-to-Image, Video, and Music in One Skill",
+    "primary_url": "https://github.com/SamurAIGPT/Generative-Media-Skills",
+    "hook": "Multi-modal generation skill for Claude Code, Cursor, and Gemini CLI: 41 workflow recipes covering text-to-image (Flux), text-to-video (MiniMax-Pro), image-to-video (Kling-Pro), and music generation (Suno V5) via muapi.ai. Bash-native, zero npm dependencies. 3.4K stars, 594 installs, updated Aug 27.",
+    "categories": ["design", "skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — consistent design multi-tool"
+  },
+  {
+    "slug": "caveman",
+    "name": "JuliusBrussee/caveman — ~102K Stars; 65% Output Token Reduction",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "~102K stars, past the 100K milestone in late August. Compresses agent responses into terse caveman-speak without losing technical accuracy — code, commands, and error messages stay byte-for-byte exact, only prose is stripped. 65% average output token reduction across 1,200 test scenarios (range 22–87%). The companion `/caveman-compress` shrinks CLAUDE.md and memory files by ~46%, saving input tokens on every future session.",
+    "categories": ["cost", "skill"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash",
+    "recurring_note": "↑ Day 8 post-100K milestone — momentum holding"
+  },
+  {
+    "slug": "claude-mem",
+    "name": "thedotmack/claude-mem — 92.6K Stars; Persistent Context Across Sessions",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "92.6K stars (up from 91.9K on Aug 26). Hooks into Claude Code's session lifecycle, compresses every tool call and agent observation into a semantic summary, stores in local SQLite+Chroma vector DB, and injects the most relevant context back at the next session start. No cloud, no telemetry. Works across Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, and OpenCode. Obsidian-compatible via wikilinks.",
+    "categories": ["cost", "skill"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 8 — up ~700 stars since Aug 26"
+  },
+  {
+    "slug": "claude-code-weekly-limits-aug31",
+    "name": "Claude Code +50% Weekly Limits — EXPIRES TONIGHT (August 31)",
+    "primary_url": "https://code.claude.com/docs/en/whats-new",
+    "secondary_urls": [
+      "https://mer.vin/news/claude-codes-50-usage-boost-extended-again-not-yet-permanent/"
+    ],
+    "hook": "The +50% weekly token boost for Pro, Max, Team, and seat-based Enterprise ends tonight at 11:59 PM PT. Third and final extension — Anthropic has not committed to making it permanent. Any workflow that only fits inside the boosted cap needs a fallback plan in place before Monday morning. No renewal announcement as of this writing.",
+    "categories": ["cost", "official"],
+    "recurring_note": "↑ FINAL DAY — boost expires at midnight PT tonight"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills — ~220K Stars; 21 Engineering Skills From Matt Pocock's .agents Directory",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "~220K stars for 21 composable skills from Matt Pocock's personal .agents directory. Star skill: /grill-me — Claude asks every unanswered question in one round, numbered with recommended answers, before touching the keyboard. Core workflow: /grill-with-docs → /to-spec → /to-tickets → /implement → /code-review. 893K+ Skillselion installs.",
+    "categories": ["skill"],
+    "install": "npx skills add mattpocock/skills",
+    "recurring_note": "↑ Day 12 — ~220K stars, sustained new-install velocity"
+  },
+  {
+    "slug": "hermes-agent-herald",
+    "name": "hermes-agent — 238K Stars; Herald Release; Streaming TTS + A2A v1.0",
+    "primary_url": "https://github.com/NousResearch/hermes-agent",
+    "hook": "238K stars for NousResearch's Hermes Agent. The Herald release shipped streaming TTS voice and A2A v1.0 protocol support. Multi-LLM provider (Nous Portal, OpenRouter, NIM), Skills Hub compatible with Claude Code skills, and single gateway to Telegram/Discord/Slack/Signal/WhatsApp/CLI. Charlie Automates featured Hermes in their Agentic OS tutorial this week.",
+    "categories": ["skill", "mcp"],
+    "install": "pip install hermes-agent",
+    "recurring_note": "↑ Day 6 since Herald release",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "graphify",
+    "name": "Graphify — 112K+ Stars; Codebase → Queryable Knowledge Graph",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "hook": "112K+ stars for the YC S26-backed tool that converts any codebase into a queryable knowledge graph via AST parsing — no vector store required. Charlie Automates featured Graphify twice this week: standalone deep-dive and as a core component of their 'Agentic OS in 3 Steps' tutorial (alongside Hermes Agent and Railway). Reports of 70× fewer tokens per search versus naive file reads.",
+    "categories": ["mcp", "cost"],
+    "install": "npm install -g graphify-cli",
+    "recurring_note": "↑ Day 6 — twin Charlie Automates coverage this week",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "understand-anything",
+    "name": "Understand-Anything — 81K Stars; Codebase → Interactive Knowledge Graph",
+    "primary_url": "https://github.com/Lum1104/Understand-Anything",
+    "hook": "81K stars for the Claude Code plugin that turns any codebase into an interactive, searchable knowledge graph — color-coded by architectural layer (API, Service, Data, UI, Utility), clickable nodes with inline code and plain-English explanations, diff impact analysis, and guided dependency tours. Works on Claude Code, Cursor, Copilot, and Gemini CLI. 771 commits, 112 open issues, actively maintained.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything",
+    "recurring_note": "↑ Day 5 — holding at 81K"
+  },
+  {
+    "slug": "claude-code-compliance-api",
+    "name": "Claude Code Compliance API — GA; CLI and Desktop Sessions Now Logged for Enterprise",
+    "primary_url": "https://claude.com/blog/compliance-api-cowork-and-claude-code",
+    "secondary_urls": [
+      "https://platform.claude.com/docs/en/manage-claude/compliance-api",
+      "https://thehackernews.com/2026/08/securing-claude-code-new-compliance-api.html"
+    ],
+    "hook": "GA as of August 26. Anthropic's Compliance API now covers Claude Code CLI and desktop app sessions, not just Claude chat. Every session logs three block types — text (user prompts), tool_use (bash commands, file reads/writes, MCP calls), and tool_result (command output, file contents) — giving enterprise security teams full audit visibility into what local agents actually did. Same API interface as existing Claude chat compliance. Available to Claude Enterprise customers; local transcript endpoints are new.",
+    "categories": ["official", "cost"]
+  },
+  {
+    "slug": "alirezarezvani-claude-skills",
+    "name": "alirezarezvani/claude-skills — 25.3K Stars; 380 Skills, 30+ Agents, 70+ Custom Commands",
+    "primary_url": "https://github.com/alirezarezvani/claude-skills",
+    "hook": "380 Claude Code skills and agent skills — 30+ agents, 70+ custom commands, customizable references — covering engineering, marketing, product, compliance, C-level advisory, research, business operations, finance, and daily productivity. Compatible with Claude Code, Codex, Gemini CLI, Cursor, and 8 more agents. 25.3K stars, updated today (Aug 31), active community commits.",
+    "categories": ["skill"],
+    "install": "See README"
+  }
+]
