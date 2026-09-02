@@ -1,0 +1,155 @@
+[
+  {
+    "slug": "fable-5-1",
+    "name": "Claude Fable 5.1 — 75% Cache Read Cost Drop, Same Headline Price",
+    "primary_url": "https://www.anthropic.com/news/claude-fable-5-1",
+    "secondary_urls": [
+      "https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads",
+      "https://9to5mac.com/2026/09/01/anthropic-upgrades-claude-with-new-fable-5-1-model-details-here/"
+    ],
+    "hook": "Anthropic shipped Fable 5.1 and Mythos 5.1 on September 1. The headline rate ($10/$50 per million tokens) stays identical to Fable 5, but cache reads collapse from $1.00 to $0.25 per million tokens — a 75% cut — putting typical workload costs 25% lower and highly-agentic workflows (where cached context dominates) 45% lower. Both models match or beat Fable 5 on Terminal-Bench 4.0 and Humanity's Last Exam with 1M context and 128K output. Mythos 5.1 is the same architecture with looser safeguards, restricted to vetted cybersecurity and life-sciences orgs via trusted-access programs.",
+    "categories": ["cost", "official"],
+    "install": "model: claude-fable-5-1-20260901"
+  },
+  {
+    "slug": "claude-code-self-hosted",
+    "name": "Claude Code Self-Hosted Environments — Public Beta for Team & Enterprise",
+    "primary_url": "https://claude.com/blog/run-claude-code-sessions-on-your-own-compute",
+    "secondary_urls": [
+      "https://code.claude.com/docs/en/self-hosted-environments",
+      "https://www.unite.ai/claude-code-sessions-can-now-run-on-infrastructure-your-team-controls/"
+    ],
+    "hook": "Announced August 6 and now in public beta: Claude Code sessions can run on compute your team controls instead of Anthropic-hosted cloud. Sessions start from web, mobile, desktop, or a routine, but execute inside your network — next to your internal services, toolchains, and compliance controls. Repository checkouts, build artifacts, secrets, and session-created files never leave machines the org provisions. Available for Team and Enterprise plans; off by default; not available for ZDR organizations.",
+    "categories": ["official"],
+    "install": "See claude.com/blog/run-claude-code-sessions-on-your-own-compute"
+  },
+  {
+    "slug": "statewright",
+    "name": "Statewright — Visual State Machines That Make AI Agents Reliable",
+    "primary_url": "https://github.com/statewright/statewright",
+    "secondary_urls": [
+      "https://news.ycombinator.com/item?id=48108778",
+      "https://statewright.ai/"
+    ],
+    "hook": "490 GitHub stars, 120+ HN upvotes on Show HN. Statewright is a Rust-powered state machine engine that constrains which tools a Claude Code agent can touch in each workflow phase — planning, implementation, testing, deploy. The agent sees 5 tools instead of dozens; the engine (not a model) enforces transitions. On a 5-task SWE-bench subset, two local models went from 2/10 to 10/10 passing under Statewright constraints. Core engine is open-source; managed cloud service at statewright.ai. \"Agents are suggestions, states are laws.\"",
+    "categories": ["mcp", "skill"],
+    "install": "/plugin marketplace add statewright/statewright && /plugin install statewright"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "obra/superpowers — ~272K Stars; Full Dev Methodology as Chainable Skills",
+    "primary_url": "https://github.com/obra/superpowers",
+    "hook": "~272K stars — still the most-starred Claude Code skills framework on GitHub. Jesse Vincent's complete software-development methodology enforced as chainable skills: Brainstorm → Spec → Plan → TDD (RED-GREEN-REFACTOR) → Subagent Dev → Review → Finalize. 14+ skills, official Anthropic marketplace acceptance.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add obra/superpowers",
+    "recurring_note": "↑ Day 22 — still #1 skills framework by star count"
+  },
+  {
+    "slug": "andrej-karpathy-skills",
+    "name": "andrej-karpathy-skills — ~209K Stars; Karpathy's Four LLM Coding Rules as a Claude Code Skill",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "secondary_urls": [
+      "https://github.com/forrestchang/andrej-karpathy-skills",
+      "https://blog.pebblous.ai/report/karpathy-coding-skills-2026-04/en/"
+    ],
+    "hook": "~209K stars — the fastest-climbing behavioral skill in the ecosystem. Forrest Chang distilled Andrej Karpathy's January 2026 critique of LLM coding agents into four enforced rules: Think Before Coding, Simplicity First, Surgical Changes, and Goal-Driven Execution. Reported error rate drop from 41% to 11% in user tests.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add forrestchang/andrej-karpathy-skills && /plugin install andrej-karpathy-skills@karpathy-skills",
+    "recurring_note": "↑ Day 3 — still climbing fast"
+  },
+  {
+    "slug": "claude-code-limits-sept14",
+    "name": "Claude Code Weekly Limits: +25% Permanent Starting Sept 14 (−17% From Today)",
+    "primary_url": "https://code.claude.com/docs/en/whats-new",
+    "secondary_urls": [
+      "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-is-cutting-claude-codes-current-weekly-limits-by-17-percent/",
+      "https://startupfortune.com/claude-codes-usage-limit-boost-ends-september-14-with-a-real-cut/"
+    ],
+    "hook": "12 days remain on the current 50% usage boost. Starting September 14, Anthropic permanently raises baseline weekly limits by 25% — but the temporary boost (running since May) ends September 13, making the net change −17% for users who saturate their current cap. Math: baseline 100 → today 150 (boosted) → Sept 14 onward 125 (permanent). Community pushback on framing continues.",
+    "categories": ["cost", "official"],
+    "recurring_note": "↑ Day 5 — 12 days to the Sept 14 cutover"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills — ~220K Stars; 21 Engineering Skills From Matt Pocock's .agents Directory",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "~220K stars for 21 composable skills from Matt Pocock's personal .agents directory. Star skill: /grill-me — Claude asks every unanswered question in one round, numbered with recommended answers, before touching the keyboard. Core workflow: /grill-with-docs → /to-spec → /to-tickets → /implement → /code-review. 893K+ Skillselion installs.",
+    "categories": ["skill"],
+    "install": "npx skills add mattpocock/skills",
+    "recurring_note": "↑ Day 14 — ~220K stars, sustained new-install velocity"
+  },
+  {
+    "slug": "caveman",
+    "name": "JuliusBrussee/caveman — ~102K Stars; 65% Output Token Reduction",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "~102K stars, past the 100K milestone in late August. Compresses agent responses into terse caveman-speak without losing technical accuracy — code, commands, and error messages stay byte-for-byte exact, only prose is stripped. 65% average output token reduction across 1,200 test scenarios. The companion `/caveman-compress` shrinks CLAUDE.md and memory files by ~46%, saving input tokens on every future session.",
+    "categories": ["cost", "skill"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash",
+    "recurring_note": "↑ Day 10 post-100K — momentum holding"
+  },
+  {
+    "slug": "claude-mem",
+    "name": "thedotmack/claude-mem — ~92.6K Stars; Persistent Context Across Sessions",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "~92.6K stars. Hooks into Claude Code's session lifecycle, compresses every tool call and agent observation into a semantic summary, stores in local SQLite+Chroma vector DB, and injects the most relevant context back at the next session start. No cloud, no telemetry. Works across Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, and OpenCode. Obsidian-compatible via wikilinks.",
+    "categories": ["cost", "skill"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 10 — steady growth"
+  },
+  {
+    "slug": "cathrynlavery-diagram-design",
+    "name": "cathrynlavery/diagram-design — ~26K Stars; 38 Editorial Diagram Types; No Mermaid Slop",
+    "primary_url": "https://github.com/cathrynlavery/diagram-design",
+    "hook": "38 production-quality editorial diagram types — Sankey, fishbone, Wardley map, kanban, user journey, UML class, ER, database schema, deployment, story map, and 28 more — rendered as self-contained HTML+SVG files. No shadows, no Mermaid slop, no CDN dependencies. Pulls your brand colors from any URL in 60 seconds. August 2026 update added 10 new layout grammars.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add cathrynlavery/diagram-design && /plugin install diagram-design@diagram-design",
+    "recurring_note": "↑ Day 11 — consistent engagement in design community"
+  },
+  {
+    "slug": "graphify",
+    "name": "Graphify — 112K+ Stars; Codebase → Queryable Knowledge Graph",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "hook": "112K+ stars for the YC S26-backed tool that converts any codebase into a queryable knowledge graph via AST parsing — no vector store required. Reports of 70× fewer tokens per search versus naive file reads. Charlie Automates featured Graphify as a core component of their 'Agentic OS in 3 Steps' tutorial (alongside SEED, PAUL, Hermes, and Railway).",
+    "categories": ["mcp", "cost"],
+    "install": "npm install -g graphify-cli",
+    "recurring_note": "↑ Day 8 — Charlie Automates coverage continues",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "garrytan-gstack",
+    "name": "garrytan/gstack — ~90K Stars; Garry Tan's 23-Skill Claude Code Virtual Dev Team",
+    "primary_url": "https://github.com/garrytan/gstack",
+    "secondary_urls": ["https://gstacks.org/"],
+    "hook": "~90K stars for Garry Tan's (YC CEO) personal Claude Code configuration packaged as 23 specialist skills: CEO (product rethink), Designer (AI slop gating), Eng Manager (architecture lock), QA Lead (real browser session), Security Officer (OWASP + STRIDE audit), Release Engineer. Garry's reported output: 10K+ logical lines per week, 100+ PRs per week sustained over 50 days. MIT, Bun + TypeScript.",
+    "categories": ["design", "skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 11 — steady at ~90K"
+  },
+  {
+    "slug": "understand-anything",
+    "name": "Understand-Anything — 81K Stars; Codebase → Interactive Knowledge Graph",
+    "primary_url": "https://github.com/Lum1104/Understand-Anything",
+    "hook": "81K stars for the Claude Code plugin that turns any codebase into an interactive, searchable knowledge graph — color-coded by architectural layer (API, Service, Data, UI, Utility), clickable nodes with inline code and plain-English explanations, diff impact analysis, and guided dependency tours. Works on Claude Code, Cursor, Copilot, and Gemini CLI. 771 commits, 112 open issues, actively maintained.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything",
+    "recurring_note": "↑ Day 7 — holding at 81K"
+  },
+  {
+    "slug": "alirezarezvani-claude-skills",
+    "name": "alirezarezvani/claude-skills — 25.3K Stars; 380 Skills, 30+ Agents, 70+ Custom Commands",
+    "primary_url": "https://github.com/alirezarezvani/claude-skills",
+    "hook": "380 Claude Code skills and agent skills — 30+ agents, 70+ custom commands, customizable references — covering engineering, marketing, product, compliance, C-level advisory, research, business operations, finance, and daily productivity. Compatible with Claude Code, Codex, Gemini CLI, Cursor, and 8 more agents. 25.3K stars, active community commits.",
+    "categories": ["skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 3 — 25.3K stars, active commits"
+  },
+  {
+    "slug": "agentic-awesome-skills",
+    "name": "sickn33/agentic-awesome-skills — 45.6K Stars; 2,005+ Skills; Agent-First Control Plane",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "hook": "45.6K stars at v16.2.0 with 2,005+ skills and a local agent-first control plane for skill discovery. Catalog-wide search, agent-owned selection, apply-and-recovery, and diagnosis tooling. 13+ specialized plugins spanning dev, security, DevOps, QA, and marketing. Updated August 28.",
+    "categories": ["skill"],
+    "install": "npx agentic-awesome-skills --antigravity --skills brainstorming,systematic-debugging --dry-run",
+    "recurring_note": "↑ Day 5 — 45.6K stars, v16.2.0"
+  }
+]
