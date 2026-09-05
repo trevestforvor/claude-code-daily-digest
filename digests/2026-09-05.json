@@ -1,0 +1,94 @@
+[
+  {
+    "slug": "omniroute",
+    "name": "OmniRoute",
+    "primary_url": "https://github.com/diegosouzapw/OmniRoute",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=x4FxvP5IGQs"
+    ],
+    "hook": "Free AI gateway that routes Claude Code across 352 providers — 150+ with free tiers delivering 1.47B tokens/month at zero cost. Point Claude Code at localhost:20128/v1 and get automatic fallback, RTK+Caveman stacked compression (15–95% token savings on top), and 17 routing strategies. @charlieautomates built a full 'Claude Code Is Now FREE Forever' tutorial around it; 61.5k GitHub stars.",
+    "categories": ["cost", "viral", "plugin"],
+    "install": "npm install -g omniroute",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "claude-commerce-agents",
+    "name": "Claude Commerce Agents",
+    "primary_url": "https://github.com/anthropics/commerce-agents",
+    "secondary_urls": [
+      "https://www.marktechpost.com/2026/09/03/anthropic-released-claude-commerce-agents-an-apache-2-0-blueprint-for-shopping-and-merchant-agents-across-retail-travel-telecom-and-entertainment/"
+    ],
+    "hook": "Anthropic's open-source reference blueprint (Sept 2, Apache 2.0) for shopping and merchant agents — catalog search, cart building, inventory, pricing, and campaign management across retail, travel, telecom, and entertainment. Runs on Anthropic API, Bedrock, Vertex, or Foundry from one codebase; includes a Claude Code plugin and pre-built skills. Launch partners: Accenture, Mastercard, Visa.",
+    "categories": ["anthropic", "skill", "mcp"],
+    "install": "git clone https://github.com/anthropics/commerce-agents"
+  },
+  {
+    "slug": "trace-mcp",
+    "name": "trace-mcp",
+    "primary_url": "https://github.com/nikolai-vysotskyi/trace-mcp",
+    "secondary_urls": [],
+    "hook": "MCP server that indexes your repo once and serves a framework-aware dependency graph — cuts median PR-review context from 13,595 to 1,326 input tokens (90.6% reduction across 60 open-source PRs). Supports 81 languages, 87 framework integrations (Laravel, Django, FastAPI, NestJS, Vue, React…), 7 ORMs. Zero telemetry, MIT, 133 stars.",
+    "categories": ["cost", "mcp"],
+    "install": "npm install -g trace-mcp && trace init && trace add"
+  },
+  {
+    "slug": "inference-hooks-enterprise",
+    "name": "Inference Hooks (Claude Enterprise)",
+    "primary_url": "https://claude.com/blog/claude-enterprise-inference-hooks",
+    "secondary_urls": [
+      "https://platform.claude.com/docs/en/manage-claude/inference-hooks"
+    ],
+    "hook": "Inference hooks entered beta for Claude Enterprise — an open webhook protocol that lets your security server inspect every prompt and tool call before Claude sees it and return allow/deny in real time. One org-level config covers claude.ai, Cowork, MCP servers, skills, plugins, and Claude Code simultaneously. Integrates with Netskope, Palo Alto, Proofpoint, and Zscaler out of the box. Distinct from the enterprise-frontier-safeguards (activity logs + data retention) announced Sept 1.",
+    "categories": ["anthropic"],
+    "install": ""
+  },
+  {
+    "slug": "paul-framework",
+    "name": "PAUL",
+    "primary_url": "https://github.com/ChristopherKahler/paul",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=LM14h8RBXuM"
+    ],
+    "hook": "Plan-Apply-Unify Loop for Claude Code — 26 commands enforce a three-phase cycle (Plan with BDD acceptance criteria → Apply via Execute/Qualify per-task loops → Unify with mandatory closure comparing planned vs. actual). STATE.md persists context across sessions; BASE v2 integration tracks cost attribution. @charlieautomates called PAUL + SEED 'the Claude Code meta nobody's talking about.' 1.2k stars.",
+    "categories": ["plugin", "skill"],
+    "install": "npx paul-framework",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "seed-incubator",
+    "name": "SEED",
+    "primary_url": "https://github.com/ChristopherKahler/seed",
+    "secondary_urls": [],
+    "hook": "Typed project incubator for Claude Code — five built-in project types (Application, Workflow, Client, Utility, Campaign) shape the exploration conversation, produce a structured PLANNING.md, and graduate plans into PAUL-managed builds with zero re-asking. Installs to ~/.claude/commands/seed/ for workspace-wide availability. 346 stars; featured by @charlieautomates as the front-half of the SEED+PAUL pipeline.",
+    "categories": ["skill"],
+    "install": "npm i -g @chrisai/seed",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "reticle",
+    "name": "Reticle",
+    "primary_url": "https://github.com/reticlehq/reticle",
+    "secondary_urls": [],
+    "hook": "Verification layer that lets AI agents confirm their code changes actually work — instead of screenshots or guesses, agents observe the live running app (network responses, store state, console errors, React commits) and receive pass/fail verdicts with file:line pointers. Ships as a Claude Code plugin (one-word /reticle command) and MCP server. 441 stars.",
+    "categories": ["plugin", "mcp"],
+    "install": "npx skills add reticlehq/reticle"
+  },
+  {
+    "slug": "claude-code-changelog-sept5",
+    "name": "Claude Code — /skill-doctor, managedMcpServers & Cross-Machine Agents",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "secondary_urls": [],
+    "hook": "Three builds this week add features not yet covered in prior digests: /skill-doctor lists every installed skill with its context footprint so you can prune unused ones; managedMcpServers lets org admins push MCP servers to every user without individual config; and SendMessage/ListAgents now work cross-machine on Bedrock, Vertex, and Foundry — closing the multi-region agent gap. Also: --permission-prompts none denies all prompts automatically for unattended headless hosts.",
+    "categories": ["anthropic", "cost"],
+    "install": ""
+  },
+  {
+    "slug": "rohitg00-awesome-claude-code-toolkit",
+    "name": "awesome-claude-code-toolkit",
+    "primary_url": "https://github.com/rohitg00/awesome-claude-code-toolkit",
+    "secondary_urls": [],
+    "hook": "The most comprehensive structured resource list for Claude Code on GitHub — 135 agents across 10 categories, 35 curated skills (+400k via SkillKit), 42 commands, 176+ plugins, 20 hooks, 14 MCP configs, and 26 companion apps. Peaked at #1 GitHub trending in February 2026 and now sits at 2.4k stars with active weekly PRs.",
+    "categories": ["marketplace"],
+    "install": ""
+  }
+]
