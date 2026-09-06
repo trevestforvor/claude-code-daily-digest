@@ -1,0 +1,148 @@
+[
+  {
+    "slug": "archify",
+    "name": "Archify — 50.4K Stars; Code → Interactive Architecture Diagrams",
+    "primary_url": "https://github.com/tt-a1i/archify",
+    "hook": "50.4K stars (+82% growth this week) for the AI agent skill that turns any codebase or system description into a self-contained interactive HTML artifact. Five diagram types (architecture, workflow, sequence, data flow, lifecycle), four presets, dark/light themes, built-in motion animations, and export to PNG/SVG/WebM/share cards — no external dependencies. Works with Claude Code, Cursor, Codex, OpenCode, and Gemini CLI. MIT.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add tt-a1i/archify -g"
+  },
+  {
+    "slug": "caveman",
+    "name": "JuliusBrussee/caveman — 103.9K Stars; 65% Output Token Cut",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "103.9K stars — well past the 100K milestone. Compresses agent prose into terse caveman-speak while keeping code, commands, and error output byte-perfect. Two independent benchmarks measured 65–75% fewer output tokens with no accuracy loss. v2.5.0 (Sept 2) adds `/caveman-compress` for CLAUDE.md and memory files (~46% input token savings on each future session). MIT skill, BSL-1.1 proxy runtime.",
+    "categories": ["cost", "skill"],
+    "install": "npx skills add JuliusBrussee/caveman",
+    "recurring_note": "↑ Day 14 — holding past 100K milestone"
+  },
+  {
+    "slug": "fable-5-1",
+    "name": "Claude Fable 5.1 — 75% Cache Read Cost Drop, Same Headline Price",
+    "primary_url": "https://www.anthropic.com/news/claude-fable-5-1",
+    "secondary_urls": [
+      "https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads"
+    ],
+    "hook": "Anthropic shipped Fable 5.1 and Mythos 5.1 on September 1. Headline rate ($10/$50 per million tokens) unchanged from Fable 5, but cache reads collapse from $1.00 → $0.25 per million tokens — a 75% cut — making typical workloads ~25% cheaper and highly-agentic workflows (cache-dominated) up to 45% cheaper. Fable 5.1 is now the default Fable model in Claude Code 2.1.257+. Mythos 5.1 shares the architecture with looser safeguards; restricted to vetted cybersecurity/life-sciences orgs.",
+    "categories": ["cost", "anthropic"],
+    "install": "model: claude-fable-5-1-20260901",
+    "recurring_note": "↑ Day 5 — cache price cut still the biggest cost story this week"
+  },
+  {
+    "slug": "claude-code-limits-sept14",
+    "name": "Claude Code Weekly Limits: +25% Permanent Starting Sept 14 (−17% From Today)",
+    "primary_url": "https://code.claude.com/docs/en/whats-new",
+    "secondary_urls": [
+      "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-is-cutting-claude-codes-current-weekly-limits-by-17-percent/"
+    ],
+    "hook": "8 days remain on the current 50% usage boost. Starting September 14, Anthropic permanently raises baseline weekly limits by 25% — but the temporary boost (running since May) ends September 13, making the net change −17% for users who saturate their current cap. Math: baseline 100 → today 150 (boosted) → Sept 14 onward 125 (permanent). Plan around this if you're running high-volume agentic workflows.",
+    "categories": ["cost", "anthropic"],
+    "recurring_note": "↑ Day 9 — 8 days to the Sept 14 cutover"
+  },
+  {
+    "slug": "andrej-karpathy-skills",
+    "name": "andrej-karpathy-skills — ~209K Stars; Karpathy's Four LLM Coding Rules as a Skill",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "secondary_urls": [
+      "https://github.com/forrestchang/andrej-karpathy-skills"
+    ],
+    "hook": "~209K stars — the fastest-climbing behavioral skill in the ecosystem. Forrest Chang distilled Andrej Karpathy's January 2026 critique of LLM coding agents into four enforced rules: Think Before Coding, Simplicity First, Surgical Changes, and Goal-Driven Execution. User-reported error rate drop from 41% to 11% in paired testing. Compatible with Claude Code, Codex, Cursor, Gemini CLI, OpenCode.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add forrestchang/andrej-karpathy-skills && /plugin install andrej-karpathy-skills@karpathy-skills",
+    "recurring_note": "↑ Day 7 — still climbing"
+  },
+  {
+    "slug": "orca",
+    "name": "Orca — 62.6K Stars; Fleet Manager for Parallel Coding Agents",
+    "primary_url": "https://github.com/stablyai/orca",
+    "secondary_urls": [
+      "https://onOrca.dev"
+    ],
+    "hook": "62.6K stars for the ADE (Agent Development Environment) that runs Claude Code, Codex, Copilot, OpenCode, and 20+ other agents side-by-side in isolated git worktrees. First commit March 17, 2026 — ~10K stars/month. Desktop app (mac/win/linux), mobile companion (iOS+Android) for steering agents from your phone, SSH remote execution, and integrated terminal splits. MIT.",
+    "categories": ["plugin", "viral"],
+    "install": "brew install --cask stablyai/orca/orca"
+  },
+  {
+    "slug": "oh-my-openagent",
+    "name": "oh-my-openagent — 60.5K Stars; Ultrawork Token-Maxer Harness",
+    "primary_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "hook": "60.5K stars for the token-focused agent harness: 11 agents, 54+ lifecycle hooks, 5 built-in MCPs, ultrawork mode, and hashline edits. Two editions — Ultimate (Claude Code, OpenCode) and Light (Codex CLI, portable). Creator burned $24K in LLM tokens stress-testing every major agent, then published the config that won. Tracked in the claude-skills trending leaderboard as a top-10 repo.",
+    "categories": ["cost", "skill"],
+    "install": "npm install -g oh-my-openagent"
+  },
+  {
+    "slug": "planning-with-files",
+    "name": "OthmanAdi/planning-with-files — 26.6K Stars; Crash-Proof Manus-Style Planning",
+    "primary_url": "https://github.com/OthmanAdi/planning-with-files",
+    "hook": "26.6K stars for the Manus-style planning skill that puts execution state on disk instead of in context. Three markdown files (`task_plan.md`, `findings.md`, `progress.md`) persist across `/clear`, crashes, and compaction; 6 lifecycle hooks re-inject the active plan every turn. Session recovery averaged 5.0 turns vs 13.3 without it in internal tests. Compatible with Claude Code, Codex, Cursor, OpenCode, 60+ agents.",
+    "categories": ["skill", "cost"],
+    "install": "npx skills add OthmanAdi/planning-with-files --skill planning-with-files -g",
+    "recurring_note": "↑ Day 4 — 26.6K stars, steady climb"
+  },
+  {
+    "slug": "graphify",
+    "name": "Graphify — 112K Stars; Codebase → Queryable Knowledge Graph",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "hook": "112K stars for the YC S26-backed tool that converts any codebase into a queryable knowledge graph via AST parsing — no vector store required, 70× fewer tokens per search vs naive file reads. @charlieautomates featured Graphify as a core component of their 'Agentic OS in 3 Steps' tutorial alongside SEED, PAUL, Hermes, and Railway.",
+    "categories": ["mcp", "cost"],
+    "install": "npm install -g graphify-cli",
+    "recurring_note": "↑ Day 12 — @charlieautomates coverage driving installs",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills — ~248K Stars; 21 Engineering Skills From Pocock's .agents Directory",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "~248K stars for 21 composable skills from Matt Pocock's (TypeScript educator) personal .agents directory — updated Sept 3. Star skill: /grill-me, which has Claude ask every unanswered question numbered with recommended answers before touching code. Core workflow: /grill-with-docs → /to-spec → /to-tickets → /implement → /code-review. 893K+ Skillselion installs.",
+    "categories": ["skill"],
+    "install": "npx skills add mattpocock/skills",
+    "recurring_note": "↑ Day 18 — still top 3 by installs"
+  },
+  {
+    "slug": "claude-for-teachers-districts",
+    "name": "Claude for Teachers — Free Enterprise for US K-12 Schools and Districts",
+    "primary_url": "https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts",
+    "secondary_urls": [
+      "https://www.anthropic.com/news/claude-for-teachers"
+    ],
+    "hook": "Announced August 28: Anthropic extends the Claude for Teachers program to entire US K-12 schools and districts for free. Org-level SSO, role-based access control, and a single FERPA-aligned K-12 Data Processing Agreement covers all staff. Teaching skills grounded in learning science, direct connection to academic standards in all 50 states. No model training on district data. Free through June 30, 2027 for organizations that sign up.",
+    "categories": ["anthropic"],
+    "install": ""
+  },
+  {
+    "slug": "voltagent-awesome-agent-skills",
+    "name": "VoltAgent/awesome-agent-skills — 33.7K Stars; 1,000+ Skills From Real Engineering Teams",
+    "primary_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "hook": "33.7K stars for a curated collection of 1,000+ agent skills sourced from official dev teams and practitioners — not AI-generated filler. Every entry was created and used by an actual engineering team. Compatible with Claude Code, Codex, Antigravity, Gemini CLI, Cursor, Copilot, OpenCode, and Windsurf. Updated September 2.",
+    "categories": ["skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 4 — 33.7K stars, active"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "obra/superpowers — ~272K Stars; Full Dev Methodology as Chainable Skills",
+    "primary_url": "https://github.com/obra/superpowers",
+    "hook": "~272K stars — still the most-starred Claude Code skills framework on GitHub. Jesse Vincent's complete software-development methodology enforced as chainable skills: Brainstorm → Spec → Plan → TDD (RED-GREEN-REFACTOR) → Subagent Dev → Review → Finalize. 14+ skills, official Anthropic marketplace acceptance.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add obra/superpowers",
+    "recurring_note": "↑ Day 26 — still #1 skills framework by star count"
+  },
+  {
+    "slug": "agentic-awesome-skills",
+    "name": "sickn33/agentic-awesome-skills — 45.9K Stars; 2,005+ Skills; Agent-First Control Plane",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "hook": "45.9K stars at v16.2.0 with 2,005+ skills and a local agent-first control plane for discovery. Catalog-wide search, agent-owned selection, apply-and-recovery, and diagnosis tooling. 13+ specialized plugins spanning dev, security, DevOps, QA, and marketing. Compatible with Claude Code, Codex, Antigravity, Cursor, Gemini, Windsurf. Updated September 3.",
+    "categories": ["skill"],
+    "install": "npx agentic-awesome-skills --antigravity --skills brainstorming,systematic-debugging --dry-run",
+    "recurring_note": "↑ Day 9 — 45.9K stars, active"
+  },
+  {
+    "slug": "claude-code-best-practice",
+    "name": "shanraisshan/claude-code-best-practice — 65.6K Stars; 69 Tips From Vibe Coding to Agentic Engineering",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "65.6K stars — the highest-starred written reference for Claude Code best practices, updated September 3. Shanraisshan compiled 69 actionable tips across 11 categories with input from Boris Cherny (Anthropic engineer who built Claude Code). Covers subagents, hooks, skill orchestration, session management, context optimization, memory systems, MCP server patterns, and agentic workflow design. Trended #1 on GitHub in March 2026.",
+    "categories": ["design", "skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 4 — 65.6K stars, updated this week"
+  }
+]
