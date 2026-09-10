@@ -1,0 +1,153 @@
+[
+  {
+    "slug": "claude-code-2-1-267",
+    "name": "Claude Code 2.1.267 — maxEffortLevel Cap, Snapshot Control, 30+ Prompt-Cache Fixes",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Shipped September 9. Two new settings: `maxEffortLevel` caps the effort tier on every provider (Bedrock, Vertex, Foundry) so high-compute sessions can't accidentally overrun budgets, and `--system-prompt-snapshot off` forces the system prompt to render fresh on every request instead of reusing the cached version from turn one. The real news is scope: 30+ bug fixes touch prompt-cache stability across mid-session MCP reconnections, model switches via `/model`, resumed sessions, and subagent spawns — all of which were silently busting the cache and costing extra. VSCode gets six fixes including a 100% CPU hang on fork/edit/rewind with cyclic parent links and WSL2 paste corruption. Claude Code web gets a GitHub Enterprise token-expiry fix.",
+    "categories": ["anthropic", "cost"],
+    "install": "claude self-update"
+  },
+  {
+    "slug": "seed-paul-meta",
+    "name": "SEED + PAUL — Claude Code's Plan-First Meta Workflow (Charlie Automates)",
+    "primary_url": "https://github.com/ChristopherKahler/paul",
+    "secondary_urls": [
+      "https://github.com/ChristopherKahler/seed",
+      "https://www.youtube.com/watch?v=NB9Pf4cdFeM"
+    ],
+    "hook": "PAUL (1.2K stars) is a Plan-Apply-Unify Loop for Claude Code: every task closes with a mandatory UNIFY step that reconciles what was planned vs. what was built, logs decisions, and updates state — designed to prevent the context-rot that degrades quality as sessions grow. SEED (281 stars) is a companion project-incubator: type-aware guided exploration from raw idea to a structured PLANNING.md, then a one-command `/seed launch` hands the plan to PAUL via `paul.toml` frontmatter. Charlie Automates called this combo the 'Claude Code Meta nobody's talking about' in their most recent video. Both are free, MIT-licensed, zero-dependency markdown skills.",
+    "categories": ["design", "skill"],
+    "install": "npx paul-framework@latest init",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "obsidian-second-brain",
+    "name": "obsidian-second-brain — 4.4K Stars; Persistent Memory Across 7 CLI Agents",
+    "primary_url": "https://github.com/eugeniughelbur/obsidian-second-brain",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=x27XqGdgZkc"
+    ],
+    "hook": "4,400 stars — up from 1,024 in its first 7 weeks. A cross-CLI skill that wires your Obsidian vault as persistent memory for Claude Code, Codex, Gemini, OpenCode, Hermes, and Pi. 45 commands: hybrid local+semantic search over vault notes, self-rewriting notes that update after each session, keyless web research (no API key required), `/obsidian-architect` for codebase documentation, and scheduled background agents that maintain the vault while you sleep. Charlie Automates made a dedicated video this week warning devs not to set up a Claude Code second brain without watching it first — this repo was central to that coverage.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add eugeniughelbur/obsidian-second-brain && /plugin install obsidian-second-brain@obsidian-second-brain",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "claude-bughunter",
+    "name": "Claude-BugHunter — 4.4K Stars; 681 HackerOne Patterns as a Skill Bundle",
+    "primary_url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "hook": "4,400 stars and trending on trendshift.io this week. A drop-in Claude Code skill bundle for authorized bug hunting and external red-team work: 82 skills, 15 slash commands, and 681 disclosed HackerOne report patterns curated across 24 core vulnerability classes. Ships per-class detection patterns, payloads, bypass tables, and chain templates for each class, plus enterprise identity and infrastructure attack matrices. Install once, then use `/hunt-sqli`, `/hunt-ssrf`, `/hunt-idor`, and others directly in Claude Code on authorized targets.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add elementalsouls/Claude-BugHunter && /plugin install claude-bughunter@claude-bughunter"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "obra/superpowers — ~272K Stars; Full Dev Methodology as Chainable Skills",
+    "primary_url": "https://github.com/obra/superpowers",
+    "hook": "~272K stars — still the most-starred Claude Code skills framework on GitHub. Jesse Vincent's complete software-development methodology enforced as chainable skills: Brainstorm → Spec → Plan → TDD (RED-GREEN-REFACTOR) → Subagent Dev → Review → Finalize. 14+ skills, official Anthropic marketplace acceptance.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add obra/superpowers",
+    "recurring_note": "↑ Day 30 — still #1 skills framework by star count"
+  },
+  {
+    "slug": "andrej-karpathy-skills",
+    "name": "andrej-karpathy-skills — ~209K Stars; Karpathy's Four LLM Coding Rules as a Skill",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "secondary_urls": [
+      "https://github.com/forrestchang/andrej-karpathy-skills"
+    ],
+    "hook": "~209K stars — the fastest-climbing behavioral skill in the ecosystem. Forrest Chang distilled Andrej Karpathy's January 2026 critique of LLM coding agents into four enforced rules: Think Before Coding, Simplicity First, Surgical Changes, and Goal-Driven Execution. User-reported error rate drop from 41% to 11% in paired testing. Compatible with Claude Code, Codex, Cursor, Gemini CLI, OpenCode.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add forrestchang/andrej-karpathy-skills && /plugin install andrej-karpathy-skills@karpathy-skills",
+    "recurring_note": "↑ Day 11 — still climbing"
+  },
+  {
+    "slug": "ecc",
+    "name": "ECC — Everything Claude Code — 254K Stars; 286 Skills, 68 Agents, Plan Canvas",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "254K stars for Affaan Mustafa's agent harness performance system — 10+ months of daily production use crystallized into 286 skills, 68 specialized agents, and 94 commands for Claude Code, Codex, Cursor, Gemini, Zed, and others. ECC 2.1 added Plan Canvas (browser-based plan review with annotations), Kimi Code support, and self-hosted compute via Itô GPU marketplace. Hook runtime controls via ECC_HOOK_PROFILE=minimal|standard|strict. Trending +6.4K stars in one week.",
+    "categories": ["skill", "plugin"],
+    "install": "npx ecc-universal setup",
+    "recurring_note": "↑ Day 3 — 254K stars"
+  },
+  {
+    "slug": "ponytail",
+    "name": "DietrichGebert/ponytail — 128.6K Stars; Laziness Ladder Cuts Code 54–94%",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "hook": "128,600 stars — up ~24K since last featured August 19. Ponytail enforces a 7-rung laziness ladder before writing a single line of custom code: stdlib first, native platform features, existing dependencies, one-liners, and so on. Benchmarked at ~54% less generated code (range up to 94%), ~20% cheaper API spend, and ~27% faster completions on real FastAPI + React sessions. Targets code bloat; caveman targets prose verbosity — both are complementary.",
+    "categories": ["design", "cost", "skill"],
+    "install": "/plugin marketplace add DietrichGebert/ponytail && /plugin install ponytail@ponytail",
+    "recurring_note": "↑ Day 5 comeback — 128.6K stars"
+  },
+  {
+    "slug": "caveman",
+    "name": "JuliusBrussee/caveman — 103.9K Stars; 65% Output Token Cut",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "103.9K stars — holding past the 100K milestone. Compresses agent prose into terse caveman-speak while keeping code, commands, and error output byte-perfect. Two independent benchmarks measured 65–75% fewer output tokens with no accuracy loss. v2.5.0 adds `/caveman-compress` for CLAUDE.md and memory files (~46% input token savings on each future session). MIT skill, BSL-1.1 proxy runtime.",
+    "categories": ["cost", "skill"],
+    "install": "npx skills add JuliusBrussee/caveman",
+    "recurring_note": "↑ Day 19 — holding past 100K milestone"
+  },
+  {
+    "slug": "oh-my-openagent",
+    "name": "oh-my-openagent — 68.8K Stars; Ultrawork Token-Maxer Harness",
+    "primary_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "hook": "68.8K stars for the token-focused agent harness: 11 agents, 54+ lifecycle hooks, 5 built-in MCPs, ultrawork mode, and hashline edits. Two editions — Ultimate (Claude Code, OpenCode) and Light (Codex CLI, portable). Creator burned $24K in LLM tokens stress-testing every major agent, then published the config that won.",
+    "categories": ["cost", "skill"],
+    "install": "npm install -g oh-my-openagent",
+    "recurring_note": "↑ Day 5 — 68.8K stars, sustained"
+  },
+  {
+    "slug": "orca",
+    "name": "Orca — 62.6K Stars; Fleet Manager for Parallel Coding Agents",
+    "primary_url": "https://github.com/stablyai/orca",
+    "secondary_urls": [
+      "https://onOrca.dev"
+    ],
+    "hook": "62.6K stars for the ADE (Agent Development Environment) that runs Claude Code, Codex, Copilot, OpenCode, and 20+ other agents side-by-side in isolated git worktrees. First commit March 17, 2026 — ~10K stars/month. Desktop app (mac/win/linux), mobile companion (iOS+Android) for steering agents from your phone, SSH remote execution, and integrated terminal splits. MIT.",
+    "categories": ["plugin", "viral"],
+    "install": "brew install --cask stablyai/orca/orca",
+    "recurring_note": "↑ Day 6 — momentum holding"
+  },
+  {
+    "slug": "understand-anything",
+    "name": "Understand-Anything — 54.7K Stars; Codebase → Interactive Knowledge Graph",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "secondary_urls": [
+      "https://understand-anything.com/"
+    ],
+    "hook": "54,700 stars. A multi-agent pipeline scans a repo, extracts every file, function, class, and dependency, and writes a knowledge graph to `.understand-anything/knowledge-graph.json`. An interactive React Flow dashboard renders it with nodes color-coded by layer (API, Service, Data, UI, Utility) and edges showing call paths. The `/understand-chat` command answers natural-language questions about the codebase backed by the graph rather than inline file reads — meaningfully cutting tokens on repo-wide queries. Works with Claude Code, Codex, Cursor, Copilot, and Gemini CLI.",
+    "categories": ["plugin", "cost"],
+    "install": "/plugin marketplace add Lum1104/Understand-Anything && /plugin install understand-anything",
+    "recurring_note": "↑ Day 2 — 54.7K stars"
+  },
+  {
+    "slug": "agentic-awesome-skills",
+    "name": "AAS Core (agentic-awesome-skills) — 45.4K Stars; 2,115 Skills With Agent-Owned Selection",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "hook": "45,400 stars. AAS Core is a local, agent-first control plane: 2,115+ agentic skills indexed in a read-only local MCP catalog. Claude or Codex reads the full catalog via `compose_stack` (a read-only tool), selects exact skill IDs for the current project, and validates the chosen stack before it runs — no ranking, no recommendations, the agent decides. Ships with a CLI, plugin manager, and a browser Workbench for managing installed skill stacks. Compatible with Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and more.",
+    "categories": ["skill", "plugin"],
+    "install": "npx agentic-awesome-skills",
+    "recurring_note": "↑ Day 2 — 45.4K stars"
+  },
+  {
+    "slug": "claude-code-limits-sept14",
+    "name": "Claude Code Weekly Limits: +25% Permanent Starting Sept 14 (−17% From Today)",
+    "primary_url": "https://code.claude.com/docs/en/whats-new",
+    "secondary_urls": [
+      "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-is-cutting-claude-codes-current-weekly-limits-by-17-percent/"
+    ],
+    "hook": "3 days left on the current 50% usage boost. Starting September 14, Anthropic permanently raises baseline weekly limits by 25% — but the temporary boost (running since May) ends September 13, making the net change −17% for users who saturate today's cap. Math: baseline 100 → today 150 (boosted) → Sept 14 onward 125 (permanent). If you run high-volume agentic workflows, plan your pipeline around this before the cutover.",
+    "categories": ["cost", "anthropic"],
+    "recurring_note": "↑ Day 14 — 3 days to the Sept 14 cutover"
+  },
+  {
+    "slug": "fable-5-1",
+    "name": "Claude Fable 5.1 — 75% Cache Read Cost Drop, Same Headline Price",
+    "primary_url": "https://www.anthropic.com/news/claude-fable-5-1",
+    "hook": "Anthropic shipped Fable 5.1 on September 1. Headline rate ($10/$50 per million tokens) unchanged from Fable 5, but cache reads collapse from $1.00 → $0.25 per million tokens — a 75% cut — making typical workloads ~25% cheaper and cache-dominated agentic workflows up to 45% cheaper. Fable 5.1 is the default Fable model in Claude Code 2.1.257+.",
+    "categories": ["cost", "anthropic"],
+    "install": "model: claude-fable-5-1-20260901",
+    "recurring_note": "↑ Day 10 — cache price cut still the biggest ongoing cost story"
+  }
+]
