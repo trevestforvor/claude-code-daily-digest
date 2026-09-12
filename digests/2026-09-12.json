@@ -1,0 +1,137 @@
+[
+  {
+    "slug": "i-have-adhd",
+    "name": "i-have-adhd",
+    "primary_url": "https://github.com/ayghri/i-have-adhd",
+    "secondary_urls": [
+      "https://www.threads.com/@sscottdev/post/DbZTh7KGnci/someone-made-a-claude-code-skill-called-i-have-adhd-it-already-has-k-git-hub/"
+    ],
+    "hook": "A single-file skill that restructures every Claude reply: answer first, numbered steps, state recap each turn, max 5 items per list, specific time estimates, one concrete next action at the end. 'Built for ADHD, but I think this is just how most people want AI to respond' — the Threads post hit 40k+ impressions in 48 hours. At 43.1k stars with +15.7k this week (57.9% growth), it's the fastest-growing Claude Code skill tracked this week.",
+    "categories": ["skill", "productivity"],
+    "install": "claude plugin marketplace add ayghri/i-have-adhd"
+  },
+  {
+    "slug": "archify",
+    "name": "Archify",
+    "primary_url": "https://github.com/tt-a1i/archify",
+    "hook": "Compiles typed JSON IR from your agent into self-contained HTML/SVG architecture diagrams — five types (architecture, workflow, sequence, data flow, lifecycle), four presets, dark/light themes, export to PNG/SVG/WebM. Works with Claude Code, Codex, Cursor, and OpenCode. At 59.3k stars with +10.3k added this week, it is the top DESIGN skill in the ecosystem.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add tt-a1i/archify -g",
+    "recurring_note": "↑ Day 7 — 59.3k stars, +10.3k this week; still #1 DESIGN signal"
+  },
+  {
+    "slug": "spotify-portal-shunt",
+    "name": "Spotify Portal / Shunt",
+    "primary_url": "https://github.com/spotify/portal-ai-plugins",
+    "secondary_urls": [
+      "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90"
+    ],
+    "hook": "Spotify's open-source Claude Code plugin intercepts every Read call via a PreToolUse hook: files over 350 lines are blocked and handed to a cheaper worker model through the Portal CLI actions registry instead of Opus. Result: 90% token reduction measured across a Java monorepo (mean bulk-read savings, not a theoretical estimate). Apache-2.0, 1.5k stars. The pattern generalises to any agent.",
+    "categories": ["cost", "mcp"],
+    "install": "claude plugin marketplace add spotify/portal-ai-plugins"
+  },
+  {
+    "slug": "claude-code-2-1-269",
+    "name": "Claude Code v2.1.269",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "September 11 release: adds `claude plugin eval` (run a plugin's eval suite with scored JSON + HTML report — closes the test-coverage gap for plugin authors), `/focus` command (view-only summary of active task for remote/headless sessions), `/output-style` switching, and `CLAUDE_CODE_WORKFLOW_MAX_CONCURRENT_AGENTS` (cap concurrent agents 1–256). Also fixes prompt-cache partial invalidation after output-token cutoff and hardens plugin archive extraction permissions.",
+    "categories": ["official"]
+  },
+  {
+    "slug": "video-shotcraft",
+    "name": "video-shotcraft",
+    "primary_url": "https://github.com/Vincentwei1021/video-shotcraft",
+    "hook": "AI agent skill that turns Claude Code or Codex into a motion-design studio: storyboard, animate, and sound-design cinematic product-demo videos with Remotion. Ships with 152 pre-built shot recipe cards (call by name), 209 motion previews, and a production-ready template. Grew at 260 stars/day in its first week; now at 8.1k stars. No video editing experience needed.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add Vincentwei1021/video-shotcraft"
+  },
+  {
+    "slug": "function-hooks",
+    "name": "Claude Code Function Hooks (Preview)",
+    "primary_url": "https://github.com/anthropics/claude-code/issues/91870",
+    "secondary_urls": [
+      "https://claudefa.st/blog/tools/hooks/function-hooks"
+    ],
+    "hook": "Anthropic's proposed replacement for shell-script hooks: a TypeScript module whose exported functions wrap the engine Express-style, letting one hook intercept, draw UI, ask questions, and register tools — instead of firing shell scripts before/after. Already in build 2.1.260 behind `CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1`. Engineer Alice Poteat: 'community response likely dictates whether this ships.' Feedback window is open now.",
+    "categories": ["official"],
+    "install": "CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1 claude"
+  },
+  {
+    "slug": "ralph-wiggum",
+    "name": "Ralph Wiggum (Official Plugin)",
+    "primary_url": "https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum",
+    "hook": "Official Anthropic plugin (v1.0.0, by Daisy Hollman) that implements autonomous task loops via a Stop hook: run `/ralph-loop` with a task description and Claude keeps re-entering the same prompt each time it tries to exit, iterating until a completion condition is met. Named after the Simpson's kid who tries again regardless. Useful for overnight batch tasks and long-running codegen.",
+    "categories": ["official"],
+    "install": "claude plugin install ralph-wiggum",
+    "recurring_note": "↑ Day 2 — growing community adoption of the loop pattern"
+  },
+  {
+    "slug": "claude-code-smart-reports",
+    "name": "Claude Code Smart Reports",
+    "primary_url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "hook": "Enterprise beta launched September 11: analyzes how a team uses Claude Code across sessions — which skills fire, what each session costs, where agents hit friction, and which repeated patterns are candidates for packaging as shared skills. Closes the loop between usage telemetry and team knowledge management. Available now for Enterprise customers.",
+    "categories": ["official", "cost"]
+  },
+  {
+    "slug": "zilliz-claude-context",
+    "name": "Zilliz Claude Context",
+    "primary_url": "https://github.com/zilliztech/claude-context",
+    "hook": "MCP server that indexes your entire codebase with hybrid BM25 + dense-vector search (Milvus/Zilliz Cloud), enabling any MCP-compatible agent to retrieve precise, ranked code snippets on demand rather than bulk-reading files. Supports 4 embedding providers, Merkle-tree incremental indexing, AST-aware chunking, and serves 'entire codebase as context' via retrieval. At 11.9k stars.",
+    "categories": ["mcp", "cost"],
+    "install": "claude mcp add claude-context -e OPENAI_API_KEY=... -e MILVUS_TOKEN=... -- npx @zilliz/claude-context-mcp@latest",
+    "recurring_note": "↑ Day 2 — 11.9k stars; semantic search MCP gaining adoption"
+  },
+  {
+    "slug": "trace-mcp",
+    "name": "trace-mcp",
+    "primary_url": "https://github.com/nikolai-vysotskyi/trace-mcp",
+    "hook": "Framework-aware code intelligence MCP that indexes your repo once and serves a dependency graph to Claude, eliminating redundant file-reads across turns. Measured 72.7% token reduction for PR review (13,595 → 3,291 tokens median, 60 merged PRs in open-source repos), comprehension at parity. Supports 81 languages, 88 frameworks. Index stays local — no account, no data egress. 175 stars.",
+    "categories": ["cost", "mcp"],
+    "install": "npm install -g trace-mcp && trace init && trace add",
+    "recurring_note": "↑ Resurface — strongest verified COST signal this week: 72.7% fewer tokens, zero cloud dependency"
+  },
+  {
+    "slug": "browser-act-skills",
+    "name": "browser-act/skills",
+    "primary_url": "https://github.com/browser-act/skills",
+    "hook": "Browser automation CLI purpose-built for AI agents: handles anti-bot walls, hands off to human-in-the-loop when stuck, supports parallel multi-task execution, independent multi-session operation, and isolated multi-account browsing. Works with Claude Code, Codex, Cursor, VS Code, OpenCode, and Gemini CLI. At 5.3k stars — the most capable browser skill that spans all major agents.",
+    "categories": ["mcp", "skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "37 MIT-licensed Claude Code workflow skills pulled straight from TypeScript educator Matt Pocock's real daily .claude directory — /grill-me (forced plan alignment), /tdd (red-green-refactor loop), /diagnose (debugging loop), /improve-codebase-architecture, and more. At 260.1k stars with +8.8k this week, the highest-starred Claude Code skills collection on GitHub. 'Real engineering, not vibe coding.'",
+    "categories": ["skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 7 — 260.1k stars, +8.8k/week; still #1 by stars"
+  },
+  {
+    "slug": "agentic-awesome-skills",
+    "name": "Agentic Awesome Skills",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "hook": "Local agent-first control plane with 2,115+ agentic skills, a CLI, MCP integrations, and a built-in Workbench for browsing, installing, and testing skills without leaving the terminal. Supports Claude Code, Codex, Cursor, and 30+ other agents. Updated September 12; at 46.3k stars it is the most comprehensive multi-agent skill hub on GitHub.",
+    "categories": ["skill", "mcp"],
+    "install": "See README",
+    "recurring_note": "↑ Day 4 — 46.3k stars, 2,115+ skills; active daily updates"
+  },
+  {
+    "slug": "oh-my-openagent",
+    "name": "oh-my-openagent",
+    "primary_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "hook": "Graph-based engineering interface for AI agent orchestration: models task dependencies as a directed graph, routes sub-tasks to the right agent (Claude Code, Codex, Cursor, others), and tracks completion state across sessions. At 68.9k stars — one of the largest agent-coordination frameworks in the Claude Code ecosystem.",
+    "categories": ["mcp", "skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 4 — 68.9k stars; graph orchestration standard"
+  },
+  {
+    "slug": "claude-code-best-practice",
+    "name": "Claude Code Best Practice",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "'From vibe coding to agentic engineering — practice makes Claude perfect.' Community-maintained reference for CLAUDE.md patterns, skill composition, hook design, and multi-agent workflows. Updated September 12, 2026; at 65.9k stars it holds the #1 position on the claude-code-skills GitHub topic. The de facto onboarding guide for serious Claude Code users.",
+    "categories": ["skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 7 — 65.9k stars, #1 on claude-code-skills topic; re-trending after 5-day gap"
+  }
+]
