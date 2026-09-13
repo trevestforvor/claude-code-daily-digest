@@ -1,0 +1,134 @@
+[
+  {
+    "slug": "ui-ux-pro-max-skill",
+    "name": "UI UX Pro Max Skill",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "hook": "127k-star design system generator that turns Claude Code into a senior product designer: 79 UI styles, 192 color palettes, 74 font pairings, and 22 tech stacks (React, Vue, Tailwind, iOS, Android, and more). Analyzes your project and auto-generates a complete design system with typography, colors, and anti-patterns to avoid. Never appeared in this digest.",
+    "categories": ["design"],
+    "install": "npm install -g ui-ux-pro-max-cli && uipro init --ai claude"
+  },
+  {
+    "slug": "hermes-agent",
+    "name": "Hermes Agent",
+    "primary_url": "https://github.com/NousResearch/hermes-agent",
+    "hook": "245k-star self-improving AI agent from Nous Research — the largest agent framework on GitHub, crossing 100K stars faster than any prior framework. Every 15 tool calls it pauses, extracts what worked, and saves a new skill file; persistent memory and cross-session identity make it compound over time. Notably ships a claude-code SKILL.md so Hermes can delegate to Claude Code as a subagent. Available on Telegram, Discord, Slack, CLI, and more.",
+    "categories": ["general", "mcp"],
+    "install": "curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash"
+  },
+  {
+    "slug": "cc-switch",
+    "name": "CC Switch",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "secondary_urls": ["https://ccswitch.io"],
+    "hook": "132k-star cross-platform desktop app (Tauri 2 + Rust) that manages provider configs, MCP servers, and Skills across seven AI coding tools — Claude Code, Codex, OpenCode, OpenClaw, Grok Build, Hermes Agent, and Claude Desktop — from a single interface. Hit 104K stars in June, now at 132K; 149 contributors, 41 releases. Never appeared in this digest.",
+    "categories": ["general"],
+    "install": "brew install --cask cc-switch"
+  },
+  {
+    "slug": "i-have-adhd",
+    "name": "i-have-adhd",
+    "primary_url": "https://github.com/ayghri/i-have-adhd",
+    "hook": "44k stars (+900 in 24h) for this 10-rule output-reformatter skill: action first, steps numbered, no filler preamble. Viral on Threads (40k+ impressions) and still climbing. Deceptively simple — installs in 30 seconds and immediately changes how Claude structures every response.",
+    "categories": ["general"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — 44k stars, +900 since yesterday"
+  },
+  {
+    "slug": "archify",
+    "name": "Archify",
+    "primary_url": "https://github.com/tt-a1i/archify",
+    "hook": "60.4k stars (+1.1k in 24h) for the code-to-interactive-architecture-diagram skill. v2.17.0-dev.1 active in development; supports Architecture Delta (before/after snapshots), 5 diagram types, themed SVG/HTML export, and semantic lens for role comparison. Still posting its strongest weekly growth.",
+    "categories": ["design", "general"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — 60.4k stars, +1.1k since yesterday"
+  },
+  {
+    "slug": "trace-mcp",
+    "name": "trace-mcp",
+    "primary_url": "https://github.com/nikolai-vysotskyi/trace-mcp",
+    "hook": "MCP server that achieves a median 72.7% token reduction on PR review workloads, validated across 60 real PRs. Ships with a benchmark harness so teams can verify the reduction on their own repos before adopting. 175 stars and growing.",
+    "categories": ["cost", "mcp"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2"
+  },
+  {
+    "slug": "spotify-portal-shunt",
+    "name": "Spotify portal-ai-plugins / shunt",
+    "primary_url": "https://github.com/spotify/portal-ai-plugins",
+    "hook": "1.5k-star hooks plugin from Spotify Engineering that intercepts bulk file reads and routes them to a cheap model, achieving up to 90% token reduction. Described in the Spotify Engineering blog as production-tested on their internal Claude Code rollout.",
+    "categories": ["cost"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2"
+  },
+  {
+    "slug": "function-hooks",
+    "name": "Claude Code Function Hooks",
+    "primary_url": "https://github.com/anthropics/claude-code/issues/91870",
+    "hook": "TypeScript module hooks gated behind CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1 (shipped in build 2.1.260), now in active community feedback on issue #91870. Lets you intercept and modify any tool call — pre/post Bash, file reads, MCP calls — from pure TypeScript without a subprocess.",
+    "categories": ["general"],
+    "install": "CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1 claude",
+    "recurring_note": "↑ Day 2 — feedback thread still active"
+  },
+  {
+    "slug": "ralph-wiggum",
+    "name": "ralph-wiggum (Anthropic official plugin)",
+    "primary_url": "https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum",
+    "hook": "Official Anthropic plugin (v1.0.0, authored by Daisy Hollman) implementing a stop-hook loop: Claude stops, ralph-wiggum evaluates whether the task is truly done, and re-queues it if not — achieving persistent task execution without user babysitting. Ships as a first-party plugin in the claude-code repo.",
+    "categories": ["general"],
+    "install": "claude plugin install ralph-wiggum",
+    "recurring_note": "↑ Day 3"
+  },
+  {
+    "slug": "claude-code-smart-reports",
+    "name": "Claude Code Smart Reports",
+    "primary_url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "hook": "Enterprise beta launched September 11: analyzes team usage patterns, costs, friction points, and surfaces reusable skill candidates from your org's Claude Code sessions. Available on Claude Enterprise plans via the admin dashboard.",
+    "categories": ["general"],
+    "recurring_note": "↑ Day 2 — Enterprise beta"
+  },
+  {
+    "slug": "zilliz-claude-context",
+    "name": "Zilliz Claude Context",
+    "primary_url": "https://github.com/zilliztech/claude-context",
+    "hook": "11.9k-star MCP that adds hybrid BM25+vector semantic code search to Claude Code — find the right file or function even when you don't know its exact name. Built on Milvus; indexes incrementally so cold starts are fast.",
+    "categories": ["mcp", "general"],
+    "install": "See README",
+    "recurring_note": "↑ Day 3"
+  },
+  {
+    "slug": "browser-act-skills",
+    "name": "browser-act/skills",
+    "primary_url": "https://github.com/browser-act/skills",
+    "hook": "5.3k-star browser automation CLI skills for AI agents — anti-bot bypass, parallel session management, and headless Chrome control baked into a skills layer that Claude Code can invoke directly. Fills the gap between Playwright raw API and an agent-friendly skill interface.",
+    "categories": ["general", "mcp"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2"
+  },
+  {
+    "slug": "claude-code-best-practice",
+    "name": "Claude Code Best Practice",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "65.9k stars for this single CLAUDE.md file distilling Andrej Karpathy's observations on LLM coding pitfalls into actionable agent-engineering rules. Currently the #1 repo on the claude-code-skills GitHub topic.",
+    "categories": ["general"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — #1 on claude-code-skills topic"
+  },
+  {
+    "slug": "video-shotcraft",
+    "name": "video-shotcraft",
+    "primary_url": "https://github.com/Vincentwei1021/video-shotcraft",
+    "hook": "8.4k-star cinematic product video skill: 152 shot recipe cards and 209 motion previews for generating polished Remotion videos from Claude Code. Each recipe card maps a product type to a shot sequence, lens choice, and color grade — no video editing background required.",
+    "categories": ["design", "general"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "260.1k stars (+8.8k this week) — real-world TypeScript educator workflow skills from Matt Pocock (Total TypeScript). Covers the patterns teams actually hit: module resolution, type narrowing edge cases, and library authoring. Still gaining ~1.2k stars/day.",
+    "categories": ["general"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — 260.1k stars, still gaining ~1.2k/day"
+  }
+]
