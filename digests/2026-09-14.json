@@ -1,0 +1,131 @@
+[
+  {
+    "slug": "higgsfield-ai-prompt-skill",
+    "name": "Higgsfield AI Prompt Skill",
+    "primary_url": "https://github.com/OSideMedia/higgsfield-ai-prompt-skill",
+    "hook": "32-sub-skill cinematics library for Higgsfield AI inside Claude Code — covers all four Seedance 2.5 generation modes (t2v, omni-reference, video edit, video extension), the Hell Grind feature-film pipeline, Soul ID character consistency, Kling 3.0 Motion Control, Cinema Studio 2.5/3.0/3.5, the MCSLA formula, and 18 genre templates. 380 stars and growing; passes SkillsLLM automated security scan.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add OSideMedia/higgsfield-ai-prompt-skill"
+  },
+  {
+    "slug": "video-shotcraft",
+    "name": "video-shotcraft",
+    "primary_url": "https://github.com/Vincentwei1021/video-shotcraft",
+    "hook": "8.4k-star cinematic product video skill: 152 shot recipe cards and 209 motion previews for generating polished Remotion videos from Claude Code. Each recipe card maps a product type to a shot sequence, lens choice, and color grade — no video editing background required.",
+    "categories": ["design", "skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 3"
+  },
+  {
+    "slug": "archify",
+    "name": "Archify",
+    "primary_url": "https://github.com/tt-a1i/archify",
+    "hook": "60.4k stars (+1.1k in 24h) for the code-to-interactive-architecture-diagram skill. v2.17.0-dev.1 active in development; supports Architecture Delta (before/after snapshots), 5 diagram types, themed SVG/HTML export, and semantic lens for role comparison. Still posting its strongest weekly growth.",
+    "categories": ["design", "general"],
+    "install": "See README",
+    "recurring_note": "↑ Day 3 — 60.4k stars, +1.1k/day"
+  },
+  {
+    "slug": "trace-mcp",
+    "name": "trace-mcp",
+    "primary_url": "https://github.com/nikolai-vysotskyi/trace-mcp",
+    "hook": "MCP server that achieves a median 72.7% token reduction on PR review workloads, validated across 60 real PRs. Ships with a benchmark harness so teams can verify the reduction on their own repos before adopting.",
+    "categories": ["cost", "mcp"],
+    "install": "See README",
+    "recurring_note": "↑ Day 3"
+  },
+  {
+    "slug": "spotify-portal-shunt",
+    "name": "Spotify portal-ai-plugins / shunt",
+    "primary_url": "https://github.com/spotify/portal-ai-plugins",
+    "hook": "1.5k-star hooks plugin from Spotify Engineering that intercepts bulk file reads and routes them to a cheap model, achieving up to 90% token reduction. Production-tested on Spotify's internal Claude Code rollout.",
+    "categories": ["cost"],
+    "install": "See README",
+    "recurring_note": "↑ Day 3"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "260.1k stars (+~1.2k/day still) — real-world TypeScript educator workflow skills from Matt Pocock (Total TypeScript). Covers the patterns teams actually hit: module resolution, type narrowing edge cases, and library authoring. One of the fastest-growing skills repos in the Claude Code ecosystem.",
+    "categories": ["general", "skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 3 — 260k+ stars, still +1.2k/day"
+  },
+  {
+    "slug": "i-have-adhd",
+    "name": "i-have-adhd",
+    "primary_url": "https://github.com/ayghri/i-have-adhd",
+    "hook": "44k+ stars for this 10-rule output-reformatter skill: action first, steps numbered, no filler preamble. Viral on Threads (40k+ impressions) and still climbing. Deceptively simple — installs in 30 seconds and immediately changes how Claude structures every response.",
+    "categories": ["general", "skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 3 — 44k stars, still viral"
+  },
+  {
+    "slug": "claude-plugin-eval",
+    "name": "claude plugin eval (Anthropic official)",
+    "primary_url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "secondary_urls": ["https://www.marktechpost.com/2026/09/11/anthropic-adds-plugin-evals-to-claude-code-6-grader-types-a-no-plugin-baseline-and-a-ci-gate-for-skills/"],
+    "hook": "Shipped Sept 11 in v2.1.269: `claude plugin eval` runs your plugin against realistic test cases, grades the output with 6 grader types, and compares against a no-plugin baseline — answering definitively whether your skill triggers, survives model upgrades, and beats the bare model. `claude plugin eval init` auto-proposes cases from your plugin. Covered by MarkTechPost and explainx.ai on launch day.",
+    "categories": ["general"],
+    "install": "claude plugin eval init (requires Claude Code v2.1.269+)"
+  },
+  {
+    "slug": "output-style-command",
+    "name": "/output-style command (Anthropic official)",
+    "primary_url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "hook": "Also shipped Sept 11 in v2.1.269: `/output-style [name]` lists and switches between 4 built-in output styles (Concise, Explanatory, Learning, and default). Concise mode leads with the result and trims prose without losing detail. Works over Remote Control and in cloud/headless sessions. Settings saved to `.claude/settings.local.json`.",
+    "categories": ["general"],
+    "install": "/output-style concise (inside Claude Code)"
+  },
+  {
+    "slug": "ralph-wiggum",
+    "name": "ralph-wiggum (Anthropic official plugin)",
+    "primary_url": "https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum",
+    "hook": "Official Anthropic plugin implementing a stop-hook loop: Claude stops, ralph-wiggum evaluates whether the task is truly done, and re-queues it if not — achieving persistent task execution without user babysitting. Ships as a first-party plugin in the claude-code repo.",
+    "categories": ["general"],
+    "install": "claude plugin install ralph-wiggum",
+    "recurring_note": "↑ Day 4"
+  },
+  {
+    "slug": "claude-code-smart-reports",
+    "name": "Claude Code Smart Reports",
+    "primary_url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "hook": "Enterprise beta (launched Sept 11): analyzes team usage patterns, costs, friction points, and surfaces reusable skill candidates from your org's Claude Code sessions. Available on Claude Enterprise plans via the admin dashboard.",
+    "categories": ["general"],
+    "recurring_note": "↑ Day 3 — Enterprise beta"
+  },
+  {
+    "slug": "nvidia-skills",
+    "name": "NVIDIA Agent Skills",
+    "primary_url": "https://github.com/NVIDIA/skills",
+    "hook": "Official NVIDIA-verified agent skill catalog with 400+ skills across Physical AI, robotics (Jetson), simulation, CUDA-Q (quantum), cuOpt (GPU routing), cuDF (GPU DataFrames), NeMo (LLM training), DeepStream (video analytics), TAO Toolkit (vision fine-tuning), and Medical AI. 3.3k stars; daily automated sync from product repos; installs into Claude Code via `npx`.",
+    "categories": ["general", "skill"],
+    "install": "npx @nvidia/skills install"
+  },
+  {
+    "slug": "scientific-agent-skills",
+    "name": "Scientific Agent Skills",
+    "primary_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "hook": "43.2k-star skills library turning any AI agent into an AI Scientist — 165 validated skills across biology, chemistry, medicine, and drug discovery, plus 100+ scientific databases. Used by 190,000+ scientists worldwide. Was #1 on GitHub Trending (March 3) and spiked +1,980 stars on Sept 1. Compatible with Claude Code, Codex, Cursor, Pi, Antigravity, and the open Agent Skills standard.",
+    "categories": ["general", "skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "alirezarezvani-claude-skills",
+    "name": "alirezarezvani/claude-skills",
+    "primary_url": "https://github.com/alirezarezvani/claude-skills",
+    "hook": "25.9k-star mega-bundle of 380+ skills for 13 AI coding agents — Claude Code, Codex, Gemini CLI, OpenClaw, Hermes, Cursor, Aider, Windsurf, Kilo Code, OpenCode, Augment, Antigravity, and Mistral Vibe. Covers engineering, marketing, product, compliance, C-level advisory, research, business ops, finance, and daily productivity. 30+ agents, 70+ custom commands.",
+    "categories": ["general", "skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "function-hooks",
+    "name": "Claude Code Function Hooks",
+    "primary_url": "https://github.com/anthropics/claude-code/issues/91870",
+    "hook": "TypeScript module hooks gated behind CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1 (shipped in build 2.1.260), now in active community feedback on issue #91870. Lets you intercept and modify any tool call — pre/post Bash, file reads, MCP calls — from pure TypeScript without a subprocess.",
+    "categories": ["general"],
+    "install": "CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1 claude",
+    "recurring_note": "↑ Day 3 — feedback thread still active"
+  }
+]
