@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — September 14, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — September 14, 2026</h1><p class="sub">Top 15 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/OSideMedia/higgsfield-ai-prompt-skill">Higgsfield AI Prompt Skill</a></h3>
+  <p class="hook">32-sub-skill cinematics library for Higgsfield AI inside Claude Code — covers all four Seedance 2.5 generation modes (t2v, omni-reference, video edit, video extension), the Hell Grind feature-film pipeline, Soul ID character consistency, Kling 3.0 Motion Control, Cinema Studio 2.5/3.0/3.5, the MCSLA formula, and 18 genre templates. 380 stars and growing; passes SkillsLLM automated security scan.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">video · viral · security</div>
+  <pre><button class="copy">copy</button><code>npx skills add OSideMedia/higgsfield-ai-prompt-skill</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Vincentwei1021/video-shotcraft">video-shotcraft</a></h3>
+  <p class="hook">8.4k-star cinematic product video skill: 152 shot recipe cards and 209 motion previews for generating polished Remotion videos from Claude Code. Each recipe card maps a product type to a shot sequence, lens choice, and color grade — no video editing background required.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">video</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  <div class="recurring">↑ Day 3</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/tt-a1i/archify">Archify</a></h3>
+  <p class="hook">60.4k stars (+1.1k in 24h) for the code-to-interactive-architecture-diagram skill. v2.17.0-dev.1 active in development; supports Architecture Delta (before/after snapshots), 5 diagram types, themed SVG/HTML export, and semantic lens for role comparison. Still posting its strongest weekly growth.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">skill · viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  <div class="recurring">↑ Day 3 — 60.4k stars, +1.1k/day</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/nikolai-vysotskyi/trace-mcp">trace-mcp</a></h3>
+  <p class="hook">MCP server that achieves a median 72.7% token reduction on PR review workloads, validated across 60 real PRs. Ships with a benchmark harness so teams can verify the reduction on their own repos before adopting.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">harness · token</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  <div class="recurring">↑ Day 3</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/spotify/portal-ai-plugins">Spotify portal-ai-plugins / shunt</a></h3>
+  <p class="hook">1.5k-star hooks plugin from Spotify Engineering that intercepts bulk file reads and routes them to a cheap model, achieving up to 90% token reduction. Production-tested on Spotify&#39;s internal Claude Code rollout.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">plugin · token</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  <div class="recurring">↑ Day 3</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mattpocock/skills">mattpocock/skills</a></h3>
+  <p class="hook">260.1k stars (+~1.2k/day still) — real-world TypeScript educator workflow skills from Matt Pocock (Total TypeScript). Covers the patterns teams actually hit: module resolution, type narrowing edge cases, and library authoring. One of the fastest-growing skills repos in the Claude Code ecosystem.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  <div class="recurring">↑ Day 3 — 260k+ stars, still +1.2k/day</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/ayghri/i-have-adhd">i-have-adhd</a></h3>
+  <p class="hook">44k+ stars for this 10-rule output-reformatter skill: action first, steps numbered, no filler preamble. Viral on Threads (40k+ impressions) and still climbing. Deceptively simple — installs in 30 seconds and immediately changes how Claude structures every response.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  <div class="recurring">↑ Day 3 — 44k stars, still viral</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://platform.claude.com/docs/en/release-notes/overview">claude plugin eval (Anthropic official)</a></h3>
+  <p class="hook">Shipped Sept 11 in v2.1.269: `claude plugin eval` runs your plugin against realistic test cases, grades the output with 6 grader types, and compares against a no-plugin baseline — answering definitively whether your skill triggers, survives model upgrades, and beats the bare model. `claude plugin eval init` auto-proposes cases from your plugin. Covered by MarkTechPost and explainx.ai on launch day.</p>
+  <div class="secondary">Also: <a href="https://www.marktechpost.com/2026/09/11/anthropic-adds-plugin-evals-to-claude-code-6-grader-types-a-no-plugin-baseline-and-a-ci-gate-for-skills/">www.marktechpost.com/2026/09/11/anthropic-adds-plugin-evals-to-claude-code-6-grader-types-a-no-plugin-baseline-and-a-ci-gate-for-skills/</a></div>
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">skill · plugin · anthropic</div>
+  <pre><button class="copy">copy</button><code>claude plugin eval init (requires Claude Code v2.1.269+)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://platform.claude.com/docs/en/release-notes/overview">/output-style command (Anthropic official)</a></h3>
+  <p class="hook">Also shipped Sept 11 in v2.1.269: `/output-style [name]` lists and switches between 4 built-in output styles (Concise, Explanatory, Learning, and default). Concise mode leads with the result and trims prose without losing detail. Works over Remote Control and in cloud/headless sessions. Settings saved to `.claude/settings.local.json`.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">anthropic</div>
+  <pre><button class="copy">copy</button><code>/output-style concise (inside Claude Code)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum">ralph-wiggum (Anthropic official plugin)</a></h3>
+  <p class="hook">Official Anthropic plugin implementing a stop-hook loop: Claude stops, ralph-wiggum evaluates whether the task is truly done, and re-queues it if not — achieving persistent task execution without user babysitting. Ships as a first-party plugin in the claude-code repo.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">plugin · anthropic</div>
+  <pre><button class="copy">copy</button><code>claude plugin install ralph-wiggum</code></pre>
+  <div class="recurring">↑ Day 4</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://platform.claude.com/docs/en/release-notes/overview">Claude Code Smart Reports</a></h3>
+  <p class="hook">Enterprise beta (launched Sept 11): analyzes team usage patterns, costs, friction points, and surfaces reusable skill candidates from your org&#39;s Claude Code sessions. Available on Claude Enterprise plans via the admin dashboard.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">skill</div>
+  
+  <div class="recurring">↑ Day 3 — Enterprise beta</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/NVIDIA/skills">NVIDIA Agent Skills</a></h3>
+  <p class="hook">Official NVIDIA-verified agent skill catalog with 400+ skills across Physical AI, robotics (Jetson), simulation, CUDA-Q (quantum), cuOpt (GPU routing), cuDF (GPU DataFrames), NeMo (LLM training), DeepStream (video analytics), TAO Toolkit (vision fine-tuning), and Medical AI. 3.3k stars; daily automated sync from product repos; installs into Claude Code via `npx`.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">video · model · viral · education</div>
+  <pre><button class="copy">copy</button><code>npx @nvidia/skills install</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/K-Dense-AI/scientific-agent-skills">Scientific Agent Skills</a></h3>
+  <p class="hook">43.2k-star skills library turning any AI agent into an AI Scientist — 165 validated skills across biology, chemistry, medicine, and drug discovery, plus 100+ scientific databases. Used by 190,000+ scientists worldwide. Was #1 on GitHub Trending (March 3) and spiked +1,980 stars on Sept 1. Compatible with Claude Code, Codex, Cursor, Pi, Antigravity, and the open Agent Skills standard.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">agent · viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/alirezarezvani/claude-skills">alirezarezvani/claude-skills</a></h3>
+  <p class="hook">25.9k-star mega-bundle of 380+ skills for 13 AI coding agents — Claude Code, Codex, Gemini CLI, OpenClaw, Hermes, Cursor, Aider, Windsurf, Kilo Code, OpenCode, Augment, Antigravity, and Mistral Vibe. Covers engineering, marketing, product, compliance, C-level advisory, research, business ops, finance, and daily productivity. 30+ agents, 70+ custom commands.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/claude-code/issues/91870">Claude Code Function Hooks</a></h3>
+  <p class="hook">TypeScript module hooks gated behind CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1 (shipped in build 2.1.260), now in active community feedback on issue #91870. Lets you intercept and modify any tool call — pre/post Bash, file reads, MCP calls — from pure TypeScript without a subprocess.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">general</span>  </div>
+  <div class="tags">mcp</div>
+  <pre><button class="copy">copy</button><code>CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1 claude</code></pre>
+  <div class="recurring">↑ Day 3 — feedback thread still active</div>
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
