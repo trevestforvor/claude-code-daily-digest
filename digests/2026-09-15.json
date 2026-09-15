@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "93.9k stars — persistent memory across every agent session using 5 lifecycle hooks, SQLite, and Chroma vector search. Captures what your agent does, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Grok Bot, Codex, Gemini, Hermes, Copilot, and OpenCode.",
+    "categories": ["memory", "productivity"],
+    "install": "npx claude-mem install"
+  },
+  {
+    "slug": "img2threejs",
+    "name": "img2threejs",
+    "primary_url": "https://github.com/img2threejs/img2threejs",
+    "secondary_urls": ["https://www.youtube.com/watch?v=Ua0APTMVcb8"],
+    "hook": "16.1k stars — attach any reference image and Claude produces a THREE.Group factory in TypeScript that recreates the object from primitives and procedural shaders, no mesh files, no photogrammetry. An 8-stage quality-gated pipeline (blockout → structural → form → material → surface → lighting → interaction → optimization) with vision review at each step. Featured in Charlie Automates' '8 Insane GitHub Repos' video published September 14.",
+    "categories": ["design", "skills"],
+    "install": "git clone https://github.com/img2threejs/img2threejs ~/.claude/skills/img2threejs",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "messages-api-compact-demand",
+    "name": "Messages API Compact-on-Demand",
+    "primary_url": "https://platform.claude.com/docs/en/build-with-claude/compaction",
+    "hook": "Anthropic platform release September 14 — pass the beta header compact-2026-09-04 to trigger mid-session summarization without waiting for context overflow. The model generates a compaction block capturing task state, key decisions, and next steps, then continues the session on the trimmed context. Cuts per-task cost on long agentic API workloads.",
+    "categories": ["cost", "anthropic"]
+  },
+  {
+    "slug": "nanoclaw",
+    "name": "NanoClaw",
+    "primary_url": "https://github.com/nanocoai/nanoclaw",
+    "hook": "30.8k stars — lightweight, container-isolated alternative to OpenClaw that runs Claude agents in their own Linux containers with filesystem sandboxing, not merely permission checks. Connects to WhatsApp, Telegram, Slack, Discord, and Gmail via skill-added channels. Includes memory, scheduled recurring jobs, and runs directly on Anthropic's Agents SDK. Small enough to read and understand the whole codebase.",
+    "categories": ["agent", "mcp"],
+    "install": "bash nanoclaw.sh"
+  },
+  {
+    "slug": "distilly",
+    "name": "Distilly",
+    "primary_url": "https://github.com/harr1sz/distilly",
+    "hook": "24.8k stars — builds portable Person Profiles from materials you provide (Slack/WeChat/DingTalk exports, X posts, PDFs, emails) and packages each profile as an Agent Skill your coding agent can invoke. Covers colleagues, public figures, and historical personas with source-grounded decision patterns and expression analysis. Supports Claude Code, Hermes, OpenClaw, Codex, DeepSeek Harness, Pi, Grok Build, and OpenCode.",
+    "categories": ["skills", "productivity"],
+    "install": "git clone https://github.com/titanwings/distilly <DISTILLY_SKILL_DIR>"
+  },
+  {
+    "slug": "awesome-agent-skills",
+    "name": "Awesome Agent Skills",
+    "primary_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "hook": "34.4k stars, updated September 15 — 1,497+ hand-picked agent skills from official dev teams at Stripe, Google, Microsoft, Vercel, Cloudflare, Trail of Bits, and 50+ others, plus community contributors. Unlike AI-generated skill lists, each entry is human-curated. Compatible with Claude Code, Codex, Gemini CLI, Cursor, and 30+ agents.",
+    "categories": ["skills", "productivity"]
+  },
+  {
+    "slug": "planning-with-files",
+    "name": "planning-with-files",
+    "primary_url": "https://github.com/OthmanAdi/planning-with-files",
+    "hook": "26.9k stars — three persistent markdown files (task_plan.md, findings.md, progress.md) survive /clear, crashes, and compaction, re-injected every turn via lifecycle hooks. SHA-256 attestation blocks plan tampering between sessions; per-slug isolation for parallel agents. The 'Manus-style' pattern Meta acquired Manus AI for. Updated September 15.",
+    "categories": ["skills", "productivity"],
+    "install": "npx skills add OthmanAdi/planning-with-files --skill planning-with-files -g",
+    "recurring_note": "↑ Day 2 — returned to activity after 6-day gap; active v3.18.1 update today"
+  },
+  {
+    "slug": "oh-story-claudecode",
+    "name": "Oh Story (网文写作)",
+    "primary_url": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "hook": "6.9k stars, updated September 15 — 13 skills covering the full Chinese web novel (网文) production workflow: bestseller chart scanning (扫榜), novel deconstruction into plot modules (拆文), commercial drafting with pacing hooks, de-AI-ification of prose (去AI味), and cover generation. Targets publishing on 起点, 番茄, 晋江, and 七猫 with deterministic verifiers at each stage.",
+    "categories": ["skills", "creative"],
+    "install": "npx skills add zenstory-ai/oh-story-claudecode -y -g"
+  },
+  {
+    "slug": "ctf-skills",
+    "name": "ctf-skills",
+    "primary_url": "https://github.com/ljagiello/ctf-skills",
+    "hook": "3.3k stars, updated September 13 — agent skills for CTF competitions across 10 categories: web exploitation (SQLi, XSS, SSRF, JWT), binary pwn (ROP chains, heap), crypto (RSA variants, lattice, PRNG), reverse engineering, forensics, OSINT, malware analysis, AI/ML attacks, and a solve-challenge orchestrator that routes to the right specialist. Works with Claude Code and any Agent Skills-compatible host.",
+    "categories": ["skills", "security"],
+    "install": "npx skills add ljagiello/ctf-skills"
+  },
+  {
+    "slug": "claude-code-best-practice",
+    "name": "claude-code-best-practice",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "65.9k stars, updated September 15 — 'from vibe coding to agentic engineering — practice makes Claude perfect.' A curated collection of CLAUDE.md patterns, workflows, and tested best practices for production agentic use. Active commits continue on the same day as this digest.",
+    "categories": ["skills", "productivity"],
+    "install": "See README",
+    "recurring_note": "↑ Day 4 — brief Sep-14 gap; resumed Sep-15 updates"
+  },
+  {
+    "slug": "claude-code-v2-1-271",
+    "name": "Claude Code v2.1.271",
+    "primary_url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "hook": "Released September 14 — fast mode now available in Claude Code Remote sessions; mouse support added to the /config panel in fullscreen mode. The fast mode addition means Remote users get the same speed-optimized path that CLI users have had, useful for automated pipelines and scheduled routines.",
+    "categories": ["anthropic", "productivity"]
+  },
+  {
+    "slug": "claude-managed-agents-auto",
+    "name": "Claude Managed Agents Auto Policies",
+    "primary_url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "hook": "Released September 10 — the Claude Managed Agents permission system gained an auto option for evaluation policies plus the ant beta:sessions connect CLI command for attaching to running managed agent sessions. Auto policies reduce the need to enumerate explicit tool allowlists for well-scoped agents.",
+    "categories": ["anthropic", "agent"]
+  }
+]
