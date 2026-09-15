@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — September 15, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — September 15, 2026</h1><p class="sub">Top 12 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/thedotmack/claude-mem">claude-mem</a></h3>
+  <p class="hook">93.9k stars — persistent memory across every agent session using 5 lifecycle hooks, SQLite, and Chroma vector search. Captures what your agent does, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Grok Bot, Codex, Gemini, Hermes, Copilot, and OpenCode.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">memory</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">productivity</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx claude-mem install</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/img2threejs/img2threejs">img2threejs</a></h3>
+  <p class="hook">16.1k stars — attach any reference image and Claude produces a THREE.Group factory in TypeScript that recreates the object from primitives and procedural shaders, no mesh files, no photogrammetry. An 8-stage quality-gated pipeline (blockout → structural → form → material → surface → lighting → interaction → optimization) with vision review at each step. Featured in Charlie Automates&#39; &#39;8 Insane GitHub Repos&#39; video published September 14.</p>
+  <div class="secondary">Also: <a href="https://www.youtube.com/watch?v=Ua0APTMVcb8">www.youtube.com/watch?v=Ua0APTMVcb8</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">video · 3d · viral</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/img2threejs/img2threejs ~/.claude/skills/img2threejs</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://platform.claude.com/docs/en/build-with-claude/compaction">Messages API Compact-on-Demand</a></h3>
+  <p class="hook">Anthropic platform release September 14 — pass the beta header compact-2026-09-04 to trigger mid-session summarization without waiting for context overflow. The model generates a compaction block capturing task state, key decisions, and next steps, then continues the session on the trimmed context. Cuts per-task cost on long agentic API workloads.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">agent</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/nanocoai/nanoclaw">NanoClaw</a></h3>
+  <p class="hook">30.8k stars — lightweight, container-isolated alternative to OpenClaw that runs Claude agents in their own Linux containers with filesystem sandboxing, not merely permission checks. Connects to WhatsApp, Telegram, Slack, Discord, and Gmail via skill-added channels. Includes memory, scheduled recurring jobs, and runs directly on Anthropic&#39;s Agents SDK. Small enough to read and understand the whole codebase.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">agent</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">skill · memory · anthropic · viral · alternative</div>
+  <pre><button class="copy">copy</button><code>bash nanoclaw.sh</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/harr1sz/distilly">Distilly</a></h3>
+  <p class="hook">24.8k stars — builds portable Person Profiles from materials you provide (Slack/WeChat/DingTalk exports, X posts, PDFs, emails) and packages each profile as an Agent Skill your coding agent can invoke. Covers colleagues, public figures, and historical personas with source-grounded decision patterns and expression analysis. Supports Claude Code, Hermes, OpenClaw, Codex, DeepSeek Harness, Pi, Grok Build, and OpenCode.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">productivity</span>  </div>
+  <div class="tags">skill · harness · viral</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/titanwings/distilly &lt;DISTILLY_SKILL_DIR&gt;</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/VoltAgent/awesome-agent-skills">Awesome Agent Skills</a></h3>
+  <p class="hook">34.4k stars, updated September 15 — 1,497+ hand-picked agent skills from official dev teams at Stripe, Google, Microsoft, Vercel, Cloudflare, Trail of Bits, and 50+ others, plus community contributors. Unlike AI-generated skill lists, each entry is human-curated. Compatible with Claude Code, Codex, Gemini CLI, Cursor, and 30+ agents.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">productivity</span>  </div>
+  <div class="tags">skill · viral · terminal</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/OthmanAdi/planning-with-files">planning-with-files</a></h3>
+  <p class="hook">26.9k stars — three persistent markdown files (task_plan.md, findings.md, progress.md) survive /clear, crashes, and compaction, re-injected every turn via lifecycle hooks. SHA-256 attestation blocks plan tampering between sessions; per-slug isolation for parallel agents. The &#39;Manus-style&#39; pattern Meta acquired Manus AI for. Updated September 15.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">productivity</span>  </div>
+  <div class="tags">skill · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add OthmanAdi/planning-with-files --skill planning-with-files -g</code></pre>
+  <div class="recurring">↑ Day 2 — returned to activity after 6-day gap; active v3.18.1 update today</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/zenstory-ai/oh-story-claudecode">Oh Story (网文写作)</a></h3>
+  <p class="hook">6.9k stars, updated September 15 — 13 skills covering the full Chinese web novel (网文) production workflow: bestseller chart scanning (扫榜), novel deconstruction into plot modules (拆文), commercial drafting with pacing hooks, de-AI-ification of prose (去AI味), and cover generation. Targets publishing on 起点, 番茄, 晋江, and 七猫 with deterministic verifiers at each stage.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">creative</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add zenstory-ai/oh-story-claudecode -y -g</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/ljagiello/ctf-skills">ctf-skills</a></h3>
+  <p class="hook">3.3k stars, updated September 13 — agent skills for CTF competitions across 10 categories: web exploitation (SQLi, XSS, SSRF, JWT), binary pwn (ROP chains, heap), crypto (RSA variants, lattice, PRNG), reverse engineering, forensics, OSINT, malware analysis, AI/ML attacks, and a solve-challenge orchestrator that routes to the right specialist. Works with Claude Code and any Agent Skills-compatible host.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">security</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add ljagiello/ctf-skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/shanraisshan/claude-code-best-practice">claude-code-best-practice</a></h3>
+  <p class="hook">65.9k stars, updated September 15 — &#39;from vibe coding to agentic engineering — practice makes Claude perfect.&#39; A curated collection of CLAUDE.md patterns, workflows, and tested best practices for production agentic use. Active commits continue on the same day as this digest.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">productivity</span>  </div>
+  <div class="tags">agent · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  <div class="recurring">↑ Day 4 — brief Sep-14 gap; resumed Sep-15 updates</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://platform.claude.com/docs/en/release-notes/overview">Claude Code v2.1.271</a></h3>
+  <p class="hook">Released September 14 — fast mode now available in Claude Code Remote sessions; mouse support added to the /config panel in fullscreen mode. The fast mode addition means Remote users get the same speed-optimized path that CLI users have had, useful for automated pipelines and scheduled routines.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">productivity</span>  </div>
+  <div class="tags">terminal</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://platform.claude.com/docs/en/release-notes/overview">Claude Managed Agents Auto Policies</a></h3>
+  <p class="hook">Released September 10 — the Claude Managed Agents permission system gained an auto option for evaluation policies plus the ant beta:sessions connect CLI command for attaching to running managed agent sessions. Auto policies reduce the need to enumerate explicit tool allowlists for well-scoped agents.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">agent</span>  </div>
+  <div class="tags">terminal</div>
+  
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
