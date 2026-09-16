@@ -1,0 +1,150 @@
+[
+  {
+    "slug": "tweakcc",
+    "name": "tweakcc",
+    "primary_url": "https://github.com/Piebald-AI/tweakcc",
+    "secondary_urls": [],
+    "hook": "Piebald AI's tweakcc (2.5k⭐) patches Claude Code in place — swap individual system-prompt fragments with your own markdown files, add custom themes and thinking-verb sets, unlock private/unreleased features, and cut MCP startup time ~50%. A fast-proliferating fork landscape (syntax-syndicate, PsiClawOps, t2fn variants) confirms widespread adoption in September 2026.",
+    "categories": ["design", "dev-tools"],
+    "install": "npx tweakcc"
+  },
+  {
+    "slug": "claude-fable-5-1-pricing",
+    "name": "Claude Fable 5.1 — 75% Cache Price Cut",
+    "primary_url": "https://www.anthropic.com/news/claude-fable-5-1",
+    "secondary_urls": [
+      "https://www.ghacks.net/2026/09/03/anthropic-releases-claude-fable-5-1-and-cuts-cached-token-pricing-by-75/",
+      "https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads",
+      "https://simonwillison.net/2026/Sep/1/claude-fable-5-1/"
+    ],
+    "hook": "Anthropic launched Claude Fable 5.1 and Mythos 5.1 (Sept 1) with base rates unchanged at $10/$50 per million tokens but cache reads slashed 75% to $0.25/M — the first models to carry mandatory text watermarks under the EU AI Act. Anthropic says the cut can reduce effective agentic-workload costs by up to 45% for apps that cache context heavily.",
+    "categories": ["cost", "model"]
+  },
+  {
+    "slug": "piebald-claude-code-system-prompts",
+    "name": "claude-code-system-prompts",
+    "primary_url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+    "secondary_urls": [
+      "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/"
+    ],
+    "hook": "Piebald AI's live archive (12.7k⭐, 2k forks) extracts every Claude Code system prompt — all 27 tool descriptions, sub-agent and utility prompts — directly from the compiled binary and publishes within minutes of each release. It reached v2.1.273 on September 15, 618 commits tracking 290 versions; pairs with tweakcc to patch those prompts back in.",
+    "categories": ["dev-tools", "research"],
+    "install": "See README"
+  },
+  {
+    "slug": "coleam00-second-brain-skills",
+    "name": "second-brain-skills",
+    "primary_url": "https://github.com/coleam00/second-brain-skills",
+    "secondary_urls": [
+      "https://www.youtube.com/watch?v=x27XqGdgZkc"
+    ],
+    "hook": "Cole Medin's second-brain-skills turns Claude Code into a persistent knowledge-work partner through progressive skill disclosure — Claude only loads detailed instructions when a topic is relevant to the task. Charlie Automates (8K subs) spotlighted the approach in \"Don't Setup a Claude Code Second Brain Until You Watch This\", driving a fresh wave of installs this week.",
+    "categories": ["skill", "knowledge"],
+    "install": "See README",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "opencode-anomalyco",
+    "name": "OpenCode",
+    "primary_url": "https://github.com/anomalyco/opencode",
+    "hook": "The open-source Claude Code counterpart (202K+⭐, 950+ contributors) now supports 75+ model providers including local ones at zero API cost, plus a TUI, desktop app, and VS Code/Cursor extensions. v1.18.31 (Sept 15) restored session model boundaries and improved remote config error handling — active weekly releases keep it competitive.",
+    "categories": ["tooling", "cost"],
+    "install": "See README"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "Superpowers for Claude Code",
+    "primary_url": "https://github.com/obra/superpowers",
+    "secondary_urls": [
+      "https://levelup.gitconnected.com/i-installed-superpowers-into-claude-code-it-stopped-coding-like-an-intern-536f8189922a"
+    ],
+    "hook": "Jesse Vincent's Superpowers (286K⭐, now ranked #12 globally on GitHub) enforces brainstorm → plan → TDD → two-stage review across 14 composable Markdown skills. It's gone cross-agent — working with Cursor, Codex, Gemini CLI, and 20+ other agents — and sits in the official Anthropic Claude Code marketplace.",
+    "categories": ["skill", "methodology"],
+    "install": "See README"
+  },
+  {
+    "slug": "forrestchang-andrej-karpathy-skills",
+    "name": "andrej-karpathy-skills",
+    "primary_url": "https://github.com/forrestchang/andrej-karpathy-skills",
+    "secondary_urls": [
+      "https://miraflow.ai/blog/karpathy-claude-md-100k-github-stars-ai-coding-2026",
+      "https://alphasignalai.substack.com/p/karpathy-inspired-claudemd-how-to"
+    ],
+    "hook": "Forrest Chang's single CLAUDE.md file (125K+⭐) distills Karpathy's January 2026 LLM-coding-pitfalls observations into four rules — Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution — that you drop into any project root. The repo spawned a multica-ai fork and dozens of derivatives; it's one of the fastest-growing AI-behavior repos of 2026.",
+    "categories": ["skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "elementalsouls-claude-bughunter",
+    "name": "Claude-BugHunter",
+    "primary_url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "secondary_urls": [
+      "https://themenonlab.blog/blog/claude-bughunter-ai-security-testing-skills/"
+    ],
+    "hook": "Claude-BugHunter (3.3k⭐) ships 82 skills, 15 slash commands, and 681 disclosed HackerOne-report patterns across 24 vulnerability classes as a single Claude Code plugin for external red-team and bug-bounty work. Enterprise identity and infrastructure attack matrices cover current 2024–2026 CVE chains for M365/Entra, Okta, vCenter, and SSL-VPN appliances.",
+    "categories": ["skill", "security"],
+    "install": "/plugin install elementalsouls/Claude-BugHunter"
+  },
+  {
+    "slug": "stancsz-second-brain",
+    "name": "second-brain (stancsz)",
+    "primary_url": "https://github.com/stancsz/second-brain",
+    "hook": "The \"own your memory, don't rent it\" take: stancsz/second-brain is simultaneously a native Claude Code skill and a zero-dependency MCP server over a local SQLite file — clone, run, and any MCP-capable agent gets a full-text knowledge graph in plain markdown you fully control. No cloud account, no external service.",
+    "categories": ["skill", "mcp"],
+    "install": "git clone https://github.com/stancsz/second-brain.git"
+  },
+  {
+    "slug": "claude-code-v2-1-273",
+    "name": "Claude Code v2.1.273",
+    "primary_url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "secondary_urls": [
+      "https://github.com/Piebald-AI/claude-code-system-prompts"
+    ],
+    "hook": "Claude Code shipped two consecutive versions in 48 hours: v2.1.272 and v2.1.273 (Sept 15), both tagged \"bug fixes and reliability improvements.\" The agents-radar Sept 15 digest flags an emerging PowerShell tool-delay regression on Windows; the Piebald system-prompt archive confirmed the prompt diff within minutes of the release.",
+    "categories": ["release"],
+    "install": "claude update"
+  },
+  {
+    "slug": "vila-lab-dive-into-claude-code",
+    "name": "Dive into Claude Code (paper)",
+    "primary_url": "https://github.com/VILA-Lab/Dive-into-Claude-Code",
+    "hook": "VILA Lab's academic-grade reverse-engineering of Claude Code (2k⭐) publishes full system-prompt maps, module boundaries, tool inventories, and telemetry analysis alongside a peer-reviewable PDF. Quadrilingual (EN/JA/KO/ZH) and now tracking the KAIROS internal codename and several unreleased tool stubs — the closest thing to an architecture RFC for Claude Code.",
+    "categories": ["research"],
+    "install": "See README"
+  },
+  {
+    "slug": "charlie947-ai-second-brain",
+    "name": "ai-second-brain (charlie947)",
+    "primary_url": "https://github.com/charlie947/ai-second-brain",
+    "hook": "charlie947's skill packages Karpathy's memory idea, Alex Freedman's AI-history organizer, and Greg Isenberg's slash-command workflow into one Claude Code skill that walks any user through building a searchable second brain from their ChatGPT, Claude, and research history — emphasizing existing-export compatibility.",
+    "categories": ["skill", "knowledge"],
+    "install": "See README"
+  },
+  {
+    "slug": "rohitg00-awesome-claude-code-toolkit",
+    "name": "awesome-claude-code-toolkit",
+    "primary_url": "https://github.com/rohitg00/awesome-claude-code-toolkit",
+    "hook": "The most enumerated Claude Code collection on GitHub: 135 agents, 35 curated skills, 42 commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, 14 MCP configs, 26 companion apps, and 52 ecosystem entries in one repo. Useful as a discovery index rather than a curated top-10.",
+    "categories": ["collection"],
+    "install": "See README"
+  },
+  {
+    "slug": "quemsah-awesome-claude-plugins",
+    "name": "awesome-claude-plugins (adoption tracker)",
+    "primary_url": "https://github.com/quemsah/awesome-claude-plugins",
+    "hook": "Instead of a static list, this n8n-powered repo automatically harvests plugin-adoption metrics across GitHub repositories to produce a live adoption leaderboard of Claude Code plugins. The automated approach surfaces rising newcomers before manual curation catches them.",
+    "categories": ["tooling"],
+    "install": "See README"
+  },
+  {
+    "slug": "openclaw",
+    "name": "OpenClaw",
+    "primary_url": "https://github.com/openclaw/openclaw",
+    "secondary_urls": [
+      "https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it/",
+      "https://thenewstack.io/openclaw-github-stars-security/"
+    ],
+    "hook": "OpenClaw (388K⭐, beat React's 10-year star record in 60 days) is an on-device personal AI assistant with messaging-channel integrations — not Claude Code, but it's the most-discussed developer repo this week and pulling engineers toward local-AI-agent patterns that intersect with Claude Code workflows.",
+    "categories": ["tooling"]
+  }
+]
