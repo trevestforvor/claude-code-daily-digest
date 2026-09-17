@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "nexu-io-open-design",
+    "name": "Open Design",
+    "primary_url": "https://github.com/nexu-io/open-design",
+    "hook": "Open-source alternative to Anthropic's Claude Design — 96.7k stars, 151 brand-grade DESIGN.md packages, and a local-first desktop app that routes design tasks to 25+ coding agents (Claude Code, Codex, Cursor, and more). Exports real HTML, PDF, PPTX, and MP4. Hit #1 on GitTrend and crossed 40k stars within two weeks of launch.",
+    "categories": ["design", "tools"],
+    "install": "od mcp install claude-code"
+  },
+  {
+    "slug": "anthropic-claude-unified-experience",
+    "name": "Claude Docs, Slides & Cowork Merge",
+    "primary_url": "https://venturebeat.com/technology/anthropic-is-killing-off-cowork-and-folding-it-into-claude-launching-claude-docs-and-claude-slides",
+    "secondary_urls": ["https://thenextweb.com/news/anthropic-claude-cowork-merge-docs-slides"],
+    "hook": "Anthropic announced September 16, 2026: Claude Cowork is folded into a single Claude experience. Claude Docs and Claude Slides launch in beta — Claude drafts documents and presentations inline, hands back editable PowerPoint or PDF files. Claude Design also moves into regular chat. Rolling out to Pro and Max over coming weeks. Claude Code remains a separate product.",
+    "categories": ["official", "design"]
+  },
+  {
+    "slug": "rtk-ai-rtk",
+    "name": "RTK — Rust Token Killer",
+    "primary_url": "https://github.com/rtk-ai/rtk",
+    "hook": "Single Rust binary CLI proxy that silently compresses shell-command output before it reaches your LLM — reducing token consumption 60–90% on git, npm, cargo, docker, and 100+ other common dev commands. 80.8k stars, zero dependencies, cross-platform. Works with Claude Code, Cursor, Copilot, Gemini CLI, and 11+ others.",
+    "categories": ["cost", "tools"],
+    "install": "brew install rtk"
+  },
+  {
+    "slug": "panniantong-agent-reach",
+    "name": "Agent Reach",
+    "primary_url": "https://github.com/Panniantong/Agent-Reach",
+    "hook": "Give any coding agent eyes to see the entire internet — Twitter/X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees. 82.8k stars. First-choice + backup backend architecture auto-routes when one access method fails; built-in `agent-reach doctor` diagnostic. Works with Claude Code, OpenClaw, and Cursor.",
+    "categories": ["tools", "mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "egonex-understand-anything",
+    "name": "Understand Anything",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "secondary_urls": ["https://charlieautomates.com/blog/understand-anything-claude-code-plugin/"],
+    "hook": "A five-agent pipeline scans your codebase and builds an interactive knowledge graph — color-coded by architectural layer, searchable, every node shows code and a plain-English explanation. 83k stars. Charlie Automates called it 'GitHub's #1 repo of the day' in a dedicated deep-dive post this week.",
+    "categories": ["tools", "codebase"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything",
+    "recurring_note": "↑ Day 7 — 83k stars; Charlie Automates dedicated blog post this week",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "shareai-learn-claude-code",
+    "name": "Learn Claude Code (Agent Harness from Scratch)",
+    "primary_url": "https://github.com/shareAI-lab/learn-claude-code",
+    "hook": "17-lesson Python course building a working Claude agent harness from scratch — one harness mechanism per lesson: tool use, permissions, context management, task systems, and agent teams. 77k stars. 'Agency comes from the model. The harness gives agency a place to land.' No shortcuts, no frameworks.",
+    "categories": ["general", "education"],
+    "install": "git clone https://github.com/shareAI-lab/learn-claude-code"
+  },
+  {
+    "slug": "yeachan-heo-oh-my-claudecode",
+    "name": "oh-my-claudecode",
+    "primary_url": "https://github.com/yeachan-heo/oh-my-claudecode",
+    "hook": "Teams-first multi-agent orchestration for Claude Code with zero learning curve. 39.2k stars, 19 specialized agents with intelligent model routing — Haiku for simple tasks, Opus for complex reasoning. Supports Codex, Gemini, Antigravity, Grok, and Cursor as cross-provider team members. Real-time HUD statusline, cost optimization, session analytics.",
+    "categories": ["agents", "tools"],
+    "install": "npm i -g oh-my-claude-sisyphus@latest"
+  },
+  {
+    "slug": "sickn33-agentic-awesome-skills",
+    "name": "AAS Core — Agentic Awesome Skills",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "hook": "Local, agent-first control plane backed by 2,115+ agentic skills across dev, security, infra, product, and marketing. 46.5k stars, 6.8k forks. V17.4.0 ships this week. Includes CLI, local MCP catalog, plugins, and Workbench. Runs on Claude Code, Cursor, Codex, Gemini CLI, and 10+ other agents.",
+    "categories": ["skills", "tools"],
+    "install": "npx agentic-awesome-skills --skills <skill-ids> --dry-run",
+    "recurring_note": "↑ V17.4.0 this week — now 2,115+ skills"
+  },
+  {
+    "slug": "graphify-labs-graphify",
+    "name": "Graphify",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "hook": "Turns any codebase into a queryable knowledge graph — every symbol, call edge, and dependency indexed via deterministic AST parsing. No LLM, no vector store, fully offline. 119k stars (up from ~90k in July — one of the fastest-growing Claude Code skills). MIT licensed, 36 languages, a /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI.",
+    "categories": ["tools", "codebase"],
+    "install": "See README",
+    "recurring_note": "↑ Day 9 — grown from 90k to 119k stars since July"
+  },
+  {
+    "slug": "claude-code-v2-1-274",
+    "name": "Claude Code v2.1.274",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "September 17 release: memory-usage critical warning with recovery steps, `CLAUDE_CODE_MCP_STARTUP_WAIT_MS` to bound MCP startup wait, self-healing for corrupted transcripts, active /goal preservation on session resume, improved Code Review prompts, and MCP reconnection improvements. v2.1.273 (Sep 15) added VSCode agent map with per-agent transcripts and session forking from --remote-control.",
+    "categories": ["official", "tools"]
+  },
+  {
+    "slug": "florianbruniaux-claude-code-ultimate-guide",
+    "name": "Claude Code Ultimate Guide",
+    "primary_url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+    "hook": "430K+ lines of Claude Code documentation in one repo: 48 Mermaid diagrams, 271-question quiz, threat modeling with 28 CVEs and a 655-entry malicious-skills database, TDD/SDD/BDD workflow templates, and enterprise governance for multi-team deployments. 6k stars. Covers beginner to power user and security hardening.",
+    "categories": ["general", "docs"],
+    "install": "See README"
+  },
+  {
+    "slug": "smtg-ai-claude-squad",
+    "name": "Claude Squad",
+    "primary_url": "https://github.com/smtg-ai/claude-squad",
+    "hook": "Run Claude Code, Codex, Gemini CLI, and Aider side-by-side in isolated git worktrees — prevents conflicts while agents execute in parallel. 8.5k stars. Review each agent's diff before pushing; supports yolo/auto-accept mode for fully autonomous parallel execution. Unified terminal interface with profile-based configuration.",
+    "categories": ["agents", "tools"],
+    "install": "brew install claude-squad"
+  },
+  {
+    "slug": "lackeyjb-playwright-skill",
+    "name": "Playwright Skill",
+    "primary_url": "https://github.com/lackeyjb/playwright-skill",
+    "hook": "General-purpose Playwright automation for coding agents — Claude writes and executes custom browser scripts for any automation request, not just pre-built flows. 3.1k stars. Browser runs visibly by default for real-time observation. Portable executor with stable module resolution; progressive API disclosure.",
+    "categories": ["testing", "tools"],
+    "install": "npx skills add lackeyjb/playwright-skill --skill playwright-skill --global --yes"
+  }
+]
