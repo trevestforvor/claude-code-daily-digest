@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — September 18, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — September 18, 2026</h1><p class="sub">Top 15 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.275 — Skills &amp; Plugins Sync</a></h3>
+  <p class="hook">v2.1.275 (Sep 17) lands the most-requested terminal QoL in months: skills and plugins you&#39;ve enabled on claude.ai now sync automatically to every terminal session, no manual re-install. Also ships a send-now key (ctrl+enter) that interrupts the current turn and flushes queued messages, plus `/plugin install --marketplace` for one-command marketplace adds. v2.1.276 (Sep 18) patches a proxy 400 regression introduced by 275.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">official</span>  </div>
+  <div class="tags">plugin · proxy · anthropic · marketplace · terminal</div>
+  <pre><button class="copy">copy</button><code>npm install -g @anthropic-ai/claude-code@latest</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/JuliusBrussee/caveman">Caveman</a></h3>
+  <p class="hook">106.5K stars and still climbing — the viral &quot;talk like caveman&quot; skill + proxy that cuts output tokens by 65% and input by 33%. Adobe Research independently documented 1.4–2.4× cost reduction; JetBrains measured 8.5% fewer output tokens with no quality loss. v2.7.0 now supports 30+ agents. Still the undisputed #1 COST tool in the ecosystem.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">skill · token · proxy · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add JuliusBrussee/caveman -g</code></pre>
+  <div class="recurring">Recurring — 106.5K stars (up from 102.8K earlier this week), v2.7.0 shipped</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/echoVic/boss-skill">boss-skill</a></h3>
+  <p class="hook">558 stars. Turns a single coding agent into a structured engineering team: PM, Architect, Designer, Tech Lead, and QA roles coordinate via event sourcing with quality gates and replayable artifacts. Every run produces a documented .boss/ folder (PRDs, architecture specs, code reviews, test reports) — auditability that pure prompt-based orchestration can&#39;t match. Works with Claude Code, Cursor, and Trae.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">agents</span>  </div>
+  <div class="tags">skill · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add echoVic/boss-skill</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep">ARIS (Auto-Research-In-Sleep)</a></h3>
+  <p class="hook">16.3K stars. 81-skill bundle for autonomous ML research: /research-pipeline runs end-to-end paper generation, /idea-discovery does five-stage brainstorming with a deterministic evidence gate, /rebuttal crafts reviewer responses, and /experiment-audit checks empirical rigor. Sep 16 update (v0.4.26) adds Fable 5.1 support, GPT-6-Astra as default reviewer, and codex-cli 0.154 compatibility.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">research</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">agents</span>  </div>
+  <div class="tags">skill · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>bash tools/smart_update.sh --apply</code></pre>
+  <div class="recurring">Recurring — updated Sep 16 with Fable 5.1 support and GPT-6-Astra reviewer</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/ruc-datalab/EvoOntology">EvoOntology</a></h3>
+  <p class="hook">148 stars, created Sep 15. A self-evolving ontology layer for data agents that builds and refines a shared knowledge graph as your agent works — so terminology, schema names, and domain concepts are consistent across multi-step data pipelines. Installs as a Claude Code plugin or Codex skill; no external services required. Comes from a Chinese data-lab research group with a track record of agent-infrastructure papers.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">agents</span>  </div>
+  <div class="tags">skill · plugin · memory · viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/NiazMorshed2007/jev-review">jev-review</a></h3>
+  <p class="hook">112 stars, created Sep 17 — the newest entry. A local-first MCP plugin powered by Jev (TypeSafe.ai) that runs continuous code-quality review inside your agent&#39;s loop: structural analysis, test coverage gaps, and style violations all flagged before a commit touches CI. Works with Claude Code, Codex, Cursor, and OpenCode. No cloud required; results live in your repo.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">plugin · local · viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/friday-memory/friday">Friday — Persistent Cognitive Memory</a></h3>
+  <p class="hook">36 stars, created Sep 16. Open-source alternative to the closed memory services: a Neo4j + FastAPI knowledge graph served over MCP that gives Claude, Cursor, and Copilot persistent memory across sessions. Stores entities, relationships, and observations extracted from conversations; query with natural language. Self-host in Docker in under five minutes. Explicitly bills itself as the fix for &quot;AI agent amnesia.&quot;</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">memory</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">agent · local · viral · alternative</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mutonby/vibetube">VibeTube</a></h3>
+  <p class="hook">58 stars, created Sep 15. macOS desktop app that records your screen + webcam in sync, then hands the raw footage to Claude Code or Codex for shot selection, auto-subtitles, graphics, and SFX — producing a polished final cut without touching a timeline editor. The agent gets a structured storyboard JSON and edits via ffmpeg. Targets devs who demo-to-YouTube but hate editing.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">creative</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/ccai40359-wq/seanswarm">seanswarm</a></h3>
+  <p class="hook">53 stars, created Sep 16. Three production-grade multi-agent workflow skills in one package: evidence-governed research fan-out (agents cite sources before aggregating), dual-channel document reading (primary + adversarial), and dev delivery with an independent reviewer agent that must approve before merge. Works across Claude Code, Codex, and Cursor without framework lock-in.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">agents</span>  </div>
+  <div class="tags">agent · viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Dicklesworthstone/skillranker">skillranker</a></h3>
+  <p class="hook">43 stars, created Sep 17 by Dicklesworthstone (well-known OSS prolific author). A Rust CLI powered by Jev that reads live session context and scores every installed skill for fit to the next step — so your agent picks the right skill instead of guessing. Includes Claude Code hooks for automatic injection, structured JSON output, and a local feedback loop. Requires a TypeSafe API key.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">agents</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">skill · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/nidhi-singh02/agent-router">agent-router</a></h3>
+  <p class="hook">25 stars, created Sep 17. A CLI that picks the right coding agent (Cursor, Claude Code, Codex, or OpenCode) plus model and effort level for any given task — then launches it. Powered by Jev and Herdr for routing logic. Useful on multi-agent setups where token costs vary wildly by task type; saves money by routing cheap tasks to cheaper agents automatically.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">agents</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">agent · proxy · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/GPUtw-ai/GPUtw-Skill">GPUtw-Skill</a></h3>
+  <p class="hook">52 stars, created Sep 15. Official skill from GPUtw.ai that teaches Claude Code, Codex, Cursor, Copilot, and Gemini CLI to provision and manage GPUs via the GPUtw REST API — spin up cloud GPU instances, check availability, monitor jobs, and teardown from inside your agent session. Aimed at ML engineers who train models locally and need burst GPU capacity without leaving the terminal.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">skill · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/karanb192/claude-code-mods">claude-code-mods</a></h3>
+  <p class="hook">27 stars, created Sep 15, and its companion awesome-claude-code-mods (20 stars) is already the canonical index for the new category. &quot;Mods&quot; use Claude Code&#39;s function-hooks API to draw custom UI and register new tools the model can call — think Minecraft mods but for your coding agent. The builder skill scaffolds a new mod in minutes. First mods include a token meter, a diff annotator, and a session replay tool.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">official</span>  </div>
+  <div class="tags">skill · viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/cathrynlavery/diagram-design">diagram-design</a></h3>
+  <p class="hook">41.1K stars. 39 editorial-quality diagram types — architecture, flow, sequence, Gantt, state machines, pyramids, quadrants — delivered as self-contained HTML+SVG with three static variants (minimal light, minimal dark, full editorial). No Mermaid slop, no Figma required. v2.5.10 added 10 new layout types this week. Created by BestSelf.co founder Cathryn Lavery; used by design-focused teams shipping UI-rich projects with Claude Code.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add cathrynlavery/diagram-design</code></pre>
+  <div class="recurring">Recurring — v2.5.10 adds 10 new layout types, still the top DESIGN skill</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/statewright/statewright">Statewright</a></h3>
+  <p class="hook">491 stars. Define AI agent workflows as state machines — planning states get read-only tools, implementation unlocks edit access, testing permits only designated commands. Enforced at the protocol layer via MCP, not via prompt gymnastics. Works across Claude Code, Codex, Cursor, OpenCode, and Pi. Rust engine, Apache 2.0, free tier available. Plugin 0.3.3 improved native MCP read-only annotations and session management.</p>
+  <div class="secondary">Also: <a href="https://statewright.ai/">statewright.ai/</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">plugin · agent · viral · marketplace · testing</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add statewright/statewright</code></pre>
+  <div class="recurring">Recurring — Plugin 0.3.3 ships improved MCP read-only annotations</div>
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
