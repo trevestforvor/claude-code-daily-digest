@@ -1,0 +1,132 @@
+[
+  {
+    "slug": "anthropic-claude-code-projects-beta",
+    "name": "Claude Code Projects Beta",
+    "primary_url": "https://www.anthropic.com/news/claude-code-projects",
+    "secondary_urls": [
+      "https://www.theregister.com/2026/09/17/anthropic_claude_code_projects/",
+      "https://techstrong.ai/articles/anthropic-launches-claude-code-projects-beta/",
+      "https://mlq.ai/anthropic-claude-code-projects-beta/"
+    ],
+    "hook": "Anthropic's biggest Claude Code announcement of September: Projects Beta (Sep 17) lets you spawn parallel cloud Claude Code sessions from a single project conversation, each a full Opus-backed instance running on its own branch. Select Pro/Max users get access first; others join a waitlist. Covered by The Register, Techstrong.ai, MLQ.ai, Times of AI, and four more outlets — the most press coverage a Claude Code feature has received this month.",
+    "categories": ["official"]
+  },
+  {
+    "slug": "claude-code-v2-1-277-278",
+    "name": "Claude Code v2.1.277–278 — AGENTS.md + Auto Mode Classifier",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "v2.1.277 (Sep 18) adds native AGENTS.md support — Claude reads AGENTS.md when no CLAUDE.md is present, bringing compatibility with the OpenAI/Codex convention. Also ships: server-side auto mode classifier (eliminates overhead charges for API/Enterprise/Bedrock/Vertex users), VS Code agent map view, and background task status indicators. v2.1.278 (Sep 19) follows with ~55 fixes. These two releases triggered a cluster of new AGENTS.md tooling (see backpass, ossrules, abide, agent-rules-skill below).",
+    "categories": ["official"],
+    "install": "npm install -g @anthropic-ai/claude-code@latest"
+  },
+  {
+    "slug": "dietrichgebert-ponytail",
+    "name": "ponytail",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "hook": "141K-star code-efficiency skill that reduces the amount of code Claude writes by 54% and token consumption by 22% — achieved by strict scope enforcement and a structured clarification gate. Still the dominant general-purpose efficiency skill in the ecosystem. First appeared Sep 7–11; consistently ranking in the top-3 most-installed skills week over week.",
+    "categories": ["cost", "skill"],
+    "install": "See README",
+    "recurring_note": "Recurring — 141K stars, consistently top-3 most-installed"
+  },
+  {
+    "slug": "cloudflare-security-audit-skill",
+    "name": "cloudflare/security-audit-skill",
+    "primary_url": "https://github.com/cloudflare/security-audit-skill",
+    "hook": "15.6K stars and still accelerating — Cloudflare's official security-audit skill gained +2.6K stars in just 48 hours (Sep 16–18), making it one of the fastest single-week growth events for a Claude Code skill. Runs 681 security checks across OWASP Top 10, cloud misconfigs, and secrets exposure; outputs structured SARIF reports you can feed directly into CI. Enterprise teams are adopting it as a mandatory pre-commit hook.",
+    "categories": ["security", "skill"],
+    "install": "See README",
+    "recurring_note": "Recurring — 15.6K stars (up from 13K on Sep 16), +2.6K in 48 hours"
+  },
+  {
+    "slug": "coldteadotai-abide",
+    "name": "abide",
+    "primary_url": "https://github.com/coldteadotai/abide",
+    "hook": "124 stars, Show HN this week. Abide enforces AGENTS.md and CLAUDE.md rules per-edit via TypeSafe Jev checks — so policy violations are caught before a file is saved, not after a code review. Each check costs ~$0.00004, making continuous enforcement economical at scale. Perfectly timed with v2.1.277's AGENTS.md support: one tool to write the rules, another to enforce them.",
+    "categories": ["skill", "security"],
+    "install": "See README"
+  },
+  {
+    "slug": "kunchenguid-backpass",
+    "name": "backpass",
+    "primary_url": "https://github.com/kunchenguid/backpass",
+    "hook": "1.1K stars. 'Gradient descent for your AGENTS.md' — backpass reads your session transcripts, identifies patterns in what worked and what didn't, and proposes evidence-backed diffs to your AGENTS.md or CLAUDE.md. A human gate runs before any change is written. Released the same week v2.1.277 shipped AGENTS.md support; the timing has driven rapid adoption among teams iterating on agent behavior.",
+    "categories": ["skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "kunchenguid-compact-adviser",
+    "name": "compact-adviser",
+    "primary_url": "https://github.com/kunchenguid/compact-adviser",
+    "hook": "118 stars. Classifies whether to run /compact using two Jev questions rather than always compacting at a fixed threshold — saving tokens when compaction isn't needed. The confidence threshold self-adjusts from 0.90 down to 0.50 as context fills, so it gets more aggressive about compacting right when it matters most. Works inside Claude Code hooks with no manual invocation.",
+    "categories": ["cost", "skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "awlevin-typesafe-computer-use",
+    "name": "typesafe-computer-use",
+    "primary_url": "https://github.com/awlevin/typesafe-computer-use",
+    "hook": "429 stars. Replaces Claude Opus 5 for computer-use decisions with OCR + a TypeSafe Jev classifier: $0.0002/decision vs $0.032 for Opus 5, 155× cheaper, and 14–40× faster latency. Targets macOS Claude Code users who run computer-use tasks at scale — form filling, UI testing, scraping — and can't afford Opus 5's per-call cost in a high-frequency loop.",
+    "categories": ["cost", "skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "chaseai-yt-claudex-loop",
+    "name": "claudex-loop",
+    "primary_url": "https://github.com/chaseai-yt/claudex-loop",
+    "hook": "2.2K stars, up from 1.7K since the Sep 9 digest — a 29% increase in 10 days. Chase AI's (109K subs) own Claude Code productivity loop: structured task decomposition, automatic context checkpointing, and a resumable session protocol. The growth rate is accelerating as the channel's audience converts to users.",
+    "categories": ["skill"],
+    "install": "See README",
+    "recurring_note": "Recurring — grew from 1.7K → 2.2K stars since Sep 9 (+29%)",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "charlesdove977-advertising-ops",
+    "name": "advertising-ops (CMO in a Box)",
+    "primary_url": "https://github.com/charlesdove977/advertising-ops",
+    "hook": "86 stars. Scrapes long-running Meta Ad Library ads, tears down video creative frame-by-frame, then generates aligned copy and image/video variations — a full creative analysis and production pipeline inside Claude Code. Charlie Automates (8K subs) featured it as their 'Claude Code Jarvis AI that runs my business' in a Sep 15 video, driving a notable star spike for a small channel.",
+    "categories": ["skill", "creative"],
+    "install": "See README",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "netresearch-agent-rules-skill",
+    "name": "agent-rules-skill",
+    "primary_url": "https://github.com/netresearch/agent-rules-skill",
+    "hook": "76 stars. Auto-generates AGENTS.md files following the agents.md convention — supporting Claude Code, GitHub Copilot, and Cursor simultaneously. A natural companion to v2.1.277's new AGENTS.md support: run the skill once and get a properly structured file that all three agents can read. Reduces setup friction when a team wants consistent agent behavior across tools.",
+    "categories": ["skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "modem-dev-ossrules",
+    "name": "ossrules",
+    "primary_url": "https://github.com/modem-dev/ossrules",
+    "hook": "25 stars. A curated library of real AGENTS.md and CLAUDE.md files from production open-source projects, each with annotations explaining the rationale behind key rules. Public JSON API so tools like backpass and agent-rules-skill can pull from it as reference material. Landed the same week v2.1.277 shipped, filling the 'show me real examples' gap.",
+    "categories": ["skill", "research"],
+    "install": "See README"
+  },
+  {
+    "slug": "sickn33-agentic-awesome-skills",
+    "name": "AAS Core — Agentic Awesome Skills",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "hook": "46.6K stars, updated Sep 19. The largest curated skills catalog in the ecosystem — 2,115+ agentic skills across dev, security, infra, product, and marketing — with a local MCP catalog, CLI, plugins, and Workbench. Works with Claude Code, Cursor, Codex, Gemini CLI, and 10+ other agents. Still growing; new skills added daily.",
+    "categories": ["collection", "skill"],
+    "install": "npx agentic-awesome-skills --skills <skill-ids> --dry-run",
+    "recurring_note": "Recurring — 46.6K stars, updated Sep 19 with new skills"
+  },
+  {
+    "slug": "leonardleroy-i-dont-believe-you",
+    "name": "i-dont-believe-you",
+    "primary_url": "https://github.com/LeonardLeroy/i-dont-believe-you",
+    "hook": "16 stars. A stop-hook skill that runs 8 shell verification commands before an agent can claim tests pass: checks for disabled tests, removed assertions, swallowed errors, skipped suites, and mocked-away dependencies. Closes the most common agent honesty gap — Claude (and other agents) sometimes declare success when tests were quietly neutered. Small but solves a real trust problem.",
+    "categories": ["skill", "testing"],
+    "install": "See README"
+  },
+  {
+    "slug": "malav2110-explain-diff-html",
+    "name": "explain-diff-html",
+    "primary_url": "https://github.com/malav2110/explain-diff-html",
+    "hook": "7 stars, first appearance in any digest. Transforms PRs and raw diffs into self-contained interactive HTML walkthroughs: background context, design intuition, code flow in execution order, and an embedded quiz to verify reviewer comprehension. Each output is a single portable HTML file — no server required. Useful for async code reviews where reviewers lack context on the original intent.",
+    "categories": ["skill", "dev-tools"],
+    "install": "See README"
+  }
+]
