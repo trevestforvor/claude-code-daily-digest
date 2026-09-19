@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — September 19, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — September 19, 2026</h1><p class="sub">Top 15 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/claude-code-projects">Claude Code Projects Beta</a></h3>
+  <p class="hook">Anthropic&#39;s biggest Claude Code announcement of September: Projects Beta (Sep 17) lets you spawn parallel cloud Claude Code sessions from a single project conversation, each a full Opus-backed instance running on its own branch. Select Pro/Max users get access first; others join a waitlist. Covered by The Register, Techstrong.ai, MLQ.ai, Times of AI, and four more outlets — the most press coverage a Claude Code feature has received this month.</p>
+  <div class="secondary">Also: <a href="https://www.theregister.com/2026/09/17/anthropic_claude_code_projects/">www.theregister.com/2026/09/17/anthropic_claude_code_projects/</a> · <a href="https://techstrong.ai/articles/anthropic-launches-claude-code-projects-beta/">techstrong.ai/articles/anthropic-launches-claude-code-projects-beta/</a> · <a href="https://mlq.ai/anthropic-claude-code-projects-beta/">mlq.ai/anthropic-claude-code-projects-beta/</a></div>
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">official</span>  </div>
+  <div class="tags">anthropic</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.277–278 — AGENTS.md + Auto Mode Classifier</a></h3>
+  <p class="hook">v2.1.277 (Sep 18) adds native AGENTS.md support — Claude reads AGENTS.md when no CLAUDE.md is present, bringing compatibility with the OpenAI/Codex convention. Also ships: server-side auto mode classifier (eliminates overhead charges for API/Enterprise/Bedrock/Vertex users), VS Code agent map view, and background task status indicators. v2.1.278 (Sep 19) follows with ~55 fixes. These two releases triggered a cluster of new AGENTS.md tooling (see backpass, ossrules, abide, agent-rules-skill below).</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">official</span>  </div>
+  <div class="tags">skill · anthropic</div>
+  <pre><button class="copy">copy</button><code>npm install -g @anthropic-ai/claude-code@latest</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/DietrichGebert/ponytail">ponytail</a></h3>
+  <p class="hook">141K-star code-efficiency skill that reduces the amount of code Claude writes by 54% and token consumption by 22% — achieved by strict scope enforcement and a structured clarification gate. Still the dominant general-purpose efficiency skill in the ecosystem. First appeared Sep 7–11; consistently ranking in the top-3 most-installed skills week over week.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  <div class="recurring">Recurring — 141K stars, consistently top-3 most-installed</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/cloudflare/security-audit-skill">cloudflare/security-audit-skill</a></h3>
+  <p class="hook">15.6K stars and still accelerating — Cloudflare&#39;s official security-audit skill gained +2.6K stars in just 48 hours (Sep 16–18), making it one of the fastest single-week growth events for a Claude Code skill. Runs 681 security checks across OWASP Top 10, cloud misconfigs, and secrets exposure; outputs structured SARIF reports you can feed directly into CI. Enterprise teams are adopting it as a mandatory pre-commit hook.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">security</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  <div class="recurring">Recurring — 15.6K stars (up from 13K on Sep 16), +2.6K in 48 hours</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/coldteadotai/abide">abide</a></h3>
+  <p class="hook">124 stars, Show HN this week. Abide enforces AGENTS.md and CLAUDE.md rules per-edit via TypeSafe Jev checks — so policy violations are caught before a file is saved, not after a code review. Each check costs ~$0.00004, making continuous enforcement economical at scale. Perfectly timed with v2.1.277&#39;s AGENTS.md support: one tool to write the rules, another to enforce them.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">security</span>  </div>
+  <div class="tags">viral · review</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/kunchenguid/backpass">backpass</a></h3>
+  <p class="hook">1.1K stars. &#39;Gradient descent for your AGENTS.md&#39; — backpass reads your session transcripts, identifies patterns in what worked and what didn&#39;t, and proposes evidence-backed diffs to your AGENTS.md or CLAUDE.md. A human gate runs before any change is written. Released the same week v2.1.277 shipped AGENTS.md support; the timing has driven rapid adoption among teams iterating on agent behavior.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/kunchenguid/compact-adviser">compact-adviser</a></h3>
+  <p class="hook">118 stars. Classifies whether to run /compact using two Jev questions rather than always compacting at a fixed threshold — saving tokens when compaction isn&#39;t needed. The confidence threshold self-adjusts from 0.90 down to 0.50 as context fills, so it gets more aggressive about compacting right when it matters most. Works inside Claude Code hooks with no manual invocation.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">token · viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/awlevin/typesafe-computer-use">typesafe-computer-use</a></h3>
+  <p class="hook">429 stars. Replaces Claude Opus 5 for computer-use decisions with OCR + a TypeSafe Jev classifier: $0.0002/decision vs $0.032 for Opus 5, 155× cheaper, and 14–40× faster latency. Targets macOS Claude Code users who run computer-use tasks at scale — form filling, UI testing, scraping — and can&#39;t afford Opus 5&#39;s per-call cost in a high-frequency loop.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral · testing</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/chaseai-yt/claudex-loop">claudex-loop</a></h3>
+  <p class="hook">2.2K stars, up from 1.7K since the Sep 9 digest — a 29% increase in 10 days. Chase AI&#39;s (109K subs) own Claude Code productivity loop: structured task decomposition, automatic context checkpointing, and a resumable session protocol. The growth rate is accelerating as the channel&#39;s audience converts to users.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  <div class="recurring">Recurring — grew from 1.7K → 2.2K stars since Sep 9 (+29%)</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/charlesdove977/advertising-ops">advertising-ops (CMO in a Box)</a></h3>
+  <p class="hook">86 stars. Scrapes long-running Meta Ad Library ads, tears down video creative frame-by-frame, then generates aligned copy and image/video variations — a full creative analysis and production pipeline inside Claude Code. Charlie Automates (8K subs) featured it as their &#39;Claude Code Jarvis AI that runs my business&#39; in a Sep 15 video, driving a notable star spike for a small channel.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">creative</span>  </div>
+  <div class="tags">video · viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/netresearch/agent-rules-skill">agent-rules-skill</a></h3>
+  <p class="hook">76 stars. Auto-generates AGENTS.md files following the agents.md convention — supporting Claude Code, GitHub Copilot, and Cursor simultaneously. A natural companion to v2.1.277&#39;s new AGENTS.md support: run the skill once and get a properly structured file that all three agents can read. Reduces setup friction when a team wants consistent agent behavior across tools.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/modem-dev/ossrules">ossrules</a></h3>
+  <p class="hook">25 stars. A curated library of real AGENTS.md and CLAUDE.md files from production open-source projects, each with annotations explaining the rationale behind key rules. Public JSON API so tools like backpass and agent-rules-skill can pull from it as reference material. Landed the same week v2.1.277 shipped, filling the &#39;show me real examples&#39; gap.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">research</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/sickn33/agentic-awesome-skills">AAS Core — Agentic Awesome Skills</a></h3>
+  <p class="hook">46.6K stars, updated Sep 19. The largest curated skills catalog in the ecosystem — 2,115+ agentic skills across dev, security, infra, product, and marketing — with a local MCP catalog, CLI, plugins, and Workbench. Works with Claude Code, Cursor, Codex, Gemini CLI, and 10+ other agents. Still growing; new skills added daily.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">collection</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">mcp · agent · viral · terminal · security</div>
+  <pre><button class="copy">copy</button><code>npx agentic-awesome-skills --skills &lt;skill-ids&gt; --dry-run</code></pre>
+  <div class="recurring">Recurring — 46.6K stars, updated Sep 19 with new skills</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/LeonardLeroy/i-dont-believe-you">i-dont-believe-you</a></h3>
+  <p class="hook">16 stars. A stop-hook skill that runs 8 shell verification commands before an agent can claim tests pass: checks for disabled tests, removed assertions, swallowed errors, skipped suites, and mocked-away dependencies. Closes the most common agent honesty gap — Claude (and other agents) sometimes declare success when tests were quietly neutered. Small but solves a real trust problem.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">testing</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/malav2110/explain-diff-html">explain-diff-html</a></h3>
+  <p class="hook">7 stars, first appearance in any digest. Transforms PRs and raw diffs into self-contained interactive HTML walkthroughs: background context, design intuition, code flow in execution order, and an embedded quiz to verify reviewer comprehension. Each output is a single portable HTML file — no server required. Useful for async code reviews where reviewers lack context on the original intent.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">dev-tools</span>  </div>
+  <div class="tags">design · viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
