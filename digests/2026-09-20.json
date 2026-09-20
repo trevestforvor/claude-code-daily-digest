@@ -1,0 +1,135 @@
+[
+  {
+    "slug": "bitjaru-styleseed",
+    "name": "StyleSeed",
+    "primary_url": "https://github.com/bitjaru/styleseed",
+    "hook": "960 stars. An open-source design-method engine for Claude Code, Codex, and Cursor: 23 agent skills enforce 74 fixed design rules across layout, color, typography, spacing, and component patterns — then run a 0-100 quality-gate score that requires revision before any UI is presented. Addresses the 'AI-generated UIs look generic' problem with repeatable expert judgment. v2.5.0 strengthened the quality rules.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add bitjaru/styleseed"
+  },
+  {
+    "slug": "seanj1ang-design-judge-skills",
+    "name": "design-judge-skills",
+    "primary_url": "https://github.com/SeanJ1ang/design-judge-skills",
+    "hook": "1,000 stars. Evidence-driven agent skills for the full design award pipeline: case retrieval, design evaluation, award matching (iF DESIGN, Red Dot, IDEA, K-Design, GOOD DESIGN Japan), entry writing, and submission compliance checking. Backed by 22,125 aggregated observations from award-winning or shortlisted works. K-Design 2026 testing on July 3 showed 40.87% accuracy on top-115 award predictions. Apache 2.0, 155 forks.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add SeanJ1ang/design-judge-skills --global --agent codex --skill '*' --yes --copy"
+  },
+  {
+    "slug": "nexu-io-open-design",
+    "name": "Open Design",
+    "primary_url": "https://github.com/nexu-io/open-design",
+    "hook": "96.7K+ stars, still the top DESIGN item in the ecosystem. Open-source alternative to Claude Design: 151 brand-grade DESIGN.md packages, local-first desktop app routing design tasks to 25+ coding agents (Claude Code, Codex, Cursor, and more). Exports real HTML, PDF, PPTX, and MP4. Hit #1 on GitTrend and crossed 40k stars within two weeks of launch. Entered digest Sept 17.",
+    "categories": ["design", "tools"],
+    "install": "od mcp install claude-code",
+    "recurring_note": "↑ Day 4 — 96.7K+ stars, still dominating DESIGN category"
+  },
+  {
+    "slug": "cathrynlavery-diagram-design",
+    "name": "diagram-design",
+    "primary_url": "https://github.com/cathrynlavery/diagram-design",
+    "hook": "41.1K+ stars. 39 editorial-quality diagram types — architecture, flow, sequence, Gantt, state machines, pyramids, quadrants — delivered as self-contained HTML+SVG with three static variants (minimal light, minimal dark, full editorial). No Mermaid slop. v2.5.10 added 10 new layout types this week. Created by BestSelf.co founder Cathryn Lavery; the dominant diagram skill for design-focused Claude Code teams.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add cathrynlavery/diagram-design",
+    "recurring_note": "↑ Day 3 — v2.5.10 still current, 10 new layout types added this week"
+  },
+  {
+    "slug": "juliusbrussee-caveman",
+    "name": "Caveman",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "106.5K+ stars — the undisputed #1 COST tool in the ecosystem. The 'talk like caveman' skill + proxy cuts output tokens 65% and input 33%. Adobe Research documented 1.4–2.4× cost reduction; JetBrains measured 8.5% fewer output tokens with no quality loss. v2.7.0 supports 30+ agents. If you run Claude Code on a Pro plan, Caveman is still the single highest-ROI install.",
+    "categories": ["cost"],
+    "install": "npx skills add JuliusBrussee/caveman -g",
+    "recurring_note": "↑ Day 3 — 106.5K+ stars, v2.7.0 still current"
+  },
+  {
+    "slug": "rtk-ai-rtk",
+    "name": "RTK — Rust Token Killer",
+    "primary_url": "https://github.com/rtk-ai/rtk",
+    "hook": "80.8K+ stars. Single Rust binary CLI proxy that silently compresses shell-command output before it reaches your LLM — 60–90% reduction on git, npm, cargo, docker, and 100+ other common dev commands. Zero dependencies, cross-platform, works with Claude Code, Cursor, Copilot, Gemini CLI, and 11+ others. The COST companion to Caveman: Caveman handles prose tokens; RTK handles tool output.",
+    "categories": ["cost", "tools"],
+    "install": "brew install rtk",
+    "recurring_note": "↑ Day 4 — 80.8K+ stars, still the top tool-output compression choice"
+  },
+  {
+    "slug": "numman-ali-openskills",
+    "name": "OpenSkills",
+    "primary_url": "https://github.com/numman-ali/openskills",
+    "hook": "10.8K stars. Universal skills loader: brings Anthropic's SKILL.md format to every AI coding agent — Claude Code, Cursor, Windsurf, Aider, Codex, and anything that can read AGENTS.md. Discovers, installs, and manages skills from GitHub repos; supports dual-loading from `.agent/skills`, `.claude/skills`, and `~/.openskills`. The bridge for teams that don't run Claude Code exclusively but still want Claude's skill ecosystem.",
+    "categories": ["tools", "skill"],
+    "install": "npm i -g openskills"
+  },
+  {
+    "slug": "egonex-understand-anything",
+    "name": "Understand Anything",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "secondary_urls": ["https://charlieautomates.com/blog/understand-anything-claude-code-plugin/"],
+    "hook": "83K+ stars. A five-agent pipeline scans your codebase and builds an interactive knowledge graph — color-coded by architectural layer, searchable, every node shows code and a plain-English explanation. Charlie Automates called it 'GitHub's #1 repo of the day' in a dedicated deep-dive post. First appeared Sept 17; still accumulating stars.",
+    "categories": ["tools", "codebase"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything",
+    "recurring_note": "↑ Day 4 — 83K+ stars; Charlie Automates blog coverage",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "graphify-labs-graphify",
+    "name": "Graphify",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "hook": "119K+ stars — one of the fastest-growing Claude Code tools since July. Turns any codebase into a queryable knowledge graph via deterministic AST parsing. No LLM, no vector store, fully offline. MIT licensed, 36 languages, a /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI. Has grown from ~90K stars in July.",
+    "categories": ["tools", "codebase"],
+    "install": "See README",
+    "recurring_note": "↑ Day 4 — 119K+ stars, up from 90K in July"
+  },
+  {
+    "slug": "earthtojake-text-to-cad",
+    "name": "text-to-cad",
+    "primary_url": "https://github.com/earthtojake/text-to-cad",
+    "hook": "16.2K stars. A library of agent skills for CAD, CAE, and CAM workflows: generate and edit STEP, STL, 3MF, and GLB models; produce robot description files (URDF, SRDF, SDF); slice to G-code; run 3D-printability checks; and hand off to SendCutSend or Bambu Labs printers — all from a natural-language prompt inside Claude Code or Codex. The first production-ready CAD skill bundle in the ecosystem.",
+    "categories": ["skill", "tools"],
+    "install": "npx skills add earthtojake/text-to-cad"
+  },
+  {
+    "slug": "latent-spaces-brag",
+    "name": "brag",
+    "primary_url": "https://github.com/latent-spaces/brag",
+    "hook": "6K stars. One command turns any project into a shareable launch video: voiceover, motion graphics, and marketing copy, all output to a `brag-output/` folder. Powered by Hyperframes under the hood. Install as a Claude Code plugin and run `/brag` at the end of any build session. From the Latent Space community; targets devs who ship without a marketing team.",
+    "categories": ["creative", "skill"],
+    "install": "/plugin marketplace add latent-spaces/brag"
+  },
+  {
+    "slug": "yeachan-heo-oh-my-claudecode",
+    "name": "oh-my-claudecode",
+    "primary_url": "https://github.com/yeachan-heo/oh-my-claudecode",
+    "hook": "39.2K stars. Teams-first multi-agent orchestration for Claude Code with zero learning curve: 19 specialized agents with intelligent model routing — Haiku for simple tasks, Opus for complex reasoning. Supports Codex, Gemini, Antigravity, Grok, and Cursor as cross-provider team members. Real-time HUD statusline, cost optimization, session analytics.",
+    "categories": ["agents", "tools"],
+    "install": "npm i -g oh-my-claude-sisyphus@latest",
+    "recurring_note": "↑ Day 4 — 39.2K stars, still the top multi-agent orchestration pick"
+  },
+  {
+    "slug": "ethanplusai-jarvis",
+    "name": "JARVIS (ethanplus.ai)",
+    "primary_url": "https://github.com/ethanplusai/jarvis",
+    "hook": "779 stars. macOS voice assistant for Claude Code: talk to your Mac and JARVIS brainstorms your project with you, writes a design spec, kicks off a Claude Code build, and tells you out loud when the session needs human input. Runs on your existing Claude subscription — no separate API key required beyond Fish Audio. Charlie Automates posted a 'Claude Code Jarvis AI Runs My Business' video ~5 days ago, pointing to this class of tool.",
+    "categories": ["tools"],
+    "install": "git clone https://github.com/ethanplusai/jarvis.git && pip install -r requirements.txt",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "wanshuiyin-aris",
+    "name": "ARIS (Auto-Research-In-Sleep)",
+    "primary_url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+    "hook": "16.3K stars. 81-skill bundle for autonomous ML research: /research-pipeline runs end-to-end paper generation, /idea-discovery does five-stage brainstorming with a deterministic evidence gate, /rebuttal crafts reviewer responses, and /experiment-audit checks empirical rigor. v0.4.26 (Sept 16) added Fable 5.1 support, GPT-6-Astra as default reviewer, and codex-cli 0.154 compatibility.",
+    "categories": ["research", "agents"],
+    "install": "bash tools/smart_update.sh --apply",
+    "recurring_note": "↑ Day 3 — v0.4.26 adds Fable 5.1 + GPT-6-Astra reviewer"
+  },
+  {
+    "slug": "statewright-visual-state-machines",
+    "name": "Statewright",
+    "primary_url": "https://github.com/statewright/statewright",
+    "secondary_urls": ["https://statewright.ai/"],
+    "hook": "491 stars. Define AI agent workflows as state machines — planning states get read-only tools, implementation unlocks edit access, testing permits only designated commands. Enforced at the protocol layer via MCP, not prompt gymnastics. Plugin 0.3.3 (this week) improved native MCP read-only annotations and session management. Works across Claude Code, Codex, Cursor, OpenCode, and Pi. Rust engine, Apache 2.0.",
+    "categories": ["design", "mcp"],
+    "install": "/plugin marketplace add statewright/statewright",
+    "recurring_note": "↑ Day 3 — Plugin 0.3.3 ships improved MCP read-only annotations"
+  }
+]
