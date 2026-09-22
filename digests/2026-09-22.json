@@ -1,0 +1,128 @@
+[
+  {
+    "slug": "unity-official-plugin-claude-code",
+    "name": "Unity Official Plugin",
+    "primary_url": "https://claude.com/plugins/unity",
+    "secondary_urls": [
+      "https://the-decoder.com/unity-launches-official-plugins-for-claude-code-and-openai-codex-to-stop-ai-agents-from-using-outdated-tutorials/"
+    ],
+    "hook": "Launched September 9 — Unity Technologies published a first-party Claude Code plugin with 29 engine skills written by Unity engineers. One install gives Claude Code native Unity CLI access and live Editor control via MCP. Skills cover uGUI, UI Toolkit, 2D/tilemaps, IAP, localization, multiplayer, Shader Graph, URP, audio, navigation, and physics. The goal: stop agents from pulling outdated forum posts and tutorials. Covered by The Decoder, PocketGamer, and Explainx.ai.",
+    "categories": ["tools", "mcp"],
+    "install": "/plugin install unity"
+  },
+  {
+    "slug": "vincentwei1021-video-shotcraft",
+    "name": "video-shotcraft",
+    "primary_url": "https://github.com/Vincentwei1021/video-shotcraft",
+    "hook": "9.2K stars. Turns Claude Code into a motion-design studio: 157 shot recipe cards, 214 motion previews, 149 sound effects, beat-synced cuts, and 2.5D camera movements — all output as Remotion-based cinematic product or launch videos at 1920×1080/30fps. Includes JianYing/CapCut CN project export. The strongest DESIGN signal for video content this week.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add Vincentwei1021/video-shotcraft"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "94.5K stars, v13.25.3. The session-memory layer for every agent: captures tool usage and agent actions during a session, compresses them with AI, and injects relevant context at the start of future sessions. Real cost-reduction effect — no more re-explaining your stack, architecture, or decisions from scratch every session. Works with Claude Code, Cursor, Codex, Grok Bot, OpenCode, Copilot, and Hermes. New: Grok Bot awareness push pilot.",
+    "categories": ["cost", "skill"],
+    "install": "npx claude-mem install"
+  },
+  {
+    "slug": "othmanadi-planning-with-files",
+    "name": "planning-with-files",
+    "primary_url": "https://github.com/OthmanAdi/planning-with-files",
+    "hook": "27.1K stars, v3.20.5. Manus-style persistent markdown planning for Claude Code: three markdown files on disk survive /clear, compaction, and session crashes. Hooks re-inject plan context at every turn. Blind A/B test: 3/3 wins vs baseline, 96.7% assertion pass rate, average recovery in 5 turns vs 13.3 without. v3.20.5 fixes OpenCode replay tolerance and PowerShell OneDrive write safety. 60+ agent support.",
+    "categories": ["skill"],
+    "install": "npx skills add OthmanAdi/planning-with-files --skill planning-with-files -g"
+  },
+  {
+    "slug": "nanocoai-nanoclaw",
+    "name": "NanoClaw",
+    "primary_url": "https://github.com/nanocoai/nanoclaw",
+    "hook": "30.8K stars, V2. Lightweight container-based Claude Code agent built as an intentional alternative to OpenClaw (which ships ~500K LOC and 53 config files). NanoClaw is one process, a handful of files, and true OS-level isolation: agents run in Docker/Apple Containers and can only see explicitly mounted paths. Connects to WhatsApp, Telegram, Slack, Discord, Teams, iMessage, Matrix, Gmail, and 6 more. Memory, scheduled jobs, and credential vault included. Built directly on Anthropic's Claude Agent SDK.",
+    "categories": ["agents", "tools"],
+    "install": "git clone https://github.com/nanocoai/nanoclaw.git && bash nanoclaw.sh"
+  },
+  {
+    "slug": "k-dense-ai-scientific-agent-skills",
+    "name": "Scientific Agent Skills",
+    "primary_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "hook": "46.1K stars — nearly doubled since May (was 23.4K). The #1 agent skills library for science: 165 validated skills plus access to 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Used by 190,000+ scientists. Each skill encodes correct toolchain invocations so the agent doesn't guess at API arguments. Works with Claude Code, Cursor, Codex, Pi, and Antigravity.",
+    "categories": ["agents", "skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "code-yeongyu-oh-my-openagent",
+    "name": "oh-my-openagent",
+    "primary_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "hook": "69.3K stars, updated Sep 22. A TUI-based graph engineering orchestration tool that coordinates agents across OpenCode, Gemini, OpenAI, and Claude with keyword-based prompt routing. Different from oh-my-claudecode (already covered): oh-my-openagent is model-agnostic, multi-harness, and puts the orchestration graph front-and-center in a terminal UI so you can watch and redirect agent tasks in real time.",
+    "categories": ["agents", "tools"],
+    "install": "See README"
+  },
+  {
+    "slug": "alirezarezvani-claude-skills",
+    "name": "claude-skills (alirezarezvani)",
+    "primary_url": "https://github.com/alirezarezvani/claude-skills",
+    "hook": "26.2K stars. 380 production-ready skills spanning engineering, marketing, compliance, C-level advisory, research, and business operations — the broadest single-repo skills collection in the ecosystem. Ships 727 Python CLI scripts (zero dependencies). Includes a Skill Security Auditor for pre-install malicious-code scanning and three pre-configured personas (Startup CTO, Growth Marketer, Solo Founder). Works across 13 platforms.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add alirezarezvani/claude-skills"
+  },
+  {
+    "slug": "titanwings-distilly",
+    "name": "Distilly",
+    "primary_url": "https://github.com/titanwings/distilly",
+    "hook": "25K stars. Formerly 'Colleague Skill'. Distilly turns source material (Slack messages, emails, Lark/DingTalk logs, PDFs, interviews) into a portable Person Profile packaged as an Agent Skill. Three profile families: colleague (decision patterns from workplace comms), relationship (personal context), and celebrity (six-dimension research pipeline from public sources). Profiles deploy across Claude Code, OpenClaw, Hermes, Pi, Grok Build, DeepSeek Harness, and OpenCode.",
+    "categories": ["skill"],
+    "install": "git clone https://github.com/titanwings/distilly"
+  },
+  {
+    "slug": "yusufkaraaslan-skill-seekers",
+    "name": "Skill Seekers",
+    "primary_url": "https://github.com/yusufkaraaslan/Skill_Seekers",
+    "hook": "15K stars, updated Sep 20. Converts any documentation website, GitHub repository, or PDF into a Claude AI skill — automatically. Includes conflict detection to prevent contradictory instructions from landing in your SKILL.md. Useful for turning vendor docs, internal wikis, or open-source READMEs into installable agent skills without manual extraction.",
+    "categories": ["skill", "tools"],
+    "install": "See README"
+  },
+  {
+    "slug": "eugeniughelbur-obsidian-second-brain",
+    "name": "Obsidian Second Brain",
+    "primary_url": "https://github.com/eugeniughelbur/obsidian-second-brain",
+    "hook": "4.6K stars. v0.15 'The Port' (September 2026) — adds full Windows support alongside macOS and Linux. A Claude Code skill that turns your Obsidian vault into persistent memory: 47 commands for hybrid semantic search, self-rewriting notes, scheduled agents (morning brief, nightly consolidation, weekly review), YouTube transcript ingestion, and podcast summaries. OKM architecture forces every fact to be timeless, dated, or linked — preventing context rot.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add eugeniughelbur/obsidian-second-brain"
+  },
+  {
+    "slug": "anthropic-claude-code-skills-sync",
+    "name": "Claude Code: Skills Sync from claude.ai",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Shipped this week: Claude Code now syncs the skills and plugins enabled on your claude.ai account to any terminal session signed in with that account — no manual re-enabling in the CLI. Also added: a send-now key (ctrl+enter / ctrl+x ctrl+s) that interrupts the current turn and flushes queued messages; improved gateway sign-in flow; and a fix for the 400-error regression (introduced in v2.1.275) when ANTHROPIC_BASE_URL points at a proxy or gateway.",
+    "categories": ["anthropic"],
+    "install": "Update Claude Code: npm install -g @anthropic-ai/claude-code@latest"
+  },
+  {
+    "slug": "nexu-io-open-design",
+    "name": "Open Design",
+    "primary_url": "https://github.com/nexu-io/open-design",
+    "hook": "96.7K+ stars — still the top DESIGN infrastructure item in the ecosystem. Open-source alternative to Claude Design: 151 brand-grade DESIGN.md packages, local-first desktop app routing design tasks to 25+ coding agents (Claude Code, Codex, Cursor, and more). Exports real HTML, PDF, PPTX, and MP4. Hit #1 on GitTrend and crossed 40K stars within two weeks of launch.",
+    "categories": ["design", "tools"],
+    "install": "od mcp install claude-code",
+    "recurring_note": "↑ Day 6 — 96.7K+ stars, still the DESIGN infrastructure anchor"
+  },
+  {
+    "slug": "dietrichgebert-ponytail",
+    "name": "Ponytail",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "hook": "143.6K stars — the #1 COST skill in the ecosystem by star count. Teaches agents to think like the laziest senior dev in the room: check if the task is needed, if something already exists, if a standard library covers it. Benchmarks on a FastAPI + React repo: 54% less code, 20% lower costs, 27% faster execution, 100% safety compliance. Supports 20+ agent platforms.",
+    "categories": ["cost", "skill"],
+    "install": "/plugin marketplace add DietrichGebert/ponytail",
+    "recurring_note": "↑ Day 3 — 143.6K+ stars, still the highest-star COST skill"
+  },
+  {
+    "slug": "juliusbrussee-caveman",
+    "name": "Caveman",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "106.5K+ stars — the undisputed easiest token-savings install. The 'talk like caveman' skill + proxy cuts output tokens 65% and input 33%. Adobe Research documented 1.4–2.4× cost reduction; JetBrains measured 8.5% fewer output tokens with no quality loss. v2.7.0 supports 30+ agents.",
+    "categories": ["cost"],
+    "install": "npx skills add JuliusBrussee/caveman -g",
+    "recurring_note": "↑ Day 5 — 106.5K+ stars, v2.7.0 still current"
+  }
+]
