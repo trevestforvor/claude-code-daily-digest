@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — September 23, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — September 23, 2026</h1><p class="sub">Top 14 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/karanb192/awesome-claude-code-mods">Awesome Claude Code Mods</a></h3>
+  <p class="hook">Every Claude Code mod on GitHub catalogued with a nightly footprint scanner: 72 mods across 142 candidate repos as of Sept 17, each scored L0–L3 by which system hooks they access. Created in the wake of Boris Cherny&#39;s Sept 14 Mods launch, the list fills the discovery gap — community already shipped Tetris-in-Claude, Mermaid inline rendering, and sensitive-data masking within days.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/0x4007/fast-jev-compaction">fast-jev-compaction</a></h3>
+  <p class="hook">4,066 stars and the #3 spot on GitHub Trending Sept 22 (6,070 that day). A Claude Code plugin that replaces the built-in /compact summary with Jev decision-scoring: every tool call gets a yes/no keep verdict in one fast request, stale ones are dropped, kept messages stay verbatim. Explosion tracked by Enterprise DNA Sept 19; usable as both a CLI plugin and an npm library.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">plugin · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.280 — Opus 5.5 Default</a></h3>
+  <p class="hook">Released Sept 22: claude-opus-5-5 is now the default Opus model — 1M context window, $4/$20 per Mtok input/output, $0.20/Mtok cache reads. Also ships mouse-wheel support in /skills fullscreen list, scrollbars in /artifacts and /workflows, dim ◯ indicator for disabled skills vs red ✘ for failed plugins, and fixes Ctrl+C in dialogs quitting instead of closing.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">context</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/knowledge-work-plugins">Anthropic Knowledge Work Plugins</a></h3>
+  <p class="hook">24k stars. Anthropic open-sourced 11 production Claude Code plugins for knowledge workers — sales, legal, finance, and data functions. Each plugin bundles skills, connectors, slash commands, and sub-agents for a specific job role; last updated Sept 14, 2026. Companion to the official plugin system, these serve as reference implementations and drop-in starter packs.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">plugin · anthropic · viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/claude-plugins-official">Claude Plugins Official Directory</a></h3>
+  <p class="hook">36.6k stars. Anthropic&#39;s curated, security-reviewed plugin directory — external plugins must pass Anthropic&#39;s quality bar before inclusion. Plugins follow a standardized plugin.json + MCP server structure; internal Anthropic plugins live alongside vetted third-party contributions. Global rank #979 on star-history.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">plugin · anthropic · viral · marketplace · security</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/matt1398/claude-devtools">claude-devtools</a></h3>
+  <p class="hook">3.9k stars, 349 commits. Reconstructs everything the Claude Code CLI hides: every file path read, tool called, diff applied, and token consumed — structured into a visual timeline with per-turn context attribution, subagent execution trees, and context-window usage. Free, open source, 6 output categories. Install via brew cask.</p>
+  
+  <div class="badges">  </div>
+  <div class="tags">subagent · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>brew install --cask claude-devtools</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/steipete/claude-code-mcp">claude-code-mcp</a></h3>
+  <p class="hook">1.3k stars, by Peter Steinberger. A thin MCP wrapper around the local Claude Code CLI that turns it into a one-shot MCP server — enabling agent-in-agent: any outer agent can delegate coding subtasks to a Claude Code instance via standard MCP calls. Default behavior starts Claude Code with --dangerously-skip-permissions for automation.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/grahama1970/claude-code-mcp-enhanced">claude-code-mcp-enhanced</a></h3>
+  <p class="hook">Enhanced fork of the Claude Code MCP server adding orchestration capabilities, reliability improvements, and self-contained execution patterns. Designed for production multi-agent setups where the vanilla MCP wrapper is too fragile; adds retry logic, structured output schemas, and composable agent primitives on top of the base Claude Code CLI bridge.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">agent · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/av/skilled">Skilled — Cross-Agent Skill Dashboard</a></h3>
+  <p class="hook">TUI live dashboard aggregating skill usage stats across Claude Code, OpenCode, Codex, Grok CLI, and Droid — reads local history files with zero network and zero telemetry. 30 fps terminal display with bar charts, 16-week activity heatmap, and hourly histogram. Provides a unified view of which skills you actually use across every AI coding agent.</p>
+  
+  <div class="badges">  </div>
+  <div class="tags">skill · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/ComposioHQ/awesome-claude-skills">awesome-claude-skills (Composio)</a></h3>
+  <p class="hook">74.7k stars, global rank #238. Composio&#39;s curated list of Claude Skills with a strong SaaS workflow-integration angle — covers skills that connect Claude Code to external APIs, databases, and automation platforms. Active companion to their Composio tooling ecosystem.</p>
+  
+  <div class="badges">  </div>
+  <div class="tags">viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/hesreallyhim/awesome-claude-code">awesome-claude-code</a></h3>
+  <p class="hook">47.6k stars. Hand-picked collection covering the full Claude Code ecosystem: skills, agents, status lines, developer tooling, and plugins — curated with editorial judgment rather than automated scraping. Described as &#39;the best starting point&#39; for discovering high-quality Claude Code resources across the community.</p>
+  
+  <div class="badges">  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/SKZL-AI/boris-cherny-claude-code-playbook">Boris Cherny Claude Code Playbook</a></h3>
+  <p class="hook">132 Claude Code tips distilled from Boris Cherny (Head of Claude Code, Anthropic) — auto-updated 2-3x daily from public posts, with a visual dashboard featuring filters and a timeline. German-language curation with one-shot Implementation Guide for auto-setup. Direct feed of the thinking from the person shipping Claude Code.</p>
+  
+  <div class="badges">  </div>
+  <div class="tags">anthropic</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/zai-org/ZCode">ZCode — Z.ai Coding Agent Harness</a></h3>
+  <p class="hook">5,938 stars, #4 on GitHub Trending Sept 22. Z.ai&#39;s TypeScript coding agent harness — desktop app, web interface, and terminal agent all managed through a unified `zcode` command. Extensible and multi-model; positions itself as a next-generation Claude Code-compatible harness for teams that want to run any coding agent with their own subscription.</p>
+  
+  <div class="badges">  </div>
+  <div class="tags">harness · cost · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/claude-plugins-community">Claude Plugins Community Marketplace</a></h3>
+  <p class="hook">Anthropic&#39;s read-only GitHub mirror of the community plugin marketplace for Claude Cowork and Claude Code. New plugin submissions go to clau.de/plugin-directory-submission; the mirror provides a browsable, forkable record of every community plugin in the directory. Companion to claude-plugins-official for the vetted-but-community-authored tier.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">plugin · anthropic · marketplace</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
