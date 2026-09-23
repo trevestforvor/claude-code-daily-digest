@@ -1,0 +1,112 @@
+[
+  {
+    "slug": "karanb192-awesome-claude-code-mods",
+    "name": "Awesome Claude Code Mods",
+    "primary_url": "https://github.com/karanb192/awesome-claude-code-mods",
+    "hook": "Every Claude Code mod on GitHub catalogued with a nightly footprint scanner: 72 mods across 142 candidate repos as of Sept 17, each scored L0–L3 by which system hooks they access. Created in the wake of Boris Cherny's Sept 14 Mods launch, the list fills the discovery gap — community already shipped Tetris-in-Claude, Mermaid inline rendering, and sensitive-data masking within days.",
+    "categories": ["design"]
+  },
+  {
+    "slug": "fast-jev-compaction",
+    "name": "fast-jev-compaction",
+    "primary_url": "https://github.com/0x4007/fast-jev-compaction",
+    "hook": "4,066 stars and the #3 spot on GitHub Trending Sept 22 (6,070 that day). A Claude Code plugin that replaces the built-in /compact summary with Jev decision-scoring: every tool call gets a yes/no keep verdict in one fast request, stale ones are dropped, kept messages stay verbatim. Explosion tracked by Enterprise DNA Sept 19; usable as both a CLI plugin and an npm library.",
+    "categories": ["cost"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-code-v2-1-280",
+    "name": "Claude Code v2.1.280 — Opus 5.5 Default",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Released Sept 22: claude-opus-5-5 is now the default Opus model — 1M context window, $4/$20 per Mtok input/output, $0.20/Mtok cache reads. Also ships mouse-wheel support in /skills fullscreen list, scrollbars in /artifacts and /workflows, dim ◯ indicator for disabled skills vs red ✘ for failed plugins, and fixes Ctrl+C in dialogs quitting instead of closing.",
+    "categories": ["cost"]
+  },
+  {
+    "slug": "anthropics-knowledge-work-plugins",
+    "name": "Anthropic Knowledge Work Plugins",
+    "primary_url": "https://github.com/anthropics/knowledge-work-plugins",
+    "hook": "24k stars. Anthropic open-sourced 11 production Claude Code plugins for knowledge workers — sales, legal, finance, and data functions. Each plugin bundles skills, connectors, slash commands, and sub-agents for a specific job role; last updated Sept 14, 2026. Companion to the official plugin system, these serve as reference implementations and drop-in starter packs.",
+    "categories": ["mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "anthropics-claude-plugins-official",
+    "name": "Claude Plugins Official Directory",
+    "primary_url": "https://github.com/anthropics/claude-plugins-official",
+    "hook": "36.6k stars. Anthropic's curated, security-reviewed plugin directory — external plugins must pass Anthropic's quality bar before inclusion. Plugins follow a standardized plugin.json + MCP server structure; internal Anthropic plugins live alongside vetted third-party contributions. Global rank #979 on star-history.",
+    "categories": ["mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "matt1398-claude-devtools",
+    "name": "claude-devtools",
+    "primary_url": "https://github.com/matt1398/claude-devtools",
+    "hook": "3.9k stars, 349 commits. Reconstructs everything the Claude Code CLI hides: every file path read, tool called, diff applied, and token consumed — structured into a visual timeline with per-turn context attribution, subagent execution trees, and context-window usage. Free, open source, 6 output categories. Install via brew cask.",
+    "categories": [],
+    "install": "brew install --cask claude-devtools"
+  },
+  {
+    "slug": "steipete-claude-code-mcp",
+    "name": "claude-code-mcp",
+    "primary_url": "https://github.com/steipete/claude-code-mcp",
+    "hook": "1.3k stars, by Peter Steinberger. A thin MCP wrapper around the local Claude Code CLI that turns it into a one-shot MCP server — enabling agent-in-agent: any outer agent can delegate coding subtasks to a Claude Code instance via standard MCP calls. Default behavior starts Claude Code with --dangerously-skip-permissions for automation.",
+    "categories": ["mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "grahama-claude-code-mcp-enhanced",
+    "name": "claude-code-mcp-enhanced",
+    "primary_url": "https://github.com/grahama1970/claude-code-mcp-enhanced",
+    "hook": "Enhanced fork of the Claude Code MCP server adding orchestration capabilities, reliability improvements, and self-contained execution patterns. Designed for production multi-agent setups where the vanilla MCP wrapper is too fragile; adds retry logic, structured output schemas, and composable agent primitives on top of the base Claude Code CLI bridge.",
+    "categories": ["mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "av-skilled",
+    "name": "Skilled — Cross-Agent Skill Dashboard",
+    "primary_url": "https://github.com/av/skilled",
+    "hook": "TUI live dashboard aggregating skill usage stats across Claude Code, OpenCode, Codex, Grok CLI, and Droid — reads local history files with zero network and zero telemetry. 30 fps terminal display with bar charts, 16-week activity heatmap, and hourly histogram. Provides a unified view of which skills you actually use across every AI coding agent.",
+    "categories": [],
+    "install": "See README"
+  },
+  {
+    "slug": "composio-awesome-claude-skills",
+    "name": "awesome-claude-skills (Composio)",
+    "primary_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "hook": "74.7k stars, global rank #238. Composio's curated list of Claude Skills with a strong SaaS workflow-integration angle — covers skills that connect Claude Code to external APIs, databases, and automation platforms. Active companion to their Composio tooling ecosystem.",
+    "categories": [],
+    "install": "See README"
+  },
+  {
+    "slug": "hesreallyhim-awesome-claude-code",
+    "name": "awesome-claude-code",
+    "primary_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "hook": "47.6k stars. Hand-picked collection covering the full Claude Code ecosystem: skills, agents, status lines, developer tooling, and plugins — curated with editorial judgment rather than automated scraping. Described as 'the best starting point' for discovering high-quality Claude Code resources across the community.",
+    "categories": [],
+    "install": "See README"
+  },
+  {
+    "slug": "skzl-ai-boris-cherny-playbook",
+    "name": "Boris Cherny Claude Code Playbook",
+    "primary_url": "https://github.com/SKZL-AI/boris-cherny-claude-code-playbook",
+    "hook": "132 Claude Code tips distilled from Boris Cherny (Head of Claude Code, Anthropic) — auto-updated 2-3x daily from public posts, with a visual dashboard featuring filters and a timeline. German-language curation with one-shot Implementation Guide for auto-setup. Direct feed of the thinking from the person shipping Claude Code.",
+    "categories": [],
+    "install": "See README"
+  },
+  {
+    "slug": "zai-org-zcode",
+    "name": "ZCode — Z.ai Coding Agent Harness",
+    "primary_url": "https://github.com/zai-org/ZCode",
+    "hook": "5,938 stars, #4 on GitHub Trending Sept 22. Z.ai's TypeScript coding agent harness — desktop app, web interface, and terminal agent all managed through a unified `zcode` command. Extensible and multi-model; positions itself as a next-generation Claude Code-compatible harness for teams that want to run any coding agent with their own subscription.",
+    "categories": [],
+    "install": "See README"
+  },
+  {
+    "slug": "anthropics-claude-plugins-community",
+    "name": "Claude Plugins Community Marketplace",
+    "primary_url": "https://github.com/anthropics/claude-plugins-community",
+    "hook": "Anthropic's read-only GitHub mirror of the community plugin marketplace for Claude Cowork and Claude Code. New plugin submissions go to clau.de/plugin-directory-submission; the mirror provides a browsable, forkable record of every community plugin in the directory. Companion to claude-plugins-official for the vetted-but-community-authored tier.",
+    "categories": ["mcp"],
+    "install": "See README"
+  }
+]
