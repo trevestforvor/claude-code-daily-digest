@@ -1,0 +1,114 @@
+[
+  {
+    "slug": "headroomlabs-ai-headroom",
+    "name": "Headroom",
+    "primary_url": "https://github.com/headroomlabs-ai/headroom",
+    "secondary_urls": ["https://docs.headroomlabs.ai/docs"],
+    "hook": "Context compression layer that cuts 20–95% of tokens before they reach any LLM — 21% off code searches, 57% off SRE debugging sessions, 42% off codebase exploration, and 60–95% on JSON payloads. Ships as library, proxy, agent wrapper, and MCP server. Created by a Netflix engineer to solve a personal $200/day problem. Apache 2.0, 73.7k stars, actively updated Sep 24.",
+    "categories": ["cost", "mcp"],
+    "install": "pip install \"headroom-ai[all]\""
+  },
+  {
+    "slug": "diegosouzapw-omniroute",
+    "name": "OmniRoute",
+    "primary_url": "https://github.com/diegosouzapw/OmniRoute",
+    "secondary_urls": ["https://www.omniroute.online/"],
+    "hook": "Free MIT AI gateway: one endpoint, 359 providers (150+ free), 1,200+ models — Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Quota-aware auto-fallback keeps agents coding when any provider hits its limit. Built-in RTK+Caveman compression saves 15–95% tokens. Works with Claude Code, Codex, Cursor, OpenCode, Cline, and Copilot. 69.8k stars, updated Sep 24.",
+    "categories": ["cost"],
+    "install": "npm install -g omniroute && omniroute setup-claude"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "Superpowers",
+    "primary_url": "https://github.com/obra/superpowers",
+    "secondary_urls": ["https://www.mdskills.ai/plugins/superpowers"],
+    "hook": "Complete SDLC skills framework — 14 composable markdown files that enforce engineering discipline across the full cycle: brainstorm → worktree → plan → subagent execution → TDD → code review. Same folder works across Claude Code, Cursor, Codex, Copilot, Gemini CLI, and OpenCode. 280k+ stars and 25k+ forks. Philosophy: what AI coding agents are missing is not capability but discipline — and discipline distributes as plain text.",
+    "categories": ["skill", "viral"],
+    "install": "npx -y skills add obra/superpowers --agent claude-code"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "Matt Pocock Skills",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "secondary_urls": ["https://www.aihero.dev/skills"],
+    "hook": "38 agent skills straight from Matt Pocock's .agents directory — the Total TypeScript creator built these to fix four coding-agent failure modes: misalignment, verbosity, broken code, and poor architecture. Highlights: tdd, diagnosing-bugs, code-review, codebase-design, grill-with-docs, wayfinder. 269k stars. Install as a managed read-only bundle (updates auto) or editable copies you own.",
+    "categories": ["skill", "viral"],
+    "install": "npx skills@latest add mattpocock/skills"
+  },
+  {
+    "slug": "wshobson-agents",
+    "name": "wshobson/agents",
+    "primary_url": "https://github.com/wshobson/agents",
+    "secondary_urls": [],
+    "hook": "Multi-harness plugin marketplace: 94 plugins, 202 agents, 183 skills, 105 commands, and 16 orchestrators — all generated from one Markdown source and shipped as idiomatic artifacts for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Google Antigravity, and Pi. MIT, 39.9k stars, 576 commits.",
+    "categories": ["plugin"],
+    "install": "/plugin marketplace add wshobson/agents"
+  },
+  {
+    "slug": "voltAgent-awesome-agent-skills",
+    "name": "Awesome Agent Skills (VoltAgent)",
+    "primary_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "secondary_urls": [],
+    "hook": "1,000+ curated agent skills from official engineering teams — not AI-generated — covering Angular, Stripe, Vercel, Cloudflare, Netlify, Firebase, Hugging Face, Replicate, Sentry, HashiCorp, and more. Updated Sep 23. 34.8k stars. Works across Claude Code, Gemini CLI, Cursor, and VoltAgent's own framework.",
+    "categories": ["skill", "marketplace"],
+    "install": "See README"
+  },
+  {
+    "slug": "teng-lin-notebooklm-py",
+    "name": "notebooklm-py",
+    "primary_url": "https://github.com/teng-lin/notebooklm-py",
+    "secondary_urls": [],
+    "hook": "Full programmatic access to Google Gemini Notebook (NotebookLM) — including features the web UI doesn't expose. Source management, podcast/video/quiz/flashcard generation, grounded chat, and bulk exports, all via Python, CLI, MCP server, or agent skill for Claude Code, Codex, and OpenClaw. MIT, 19.5k stars, updated Sep 23.",
+    "categories": ["mcp", "skill"],
+    "install": "uv tool install \"notebooklm-py[browser]\" && notebooklm login"
+  },
+  {
+    "slug": "simonlee2-video-digest",
+    "name": "video-digest (simonlee2)",
+    "primary_url": "https://github.com/simonlee2/claude-plugins",
+    "secondary_urls": ["https://www.skills.sh/simonlee2"],
+    "hook": "Claude Code skill (Sep 3, 2026) that turns any YouTube playlist, conference stream, or local video files into a shareable web digest — TL;DRs, key takeaways, and slides paired to narration. Part of simonlee2's 8-skill collection. Works on Claude Code, Cursor, and other agents via the skills CLI.",
+    "categories": ["skill"],
+    "install": "npx skills add simonlee2/claude-plugins"
+  },
+  {
+    "slug": "anthropic-claude-plugin-eval",
+    "name": "claude plugin eval (Week 37)",
+    "primary_url": "https://code.claude.com/docs/en/whats-new",
+    "secondary_urls": [],
+    "hook": "New `claude plugin eval` command (shipped Week 37, v2.1.263–269) runs your plugin against a suite of test cases, scores results, and compares against a no-plugin baseline — `claude plugin eval init` auto-drafts the cases and graders. Closes the gap between publishing a skill and knowing whether it actually improves Claude's output.",
+    "categories": ["anthropic"],
+    "install": "claude plugin eval init"
+  },
+  {
+    "slug": "anthropic-skill-doctor",
+    "name": "/skill-doctor (Week 36)",
+    "primary_url": "https://code.claude.com/docs/en/whats-new",
+    "secondary_urls": [],
+    "hook": "New `/skill-doctor` command (shipped Week 36, v2.1.251–261) shows what each of your installed skills costs in context tokens and how often it gets invoked — the first built-in observability tool for the Claude Code skills layer. Identifies dead weight, over-loaded skills, and which ones are actually earning their token budget.",
+    "categories": ["anthropic"],
+    "install": "/skill-doctor"
+  },
+  {
+    "slug": "claude-academy-26-courses",
+    "name": "Claude Academy — 26 Courses",
+    "primary_url": "https://academy.claude.com",
+    "secondary_urls": [
+      "https://anthropic.skilljar.com/claude-code-101",
+      "https://anthropic.skilljar.com/claude-code-in-action"
+    ],
+    "hook": "Anthropic's free learning platform (rebranded from Anthropic Academy) has expanded to 26 courses across 5 tracks — up from ~6 at launch. Highlights: Claude Code 101 (agentic loop, CLAUDE.md, MCP, hooks), Claude Code in Action (production workflows), and Building with Claude API. Every course is free with completion certificates. academy.claude.com.",
+    "categories": ["anthropic"],
+    "install": "",
+    "recurring_note": "↑ Expanded to 26 courses — original Skilljar entry in submissions.json (Apr 24)"
+  },
+  {
+    "slug": "wjgoarxiv-youtube-digest-skill",
+    "name": "youtube-digest-skill",
+    "primary_url": "https://github.com/wjgoarxiv/youtube-digest-skill",
+    "secondary_urls": [],
+    "hook": "Claude Code / Codex / Gemini skill that transforms any YouTube video into structured knowledge: TL;DR, key takeaways, timestamped claims, topic timeline, and notable quotes in a single slash command. Pairs well with simonlee2's video-digest for conference-stream digests vs. individual deep-dives.",
+    "categories": ["skill"],
+    "install": "npx skills add wjgoarxiv/youtube-digest-skill"
+  }
+]
