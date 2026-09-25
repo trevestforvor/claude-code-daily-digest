@@ -1,0 +1,93 @@
+[
+  {
+    "slug": "rohitg00-awesome-claude-design",
+    "name": "awesome-claude-design",
+    "primary_url": "https://github.com/rohitg00/awesome-claude-design",
+    "secondary_urls": [],
+    "hook": "DESIGN.md prompts organized by aesthetic family — brutalist, cinematic, data-dense, editorial, glass, indie, playful, remix, terminal, warm — plus remix recipes, video teardowns, and a community showcase of shipped UI. 1.1k stars and actively maintained. Same creator as rohitg00/awesome-claude-code-toolkit (#1 trending on GitHub in February). Drop any DESIGN.md into your repo root to anchor Claude Code's design taste to a single aesthetic.",
+    "categories": ["design"],
+    "install": "See README"
+  },
+  {
+    "slug": "getappz-lean-ctx",
+    "name": "LeanCTX",
+    "primary_url": "https://github.com/getappz/lean-ctx",
+    "secondary_urls": ["https://lobehub.com/mcp/lean-ctx-lean-ctx"],
+    "hook": "Context intelligence layer for AI agents: one local Rust binary that decides what agents read, compresses what they send, remembers what they learn, guards what they touch, and proves what they save — 60–90% fewer tokens as the receipt. Ships 76 MCP tools, AST-aware compression for 18 languages, 10 read modes, and session caching. Local-first, zero dependencies beyond Rust. Works with Claude Code, Cursor, Copilot, Windsurf, Codex, Gemini, and 30+ other agents. 2,330+ stars.",
+    "categories": ["cost", "mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "agricidaniel-claude-seo",
+    "name": "claude-seo",
+    "primary_url": "https://github.com/AgriciDaniel/claude-seo",
+    "secondary_urls": ["https://claude-seo.md/"],
+    "hook": "v2.4.0 shipped September 24: adds a new `/seo` agentic audit for AI agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt compliance) plus an optional Matomo extension and secure installers. 17,547 stars and 2,572 forks. Covers 26 sub-skills + 19 sub-agents across technical SEO, E-E-A-T, schema, GEO/AEO, backlinks, local SEO, e-commerce, international SEO, and Google APIs with PDF/Excel reporting. Nine optional extensions including DataForSEO, Firecrawl, and Ahrefs. MIT license.",
+    "categories": ["skill"],
+    "install": "npx claude-seo install"
+  },
+  {
+    "slug": "anthropic-claude-code-v2-1-282",
+    "name": "Claude Code v2.1.282",
+    "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.282",
+    "secondary_urls": ["https://code.claude.com/docs/en/changelog"],
+    "hook": "Released September 24: the `maxProseWidth` setting caps Claude's prose width in wide terminals while keeping tables and code blocks full-width — stops responses from sprawling across ultra-wide panes. Also adds the `allowClaudeInChromeWithManagedMcp` managed setting so `claude --chrome` coexists with an exclusive `managed-mcp.json`, plus telemetry variable listings in `/status` and `claude doctor`, and a scrollbar in the `/feedback` drafts list. Fixes 400-error failures in conversations whose history holds encrypted web search results the API can no longer decrypt.",
+    "categories": ["anthropic"],
+    "install": "npm install -g @anthropic-ai/claude-code@latest"
+  },
+  {
+    "slug": "google-artemis",
+    "name": "ARTEMIS",
+    "primary_url": "https://github.com/google/artemis",
+    "secondary_urls": [],
+    "hook": "Google's Pixel Test Engineering team open-sourced ARTEMIS on September 9: natural-language instructions → reliable Android automation. Achieves 99%+ success on Google Research's AndroidWorld Benchmark. Ships a native MCP server so Claude Code, Codex, Antigravity, and Windsurf can drive real Android devices from any chat or terminal interface. One-click install sets up ADB, scrcpy, and FFmpeg and configures MCP automatically. Apache 2.0. 9,800 stars and 974 forks in its first two weeks.",
+    "categories": ["mcp"],
+    "install": "git clone https://github.com/google/artemis.git && cd artemis && ./start.sh"
+  },
+  {
+    "slug": "anthropic-claude-opus-5-5",
+    "name": "Claude Opus 5.5",
+    "primary_url": "https://www.anthropic.com/claude-opus-5-5",
+    "secondary_urls": ["https://9to5mac.com/2026/09/22/anthropic-upgrades-claude-with-new-opus-5-5-model-details-here/"],
+    "hook": "Released September 22: Claude Opus 5.5 performs at Fable 5.1 level while costing 40% less than Opus 5 — $4/$20 per MTok (in/out), $0.20/MTok cache reads, 30% faster output speed. 1M token context window, 128k max output, always-on adaptive thinking. Anthropic's strongest-performing model on its behavioral audit to date, with notably better prompt-injection resistance and first Opus to launch with Fable 5.1–equivalent safeguards for biology and cybersecurity. Available on AWS, Google Cloud, and Azure; API ID: `claude-opus-5-5`.",
+    "categories": ["anthropic", "cost"],
+    "install": "model: claude-opus-5-5"
+  },
+  {
+    "slug": "jeurtr-seedance-skill",
+    "name": "seedance-skill",
+    "primary_url": "https://github.com/jeurtr/seedance-skill",
+    "secondary_urls": ["https://mcpmarket.com/tools/skills/bytedance-seedance-2-5-video-generator"],
+    "hook": "Comprehensive Claude Code skill for ByteDance Seedance 2.5: generates cinematic 4K videos up to 30 seconds, supporting pure text-to-video and multimodal prompting with up to 30 reference images, 10 reference videos, and 10 reference audio tracks. Consolidates best practices and operational knowledge from 6 community repos into one skill file. Chase AI (109K subs) featured Seedance 2.5 workflows in August.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add jeurtr/seedance-skill",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "agricidaniel-claude-blog",
+    "name": "claude-blog",
+    "primary_url": "https://github.com/AgriciDaniel/claude-blog",
+    "secondary_urls": ["https://claude-seo.md/"],
+    "hook": "From the creator of claude-seo: 30 sub-skills + 5 agents that write, optimize, audit, localize, and refresh blog content at scale. A 5-gate Blog Delivery Contract (v1.9.0) enforces quality at each stage; dual-optimized output ranks for both Google Search and AI citation engines. 1.2k stars, v2.2.0 released August 26. MIT license.",
+    "categories": ["skill"],
+    "install": "npx skills add AgriciDaniel/claude-blog"
+  },
+  {
+    "slug": "ghuntley-how-to-ralph-wiggum",
+    "name": "How to Ralph Wiggum",
+    "primary_url": "https://github.com/ghuntley/how-to-ralph-wiggum",
+    "secondary_urls": ["https://ghuntley.com/ralph/"],
+    "hook": "Geoffrey Huntley's AI development methodology that reduces software costs to \"less than a fast food worker's wage\" by running the agent in a persistent shell loop: re-prompt on every stop until compiler, linter, and tests all pass. Named after the Simpsons character for its cheerful persistence. Going increasingly viral on social media. 1,200–1,400 stars; also ships as an official plugin at `anthropics/claude-code/plugins/ralph-wiggum` and a community implementation at `burakkaygusuz/ralph-wiggum`.",
+    "categories": ["skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-world-trend-pulse",
+    "name": "trend-pulse",
+    "primary_url": "https://github.com/claude-world/trend-pulse",
+    "secondary_urls": ["https://glama.ai/mcp/servers/claude-world/trend-pulse"],
+    "hook": "Free trending topics aggregator with 20 data sources and zero authentication required. Ships as a CLI, Python library, and MCP Server for Claude Code. Returns normalized scores 0–100 across all sources for cross-platform comparison, with timestamps, geographic breakdowns, categories, trend velocity, and keyword extraction. Type `@trend-pulse what's trending on Hacker News today?` and Claude fetches live data. No Cloudflare account needed — Cloudflare is optional for extended rate limits.",
+    "categories": ["mcp"],
+    "install": "npx @claude-world/trend-pulse"
+  }
+]
