@@ -1,0 +1,71 @@
+[
+  {
+    "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+    "name": "UI/UX Pro Max Skill",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "secondary_urls": ["https://ui-ux-pro-max-skill.com/"],
+    "hook": "The most-installed community design skill on GitHub just crossed 131k stars — up 49k since May — and the v2.0 redesign ships 192 Industry-Specific Reasoning Rules, 161 color palettes, 57 font pairings, 99 UX guidelines, 25 chart types, and 16 tech stacks (React, Next.js, Vue, Svelte, SwiftUI, Flutter, and more). Multiple YouTube videos this week covering the upgrade, with Chase AI singling it out as 'the #1 Claude Code design skill.'",
+    "categories": ["design", "skill"],
+    "install": "npm install -g ui-ux-pro-max-cli && uipro init --ai claude",
+    "recurring_note": "↑ Day recurring — 131k stars (+49k since May 24 digest), still GitHub's most-starred community design skill"
+  },
+  {
+    "slug": "egonex-ai-understand-anything",
+    "name": "Understand Anything",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "hook": "Turns any codebase into an interactive knowledge graph: auto-generated guided tours ordered by dependency, semantic and fuzzy search, diff impact analysis showing which system components a change touches, and multi-language output (English, Chinese, Japanese, Korean, Russian, Spanish, Turkish). 84.3k stars and Charlie Automates dedicated a full blog post to it. Drop one JSON file in a repo and teammates skip re-analysis entirely.",
+    "categories": ["design", "skill"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/Egonex-AI/Understand-Anything/main/install.sh | bash",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "shanraisshan-claude-code-best-practice",
+    "name": "Claude Code Best Practice",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "GitHub Trending #1 today with 64k+ stars across hundreds of forks — 'from vibe coding to agentic engineering, practice makes Claude perfect.' Distills 176 tips from 17 high-starred repositories (500k+ combined stars) and an 83-item tricks collection sourced from Boris Cherny (Claude Code's creator at Anthropic) and Thariq. Covers every Claude Code primitive: agents, commands, skills, hooks, workflows, MCP servers, plugins, and memory — with a complete command→agent→skill flow walkthrough. Nothing to install.",
+    "categories": ["skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "sickn33-agentic-awesome-skills",
+    "name": "Agentic Awesome Skills (AAS)",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "hook": "The cross-platform skill library just shipped v18.7.0 with 2,474 installable SKILL.md playbooks spanning brainstorming, systematic debugging, spec wargaming, and dozens of other workflows. Works as a local agent-first control plane: the agent discovers, selects, and validates its own stack rather than you doing it manually. 47k stars. Supports Claude Code, Codex, Cursor, Gemini CLI, Kiro, OpenCode, GitHub Copilot, and Autohand Code in one install.",
+    "categories": ["skill"],
+    "install": "npm exec --yes --ignore-scripts --package=agentic-awesome-skills@18.7.0 -- agentic-awesome-skills --skills brainstorming,systematic-debugging --path .agents/skills"
+  },
+  {
+    "slug": "coldteadotai-pr-lens",
+    "name": "PR Lens",
+    "primary_url": "https://github.com/coldteadotai/pr-lens",
+    "secondary_urls": ["https://prlens.dev/"],
+    "hook": "Draws every pull request as an animated architecture and data-flow walkthrough posted inside the PR itself — one dot crossing one arrow at a time in execution order. Click any arrow to open the payload beside the graph (request/response shapes, highlighted mutations). Runs as a GitHub App, GitHub Action, GitLab CI component, Bitbucket pipe, CLI, or a Claude Code skill. Differentiates from Claude Code Review by showing what the whole change is rather than which line is wrong. 1.7k stars.",
+    "categories": ["design", "mcp"],
+    "install": "npx skills add coldteadotai/pr-lens"
+  },
+  {
+    "slug": "zenstory-ai-oh-story-claudecode",
+    "name": "Oh Story (oh-story-claudecode)",
+    "primary_url": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "hook": "13 skills that turn Claude Code into a complete workflow for writing Chinese web novels (网文): 扫榜 (chart-scanning to pick genre and cast), 拆文 (deconstructing top-ranked works into reusable plot modules), commercial drafting with hooks and payoff pacing, 去AI味 (removing AI-flavored prose patterns), and cover generation. File-based continuity tracking keeps long serials coherent across sessions. Updated Sep 27, ~7k stars, works across Claude Code, Codex, OpenCode, and Google Antigravity.",
+    "categories": ["skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "elementalsouls-claude-bughunter",
+    "name": "Claude-BugHunter",
+    "primary_url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "hook": "Skill bundle that turns Claude Code into an authorized security testing assistant: 83 skills covering 58 vulnerability classes, patterns extracted from 681 publicly disclosed bug reports, 15 slash commands including /hunt for engagement scaffolding, and enterprise platform coverage for M365/Entra, Okta, vCenter, and SSL VPN appliances. Built-in validation gates enforce scope and authorization before any testing begins. Burp Suite MCP integration for interactive workflows. 4.7k stars.",
+    "categories": ["skill", "mcp"],
+    "install": "/plugin marketplace add elementalsouls/Claude-BugHunter"
+  },
+  {
+    "slug": "florianbruniaux-claude-code-ultimate-guide",
+    "name": "Claude Code Ultimate Guide",
+    "primary_url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+    "secondary_urls": ["https://cc.bruniaux.com/"],
+    "hook": "430K+ lines covering every layer of Claude Code from setup to production: agentic workflows, hooks, skills, MCP servers, quizzes, cheat sheets, and production-ready templates. The resource-evaluations section assesses 15+ popular repos so you don't have to read each one cold. 5.9k stars, added to the awesome-claude-code index (issue #652). Nothing to install — reference material you open before starting a new project.",
+    "categories": ["skill"],
+    "install": "See README"
+  }
+]
