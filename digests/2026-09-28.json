@@ -1,0 +1,100 @@
+[
+  {
+    "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+    "name": "UI/UX Pro Max Skill",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "secondary_urls": ["https://ui-ux-pro-max-skill.com/"],
+    "hook": "Day 2 on GitHub Trending at 131k stars — the most-installed community design skill for Claude Code keeps climbing. The v2.0 redesign ships 192 Industry-Specific Reasoning Rules, 161 color palettes, 57 font pairings, 99 UX guidelines, 25 chart types, and 16 tech stacks from React and Next.js to SwiftUI and Flutter. Chase AI's August breakdown of the upgrade is still compounding views and driving first-time installs.",
+    "categories": ["design", "skill"],
+    "install": "npm install -g ui-ux-pro-max-cli && uipro init --ai claude",
+    "recurring_note": "↑ Day 2 — 131k stars; Chase AI Aug 4 coverage still driving traffic; highest-starred community design skill on GitHub"
+  },
+  {
+    "slug": "egonex-ai-understand-anything",
+    "name": "Understand Anything",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "hook": "84.3k stars on the codebase knowledge graph tool still trending after its debut yesterday. Drop one JSON config in your repo and teammates get auto-generated guided tours ordered by dependency, semantic fuzzy search, and diff impact analysis that maps which system components any change actually touches. Multi-language output covers English, Chinese, Japanese, Korean, Russian, Spanish, and Turkish — skip re-analysis when your team or language changes.",
+    "categories": ["design", "skill"],
+    "install": "curl -fsSL https://raw.githubusercontent.com/Egonex-AI/Understand-Anything/main/install.sh | bash",
+    "recurring_note": "↑ Day 2 — 84.3k stars; Charlie Automates blog coverage surfacing in search results"
+  },
+  {
+    "slug": "coldteadotai-pr-lens",
+    "name": "PR Lens",
+    "primary_url": "https://github.com/coldteadotai/pr-lens",
+    "secondary_urls": ["https://prlens.dev/"],
+    "hook": "1.7k stars on the PR visualization tool that posts animated architecture and data-flow walkthroughs inside each pull request. Dots cross arrows in execution order; click any arrow and the request/response shapes expand next to the graph. Runs as a GitHub App, GitHub Action, GitLab CI component, Bitbucket pipe, CLI, or Claude Code skill. Fills the gap Claude Code Review leaves: it shows what the whole change is, not just which line is wrong.",
+    "categories": ["design", "mcp"],
+    "install": "npx skills add coldteadotai/pr-lens",
+    "recurring_note": "↑ Day 2 — 1.7k stars"
+  },
+  {
+    "slug": "yetone-magpie",
+    "name": "Magpie",
+    "primary_url": "https://github.com/yetone/magpie",
+    "hook": "Menu bar app that routes Claude Code, OpenAI Codex, Gemini CLI, and OpenCode through a single shared subscription — switch providers and models without touching API keys or pausing your agent. Ships 50+ provider presets, MCP and skills management, usage profiles, and cross-agent credential sharing. Grew from 1.4k to 1.7k stars overnight on GitHub Trending as engineers discovered it cuts multi-agent subscription costs.",
+    "categories": ["cost", "plugin"],
+    "install": "curl -fsSL https://usemagpie.ai/install.sh | sh"
+  },
+  {
+    "slug": "dzhng-jevgrep",
+    "name": "jevgrep",
+    "primary_url": "https://github.com/dzhng/jevgrep",
+    "hook": "Semantic code search CLI built for coding agents: describes files, functions, and interfaces in natural language instead of returning noisy raw line matches. The author benchmarks it at ~30% lower coding-agent cost from the reduced context overhead vs. grep or ripgrep. `jg skill` wires it into Claude Code so every search uses it automatically. 1.2k stars on its first appearance in GitHub Trending.",
+    "categories": ["cost", "skill"],
+    "install": "npm install -g @dzhng/jevgrep && jg auth && jg skill"
+  },
+  {
+    "slug": "shanraisshan-claude-code-best-practice",
+    "name": "Claude Code Best Practice",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "GitHub Trending #1 for a second straight day: 64k+ stars and growing. Distills 176 tips from 17 high-starred repos (500k+ combined stars) and an 83-item trick list sourced directly from Boris Cherny — Claude Code's creator at Anthropic — plus Thariq. Covers every Claude Code primitive from agents and commands through hooks, MCP servers, plugins, and memory, with a complete command→agent→skill flow walkthrough you can step through cold.",
+    "categories": ["skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — 64k stars; GitHub Trending #1 both days"
+  },
+  {
+    "slug": "sickn33-agentic-awesome-skills",
+    "name": "Agentic Awesome Skills (AAS)",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "hook": "v18.7.0 ships 2,474 installable SKILL.md playbooks updated September 27 — the 47k-star cross-platform library's latest checkpoint. An agent-first control plane lets the agent discover, select, and validate its own skill stack without manual configuration. One install covers Claude Code, Codex, Cursor, Gemini CLI, Kiro, OpenCode, GitHub Copilot, and Autohand Code simultaneously.",
+    "categories": ["skill"],
+    "install": "npm exec --yes --ignore-scripts --package=agentic-awesome-skills@18.7.0 -- agentic-awesome-skills --skills brainstorming,systematic-debugging --path .agents/skills",
+    "recurring_note": "↑ Day 2 — 47k stars; v18.7.0 shipped Sept 27"
+  },
+  {
+    "slug": "mikehasa-golive-skill",
+    "name": "golive-skill",
+    "primary_url": "https://github.com/mikehasa/golive-skill",
+    "hook": "Agent skill that takes whatever Claude Code just built to production. Detects your stack, proposes a deployment plan, waits for your approval, applies it, then verifies the result. Platform coverage: Vercel, Netlify, Supabase, Neon, Porkbun, Resend, and Stripe. No telemetry, MIT license, ~1k stars on its GitHub Trending debut.",
+    "categories": ["skill"],
+    "install": "npx skills add https://github.com/mikehasa/golive-skill --skill golive --global"
+  },
+  {
+    "slug": "dmitriyyukhanov-agent-dispatch",
+    "name": "agent-dispatch (DmitriyYukhanov/claude-plugins)",
+    "primary_url": "https://github.com/DmitriyYukhanov/claude-plugins",
+    "hook": "v1.0.0 released September 26: label any GitHub issue `agent` and a scheduled tick fires `/issue-to-pr` headlessly on macOS, Linux, and Windows. Auto-resumes when you comment or re-label, pauses on rate-limits or logout, enforces a 4-hour timeout before yielding. Part of DmitriyYukhanov's claude-plugins bundle — install the whole bundle and get agent-dispatch plus the rest.",
+    "categories": ["plugin"],
+    "install": "/plugin marketplace add DmitriyYukhanov/claude-plugins"
+  },
+  {
+    "slug": "elementalsouls-claude-bughunter",
+    "name": "Claude-BugHunter",
+    "primary_url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "hook": "4.7k-star skill bundle for authorized security testing: 83 skills covering 58 vulnerability class patterns, all extracted from 681 publicly disclosed bug reports. Fifteen slash commands including `/hunt` for engagement scaffolding, enterprise platform coverage for M365/Entra, Okta, vCenter, and SSL VPN appliances, and Burp Suite MCP integration for interactive workflows. Built-in authorization and scope gates fire before any test begins.",
+    "categories": ["skill", "mcp"],
+    "install": "/plugin marketplace add elementalsouls/Claude-BugHunter",
+    "recurring_note": "↑ Day 2 — 4.7k stars"
+  },
+  {
+    "slug": "florianbruniaux-claude-code-ultimate-guide",
+    "name": "Claude Code Ultimate Guide",
+    "primary_url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+    "secondary_urls": ["https://cc.bruniaux.com/"],
+    "hook": "5.9k stars on the reference layer that pre-evaluates 15+ popular Claude Code repos so you don't have to cold-read each one. 430K+ lines covering setup through production: agentic workflows, hooks, skills, MCP servers, quizzes, cheat sheets, and production-ready templates. Added to the awesome-claude-code index (issue #652) and still surfacing in trending searches today.",
+    "categories": ["skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — 5.9k stars; added to awesome-claude-code index"
+  }
+]
