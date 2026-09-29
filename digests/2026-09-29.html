@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — September 29, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — September 29, 2026</h1><p class="sub">Top 11 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://claude.com/blog/claude-design-stays-on-brand-for-daily-work">Claude Design — Now in Every Conversation</a></h3>
+  <p class="hook">Claude Design is no longer a separate app — as of September 2026 it runs inside any Claude conversation, including Claude Code. Type `/design` in Claude Code to open a canvas, `/design-sync` to pull in your design system, and hand off between code and design in one session. Connectors for Figma, Adobe, Canva, Vercel, and Lovable are live. Rolling out in beta to Pro and Max plan users.</p>
+  <div class="secondary">Also: <a href="https://www.anthropic.com/news/claude-design-anthropic-labs">www.anthropic.com/news/claude-design-anthropic-labs</a> · <a href="https://www.youtube.com/watch?v=OVrJePt-4bs">www.youtube.com/watch?v=OVrJePt-4bs</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">frontend</div>
+  <pre><button class="copy">copy</button><code>Use /design or /design-sync inside Claude Code (no install required on Pro/Max plans)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/claude-sonnet-5-5">Claude Sonnet 5.5</a></h3>
+  <p class="hook">Anthropic&#39;s September 28 release keeps Sonnet 5&#39;s $2/$10/MTok pricing while running 30% faster and costing up to 30% less per task — the model needs fewer tool calls and fewer tokens to reach the same result. Ships with a 1M-token context window, cyber safeguards on par with Opus 5, and is now the default Sonnet inside Claude Code v2.1.284. Simon Willison: &#39;the cheap one done right.&#39;</p>
+  <div class="secondary">Also: <a href="https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/">simonwillison.net/2026/Sep/28/claude-sonnet-5-5/</a> · <a href="https://www.developersdigest.tech/blog/claude-sonnet-5-5-release-guide-2026">www.developersdigest.tech/blog/claude-sonnet-5-5-release-guide-2026</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">model</span>  </div>
+  <div class="tags">context · token · anthropic</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news/claude-code-on-the-web">Claude Code Cloud Sessions — Generally Available</a></h3>
+  <p class="hook">Claude Code cloud sessions left research preview on September 23 and are now fully GA — coding tasks run on Anthropic-managed VMs so your laptop doesn&#39;t need to stay open. Launch promotion: Pro subscribers get a $100 one-time credit, Max subscribers $250 (claim by October 7, expires November 4). Access via `claude --cloud`, claude.ai/code, the Claude mobile app, or the desktop app.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  
+  <pre><button class="copy">copy</button><code>claude --cloud</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.284</a></h3>
+  <p class="hook">September 28 release bundles four UX wins: Sonnet 5.5 becomes the default Sonnet model (1M context, same price), a new &#39;Yes, but ask again next time&#39; permission option in auto mode, live dollar amounts in usage tracking (&#39;$271.40 / $500.00 spent this month&#39;), and `/mcp reconnect all` to retry failed MCP server connections without restarting Claude Code.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">mcp</div>
+  <pre><button class="copy">copy</button><code>npm install -g @anthropic-ai/claude-code@latest</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/ayghri/i-have-adhd">i-have-adhd</a></h3>
+  <p class="hook">Ten formatting rules that force Claude Code to lead with the concrete action, cap lists at five items, and cut all preamble — instead of &#39;Great question! Let me think…&#39; you get &#39;Run `npm install jsonwebtoken@latest`, then edit `src/auth.ts:42`.&#39; Built for ADHD developers, adopted by everyone. 52.1k stars on GitHub, 14k+ marketplace installs, and still climbing.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">productivity</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">skill · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>Install the i-have-adhd skill from https://github.com/ayghri/i-have-adhd</code></pre>
+  <div class="recurring">↑ Day 9 — up to 52.1k stars from ~43.7k last week</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mksglu/context-mode">context-mode</a></h3>
+  <p class="hook">MCP middleware that sandboxes raw tool output before it enters the context window — a 56 KB Playwright snapshot becomes 299 bytes, and a full 315 KB session compresses to 5.4 KB (98% reduction). Persists session memory via SQLite with BM25 search so Claude picks up exactly where it left off across context resets. Supports 17 platforms including Claude Code, Cursor, and VS Code Copilot. 24.2k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">memory · context · viral · browser</div>
+  <pre><button class="copy">copy</button><code>npm install -g context-mode</code></pre>
+  <div class="recurring">↑ Day 9 — 24.2k stars, still rising</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/thedotmack/claude-mem">claude-mem</a></h3>
+  <p class="hook">Persistent memory for Claude Code and nine other agents — lifecycle hooks capture what the agent does each session, AI compresses it, and relevant context injects into every future session. New this week: a web viewer UI that streams memory in real time and awareness push for Grok Bot. 94.9k stars, 8.4k forks, Apache 2.0.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">memory</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">productivity</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx claude-mem install</code></pre>
+  <div class="recurring">↑ Day 8 — stable at 94.9k stars, new web viewer this week</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/OthmanAdi/planning-with-files">planning-with-files</a></h3>
+  <p class="hook">Keeps AI agent task state on disk in three plain markdown files (task_plan.md, findings.md, progress.md) so plans survive context resets, crashes, and compaction events. Benchmarked at 62% faster recovery — 5 turns to resume vs 13.3 for agents without it — and a 96.7% assertion pass rate. Supports 60+ agents, MIT-licensed. 27.2k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">productivity</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">skill · agent · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add OthmanAdi/planning-with-files --skill planning-with-files -g</code></pre>
+  <div class="recurring">↑ Day 8 — holding at 27.2k stars</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/VoltAgent/awesome-agent-skills">awesome-agent-skills (VoltAgent)</a></h3>
+  <p class="hook">1,497 curated agent skills from official dev teams (17 Anthropic skills, 133+ Azure, plus Google, Vercel, Netlify, Cloudflare) and community contributors — covering test automation (50+ frameworks), CI/CD, databases, cloud infra, security audits, and AI content generation. Installable via officialskills.sh or directly from GitHub. 35k stars, 3.7k forks.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">anthropic · viral · security</div>
+  <pre><button class="copy">copy</button><code>See README or officialskills.sh</code></pre>
+  <div class="recurring">↑ Day 6 — 35k stars</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/chaseai-yt/claudex-loop">claudex-loop</a></h3>
+  <p class="hook">Four-phase plan-hardening skill by Chase AI: recon → interrogate → Codex adversarial review → cross-model build-and-inspect. Two AI models harden your plan before a line of code exists, then swap roles to inspect each other&#39;s output. 2.6k stars. Favored by Chase AI&#39;s audience (109K subscribers) as their go-to skill for complex features.</p>
+  <div class="secondary">Also: <a href="https://www.chaseai.io/blog/claude-code-guide-2026">www.chaseai.io/blog/claude-code-guide-2026</a></div>
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">review</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">skill · plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add chaseai-yt/claudex-loop
+/plugin install claudex-loop@claudex-loop</code></pre>
+  <div class="recurring">↑ Day 11 — 2.6k stars, Chase AI continues coverage</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/jeremylongshore/claude-code-plugins-plus-skills">Tons of Skills Marketplace</a></h3>
+  <p class="hook">Model-agnostic plugin marketplace with 434 plugins and 2,900 marketplace-visible skills across 19 categories — browsable at tonsofskills.com by category, certification tier, or job role. Claude Code is the native verified harness; the ccpi package manager handles installs. 11.4k npm downloads in the past 30 days across 386 published packages. 2.8k stars.</p>
+  <div class="secondary">Also: <a href="https://tonsofskills.com">tonsofskills.com</a></div>
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">plugin · harness · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>pnpm add -g @intentsolutionsio/ccpi
+ccpi install devops-automation-pack</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
