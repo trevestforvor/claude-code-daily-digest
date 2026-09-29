@@ -1,0 +1,111 @@
+[
+  {
+    "slug": "anthropic-claude-design-in-conversations",
+    "name": "Claude Design — Now in Every Conversation",
+    "primary_url": "https://claude.com/blog/claude-design-stays-on-brand-for-daily-work",
+    "secondary_urls": [
+      "https://www.anthropic.com/news/claude-design-anthropic-labs",
+      "https://www.youtube.com/watch?v=OVrJePt-4bs"
+    ],
+    "hook": "Claude Design is no longer a separate app — as of September 2026 it runs inside any Claude conversation, including Claude Code. Type `/design` in Claude Code to open a canvas, `/design-sync` to pull in your design system, and hand off between code and design in one session. Connectors for Figma, Adobe, Canva, Vercel, and Lovable are live. Rolling out in beta to Pro and Max plan users.",
+    "categories": ["design"],
+    "install": "Use /design or /design-sync inside Claude Code (no install required on Pro/Max plans)"
+  },
+  {
+    "slug": "anthropic-claude-sonnet-5-5",
+    "name": "Claude Sonnet 5.5",
+    "primary_url": "https://www.anthropic.com/claude-sonnet-5-5",
+    "secondary_urls": [
+      "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/",
+      "https://www.developersdigest.tech/blog/claude-sonnet-5-5-release-guide-2026"
+    ],
+    "hook": "Anthropic's September 28 release keeps Sonnet 5's $2/$10/MTok pricing while running 30% faster and costing up to 30% less per task — the model needs fewer tool calls and fewer tokens to reach the same result. Ships with a 1M-token context window, cyber safeguards on par with Opus 5, and is now the default Sonnet inside Claude Code v2.1.284. Simon Willison: 'the cheap one done right.'",
+    "categories": ["cost", "model"],
+    "creator_buzz": ["@DevelopersDigest"]
+  },
+  {
+    "slug": "anthropic-claude-code-cloud-sessions-ga",
+    "name": "Claude Code Cloud Sessions — Generally Available",
+    "primary_url": "https://www.anthropic.com/news/claude-code-on-the-web",
+    "hook": "Claude Code cloud sessions left research preview on September 23 and are now fully GA — coding tasks run on Anthropic-managed VMs so your laptop doesn't need to stay open. Launch promotion: Pro subscribers get a $100 one-time credit, Max subscribers $250 (claim by October 7, expires November 4). Access via `claude --cloud`, claude.ai/code, the Claude mobile app, or the desktop app.",
+    "categories": ["anthropic"],
+    "install": "claude --cloud"
+  },
+  {
+    "slug": "anthropic-claude-code-v2-1-284",
+    "name": "Claude Code v2.1.284",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "September 28 release bundles four UX wins: Sonnet 5.5 becomes the default Sonnet model (1M context, same price), a new 'Yes, but ask again next time' permission option in auto mode, live dollar amounts in usage tracking ('$271.40 / $500.00 spent this month'), and `/mcp reconnect all` to retry failed MCP server connections without restarting Claude Code.",
+    "categories": ["anthropic"],
+    "install": "npm install -g @anthropic-ai/claude-code@latest"
+  },
+  {
+    "slug": "ayghri-i-have-adhd",
+    "name": "i-have-adhd",
+    "primary_url": "https://github.com/ayghri/i-have-adhd",
+    "hook": "Ten formatting rules that force Claude Code to lead with the concrete action, cap lists at five items, and cut all preamble — instead of 'Great question! Let me think…' you get 'Run `npm install jsonwebtoken@latest`, then edit `src/auth.ts:42`.' Built for ADHD developers, adopted by everyone. 52.1k stars on GitHub, 14k+ marketplace installs, and still climbing.",
+    "categories": ["productivity", "skills"],
+    "install": "Install the i-have-adhd skill from https://github.com/ayghri/i-have-adhd",
+    "recurring_note": "↑ Day 9 — up to 52.1k stars from ~43.7k last week"
+  },
+  {
+    "slug": "mksglu-context-mode",
+    "name": "context-mode",
+    "primary_url": "https://github.com/mksglu/context-mode",
+    "hook": "MCP middleware that sandboxes raw tool output before it enters the context window — a 56 KB Playwright snapshot becomes 299 bytes, and a full 315 KB session compresses to 5.4 KB (98% reduction). Persists session memory via SQLite with BM25 search so Claude picks up exactly where it left off across context resets. Supports 17 platforms including Claude Code, Cursor, and VS Code Copilot. 24.2k stars.",
+    "categories": ["cost", "mcp"],
+    "install": "npm install -g context-mode",
+    "recurring_note": "↑ Day 9 — 24.2k stars, still rising"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "Persistent memory for Claude Code and nine other agents — lifecycle hooks capture what the agent does each session, AI compresses it, and relevant context injects into every future session. New this week: a web viewer UI that streams memory in real time and awareness push for Grok Bot. 94.9k stars, 8.4k forks, Apache 2.0.",
+    "categories": ["memory", "productivity"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 8 — stable at 94.9k stars, new web viewer this week"
+  },
+  {
+    "slug": "othmanadi-planning-with-files",
+    "name": "planning-with-files",
+    "primary_url": "https://github.com/OthmanAdi/planning-with-files",
+    "hook": "Keeps AI agent task state on disk in three plain markdown files (task_plan.md, findings.md, progress.md) so plans survive context resets, crashes, and compaction events. Benchmarked at 62% faster recovery — 5 turns to resume vs 13.3 for agents without it — and a 96.7% assertion pass rate. Supports 60+ agents, MIT-licensed. 27.2k stars.",
+    "categories": ["productivity", "skills"],
+    "install": "npx skills add OthmanAdi/planning-with-files --skill planning-with-files -g",
+    "recurring_note": "↑ Day 8 — holding at 27.2k stars"
+  },
+  {
+    "slug": "voltagent-awesome-agent-skills",
+    "name": "awesome-agent-skills (VoltAgent)",
+    "primary_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "hook": "1,497 curated agent skills from official dev teams (17 Anthropic skills, 133+ Azure, plus Google, Vercel, Netlify, Cloudflare) and community contributors — covering test automation (50+ frameworks), CI/CD, databases, cloud infra, security audits, and AI content generation. Installable via officialskills.sh or directly from GitHub. 35k stars, 3.7k forks.",
+    "categories": ["skills"],
+    "install": "See README or officialskills.sh",
+    "recurring_note": "↑ Day 6 — 35k stars"
+  },
+  {
+    "slug": "chaseai-yt-claudex-loop",
+    "name": "claudex-loop",
+    "primary_url": "https://github.com/chaseai-yt/claudex-loop",
+    "secondary_urls": [
+      "https://www.chaseai.io/blog/claude-code-guide-2026"
+    ],
+    "hook": "Four-phase plan-hardening skill by Chase AI: recon → interrogate → Codex adversarial review → cross-model build-and-inspect. Two AI models harden your plan before a line of code exists, then swap roles to inspect each other's output. 2.6k stars. Favored by Chase AI's audience (109K subscribers) as their go-to skill for complex features.",
+    "categories": ["review", "skills"],
+    "install": "/plugin marketplace add chaseai-yt/claudex-loop\n/plugin install claudex-loop@claudex-loop",
+    "creator_buzz": ["@Chase-H-AI"],
+    "recurring_note": "↑ Day 11 — 2.6k stars, Chase AI continues coverage"
+  },
+  {
+    "slug": "jeremylongshore-tons-of-skills",
+    "name": "Tons of Skills Marketplace",
+    "primary_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+    "secondary_urls": [
+      "https://tonsofskills.com"
+    ],
+    "hook": "Model-agnostic plugin marketplace with 434 plugins and 2,900 marketplace-visible skills across 19 categories — browsable at tonsofskills.com by category, certification tier, or job role. Claude Code is the native verified harness; the ccpi package manager handles installs. 11.4k npm downloads in the past 30 days across 386 published packages. 2.8k stars.",
+    "categories": ["skills", "mcp"],
+    "install": "pnpm add -g @intentsolutionsio/ccpi\nccpi install devops-automation-pack"
+  }
+]
