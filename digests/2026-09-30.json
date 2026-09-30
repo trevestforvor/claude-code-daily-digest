@@ -1,0 +1,133 @@
+[
+  {
+    "slug": "feitangyuan-onetake",
+    "name": "onetake",
+    "primary_url": "https://github.com/feitangyuan/onetake",
+    "hook": "A Claude Agent Skill for product launch films and feature demos where every beat grows from the one before — no cut, one continuous take. An oracle tracks scene continuity so the resulting clip feels like a real product film rather than a slideshow. Created September 26 and already trending globally on September 30 with 993 stars. Describe your product in a prompt, get a 10–60 second motion-graphic launch video.",
+    "categories": ["design", "skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "vincentwei1021-video-shotcraft",
+    "name": "video-shotcraft",
+    "primary_url": "https://github.com/Vincentwei1021/video-shotcraft",
+    "secondary_urls": ["https://vincentwei1021.github.io/video-shotcraft/"],
+    "hook": "An AI video skill for Claude Code and Codex that generates cinematic product demo videos via Remotion. Ships 152 shot recipe cards (organized by function: zoom-in, pan-over, split-screen, and more), 209 motion previews distilled from ClickUp, Perplexity, Slack, Notion, and Figma films, and a production-ready Remotion template. Preview and render are pixel-identical. 10k stars on GitHub; updated September 28.",
+    "categories": ["design", "skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+    "name": "UI/UX Pro Max Skill",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "secondary_urls": [
+      "https://ui-ux-pro-max-skill.com/",
+      "https://www.youtube.com/watch?v=RVeCbPg0liw"
+    ],
+    "hook": "v2.0 ships a flagship Design System Generator: an AI-powered reasoning engine that analyzes your project requirements and produces a complete tailored design system in seconds. Library now spans 192 industry-specific reasoning rules, 79 searchable UI styles, 192 color palettes, 74 font pairings, 25 chart types, and 16 tech stacks. 131.9k stars on GitHub, 347k+ installs in the Skillselion catalog. Chase AI dedicated a video to the upgrade this week, calling it the must-have design skill.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill\n/plugin install ui-ux-pro-max@ui-ux-pro-max-skill",
+    "creator_buzz": ["@Chase-H-AI"],
+    "recurring_note": "↑ Day 4 (v2.0) — 131.9k stars, Chase AI coverage this week"
+  },
+  {
+    "slug": "vectorize-io-hindsight",
+    "name": "Hindsight",
+    "primary_url": "https://github.com/vectorize-io/hindsight",
+    "hook": "Agent memory that learns rather than simply recalling conversation history. Uses biomimetic data structures to organize memories as world facts, experiences, observations, and mental models — with four parallel retrieval strategies (semantic, keyword, graph-based, temporal) running at once. Leads the LongMemEval benchmark, performance independently verified by Virginia Tech and The Washington Post. 43.7k stars; trending on GitHub September 28.",
+    "categories": ["cost", "mcp"],
+    "install": "pip install hindsight-client -U"
+  },
+  {
+    "slug": "anthropic-claude-code-v2-1-285",
+    "name": "Claude Code v2.1.285",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "September 29 release ships three developer-quality-of-life features: `claude --desktop` opens the Claude desktop app on the current directory from the terminal, `claude plugin configure <plugin>` shows and sets a plugin's options, and the new `allowedProviders` managed setting lets admins restrict which API provider (Anthropic, Bedrock, Vertex AI, Foundry, Mantle, etc.) a machine may use. Also adds `CLAUDE_CODE_DISABLE_WEB_FETCH` to turn off the WebFetch tool at the environment level. 136 changes in this release.",
+    "categories": ["anthropic"],
+    "install": "npm install -g @anthropic-ai/claude-code@latest"
+  },
+  {
+    "slug": "anthropics-financial-services",
+    "name": "Claude for Financial Services",
+    "primary_url": "https://github.com/anthropics/financial-services",
+    "hook": "Official Anthropic reference implementation of Claude agents, skills, and data connectors for financial services. Covers investment banking (pitch decks, LBO models), equity research (earnings analysis), private equity (sourcing to IC memos), fund administration (GL reconciliation, month-end close), and wealth management (rebalancing, compliance). Ships 11 named agents, 6 vertical skill bundles, and 11 MCP integrations including FactSet, S&P Global, PitchBook, and Morningstar. Deployable as Claude Cowork plugins or Managed Agents API. 38.3k stars; newly trending September 28.",
+    "categories": ["anthropic", "skill", "mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "anthropics-knowledge-work-plugins",
+    "name": "Knowledge Work Plugins",
+    "primary_url": "https://github.com/anthropics/knowledge-work-plugins",
+    "hook": "Official Anthropic open-source repo of 11 Claude plugins for knowledge workers: Productivity, Sales, Customer Support, Product Management, Marketing, Legal, Finance, Data, Enterprise Search, Bio Research, and a Cowork Plugin Management plugin for organizations to create their own. Each bundles skills, connectors, slash commands, and sub-agents for the role and connects to tools like HubSpot, Linear, Figma, Snowflake, PubMed, and more. 25.9k stars; Week 2 of GitHub trending.",
+    "categories": ["anthropic", "skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "hkuds-cli-anything",
+    "name": "CLI-Anything",
+    "primary_url": "https://github.com/HKUDS/CLI-Anything",
+    "hook": "Makes any software agent-native by auto-generating a production-grade CLI for it via a 7-phase pipeline: source analysis, command architecture, Click implementation, test planning, documentation, and package publishing. The generated CLIs output JSON, support REPL mode, and include undo/redo. Install the Claude Code plugin and run `/cli-anything ./gimp` to make GIMP fully controllable by Claude — same for Blender, LibreOffice, and 50+ other apps. 51.1k stars; trending September 28.",
+    "categories": ["mcp"],
+    "install": "/plugin install cli-anything"
+  },
+  {
+    "slug": "cloudflare-security-audit-skill",
+    "name": "security-audit-skill (Cloudflare)",
+    "primary_url": "https://github.com/cloudflare/security-audit-skill",
+    "hook": "Official Cloudflare security audit skill for coding agents. Runs a 6-phase process: reconnaissance, coverage-led vulnerability hunting, candidate validation, structured output generation, independent verification, and target-neutral reporting. Covers memory safety, prompt injection, LLM-specific attacks, web protocol flaws, supply chain issues, cloud IAM misconfigs, and more — with machine-readable findings. 23.4k stars; trending September 28.",
+    "categories": ["skill"],
+    "install": "npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit"
+  },
+  {
+    "slug": "seanrobertwright-aris",
+    "name": "ARIS (Auto-Research-In-Sleep)",
+    "primary_url": "https://github.com/seanrobertwright/Auto-claude-code-research-in-sleep",
+    "hook": "Claude Code skills for autonomous ML research while you sleep. A single `/research-pipeline` chains idea discovery → auto review → paper writing; `/experiment-queue` manages multi-seed/multi-config SSH job queues with OOM-aware retry. v0.4.28 (September 2026) adds reasoning effort support (`ARIS_REASONING_EFFORT=low/medium/high/xhigh/max`), anti-hallucination citation verification via DBLP/CrossRef, and Codex CLI 0.154 bridge. 83 bundled skills. Purely Markdown — no framework, no Docker. 16.9k stars.",
+    "categories": ["skill"],
+    "install": "claude plugin install aris@aris"
+  },
+  {
+    "slug": "dzhng-jevgrep",
+    "name": "jevgrep",
+    "primary_url": "https://github.com/dzhng/jevgrep",
+    "hook": "A CLI for coding agents that finds code by asking what it does rather than what it says — returns relevant files, reading leads, and verbatim source excerpts in response to plain English questions like 'where is JWT validation?' The installer auto-detects Claude Code, Codex, and OpenCode and places itself accordingly. In a 10-task SWE-bench comparison, reached the same 8/10 pass rate as the baseline at lower cost. 1.8k stars; trending September 30.",
+    "categories": ["cost"],
+    "install": "npm install -g jevgrep"
+  },
+  {
+    "slug": "ayghri-i-have-adhd",
+    "name": "i-have-adhd",
+    "primary_url": "https://github.com/ayghri/i-have-adhd",
+    "hook": "Ten formatting rules that force Claude Code to lead with the concrete action, cap lists at five items, and cut all preamble — instead of 'Great question! Let me think…' you get 'Run `npm install jsonwebtoken@latest`, then edit `src/auth.ts:42`.' Built for ADHD developers, adopted broadly. 52.1k stars on GitHub, 14k+ marketplace installs.",
+    "categories": ["productivity", "skill"],
+    "install": "Install the i-have-adhd skill from https://github.com/ayghri/i-have-adhd",
+    "recurring_note": "↑ Day 10 — 52.1k stars, still climbing"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "Persistent memory for Claude Code and nine other agents — lifecycle hooks capture what the agent does each session, AI compresses it, and relevant context injects into every future session. New this week: a web viewer UI that streams memory in real time and awareness push for Grok Bot. 94.9k stars, 8.4k forks, Apache 2.0.",
+    "categories": ["memory", "productivity"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 9 — stable at 94.9k stars, new web viewer this week"
+  },
+  {
+    "slug": "mksglu-context-mode",
+    "name": "context-mode",
+    "primary_url": "https://github.com/mksglu/context-mode",
+    "hook": "MCP middleware that sandboxes raw tool output before it enters the context window — a 56 KB Playwright snapshot becomes 299 bytes, and a full 315 KB session compresses to 5.4 KB (98% reduction). Persists session memory via SQLite with BM25 search so Claude picks up exactly where it left off across context resets. Supports 17 platforms including Claude Code, Cursor, and VS Code Copilot. 24.2k stars.",
+    "categories": ["cost", "mcp"],
+    "install": "npm install -g context-mode",
+    "recurring_note": "↑ Day 10 — 24.2k stars, still rising"
+  },
+  {
+    "slug": "shanraisshan-claude-code-best-practice",
+    "name": "Claude Code Best Practice",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "The 'vibe coding to agentic engineering' reference guide hit 66.8k stars today (up from 64k on September 27). Distills 176 tips from 17 high-starred repositories (500k+ combined stars) and an 83-item tricks collection sourced from Boris Cherny (Claude Code's creator at Anthropic) and Thariq. Covers agents, commands, skills, hooks, workflows, MCP servers, plugins, and memory with a complete command→agent→skill flow walkthrough.",
+    "categories": ["skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 4 — 66.8k stars (up 2.8k since Sep 27)"
+  }
+]
