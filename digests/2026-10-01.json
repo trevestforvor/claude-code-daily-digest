@@ -1,0 +1,141 @@
+[
+  {
+    "slug": "dietrichgebert-ponytail",
+    "name": "Ponytail",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "secondary_urls": ["https://www.chaseai.io/blog/ponytail-skill-claude-code-cheaper-faster"],
+    "hook": "Makes your AI agent think like the laziest senior dev in the room. Ships a six-step YAGNI decision ladder that fires before every code change: does this need to exist, is it already in the codebase, standard library, platform, or installed deps, can it be one line? Only then: write minimum viable. Six slash commands (/ponytail, /ponytail-review, /ponytail-audit, /ponytail-debt, /ponytail-gain, /ponytail-help), support for 10+ agents including Claude Code, Codex, and Cursor. JetBrains benchmarked 15% output reduction across 80 tasks; Chase AI's testing showed up to 50% code cuts and 53% Opus cost drop. 150.1k stars on GitHub.",
+    "categories": ["cost", "skill"],
+    "install": "/plugin install ponytail@ponytail",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "juliusbrussee-caveman",
+    "name": "Caveman",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "secondary_urls": ["https://skillselion.com/skills/juliusbrussee/caveman"],
+    "hook": "why use many token when few token do trick. A skill + proxy for 30+ coding agents that forces responses into compressed caveman-speak while preserving code, commands, and exact error messages verbatim. Started as a Friday joke in April 2026, hit #1 on Hacker News with 904 points and 366 comments, #8 Product of the Day on Product Hunt, and now sits at 109k stars. JetBrains tested 86 real Claude Code tasks: 8.5% fewer output tokens with no detectable quality change. The cavemem persistent memory module (same author) is now merged into the main repo.",
+    "categories": ["cost", "skill"],
+    "install": "npx skills add JuliusBrussee/caveman -g"
+  },
+  {
+    "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+    "name": "UI/UX Pro Max Skill",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "secondary_urls": [
+      "https://ui-ux-pro-max-skill.com/",
+      "https://www.youtube.com/watch?v=RVeCbPg0liw"
+    ],
+    "hook": "v2.0's Design System Generator analyzes project requirements and produces a complete tailored design system in seconds — 192 industry-specific reasoning rules, 79 searchable UI styles, 192 color palettes, 74 font pairings, 25 chart types, 16 tech stacks. 131.9k stars on GitHub, 347k+ installs in the Skillselion catalog. Chase AI dedicated a full video to the v2.0 upgrade, calling it the must-have design skill.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill\n/plugin install ui-ux-pro-max@ui-ux-pro-max-skill",
+    "recurring_note": "↑ Day 5 (v2.0) — 131.9k stars",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "anthropic-claude-code-v2-1-286",
+    "name": "Claude Code v2.1.286",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "September 30 release ships VS Code bookmarks to save and keep Claude's responses in view, permission stack display showing '2 of 5' when requests queue, and a model-tier fallback that retries on the previous tier when the API refuses the current model. Fixes the `--resume`/`--continue` bug that dropped turns after parallel tool calls — a long-standing pain point in long agentic sessions. Also fixes WebSocket MCP servers being omitted from `mcp list` and Remote Control sessions disconnecting on org policy changes.",
+    "categories": ["anthropic"],
+    "install": "npm install -g @anthropic-ai/claude-code@latest"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "Persistent memory for Claude Code and nine other agents — lifecycle hooks capture what the agent does each session, AI compresses it, and relevant context injects into every future session. New this week: a web viewer UI that streams memory in real time and awareness push for Grok Bot. 94.9k stars, 8.4k forks, Apache 2.0.",
+    "categories": ["memory", "productivity"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 10 — 94.9k stars, new web viewer this week"
+  },
+  {
+    "slug": "shanraisshan-claude-code-best-practice",
+    "name": "Claude Code Best Practice",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "The 'vibe coding to agentic engineering' reference guide. Distills 176 tips from 17 high-starred repositories (500k+ combined stars) and an 83-item tricks collection sourced from Boris Cherny (Claude Code's creator at Anthropic) and Thariq. Covers agents, commands, skills, hooks, workflows, MCP servers, plugins, and memory. 66.8k stars and still climbing.",
+    "categories": ["skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 5 — 66.8k stars"
+  },
+  {
+    "slug": "hkuds-cli-anything",
+    "name": "CLI-Anything",
+    "primary_url": "https://github.com/HKUDS/CLI-Anything",
+    "hook": "Makes any software agent-native by auto-generating a production-grade CLI for it via a 7-phase pipeline: source analysis, command architecture, Click implementation, test planning, documentation, and package publishing. The generated CLIs output JSON, support REPL mode, and include undo/redo. Install the Claude Code plugin and run `/cli-anything ./gimp` to make GIMP fully controllable by Claude — same for Blender, LibreOffice, and 50+ other apps. 51.1k stars.",
+    "categories": ["mcp"],
+    "install": "/plugin install cli-anything",
+    "recurring_note": "↑ Day 2 — 51.1k stars"
+  },
+  {
+    "slug": "vectorize-io-hindsight",
+    "name": "Hindsight",
+    "primary_url": "https://github.com/vectorize-io/hindsight",
+    "hook": "Agent memory that learns rather than simply recalling conversation history. Uses biomimetic data structures to organize memories as world facts, experiences, observations, and mental models — with four parallel retrieval strategies (semantic, keyword, graph-based, temporal) running at once. Leads the LongMemEval benchmark, performance independently verified by Virginia Tech and The Washington Post. 43.7k stars.",
+    "categories": ["cost", "mcp"],
+    "install": "pip install hindsight-client -U",
+    "recurring_note": "↑ Day 2 — 43.7k stars"
+  },
+  {
+    "slug": "anthropics-financial-services",
+    "name": "Claude for Financial Services",
+    "primary_url": "https://github.com/anthropics/financial-services",
+    "hook": "Official Anthropic reference implementation of Claude agents, skills, and data connectors for financial services. Covers investment banking (pitch decks, LBO models), equity research, private equity (sourcing to IC memos), fund administration (GL reconciliation), and wealth management (rebalancing, compliance). Ships 11 named agents, 6 vertical skill bundles, and 11 MCP integrations including FactSet, S&P Global, PitchBook, and Morningstar. 38.3k stars.",
+    "categories": ["anthropic", "skill", "mcp"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — 38.3k stars"
+  },
+  {
+    "slug": "anthropics-knowledge-work-plugins",
+    "name": "Knowledge Work Plugins",
+    "primary_url": "https://github.com/anthropics/knowledge-work-plugins",
+    "hook": "Official Anthropic open-source repo of 11 Claude plugins for knowledge workers: Productivity, Sales, Customer Support, Product Management, Marketing, Legal, Finance, Data, Enterprise Search, Bio Research, and a Cowork Plugin Management plugin. Each bundles skills, connectors, slash commands, and sub-agents and connects to tools like HubSpot, Linear, Figma, Snowflake, PubMed, and more. 25.9k stars.",
+    "categories": ["anthropic", "skill"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — 25.9k stars"
+  },
+  {
+    "slug": "cloudflare-security-audit-skill",
+    "name": "security-audit-skill (Cloudflare)",
+    "primary_url": "https://github.com/cloudflare/security-audit-skill",
+    "hook": "Official Cloudflare security audit skill for coding agents. Runs a 6-phase process: reconnaissance, coverage-led vulnerability hunting, candidate validation, structured output generation, independent verification, and target-neutral reporting. Covers memory safety, prompt injection, LLM-specific attacks, web protocol flaws, supply chain issues, cloud IAM misconfigs, and more. 23.4k stars.",
+    "categories": ["skill"],
+    "install": "npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit",
+    "recurring_note": "↑ Day 2 — 23.4k stars"
+  },
+  {
+    "slug": "mksglu-context-mode",
+    "name": "context-mode",
+    "primary_url": "https://github.com/mksglu/context-mode",
+    "hook": "MCP middleware that sandboxes raw tool output before it enters the context window — a 56 KB Playwright snapshot becomes 299 bytes, and a full 315 KB session compresses to 5.4 KB (98% reduction). Persists session memory via SQLite with BM25 search so Claude picks up exactly where it left off across context resets. Supports 17 platforms. 24.2k stars.",
+    "categories": ["cost", "mcp"],
+    "install": "npm install -g context-mode",
+    "recurring_note": "↑ Day 11 — 24.2k stars (final mention)"
+  },
+  {
+    "slug": "seanrobertwright-aris",
+    "name": "ARIS (Auto-Research-In-Sleep)",
+    "primary_url": "https://github.com/seanrobertwright/Auto-claude-code-research-in-sleep",
+    "hook": "Claude Code skills for autonomous ML research while you sleep. A single `/research-pipeline` chains idea discovery → auto review → paper writing; `/experiment-queue` manages multi-seed/multi-config SSH job queues with OOM-aware retry. v0.4.28 adds reasoning effort support (ARIS_REASONING_EFFORT=low/medium/high/xhigh/max), anti-hallucination citation verification via DBLP/CrossRef, and Codex CLI 0.154 bridge. 83 bundled skills. Purely Markdown — no framework, no Docker. 16.9k stars.",
+    "categories": ["skill"],
+    "install": "claude plugin install aris@aris",
+    "recurring_note": "↑ Day 2 — 16.9k stars"
+  },
+  {
+    "slug": "mvschwarz-openrig",
+    "name": "OpenRig",
+    "primary_url": "https://github.com/mvschwarz/openrig",
+    "hook": "Multi-agent harness that runs Claude Code and Codex together as one system — define your agent team in a YAML file, boot it with one command. Agents message each other directly over tmux and queue work between themselves; teams and agents are snapshotted and restored as YAML. Requires Node.js 22+ and tmux on macOS or Linux. Trending on GitHub today with +733 stars in one day. 3.3k stars total.",
+    "categories": ["mcp"],
+    "install": "npm install -g @openrig/cli"
+  },
+  {
+    "slug": "louis-cfm-coucou",
+    "name": "coucou",
+    "primary_url": "https://github.com/Louis-CFM/coucou",
+    "secondary_urls": ["https://louis-cfm.github.io/coucou/"],
+    "hook": "A tiny friend that lives in your Mac's notch — or at the top of your screen on Windows — and keeps an eye on your Claude Code sessions. See every session's reads, edits, and runs step by step; permission requests show up with Allow/Deny buttons for one-click approval; built-in chat straight from the notch. Integrations with Stripe, n8n, GitHub, Vercel, Resend, Notion, and Cal.com each get their own colored Mochi. macOS 15+ (Swift 6) and Windows 10/11 (Tauri 2). 2.2k stars.",
+    "categories": ["productivity"],
+    "install": "See README"
+  }
+]
