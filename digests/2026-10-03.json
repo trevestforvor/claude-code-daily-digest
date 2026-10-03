@@ -1,0 +1,143 @@
+[
+  {
+    "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+    "name": "UI/UX Pro Max Skill",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "secondary_urls": [
+      "https://ui-ux-pro-max-skill.com/",
+      "https://www.youtube.com/watch?v=RVeCbPg0liw"
+    ],
+    "hook": "v2.0's Design System Generator analyzes project requirements and produces a complete tailored design system in seconds — 192 industry-specific reasoning rules, 79 searchable UI styles, 192 color palettes, 74 font pairings, 25 chart types, 16 tech stacks. 131.9k stars on GitHub, 347k+ installs in the Skillselion catalog. Chase AI dedicated a full video to the v2.0 upgrade, calling it the must-have design skill.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill\n/plugin install ui-ux-pro-max@ui-ux-pro-max-skill",
+    "recurring_note": "↑ Day 7 (v2.0) — 131.9k stars",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "dzhng-jevgrep",
+    "name": "jevgrep",
+    "primary_url": "https://github.com/dzhng/jevgrep",
+    "hook": "A CLI for coding agents that finds code by asking what it does rather than what it says — returns relevant files, reading leads, and verbatim source excerpts in response to plain English like 'where is JWT validation?' The creator (David Zhang) verified a 40% agent cost reduction on SWE-bench by feeding only the relevant files instead of the full repo. The installer auto-detects Claude Code, Codex, and OpenCode. IndyDevDan dedicated a video to Jev-based context engineering this week. 2.1k stars.",
+    "categories": ["cost"],
+    "install": "npm install -g jevgrep",
+    "recurring_note": "↑ reappearing — 2.1k stars (was 1.8k on Sep 30); IndyDevDan coverage",
+    "creator_buzz": ["@indydevdan"]
+  },
+  {
+    "slug": "dietrichgebert-ponytail",
+    "name": "Ponytail",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "secondary_urls": ["https://www.chaseai.io/blog/ponytail-skill-claude-code-cheaper-faster"],
+    "hook": "Makes your AI agent think like the laziest senior dev in the room. Ships a six-step YAGNI decision ladder that fires before every code change: does this need to exist, is it already in the codebase, standard library, platform, or installed deps, can it be one line? Only then: write minimum viable. Six slash commands, support for 10+ agents including Claude Code, Codex, and Cursor. JetBrains benchmarked 15% output reduction across 80 tasks; Chase AI's testing showed up to 50% code cuts and 53% Opus cost drop. 150.1k stars.",
+    "categories": ["cost", "skill"],
+    "install": "/plugin install ponytail@ponytail",
+    "recurring_note": "↑ Day 3 — 150.1k stars",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "juliusbrussee-caveman",
+    "name": "Caveman",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "secondary_urls": ["https://skillselion.com/skills/juliusbrussee/caveman"],
+    "hook": "why use many token when few token do trick. A skill + proxy for 30+ coding agents that forces responses into compressed caveman-speak while preserving code, commands, and exact error messages verbatim. Started as a Friday joke in April 2026, hit #1 on Hacker News with 904 points and 366 comments, #8 Product of the Day on Product Hunt, and now sits at 109k stars. JetBrains tested 86 real Claude Code tasks: 8.5% fewer output tokens with no detectable quality change. The cavemem persistent memory module (same author) is merged into the main repo.",
+    "categories": ["cost", "skill"],
+    "install": "npx skills add JuliusBrussee/caveman -g",
+    "recurring_note": "↑ Day 3 — 109k stars"
+  },
+  {
+    "slug": "multica-ai-andrej-karpathy-skills",
+    "name": "Karpathy Guidelines Skill",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "hook": "When Andrej Karpathy posted his frustrations with AI coding agents in January 2026, it went viral instantly. Forrest Chang turned the thread into four hard behavioral rules: think before coding, make surgical changes, surface assumptions and tradeoffs, define verifiable success criteria. Now the most-starred Claude Code behavioral skill on GitHub at 210k stars, with 35.1k installs on the skills.sh registry. Works with Claude Code, Codex, Cursor, Gemini, OpenCode, Copilot, and any AGENTS.md-compatible agent.",
+    "categories": ["skill", "productivity"],
+    "install": "npx skills add multica-ai/andrej-karpathy-skills"
+  },
+  {
+    "slug": "garrytan-gstack",
+    "name": "gstack (Garry Tan)",
+    "primary_url": "https://github.com/garrytan/gstack",
+    "hook": "Y Combinator's CEO open-sourced his personal Claude Code configuration on March 12, 2026 — it hit 33k stars in week one. Now at 135k stars. Ships 23 specialist roles (CEO, designer, engineering manager, QA lead, release engineer, and 18 more) as slash commands plus 8 power tools. Work moves through a fixed loop: Think → Plan → Build → Review → Test → Ship → Reflect. Tan averaged 10,000 lines of code and 100 pull requests per week over a 50-day sprint using it. Works with Claude Code and 7 other agents.",
+    "categories": ["skill", "productivity"],
+    "install": "git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup"
+  },
+  {
+    "slug": "egonex-ai-understand-anything",
+    "name": "Understand-Anything",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "hook": "Transforms any codebase into an interactive knowledge graph — files, functions, classes, and dependencies rendered as clickable nodes with plain-English summaries and architectural insights. Uses tree-sitter for structural parsing and LLM agents for semantic understanding. Includes diff impact analysis, guided tours, and incremental updates for onboarding. Supports 12+ AI platforms including Claude Code. The tagline: 'Graphs that teach > graphs that impress.' 85.2k stars.",
+    "categories": ["productivity", "mcp"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything && /plugin install understand-anything"
+  },
+  {
+    "slug": "rehan-remade-universal-modder",
+    "name": "Universal Modder",
+    "primary_url": "https://github.com/rehan-remade/universal-modder",
+    "hook": "Point Claude at any game you own and it mods it. Skills, CLI, and fal MCP server cover 12 engine playbooks — Unity, Unreal, Godot, Source, Bethesda, Minecraft, .NET/XNA (Terraria, Stardew, Celeste), RE Engine, and more. Claude runs a 10-step loop: recon, reverse-engineer, set up a safe lab, read game code, build one working slice, generate art/3D/SFX/music via fal, test in-game, record, package, document. Sprites, seamless textures, 3D objects, full SFX tracks, and cutscene video all from a text prompt. 2.5k stars; in GitHub trending Oct 3.",
+    "categories": ["skill", "mcp"],
+    "install": "/plugin marketplace add rehan-remade/universal-modder && /plugin install universal-modder@universal-modder"
+  },
+  {
+    "slug": "nevamind-ai-memu",
+    "name": "memU",
+    "primary_url": "https://github.com/NevaMind-AI/memU",
+    "hook": "Lightweight agent-driven memory system giving you a shared wiki across sessions, agents, and devices — Claude Code, Cursor, ChatGPT, Hermes, OpenClaw, and 8+ others all write to the same knowledge store. Automatically mines session logs to extract reusable skills and patches instruction files. Each agent gets its own host adapter binary (`memu-claude-code`). Cross-device sync via memu.so. 14.5k stars.",
+    "categories": ["productivity"],
+    "install": "pip install memu-cli"
+  },
+  {
+    "slug": "anthropic-claude-for-government",
+    "name": "Claude for Government (GA)",
+    "primary_url": "https://dev.to/techaiwire/claude-for-government-reaches-ga-under-fedramp-high-e9d",
+    "secondary_urls": [
+      "https://www.unite.ai/anthropic-makes-claude-for-government-generally-available-to-agencies/"
+    ],
+    "hook": "Claude for Government reached general availability September 30, 2026 after a July public beta. FedRAMP High authorization brings Claude Code and Cowork to federal and state agencies with enterprise spend controls, audit logs, desktop file support, and compliance for Controlled Unclassified Information. Claude Code CLI and Claude for Microsoft 365 are entering early access inside the same FedRAMP High boundary. First major AI coding tool to clear FedRAMP High for classified workloads.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "affaan-m-ecc",
+    "name": "ECC",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "The agent harness OS sitting at #1 on GitHub's claude-code topic with 271k stars. ECC wraps Claude Code (and Codex, Cursor, OpenCode, and 8 others) with a complete software-development lifecycle: 293 reusable skills covering TDD, security, frontend/backend, and domain work; 68 specialized agents for planning, architecture, build repair, and code review; 94 workflow commands; AgentShield security scanning for prompts, config, and permissions; and session-persistent memory. v2.2.3 shipped in October 2026. The ethos: plan → test → implement → review → verify → remember → improve.",
+    "categories": ["skill", "productivity"],
+    "install": "npx ecc-universal@2.2.3 setup",
+    "recurring_note": "↑ Day 2 — 271k stars"
+  },
+  {
+    "slug": "graphify-labs-graphify",
+    "name": "Graphify",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "hook": "Type `/graphify .` in Claude Code and it transforms your entire codebase — plus docs, SQL schemas, configs, and PDFs — into a queryable knowledge graph in seconds. Local deterministic AST parsing via tree-sitter (37 languages, no LLM call) handles code; semantic analysis handles docs. Outputs graph.html (interactive click-through visualization), GRAPH_REPORT.md (key concepts and surprising connections), and graph.json (queryable data). An MCP server mode makes it work for repeated programmatic access. Community detection uses the Leiden algorithm; edges are tagged EXTRACTED vs INFERRED. 123k stars.",
+    "categories": ["mcp", "productivity"],
+    "install": "uv tool install graphifyy && graphify install",
+    "recurring_note": "↑ Day 2 — 123k stars"
+  },
+  {
+    "slug": "addyosmani-agent-skills",
+    "name": "agent-skills (Addy Osmani)",
+    "primary_url": "https://github.com/addyosmani/agent-skills",
+    "hook": "Production-grade engineering skills by Addy Osmani (Google Chrome DevTools lead, 'Learning Patterns' author). 25 skills that encode the discipline separating production code from prototypes — Google's engineering culture baked in: Hyrum's Law, the test pyramid, trunk-based development, and Zero Tolerance Flakiness for tests. Nine lifecycle slash commands (/spec, /plan, /build, /test, /review, /security-audit, /perf-audit, /ship, /skills) map to the full development lifecycle. Four agent personas (code-reviewer, test-engineer, security-auditor, web-performance-auditor) for delegated work. 100k stars.",
+    "categories": ["skill", "productivity"],
+    "install": "npx skills add addyosmani/agent-skills",
+    "recurring_note": "↑ Day 2 — 100k stars"
+  },
+  {
+    "slug": "mvschwarz-openrig",
+    "name": "OpenRig",
+    "primary_url": "https://github.com/mvschwarz/openrig",
+    "hook": "Multi-agent harness that runs Claude Code and Codex together as one system — define your agent team in a YAML file, boot it with one command. Agents message each other directly over tmux and queue work between themselves; teams and agents are snapshotted and restored as YAML. Requires Node.js 22+ and tmux on macOS or Linux. Hit 4k stars with +733 in its debut day on GitHub trending.",
+    "categories": ["mcp"],
+    "install": "npm install -g @openrig/cli",
+    "recurring_note": "↑ Day 3 — ~4k stars"
+  },
+  {
+    "slug": "louis-cfm-coucou",
+    "name": "coucou",
+    "primary_url": "https://github.com/Louis-CFM/coucou",
+    "secondary_urls": ["https://louis-cfm.github.io/coucou/"],
+    "hook": "A tiny friend that lives in your Mac's notch — or at the top of your screen on Windows — and keeps an eye on your Claude Code sessions. See every session's reads, edits, and runs step by step; permission requests show up with Allow/Deny buttons for one-click approval; built-in chat straight from the notch. Integrations with Stripe, n8n, GitHub, Vercel, Resend, Notion, and Cal.com each get their own colored Mochi. macOS 15+ (Swift 6) and Windows 10/11 (Tauri 2). Up to 3.1k stars today, from 2.2k yesterday.",
+    "categories": ["productivity"],
+    "install": "See README",
+    "recurring_note": "↑ Day 3 — 3.1k stars (+900 today)"
+  }
+]
