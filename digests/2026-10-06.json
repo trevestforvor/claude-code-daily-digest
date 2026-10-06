@@ -1,0 +1,136 @@
+[
+  {
+    "slug": "mksglu-context-mode",
+    "name": "Context Mode",
+    "primary_url": "https://github.com/mksglu/context-mode",
+    "hook": "Compresses 315 KB Claude Code sessions down to 5 KB by sandboxing tool output before it touches the context window — a verified 98% reduction. Persists session memory across resets and routes automatically across 17 platforms (Claude Code, Codex, Cursor, Gemini CLI, VS Code Copilot, JetBrains, and more) via MCP + hooks. 25.5k stars; appeared in this week's Chase AI trending round-up.",
+    "categories": ["cost", "productivity"],
+    "install": "/plugin marketplace add mksglu/context-mode\n/plugin install context-mode@context-mode"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "Skills for Real Engineers (Matt Pocock)",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "Matt Pocock (creator of ts-reset, Total TypeScript educator) published his personal .agents directory as a public repo — 38 composable skills built for production engineering work, not vibe coding. Key skills: /grill-with-docs builds a shared domain model, /wayfinder plans massive efforts, /tdd enforces red-green-refactor, /code-review runs a two-axis diff review against standards and spec. Went viral across multiple Hacker News threads; 277.8k stars.",
+    "categories": ["skill", "productivity"],
+    "install": "claude plugins install mattpocock-skills"
+  },
+  {
+    "slug": "panniantong-agent-reach",
+    "name": "Agent Reach",
+    "primary_url": "https://github.com/Panniantong/agent-reach",
+    "hook": "One CLI that gives your AI agent read-and-search access to 13 internet platforms — Twitter/X, Reddit, YouTube, GitHub, Bilibili, Instagram, LinkedIn, and more — with zero API fees. Multi-backend routing automatically fails over when an access method breaks. Gained 1.1k stars on October 6 alone; 92.5k total. MIT, compatible with Claude Code, Cursor, Windsurf, Codex, and any MCP client.",
+    "categories": ["mcp", "productivity"],
+    "install": "See README"
+  },
+  {
+    "slug": "zilliztech-claude-context",
+    "name": "Claude Context (Zilliz)",
+    "primary_url": "https://github.com/zilliztech/claude-context",
+    "hook": "Semantic code search MCP for Claude Code — hybrid BM25 + dense vector search across millions of lines, with incremental Merkle-tree indexing and AST-aware chunking across 37 languages. Creator-verified ~40% token reduction compared to loading directories into context directly. Supports OpenAI, VoyageAI, Ollama, and Gemini embedding providers; works with self-hosted Milvus or Zilliz Cloud. 12.6k stars.",
+    "categories": ["mcp", "cost"],
+    "install": "claude mcp add claude-context -e OPENAI_API_KEY=sk-... -e MILVUS_ADDRESS=... -e MILVUS_TOKEN=... -- npx @zilliz/claude-context-mcp@latest"
+  },
+  {
+    "slug": "anthropic-claude-code-v2-1-290",
+    "name": "Claude Code v2.1.289–290: agent.spawn + Managed Agents",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "v2.1.289 (Oct 3) and v2.1.290 (Oct 5–6) land two headline APIs: `agent.spawn` lets plugins launch named sub-agents with their own prompts, tools, disallowedTools, and effort levels; `serverToolUses` in the mod turn.step hook lists every tool call the advisor ran (with timings). The new `/claude-api managed-agents-onboard` command scaffolds the Managed Agents pattern as ant apply files in one command. `agentId` in tool.check events now distinguishes subagent checks from the main session.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "mvschwarz-openrig",
+    "name": "OpenRig",
+    "primary_url": "https://github.com/mvschwarz/openrig",
+    "hook": "Open-source harness for running persistent networks of Claude Code and Codex agents together as one system. Define your team topology in YAML (RigSpec) — starter (2 agents), workshop (4), or factory (7) templates are included. `rig up` boots the team; `rig send` and `rig broadcast` let agents talk to each other; a terminal UI shows topology, state, and coordination live. MCP server support for agent-driven topology management. 5.4k stars, requires Node 22+, tmux, macOS/Linux.",
+    "categories": ["productivity"],
+    "install": "npm install -g @openrig/cli"
+  },
+  {
+    "slug": "elementalsouls-claude-bughunter",
+    "name": "Claude BugHunter",
+    "primary_url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "hook": "Transforms Claude Code into a senior bug-hunting researcher — 83 skills, 15 slash commands (including `/hunt` for engagement scaffolding), and 681 disclosed-report patterns curated across 24 vulnerability classes. Covers web app pentesting, cloud misconfigurations, OSINT/recon, and enterprise attack chains (M365/Entra, Okta, vCenter, SSL-VPN) with VRT-aware severity reporting and evidence hygiene. Burp Suite MCP integration included. Dual-licensed MIT + CC BY 4.0. 4.8k stars.",
+    "categories": ["skill", "mcp"],
+    "install": "/plugin marketplace add elementalsouls/Claude-BugHunter"
+  },
+  {
+    "slug": "rebelytics-one-skill-to-rule-them-all",
+    "name": "One Skill to Rule Them All",
+    "primary_url": "https://github.com/rebelytics/one-skill-to-rule-them-all",
+    "hook": "A meta-skill that watches your Claude Code sessions — autonomous or human-led — captures patterns, corrections, and judgment calls, and turns them into skill improvement proposals for your review. The creator logged 1,600+ observations across 81 skills, most of which were improved or created by this meta-skill running in the background. Practical application of the Augmented Expertise methodology. 3k stars, CC BY 4.0.",
+    "categories": ["skill", "productivity"],
+    "install": "See README"
+  },
+  {
+    "slug": "rehan-remade-universal-modder",
+    "name": "Universal Modder",
+    "primary_url": "https://github.com/rehan-remade/universal-modder",
+    "hook": "Point Claude at any game you own and it mods it — 12 engine playbooks (Unity, Unreal, Godot, Source, Bethesda, Minecraft, RE Engine, and more), 10-step loop from recon through art generation (sprites, textures, 3D, SFX, music via fal MCP) to packaging. Still #1 global trending on GitHub October 6 with 4.0k stars, confirmed via daily trending tracker.",
+    "categories": ["skill", "mcp"],
+    "install": "/plugin marketplace add rehan-remade/universal-modder && /plugin install universal-modder@universal-modder",
+    "recurring_note": "↑ Day 4 — 4.0k stars; confirmed #1 global trending Oct 6"
+  },
+  {
+    "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+    "name": "UI/UX Pro Max Skill",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "secondary_urls": [
+      "https://ui-ux-pro-max-skill.com/",
+      "https://www.youtube.com/watch?v=RVeCbPg0liw"
+    ],
+    "hook": "v2.0's Design System Generator produces a complete tailored design system in seconds — 192 industry-specific reasoning rules, 79 UI styles, 192 color palettes, 74 font pairings, 25 chart types, 16 tech stacks. 131.9k stars on GitHub, 347k+ installs in the Skillselion catalog.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill\n/plugin install ui-ux-pro-max@ui-ux-pro-max-skill",
+    "recurring_note": "↑ Day 10 — 131.9k stars",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "affaan-m-ecc",
+    "name": "ECC",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "#1 on GitHub's claude-code topic with 272k stars. Wraps Claude Code with a complete SDLC: 293 reusable skills, 68 specialized agents, 94 workflow commands, AgentShield security scanning, and session-persistent memory. v2.2.3. The ethos: plan → test → implement → review → verify → remember → improve.",
+    "categories": ["skill", "productivity"],
+    "install": "npx ecc-universal@2.2.3 setup",
+    "recurring_note": "↑ Day 5 — 272k stars"
+  },
+  {
+    "slug": "dietrichgebert-ponytail",
+    "name": "Ponytail",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "secondary_urls": ["https://www.chaseai.io/blog/ponytail-skill-claude-code-cheaper-faster"],
+    "hook": "Six-step YAGNI decision ladder before every code change: does this need to exist, is it in the codebase / stdlib / platform / deps, can it be one line? JetBrains benchmarked 15% output reduction; Chase AI's testing showed up to 50% code cuts and 53% Opus cost drop. 156k stars.",
+    "categories": ["cost", "skill"],
+    "install": "/plugin install ponytail@ponytail",
+    "recurring_note": "↑ Day 6 — 156k stars",
+    "creator_buzz": ["@Chase-H-AI"]
+  },
+  {
+    "slug": "juliusbrussee-caveman",
+    "name": "Caveman",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "secondary_urls": ["https://skillselion.com/skills/juliusbrussee/caveman"],
+    "hook": "Forces responses into compressed caveman-speak while preserving code, commands, and exact error messages verbatim. JetBrains tested 86 Claude Code tasks: 8.5% fewer output tokens with no detectable quality change. Started as a Friday joke, hit #1 on HN with 904 points, now 109k stars.",
+    "categories": ["cost", "skill"],
+    "install": "npx skills add JuliusBrussee/caveman -g",
+    "recurring_note": "↑ Day 6 — 109k stars"
+  },
+  {
+    "slug": "multica-ai-andrej-karpathy-skills",
+    "name": "Karpathy Guidelines Skill",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "hook": "Forrest Chang turned Andrej Karpathy's frustrations with AI coding agents into four hard behavioral rules: think before coding, make surgical changes, surface assumptions and tradeoffs, define verifiable success criteria. Most-starred Claude Code behavioral skill on GitHub at 210k stars, 35.1k installs on the skills.sh registry. Works across all major agents.",
+    "categories": ["skill", "productivity"],
+    "install": "npx skills add multica-ai/andrej-karpathy-skills",
+    "recurring_note": "↑ Day 4 — 210k stars"
+  },
+  {
+    "slug": "graphify-labs-graphify",
+    "name": "Graphify",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "hook": "Type `/graphify .` in Claude Code and it transforms your codebase — plus docs, SQL schemas, configs, and PDFs — into a queryable knowledge graph. Local deterministic AST parsing via tree-sitter (37 languages, no LLM call) outputs graph.html (interactive visualization), GRAPH_REPORT.md, and graph.json. An MCP server mode enables repeated programmatic access. 123.4k stars.",
+    "categories": ["mcp", "productivity"],
+    "install": "uv tool install graphifyy && graphify install",
+    "recurring_note": "↑ Day 4 — 123.4k stars"
+  }
+]
