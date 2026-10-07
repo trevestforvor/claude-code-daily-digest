@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "cathrynlavery-diagram-design",
+    "name": "diagram-design",
+    "primary_url": "https://github.com/cathrynlavery/diagram-design",
+    "hook": "44.7k stars with 828 gained today — editorial-quality diagram design for Claude Code, Codex, and GitHub Copilot. Ships 42 diagram types (Wardley maps, swimlanes, Sankey, UML, and more) as self-contained HTML+SVG with automatic brand-color extraction. The README's pitch: 'No shadows. No Mermaid slop.'",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add cathrynlavery/diagram-design"
+  },
+  {
+    "slug": "cloudflare-security-audit-skill",
+    "name": "Cloudflare Security Audit Skill",
+    "primary_url": "https://github.com/cloudflare/security-audit-skill",
+    "hook": "Cloudflare's official agent skill for multi-phase security audits — 25.8k stars, +538 today. Orchestrates six phases (recon, coverage-led hunting, candidate validation, structured output, independent verification, target-neutral reporting) with machine-readable findings and 10+ attack-domain hunting classes including prompt injection, supply chain, and memory-safety bugs.",
+    "categories": ["security", "skill"],
+    "install": "npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "97.5k stars, +578 today — persistent compressed memory across every Claude Code (and Codex, OpenCode, Pi) session. Hooks into five lifecycle events, compresses what happened with AI, and injects only the relevant slice into the next session. Three-layer MCP search and per-session token-cost telemetry make the memory measurable, not just convenient.",
+    "categories": ["memory", "cost"],
+    "install": "npx claude-mem install"
+  },
+  {
+    "slug": "ayghri-i-have-adhd",
+    "name": "i-have-adhd",
+    "primary_url": "https://github.com/ayghri/i-have-adhd",
+    "hook": "54.9k stars, +620 today — a skill that enforces 10 formatting rules so your coding agent leads with the next action, not a preamble. Instead of 'Great question! Let me think through this…' you get 'Edit src/auth.ts:42. 1. Open the file. 2. Replace the function. Next: paste the first failing line.' MIT-licensed and forkable.",
+    "categories": ["productivity", "skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "morluto-rea",
+    "name": "REA — Reverse Engineer Anything",
+    "primary_url": "https://github.com/morluto/rea",
+    "hook": "#1 on GitHub Trending today with 12.9k stars and +4,666 in a single day. REA wires agents to 41+ native inspection capabilities via MCP, letting Claude Code investigate Mach-O/ELF/PE binaries, Electron apps, .NET assemblies, APKs, and firmware without source access. Ask your agent 'understand how search works in the Notes app and build a similar feature' and it investigates, shows evidence, and ships code.",
+    "categories": ["mcp", "reverse-engineering"],
+    "install": "npx rea-agents setup"
+  },
+  {
+    "slug": "othmanadi-planning-with-files",
+    "name": "planning-with-files",
+    "primary_url": "https://github.com/OthmanAdi/planning-with-files",
+    "hook": "27.3k stars — Manus-style persistent planning: the agent writes task_plan.md, findings.md, and progress.md directly into your repo so a /clear or crash never loses the plan. Lifecycle hooks re-inject goals each turn. Blind A/B evaluation: 96.7% assertion pass rate (29/30) versus 6.7% without the skill; won all 3 independent comparisons.",
+    "categories": ["planning", "skill"],
+    "install": "npx skills add OthmanAdi/planning-with-files --skill planning-with-files -g"
+  },
+  {
+    "slug": "qingYunA-answer-me-with-html",
+    "name": "answer-me-with-html",
+    "primary_url": "https://github.com/QingYunA/answer-me-with-html",
+    "hook": "2.0k stars, trending Oct 5-7 — agent skill that answers complex questions as a single readable HTML page instead of a wall of text. The model writes only a Markdown draft (~612 tokens average) and the CLI handles layout, styling, and diagram rendering, cutting output token usage roughly 8x versus hand-written HTML responses.",
+    "categories": ["skill", "cost"],
+    "install": "npx skills add QingYunA/answer-me-with-html"
+  },
+  {
+    "slug": "trycua-cua",
+    "name": "Cua — Computer-Use 2.0",
+    "primary_url": "https://github.com/trycua/cua",
+    "hook": "28.6k stars, +229 today — open-source platform to scale computer-use agents with cross-OS VM fleets, native app drivers for macOS/Windows/Linux, CUA-S1 small models for sub-second computer-use decisions, and Cua Bench for task evaluation. Integrates with Claude Code and other agents via MCP and native SDKs.",
+    "categories": ["computer-use", "mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "nvidia-skills",
+    "name": "NVIDIA Agent Skills",
+    "primary_url": "https://github.com/nvidia/skills",
+    "hook": "3.5k stars, 434 forks — NVIDIA-verified catalog of 400+ skills for Physical AI, robotics, simulation, CUDA, RAG, BioNeMo genomics, Medical AI (DICOM), and Jetson edge-AI workflows. Works with Claude Code, Codex, and other Agent Skills-compatible hosts. Skills synced daily from upstream NVIDIA product repos.",
+    "categories": ["skill", "ai"],
+    "install": "npx skills add nvidia/skills"
+  },
+  {
+    "slug": "feder-cr-dots",
+    "name": "invisible_dots",
+    "primary_url": "https://github.com/feder-cr/dots",
+    "hook": "31.8k stars — open-source, self-hosted alternative to Claude Cowork, Manus, and OpenAI Dots. Each 'Dot' agent runs in its own QEMU VM with a persistent Linux desktop, an anti-bot-evasion Firefox profile, and customizable allow/ask/deny permission controls. Access via web UI, CLI, HTTP API, Telegram, or WhatsApp.",
+    "categories": ["agent", "self-hosted"],
+    "install": "See README (requires Node 24+, Go 1.25+, hardware virtualization)"
+  },
+  {
+    "slug": "nanaism-yomiyasu",
+    "name": "yomiyasu",
+    "primary_url": "https://github.com/nanaism/yomiyasu",
+    "hook": "1.7k stars, trending Oct 5-6 — agent skill that refines AI-generated Japanese into natural prose, fixing unnatural metaphors, ambiguous subject-verb relationships, and excessive formatting. Ships 7 transformation principles, three domain modes (tech/business/essay), a static linting script, and a diff checker. No external dependencies.",
+    "categories": ["skill", "japanese"],
+    "install": "npx skills add nanaism/yomiyasu"
+  },
+  {
+    "slug": "copilotkit-opendots",
+    "name": "OpenDots",
+    "primary_url": "https://github.com/CopilotKit/OpenDots",
+    "hook": "4.1k stars — CopilotKit's open template for persistent multi-channel AI coworkers (Dots) that move across text, voice calls, and Slack. Each specialist agent gets its own isolated browser, file system, and terminal; built-in approval workflows gate sensitive actions. Uses CopilotKit + AG-UI architecture.",
+    "categories": ["agent", "multi-channel"],
+    "install": "See README"
+  }
+]
