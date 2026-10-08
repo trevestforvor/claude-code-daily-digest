@@ -1,0 +1,83 @@
+[
+  {
+    "slug": "storytold-photocraft",
+    "name": "PhotoCraft",
+    "primary_url": "https://github.com/storytold/photocraft",
+    "hook": "23.8k stars — a clean-room reimplementation of Adobe Photoshop in pure Rust (MIT/Apache-2.0). Every operation goes through a single registry of 500+ commands accessible via the UI, CLI, JSON control channel, and MCP server. Run `photocraft-cli mcp` and any agent (including Claude Code) can drive it as a tool — open PSD, select layer, apply adjustment, export. Handles layers, masks, vectors, type, and real PSD round-trips. AGENTS.md ships in the repo. Early alpha but trending continuously Oct 5–7.",
+    "categories": ["design", "mcp"],
+    "install": "cargo run --release -p photocraft -- image.psd"
+  },
+  {
+    "slug": "nykooi1-vibe-wise",
+    "name": "Vibe-Wise",
+    "primary_url": "https://github.com/nykooi1/vibe-wise",
+    "hook": "3.1k stars — Claude Code plugin that makes the agent teach you while it builds. Three checkpoints: Build (reason through the problem together), Design (confirm a plan before a single line of code is written), and Implementation (authorize each write with an explanation of what changed and why). Preferences, learning notes, and a project map persist in `.vibe-wise/`. Trending on GitHub Oct 5 and growing to 3.1k. The thesis: vibe coding shouldn't turn you into a clipboard.",
+    "categories": ["skill", "cost"],
+    "install": "/plugin install vibe-wise@anthropic-plugin-directory"
+  },
+  {
+    "slug": "jakeschincariol-replica-skill",
+    "name": "Replica Skill",
+    "primary_url": "https://github.com/Jakeschincariol/replica-skill",
+    "hook": "1k stars, trending #8 Oct 8 — 11 Claude Code skills that run an end-to-end app-cloning pipeline: recon (reverse-engineer the target), architect (stack + DB plan), design (rebuild UI/screens), build, auth, payments, test, fix bugs, brand, landing page, and deploy. The final skill reads user reviews of the original app and proposes the fixes those users actually wanted. Each skill reads the previous one's output from a `replica/` folder. MIT-licensed, no network access from the Python tools.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add Jakeschincariol/replica-skill"
+  },
+  {
+    "slug": "alchaincyf-huashu-art-motion",
+    "name": "Huashu Art Motion",
+    "primary_url": "https://github.com/alchaincyf/huashu-art-motion",
+    "hook": "2.3k stars, trending #3 Oct 8 and accelerating — agent skill that turns any scene description into a short animation across 35 art styles (sumi-e, Ukiyo-e, Art Nouveau, pixel art, ink wash, and more) using 9 explainer-video grammars and 8 parameterized clip templates. Includes scripts for analyzing reference animations. Ships as a SKILL.md installable via `npx skills add`. The author built the whole project using Claude.",
+    "categories": ["skill", "design"],
+    "install": "npx skills add alchaincyf/huashu-art-motion"
+  },
+  {
+    "slug": "openai-math",
+    "name": "openai/math",
+    "primary_url": "https://github.com/openai/math",
+    "hook": "11.7k stars in 2 days — OpenAI released 719 mathematical manuscripts (in 372 families) produced by an internal reasoning model evaluating open research problems, with ~42% of top-line results formalized in Lean. No Claude Code tie, but the largest single viral AI signal this week: it marks a public benchmark moment for frontier math reasoning and is widely discussed across AI engineering communities.",
+    "categories": ["ai"],
+    "install": "See README"
+  },
+  {
+    "slug": "facebookincubator-muse-gadget-sdk",
+    "name": "Muse Gadget SDK",
+    "primary_url": "https://github.com/facebookincubator/muse-gadget-sdk",
+    "hook": "1.7k stars, launched Oct 2 — Meta's open-source SDK for building AI-connected hardware accessories for Meta Muse. Ships two SDKs: an ESP32 firmware SDK for microcontrollers and a Linux SDK for Raspberry Pi-class devices. AGENTS.md is included, meaning Claude Code (or any agent reading AGENTS.md) can follow the spec and write firmware. The SDK terms explicitly say it is 'not a locked developer platform', inviting community extension. 1.3k stars gained in first 3 days.",
+    "categories": ["ai"],
+    "install": "See README (choose ESP32 or Linux SDK)"
+  },
+  {
+    "slug": "anthropic-claude-code-v2-1-293",
+    "name": "Claude Code v2.1.292–293: Haiku 5.5 + Plugin Marketplace",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "v2.1.293 (Oct 7) promotes Claude Haiku 5.5 to the default Haiku model on the Anthropic API and fixes the Bash tool losing shell aliases, functions, and plugin PATH entries mid-session. v2.1.292 (Oct 6) adds `--marketplace` to `claude plugin install` (skip the add step and install directly from any marketplace URL), an effort parameter for the Agent tool, and an env variable (`CLAUDE_OVERLOAD_RETRY_DELAY_MS`) for overloaded-request retry tuning.",
+    "categories": ["anthropic"],
+    "install": "npm install -g @anthropic-ai/claude-code@latest"
+  },
+  {
+    "slug": "ox-security-mcp-audit-2026",
+    "name": "OX Security: 15,465 Public MCP Servers Audited",
+    "primary_url": "https://thehackernews.com/2026/10/welcome-to-jungle-what-we-found-inside.html",
+    "hook": "OX Security audited 15,465 indexed public MCP servers (reported Oct 6) and found zero marketplace-level vetting — expired domains, consumer-tunnel-hosted endpoints, and no access controls as the norm. Separately, GBHackers reported an active MCP OAuth traffic exploit enabling session credential hijacking the same week. Given that Claude Code runs MCP servers at the full permission level of the user's shell session, this is the supply-chain risk report the ecosystem has needed.",
+    "categories": ["security", "mcp"],
+    "install": ""
+  },
+  {
+    "slug": "kargulstudio-sales-crm",
+    "name": "sales-crm (Agent-Ready Next.js Boilerplate)",
+    "primary_url": "https://github.com/kargulstudio/sales-crm",
+    "hook": "1.7k stars, trending 4 consecutive days Oct 5–8 — a Next.js 16 + React 19 + Tailwind 4 starter template notable for shipping `CLAUDE.md`, `AGENTS.md` (Next.js version notes for agents), `.claude/skills/`, `.agents/skills/`, and `.builderrules` out of the box. Signals a pattern: production starter kits pre-configuring for AI coding agents rather than retrofitting them later. MIT-licensed.",
+    "categories": ["skill"],
+    "install": "npm install && npm run dev"
+  },
+  {
+    "slug": "qingYunA-answer-me-with-html",
+    "name": "answer-me-with-html",
+    "primary_url": "https://github.com/QingYunA/answer-me-with-html",
+    "hook": "2.2k stars and still #2 on GitHub trending Oct 8 — agent skill that routes complex questions to a single readable HTML page instead of a text wall. Model writes only a ~612-token Markdown draft; the CLI handles layout and diagram rendering, cutting output token usage ~8× versus hand-written HTML responses.",
+    "categories": ["skill", "cost"],
+    "install": "npx skills add QingYunA/answer-me-with-html",
+    "recurring_note": "↑ Day 2 in digest — 2.2k stars; still #2 global trending Oct 8 (up from 2.0k yesterday)"
+  }
+]
