@@ -1,0 +1,132 @@
+[
+  {
+    "slug": "cathrynlavery-diagram-design",
+    "name": "diagram-design",
+    "primary_url": "https://github.com/cathrynlavery/diagram-design",
+    "hook": "46.6k stars, +1.9k in two days — and still climbing. Day 3 on the trending charts for an editorial-quality diagram design skill covering 42 types: Wardley maps, swimlanes, Sankey, UML, ERD, and more. Every output is a self-contained HTML+SVG file with automatic brand-color extraction. The README's pitch still holds: 'No shadows. No Mermaid slop.'",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add cathrynlavery/diagram-design",
+    "recurring_note": "↑ Day 3 — 46.6k stars (was 44.7k Oct 7)"
+  },
+  {
+    "slug": "storytold-photocraft",
+    "name": "PhotoCraft",
+    "primary_url": "https://github.com/storytold/photocraft",
+    "hook": "23.8k stars, trending continuously since Oct 5 — a clean-room Rust reimplementation of Photoshop. Every operation is registered as a command accessible via UI, CLI, JSON channel, and MCP server. Run `photocraft-cli mcp` and Claude Code drives it as a tool: open PSD, select layer, apply adjustment, export. Handles layers, masks, vectors, type, and real PSD round-trips. AGENTS.md ships in the repo.",
+    "categories": ["design", "mcp"],
+    "install": "cargo run --release -p photocraft -- image.psd",
+    "recurring_note": "↑ Day 2 — 23.8k stars; trending since Oct 5"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "98.6k stars, +1.1k in two days — persistent compressed memory across every Claude Code (and Codex, OpenCode, Pi) session. Hooks into five lifecycle events, compresses what happened with AI, and injects only the relevant slice into the next session. Three-layer MCP search and per-session token-cost telemetry make the memory measurable, not just convenient.",
+    "categories": ["memory", "cost"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 3 — 98.6k stars (was 97.5k Oct 7)"
+  },
+  {
+    "slug": "tigerless-labs-autoharness",
+    "name": "AutoHarness",
+    "primary_url": "https://github.com/tigerless-labs/autoharness",
+    "hook": "Self-learning skill layer that watches your Claude Code sessions, extracts behavioral patterns and corrections, and regenerates your SKILL.md files automatically. No prompt engineering required — it learns your codebase's idioms by observation. CORE-Bench vendor benchmark: 42% task pass rate before autoharness, 78% after 50 observed sessions. MIT-licensed. ~9.7k stars; Product Hunt launch this week.",
+    "categories": ["skill", "cost"],
+    "install": "/plugin marketplace add tigerless-labs/autoharness\n/plugin install autoharness@autoharness"
+  },
+  {
+    "slug": "code-yeongyu-oh-my-openagent",
+    "name": "Oh My OpenAgent",
+    "primary_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "hook": "~68k stars, updated Oct 9 — a single config file that orchestrates Claude Code, Cursor, Codex, Gemini CLI, and OpenHands as a unified multi-harness agent team. Define your agent topology in YAML, run `npx oh-my-openagent@latest`, and each harness picks up its role. v4.19.4 adds per-harness skill injection and cross-harness context sharing. Note: SUL-1.0 license restricts commercial use.",
+    "categories": ["plugin"],
+    "install": "npx oh-my-openagent@latest"
+  },
+  {
+    "slug": "nykooi1-vibe-wise",
+    "name": "Vibe-Wise",
+    "primary_url": "https://github.com/nykooi1/vibe-wise",
+    "hook": "3.1k stars — Claude Code plugin that makes the agent teach you while it builds. Three checkpoints: Build (reason through the problem together), Design (confirm a plan before a single line is written), and Implementation (authorize each write with an explanation of what changed and why). Preferences, learning notes, and a project map persist in `.vibe-wise/`. The thesis: vibe coding shouldn't turn you into a clipboard.",
+    "categories": ["skill", "cost"],
+    "install": "/plugin install vibe-wise@anthropic-plugin-directory",
+    "recurring_note": "↑ Day 2 — 3.1k stars"
+  },
+  {
+    "slug": "alchaincyf-huashu-art-motion",
+    "name": "Huashu Art Motion",
+    "primary_url": "https://github.com/alchaincyf/huashu-art-motion",
+    "hook": "2.3k stars, trending #3 Oct 8 and accelerating — agent skill that turns any scene description into a short animation across 35 art styles (sumi-e, Ukiyo-e, Art Nouveau, pixel art, ink wash, and more) using 9 explainer-video grammars and 8 parameterized clip templates. Ships as a SKILL.md installable via `npx skills add`. The author built the whole project using Claude.",
+    "categories": ["skill", "design"],
+    "install": "npx skills add alchaincyf/huashu-art-motion",
+    "recurring_note": "↑ Day 2 — 2.3k stars"
+  },
+  {
+    "slug": "jakeschincariol-replica-skill",
+    "name": "Replica Skill",
+    "primary_url": "https://github.com/Jakeschincariol/replica-skill",
+    "hook": "1k stars — 11 skills that run an end-to-end app-cloning pipeline: recon (reverse-engineer the target), architect, design, build, auth, payments, test, fix bugs, brand, landing page, and deploy. The final skill reads user reviews of the original app and proposes the fixes those users actually wanted. Each skill reads the previous one's output from a `replica/` folder. MIT-licensed.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add Jakeschincariol/replica-skill",
+    "recurring_note": "↑ Day 2 — 1k stars"
+  },
+  {
+    "slug": "florian-claude-code-ultimate-guide",
+    "name": "Claude Code Ultimate Guide (MCP)",
+    "primary_url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+    "hook": "5.4k stars, updated Oct 7 — 430K+ lines of distilled Claude Code knowledge at v3.44.1, packaged as a queryable MCP server. Run `npx -y claude-code-ultimate-guide-mcp@latest`, add it to your Claude Code config, then ask Claude to query it from inside any session. Covers skills, hooks, plugins, MCP, agent patterns, and cost optimization strategies.",
+    "categories": ["skill"],
+    "install": "npx -y claude-code-ultimate-guide-mcp@latest"
+  },
+  {
+    "slug": "anthropic-claude-code-v2-1-295",
+    "name": "Claude Code v2.1.294–295: Hook Timeout Blocking",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "v2.1.295 (Oct 8) adds a new hook option: block the triggering action if the hook process cannot start or times out, rather than silently succeeding. This makes hooks fail-closed for security and correctness-critical workflows — a hook that gates a destructive command now behaves like a circuit breaker, not a no-op, when the hook runner is unavailable.",
+    "categories": ["anthropic"],
+    "install": "npm install -g @anthropic-ai/claude-code@latest"
+  },
+  {
+    "slug": "kargulstudio-sales-crm",
+    "name": "sales-crm (Agent-Ready Starter)",
+    "primary_url": "https://github.com/kargulstudio/sales-crm",
+    "hook": "1.7k stars, trending 5 consecutive days — a Next.js 16 + React 19 + Tailwind 4 starter template notable for shipping `CLAUDE.md`, `AGENTS.md`, `.claude/skills/`, `.agents/skills/`, and `.builderrules` out of the box. Signals a pattern: production starter kits pre-configuring for AI coding agents rather than retrofitting them later. MIT-licensed.",
+    "categories": ["skill"],
+    "install": "npm install && npm run dev",
+    "recurring_note": "↑ Day 2 — 1.7k stars; 5 consecutive trending days"
+  },
+  {
+    "slug": "trendsmcp-ai-trends-mcp",
+    "name": "Trends MCP",
+    "primary_url": "https://github.com/trendsmcp-ai/Trends-MCP",
+    "hook": "Live trend data from 25+ platforms — Google Trends, YouTube trending, Reddit hot, Amazon bestsellers, Wikipedia trending, and more — surfaced directly inside Claude Code via MCP. Use it for market research, content strategy, competitor analysis, or any task where freshness matters. Free tier: 100 req/day (API key required from trendsmcp.ai).",
+    "categories": ["mcp"],
+    "install": "npx @trendsmcp/trends-mcp@latest"
+  },
+  {
+    "slug": "qingYunA-answer-me-with-html",
+    "name": "answer-me-with-html",
+    "primary_url": "https://github.com/QingYunA/answer-me-with-html",
+    "hook": "~2.3k stars, still trending on Day 3 — agent skill that routes complex answers to a single readable HTML page instead of a wall of text. The model writes only a ~612-token Markdown draft; the CLI handles layout and diagram rendering, cutting output token usage roughly 8× versus hand-written HTML responses.",
+    "categories": ["skill", "cost"],
+    "install": "npx skills add QingYunA/answer-me-with-html",
+    "recurring_note": "↑ Day 3 — ~2.3k stars; still trending"
+  },
+  {
+    "slug": "openai-math",
+    "name": "openai/math",
+    "primary_url": "https://github.com/openai/math",
+    "hook": "11.7k stars in 2 days — OpenAI released 719 mathematical manuscripts (372 families) produced by an internal reasoning model evaluating open research problems, with ~42% of top-line results formalized in Lean 4. No Claude Code tie, but the largest single viral AI signal this week: it marks a public benchmark moment for frontier math reasoning and is the most-discussed AI release across HN and Reddit engineering communities Oct 7–9.",
+    "categories": ["ai"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — 11.7k stars"
+  },
+  {
+    "slug": "ox-security-mcp-audit-2026",
+    "name": "OX Security: 15,465 Public MCP Servers Audited",
+    "primary_url": "https://thehackernews.com/2026/10/welcome-to-jungle-what-we-found-inside.html",
+    "hook": "OX Security's audit of 15,465 indexed public MCP servers found zero marketplace-level vetting: expired domains, consumer-tunnel-hosted endpoints, and no access controls as the norm. The same week, GBHackers reported an active MCP OAuth traffic exploit enabling session credential hijacking. Given that Claude Code runs MCP servers at the full permission level of the user's shell session, this is the supply-chain risk report the ecosystem has needed. Story still resonating on Day 2.",
+    "categories": ["security", "mcp"],
+    "install": "",
+    "recurring_note": "↑ Day 2 — security story still spreading"
+  }
+]
