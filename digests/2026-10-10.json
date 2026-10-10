@@ -1,0 +1,117 @@
+[
+  {
+    "slug": "cathrynlavery-diagram-design",
+    "name": "diagram-design",
+    "primary_url": "https://github.com/cathrynlavery/diagram-design",
+    "hook": "~47.5k stars, Day 4 on GitHub trending — still the strongest design signal of the week. An editorial-quality diagram skill for Claude Code, Codex, and GitHub Copilot covering 42 types (Wardley maps, swimlanes, Sankey, UML, ERD, and more). Every output is a self-contained HTML+SVG file with automatic brand-color extraction. 'No shadows. No Mermaid slop.'",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add cathrynlavery/diagram-design",
+    "recurring_note": "↑ Day 4 — ~47.5k stars (was 46.6k Oct 9)"
+  },
+  {
+    "slug": "anthropic-claude-code-v2-1-296",
+    "name": "Claude Code v2.1.296: Sonnet 5.5 Cache Reads Halved",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "v2.1.296 (Oct 9) cuts Sonnet 5.5 prompt cache read costs 50% to $0.10/M tokens (down from $0.20/M) — the first significant per-token price cut to a Claude 5 model. Also ships CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL (pin every workflow sub-agent to one model), `allow_large` on the Read tool for big-file one-shots, MCP tool description + server instruction limit doubled to 4,096 chars, backgrounding (←) now stops the in-flight turn instead of letting it finish unseen, and 56 bug fixes.",
+    "categories": ["anthropic", "cost"],
+    "install": "npm install -g @anthropic-ai/claude-code@latest"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "~99.5k stars — within striking distance of 100k. Day 4 on the charts for persistent compressed memory across every Claude Code (and Codex, OpenCode, Pi) session. Hooks into five lifecycle events, compresses what happened with AI, and injects only the relevant slice back into the next session. Three-layer MCP search and per-session token-cost telemetry make the memory measurable, not just convenient.",
+    "categories": ["memory", "cost"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 4 — ~99.5k stars (was 98.6k Oct 9); 100k milestone imminent"
+  },
+  {
+    "slug": "nyldn-claude-octopus",
+    "name": "Claude Octopus",
+    "primary_url": "https://github.com/nyldn/claude-octopus",
+    "hook": "~4.2k stars — a Claude Code plugin that puts up to 8 AI models on every coding, research, or design task concurrently. Claude handles synthesis, Codex handles implementation, Gemini handles research, and each model's reasoning is compared before merging. Run `/octo:setup` once after install, then prefix any task with `/octo:`. No external provider signup required — Claude is built in; other models are opt-in. v9.54.1.",
+    "categories": ["plugin"],
+    "install": "/plugin marketplace add nyldn/claude-octopus\n/plugin install octo@nyldn-plugins"
+  },
+  {
+    "slug": "tigerless-labs-autoharness",
+    "name": "AutoHarness",
+    "primary_url": "https://github.com/tigerless-labs/autoharness",
+    "hook": "~10k stars, Day 2 — self-learning skill layer that watches Claude Code sessions, extracts behavioral patterns and corrections, and regenerates SKILL.md files automatically. No prompt engineering required. CORE-Bench benchmark: 42% task pass rate before AutoHarness, 78% after 50 observed sessions. MIT-licensed.",
+    "categories": ["skill", "cost"],
+    "install": "/plugin marketplace add tigerless-labs/autoharness\n/plugin install autoharness@autoharness",
+    "recurring_note": "↑ Day 2 — ~10k stars (was 9.7k Oct 9)"
+  },
+  {
+    "slug": "code-yeongyu-oh-my-openagent",
+    "name": "Oh My OpenAgent",
+    "primary_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "hook": "~68.5k stars, updated Oct 10 — a single YAML config file that orchestrates Claude Code, Cursor, Codex, Gemini CLI, and OpenHands as a unified multi-harness agent team. Each harness picks up its role; v4.19.4 adds per-harness skill injection and cross-harness context sharing. Note: SUL-1.0 license restricts commercial use.",
+    "categories": ["plugin"],
+    "install": "npx oh-my-openagent@latest",
+    "recurring_note": "↑ Day 2 — ~68.5k stars; updated Oct 10"
+  },
+  {
+    "slug": "storytold-photocraft",
+    "name": "PhotoCraft",
+    "primary_url": "https://github.com/storytold/photocraft",
+    "hook": "~24.2k stars, Day 3 trending — clean-room Rust reimplementation of Photoshop as an agentic-first tool. Every operation is a registered command accessible via UI, CLI, JSON channel, and MCP server. Run `photocraft-cli mcp` and Claude Code drives it: open PSD, select layer, apply adjustment, export. Handles layers, masks, vectors, type, and real PSD round-trips. AGENTS.md ships in the repo.",
+    "categories": ["design", "mcp"],
+    "install": "cargo run --release -p photocraft -- image.psd",
+    "recurring_note": "↑ Day 3 — ~24.2k stars"
+  },
+  {
+    "slug": "alchaincyf-huashu-art-motion",
+    "name": "Huashu Art Motion",
+    "primary_url": "https://github.com/alchaincyf/huashu-art-motion",
+    "hook": "~2.4k stars, Day 3 — agent skill that turns any scene description into a short animation across 35 art styles (sumi-e, Ukiyo-e, Art Nouveau, pixel art, ink wash, and more) using 9 explainer-video grammars and 8 parameterized clip templates. Ships as a SKILL.md installable via `npx skills add`. The author built the whole project using Claude.",
+    "categories": ["skill", "design"],
+    "install": "npx skills add alchaincyf/huashu-art-motion",
+    "recurring_note": "↑ Day 3 — ~2.4k stars"
+  },
+  {
+    "slug": "florian-claude-code-ultimate-guide",
+    "name": "Claude Code Ultimate Guide (MCP)",
+    "primary_url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+    "hook": "~5.6k stars, Day 2 — 430K+ lines of distilled Claude Code knowledge at v3.44.1, packaged as a queryable MCP server. Add it to your config and Claude can pull answers about skills, hooks, plugins, agent patterns, and cost-optimization strategies from inside any session.",
+    "categories": ["skill", "mcp"],
+    "install": "npx -y claude-code-ultimate-guide-mcp@latest",
+    "recurring_note": "↑ Day 2 — ~5.6k stars (was 5.4k Oct 9)"
+  },
+  {
+    "slug": "jakeschincariol-replica-skill",
+    "name": "Replica Skill",
+    "primary_url": "https://github.com/Jakeschincariol/replica-skill",
+    "hook": "~1.1k stars, Day 3 — 11 Claude Code skills that run an end-to-end app-cloning pipeline: recon, architect, design, build, auth, payments, test, fix bugs, brand, landing page, and deploy. The final skill reads user reviews of the original app and proposes the fixes those users actually wanted. Each skill passes its output to the next via a `replica/` folder. MIT-licensed.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add Jakeschincariol/replica-skill",
+    "recurring_note": "↑ Day 3 — ~1.1k stars"
+  },
+  {
+    "slug": "trendsmcp-ai-trends-mcp",
+    "name": "Trends MCP",
+    "primary_url": "https://github.com/trendsmcp-ai/Trends-MCP",
+    "hook": "Live trend data from 25+ platforms — Google Trends, YouTube trending, Reddit hot, Amazon bestsellers, Wikipedia trending, and more — piped directly into Claude Code via MCP. Free tier: 100 req/day (API key from trendsmcp.ai). Day 2 in the digest; useful for market research, content strategy, or any task where freshness matters.",
+    "categories": ["mcp"],
+    "install": "npx @trendsmcp/trends-mcp@latest",
+    "recurring_note": "↑ Day 2"
+  },
+  {
+    "slug": "ox-security-mcp-audit-2026",
+    "name": "OX Security: 15,465 Public MCP Servers Audited",
+    "primary_url": "https://thehackernews.com/2026/10/welcome-to-jungle-what-we-found-inside.html",
+    "hook": "Still spreading on Day 3: OX Security's audit of 15,465 indexed public MCP servers found zero marketplace-level vetting — expired domains, consumer-tunnel-hosted endpoints, no access controls as the norm. Same week, GBHackers reported an active MCP OAuth traffic exploit enabling session credential hijacking. Claude Code runs MCP servers at the user's full shell-permission level. The report that the ecosystem has needed.",
+    "categories": ["security", "mcp"],
+    "install": "",
+    "recurring_note": "↑ Day 3 — security story still spreading"
+  },
+  {
+    "slug": "kargulstudio-sales-crm",
+    "name": "sales-crm (Agent-Ready Starter)",
+    "primary_url": "https://github.com/kargulstudio/sales-crm",
+    "hook": "~1.7k stars, Day 3 — a Next.js 16 + React 19 + Tailwind 4 starter template notable for shipping `CLAUDE.md`, `AGENTS.md`, `.claude/skills/`, `.agents/skills/`, and `.builderrules` out of the box. Signals a pattern: production starter kits pre-configuring for AI coding agents rather than retrofitting them. MIT-licensed.",
+    "categories": ["skill"],
+    "install": "npm install && npm run dev",
+    "recurring_note": "↑ Day 3 — 1.7k stars"
+  }
+]
