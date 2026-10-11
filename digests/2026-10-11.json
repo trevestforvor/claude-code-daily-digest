@@ -1,0 +1,112 @@
+[
+  {
+    "slug": "egonex-ai-understand-anything",
+    "name": "Understand Anything",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "hook": "Egonex-AI's 85.9k-star plugin (7.2k forks) turns any codebase, knowledge base, or docs into an interactive knowledge graph you can explore, search, and query — 'Graphs that teach > graphs that impress.' Updated Oct 10. Supports fuzzy + semantic search, domain/flow views, and diff-impact analysis before commits. Install takes one marketplace command.",
+    "categories": ["design", "mcp"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything && /plugin install understand-anything"
+  },
+  {
+    "slug": "anthropic-claude-haiku-5-5",
+    "name": "Claude Haiku 5.5 Now Default",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Claude Code v2.1.293 (Oct 7) made claude-haiku-5-5 the default Haiku on the Anthropic API. It brings a 1M-context window at $0.10/$0.50 per million tokens (input/output) — half the context cost of prior Haiku with 10x the window. Prompts over 100K tokens are $0.50/$2.50/M. Drops into any existing workflow automatically.",
+    "categories": ["cost"]
+  },
+  {
+    "slug": "coreyhaines31-marketingskills",
+    "name": "Marketing Skills for Claude Code",
+    "primary_url": "https://github.com/coreyhaines31/marketingskills",
+    "hook": "54.2k-star collection (8k forks) giving AI agents CRO, copywriting, SEO, A/B testing, lifecycle email, cold email, paid ads, referrals, and pricing skills — 30+ skills total. Updated Oct 8. The foundation `product-marketing` skill is a prerequisite that the others build on; install the full set or cherry-pick individual skills with `--skill`.",
+    "categories": ["general"],
+    "install": "npx skills add coreyhaines31/marketingskills"
+  },
+  {
+    "slug": "k-dense-ai-scientific-agent-skills",
+    "name": "Scientific Agent Skills",
+    "primary_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "hook": "48.4k-star library (4.3k forks) of 177 reusable skills that turn Claude Code into an AI scientist — genomics, single-cell RNA-seq, CRISPR, cheminformatics, molecular docking, clinical trials, pharmacokinetics, neuroscience, materials science, and 100+ scientific databases including PubChem, UniProt, and ClinicalTrials.gov. Updated Oct 5.",
+    "categories": ["general"],
+    "install": "npx skills add K-Dense-AI/scientific-agent-skills"
+  },
+  {
+    "slug": "wshobson-agents",
+    "name": "wshobson/agents — Multi-Harness Plugin Marketplace",
+    "primary_url": "https://github.com/wshobson/agents",
+    "hook": "40.4k-star (4.3k forks) plugin marketplace covering Claude Code, Codex, Cursor, OpenCode, Copilot, Google Antigravity, and Pi. Hosts 94 plugins, 202 agents, 184 skills, and 105 commands — including Python dev (3 agents, 16 skills), JS/TS, code review, and security scanning. Updated Oct 5. Single install adds all plugins for your chosen host.",
+    "categories": ["general"],
+    "install": "/plugin marketplace add wshobson/agents && /plugin install python-development@claude-code-workflows"
+  },
+  {
+    "slug": "voltagent-awesome-agent-skills",
+    "name": "Awesome Agent Skills",
+    "primary_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "hook": "35.5k-star (3.8k forks) curated index of 1,000+ agent skills from official dev teams and the community — covering Cloudflare, Vercel, Netlify, Terraform, Azure, Stripe, Supabase, ClickHouse, Expo, Flutter, Trail of Bits security, TestMu testing, and more. Updated Oct 11 today. Serves as the canonical cross-harness skill discovery list.",
+    "categories": ["general"]
+  },
+  {
+    "slug": "nanocoai-nanoclaw",
+    "name": "NanoClaw",
+    "primary_url": "https://github.com/nanocoai/nanoclaw",
+    "hook": "30.9k-star (12.8k forks) open-source AI assistant that runs Claude SDK agents in isolated Linux containers and connects them to WhatsApp, Telegram, Slack, Discord, and Gmail. One-script install handles Node/pnpm/Docker setup. Positioned as a minimal, auditable alternative to OpenClaw's 500K LOC monolith — channels and providers added as installable skills rather than baked in. Updated Oct 11.",
+    "categories": ["general", "mcp"],
+    "install": "git clone https://github.com/nanocoai/nanoclaw.git && cd nanoclaw && bash nanoclaw.sh"
+  },
+  {
+    "slug": "titanwings-distilly",
+    "name": "Distilly",
+    "primary_url": "https://github.com/titanwings/distilly",
+    "hook": "25.5k-star (2.2k forks) skill (formerly Colleague Skill) that distills how a specific person thinks and communicates into a reusable Agent Skill — sourcing from Lark, DingTalk, Slack, WeChat exports, X posts, PDFs, and emails. Three profile families: colleague (work persona), relationship (communication style), and celebrity (public figures). Updated Sep 22. Works across Claude Code, Hermes, OpenClaw, Codex, and others.",
+    "categories": ["general"],
+    "install": "git clone https://github.com/titanwings/distilly <DISTILLY_SKILL_DIR>"
+  },
+  {
+    "slug": "teng-lin-notebooklm-py",
+    "name": "notebooklm-py",
+    "primary_url": "https://github.com/teng-lin/notebooklm-py",
+    "hook": "19.7k-star (2.6k forks) unofficial Python API, CLI, and agent skill for Google Gemini Notebook (formerly NotebookLM). Adds Claude Code integration for creating notebooks, running web/Drive research with auto-import, generating audio overviews, videos, slide decks, quizzes, and mind maps, plus bulk export to MP3/MP4/PDF/PPTX. Also exposes an MCP server with 40 tools. Updated Oct 11 today.",
+    "categories": ["mcp", "general"],
+    "install": "uv tool install \"notebooklm-py[browser]\""
+  },
+  {
+    "slug": "yishentu-claudian",
+    "name": "Claudian — Claude Code Inside Obsidian",
+    "primary_url": "https://github.com/YishenTu/claudian",
+    "hook": "15.6k-star (1.1k forks) Obsidian plugin that runs Claude Code, Codex, Grok Build, or OpenCode as an AI collaborator directly inside your notes vault — your vault becomes the agent's working directory. Features sidebar chat, inline word-level diff editing, Zen Mode, Skills and slash commands, @mentions of vault files, MCP server connections, and session tabs. Install via Obsidian Community Plugins browser.",
+    "categories": ["design", "general"],
+    "install": "Install via Obsidian → Settings → Community Plugins → Browse → 'Claudian'"
+  },
+  {
+    "slug": "latent-spaces-brag",
+    "name": "brag — Launch Video Generator",
+    "primary_url": "https://github.com/latent-spaces/brag",
+    "hook": "15.1k-star (1.1k forks) agent skill that turns any project you just built into a short launch video with music and motion in one command — uses Hyperframes for rendering. Writes a `brag-output/` folder with a plan, composition brief, share copy, and `brag.mp4`. Includes `/brag-slim` for lighter Opus 5.5 runs. Optional voiceover via Kokoro. Updated Oct 9.",
+    "categories": ["design"],
+    "install": "/plugin marketplace add latent-spaces/brag && /plugin install brag@brag"
+  },
+  {
+    "slug": "yusufkaraaslan-skill-seekers",
+    "name": "Skill Seekers",
+    "primary_url": "https://github.com/yusufkaraaslan/Skill_Seekers",
+    "hook": "15.1k-star Python CLI and MCP server that converts 18 source types — docs sites, GitHub repos, PDFs, Word, EPUB, Jupyter notebooks, OpenAPI specs, Confluence, Notion, Slack exports, and more — into packaged Claude agent skills. Exports to 22 targets including Claude, Gemini, OpenAI, LangChain, Pinecone, and 19 coding agents. MCP server exposes 40 tools. Conflict detection prevents overlapping skill coverage.",
+    "categories": ["mcp", "general"],
+    "install": "pip install skill-seekers"
+  },
+  {
+    "slug": "nevamind-ai-memu",
+    "name": "memU — Personal Memory Wiki",
+    "primary_url": "https://github.com/NevaMind-AI/memU",
+    "hook": "14.5k-star (1.1k forks) personal memory layer stored as a shared LLM wiki that works across sessions, agents, and devices. Automatically extracts reusable Markdown skills from session history and retrieves relevant memory before answering. SQLite or Postgres+pgvector backends; hosted MemU Cloud available. Core memory logic is ~500 lines. Supports Codex, Claude Code, Cursor, OpenClaw, Hermes, and more. Updated Oct 9.",
+    "categories": ["general"],
+    "install": "pip install memu-cli"
+  },
+  {
+    "slug": "rohitg00-awesome-claude-code-toolkit",
+    "name": "Awesome Claude Code Toolkit",
+    "primary_url": "https://github.com/rohitg00/awesome-claude-code-toolkit",
+    "hook": "The most comprehensive curated toolkit for Claude Code: 135 agents, 35 skills, 42 commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, 14 MCP configs, 26 companion apps, and 52 ecosystem entries in one repo. Regularly updated reference for practitioners who want a single source of truth rather than searching multiple registries.",
+    "categories": ["general"],
+    "install": "See README"
+  }
+]
