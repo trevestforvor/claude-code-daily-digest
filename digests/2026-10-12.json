@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "paperclipai-paperclip",
+    "name": "Paperclip — Open-Source App for Managing Agent Teams",
+    "primary_url": "https://github.com/paperclipai/paperclip",
+    "hook": "101k stars and growing — Paperclip is the open-source, self-hosted dashboard everyone is using to run teams of AI agents like a company runs staff: org chart, budgets, ticket queues, heartbeat schedules, and approval gates for risky actions. Supports Claude Code, Codex, Gemini CLI, and Cursor as agent runtimes. Published March 2026 and now one of the highest-starred projects in the agentic coding ecosystem.",
+    "categories": ["workflow", "plugins"],
+    "install": "npx paperclipai@latest onboard --yes"
+  },
+  {
+    "slug": "jakeschincariol-youtube-agent-skill",
+    "name": "youtube-agent-skill — 11 Claude Skills for Running a YouTube Channel",
+    "primary_url": "https://github.com/Jakeschincariol/youtube-agent-skill",
+    "hook": "1.2k stars — 11 free MIT skills that automate every part of a YouTube channel: /yt-script turns one idea into a fully scored script using 21 hook formulas; /yt-viral benchmarks videos against their own channel median to find what actually beat the odds; /yt-retention pinpoints where viewers leave with timecodes. Six zero-dependency Python tools back the skills. No signup or API key needed.",
+    "categories": ["skills", "workflow"],
+    "install": "/plugin marketplace add Jakeschincariol/youtube-agent-skill\n/plugin install youtube-agent"
+  },
+  {
+    "slug": "exmergo-dex",
+    "name": "dex — Analytics Engineering Toolkit for dbt and Warehouses",
+    "primary_url": "https://github.com/exmergo/dex",
+    "hook": "74 stars — A Claude Code plugin that maps your data warehouse, writes dbt models with cost checks before running, and detects schema drift between snapshots. Three commands: /dex:explore (profile and verify joins), /dex:transform (generate dbt models as reviewable diffs), /dex:maintain (surface grain and definition drift). Supports Snowflake, BigQuery, Databricks, Redshift, ClickHouse, DuckDB, and Postgres.",
+    "categories": ["skills", "workflow"],
+    "install": "npx skills add exmergo/dex"
+  },
+  {
+    "slug": "wenlan-app-wenlan",
+    "name": "wenlan — Local-First Personal Wiki with MCP Plugin",
+    "primary_url": "https://github.com/wenlan-app/wenlan",
+    "hook": "79 stars — A local-first personal wiki where every page links back to its source and Claude Code can update pages without overwriting your own edits. Ships as a Claude Code plugin via the marketplace, so you can ask Claude to research a topic and have it land new pages directly in your wiki. Plain markdown files on disk, no database.",
+    "categories": ["plugins", "workflow"],
+    "install": "/plugin marketplace add wenlan-app/wenlan"
+  },
+  {
+    "slug": "charlesdove977-claude-x-jev",
+    "name": "claude-x-jev — Sub-Cent Typed Decisions via OpenRouter's Jev Model",
+    "primary_url": "https://github.com/charlesdove977/claude-x-jev",
+    "hook": "54 stars — Benchmarked at ~400× cheaper than Claude Opus for classification tasks. claude-x-jev routes simple decisions (classify, route, verify, gate) to Jev, a small TypeSafe model on OpenRouter, at 0.3s and a fraction of a cent each — letting Claude keep the reading, writing, and judgment. 13 commands including /jev-gate (approve or block tool calls) and /jev-route (send only low-confidence items to Claude).",
+    "categories": ["cost", "skills"],
+    "install": "npx claude-x-jev install --with-commands"
+  },
+  {
+    "slug": "travsteward-openwriter",
+    "name": "openwriter — Markdown Editor Where Agents Write and You Decide",
+    "primary_url": "https://github.com/travsteward/openwriter",
+    "hook": "34 stars — A markdown-native rich text editor designed for human-agent co-authoring: agent edits appear as pending changes (green inserts, blue rewrites, red deletes) and you accept or reject each. Exposes 24 MCP tools so Claude Code can read, write, and organize documents. Plain .md files on disk, Git sync, and multi-document workspaces included.",
+    "categories": ["design", "plugins"],
+    "install": "npx openwriter setup"
+  },
+  {
+    "slug": "corvinlabs-corvinos",
+    "name": "CorvinOS — Self-Hosted Agent OS with Compliance and Audit Chain",
+    "primary_url": "https://github.com/CorvinLabs/CorvinOS",
+    "hook": "17 stars — Wraps Claude Code (or Codex, OpenCode, Copilot CLI) and lets you talk to it through Discord, Telegram, WhatsApp, Slack, email, voice, or a web console — with a hash-chained audit log per tenant that breaks on tampering. Routes each turn to the cheapest model it judges fit. Claims GDPR and EU AI Act compliance by architecture. Shadow mode runs new behaviors without acting on them until proven safe.",
+    "categories": ["plugins", "workflow"],
+    "install": "git clone https://github.com/CorvinLabs/CorvinOS.git && cd CorvinOS && ./install.sh"
+  },
+  {
+    "slug": "alexander-danilenko-cortex-ai-skills",
+    "name": "cortex-ai-skills — Opinionated Coding Skills for AI Agents",
+    "primary_url": "https://github.com/alexander-danilenko/cortex-ai-skills",
+    "hook": "16 stars — A tight, opinionated set of coding skills built from real production experience, covering code review, refactoring, test writing, and architectural decision-making. Designed for Claude Code, Codex, and Cursor. Installs as a plugin with per-skill commands and a shared context file that encodes the author's house rules.",
+    "categories": ["skills"],
+    "install": "See README"
+  },
+  {
+    "slug": "tedix-hq-tedix",
+    "name": "tedix — Self-Hosted AI Coworkers That Ask Before Risky Steps",
+    "primary_url": "https://github.com/tedix-hq/tedix",
+    "hook": "6 stars — Assigns recurring tasks to named AI coworkers (Claude Code agents) that wake on a schedule, complete their assigned work, and pause to ask before any action flagged as risky. Supports approval flows via CLI, web console, or webhook. Each coworker maintains its own task queue and session log. MIT licensed.",
+    "categories": ["workflow", "plugins"],
+    "install": "See README"
+  },
+  {
+    "slug": "lucasli6833-slop-cop",
+    "name": "slop-cop — Detects AI-Generated Writing Patterns in Prose",
+    "primary_url": "https://github.com/Lucasli6833/slop-cop",
+    "hook": "3 stars — A Claude Code skill that flags the telltale patterns of AI-generated writing in any text: overused transition phrases, hollow intensifiers, list-heavy structure, and passive constructions. Runs as /slop-check and returns a scored report with line-level flags. Useful for teams that want to catch AI-laundered content before it goes out.",
+    "categories": ["skills"],
+    "install": "See README"
+  },
+  {
+    "slug": "hamza-aziz-ai-codex-claude-council",
+    "name": "codex-claude-council — ChatGPT and Claude Debate Until They Agree",
+    "primary_url": "https://github.com/hamza-aziz-ai/codex-claude-council",
+    "hook": "3 stars — A Claude Code plugin that opens a structured debate between your signed-in ChatGPT (Codex) and Claude instances, no API keys needed. Both models are given the same question and argue positions; when they converge the plugin surfaces the agreed answer. Useful for architecture decisions where you want a second opinion that isn't just Claude talking to itself.",
+    "categories": ["plugins", "workflow"],
+    "install": "/plugin marketplace add hamza-aziz-ai/codex-claude-council"
+  },
+  {
+    "slug": "kimmingul-xllm",
+    "name": "xllm — Multi-Vendor LLM Advisor Plugin",
+    "primary_url": "https://github.com/kimmingul/xllm",
+    "hook": "2 stars — An advisor plugin that pulls in models from OpenAI, Gemini, Mistral, Groq, and others alongside Claude inside your agentic CLI. Read-only by default (it advises but does not act), so you can query competing models for a second opinion on a plan before Claude executes. Configured per session via a simple YAML manifest.",
+    "categories": ["plugins", "cost"],
+    "install": "See README"
+  },
+  {
+    "slug": "clownware-bouncer",
+    "name": "bouncer — YAML Policy Hook That Gates Tool Calls Without an LLM",
+    "primary_url": "https://github.com/clownware/bouncer",
+    "hook": "1 star — A hook for Claude Code that evaluates every tool call against a YAML policy file you own, allowing or denying it without firing an LLM request. Rules support path globs, command prefixes, and env-var conditions. Because it runs in-process before the tool executes, latency is near zero and cost is zero. Aimed at teams that want deterministic safety rails rather than AI-judged permission checks.",
+    "categories": ["plugins"],
+    "install": "See README"
+  },
+  {
+    "slug": "ying-kai-liao-flow",
+    "name": "flow — Runs Software Tasks in Parallel via Git Worktrees",
+    "primary_url": "https://github.com/Ying-Kai-Liao/flow",
+    "hook": "A Claude Code plugin that fans out independent tasks across git worktrees, opens a PR per worktree, and keeps you in the decision seat throughout. Each parallel stream runs in isolation so branches never conflict mid-task. Suited for large refactors or multi-feature sprints where the tasks have no shared state.",
+    "categories": ["plugins", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "its-magdy-qa-warden",
+    "name": "qa-warden — Playwright E2E Tests from Plain-Language Specs",
+    "primary_url": "https://github.com/its-magdy/qa-warden",
+    "hook": "A Claude Code plugin that takes plain-language test specs and generates runnable Playwright E2E test suites. Describe behavior in prose — 'user should see an error if the email field is empty' — and qa-warden writes the test, selects the right locators, and drops it into your test directory. Targets teams that want QA coverage without dedicating engineering time to test authoring.",
+    "categories": ["plugins", "skills"],
+    "install": "See README"
+  }
+]
