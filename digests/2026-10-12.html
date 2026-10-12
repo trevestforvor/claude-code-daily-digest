@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — October 12, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — October 12, 2026</h1><p class="sub">Top 15 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/paperclipai/paperclip">Paperclip — Open-Source App for Managing Agent Teams</a></h3>
+  <p class="hook">101k stars and growing — Paperclip is the open-source, self-hosted dashboard everyone is using to run teams of AI agents like a company runs staff: org chart, budgets, ticket queues, heartbeat schedules, and approval gates for risky actions. Supports Claude Code, Codex, Gemini CLI, and Cursor as agent runtimes. Published March 2026 and now one of the highest-starred projects in the agentic coding ecosystem.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">plugins</span>  </div>
+  <div class="tags">agent · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>npx paperclipai@latest onboard --yes</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Jakeschincariol/youtube-agent-skill">youtube-agent-skill — 11 Claude Skills for Running a YouTube Channel</a></h3>
+  <p class="hook">1.2k stars — 11 free MIT skills that automate every part of a YouTube channel: /yt-script turns one idea into a fully scored script using 21 hook formulas; /yt-viral benchmarks videos against their own channel median to find what actually beat the odds; /yt-retention pinpoints where viewers leave with timecodes. Six zero-dependency Python tools back the skills. No signup or API key needed.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">skill · plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add Jakeschincariol/youtube-agent-skill
+/plugin install youtube-agent</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/exmergo/dex">dex — Analytics Engineering Toolkit for dbt and Warehouses</a></h3>
+  <p class="hook">74 stars — A Claude Code plugin that maps your data warehouse, writes dbt models with cost checks before running, and detects schema drift between snapshots. Three commands: /dex:explore (profile and verify joins), /dex:transform (generate dbt models as reviewable diffs), /dex:maintain (surface grain and definition drift). Supports Snowflake, BigQuery, Databricks, Redshift, ClickHouse, DuckDB, and Postgres.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">plugin · cost · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add exmergo/dex</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/wenlan-app/wenlan">wenlan — Local-First Personal Wiki with MCP Plugin</a></h3>
+  <p class="hook">79 stars — A local-first personal wiki where every page links back to its source and Claude Code can update pages without overwriting your own edits. Ships as a Claude Code plugin via the marketplace, so you can ask Claude to research a topic and have it land new pages directly in your wiki. Plain markdown files on disk, no database.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">plugins</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">mcp · plugin · local · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add wenlan-app/wenlan</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/charlesdove977/claude-x-jev">claude-x-jev — Sub-Cent Typed Decisions via OpenRouter&#39;s Jev Model</a></h3>
+  <p class="hook">54 stars — Benchmarked at ~400× cheaper than Claude Opus for classification tasks. claude-x-jev routes simple decisions (classify, route, verify, gate) to Jev, a small TypeSafe model on OpenRouter, at 0.3s and a fraction of a cent each — letting Claude keep the reading, writing, and judgment. 13 commands including /jev-gate (approve or block tool calls) and /jev-route (send only low-confidence items to Claude).</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx claude-x-jev install --with-commands</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/travsteward/openwriter">openwriter — Markdown Editor Where Agents Write and You Decide</a></h3>
+  <p class="hook">34 stars — A markdown-native rich text editor designed for human-agent co-authoring: agent edits appear as pending changes (green inserts, blue rewrites, red deletes) and you accept or reject each. Exposes 24 MCP tools so Claude Code can read, write, and organize documents. Plain .md files on disk, Git sync, and multi-document workspaces included.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">plugins</span>  </div>
+  <div class="tags">mcp · viral</div>
+  <pre><button class="copy">copy</button><code>npx openwriter setup</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/CorvinLabs/CorvinOS">CorvinOS — Self-Hosted Agent OS with Compliance and Audit Chain</a></h3>
+  <p class="hook">17 stars — Wraps Claude Code (or Codex, OpenCode, Copilot CLI) and lets you talk to it through Discord, Telegram, WhatsApp, Slack, email, voice, or a web console — with a hash-chained audit log per tenant that breaks on tampering. Routes each turn to the cheapest model it judges fit. Claims GDPR and EU AI Act compliance by architecture. Shadow mode runs new behaviors without acting on them until proven safe.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">plugins</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">viral · terminal</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/CorvinLabs/CorvinOS.git &amp;&amp; cd CorvinOS &amp;&amp; ./install.sh</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/alexander-danilenko/cortex-ai-skills">cortex-ai-skills — Opinionated Coding Skills for AI Agents</a></h3>
+  <p class="hook">16 stars — A tight, opinionated set of coding skills built from real production experience, covering code review, refactoring, test writing, and architectural decision-making. Designed for Claude Code, Codex, and Cursor. Installs as a plugin with per-skill commands and a shared context file that encodes the author&#39;s house rules.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">skill · plugin · viral · review</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/tedix-hq/tedix">tedix — Self-Hosted AI Coworkers That Ask Before Risky Steps</a></h3>
+  <p class="hook">6 stars — Assigns recurring tasks to named AI coworkers (Claude Code agents) that wake on a schedule, complete their assigned work, and pause to ask before any action flagged as risky. Supports approval flows via CLI, web console, or webhook. Each coworker maintains its own task queue and session log. MIT licensed.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">plugins</span>  </div>
+  <div class="tags">viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Lucasli6833/slop-cop">slop-cop — Detects AI-Generated Writing Patterns in Prose</a></h3>
+  <p class="hook">3 stars — A Claude Code skill that flags the telltale patterns of AI-generated writing in any text: overused transition phrases, hollow intensifiers, list-heavy structure, and passive constructions. Runs as /slop-check and returns a scored report with line-level flags. Useful for teams that want to catch AI-laundered content before it goes out.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">animation · skill · viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/hamza-aziz-ai/codex-claude-council">codex-claude-council — ChatGPT and Claude Debate Until They Agree</a></h3>
+  <p class="hook">3 stars — A Claude Code plugin that opens a structured debate between your signed-in ChatGPT (Codex) and Claude instances, no API keys needed. Both models are given the same question and argue positions; when they converge the plugin surfaces the agreed answer. Useful for architecture decisions where you want a second opinion that isn&#39;t just Claude talking to itself.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">plugins</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add hamza-aziz-ai/codex-claude-council</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/kimmingul/xllm">xllm — Multi-Vendor LLM Advisor Plugin</a></h3>
+  <p class="hook">2 stars — An advisor plugin that pulls in models from OpenAI, Gemini, Mistral, Groq, and others alongside Claude inside your agentic CLI. Read-only by default (it advises but does not act), so you can query competing models for a second opinion on a plan before Claude executes. Configured per session via a simple YAML manifest.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">plugins</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">plugin · agent · model · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/clownware/bouncer">bouncer — YAML Policy Hook That Gates Tool Calls Without an LLM</a></h3>
+  <p class="hook">1 star — A hook for Claude Code that evaluates every tool call against a YAML policy file you own, allowing or denying it without firing an LLM request. Rules support path globs, command prefixes, and env-var conditions. Because it runs in-process before the tool executes, latency is near zero and cost is zero. Aimed at teams that want deterministic safety rails rather than AI-judged permission checks.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">plugins</span>  </div>
+  <div class="tags">model · cost</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Ying-Kai-Liao/flow">flow — Runs Software Tasks in Parallel via Git Worktrees</a></h3>
+  <p class="hook">A Claude Code plugin that fans out independent tasks across git worktrees, opens a PR per worktree, and keeps you in the decision seat throughout. Each parallel stream runs in isolation so branches never conflict mid-task. Suited for large refactors or multi-feature sprints where the tasks have no shared state.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">plugins</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">plugin</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/its-magdy/qa-warden">qa-warden — Playwright E2E Tests from Plain-Language Specs</a></h3>
+  <p class="hook">A Claude Code plugin that takes plain-language test specs and generates runnable Playwright E2E test suites. Describe behavior in prose — &#39;user should see an error if the email field is empty&#39; — and qa-warden writes the test, selects the right locators, and drops it into your test directory. Targets teams that want QA coverage without dedicating engineering time to test authoring.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">plugins</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">plugin · marketplace · browser · testing</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
