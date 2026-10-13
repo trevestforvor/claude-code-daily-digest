@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "nexu-io-open-design",
+    "name": "OpenDesign — Local-First Collaborative AI Design Agent Workspace",
+    "primary_url": "https://github.com/nexu-io/open-design",
+    "hook": "101k stars — OpenDesign is an open-source (Apache-2.0), local-first workspace where you give a brief to a coding agent and receive prototypes, websites, decks, images, and motion graphics. It ships 100+ SKILL.md skills, 277 official plugins, 151 design-system packages, and an MCP server for live project file reads. Integrates with Claude Code via `od mcp install claude`.",
+    "categories": ["design", "plugins", "workflow"],
+    "install": "od mcp install claude"
+  },
+  {
+    "slug": "tt-a1i-archify",
+    "name": "Archify — Turn Any Idea or Codebase Into an Interactive Diagram",
+    "primary_url": "https://github.com/tt-a1i/archify",
+    "hook": "82.9k stars, v3.0.1 — Archify generates a self-contained, offline-capable HTML diagram from a text description or a repository. Source-backed diagrams link nodes to file line ranges, and you can trace upstream/downstream relationships between nodes. Five diagram types: Architecture, Workflow, Sequence, Data Flow, and Lifecycle.",
+    "categories": ["design", "skills"],
+    "install": "npx skills add tt-a1i/archify -g"
+  },
+  {
+    "slug": "manavarya09-design-extract",
+    "name": "designlang — Extract Any Website's Design System as Tokens",
+    "primary_url": "https://github.com/Manavarya09/design-extract",
+    "hook": "4.2k stars — designlang reads a site's live DOM and produces DTCG design tokens, a Tailwind config, a shadcn/ui theme, and Figma variables in one run. Available as a Claude Code plugin, a standalone CLI, an MCP server, a Chrome extension, and a GitHub Action. The optional `--smart` classifier grades design quality and compares DNA across reference sites.",
+    "categories": ["design", "skills", "mcp"],
+    "install": "npx designlang https://stripe.com"
+  },
+  {
+    "slug": "dietrichgebert-ponytail",
+    "name": "Ponytail — Makes AI Agents Favor Minimal Code",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "hook": "162.5k stars — Ponytail enforces the laziest-senior-dev principle: reuse what already exists before writing a single line. The author's benchmark across 39 tasks (Opus 5.5) shows -53% code, -41% time, -26% cost, and -45% tokens, while the share of risky logic shipped with a test rose from 68% to 98%. A date-picker example collapses 335 lines to 10.",
+    "categories": ["cost", "skills", "plugins"],
+    "install": "/plugin marketplace add DietrichGebert/ponytail\n/plugin install ponytail@ponytail"
+  },
+  {
+    "slug": "morluto-rea",
+    "name": "REA (Reverse Engineer Anything) — MCP Server for Agent-Driven Reverse Engineering",
+    "primary_url": "https://github.com/morluto/rea",
+    "hook": "196k stars — REA is an MCP server that lets AI agents inspect software at every layer: native binaries (Hopper/Ghidra/IDA), JavaScript/Electron, .NET assemblies, Android APKs, Go, WASM, EVM bytecode, SQLite, packet captures, and firmware. Analysis stays local; each result includes evidence and limitations. Sets up in Claude Code via `npx rea-agents setup`.",
+    "categories": ["mcp", "skills"],
+    "install": "npx rea-agents setup"
+  },
+  {
+    "slug": "ayghri-i-have-adhd",
+    "name": "i-have-adhd — Stops Coding Agents From Burying the Answer",
+    "primary_url": "https://github.com/ayghri/i-have-adhd",
+    "hook": "56.9k stars — This MIT skill enforces ADHD-friendly output: action first, numbered steps, one concrete next step, no filler phrases like \"Great question!\" It hit the Hacker News front page with 324 points and 256 comments in 12 hours. Ships as both a Claude Code plugin and a `claude-skills` skill; install is a single paste into the CLI.",
+    "categories": ["skills", "plugins"],
+    "install": "Install the i-have-adhd skill from https://github.com/ayghri/i-have-adhd"
+  },
+  {
+    "slug": "addyosmani-agent-skills",
+    "name": "agent-skills by Addy Osmani — Production-Grade Engineering Skills for AI Agents",
+    "primary_url": "https://github.com/addyosmani/agent-skills",
+    "hook": "106k stars — Chrome DevRel's Addy Osmani packages 25 lifecycle skills (/spec, /plan, /build, /test, /review, /webperf, /ship, and more) that make agents follow senior-engineer practices: spec-first, test-driven, security-reviewed, and performance-checked. `/build auto` runs every task from an approved plan through to committed, tested code. Works across Claude Code, Codex, Cursor, and 5 other agents.",
+    "categories": ["skills", "workflow"],
+    "install": "/plugin marketplace add addyosmani/agent-skills\n/plugin install agent-skills@addy-agent-skills"
+  },
+  {
+    "slug": "career-ops-hq-career-ops",
+    "name": "career-ops — AI Job Search Agent Inside Your Coding CLI",
+    "primary_url": "https://github.com/career-ops-hq/career-ops",
+    "hook": "74.3k stars — career-ops runs entirely local, scores each job 1–5 against your CV before you apply, drafts tailored ATS-friendly CVs and cover letters, scans 100+ pre-configured company portals, and shows a terminal dashboard of your pipeline. It never submits anything: you press Submit. Your data stays on your machine and goes only to the AI provider you configure.",
+    "categories": ["skills", "workflow"],
+    "install": "npx @santifer/career-ops init"
+  },
+  {
+    "slug": "alibaba-open-code-review",
+    "name": "Open Code Review — Alibaba's Deterministic + LLM Agent Code Review CLI",
+    "primary_url": "https://github.com/alibaba/open-code-review",
+    "hook": "46.8k stars — Alibaba's OCR CLI combines deterministic pipelines (file selection, rule matching for NPE, thread-safety, XSS, SQL injection) with an LLM agent for line-level code review. Supports OpenAI- and Anthropic-compatible endpoints, Git diff, branch-range, and full-file scan modes, plus CI/CD integration and an MCP server. `ocr delegate` mode lets Claude Code perform the review without an OCR API key.",
+    "categories": ["skills", "workflow", "mcp"],
+    "install": "npm install -g @alibaba-group/open-code-review"
+  },
+  {
+    "slug": "sickn33-agentic-awesome-skills",
+    "name": "Agentic Awesome Skills — 2,600+ SKILL.md Playbooks with a Local Catalog Control Plane",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "hook": "47.5k stars — AAS is a catalog of 2,687+ installable SKILL.md playbooks plus a local MCP control plane where the agent searches the catalog, selects exact skills, validates the stack, and previews a plan before changing anything. A browser-local workbench reviews stack and plan files without touching your filesystem. Works across Claude Code, Codex, Cursor, Gemini CLI, Kiro, and others.",
+    "categories": ["skills"],
+    "install": "aas mcp configure"
+  },
+  {
+    "slug": "rehan-remade-universal-modder",
+    "name": "universal-modder — AI Game Modding Skills and CLI for PC Games You Own",
+    "primary_url": "https://github.com/rehan-remade/universal-modder",
+    "hook": "7.3k stars — A set of Claude Code skills, engine playbooks (Unity, Unreal, Godot, Minecraft, and others), and a `um` CLI that scans installed games, generates art/3D/audio through fal, renders 3D models into sprites, and records game windows. Includes example mods: a Terraria weapons mod, an Age of Empires II civilization, and Minecraft-inside-GTA V. Safety rules: no anti-cheat targets, backs up saves before changes.",
+    "categories": ["skills", "plugins"],
+    "install": "/plugin marketplace add rehan-remade/universal-modder\n/plugin install universal-modder@universal-modder"
+  },
+  {
+    "slug": "nowork-studio-notfair-plugin",
+    "name": "NotFair Plugin — 48 Open-Source SEO, GEO, and Marketing Skills for AI Agents",
+    "primary_url": "https://github.com/nowork-studio/notfair-plugin",
+    "hook": "3.9k stars — 48 slash-command workflows covering SEO analysis, AI-answer visibility (GEO/AEO), Google Ads audit, GA4 analytics, Search Console, Meta, X, LinkedIn, Reddit Ads, WordPress, and GoHighLevel. One OAuth-connected MCP server grants live account access. Read-only analysis first; paid-media changes require explicit approval. Each skill is a readable SKILL.md you can fork.",
+    "categories": ["skills", "plugins"],
+    "install": "/plugin marketplace add nowork-studio/notfair-plugin\n/plugin install notfair@nowork-studio"
+  },
+  {
+    "slug": "zenbu-labs-terminal-browser",
+    "name": "terminal-browser — A Real Browser Inside Your Terminal",
+    "primary_url": "https://github.com/zenbu-labs/terminal-browser",
+    "hook": "3.8k stars — terminal-browser renders full web pages in Chromium and displays them in terminals supporting the kitty graphics protocol (Ghostty, kitty, VS Code). Practical Claude Code uses: keep agent and a running site in the same tab, give the agent an open browser, or preview HTML plans in a split pane. SSH proxy mode lets it display pages from remote machines.",
+    "categories": ["plugins", "workflow"],
+    "install": "curl -fsSL https://terminal-browser.sh/install | bash"
+  },
+  {
+    "slug": "feder-cr-invisible-playwright-mcp",
+    "name": "invisible_playwright_mcp — Playwright MCP Server That Evades Anti-Bot Detection",
+    "primary_url": "https://github.com/feder-cr/invisible_playwright_mcp",
+    "hook": "2.8k stars — A Playwright MCP server built on a stealth Firefox build that avoids anti-bot checks and CAPTCHAs. Lets Claude Code agents perform multi-step browser tasks on sites that block ordinary automation: checking fares across calendar dates, scraping gated pages, or any flow that requires a real browser. Persistent profile directory keeps logins between sessions.",
+    "categories": ["mcp", "plugins"],
+    "install": "claude plugin marketplace add feder-cr/invisible_playwright_mcp\nclaude plugin install invisible-playwright-mcp@feder-cr"
+  },
+  {
+    "slug": "lemomo-ai-lemo-opuscar",
+    "name": "lemo-opuscar — Make Short Films in Code With 43 Visual Styles",
+    "primary_url": "https://github.com/lemomo-ai/lemo-opuscar",
+    "hook": "2.1k stars — A Claude Code skill for making short films without a video model. You supply a story; Claude Opus 5.5 directs it. 43 styles across 9 categories (hand-drawn, East Asian traditions, print, graphic, cinema eras, games, 3D, and more), each with a demo film built entirely in code. Default output is 1920×1080 at 24fps. Ships with OPUSCAR 98, a film covering all 98 Best Picture winners, one per style.",
+    "categories": ["skills"],
+    "install": "claude plugin marketplace add lemomo-ai/lemo-opuscar\nclaude plugin install lemo-opuscar@lemolab"
+  }
+]
