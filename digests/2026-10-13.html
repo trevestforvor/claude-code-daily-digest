@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — October 13, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — October 13, 2026</h1><p class="sub">Top 15 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/nexu-io/open-design">OpenDesign — Local-First Collaborative AI Design Agent Workspace</a></h3>
+  <p class="hook">101k stars — OpenDesign is an open-source (Apache-2.0), local-first workspace where you give a brief to a coding agent and receive prototypes, websites, decks, images, and motion graphics. It ships 100+ SKILL.md skills, 277 official plugins, 151 design-system packages, and an MCP server for live project file reads. Integrates with Claude Code via `od mcp install claude`.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">plugins</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">mcp · skill · local · viral</div>
+  <pre><button class="copy">copy</button><code>od mcp install claude</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/tt-a1i/archify">Archify — Turn Any Idea or Codebase Into an Interactive Diagram</a></h3>
+  <p class="hook">82.9k stars, v3.0.1 — Archify generates a self-contained, offline-capable HTML diagram from a text description or a repository. Source-backed diagrams link nodes to file line ranges, and you can trace upstream/downstream relationships between nodes. Five diagram types: Architecture, Workflow, Sequence, Data Flow, and Lifecycle.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">local · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add tt-a1i/archify -g</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Manavarya09/design-extract">designlang — Extract Any Website&#39;s Design System as Tokens</a></h3>
+  <p class="hook">4.2k stars — designlang reads a site&#39;s live DOM and produces DTCG design tokens, a Tailwind config, a shadcn/ui theme, and Figma variables in one run. Available as a Claude Code plugin, a standalone CLI, an MCP server, a Chrome extension, and a GitHub Action. The optional `--smart` classifier grades design quality and compares DNA across reference sites.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">frontend · plugin · token · viral · terminal · browser</div>
+  <pre><button class="copy">copy</button><code>npx designlang https://stripe.com</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/DietrichGebert/ponytail">Ponytail — Makes AI Agents Favor Minimal Code</a></h3>
+  <p class="hook">162.5k stars — Ponytail enforces the laziest-senior-dev principle: reuse what already exists before writing a single line. The author&#39;s benchmark across 39 tasks (Opus 5.5) shows -53% code, -41% time, -26% cost, and -45% tokens, while the share of risky logic shipped with a test rose from 68% to 98%. A date-picker example collapses 335 lines to 10.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">plugins</span>  </div>
+  <div class="tags">plugin · token · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add DietrichGebert/ponytail
+/plugin install ponytail@ponytail</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/morluto/rea">REA (Reverse Engineer Anything) — MCP Server for Agent-Driven Reverse Engineering</a></h3>
+  <p class="hook">196k stars — REA is an MCP server that lets AI agents inspect software at every layer: native binaries (Hopper/Ghidra/IDA), JavaScript/Electron, .NET assemblies, Android APKs, Go, WASM, EVM bytecode, SQLite, packet captures, and firmware. Analysis stays local; each result includes evidence and limitations. Sets up in Claude Code via `npx rea-agents setup`.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx rea-agents setup</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/ayghri/i-have-adhd">i-have-adhd — Stops Coding Agents From Burying the Answer</a></h3>
+  <p class="hook">56.9k stars — This MIT skill enforces ADHD-friendly output: action first, numbered steps, one concrete next step, no filler phrases like &quot;Great question!&quot; It hit the Hacker News front page with 324 points and 256 comments in 12 hours. Ships as both a Claude Code plugin and a `claude-skills` skill; install is a single paste into the CLI.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">plugins</span>  </div>
+  <div class="tags">skill · plugin · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>Install the i-have-adhd skill from https://github.com/ayghri/i-have-adhd</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/addyosmani/agent-skills">agent-skills by Addy Osmani — Production-Grade Engineering Skills for AI Agents</a></h3>
+  <p class="hook">106k stars — Chrome DevRel&#39;s Addy Osmani packages 25 lifecycle skills (/spec, /plan, /build, /test, /review, /webperf, /ship, and more) that make agents follow senior-engineer practices: spec-first, test-driven, security-reviewed, and performance-checked. `/build auto` runs every task from an approved plan through to committed, tested code. Works across Claude Code, Codex, Cursor, and 5 other agents.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">plugin · viral · marketplace · browser · security</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add addyosmani/agent-skills
+/plugin install agent-skills@addy-agent-skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/career-ops-hq/career-ops">career-ops — AI Job Search Agent Inside Your Coding CLI</a></h3>
+  <p class="hook">74.3k stars — career-ops runs entirely local, scores each job 1–5 against your CV before you apply, drafts tailored ATS-friendly CVs and cover letters, scans 100+ pre-configured company portals, and shows a terminal dashboard of your pipeline. It never submits anything: you press Submit. Your data stays on your machine and goes only to the AI provider you configure.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">viral · terminal</div>
+  <pre><button class="copy">copy</button><code>npx @santifer/career-ops init</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/alibaba/open-code-review">Open Code Review — Alibaba&#39;s Deterministic + LLM Agent Code Review CLI</a></h3>
+  <p class="hook">46.8k stars — Alibaba&#39;s OCR CLI combines deterministic pipelines (file selection, rule matching for NPE, thread-safety, XSS, SQL injection) with an LLM agent for line-level code review. Supports OpenAI- and Anthropic-compatible endpoints, Git diff, branch-range, and full-file scan modes, plus CI/CD integration and an MCP server. `ocr delegate` mode lets Claude Code perform the review without an OCR API key.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">model · anthropic · viral · terminal · review</div>
+  <pre><button class="copy">copy</button><code>npm install -g @alibaba-group/open-code-review</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/sickn33/agentic-awesome-skills">Agentic Awesome Skills — 2,600+ SKILL.md Playbooks with a Local Catalog Control Plane</a></h3>
+  <p class="hook">47.5k stars — AAS is a catalog of 2,687+ installable SKILL.md playbooks plus a local MCP control plane where the agent searches the catalog, selects exact skills, validates the stack, and previews a plan before changing anything. A browser-local workbench reviews stack and plan files without touching your filesystem. Works across Claude Code, Codex, Cursor, Gemini CLI, Kiro, and others.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">mcp · skill · agent · viral · terminal · browser</div>
+  <pre><button class="copy">copy</button><code>aas mcp configure</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/rehan-remade/universal-modder">universal-modder — AI Game Modding Skills and CLI for PC Games You Own</a></h3>
+  <p class="hook">7.3k stars — A set of Claude Code skills, engine playbooks (Unity, Unreal, Godot, Minecraft, and others), and a `um` CLI that scans installed games, generates art/3D/audio through fal, renders 3D models into sprites, and records game windows. Includes example mods: a Terraria weapons mod, an Age of Empires II civilization, and Minecraft-inside-GTA V. Safety rules: no anti-cheat targets, backs up saves before changes.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">plugins</span>  </div>
+  <div class="tags">3d · plugin · viral · marketplace · terminal</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add rehan-remade/universal-modder
+/plugin install universal-modder@universal-modder</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/nowork-studio/notfair-plugin">NotFair Plugin — 48 Open-Source SEO, GEO, and Marketing Skills for AI Agents</a></h3>
+  <p class="hook">3.9k stars — 48 slash-command workflows covering SEO analysis, AI-answer visibility (GEO/AEO), Google Ads audit, GA4 analytics, Search Console, Meta, X, LinkedIn, Reddit Ads, WordPress, and GoHighLevel. One OAuth-connected MCP server grants live account access. Read-only analysis first; paid-media changes require explicit approval. Each skill is a readable SKILL.md you can fork.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">plugins</span>  </div>
+  <div class="tags">mcp · skill · plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add nowork-studio/notfair-plugin
+/plugin install notfair@nowork-studio</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/zenbu-labs/terminal-browser">terminal-browser — A Real Browser Inside Your Terminal</a></h3>
+  <p class="hook">3.8k stars — terminal-browser renders full web pages in Chromium and displays them in terminals supporting the kitty graphics protocol (Ghostty, kitty, VS Code). Practical Claude Code uses: keep agent and a running site in the same tab, give the agent an open browser, or preview HTML plans in a split pane. SSH proxy mode lets it display pages from remote machines.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">plugins</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">proxy · viral · terminal · browser</div>
+  <pre><button class="copy">copy</button><code>curl -fsSL https://terminal-browser.sh/install | bash</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/feder-cr/invisible_playwright_mcp">invisible_playwright_mcp — Playwright MCP Server That Evades Anti-Bot Detection</a></h3>
+  <p class="hook">2.8k stars — A Playwright MCP server built on a stealth Firefox build that avoids anti-bot checks and CAPTCHAs. Lets Claude Code agents perform multi-step browser tasks on sites that block ordinary automation: checking fares across calendar dates, scraping gated pages, or any flow that requires a real browser. Persistent profile directory keeps logins between sessions.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">plugins</span>  </div>
+  <div class="tags">plugin · viral · marketplace · browser</div>
+  <pre><button class="copy">copy</button><code>claude plugin marketplace add feder-cr/invisible_playwright_mcp
+claude plugin install invisible-playwright-mcp@feder-cr</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/lemomo-ai/lemo-opuscar">lemo-opuscar — Make Short Films in Code With 43 Visual Styles</a></h3>
+  <p class="hook">2.1k stars — A Claude Code skill for making short films without a video model. You supply a story; Claude Opus 5.5 directs it. 43 styles across 9 categories (hand-drawn, East Asian traditions, print, graphic, cinema eras, games, 3D, and more), each with a demo film built entirely in code. Default output is 1920×1080 at 24fps. Ships with OPUSCAR 98, a film covering all 98 Best Picture winners, one per style.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">video · 3d · skill · plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>claude plugin marketplace add lemomo-ai/lemo-opuscar
+claude plugin install lemo-opuscar@lemolab</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
