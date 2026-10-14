@@ -1,0 +1,120 @@
+[
+  {
+    "slug": "cathrynlavery-diagram-design",
+    "name": "diagram-design",
+    "primary_url": "https://github.com/cathrynlavery/diagram-design",
+    "hook": "55.1k stars — up 8.5k since Oct 9, the strongest single-week growth in the ecosystem. Still Day 8 on the trending charts for this editorial-quality diagram skill covering 45 types: Wardley maps, swimlanes, Sankey, UML, ERD, axonometric plans, and more. Recent additions include architecture delta diffs, exploded axonometric views, semantic pattern selection, brand onboarding with palette extraction, and expanded host support (Copilot, Factory Droid, Pi, Kiro, OpenCode, Cowork). Every output is a self-contained HTML+SVG with no external deps. 'No shadows. No Mermaid slop.'",
+    "categories": ["design", "skills"],
+    "install": "/plugin marketplace add cathrynlavery/diagram-design",
+    "recurring_note": "↑ Day 8 — 55.1k stars (was 46.6k Oct 9, +8.5k)"
+  },
+  {
+    "slug": "anthropic-claude-code-v2-1-299",
+    "name": "Claude Code v2.1.299: Idle Compaction + 131 Bug Fixes",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "v2.1.299 (Oct 14) ships idle compaction: conversations of 200K+ tokens that sit idle for ~54 minutes are auto-compacted before the one-hour prompt cache expires, saving the next turn's cache cost. Also adds CLAUDE_CODE_DISABLE_FILE_MENTIONS (pass paths, not content, from @ mentions), /effort and /fast in agent view, --disallow-tools for plugin eval, new mod primitives ($.prompt.media, $.session.identity(), Text/Box styling), and a breaking MCP scope fix — mcp__a rules no longer match mcp__a__b. Comes with 131 bug fixes and 16 improvements.",
+    "categories": ["cost"],
+    "install": "npm install -g @anthropic-ai/claude-code@latest"
+  },
+  {
+    "slug": "shanraisshan-claude-code-best-practice",
+    "name": "claude-code-best-practice — Vibe Coding to Agentic Engineering",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "67.5k stars — GitHub Trending #1 repository of the day. A comprehensive, opinionated guide covering every dimension of professional Claude Code use: subagents, commands, skills, hooks, MCP servers, sessions, memory, and multi-agent workflows. 83 tips sourced from Boris Cherny (Claude Code creator), Thariq (Anthropic), Matt Pocock, and others. Includes comparisons of third-party workflow frameworks (Superpowers, Spec Kit, gstack, OpenSpec, BMAD-METHOD, Compound Engineering) and cross-model routing patterns. Sponsors: Disrupt and ClaudeKit.",
+    "categories": ["skills", "workflow"]
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "100.7k stars — crossed the 100k milestone this week (+2.1k since Oct 9). Persistent compressed context across every Claude Code, Codex, OpenCode, and Pi session: lifecycle hooks record activity, AI summarises what happened, three-layer MCP search (recency, similarity, keyword) injects only the relevant slice into the next session. A 30-day trial of hosted observer is available. Claims ~10x token savings from injecting compressed context instead of replaying full history.",
+    "categories": ["cost", "skills"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ passed 100k — 100.7k stars (was 98.6k Oct 9)"
+  },
+  {
+    "slug": "code-yeongyu-oh-my-openagent",
+    "name": "Oh My OpenAgent (omo)",
+    "primary_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "hook": "70k stars (was 68k Oct 9, Day 6). A single `omo` command that turns prompts into finished work via a graph of agents. 'ultrawork' / 'ulw' keyword has the agent read the codebase, plan, verify each step, and stop when done. 'mass ulw' fans the job across a parallel agent graph using mixed models. Kibitzer memory stores session notes as git-versioned Markdown and has a cheap model nudge the main agent away from repeated mistakes. SUL-1.0 license restricts commercial use.",
+    "categories": ["workflow", "skills"],
+    "install": "npx oh-my-openagent@latest",
+    "recurring_note": "↑ Day 6 — 70k stars (was 68k Oct 9)"
+  },
+  {
+    "slug": "storytold-photocraft",
+    "name": "PhotoCraft",
+    "primary_url": "https://github.com/storytold/photocraft",
+    "hook": "~24.2k stars, Day 7 on the charts — a clean-room Rust reimplementation of Photoshop as an agentic-first tool. Every operation is a registered command accessible via UI, CLI, JSON channel, and MCP server. Run photocraft-cli mcp and Claude Code drives it: open PSD, select layer, apply adjustment, export. Handles layers, masks, vectors, type, and real PSD round-trips with AGENTS.md in the repo. No Adobe subscription needed.",
+    "categories": ["design", "mcp"],
+    "install": "cargo run --release -p photocraft -- image.psd",
+    "recurring_note": "↑ Day 7 — ~24.2k stars"
+  },
+  {
+    "slug": "vincentwei1021-video-shotcraft",
+    "name": "video-shotcraft — Cinematic Product Videos via Remotion",
+    "primary_url": "https://github.com/Vincentwei1021/video-shotcraft",
+    "hook": "11.9k stars — an agent skill for Claude Code and Codex that turns a product description into a finished MP4. The agent captures your real pages, picks motion recipes from a library of 152 shot recipe cards and 209 motion previews, storyboards the film, animates it in Remotion, beat-syncs the cut, and adds sound design. All footage is drawn from your own screenshots and copy — no AI video model required. Sponsors: AWS, PackyCode.",
+    "categories": ["design", "skills"],
+    "install": "npx skills add Vincentwei1021/video-shotcraft"
+  },
+  {
+    "slug": "tigerless-labs-autoharness",
+    "name": "AutoHarness",
+    "primary_url": "https://github.com/tigerless-labs/autoharness",
+    "hook": "11.1k stars (was 9.7k Oct 9, +1.4k). Self-learning skill layer that watches your Claude Code sessions, extracts behavioral patterns and corrections, and regenerates your SKILL.md files automatically — no prompt engineering required. CORE-Bench benchmark: 42% task pass rate before AutoHarness, 78% after 50 observed sessions. MIT-licensed. Requires Python 3.11+.",
+    "categories": ["skills", "cost"],
+    "install": "/plugin marketplace add tigerless-labs/autoharness\n/plugin install autoharness@autoharness",
+    "recurring_note": "↑ Day 6 — 11.1k stars (was 9.7k Oct 9)"
+  },
+  {
+    "slug": "zenstory-ai-oh-story-claudecode",
+    "name": "oh-story — Web Novel Writing Skills for Claude Code",
+    "primary_url": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "hook": "7.6k stars — 13 agent skills covering the full Chinese web novel pipeline: market scanning, analyzing popular works, character setup, drafting, removing AI-sounding phrasing, and generating covers. File-based continuity tracking (settings, outlines, manuscripts, tracking files in separate folders) keeps long series consistent across resets. MIT-licensed. Works with Claude Code, Codex, and OpenCode.",
+    "categories": ["skills", "workflow"],
+    "install": "npx skills add zenstory-ai/oh-story-claudecode -y -g"
+  },
+  {
+    "slug": "rebelytics-one-skill-to-rule-them-all",
+    "name": "one-skill-to-rule-them-all — Meta-Skill for Improving Your Skills",
+    "primary_url": "https://github.com/rebelytics/one-skill-to-rule-them-all",
+    "hook": "3.3k stars — the meta-skill that watches your work sessions and proposes improvements to all your other installed skills, including itself. Logs corrections, preferences, and skill gaps; turns patterns into observation files and draft skill updates for you to review before applying. Doesn't modify skills directly — you approve each change. Requires an activation line in CLAUDE.md to trigger automatically.",
+    "categories": ["skills"],
+    "install": "npx skills add rebelytics/one-skill-to-rule-them-all --skill task-observer -g"
+  },
+  {
+    "slug": "zenstory-ai-drama-skills",
+    "name": "drama-skills — AI Short Drama Production Skills",
+    "primary_url": "https://github.com/zenstory-ai/drama-skills",
+    "hook": "2.9k stars — 11 agent skills that take a story idea or source novel from episode scripts and character assets through storyboards, image prompts, video prompts, and a finished edited video. Asks for confirmation before calling any paid external service for generation. MIT-licensed. From the same studio as oh-story (see above), suggesting zenstory-ai is becoming a dedicated fiction/media skills team.",
+    "categories": ["design", "skills"],
+    "install": "npx skills add zenstory-ai/drama-skills -y -g"
+  },
+  {
+    "slug": "amelnagdy-delegate-skills",
+    "name": "delegate-skills — Hand Off Tasks to a Sub-Agent, Review the Diff",
+    "primary_url": "https://github.com/amElnagdy/delegate-skills",
+    "hook": "2.4k stars — finds the coding agent CLIs installed on your machine, groups them into named lanes (feature, tests, UI), and dispatches tasks to the right implementer. The orchestrating agent writes the brief, dispatches, waits, reviews the resulting diff, re-runs checks, and leaves the commit to you — the implementer never commits. Optional codex-background add-on includes an MCP server for async Codex dispatch.",
+    "categories": ["skills", "workflow"],
+    "install": "npx skills add amElnagdy/delegate-skills"
+  },
+  {
+    "slug": "nykooi1-vibe-wise",
+    "name": "Vibe-Wise — Agent That Teaches While It Builds",
+    "primary_url": "https://github.com/nykooi1/vibe-wise",
+    "hook": "~3.1k stars, Day 6 — Claude Code plugin with three checkpoints: Build (reason together before writing), Design (confirm a plan before a single line is written), and Implementation (authorize each write with an explanation of what changed and why). Preferences, learning notes, and a project map persist in .vibe-wise/. The thesis: 'vibe coding shouldn't turn you into a clipboard.'",
+    "categories": ["skills", "cost"],
+    "install": "/plugin install vibe-wise@anthropic-plugin-directory",
+    "recurring_note": "↑ Day 6 — ~3.1k stars"
+  },
+  {
+    "slug": "florianbruniaux-claude-code-ultimate-guide",
+    "name": "Claude Code Ultimate Guide (MCP)",
+    "primary_url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+    "hook": "~5.6k stars, Day 5 — 430K+ lines of distilled Claude Code knowledge at v3.44.1, packaged as a queryable MCP server. Add it to your Claude Code config and ask Claude to pull answers about skills, hooks, plugins, agent patterns, and cost-optimization strategies directly from inside any session. Single npx command, no install step needed.",
+    "categories": ["mcp", "skills"],
+    "install": "npx -y claude-code-ultimate-guide-mcp@latest",
+    "recurring_note": "↑ Day 5 — ~5.6k stars"
+  }
+]
