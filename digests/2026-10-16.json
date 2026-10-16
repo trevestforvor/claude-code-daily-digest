@@ -1,0 +1,133 @@
+[
+  {
+    "slug": "cathrynlavery-diagram-design",
+    "name": "diagram-design",
+    "primary_url": "https://github.com/cathrynlavery/diagram-design",
+    "hook": "55.1k stars as of Oct 14 — still the highest-velocity design skill in the ecosystem on Day 10. 45 diagram types rendered as self-contained HTML+SVG with no external deps; recent additions include architecture delta diffs, exploded axonometric views, semantic pattern selection, and expanded host support for Kiro, OpenCode, Factory Droid, Cowork, and Pi. 'No shadows. No Mermaid slop.'",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add cathrynlavery/diagram-design",
+    "recurring_note": "↑ Day 10 — 55.1k stars (verified Oct 14)"
+  },
+  {
+    "slug": "wheresryan22-anatomy",
+    "name": "Anatomy — Interactive Isometric Machines From a One-Line Brief",
+    "primary_url": "https://github.com/wheresryan22/anatomy",
+    "hook": "6.5k+ stars — Day 2 on the digest, still climbing. The /anatomy command turns a one-line brief into a standalone interactive artifact: SVG structure + WebGL shaders share an isometric camera, and every part is deterministic code with no generative-AI image service required. Outputs land as standalone HTML, raw SVG, or a React/Next.js component. Created Oct 8, v1.0 released Oct 10.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add wheresryan22/anatomy -g -a claude-code",
+    "recurring_note": "↑ Day 2 — 6.5k+ stars (verified Oct 14)"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "100.7k stars — Day 3 past the 100k milestone. Persistent compressed context across Claude Code, Codex, OpenCode, and Pi: lifecycle hooks record activity, AI summarises what happened, three-layer MCP search (recency, similarity, keyword) injects only the relevant slice into the next session. Claims ~10x token savings from injecting compressed context instead of replaying full history.",
+    "categories": ["cost", "skill"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 3 past 100k — 100.7k stars (verified Oct 14)"
+  },
+  {
+    "slug": "shanraisshan-claude-code-best-practice",
+    "name": "claude-code-best-practice — Vibe Coding to Agentic Engineering",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "67.5k stars — held GitHub Trending #1 for multiple consecutive days. 83 opinionated tips sourced directly from Boris Cherny (Claude Code creator), Thariq (Anthropic), and Matt Pocock, covering subagents, commands, skills, hooks, MCP, sessions, memory, and multi-agent workflows. Includes a comparative table of six third-party frameworks: Superpowers, Spec Kit, gstack, OpenSpec, BMAD-METHOD, and Compound Engineering.",
+    "categories": ["skill", "workflow"],
+    "recurring_note": "↑ still GitHub Trending #1 — 67.5k stars (verified Oct 14)"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills — 38 Real-Engineering Skills by Matt Pocock",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "279k+ stars — grew from 58.5k in May 2026 to 279k in October, a 4.8× jump in five months. Matt Pocock (Total TypeScript) distilled 38 engineering disciplines: TDD-first, grilling (adversarial debugging), architecture review, and git-guardrails that block force-pushes and hard resets via Claude Code hooks. Plugin install auto-updates; skills CLI install gives editable local copies — not both.",
+    "categories": ["skill", "viral"],
+    "install": "/plugin install mattpocock-skills",
+    "recurring_note": "↑ Day 2 — 279k stars"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "Superpowers — Plan-First Agentic Skills Framework",
+    "primary_url": "https://github.com/obra/superpowers",
+    "hook": "270k+ stars, listed on Anthropic's official Claude Code marketplace. Jesse Vincent's framework enforces one rule above all: Claude must propose a plan and get approval before writing a single line of code. 14+ skills covering the full software development loop, MIT-licensed — the canonical 'slow down to go faster' pattern for agents that write too much, too fast.",
+    "categories": ["skill", "viral"],
+    "install": "npx skills add obra/superpowers",
+    "recurring_note": "↑ Day 2 — 270k stars"
+  },
+  {
+    "slug": "affaan-m-ecc",
+    "name": "ECC (Everything Claude Code) — Agent Harness v2.2.3",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "272k+ stars, v2.2.3 released Oct 1, 2026. ECC layers skills, instincts (lightweight reflexes that fire without a full skill load), long-term memory, and a security module across Claude Code, Codex, Opencode, and Cursor. At +1,250 stars/day in July, it earned the note 'zero press coverage' from Enterprise DNA — it grew through word-of-mouth among practitioners.",
+    "categories": ["skill", "cost", "viral"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — 272k stars"
+  },
+  {
+    "slug": "code-yeongyu-oh-my-openagent",
+    "name": "Oh My OpenAgent (omo)",
+    "primary_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "hook": "70k stars — Day 9 on GitHub Trending. A single omo command: ultrawork (ulw) has Claude read the codebase, plan, verify each step, and stop when done; mass ulw fans the job across a parallel agent graph using mixed models. Kibitzer memory records session notes as git-versioned Markdown and nudges the agent away from repeated mistakes. SUL-1.0 license restricts commercial use.",
+    "categories": ["skill", "workflow"],
+    "install": "npx oh-my-openagent@latest",
+    "recurring_note": "↑ Day 9 — 70k stars (verified Oct 14)"
+  },
+  {
+    "slug": "tigerless-labs-autoharness",
+    "name": "AutoHarness — Self-Improving Skill Regeneration",
+    "primary_url": "https://github.com/tigerless-labs/autoharness",
+    "hook": "11.1k stars (was 9.7k Oct 9, +1.4k week). Watches your Claude Code sessions, extracts behavioral patterns and corrections, and regenerates your SKILL.md files automatically with no prompt engineering required. CORE-Bench benchmark: 42% task pass rate before AutoHarness, 78% after 50 observed sessions. MIT, requires Python 3.11+.",
+    "categories": ["skill", "cost"],
+    "install": "/plugin marketplace add tigerless-labs/autoharness\n/plugin install autoharness@autoharness",
+    "recurring_note": "↑ Day 9 — 11.1k stars (verified Oct 14)"
+  },
+  {
+    "slug": "vincentwei1021-video-shotcraft",
+    "name": "video-shotcraft — Cinematic Product Videos via Remotion",
+    "primary_url": "https://github.com/Vincentwei1021/video-shotcraft",
+    "hook": "11.9k stars — agent skill for Claude Code and Codex that turns a product description into a finished MP4. The agent captures your real pages, picks from 152 shot recipe cards and 209 motion previews, storyboards the film, animates in Remotion, beat-syncs the cut, and adds sound design. All footage is your own screenshots — no AI video model required.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add Vincentwei1021/video-shotcraft",
+    "recurring_note": "↑ Day 3 — 11.9k stars (verified Oct 14)"
+  },
+  {
+    "slug": "lowenbjer-terse",
+    "name": "terse — Claude Code Plugin That Halves Reply Length",
+    "primary_url": "https://github.com/lowenbjer/claude-terse",
+    "hook": "Day 2 of the digest. New Claude Code plugin (v1.2.2, MIT) by Karl Lowenbjer. Applies a set of writing rules across every reply, document, commit message, and subagent output — no config required. Author-measured results on Fable 5.1 and Opus 5.5: 46–54% fewer words and 32–51% lower API cost.",
+    "categories": ["cost"],
+    "install": "/plugin marketplace add lowenbjer/claude-terse\n/plugin install terse@terse",
+    "recurring_note": "↑ Day 2"
+  },
+  {
+    "slug": "florianbruniaux-claude-code-ultimate-guide",
+    "name": "Claude Code Ultimate Guide (MCP)",
+    "primary_url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+    "hook": "5.6k stars — 430K+ lines of distilled Claude Code knowledge at v3.44.1, packaged as a queryable MCP server. Add it to your Claude Code config and ask Claude about skills, hooks, plugins, agent patterns, and cost-optimization strategies directly from inside any session. Single npx command, no install step needed.",
+    "categories": ["mcp", "skill"],
+    "install": "npx -y claude-code-ultimate-guide-mcp@latest",
+    "recurring_note": "↑ Day 8 — 5.6k stars (verified Oct 14)"
+  },
+  {
+    "slug": "nykooi1-vibe-wise",
+    "name": "Vibe-Wise — Agent That Teaches While It Builds",
+    "primary_url": "https://github.com/nykooi1/vibe-wise",
+    "hook": "~3.1k stars — Claude Code plugin with three checkpoints: Build (reason together before writing), Design (confirm a plan before a single line is written), and Implementation (authorize each write with an explanation of what changed and why). Preferences, learning notes, and a project map persist in .vibe-wise/. The thesis: 'Vibe coding shouldn't turn you into a clipboard.'",
+    "categories": ["skill"],
+    "install": "/plugin install vibe-wise@anthropic-plugin-directory",
+    "recurring_note": "↑ Day 9 — ~3.1k stars (verified Oct 14)"
+  },
+  {
+    "slug": "mvanhorn-last30days-skill",
+    "name": "last30days-skill — Cross-Platform Research Agent",
+    "primary_url": "https://github.com/mvanhorn/last30days-skill",
+    "hook": "63.4k stars (5.5k forks) as of Oct 3, v3.26.0 shipped Oct 1 — one claim calls it 'top 5 of trending repos on GitHub today.' Install /last30days as a skill and give it any topic: it fans out across Reddit, X, YouTube, Hacker News, Polymarket, and the web, then synthesizes a cited summary. Python + MCP bundle; optional API keys/browser cookies needed for gated sources.",
+    "categories": ["skill", "mcp"],
+    "install": "npx -y skills add mvanhorn/last30days-skill --agent claude-code"
+  },
+  {
+    "slug": "piebald-ai-claude-code-system-prompts",
+    "name": "claude-code-system-prompts — Live Prompt Archaeology",
+    "primary_url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+    "hook": "Updated within minutes of each Claude Code release — this repo dissects every system prompt, all 515 of them, with token counts. As of v2.1.300 (Oct 14, 2026) it covers 27 built-in tool descriptions, sub-agent prompts for Plan/Explore/Task, utility prompts for CLAUDE.md, compact, statusline, magic docs, WebFetch, security review, and agent creation. Indispensable for plugin authors and anyone writing skills that need to stay inside the prompt envelope.",
+    "categories": ["skill"]
+  }
+]
