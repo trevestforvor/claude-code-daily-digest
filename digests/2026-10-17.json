@@ -1,0 +1,77 @@
+[
+  {
+    "slug": "anthropic-claude-code-v2-1-302",
+    "name": "Claude Code v2.1.299–302 (Oct 14–16)",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "secondary_urls": ["https://releasebot.io/updates/anthropic/claude-code"],
+    "hook": "Four releases in three days. v2.1.302 introduces `CLAUDE_AUTO_MODE_MODEL` to pin a specific model for the client-side auto mode classifier — a direct cost dial for teams on tight budgets. Idle compaction now kicks in automatically after 54 idle minutes on conversations over 200K tokens. v2.1.300 adds the `prompt.change` mod hook (intercept prompts before they reach Claude). Buried in v2.1.302: a formal sunset notice that standalone Claude Design closes December 14, 2026. 131+ combined bug fixes across the four releases.",
+    "categories": ["cost"],
+    "install": "See changelog at code.claude.com/docs/en/changelog"
+  },
+  {
+    "slug": "onewave-ai-claude-code-mods",
+    "name": "OneWave-AI Claude Code Mods",
+    "primary_url": "https://github.com/OneWave-AI/claude-code-mods",
+    "secondary_urls": ["https://www.onewave-ai.com/blog/claude-code-mods"],
+    "hook": "Team built 12 mods in one night on Oct 2 and open-sourced 10 with 155 tests. Standouts: `launch-codes` (blocks risky bash unless you enter a one-time PIN — confirmed safe when tested with `rm -rf`), `token-ledger` (on-screen spend meter that updates with each tool call), `session-wrapped` (generates a Spotify Wrapped–style summary card at session end). MIT license, install via `/plugin install launch-codes@onewave-ai`.",
+    "categories": ["cost", "plugin"],
+    "install": "See README — individual mods install via /plugin install <name>@onewave-ai"
+  },
+  {
+    "slug": "charlie947-motion-graphics-skills",
+    "name": "Motion Graphics Skills",
+    "primary_url": "https://github.com/charlie947/motion-graphics-skills",
+    "secondary_urls": ["https://charlieautomates.com/blog/best-claude-code-skills-install-order/"],
+    "hook": "13 Claude Code skills for launch-grade motion graphics rendered entirely in code — no After Effects, no video generator required. Every frame is CSS/SVG written and iterated by the agent. Featured by @charlieautomates in their 'Best Skills Install Order' guide as the go-to motion skill for product launches.",
+    "categories": ["design"],
+    "install": "git clone https://github.com/charlie947/motion-graphics-skills",
+    "creator_buzz": ["@charlieautomates"]
+  },
+  {
+    "slug": "paperclipai-paperclip",
+    "name": "Paperclip",
+    "primary_url": "https://github.com/paperclipai/paperclip",
+    "hook": "Open-source multi-agent orchestration platform with org-chart-style team management, goal assignment, and a unified cost dashboard across agents. Works with Claude Code, Codex, Cursor, and OpenClaw. 103.5K stars with an active push today — now tracks scheduled routines and plugin support as completed roadmap items. Cloud deploy support in progress.",
+    "categories": ["plugin"],
+    "install": "npx paperclipai@latest onboard --yes",
+    "recurring_note": "↑ Day 6 — 103.5K stars; active commit Oct 17"
+  },
+  {
+    "slug": "ayghri-i-have-adhd",
+    "name": "i-have-adhd",
+    "primary_url": "https://github.com/ayghri/i-have-adhd",
+    "secondary_urls": ["https://aiweekly.co/alerts/i-have-adhd-skill-trends-on-hn-cuts-coding-agent-preamble"],
+    "hook": "ADHD-focused output style enforcer: action first, numbered steps, zero filler closers. Ten communication rules applied to every response — eliminates the three-paragraph preamble before the actual answer. 57.5K stars (up ~5K since last Oct 13 appearance), still trending on HN. MIT, installs in two commands.",
+    "categories": ["design"],
+    "install": "claude plugin marketplace add ayghri/i-have-adhd",
+    "recurring_note": "↑ Day 5 — 57.5K stars, up ~5K since Oct 13"
+  },
+  {
+    "slug": "latent-spaces-brag",
+    "name": "/brag",
+    "primary_url": "https://github.com/latent-spaces/brag",
+    "hook": "Run `/brag` in any project directory and the skill produces a shareable launch video — music, motion, and share copy included — using Hyperframes to render. `/brag-slim` variant targets Opus 5.5 for a leaner output. Hosted version now live at letsbrag.app if you don't want the FFmpeg dependency. 16.4K stars.",
+    "categories": ["design"],
+    "install": "/plugin marketplace add latent-spaces/brag && /plugin install brag@brag",
+    "recurring_note": "↑ Day 7 — 16.4K stars; letsbrag.app hosted option now live"
+  },
+  {
+    "slug": "nevamind-ai-memu",
+    "name": "memU",
+    "primary_url": "https://github.com/NevaMind-AI/memU",
+    "hook": "Wiki-style persistent memory that syncs across sessions, agents, and devices. memU can auto-convert your agent session history into reusable skill files — the memory outlasts the session. Active update today. Works alongside Claude Code, Codex, and Cursor. 14.6K stars. Hosted tier at memu.pro for zero-install setup.",
+    "categories": ["plugin"],
+    "install": "pip install memu-cli",
+    "recurring_note": "↑ Returning — 14.6K stars; active push Oct 17 after 14-day gap"
+  },
+  {
+    "slug": "k-dense-ai-scientific-agent-skills",
+    "name": "Scientific Agent Skills",
+    "primary_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "secondary_urls": ["https://skillselion.com/plugin/K-Dense-AI/claude-scientific-skills"],
+    "hook": "177 validated agent skills covering research, science, engineering, finance, writing, and analysis — plus integrations into 100+ scientific databases. Updated Oct 15 with new skills. 52.1K stars on the GitHub topics page today. Compatible with Claude Code, Cursor, Codex.",
+    "categories": [],
+    "install": "npx skills add https://github.com/k-dense-ai/scientific-agent-skills",
+    "recurring_note": "↑ Day 7 — 52.1K stars; updated Oct 15"
+  }
+]
