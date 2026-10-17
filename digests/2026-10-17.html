@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — October 17, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — October 17, 2026</h1><p class="sub">Top 8 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.299–302 (Oct 14–16)</a></h3>
+  <p class="hook">Four releases in three days. v2.1.302 introduces `CLAUDE_AUTO_MODE_MODEL` to pin a specific model for the client-side auto mode classifier — a direct cost dial for teams on tight budgets. Idle compaction now kicks in automatically after 54 idle minutes on conversations over 200K tokens. v2.1.300 adds the `prompt.change` mod hook (intercept prompts before they reach Claude). Buried in v2.1.302: a formal sunset notice that standalone Claude Design closes December 14, 2026. 131+ combined bug fixes across the four releases.</p>
+  <div class="secondary">Also: <a href="https://releasebot.io/updates/anthropic/claude-code">releasebot.io/updates/anthropic/claude-code</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">design · token</div>
+  <pre><button class="copy">copy</button><code>See changelog at code.claude.com/docs/en/changelog</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/OneWave-AI/claude-code-mods">OneWave-AI Claude Code Mods</a></h3>
+  <p class="hook">Team built 12 mods in one night on Oct 2 and open-sourced 10 with 155 tests. Standouts: `launch-codes` (blocks risky bash unless you enter a one-time PIN — confirmed safe when tested with `rm -rf`), `token-ledger` (on-screen spend meter that updates with each tool call), `session-wrapped` (generates a Spotify Wrapped–style summary card at session end). MIT license, install via `/plugin install launch-codes@onewave-ai`.</p>
+  <div class="secondary">Also: <a href="https://www.onewave-ai.com/blog/claude-code-mods">www.onewave-ai.com/blog/claude-code-mods</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  
+  <pre><button class="copy">copy</button><code>See README — individual mods install via /plugin install &lt;name&gt;@onewave-ai</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/charlie947/motion-graphics-skills">Motion Graphics Skills</a></h3>
+  <p class="hook">13 Claude Code skills for launch-grade motion graphics rendered entirely in code — no After Effects, no video generator required. Every frame is CSS/SVG written and iterated by the agent. Featured by @charlieautomates in their &#39;Best Skills Install Order&#39; guide as the go-to motion skill for product launches.</p>
+  <div class="secondary">Also: <a href="https://charlieautomates.com/blog/best-claude-code-skills-install-order/">charlieautomates.com/blog/best-claude-code-skills-install-order/</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">video · skill</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/charlie947/motion-graphics-skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/paperclipai/paperclip">Paperclip</a></h3>
+  <p class="hook">Open-source multi-agent orchestration platform with org-chart-style team management, goal assignment, and a unified cost dashboard across agents. Works with Claude Code, Codex, Cursor, and OpenClaw. 103.5K stars with an active push today — now tracks scheduled routines and plugin support as completed roadmap items. Cloud deploy support in progress.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">agent · cost · viral</div>
+  <pre><button class="copy">copy</button><code>npx paperclipai@latest onboard --yes</code></pre>
+  <div class="recurring">↑ Day 6 — 103.5K stars; active commit Oct 17</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/ayghri/i-have-adhd">i-have-adhd</a></h3>
+  <p class="hook">ADHD-focused output style enforcer: action first, numbered steps, zero filler closers. Ten communication rules applied to every response — eliminates the three-paragraph preamble before the actual answer. 57.5K stars (up ~5K since last Oct 13 appearance), still trending on HN. MIT, installs in two commands.</p>
+  <div class="secondary">Also: <a href="https://aiweekly.co/alerts/i-have-adhd-skill-trends-on-hn-cuts-coding-agent-preamble">aiweekly.co/alerts/i-have-adhd-skill-trends-on-hn-cuts-coding-agent-preamble</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>claude plugin marketplace add ayghri/i-have-adhd</code></pre>
+  <div class="recurring">↑ Day 5 — 57.5K stars, up ~5K since Oct 13</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/latent-spaces/brag">/brag</a></h3>
+  <p class="hook">Run `/brag` in any project directory and the skill produces a shareable launch video — music, motion, and share copy included — using Hyperframes to render. `/brag-slim` variant targets Opus 5.5 for a leaner output. Hosted version now live at letsbrag.app if you don&#39;t want the FFmpeg dependency. 16.4K stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">video · skill · plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add latent-spaces/brag &amp;&amp; /plugin install brag@brag</code></pre>
+  <div class="recurring">↑ Day 7 — 16.4K stars; letsbrag.app hosted option now live</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/NevaMind-AI/memU">memU</a></h3>
+  <p class="hook">Wiki-style persistent memory that syncs across sessions, agents, and devices. memU can auto-convert your agent session history into reusable skill files — the memory outlasts the session. Active update today. Works alongside Claude Code, Codex, and Cursor. 14.6K stars. Hosted tier at memu.pro for zero-install setup.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">skill · memory · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>pip install memu-cli</code></pre>
+  <div class="recurring">↑ Returning — 14.6K stars; active push Oct 17 after 14-day gap</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/K-Dense-AI/scientific-agent-skills">Scientific Agent Skills</a></h3>
+  <p class="hook">177 validated agent skills covering research, science, engineering, finance, writing, and analysis — plus integrations into 100+ scientific databases. Updated Oct 15 with new skills. 52.1K stars on the GitHub topics page today. Compatible with Claude Code, Cursor, Codex.</p>
+  <div class="secondary">Also: <a href="https://skillselion.com/plugin/K-Dense-AI/claude-scientific-skills">skillselion.com/plugin/K-Dense-AI/claude-scientific-skills</a></div>
+  <div class="badges">  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add https://github.com/k-dense-ai/scientific-agent-skills</code></pre>
+  <div class="recurring">↑ Day 7 — 52.1K stars; updated Oct 15</div>
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
