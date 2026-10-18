@@ -1,0 +1,147 @@
+[
+  {
+    "slug": "anthropic-claude-code-review-ga",
+    "name": "Claude Code Review — General Availability",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "secondary_urls": [
+      "https://alphasignal.ai/news/anthropic-s-claude-code-review-goes-live-cutting-pr-wait-times-by-3x",
+      "https://aicatchup.com/news/claude-code-review-general-availability"
+    ],
+    "hook": "Anthropic's multi-agent PR reviewer left research preview and went GA on October 15 for Team and Enterprise plans. Typical review time dropped from ~20 min to 6–10 min — a 3× speedup. Organizations pick Quick, Standard, or Deep review depth per repo; eligible Enterprise orgs get up to $50K in review credits through January 15, 2027. Enable via Settings → Code Review → Install GitHub App.",
+    "categories": ["anthropic"],
+    "install": "Settings → Code Review → Install GitHub App → select repos"
+  },
+  {
+    "slug": "nvidia-openshell",
+    "name": "NVIDIA OpenShell — Agent Sandbox",
+    "primary_url": "https://github.com/NVIDIA/OpenShell",
+    "secondary_urls": [
+      "https://perspectives.nvidia.com/nvidia-openshell/agent-sandbox-works-claude-code-out-of-box/",
+      "https://docs.nvidia.com/openshell/latest/get-started/quickstart.html"
+    ],
+    "hook": "NVIDIA's kernel-level runtime sandboxes autonomous agents — including Claude Code — behind declarative YAML policies that lock down file paths, credential scope, and outbound network connections. Claude Code has full out-of-the-box coverage: set ANTHROPIC_API_KEY and run `openshell sandbox create -- claude`. Hit GitHub Trending charts in early October 2026 after its Oct 2 launch.",
+    "categories": ["plugin"],
+    "install": "curl -fsSL https://get.openshell.ai | bash && openshell sandbox create -- claude"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "mattpocock/skills — 38 Real-Engineering Skills",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "Matt Pocock (Total TypeScript) distilled 38 engineering disciplines — TypeScript strictness, monorepo topology, schema design, test philosophy — into a drop-in skill bundle that grew from 58.5K stars in May 2026 to 279K+ in October. ~10K weekly star gain makes it one of the fastest-compounding Claude Code skills on GitHub.",
+    "categories": ["skill"],
+    "install": "/plugin install mattpocock-skills",
+    "recurring_note": "↑ Day 3 — 279K+ stars"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "Superpowers — Plan-First Agentic Skills Framework",
+    "primary_url": "https://github.com/obra/superpowers",
+    "hook": "Jesse Vincent's framework enforces one rule above all: Claude must propose a complete plan before writing a single line. 270K+ stars and listed on Anthropic's official Claude Code marketplace. Pairs with any skill bundle and works cross-agent (Codex, Cursor). The plan-first pattern is cited as the single biggest quality lever in practitioner guides.",
+    "categories": ["skill"],
+    "install": "npx skills add obra/superpowers",
+    "recurring_note": "↑ Day 3 — 270K+ stars"
+  },
+  {
+    "slug": "affaan-m-ecc",
+    "name": "ECC (Everything Claude Code) — Agent Harness v2.2.3",
+    "primary_url": "https://github.com/affaan-m/ecc",
+    "hook": "272K+ stars, v2.2.3 released Oct 1. ECC layers skills, instincts (lightweight reflexes that fire without a full skill load), long-term memory, and auto-context management on top of Claude Code. One of three repos breaking the 270K star barrier simultaneously this week alongside mattpocock/skills and obra/superpowers.",
+    "categories": ["plugin"],
+    "install": "See README",
+    "recurring_note": "↑ Day 3 — 272K+ stars"
+  },
+  {
+    "slug": "paperclipai-paperclip",
+    "name": "Paperclip",
+    "primary_url": "https://github.com/paperclipai/paperclip",
+    "hook": "Open-source multi-agent orchestration platform with org-chart-style team management, goal assignment, and a unified cost dashboard across agents. Works with Claude Code, Codex, Cursor, and OpenClaw. Active commit Oct 17 — now tracking scheduled routines and completed plugin support as shipped roadmap items. Cloud deploy in progress.",
+    "categories": ["plugin"],
+    "install": "npx paperclipai@latest onboard --yes",
+    "recurring_note": "↑ Day 7 — 103.5K stars; active commit Oct 17"
+  },
+  {
+    "slug": "ayghri-i-have-adhd",
+    "name": "i-have-adhd",
+    "primary_url": "https://github.com/ayghri/i-have-adhd",
+    "secondary_urls": ["https://aiweekly.co/alerts/i-have-adhd-skill-trends-on-hn-cuts-coding-agent-preamble"],
+    "hook": "ADHD-focused output enforcer: action first, numbered steps, zero filler closers. Ten communication rules applied to every response — kills the three-paragraph preamble before the actual answer. ~57.5K stars (up ~5K/week), MIT, two-command install. Trended on HN and still climbing.",
+    "categories": ["design"],
+    "install": "claude plugin marketplace add ayghri/i-have-adhd",
+    "recurring_note": "↑ Day 6 — ~57.5K stars"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "Persistent compressed context across Claude Code, Codex, OpenCode, and Pi: lifecycle hooks record activity per-turn, compress it, and inject a project memory header at every session start. Passed 100K stars on Oct 14 and still climbing. One command installs the hooks globally.",
+    "categories": ["plugin"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Returning — 100.7K stars (passed 100K Oct 14)"
+  },
+  {
+    "slug": "onewave-ai-claude-code-mods",
+    "name": "OneWave-AI Claude Code Mods",
+    "primary_url": "https://github.com/OneWave-AI/claude-code-mods",
+    "secondary_urls": ["https://www.onewave-ai.com/blog/claude-code-mods"],
+    "hook": "Team built 12 mods in one night and open-sourced 10 with 155 tests. Standouts: `launch-codes` (blocks risky bash unless you enter a one-time PIN), `token-ledger` (on-screen spend meter per tool call), `session-wrapped` (Spotify Wrapped–style summary at session end). MIT.",
+    "categories": ["cost", "plugin"],
+    "install": "See README — individual mods install via /plugin install <name>@onewave-ai",
+    "recurring_note": "↑ Day 2"
+  },
+  {
+    "slug": "nevamind-ai-memu",
+    "name": "memU",
+    "primary_url": "https://github.com/NevaMind-AI/memU",
+    "hook": "Wiki-style persistent memory that syncs across sessions, agents, and devices. memU can auto-convert your agent session history into reusable skill files — the memory outlasts the session. Active update Oct 17. Works alongside Claude Code, Codex, and Cursor. Hosted tier at memu.pro for zero-install setup.",
+    "categories": ["plugin"],
+    "install": "pip install memu-cli",
+    "recurring_note": "↑ Returning — 14.6K stars; active push Oct 17"
+  },
+  {
+    "slug": "charlie947-motion-graphics-skills",
+    "name": "Motion Graphics Skills",
+    "primary_url": "https://github.com/charlie947/motion-graphics-skills",
+    "secondary_urls": ["https://charlieautomates.com/blog/best-claude-code-skills-install-order/"],
+    "hook": "13 Claude Code skills for launch-grade motion graphics rendered entirely in code — no After Effects, no video generator required. Every frame is CSS/SVG written and iterated by the agent. Featured by @charlieautomates in their 'Best Skills Install Order' guide as the go-to motion skill for product launches.",
+    "categories": ["design"],
+    "install": "git clone https://github.com/charlie947/motion-graphics-skills",
+    "creator_buzz": ["@charlieautomates"],
+    "recurring_note": "↑ Day 2"
+  },
+  {
+    "slug": "piebald-ai-claude-code-system-prompts",
+    "name": "claude-code-system-prompts — Live Prompt Archaeology",
+    "primary_url": "https://github.com/piebald-ai/claude-code-system-prompts",
+    "hook": "Updated within minutes of each Claude Code release — this repo dissects every system prompt across all 515+ tracked versions, with per-version token counts. As of v2.1.300 the system prompt is 8,421 tokens, up 6.4% from v2.1.274. Useful for operators tuning CLAUDE.md around changes in the base prompt.",
+    "categories": [],
+    "install": "",
+    "recurring_note": "↑ Day 2 — tracks 515+ versions through v2.1.302"
+  },
+  {
+    "slug": "mvanhorn-last30days-skill",
+    "name": "last30days-skill — Cross-Platform Research Agent",
+    "primary_url": "https://github.com/mvanhorn/last30days-skill",
+    "hook": "Install /last30days as a slash command and the agent crawls GitHub, Reddit, HN, and 14 curated news sources to surface a ranked timeline of what happened in any technology domain over the past 30 days. v3.26.0 shipped Oct 1. 63.4K stars, 5.5K forks — consistently cited as a top-5 GitHub Trending repo.",
+    "categories": [],
+    "install": "npx -y skills add mvanhorn/last30days-skill --agent claude-code",
+    "recurring_note": "↑ Day 2 — 63.4K stars; v3.26.0 Oct 1"
+  },
+  {
+    "slug": "shanraisshan-claude-code-best-practice",
+    "name": "claude-code-best-practice — Vibe Coding to Agentic Engineering",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "67.5K stars — held GitHub Trending #1 for multiple consecutive days. 83 opinionated tips sourced directly from Boris Cherny (Claude Code creator), Thorsten Ball, and a dozen Claude Code power users. Covers prompt discipline, hook patterns, CLAUDE.md architecture, and the distinction between \"vibe coding\" and real agentic engineering.",
+    "categories": [],
+    "install": "",
+    "recurring_note": "↑ Returning — 67.5K stars, held GitHub Trending #1"
+  },
+  {
+    "slug": "code-yeongyu-oh-my-openagent",
+    "name": "Oh My OpenAgent (omo)",
+    "primary_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "hook": "70.1K stars — Day 9+ on GitHub Trending as of Oct 14. A single `omo` command: `ultrawork (ulw)` has Claude read the codebase, plan, verify each step, and stop only when the task is done with all tests passing. Works with Claude Code, Codex, Cursor, and Gemini CLI. MIT.",
+    "categories": ["plugin"],
+    "install": "npx oh-my-openagent@latest",
+    "recurring_note": "↑ Returning — 70.1K stars; Day 9+ GitHub trending"
+  }
+]
