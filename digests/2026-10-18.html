@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — October 18, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — October 18, 2026</h1><p class="sub">Top 15 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code Review — General Availability</a></h3>
+  <p class="hook">Anthropic&#39;s multi-agent PR reviewer left research preview and went GA on October 15 for Team and Enterprise plans. Typical review time dropped from ~20 min to 6–10 min — a 3× speedup. Organizations pick Quick, Standard, or Deep review depth per repo; eligible Enterprise orgs get up to $50K in review credits through January 15, 2027. Enable via Settings → Code Review → Install GitHub App.</p>
+  <div class="secondary">Also: <a href="https://alphasignal.ai/news/anthropic-s-claude-code-review-goes-live-cutting-pr-wait-times-by-3x">alphasignal.ai/news/anthropic-s-claude-code-review-goes-live-cutting-pr-wait-times-by-3x</a> · <a href="https://aicatchup.com/news/claude-code-review-general-availability">aicatchup.com/news/claude-code-review-general-availability</a></div>
+  <div class="badges"><span class="badge" style="background:#5c3a1f;color:#fdba74">anthropic</span>  </div>
+  <div class="tags">agent · review</div>
+  <pre><button class="copy">copy</button><code>Settings → Code Review → Install GitHub App → select repos</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/NVIDIA/OpenShell">NVIDIA OpenShell — Agent Sandbox</a></h3>
+  <p class="hook">NVIDIA&#39;s kernel-level runtime sandboxes autonomous agents — including Claude Code — behind declarative YAML policies that lock down file paths, credential scope, and outbound network connections. Claude Code has full out-of-the-box coverage: set ANTHROPIC_API_KEY and run `openshell sandbox create -- claude`. Hit GitHub Trending charts in early October 2026 after its Oct 2 launch.</p>
+  <div class="secondary">Also: <a href="https://perspectives.nvidia.com/nvidia-openshell/agent-sandbox-works-claude-code-out-of-box/">perspectives.nvidia.com/nvidia-openshell/agent-sandbox-works-claude-code-out-of-box/</a> · <a href="https://docs.nvidia.com/openshell/latest/get-started/quickstart.html">docs.nvidia.com/openshell/latest/get-started/quickstart.html</a></div>
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">viral · security</div>
+  <pre><button class="copy">copy</button><code>curl -fsSL https://get.openshell.ai | bash &amp;&amp; openshell sandbox create -- claude</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mattpocock/skills">mattpocock/skills — 38 Real-Engineering Skills</a></h3>
+  <p class="hook">Matt Pocock (Total TypeScript) distilled 38 engineering disciplines — TypeScript strictness, monorepo topology, schema design, test philosophy — into a drop-in skill bundle that grew from 58.5K stars in May 2026 to 279K+ in October. ~10K weekly star gain makes it one of the fastest-compounding Claude Code skills on GitHub.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">design · plugin · viral</div>
+  <pre><button class="copy">copy</button><code>/plugin install mattpocock-skills</code></pre>
+  <div class="recurring">↑ Day 3 — 279K+ stars</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/obra/superpowers">Superpowers — Plan-First Agentic Skills Framework</a></h3>
+  <p class="hook">Jesse Vincent&#39;s framework enforces one rule above all: Claude must propose a complete plan before writing a single line. 270K+ stars and listed on Anthropic&#39;s official Claude Code marketplace. Pairs with any skill bundle and works cross-agent (Codex, Cursor). The plan-first pattern is cited as the single biggest quality lever in practitioner guides.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">agent · anthropic · marketplace</div>
+  <pre><button class="copy">copy</button><code>npx skills add obra/superpowers</code></pre>
+  <div class="recurring">↑ Day 3 — 270K+ stars</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/affaan-m/ecc">ECC (Everything Claude Code) — Agent Harness v2.2.3</a></h3>
+  <p class="hook">272K+ stars, v2.2.3 released Oct 1. ECC layers skills, instincts (lightweight reflexes that fire without a full skill load), long-term memory, and auto-context management on top of Claude Code. One of three repos breaking the 270K star barrier simultaneously this week alongside mattpocock/skills and obra/superpowers.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">skill · harness · memory · context</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  <div class="recurring">↑ Day 3 — 272K+ stars</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/paperclipai/paperclip">Paperclip</a></h3>
+  <p class="hook">Open-source multi-agent orchestration platform with org-chart-style team management, goal assignment, and a unified cost dashboard across agents. Works with Claude Code, Codex, Cursor, and OpenClaw. Active commit Oct 17 — now tracking scheduled routines and completed plugin support as shipped roadmap items. Cloud deploy in progress.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">agent · cost</div>
+  <pre><button class="copy">copy</button><code>npx paperclipai@latest onboard --yes</code></pre>
+  <div class="recurring">↑ Day 7 — 103.5K stars; active commit Oct 17</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/ayghri/i-have-adhd">i-have-adhd</a></h3>
+  <p class="hook">ADHD-focused output enforcer: action first, numbered steps, zero filler closers. Ten communication rules applied to every response — kills the three-paragraph preamble before the actual answer. ~57.5K stars (up ~5K/week), MIT, two-command install. Trended on HN and still climbing.</p>
+  <div class="secondary">Also: <a href="https://aiweekly.co/alerts/i-have-adhd-skill-trends-on-hn-cuts-coding-agent-preamble">aiweekly.co/alerts/i-have-adhd-skill-trends-on-hn-cuts-coding-agent-preamble</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>claude plugin marketplace add ayghri/i-have-adhd</code></pre>
+  <div class="recurring">↑ Day 6 — ~57.5K stars</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/thedotmack/claude-mem">claude-mem</a></h3>
+  <p class="hook">Persistent compressed context across Claude Code, Codex, OpenCode, and Pi: lifecycle hooks record activity per-turn, compress it, and inject a project memory header at every session start. Passed 100K stars on Oct 14 and still climbing. One command installs the hooks globally.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">memory · context · viral</div>
+  <pre><button class="copy">copy</button><code>npx claude-mem install</code></pre>
+  <div class="recurring">↑ Returning — 100.7K stars (passed 100K Oct 14)</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/OneWave-AI/claude-code-mods">OneWave-AI Claude Code Mods</a></h3>
+  <p class="hook">Team built 12 mods in one night and open-sourced 10 with 155 tests. Standouts: `launch-codes` (blocks risky bash unless you enter a one-time PIN), `token-ledger` (on-screen spend meter per tool call), `session-wrapped` (Spotify Wrapped–style summary at session end). MIT.</p>
+  <div class="secondary">Also: <a href="https://www.onewave-ai.com/blog/claude-code-mods">www.onewave-ai.com/blog/claude-code-mods</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  
+  <pre><button class="copy">copy</button><code>See README — individual mods install via /plugin install &lt;name&gt;@onewave-ai</code></pre>
+  <div class="recurring">↑ Day 2</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/NevaMind-AI/memU">memU</a></h3>
+  <p class="hook">Wiki-style persistent memory that syncs across sessions, agents, and devices. memU can auto-convert your agent session history into reusable skill files — the memory outlasts the session. Active update Oct 17. Works alongside Claude Code, Codex, and Cursor. Hosted tier at memu.pro for zero-install setup.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">skill · memory · terminal</div>
+  <pre><button class="copy">copy</button><code>pip install memu-cli</code></pre>
+  <div class="recurring">↑ Returning — 14.6K stars; active push Oct 17</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/charlie947/motion-graphics-skills">Motion Graphics Skills</a></h3>
+  <p class="hook">13 Claude Code skills for launch-grade motion graphics rendered entirely in code — no After Effects, no video generator required. Every frame is CSS/SVG written and iterated by the agent. Featured by @charlieautomates in their &#39;Best Skills Install Order&#39; guide as the go-to motion skill for product launches.</p>
+  <div class="secondary">Also: <a href="https://charlieautomates.com/blog/best-claude-code-skills-install-order/">charlieautomates.com/blog/best-claude-code-skills-install-order/</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">video · skill</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/charlie947/motion-graphics-skills</code></pre>
+  <div class="recurring">↑ Day 2</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/piebald-ai/claude-code-system-prompts">claude-code-system-prompts — Live Prompt Archaeology</a></h3>
+  <p class="hook">Updated within minutes of each Claude Code release — this repo dissects every system prompt across all 515+ tracked versions, with per-version token counts. As of v2.1.300 the system prompt is 8,421 tokens, up 6.4% from v2.1.274. Useful for operators tuning CLAUDE.md around changes in the base prompt.</p>
+  
+  <div class="badges">  </div>
+  <div class="tags">token</div>
+  
+  <div class="recurring">↑ Day 2 — tracks 515+ versions through v2.1.302</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mvanhorn/last30days-skill">last30days-skill — Cross-Platform Research Agent</a></h3>
+  <p class="hook">Install /last30days as a slash command and the agent crawls GitHub, Reddit, HN, and 14 curated news sources to surface a ranked timeline of what happened in any technology domain over the past 30 days. v3.26.0 shipped Oct 1. 63.4K stars, 5.5K forks — consistently cited as a top-5 GitHub Trending repo.</p>
+  
+  <div class="badges">  </div>
+  <div class="tags">skill · viral</div>
+  <pre><button class="copy">copy</button><code>npx -y skills add mvanhorn/last30days-skill --agent claude-code</code></pre>
+  <div class="recurring">↑ Day 2 — 63.4K stars; v3.26.0 Oct 1</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/shanraisshan/claude-code-best-practice">claude-code-best-practice — Vibe Coding to Agentic Engineering</a></h3>
+  <p class="hook">67.5K stars — held GitHub Trending #1 for multiple consecutive days. 83 opinionated tips sourced directly from Boris Cherny (Claude Code creator), Thorsten Ball, and a dozen Claude Code power users. Covers prompt discipline, hook patterns, CLAUDE.md architecture, and the distinction between &quot;vibe coding&quot; and real agentic engineering.</p>
+  
+  <div class="badges">  </div>
+  <div class="tags">agent · viral</div>
+  
+  <div class="recurring">↑ Returning — 67.5K stars, held GitHub Trending #1</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/code-yeongyu/oh-my-openagent">Oh My OpenAgent (omo)</a></h3>
+  <p class="hook">70.1K stars — Day 9+ on GitHub Trending as of Oct 14. A single `omo` command: `ultrawork (ulw)` has Claude read the codebase, plan, verify each step, and stop only when the task is done with all tests passing. Works with Claude Code, Codex, Cursor, and Gemini CLI. MIT.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">viral · terminal</div>
+  <pre><button class="copy">copy</button><code>npx oh-my-openagent@latest</code></pre>
+  <div class="recurring">↑ Returning — 70.1K stars; Day 9+ GitHub trending</div>
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
