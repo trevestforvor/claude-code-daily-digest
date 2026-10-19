@@ -1,0 +1,104 @@
+[
+  {
+    "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+    "name": "UI UX Pro Max Skill",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "hook": "137.5k stars. A design-intelligence skill that automatically activates on UI/UX requests and injects searchable styles, color palettes, font pairings, and UX guidelines for React, Vue, Tailwind, SwiftUI, Flutter, and more. It can also generate a full design system from a project description in one command. Already installable from the Claude Code plugin marketplace.",
+    "categories": ["design", "skill"],
+    "install": "npm install -g ui-ux-pro-max-cli && uipro init --ai claude"
+  },
+  {
+    "slug": "rtk-ai-rtk",
+    "name": "RTK (Rust Token Killer)",
+    "primary_url": "https://github.com/rtk-ai/rtk",
+    "hook": "84k stars, updated Oct 19. A CLI proxy that intercepts command output (logs, test results, JSON, CSV) and compresses it before it reaches your agent's context, claiming 60–90% token reduction on common dev commands. Supports Claude Code, Cursor, Codex, and 15 other tools. Run 'rtk gain' after install to verify you have the right package.",
+    "categories": ["cost", "tool"],
+    "install": "brew install rtk"
+  },
+  {
+    "slug": "anthropic-sonnet55-cache-price-cut",
+    "name": "Sonnet 5.5 Cache Reads → $0.10/M (Claude Code v2.1.296)",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Official Anthropic change in v2.1.296 (Oct 9): Sonnet 5.5 prompt-cache read tokens repriced from $0.20/M to $0.10/M — a 50% cut. Also adds CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL and CLAUDE_CODE_OVERLOADED_RETRY_MAX_DELAY_MS for 529 backoff tuning. Effective immediately; no action needed.",
+    "categories": ["cost", "anthropic"]
+  },
+  {
+    "slug": "farion1231-cc-switch",
+    "name": "CC Switch",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "hook": "146.3k stars, 9.7k forks, updated Oct 19. A cross-platform desktop app that lets you switch API providers in one click and manage MCP configs, Skills, and Prompts for Claude Code, Codex, Gemini CLI, Grok Build, OpenCode, and Hermes Agent — all without editing config files by hand. Available on macOS (Homebrew), Arch Linux (paru), and Windows/Linux via Releases.",
+    "categories": ["tool"],
+    "install": "brew install --cask cc-switch"
+  },
+  {
+    "slug": "graphify-labs-graphify",
+    "name": "Graphify",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "hook": "128.9k stars, updated Oct 16. Turns a codebase — plus docs, SQL schemas, configs, and PDFs — into a queryable knowledge graph using local tree-sitter AST parsing. No LLM, no embeddings, no vector store. Each edge is tagged as explicit or inferred. Works as a /graphify skill inside Claude Code, Cursor, Codex, and Gemini CLI. One search noted 25.4k new stars in the last 30 days.",
+    "categories": ["skill", "tool"],
+    "install": "uv tool install graphifyy && graphify install"
+  },
+  {
+    "slug": "panniantong-agent-reach",
+    "name": "Agent Reach",
+    "primary_url": "https://github.com/Panniantong/Agent-Reach",
+    "hook": "99.5k stars, updated Oct 15. A CLI that gives AI agents read and search access to Twitter/X, Reddit, YouTube, GitHub, Bilibili, and Xiaohongshu through one interface. Handles tool selection, installation, and health checks automatically. The 'agent-reach doctor' command reports each channel's live status.",
+    "categories": ["tool", "mcp"],
+    "install": "agent-reach install --env=auto"
+  },
+  {
+    "slug": "stablyai-orca",
+    "name": "Orca",
+    "primary_url": "https://github.com/stablyai/orca",
+    "hook": "97.9k stars, updated Oct 19. A desktop AI orchestrator for running Claude Code, Codex, OpenCode, and Pi side by side — each agent gets its own isolated git worktree so they can't clobber each other. Ships a mobile companion app for monitoring agents and sending follow-up instructions remotely. Described as 'The AI Orchestrator for 100x builders.'",
+    "categories": ["tool"],
+    "install": "brew install --cask stablyai/orca/orca"
+  },
+  {
+    "slug": "egonex-ai-understand-anything",
+    "name": "Understand Anything",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "hook": "87k stars, updated Oct 12. A Claude Code plugin that scans a codebase (or knowledge base) and builds an interactive knowledge graph of files, functions, classes, and dependencies — navigable via dashboard, search, or natural-language questions. Includes guided code tours, diff impact analysis, and domain mapping. One install command via the marketplace.",
+    "categories": ["plugin"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything && /plugin install understand-anything"
+  },
+  {
+    "slug": "tt-a1i-archify",
+    "name": "Archify",
+    "primary_url": "https://github.com/tt-a1i/archify",
+    "hook": "85.8k stars, updated Oct 19. An agent skill that converts any idea, plan, or codebase into a beautiful interactive HTML diagram in one step. Works with Claude Code, Codex CLI, Cursor, and OpenCode. MIT licensed, installable with a single npx command that works globally across agents.",
+    "categories": ["skill", "design"],
+    "install": "npx skills add tt-a1i/archify -g"
+  },
+  {
+    "slug": "shareai-lab-learn-claude-code",
+    "name": "Learn Claude Code (Harness Engineering Course)",
+    "primary_url": "https://github.com/shareAI-lab/learn-claude-code",
+    "hook": "78.8k stars, 12.6k forks. A 17-lesson progressive course that builds a nano Claude Code-like agent harness from scratch — covering tool use, permissions, hooks, task systems, and MCP integration lesson by lesson. Aimed at understanding how the harness around an LLM works, not just using Claude Code.",
+    "categories": ["tool"],
+    "install": "git clone https://github.com/shareAI-lab/learn-claude-code && pip install -r requirements.txt"
+  },
+  {
+    "slug": "diegosouzapw-omniroute",
+    "name": "OmniRoute",
+    "primary_url": "https://github.com/diegosouzapw/OmniRoute",
+    "hook": "78.4k stars, updated Oct 19. A free MIT-licensed AI gateway that exposes a single endpoint routing to hundreds of providers (Anthropic, OpenAI, Gemini, etc.) with automatic fallback when quotas run out or providers fail. Works with Claude Code, Codex, Cursor, and Cline as a drop-in provider. Docker and npm deployments available.",
+    "categories": ["tool", "cost"],
+    "install": "See README"
+  },
+  {
+    "slug": "anthropic-claude-code-v2-1-295-hooks-block",
+    "name": "Claude Code v2.1.295 — Hooks Can Now Block Actions",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Official Anthropic (Oct 8): v2.1.295 adds 'onFailure: block' to command and HTTP hooks — a hook that fails to start, times out, or exits unexpectedly now blocks the action rather than silently continuing. Also adds OSC 7501 terminal protocol so compatible terminals can show Claude Code's live status, and raises the MCP tool description limit to 16,384 characters (up from 2,048).",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "alirezarezvani-claude-skills",
+    "name": "alirezarezvani/claude-skills",
+    "primary_url": "https://github.com/alirezarezvani/claude-skills",
+    "hook": "28.4k stars. A broad collection of 380 skills plus 30+ agents and 70+ custom commands for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — spanning engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial and finance, and daily productivity.",
+    "categories": ["skill"],
+    "install": "npx skills add alirezarezvani/claude-skills"
+  }
+]
