@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "morluto-rea",
+    "name": "REA — Reverse Engineer Anything",
+    "primary_url": "https://github.com/morluto/rea",
+    "hook": "REA is an open-source MCP server that gives Claude Code (and Codex, Cursor, Gemini CLI) disassembly and decompilation tools for binaries, JavaScript/Electron apps, APKs, .NET assemblies, and firmware — all running locally. Created in April 2026, it now sits at 355k GitHub stars with secondary-source coverage in Italian, Vietnamese, Korean, and Portuguese tech blogs. Install is a single command and routes analysis to whichever of Hopper, Ghidra, or IDA you already have.",
+    "categories": ["mcp", "security"],
+    "install": "npx rea-agents setup"
+  },
+  {
+    "slug": "othmanadi-planning-with-files",
+    "name": "planning-with-files",
+    "primary_url": "https://github.com/OthmanAdi/planning-with-files",
+    "hook": "A persistent, file-based planning skill (27.6k stars, last updated Oct 20) that keeps task_plan.md, findings.md, and progress.md on disk so the plan survives /clear, compaction, and crashes. Hooks re-inject the active plan at the start of every turn, and SHA-256 hashes detect tampering. The /plan-doctor self-check validates resolution, injection, attestation, and hook latency. Works with Claude Code, Cursor, Codex, Copilot, Gemini CLI, Kiro, and 60+ other agents.",
+    "categories": ["design", "workflow"],
+    "install": "npx skills add OthmanAdi/planning-with-files --skill planning-with-files -g"
+  },
+  {
+    "slug": "vincentwei1021-video-shotcraft",
+    "name": "video-shotcraft",
+    "primary_url": "https://github.com/Vincentwei1021/video-shotcraft",
+    "hook": "An agent skill (12.8k stars) that turns a one-line prompt into a finished 1080p product promo built with Remotion. It captures your real product pages, picks from 150 shot recipe cards in 10 categories, storyboards the film with beat-synced cuts, and delivers an editable Remotion project plus MP4. Framed as \"not a video generator\" — every frame is code, not AI-generated footage, so output stays sharp and brand-accurate. Also exports CapCut drafts and publishes to social platforms via Upload-Post.",
+    "categories": ["design", "media"],
+    "install": "npx skills add Vincentwei1021/video-shotcraft"
+  },
+  {
+    "slug": "rebelytics-one-skill-to-rule-them-all",
+    "name": "Task Observer (one-skill-to-rule-them-all)",
+    "primary_url": "https://github.com/rebelytics/one-skill-to-rule-them-all",
+    "hook": "A meta-skill (3.5k stars, Oct 16) that watches your work sessions — autonomous or human-led — and logs corrections, repeated manual work, and preference patterns as candidates for new or updated skills. It proposes specific edits to your existing SKILL.md files and captures cross-cutting principles but never applies changes without your review. The slogan is intentionally self-referential: it also observes and proposes improvements to its own method.",
+    "categories": ["design", "workflow"],
+    "install": "npx skills add rebelytics/one-skill-to-rule-them-all --skill task-observer -g"
+  },
+  {
+    "slug": "houtini-ai-houtini-lm",
+    "name": "Houtini LM",
+    "primary_url": "https://github.com/houtini-ai/houtini-lm",
+    "hook": "An MCP server (121 stars, Oct 10) that lets Claude delegate bounded subtasks — file reviews, code drafts, embeddings — to a local or cheap cloud LLM. File contents go straight from disk to the other model and never enter Claude's context window; Claude only sends a short tool call and reads a summary back. The author's benchmark on four TypeScript review tasks reported 86–95% token savings (avg 93.3%). Supports LM Studio, Ollama, OpenRouter, DeepSeek, and others.",
+    "categories": ["cost", "mcp"],
+    "install": "claude mcp add houtini-lm -- npx -y @houtini/lm"
+  },
+  {
+    "slug": "shanraisshan-claude-code-best-practice",
+    "name": "claude-code-best-practice",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "A community-maintained reference with 67.9k stars (last updated Oct 21) for moving from ad hoc prompting to disciplined agentic engineering. Covers subagents, slash commands, skills, hooks, MCP servers, plugins, settings, memory (CLAUDE.md and .claude/rules/), and status lines, with a canonical Research → Plan → Execute → Review → Ship workflow pattern. Includes 83 tips curated from Boris Cherny, Thariq Lacy, and others, plus comparisons of popular workflow stacks: Superpowers, Spec Kit, gstack, and BMAD-METHOD.",
+    "categories": ["workflow", "guide"],
+    "install": "See README"
+  },
+  {
+    "slug": "sickn33-agentic-awesome-skills",
+    "name": "Agentic Awesome Skills (AAS Core)",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "hook": "An agent-first control plane for discovering, selecting, and validating from a catalog of 2,737+ SKILL.md playbooks — 48.3k stars, V19.13.0, updated Oct 21. The agent searches the full catalog, records its chosen skill IDs, and runs aas stack validate to check structure before anything changes. A browser-based Workbench previews stacks without filesystem access. Domain plugin bundles cover security, QA, DevOps, and data analytics for Claude Code and Codex.",
+    "categories": ["workflow", "catalog"],
+    "install": "npx agentic-awesome-skills --claude"
+  },
+  {
+    "slug": "voltagent-awesome-agent-skills",
+    "name": "Awesome Agent Skills",
+    "primary_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "hook": "A curated index of 1,497+ agent skills from official engineering teams — Anthropic, Microsoft, Cloudflare, Stripe, Sentry, and others — plus community contributors. 36.1k stars, last updated Oct 20. VoltAgent describes it as \"hand-picked, not AI-slop generated\" and maintains Skill Quality Standards. Compatible with Claude Code, Codex, Antigravity, Gemini CLI, Cursor, GitHub Copilot, OpenCode, and Windsurf.",
+    "categories": ["catalog"],
+    "install": "See README"
+  },
+  {
+    "slug": "wanshuiyin-aris",
+    "name": "ARIS — Auto-Research-In-Sleep",
+    "primary_url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+    "hook": "A set of Markdown-only skills for autonomous ML research (17.8k stars, Oct 21) that pairs Claude Code as executor with a second model (Codex/GPT by default) as critic, so the reviewer catches blind spots the executor misses. Covers idea discovery, literature search, experiment automation, paper writing with fabrication checks, rebuttal drafting, and slide/poster generation. No framework, database, or daemon required — pure SKILL.md files. Also ships a standalone ARIS-Code CLI.",
+    "categories": ["research", "workflow"],
+    "install": "claude plugin marketplace add wanshuiyin/Auto-claude-code-research-in-sleep && claude plugin install aris@aris"
+  },
+  {
+    "slug": "vibheksoni-stealth-browser-mcp",
+    "name": "stealth-browser-mcp",
+    "primary_url": "https://github.com/vibheksoni/stealth-browser-mcp",
+    "hook": "An MCP server (3.2k stars, Oct 19) that drives a real Chrome/Chromium/Edge browser through the Chrome DevTools Protocol, specifically designed to bypass Cloudflare challenges, anti-bot checks, and login walls that flag Playwright-style automation. Ships 101 tools across 11 categories — navigation, network inspection, DOM extraction, JavaScript execution, element cloning, and restricted Python intercept hooks — plus a 21-tool minimal mode. Runs via Python stdio and works on Windows, macOS, Linux, and Docker.",
+    "categories": ["mcp", "browser"],
+    "install": "git clone https://github.com/vibheksoni/stealth-browser-mcp && pip install -r requirements.txt"
+  },
+  {
+    "slug": "ljagiello-ctf-skills",
+    "name": "ctf-skills",
+    "primary_url": "https://github.com/ljagiello/ctf-skills",
+    "hook": "A collection of agent skills (3.5k stars, Oct 20) for solving Capture The Flag challenges across web exploitation, binary pwn, crypto, reverse engineering, forensics, OSINT, malware, and AI/ML. The solve-challenge orchestrator skill reads a challenge and routes it to the right category skill automatically. A similar-search skill uses the Tavily API to pull reference writeups when stuck, and a writeup skill generates submission-style reports. Tool installer handles apt, brew, pip, Go installs in one pass.",
+    "categories": ["security", "ctf"],
+    "install": "npx skills add ljagiello/ctf-skills"
+  },
+  {
+    "slug": "goldentrii-agentrecall-x",
+    "name": "AgentRecall-X",
+    "primary_url": "https://github.com/Goldentrii/AgentRecall-X",
+    "hook": "A correction-first persistent memory layer for AI agents (372 stars, Oct 16) that stores each user correction as a structured record with severity, applies_when conditions, and outcomes, rather than as free-form prose. Memory lives in plain markdown under ~/.agent-recall/ in four sections: episodic journals, semantic rooms, procedural rules, and a corrections ledger. Claude Code hooks can capture corrections automatically before risky actions. A nightly consolidation promotes rules confirmed across multiple projects.",
+    "categories": ["mcp", "memory"],
+    "install": "claude mcp add --scope user agent-recall -- npx -y agent-recall-mcp"
+  },
+  {
+    "slug": "zebbern-claude-code-guide",
+    "name": "zebbern/claude-code-guide",
+    "primary_url": "https://github.com/zebbern/claude-code-guide",
+    "hook": "A beginner-to-power-user guide (4.7k stars, last updated Oct 21) covering Claude Code setup, every built-in command, CLAUDE.md workflows, agents, subagents, skills, MCP server configuration, and hooks. Also tagged in the claude-mcp topic. Well-organized reference with practical examples; one of the most-recently updated guides on the topic page today.",
+    "categories": ["guide"],
+    "install": "See README"
+  },
+  {
+    "slug": "florianbruniaux-claude-code-ultimate-guide",
+    "name": "claude-code-ultimate-guide",
+    "primary_url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+    "hook": "A 430K+ line community guide (updated Oct 17) covering agentic workflows, hooks, skills, MCP servers, quizzes, and production-ready templates — self-described as \"the most comprehensive Claude Code guide.\" Ships a companion MCP server so agents can query the guide during a session, and includes configurable difficulty quizzes for self-testing knowledge of each section.",
+    "categories": ["guide", "mcp"],
+    "install": "npx @florianb/claude-guide-mcp"
+  },
+  {
+    "slug": "zenstory-ai-oh-story-claudecode",
+    "name": "oh-story-claudecode",
+    "primary_url": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "hook": "A set of 13 skills for writing Chinese web novels and long-form fiction (7.8k stars, Oct 18), with file-based chapter continuity tracking so the agent never loses narrative state across sessions. Covers character sheets, plot outlines, chapter drafts, pacing reviews, and continuity checks. Designed for Chinese-language serialized fiction workflows but the file-based memory pattern is directly portable to any long-form writing project.",
+    "categories": ["writing", "creative"],
+    "install": "See README"
+  }
+]
