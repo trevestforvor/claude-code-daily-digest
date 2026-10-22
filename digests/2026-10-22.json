@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "headroomlabs-headroom",
+    "name": "Headroom — Token Compression for AI Agents",
+    "primary_url": "https://github.com/headroomlabs-ai/headroom",
+    "hook": "Compresses tool outputs, logs, files, and RAG chunks before they hit the LLM — reported 57% token reduction on an SRE incident benchmark (55,957 → 24,340 tokens). Ships as a Python/TypeScript library, drop-in proxy, Claude Code agent wrapper, and MCP server. Reversible: originals are cached locally and retrieved on demand.",
+    "categories": ["cost", "mcp"],
+    "install": "pip install \"headroom-ai[all]\""
+  },
+  {
+    "slug": "cloudflare-security-audit-skill",
+    "name": "Cloudflare Security Audit Skill",
+    "primary_url": "https://github.com/cloudflare/security-audit-skill",
+    "hook": "Cloudflare's open-source, MIT-licensed skill runs a six-phase security audit on your codebase: separate agents hunt for vulns, a second set tries to disprove each finding, and the result is a machine-readable report. Now at 38,640 stars with 2,979 stars gained on Oct 22 alone — the #4 item on GitHub Trending. Ported directly from Cloudflare's internal vulnerability-discovery harness.",
+    "categories": ["security"],
+    "install": "npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit"
+  },
+  {
+    "slug": "dietrichgebert-ponytail",
+    "name": "Ponytail — AI Agent Minimal Code Plugin",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "hook": "Forces AI agents (Claude Code, Codex, Cursor, 20 agents total) through a decision ladder before writing a line of code: does it already exist, can stdlib do it, can a single line solve it? The project reports −53% lines, −41% time, −26% cost vs. baseline. 172,933 stars with nearly 1,949 gained Oct 22; Ponytail 5 added a live band/board UI inside Claude Code.",
+    "categories": ["cost"],
+    "install": "/plugin marketplace add DietrichGebert/ponytail"
+  },
+  {
+    "slug": "anthropics-knowledge-work-plugins",
+    "name": "Anthropic Knowledge Work Plugins (Official)",
+    "primary_url": "https://github.com/anthropics/knowledge-work-plugins",
+    "hook": "Anthropic's official open-source set of 11 role-specific plugins (sales, legal, finance, marketing, product, data, bio-research, and more) built for Claude Cowork and Claude Code. Each plugin bundles skills, slash commands, and MCP connectors — zero code, pure markdown and JSON. 31,399 stars and 303 gained on Oct 22.",
+    "categories": ["productivity"],
+    "install": "claude plugin marketplace add anthropics/knowledge-work-plugins && claude plugin install sales@knowledge-work-plugins"
+  },
+  {
+    "slug": "anthropic-code-review-ga",
+    "name": "Claude Code Review — Now Generally Available",
+    "primary_url": "https://claude.com/resources/articles/code-review-is-now-generally-available",
+    "secondary_urls": ["https://simonwillison.net/2026/Oct/16/code-review/", "https://www.youtube.com/watch?v=yzJogVGupvs"],
+    "hook": "As of October 15, 2026 Code Review exits research preview: 3× faster (20 min → 6–10 min), sharper findings, and per-repo Quick/Standard/Deep depth tuning. Available on Claude Team and Enterprise. Simon Willison's Oct 16 commentary: 'most changes reviewed and fixed by Claude at least once before a human is asked to look.'",
+    "categories": ["productivity"],
+    "install": "Enable in Claude Code settings → install GitHub App → select repos"
+  },
+  {
+    "slug": "madslorentzen-ai-job-search",
+    "name": "AI Job Search — Claude Code Job Application Framework",
+    "primary_url": "https://github.com/MadsLorentzen/ai-job-search",
+    "hook": "Full job-search agent running inside Claude Code: /scrape ranks postings, /apply drafts LaTeX CVs and cover letters with a second-agent review pass, /interview builds prep packs. 63,400 stars with +3,861 on Oct 21 — #1 on GitHub Trending that day. Ships Danish job-board skills plus LinkedIn and freehire.me. MIT licensed, not affiliated with Anthropic.",
+    "categories": ["productivity"],
+    "install": "gh repo fork MadsLorentzen/ai-job-search --clone && cd ai-job-search && python3 tools/install_portal_clis.py && claude"
+  },
+  {
+    "slug": "lidge-jun-opencodex",
+    "name": "OpenCodex — Run Any LLM Behind Claude Code",
+    "primary_url": "https://github.com/lidge-jun/opencodex",
+    "hook": "Provider proxy that translates Codex's Responses API so Claude Code (and Codex CLI) can route to 40+ providers — Gemini, Grok, DeepSeek, Ollama, or any OpenAI-compatible endpoint. Supports combos (failover + weighted round-robin), sub-agent model routing, and a ChatGPT account pool. 17,800 stars. Note: some providers (including Anthropic) may flag proxy routing; check your ToS.",
+    "categories": ["cost"],
+    "install": "npm install -g @bitkyc08/opencodex && ocx start"
+  },
+  {
+    "slug": "gnibu-tokens-on-track",
+    "name": "Tokens on Track — macOS Quota Tracker for Claude Code",
+    "primary_url": "https://github.com/gnibu/tokens-on-track",
+    "hook": "macOS 14+ menu bar app that shows live token quota usage and pace for Claude Code, Codex, OpenCode, OpenRouter, and Cursor. Color-coded pacing (green/orange/red) tells you if you're spending ahead of your refill window. Includes an MCP server so coding agents can self-check remaining quota before starting large tasks. MIT licensed.",
+    "categories": ["cost"],
+    "install": "Download signed .dmg from GitHub releases (macOS 14+)"
+  },
+  {
+    "slug": "wshobson-agents",
+    "name": "wshobson/agents — Multi-Harness Plugin Marketplace",
+    "primary_url": "https://github.com/wshobson/agents",
+    "hook": "One repository, 94 plugins and 202 agents that install across Claude Code, Codex CLI, Cursor, OpenCode, GitHub Copilot, Antigravity CLI, and Pi. Author-format is Claude Code plugins; adapters generate the other formats. 41,500 stars with a built-in plugin-eval and Monte Carlo evaluation layer.",
+    "categories": ["productivity"],
+    "install": "/plugin marketplace add wshobson/agents"
+  },
+  {
+    "slug": "stablyai-orca",
+    "name": "Orca — Multi-Agent Fleet Manager",
+    "primary_url": "https://github.com/stablyai/orca",
+    "hook": "Manages a fleet of Claude Code (and other) coding agents running on your own subscriptions across desktop, mobile, and remote — task queues, merge controls, and live status. Hit the 100,000-star milestone this week and stayed in GitHub Trending for a fourth day straight.",
+    "categories": ["productivity"],
+    "recurring_note": "↑ Day 4 trending — crossed 100K stars milestone"
+  },
+  {
+    "slug": "anthropic-claude-code-v2-1-307",
+    "name": "Claude Code v2.1.307 — OTel Safety Events + API Date",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Latest changelog batch (v2.1.305–307): adds the claude_code.safety_event OpenTelemetry event for observability pipelines, an @claude review stop command for Code Review, and moves generated API code to the 2026-10-21 API version. v2.1.305 landed sandbox.allowNestedUserNamespaces on Linux and tightened allowedMcpServers filtering. Total 103 bug fixes across the three releases.",
+    "categories": ["productivity"]
+  },
+  {
+    "slug": "elirazked-claude-code-pr-watch",
+    "name": "claude-code-pr-watch — Live PR Status Pane Mod",
+    "primary_url": "https://github.com/ElirazKed/claude-code-pr-watch",
+    "hook": "A Claude Code mod that opens a persistent side pane showing live GitHub PR status — CI checks, review state, and merge readiness — while you code. 9 stars and updated Oct 22, so very new; pairs naturally with the newly-GA Code Review feature to keep PR health visible without leaving the terminal.",
+    "categories": ["productivity"],
+    "install": "See README"
+  }
+]
