@@ -1,0 +1,105 @@
+[
+  {
+    "slug": "farion1231-cc-switch",
+    "name": "CC Switch — All-in-One Desktop Manager for Coding Agents",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "hook": "Desktop app (148k stars, 9.7k forks) that manages Claude Code, Claude Desktop, Codex, and Gemini CLI from one UI. Switch API providers, models, and endpoints in one click without restarting any agent; MCP configs, skills, and hooks carry over through the switch. A routing mode converts API formats locally so you can run GPT models through Claude Code.",
+    "categories": ["design"],
+    "install": "brew install --cask cc-switch"
+  },
+  {
+    "slug": "nextlevelbuilder-ui-ux-pro-max",
+    "name": "UI UX Pro Max — Design-Intelligence Skill for Coding Agents",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "hook": "Claude Code skill at 139k stars that injects professional design decisions before a single pixel is placed: 79 catalog styles (glassmorphism, brutalism, and more), 192 color palettes, 74 font pairings, 25 chart types, 34 landing-page patterns, 119 UX guidelines, and per-stack rules for 22 frameworks including React, Next.js, SwiftUI, and Flutter. A reasoning engine returns a full design spec — pattern, palette, typography, anti-patterns, and a pre-delivery checklist — from a natural-language product request.",
+    "categories": ["design"],
+    "install": "/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill"
+  },
+  {
+    "slug": "graphifylabs-graphify",
+    "name": "Graphify — Codebase-to-Knowledge-Graph Skill",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "hook": "Parses any codebase (plus docs, SQL schemas, configs, and PDFs) into a queryable knowledge graph using tree-sitter AST — no vector store required. 133.7k stars. Each edge is tagged EXTRACTED or INFERRED, so Claude Code can ask 'path from A to B' or 'explain X' against the graph rather than reading raw files. A hook fires before Read and Glob calls, routing Claude toward the graph automatically.",
+    "categories": ["productivity"],
+    "install": "uv tool install graphifyy && graphify install"
+  },
+  {
+    "slug": "juliusbrussee-caveman",
+    "name": "Caveman — Token-Reduction Skill and Proxy",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "\"Started as a joke in April 2026\" — now at 114.6k stars. A skill + proxy for Claude Code, Codex, and Gemini CLI that cuts tokens three ways: terse agent replies (63 tokens → 20 on one React answer), compressed log/JSON/CSV output (measured 33.2% input token reduction across whole sessions), and reusable script blocks (397 → 76 tokens on a test run). An Auto mode routes each request to a model and effort level the project claims saves 54% vs Opus at xhigh effort.",
+    "categories": ["cost"],
+    "install": "npx @caveman-ai/cli@latest"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "Claude-Mem — Persistent Memory Across Agent Sessions",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "102.5k stars. Lifecycle hooks (SessionStart through SessionEnd) capture every tool call, compress observations into semantic summaries, and store them in SQLite + Chroma. Future sessions retrieve relevant context automatically via hybrid semantic/keyword search — the page claims 10x token savings vs re-reading raw context. Works across Claude Code, Codex, Gemini CLI, and OpenClaw. Content wrapped in `<private>` tags is excluded from storage.",
+    "categories": ["productivity"],
+    "install": "npx claude-mem install"
+  },
+  {
+    "slug": "stablyai-orca",
+    "name": "Orca — Multi-Agent Fleet Manager",
+    "primary_url": "https://github.com/stablyai/orca",
+    "hook": "Runs a fleet of Claude Code (and other) coding agents across desktop, mobile, and remote on your own subscriptions — task queues, merge controls, and live status. Now at 104k stars (up from 100k on Oct 22), remaining in GitHub Trending for a fifth consecutive day.",
+    "categories": ["productivity"],
+    "recurring_note": "↑ Day 5 trending — 104K stars, +4K since Oct 22"
+  },
+  {
+    "slug": "paperclipai-paperclip",
+    "name": "Paperclip — Open-Source Agent Orchestration App",
+    "primary_url": "https://github.com/paperclipai/paperclip",
+    "hook": "Self-hosted Node.js + React app (106.5k stars, 17.7k forks) for managing teams of AI agents at work. Supports Claude Code, Codex, Cursor, Gemini CLI, Hermes, and 10+ others. Features org charts, task threads, per-agent budget controls, approval workflows, and scheduled routines. Bring-your-own-agents — no vendor lock-in.",
+    "categories": ["productivity"],
+    "install": "npx paperclipai@latest onboard --yes"
+  },
+  {
+    "slug": "panniantong-agent-reach",
+    "name": "Agent-Reach — Give Agents Access to Login-Only Platforms",
+    "primary_url": "https://github.com/Panniantong/Agent-Reach",
+    "hook": "CLI (101k stars, MIT) that unlocks content agents normally can't reach: login-walled platforms, video subtitles, Chinese platforms (Bilibili, XiaoHongShu), GitHub structured data, and V2EX — with zero API fees. Read-only by design (searches and reads, never posts). Tagged `claude-code` and `mcp` in the repo; installs via a skill reference file.",
+    "categories": ["productivity"],
+    "install": "Ask your agent: install from https://raw.githubusercontent.com/Panniantong/Agent-Reach/main/docs/install.md"
+  },
+  {
+    "slug": "tt-a1i-archify",
+    "name": "Archify — Interactive Architecture Diagrams from Codebases",
+    "primary_url": "https://github.com/tt-a1i/archify",
+    "hook": "Claude Code skill (88.2k stars, MIT) that turns a plain-language description or an existing codebase into a self-contained, interactive HTML diagram — architecture, workflow, sequence, ERD, and others. The output is a single file that opens in any browser without Archify installed. Source-linked views connect diagram nodes back to the originating code. Latest stable v3.2.0 dropped Oct 18.",
+    "categories": ["productivity"],
+    "install": "npx skills add tt-a1i/archify -g"
+  },
+  {
+    "slug": "rtk-ai-rtk",
+    "name": "RTK — Bash Output Filter for LLM Token Savings",
+    "primary_url": "https://github.com/rtk-ai/rtk",
+    "hook": "CLI proxy (84.4k stars) that intercepts shell commands and compresses their output before a coding agent reads it: filters noise, groups similar items, truncates redundant context, and collapses repeated log lines. The project claims 60–90% token reduction on common dev commands — `git log` keeps only hash/author/subject; `cargo test` shows only failures. Works via Claude Code's Bash hook. Note: built-in tools (Read, Grep, Glob) aren't affected.",
+    "categories": ["cost"],
+    "install": "brew install rtk"
+  },
+  {
+    "slug": "cheaper-inference-omniroute",
+    "name": "OmniRoute — AI Gateway with 375 Providers and Auto-Fallback",
+    "primary_url": "https://github.com/cheaper-inference/OmniRoute",
+    "hook": "MIT-licensed AI gateway (80.2k stars, 11.7k forks) that exposes one endpoint for 375 providers (150+ free) and 1,400+ models including Claude, GPT, Gemini, DeepSeek, and Kimi. Quota-aware auto-fallback switches providers transparently when a quota is hit. For Claude Code: `omniroute run claude --model openai/gpt-5.4` launches Claude Code through the gateway, or `omniroute configure claude` writes the config interactively.",
+    "categories": ["cost"],
+    "install": "npm install -g omniroute"
+  },
+  {
+    "slug": "egonex-ai-understand-anything",
+    "name": "Understand-Anything — Multi-Agent Codebase Knowledge Graph",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "hook": "87.9k stars. A multi-agent pipeline maps files, functions, classes, and dependencies into an interactive knowledge graph with guided tours, diff impact analysis, and business-domain views. Tagline: 'Graphs that teach > graphs that impress.' Installs as a Claude Code plugin; Cursor and VS Code + Copilot auto-discover it on clone.",
+    "categories": ["productivity"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything"
+  },
+  {
+    "slug": "anthropic-claude-code-v2-1-304",
+    "name": "Claude Code v2.1.296–309 — Code Review Depth Levels, Idle Compaction, Fork Subagents",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Two weeks of releases (Oct 9–22) landed several headline features: Code Review now offers Quick / Standard / Deep depth tuning per-repo (v2.1.304); conversations over 200K tokens compact automatically when idle (v2.1.299); fork subagents are now the default outside the terminal (v2.1.302); `/auto-mode-setup` adds a guided wizard for configuring Auto Mode (v2.1.304); and a new `prompt.change` mod hook fires whenever the active system prompt changes (v2.1.300).",
+    "categories": ["productivity"]
+  }
+]
