@@ -1,0 +1,134 @@
+[
+  {
+    "slug": "affaan-m-ecc",
+    "name": "ECC — Agent Harness Performance Optimization",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "288k stars and 42.7k forks. ECC (the tagline: \"The agent harness performance optimization system\") ships 71 specialized agents, 311 skills, 97 slash-command shims, hooks, and AgentShield — a security scanner for agent configs. Claude Code is the best-supported harness; current release is v2.2.3 (Oct 1). Native Codex and Qoder plugins included; partial adapters cover Cursor, Gemini, Copilot, and more.",
+    "categories": ["skills", "security", "engineering"],
+    "install": "npx ecc-universal@2.2.3 setup",
+    "secondary_urls": ["https://ecc.tools"]
+  },
+  {
+    "slug": "nousresearch-hermes-agent",
+    "name": "Hermes Agent — The Agent That Grows With You",
+    "primary_url": "https://github.com/NousResearch/hermes-agent",
+    "hook": "257k stars, 56k forks from Nous Research. Hermes is a multi-provider terminal agent with a built-in learning loop: it creates skills from experience and searches past conversations. Supports 6 terminal backends, a cron scheduler, subagents, and messaging gateways (Telegram, Discord, Slack, WhatsApp, Signal). Can import settings, memories, and skills from Claude Code, Codex CLI, or Cursor with `hermes import-agent`.",
+    "categories": ["agent", "skills", "mcp"],
+    "install": "curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash"
+  },
+  {
+    "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+    "name": "UI/UX Pro Max Skill",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "hook": "Now at 140k stars (+1k since yesterday). Claude Code skill that injects professional design decisions — spacing, typography, color systems, component patterns — before any pixel is placed. Surfaces in 2026-10-22 and 2026-10-23 digests; active star growth confirms sustained interest in the design category.",
+    "categories": ["design", "skills"],
+    "install": "/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill",
+    "recurring_note": "↑ Day 3 — +1k stars since yesterday, 140k total"
+  },
+  {
+    "slug": "juliusbrussee-caveman",
+    "name": "Caveman — 65% Token Reduction Skill + Proxy",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "\"Started as a joke in April 2026\" — now at 115k stars (+400 since yesterday). A skill + optional proxy for Claude Code, Codex, and Cursor that instructs the agent to strip verbose output to minimal tokens. Community-reported 60–68% cost reduction on typical dev tasks. Still the most-starred pure token-reduction tool in the ecosystem.",
+    "categories": ["cost", "skills"],
+    "install": "/plugin marketplace add JuliusBrussee/caveman",
+    "recurring_note": "↑ Day 2 — up 400 stars since yesterday, 115k total"
+  },
+  {
+    "slug": "cheaper-inference-omniroute",
+    "name": "OmniRoute — Multi-Provider AI Gateway",
+    "primary_url": "https://github.com/cheaper-inference/OmniRoute",
+    "hook": "80.6k stars, 11.7k forks (+400 since yesterday). MIT-licensed AI gateway that exposes one endpoint for 375 providers with quota-aware automatic fallback. Slots in as a custom `ANTHROPIC_BASE_URL` for Claude Code; no client changes needed. Active Oct 24 commits confirm the team is shipping.",
+    "categories": ["cost", "mcp"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — up 400 stars since yesterday, 80.6k total"
+  },
+  {
+    "slug": "addyosmani-agent-skills",
+    "name": "Agent Skills — Production-Grade Engineering Workflows",
+    "primary_url": "https://github.com/addyosmani/agent-skills",
+    "hook": "110k stars from Addy Osmani (Google Chrome DevRel lead). 25 skills span the full dev lifecycle: spec → plan → build → verify → review → ship, plus 9 slash commands and 4 agent personas (code-reviewer, security-auditor, test-engineer, web-performance-auditor). Works in Claude Code, Codex, Gemini CLI, Cursor, and Windsurf. The 7 reference checklists (testing, security, a11y, observability) make it a structured replacement for ad-hoc prompting.",
+    "categories": ["skills", "engineering"],
+    "install": "/plugin marketplace add addyosmani/agent-skills"
+  },
+  {
+    "slug": "anthropic-claude-code-v2-1-309-310",
+    "name": "Claude Code v2.1.308–310 — Security Hardening + Bedrock/Vertex Monitor",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Three releases over Oct 22–23. v2.1.309 is the largest security release in weeks: sandboxed Bash no longer runs shell startup files outside the sandbox before each command, the `--mcp-config` file is protected from sandboxed writes, a redirect-based deny-rule bypass is closed, and Windows PowerShell cd/Set-Location now prompts correctly. v2.1.310 lands the Monitor tool on Bedrock, Vertex, and Foundry and adds Enterprise custom-role cloud-session permissions.",
+    "categories": ["official", "security"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "farion1231-cc-switch",
+    "name": "CC Switch — Multi-Agent Desktop Manager",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "hook": "148k stars, 9.7k forks. Cross-platform desktop app that manages Claude Code, Claude Desktop, Codex, and Gemini CLI side-by-side — profile switching, session memory, and usage dashboards in a single window. Updated again Oct 24; community reports it as the de-facto launcher for teams running multiple coding agents.",
+    "categories": ["tool", "workflow"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — still actively updated Oct 24"
+  },
+  {
+    "slug": "graphifylabs-graphify",
+    "name": "Graphify — Codebase Knowledge Graph",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "hook": "134k stars. Parses any codebase (plus docs, SQL schemas, configs, and PDFs) into a queryable knowledge graph using local AST parsing — no upload required. Claude Code queries the graph via MCP instead of reading raw files, cutting context window pressure on large repos. Updated Oct 23.",
+    "categories": ["mcp", "workflow"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — 134k stars, still trending"
+  },
+  {
+    "slug": "stablyai-orca",
+    "name": "Orca — Agent Fleet Workspace",
+    "primary_url": "https://github.com/stablyai/orca",
+    "hook": "105k stars. Workspace for running and orchestrating a fleet of coding agents — Claude Code, Codex, and others — across desktop, mobile, and remote environments on your own infrastructure. Supports task queuing, agent handoffs, and live monitoring. Updated Oct 24; Day 3 of trending.",
+    "categories": ["workflow", "agent"],
+    "install": "See README",
+    "recurring_note": "↑ Day 3 — active Oct 24, sustained community interest"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem — Persistent Session Memory",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "103k stars (+500 since yesterday). Lifecycle hooks (SessionStart through SessionEnd) capture every tool call, compress observations, and reinject distilled context into the next session. Fills the gap for teams who can't rely on project-level CLAUDE.md alone. Updated Oct 24.",
+    "categories": ["workflow", "skills"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — up 500 stars since yesterday, 103k total"
+  },
+  {
+    "slug": "panniantong-agent-reach",
+    "name": "Agent Reach — Social Platform CLI for Agents",
+    "primary_url": "https://github.com/Panniantong/Agent-Reach",
+    "hook": "102k stars (+1k since yesterday). CLI that unlocks content agents normally can't reach: login-walled platforms, video transcripts, and search APIs — delivered as Claude Code skills and MCP tools. Updated Oct 23; star growth suggests continued community adoption.",
+    "categories": ["mcp", "workflow"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — up 1k stars since yesterday, 102k total"
+  },
+  {
+    "slug": "tt-a1i-archify",
+    "name": "Archify — Idea-to-Diagram Skill",
+    "primary_url": "https://github.com/tt-a1i/archify",
+    "hook": "88.6k stars (+400 since yesterday). Claude Code skill that turns a plain-language description, existing plan file, or codebase into an interactive architecture diagram. Output formats include Mermaid, D2, and SVG; the agent iterates on the diagram in-session. Updated Oct 24.",
+    "categories": ["design", "skills"],
+    "install": "/plugin marketplace add tt-a1i/archify",
+    "recurring_note": "↑ Day 2 — up 400 stars since yesterday, 88.6k total"
+  },
+  {
+    "slug": "egonex-ai-understand-anything",
+    "name": "Understand Anything — Interactive Code Knowledge Graph",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "hook": "88k stars. Multi-agent pipeline that maps files, functions, classes, and dependencies into an interactive knowledge graph you can explore and query in natural language. Complements Graphify (which targets codebase + docs) by focusing on deep semantic code understanding and cross-repo dependency tracing.",
+    "categories": ["workflow", "mcp"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — 88k stars, still in top 20 claude-code topic"
+  },
+  {
+    "slug": "rtk-ai-rtk",
+    "name": "RTK — Rust CLI Token Proxy",
+    "primary_url": "https://github.com/rtk-ai/rtk",
+    "hook": "84.4k stars. Rust CLI proxy that intercepts shell commands (git, npm, cargo, etc.) and compresses their verbose output before it reaches the coding agent. Works transparently with Claude Code, Codex, and Cursor by sitting between the agent and the shell. Community reports 30–50% token reduction on build-heavy workflows.",
+    "categories": ["cost", "tool"],
+    "install": "See README",
+    "recurring_note": "↑ Day 2 — 84.4k stars, active in cost/token category"
+  }
+]
