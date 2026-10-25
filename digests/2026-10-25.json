@@ -1,0 +1,138 @@
+[
+  {
+    "slug": "morluto-rea",
+    "name": "REA — Reverse Engineer Anything via MCP",
+    "primary_url": "https://github.com/morluto/rea",
+    "secondary_urls": ["https://rea.tools"],
+    "hook": "382.8k stars and growing fast — 234k on Oct 14, 330k on Oct 19, 382.8k today. REA is an MIT-licensed MCP server + CLI that hands any coding agent 50 reverse-engineering tools: native binaries via Hopper/Ghidra/IDA, Electron apps via static JS inspection, .NET assemblies, Android APKs, firmware, and packet captures. Analysis runs locally; no binary leaves your machine. One command registers the server and writes agent config across Claude Code, Codex, Cursor, and Gemini CLI. Fastest-growing item in the claude-code topic by star velocity.",
+    "categories": ["mcp", "tool", "security"],
+    "install": "npx rea-agents setup"
+  },
+  {
+    "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+    "name": "UI/UX Pro Max — Design-Intelligence Skill",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "hook": "141k+ stars on Day 4 of trending. Injects professional design decisions before any pixel is placed: 79 catalog styles, 192 color palettes, 74 font pairings, 25 chart types, 34 landing-page patterns, 119 UX guidelines, and per-stack rules for 22 frameworks including React, Next.js, SwiftUI, and Flutter. Returns a full design spec — pattern, palette, typography, anti-patterns, and a delivery checklist — from a plain-language product request.",
+    "categories": ["design", "skills"],
+    "install": "/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill",
+    "recurring_note": "↑ Day 4 — sustained growth, 141k+ total"
+  },
+  {
+    "slug": "dietrichgebert-ponytail",
+    "name": "Ponytail — Laziness-First Code Skill",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "hook": "176k stars (+3.1k since Oct 22). Forces agents through a decision ladder before writing a line: does it already exist? Can stdlib do it? Can a single line solve it? Author benchmarks on 39 tasks / 5 runs in Opus 5.5 show −53% lines, −26% cost, −41% time. `/ponytail-review` hunts complexity instead of correctness; `/ponytail-audit` ranks what to delete repo-wide. Claude Code 2.1.290+ gets a live band showing cost, tokens, and code-reuse percentage per session.",
+    "categories": ["cost", "skills"],
+    "install": "/plugin marketplace add DietrichGebert/ponytail",
+    "recurring_note": "↑ Day 4 — 176k stars, +3.1k since Oct 22"
+  },
+  {
+    "slug": "juliusbrussee-caveman",
+    "name": "Caveman — Token-Reduction Skill and Proxy",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "115k+ stars, Day 3 of trending. Cuts tokens three ways: terse agent replies (63 → 20 tokens on a React answer), compressed log/JSON/CSV output (measured 33.2% input-token reduction per session), and reusable script blocks (397 → 76 tokens on a test run). An Auto mode routes each request to the cheapest model and effort level, claiming 54% savings vs Opus at xhigh. Works in Claude Code, Codex, and Gemini CLI.",
+    "categories": ["cost", "skills"],
+    "install": "npx @caveman-ai/cli@latest",
+    "recurring_note": "↑ Day 3 — 115k+ stars"
+  },
+  {
+    "slug": "affaan-m-ecc",
+    "name": "ECC — Agent Harness Performance Optimization",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "secondary_urls": ["https://ecc.tools"],
+    "hook": "289k+ stars and 42.7k forks. ECC ships 71 specialized agents, 311 skills, 97 slash-command shims, hooks, and AgentShield — a security scanner for agent configs with 102 static rules across 1.2k tests. Claude Code is the best-supported harness; current release is v2.2.3 (Oct 1). Native Codex and Qoder plugins included; partial adapters for Cursor, Gemini, Copilot, and more.",
+    "categories": ["skills", "security", "engineering"],
+    "install": "npx ecc-universal@2.2.3 setup",
+    "recurring_note": "↑ Day 2 — 289k+ stars, still actively updated"
+  },
+  {
+    "slug": "nousresearch-hermes-agent",
+    "name": "Hermes Agent — Multi-Provider Self-Improving Agent",
+    "primary_url": "https://github.com/NousResearch/hermes-agent",
+    "hook": "258k+ stars, Day 2. Hermes is a multi-provider terminal agent with a built-in learning loop: it creates skills from experience and searches past conversations. Supports 6 terminal backends, a cron scheduler, subagents, and messaging gateways (Telegram, Discord, Slack, WhatsApp, Signal). Can import settings, memories, and skills from Claude Code, Codex CLI, or Cursor with `hermes import-agent`.",
+    "categories": ["agent", "skills", "mcp"],
+    "install": "curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash",
+    "recurring_note": "↑ Day 2 — 258k+ stars"
+  },
+  {
+    "slug": "farion1231-cc-switch",
+    "name": "CC Switch — Desktop Manager for Coding Agents",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "hook": "149k+ stars, Day 3. Cross-platform desktop app managing Claude Code, Claude Desktop, Codex, and Gemini CLI in one UI — switch API providers, models, and endpoints in one click without restarting any agent. A routing mode converts API formats locally so you can run GPT models through Claude Code. MCP configs, skills, and hooks carry over through each switch.",
+    "categories": ["tool", "workflow"],
+    "install": "brew install --cask cc-switch",
+    "recurring_note": "↑ Day 3 — 149k+ stars"
+  },
+  {
+    "slug": "graphifylabs-graphify",
+    "name": "Graphify — Codebase-to-Knowledge-Graph",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "hook": "135k+ stars, Day 3. Parses any codebase (plus docs, SQL schemas, configs, and PDFs) into a queryable knowledge graph using tree-sitter AST — no vector store required. Claude Code queries the graph via MCP instead of reading raw files, cutting context pressure on large repos. A hook fires before Read and Glob calls, routing Claude toward the graph automatically.",
+    "categories": ["mcp", "workflow"],
+    "install": "uv tool install graphifyy && graphify install",
+    "recurring_note": "↑ Day 3 — 135k+ stars"
+  },
+  {
+    "slug": "addyosmani-agent-skills",
+    "name": "Agent Skills — Production-Grade Engineering Workflows",
+    "primary_url": "https://github.com/addyosmani/agent-skills",
+    "hook": "111k+ stars from Addy Osmani (Google Chrome DevRel lead), Day 2. 25 skills span the full dev lifecycle: spec → plan → build → verify → review → ship, plus 9 slash commands and 4 agent personas (code-reviewer, security-auditor, test-engineer, web-performance-auditor). Works in Claude Code, Codex, Gemini CLI, Cursor, and Windsurf.",
+    "categories": ["skills", "engineering"],
+    "install": "/plugin marketplace add addyosmani/agent-skills",
+    "recurring_note": "↑ Day 2 — 111k+ stars"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem — Persistent Session Memory",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "104k+ stars, Day 3. Lifecycle hooks (SessionStart through SessionEnd) capture every tool call, compress observations into semantic summaries, and store them in SQLite + Chroma. Future sessions retrieve relevant context via hybrid semantic/keyword search — the project claims 10x token savings vs re-reading raw context. Works across Claude Code, Codex, Gemini CLI, and OpenClaw.",
+    "categories": ["workflow", "skills"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 3 — 104k+ stars"
+  },
+  {
+    "slug": "panniantong-agent-reach",
+    "name": "Agent Reach — Login-Walled Platform Access for Agents",
+    "primary_url": "https://github.com/Panniantong/Agent-Reach",
+    "hook": "103k+ stars, Day 3. CLI that unlocks content agents normally can't reach: login-walled platforms, video subtitles, Chinese platforms (Bilibili, XiaoHongShu), GitHub structured data — with zero API fees. Read-only by design (searches and reads, never posts). Installs via a skill reference file for Claude Code.",
+    "categories": ["mcp", "workflow"],
+    "install": "Ask your agent: install from https://raw.githubusercontent.com/Panniantong/Agent-Reach/main/docs/install.md",
+    "recurring_note": "↑ Day 3 — 103k+ stars"
+  },
+  {
+    "slug": "tt-a1i-archify",
+    "name": "Archify — Idea-to-Interactive-Diagram Skill",
+    "primary_url": "https://github.com/tt-a1i/archify",
+    "hook": "89k+ stars, Day 3. Claude Code skill that turns a plain-language description or existing codebase into a self-contained, interactive HTML diagram — architecture, workflow, sequence, ERD, and others. The output opens in any browser without Archify installed; diagram nodes link back to source code. Latest stable v3.2.0.",
+    "categories": ["design", "skills"],
+    "install": "npx skills add tt-a1i/archify -g",
+    "recurring_note": "↑ Day 3 — 89k+ stars"
+  },
+  {
+    "slug": "egonex-ai-understand-anything",
+    "name": "Understand Anything — Semantic Code Knowledge Graph",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "hook": "88k+ stars, Day 3. Multi-agent pipeline maps files, functions, classes, and dependencies into an interactive knowledge graph with guided tours, diff impact analysis, and business-domain views. Installs as a Claude Code plugin; Cursor and VS Code + Copilot auto-discover it on clone.",
+    "categories": ["workflow", "mcp"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything",
+    "recurring_note": "↑ Day 3 — 88k+ stars"
+  },
+  {
+    "slug": "rtk-ai-rtk",
+    "name": "RTK — Rust CLI Token Proxy for Shell Commands",
+    "primary_url": "https://github.com/rtk-ai/rtk",
+    "hook": "85k+ stars, Day 3. CLI proxy that intercepts shell commands (git, npm, cargo, etc.) and compresses their verbose output before the coding agent reads it: filters noise, groups similar items, truncates redundant context, collapses repeated log lines. Works via Claude Code's Bash hook. Project claims 60–90% token reduction on common dev commands (`git log` keeps only hash/author/subject; `cargo test` shows only failures).",
+    "categories": ["cost", "tool"],
+    "install": "brew install rtk",
+    "recurring_note": "↑ Day 3 — 85k+ stars"
+  },
+  {
+    "slug": "cheaper-inference-omniroute",
+    "name": "OmniRoute — Multi-Provider AI Gateway",
+    "primary_url": "https://github.com/cheaper-inference/OmniRoute",
+    "hook": "81k+ stars, Day 3. MIT-licensed AI gateway exposing one endpoint for 375 providers (150+ free) and 1,400+ models. Quota-aware auto-fallback switches transparently when a quota is hit. Slots into Claude Code as a custom `ANTHROPIC_BASE_URL` — no client changes needed. `omniroute configure claude` writes the config interactively.",
+    "categories": ["cost", "mcp"],
+    "install": "npm install -g omniroute",
+    "recurring_note": "↑ Day 3 — 81k+ stars"
+  }
+]
