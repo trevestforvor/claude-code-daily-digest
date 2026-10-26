@@ -1,0 +1,129 @@
+[
+  {
+    "slug": "nexu-io-open-design",
+    "name": "Open Design — Open-Source Claude Design Alternative",
+    "primary_url": "https://github.com/nexu-io/open-design",
+    "hook": "104k stars for the open-source answer to Claude Design. Local-first and agent-agnostic — drives Claude Code, Codex, Cursor, or Gemini as the design engine via a skills/, design-systems/, and plugins/ directory layout any coding agent can read. Desktop app on macOS and Windows; Docker option for teams. Positions itself as the first collaborative AI design agent workspace.",
+    "categories": ["design", "mcp"],
+    "install": "od mcp install claude-code"
+  },
+  {
+    "slug": "leonxlnx-taste-skill",
+    "name": "Taste Skill — Dial-Based Art Direction for Agents",
+    "primary_url": "https://github.com/Leonxlnx/taste-skill",
+    "hook": "103k stars for Leon Lin's (@lexnlin) design control skill. Replaces vague style adjectives with three numeric baselines — DESIGN_VARIANCE 8, MOTION_INTENSITY 6, VISUAL_DENSITY 4 — that you can override per-prompt. Ships sub-skills for minimalist, brutalist, image-to-code, and redesign-existing-projects. Measured style consistency across Claude Code and Codex sessions. MIT-licensed.",
+    "categories": ["design", "skills"],
+    "install": "npx skills add Leonxlnx/taste-skill"
+  },
+  {
+    "slug": "cathrynlavery-diagram-design",
+    "name": "Diagram Design — Editorial HTML/SVG Diagram Skill",
+    "primary_url": "https://github.com/cathrynlavery/diagram-design",
+    "hook": "61k stars for Cathryn Lavery's diagram skill covering 38–42 editorial diagram types — architecture, sequence, ERD, flow, timelines, and more. Output is self-contained HTML and SVG with no Mermaid dependency. A live gallery at cathrynlavery.github.io/diagram-design previews every type. MIT-licensed; installs via plugin marketplace in one command.",
+    "categories": ["design", "skills"],
+    "install": "/plugin marketplace add cathrynlavery/diagram-design"
+  },
+  {
+    "slug": "cheaper-inference-omniroute",
+    "name": "OmniRoute — Multi-Provider AI Gateway",
+    "primary_url": "https://github.com/cheaper-inference/OmniRoute",
+    "hook": "81k+ stars, Day 4 of trending. MIT-licensed AI gateway exposing one endpoint for 375 providers (150+ free) and 1,400+ models. Quota-aware auto-fallback switches transparently when a quota is hit. Slots into Claude Code as a custom `ANTHROPIC_BASE_URL` — no client changes needed. `omniroute configure claude` writes the config interactively.",
+    "categories": ["cost", "mcp"],
+    "install": "npm install -g omniroute",
+    "recurring_note": "↑ Day 4 — 81k+ stars, still the top cost-reduction gateway"
+  },
+  {
+    "slug": "rtk-ai-rtk",
+    "name": "RTK — Rust CLI Token Proxy for Shell Commands",
+    "primary_url": "https://github.com/rtk-ai/rtk",
+    "hook": "85k+ stars, Day 4. CLI proxy that intercepts shell commands (git, npm, cargo, etc.) and compresses their verbose output before the coding agent reads it: filters noise, groups similar items, truncates redundant context, collapses repeated log lines. Works via Claude Code's Bash hook. Project claims 60–90% token reduction on common dev commands (`git log` keeps only hash/author/subject; `cargo test` shows only failures).",
+    "categories": ["cost", "tool"],
+    "install": "brew install rtk",
+    "recurring_note": "↑ Day 4 — 85k+ stars"
+  },
+  {
+    "slug": "anthropic-claude-code-v2-1-310",
+    "name": "Claude Code v2.1.310 — Monitor Tool on Cloud Platforms",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "v2.1.310 (Oct 23) ships the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry — cloud-hosted Claude Code sessions can now watch background jobs without a local terminal. Also fixes gateway compatibility for orgs using strict API proxies. Follows v2.1.309 (Oct 22, 62 bug fixes), v2.1.307 (Oct 21, new `claude_code.safety_event` OpenTelemetry attribute + `@claude review stop`), and v2.1.304 (Oct 19, `/auto-mode-setup` guided onboarding).",
+    "categories": ["tool", "workflow"],
+    "install": "claude update"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem — Persistent Session Memory",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "103k+ stars, Day 4. Lifecycle hooks (SessionStart through SessionEnd) capture every tool call, compress observations into semantic summaries, and store them in SQLite + Chroma. Future sessions retrieve relevant context via hybrid semantic/keyword search — the project claims 10x token savings vs re-reading raw context. Works across Claude Code, Codex, Gemini CLI, and OpenClaw.",
+    "categories": ["workflow", "skills"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 4 — 103k+ stars"
+  },
+  {
+    "slug": "panniantong-agent-reach",
+    "name": "Agent Reach — Login-Walled Platform Access for Agents",
+    "primary_url": "https://github.com/Panniantong/Agent-Reach",
+    "hook": "103k+ stars, Day 4. CLI that unlocks content agents normally can't reach: login-walled platforms, video subtitles, Chinese platforms (Bilibili, XiaoHongShu), GitHub structured data — with zero API fees. Read-only by design (searches and reads, never posts). Installs via a skill reference file for Claude Code.",
+    "categories": ["mcp", "workflow"],
+    "install": "Ask your agent: install from https://raw.githubusercontent.com/Panniantong/Agent-Reach/main/docs/install.md",
+    "recurring_note": "↑ Day 4 — 103k+ stars"
+  },
+  {
+    "slug": "tt-a1i-archify",
+    "name": "Archify — Idea-to-Interactive-Diagram Skill",
+    "primary_url": "https://github.com/tt-a1i/archify",
+    "hook": "89.7k+ stars, Day 4. Claude Code skill that turns a plain-language description or existing codebase into a self-contained, interactive HTML diagram — architecture, workflow, sequence, ERD, and others. The output opens in any browser without Archify installed; diagram nodes link back to source code. Latest stable v3.2.0.",
+    "categories": ["design", "skills"],
+    "install": "npx skills add tt-a1i/archify -g",
+    "recurring_note": "↑ Day 4 — 89.7k+ stars"
+  },
+  {
+    "slug": "egonex-ai-understand-anything",
+    "name": "Understand Anything — Semantic Code Knowledge Graph",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "hook": "88k+ stars, Day 3. Multi-agent pipeline maps files, functions, classes, and dependencies into an interactive knowledge graph with guided tours, diff impact analysis, and business-domain views. Installs as a Claude Code plugin; Cursor and VS Code + Copilot auto-discover it on clone.",
+    "categories": ["workflow", "mcp"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything",
+    "recurring_note": "↑ Day 3 — 88k+ stars"
+  },
+  {
+    "slug": "code-yeongyu-oh-my-openagent",
+    "name": "Oh My OpenAgent — Multi-Agent Orchestration Layer",
+    "primary_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "hook": "70.4k stars for the agent orchestration layer built on OpenCode. Keyword-triggered and vendor-lock-in-free — the Sisyphus orchestrator breaks complex requests into TODO lists and milestones, delegates to specialized subagents, and monitors progress to completion. Supports Claude Code, Codex, and other coding assistants without forcing a switch.",
+    "categories": ["agent", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "coreyhaines31-marketingskills",
+    "name": "Marketing Skills — CRO, Copy, SEO & Analytics",
+    "primary_url": "https://github.com/coreyhaines31/marketingskills",
+    "hook": "56.6k stars for Corey Haines' library of marketing skills for AI agents. Individual skills cover paywall-upgrade-cro, launch-strategy, email-sequence, and pricing-strategy, among others. Plugin marketplace install enables automatic updates; each skill reads as a standalone SKILL.md file in `~/.claude/skills/`.",
+    "categories": ["skills", "workflow"],
+    "install": "/plugin marketplace add coreyhaines31/marketingskills"
+  },
+  {
+    "slug": "k-dense-ai-scientific-agent-skills",
+    "name": "Scientific Agent Skills — 177 Validated Science Skills",
+    "primary_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "hook": "54.7k stars for K-Dense-AI's science skill library, released October 18. Covers 177 out-of-the-box validated skills with access to 100+ scientific databases: 27 bioinformatics skills, cheminformatics and drug discovery (RDKit, DiffDock), and general research methods. Compatible with Claude Code, Codex, Cursor, and Gemini CLI. Most skills need uv for Python dependencies.",
+    "categories": ["skills", "engineering"],
+    "install": "npx skills add K-Dense-AI/scientific-agent-skills"
+  },
+  {
+    "slug": "slackapi-slack-skills-plugin",
+    "name": "Slack Skills Plugin — Official Slack Platform Skills",
+    "primary_url": "https://github.com/slackapi/slack-skills-plugin",
+    "secondary_urls": ["https://docs.slack.dev/ai/slack-skills-plugin/"],
+    "hook": "Official Slack SDK team's plugin bringing deep Slack platform knowledge into Claude Code and Codex workflows. Ships four app-development skills — create-slack-app, block-kit, slack-cli, and slack-api — paired with the Slack MCP Server for write access. Installs in one command; OAuth authentication on first use. MIT-licensed.",
+    "categories": ["skills", "mcp"],
+    "install": "/plugin install slack@claude-plugins-official"
+  },
+  {
+    "slug": "othmanadi-planning-with-files",
+    "name": "Planning With Files — File-Based Agent Task Planning",
+    "primary_url": "https://github.com/OthmanAdi/planning-with-files",
+    "hook": "27.7k stars for Othman Adi's file-based planning skill for long-running AI coding agent tasks. Creates and manages structured task files that survive context resets — agents track progress through TODO markers, checkpoint files, and milestone docs without losing state between sessions. Updated October 24.",
+    "categories": ["skills", "workflow"],
+    "install": "See README"
+  }
+]
