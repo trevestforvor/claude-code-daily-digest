@@ -1,0 +1,125 @@
+[
+  {
+    "slug": "agricidaniel-claude-seo",
+    "name": "Claude SEO Skill Pack",
+    "primary_url": "https://github.com/AgriciDaniel/claude-seo",
+    "hook": "25-skill SEO agent for Claude Code covering technical SEO, E-E-A-T, schema markup, GEO/AEO, backlinks, local SEO, e-commerce, and international SEO in one plugin. Optional DataForSEO, Firecrawl, and Banana extensions. Open-source MIT with ~9.4k stars and 1.4k forks.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add AgriciDaniel/claude-seo"
+  },
+  {
+    "slug": "mksglu-context-mode",
+    "name": "Context Mode",
+    "primary_url": "https://github.com/mksglu/context-mode",
+    "hook": "Routes bulky tool output — logs, API responses, test results — to a sandbox so it never lands in the main context window. Claims 98% reduction in context consumed by tool output. Bundles ctx-doctor and ctx-stats companion skills. 32.5k stars, updated today.",
+    "categories": ["cost", "skill"],
+    "install": "claude mcp add context-mode -- npx -y context-mode"
+  },
+  {
+    "slug": "gbsoss-mcp-to-skill-converter",
+    "name": "MCP-to-Skill Converter",
+    "primary_url": "https://github.com/GBSOSS/-mcp-to-skill-converter",
+    "hook": "Converts any MCP server into a Claude Code skill using progressive disclosure: ~100 tokens on startup, full tool instructions only load when invoked (~5k tokens), execution runs externally adding 0 tokens. Claims 90% context savings on setups with 20+ tools. ~143 stars.",
+    "categories": ["cost", "skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "rossoctl-context-guru",
+    "name": "Context Guru",
+    "primary_url": "https://github.com/rossoctl/context-guru",
+    "hook": "Lightweight Claude Code plugin for reducing token cost and latency in AI coding agents. Ranked on the claude-code-plugin GitHub topic with 71 stars and updated today — a lightweight alternative in the growing context-management niche.",
+    "categories": ["cost", "plugin"],
+    "install": "See README"
+  },
+  {
+    "slug": "paperclipai-paperclip",
+    "name": "Paperclip",
+    "primary_url": "https://github.com/paperclipai/paperclip",
+    "recurring_note": "↑ Day 5 — surpassed 105k GitHub stars in October 2026",
+    "hook": "Open-source OS for managing AI agents at work: Node.js orchestration server with a React dashboard, Claude Code as the default runtime. MIT-licensed. Crossed 105k stars in October, up from 71k stars in June 2026.",
+    "categories": ["workflow", "mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "mvanhorn-last30days-skill",
+    "name": "Last 30 Days Skill",
+    "primary_url": "https://github.com/mvanhorn/last30days-skill",
+    "hook": "Claude Code skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and GitHub, then synthesizes a grounded cited report. Requires Claude Code plus optional API keys (OpenAI for Reddit data, XAI for X). 27k–48k stars reported across registries.",
+    "categories": ["skill", "workflow"],
+    "install": "npx -y skills add mvanhorn/last30days-skill --skill last30days --agent claude-code"
+  },
+  {
+    "slug": "antonbabenko-deliberation",
+    "name": "Deliberation MCP",
+    "primary_url": "https://github.com/antonbabenko/agent-plugins",
+    "secondary_urls": ["https://mcp.so/server/deliberation/antonbabenko"],
+    "hook": "MCP server that routes your Claude Code decisions through GPT, Gemini, Grok, and 400+ OpenRouter models for a second opinion, with optional cross-model consensus and seven expert personas (architect, security analyst, code reviewer, and more). Updated today, ~178 stars on the claude-code-plugin topic.",
+    "categories": ["mcp", "workflow"],
+    "install": "claude mcp add deliberation -- npx -y @antonbabenko/deliberation-mcp"
+  },
+  {
+    "slug": "rohitg00-awesome-claude-code-toolkit",
+    "name": "Awesome Claude Code Toolkit",
+    "primary_url": "https://github.com/rohitg00/awesome-claude-code-toolkit",
+    "hook": "Curated mega-index: 135 agents, 35 skills, 42 commands, 176+ plugins, 20 hooks, 7 templates, 14 MCP configs, and 26 companion apps in a single community-maintained repo. Acts as a browsable marketplace index with 2.1k stars.",
+    "categories": ["skill", "plugin", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "htdt-godogen",
+    "name": "Godogen",
+    "primary_url": "https://github.com/htdt/godogen",
+    "hook": "Autonomous game-dev pipeline for Godot 4 and Bevy: Claude Code plans and coordinates, Codex executes. Ships two Claude Code skills (plan and execute) and targets full repo generation from a description. Best results with Opus 4.6, ~3.1k stars, featured by Gigazine in March 2026.",
+    "categories": ["skill", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "phuryn-pm-skills",
+    "name": "PM Skills Marketplace",
+    "primary_url": "https://github.com/phuryn/pm-skills",
+    "hook": "Nine product-management Claude Code plugins: pm-toolkit, pm-product-strategy, pm-product-discovery, pm-market-research, pm-data-analytics, pm-marketing-growth, pm-go-to-market, pm-execution, and pm-ai-shipping. Commands include /discover, /strategy, /write-prd. Updated today on the claude-code-plugin topic.",
+    "categories": ["skill", "plugin"],
+    "install": "claude plugin marketplace add phuryn/pm-skills"
+  },
+  {
+    "slug": "florianbruniaux-claude-code-ultimate-guide",
+    "name": "Claude Code Ultimate Guide",
+    "primary_url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+    "recurring_note": "↑ Day 7 — continuously updated; refreshed Oct 17, 2026",
+    "hook": "430K+ line reference covering agentic workflows, hooks, skills, MCP servers, production templates, and quizzes. Ships its own MCP server via npx. The claude-code topic's most comprehensive single-repo guide, refreshed Oct 17, 2026.",
+    "categories": ["skill", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "kunickiaj-codemem",
+    "name": "CodeMem",
+    "primary_url": "https://github.com/kunickiaj/codemem",
+    "hook": "Lightweight persistent-memory companion for OpenCode and Claude Code that carries context across projects. Ranked on the claude-code-plugin GitHub topic with 73 stars, updated today.",
+    "categories": ["plugin", "memory"],
+    "install": "See README"
+  },
+  {
+    "slug": "mulhamna-jira-commands",
+    "name": "Jira Commands",
+    "primary_url": "https://github.com/mulhamna/jira-commands",
+    "hook": "Jira toolkit for Claude Code, terminals, and bots — create, query, and update Jira issues without leaving an agent workflow. 54 stars on the claude-code-plugin topic, updated today.",
+    "categories": ["plugin", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "seayniclabs-schematic",
+    "name": "Schematic",
+    "primary_url": "https://github.com/seayniclabs/schematic",
+    "hook": "Claude Code skill pack for drawing and editing network and architecture diagrams programmatically — produces editable diagrams rather than static images. Updated today on the claude-code-plugin GitHub topic.",
+    "categories": ["design", "skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "generativereality-cctabs",
+    "name": "CC Tabs",
+    "primary_url": "https://github.com/generativereality/cctabs",
+    "hook": "Manages parallel Claude Code sessions in named tabs from a single CLI, so multiple independent agent sessions run side-by-side without juggling terminal windows. 7 stars, updated today on the claude-code-plugin topic.",
+    "categories": ["plugin", "workflow"],
+    "install": "See README"
+  }
+]
