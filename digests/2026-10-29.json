@@ -1,0 +1,119 @@
+[
+  {
+    "slug": "alchaincyf-huashu-design",
+    "name": "Huashu Design",
+    "primary_url": "https://github.com/alchaincyf/huashu-design",
+    "hook": "An HTML-native design skill with 84 style-category templates that turns a single-sentence prompt into a deliverable prototype, PPTX slide deck, or animation. When a request is vague it proposes six design candidates and renders three in full. Includes a brand-asset protocol, an appearance ledger to avoid repetitive looks, and an anti-\"AI slop\" rule set—all running locally. 28.1k stars.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add alchaincyf/huashu-design"
+  },
+  {
+    "slug": "claude-haiku-5-5",
+    "name": "Claude Haiku 5.5",
+    "primary_url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "hook": "Anthropic launched Claude Haiku 5.5 on October 7 as its cheapest and fastest model to date, positioned for high-volume, cost-sensitive tasks. Alongside the release, Max and Team plan subscribers can now claim monthly API credits by linking a Claude Console organization—making Haiku 5.5 a natural default for high-throughput agent pipelines. Available immediately via the API.",
+    "categories": ["cost", "official"]
+  },
+  {
+    "slug": "ayghri-i-have-adhd",
+    "name": "i-have-adhd",
+    "primary_url": "https://github.com/ayghri/i-have-adhd",
+    "hook": "A Claude Code skill that forces the agent to lead with the action—cutting preambles, recaps, and tangents—by enforcing 10 formatting rules in SKILL.md. Reached 59.3k stars and hit 324 points and 256 comments on Hacker News, making it one of the fastest-viral Claude skills this month. Fully customizable by forking the repo and editing the rules; requires explicit invocation via `disable-model-invocation: true`.",
+    "categories": ["skill", "ux"],
+    "install": "claude plugin marketplace add ayghri/i-have-adhd"
+  },
+  {
+    "slug": "wshobson-agents",
+    "name": "Agents Plugin Marketplace",
+    "primary_url": "https://github.com/wshobson/agents",
+    "hook": "A plugin marketplace repo for seven agent harnesses—Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Antigravity, and Pi—with 84 plugins covering Python dev, code review, testing, infra, and security. At 42k stars it's one of the largest multi-harness plugin collections available. Install in Claude Code in two commands: add the marketplace, then install any plugin by name.",
+    "categories": ["plugin", "workflow"],
+    "install": "/plugin marketplace add wshobson/agents"
+  },
+  {
+    "slug": "voltagent-awesome-agent-skills",
+    "name": "Awesome Agent Skills",
+    "primary_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "hook": "A curated index of 1,000+ agent skills grouped by publisher, covering all major coding agents under MIT license. At 36.6k stars and updated October 29, it functions as the go-to discovery layer for skills across Claude Code, Codex, and Cursor. Community-maintained with automated PRs for new additions.",
+    "categories": ["skill", "workflow"]
+  },
+  {
+    "slug": "nanocoai-nanoclaw",
+    "name": "NanoClaw",
+    "primary_url": "https://github.com/nanocoai/nanoclaw",
+    "hook": "A lightweight, container-isolated alternative to OpenClaw built on Anthropic's Agents SDK, connecting agents to WhatsApp, Telegram, Discord, Slack, and more. Each agent runs in its own Docker container with explicit mount permissions and a credential gateway that never exposes raw API keys. 31.1k stars with 12.7k forks; add-on channels installed via `/add-<channel>` skills.",
+    "categories": ["agent", "workflow"],
+    "install": "git clone https://github.com/nanocoai/nanoclaw.git nanoclaw-v2 && cd nanoclaw-v2 && bash nanoclaw.sh"
+  },
+  {
+    "slug": "claude-duet-research-preview",
+    "name": "Claude Duet",
+    "primary_url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "hook": "Anthropic launched Claude Duet as a research preview on October 21 for Pro and Max subscribers—a proactive agent app where Claude works alongside the user rather than waiting for prompts. Available directly on Claude.ai with no additional install; feedback is open during the research preview period.",
+    "categories": ["agent", "official"]
+  },
+  {
+    "slug": "alirezarezvani-claude-skills",
+    "name": "Claude Skills (alirezarezvani)",
+    "primary_url": "https://github.com/alirezarezvani/claude-skills",
+    "hook": "A single-repo collection of 380+ skills, 30+ agents, and 70+ commands spanning business, engineering, and creative domains—compatible with Claude Code and other coding agents. At 29k stars and updated October 29, it's one of the most comprehensive single-author skill libraries. Cross-listed under both the `claude-skills` and `claude-code-plugins` GitHub topics.",
+    "categories": ["skill", "plugin"],
+    "install": "See README"
+  },
+  {
+    "slug": "timescale-pg-aiguide",
+    "name": "pg-aiguide",
+    "primary_url": "https://github.com/timescale/pg-aiguide",
+    "hook": "An MCP server and plugin from Timescale that bundles PostgreSQL skills and documentation directly into Claude Code, letting agents query, optimize, and document Postgres schemas without context-switching. From the team behind TimescaleDB, adding production credibility. 1.9k stars, updated October 28.",
+    "categories": ["mcp", "skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "jeremylongshore-tons-of-skills",
+    "name": "Tons of Skills Marketplace",
+    "primary_url": "https://github.com/jeremylongshore/tons-of-skills-marketplace",
+    "hook": "A model-agnostic agent-skills platform with a package manager that works across Claude Code, Codex, Cursor, and other harnesses—acting as an npm-style registry for skills. At 2.9k stars and updated October 29, it's gaining traction as a distribution-layer alternative to GitHub Topics browsing. Install and publish workflows handled through the included CLI.",
+    "categories": ["skill", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "hamzafer-claude-code-mods",
+    "name": "Claude Code Mods",
+    "primary_url": "https://github.com/hamzafer/claude-code-mods",
+    "hook": "A set of hook-based plugins that add a real-time status line, tool-call guards, and a token-usage meter to Claude Code sessions—running entirely through the hooks system with no external services. 407 stars, updated October 27. Low-friction install for teams wanting tighter session observability.",
+    "categories": ["plugin", "cost"],
+    "install": "See README"
+  },
+  {
+    "slug": "athola-claude-night-market",
+    "name": "Claude Night Market",
+    "primary_url": "https://github.com/athola/claude-night-market",
+    "hook": "A bundle of 23 opinionated plugins covering TDD hooks, git and PR workflows, and automated code review—designed to be installed together as a complete developer setup. 343 stars, updated October 28. Best for teams standardizing a single Claude Code configuration rather than assembling individual plugins.",
+    "categories": ["plugin", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "firecrawl-claude-plugin",
+    "name": "Firecrawl Claude Plugin",
+    "primary_url": "https://github.com/firecrawl/firecrawl-claude-plugin",
+    "hook": "An official Firecrawl plugin for Claude Code adding web search, Markdown page scraping, and structured data extraction as first-class tools—backed by the Firecrawl team and exposing the same APIs as the Firecrawl SDK. 249 stars, updated October 25. Fills the web-access gap for Claude Code without requiring a separate MCP server setup.",
+    "categories": ["plugin", "mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "bitwize-music-claude-skills",
+    "name": "Claude AI Music Skills",
+    "primary_url": "https://github.com/bitwize-music-studio/claude-ai-music-skills",
+    "hook": "Skills, templates, and Suno integrations for AI-assisted music production—covering composition prompting, lyric structuring, arrangement advice, and asset naming for produced tracks. 607 stars, updated October 28. Fills a specific vertical gap in the Claude Code skills ecosystem for music creators.",
+    "categories": ["skill", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "quemsah-awesome-claude-plugins",
+    "name": "Awesome Claude Plugins",
+    "primary_url": "https://github.com/quemsah/awesome-claude-plugins",
+    "hook": "An automated index of Claude Code plugins with adoption metrics—tracking installs, star velocity, and plugin-category breakdowns. At 1.5k stars and updated October 29, it provides a data-driven discovery surface beyond manual GitHub Topics browsing. Runs as a bot that refreshes the catalog on a schedule.",
+    "categories": ["plugin", "workflow"],
+    "install": "See README"
+  }
+]
