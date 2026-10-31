@@ -1,0 +1,121 @@
+[
+  {
+    "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+    "name": "UI UX Pro Max",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "hook": "Injects 79 searchable design styles (glassmorphism, brutalism, minimalism, and 76 more), 192 industry-matched color palettes, 74 Google Fonts pairings, 119 UX accessibility guidelines, and 22 stack configs into any AI coding assistant. A `--persist` flag writes a `MASTER.md` for brand consistency across sessions, and a theme-migration workflow reskins existing apps. Multi-harness via CLI or Claude Code marketplace. 143k stars.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill\n/plugin install ui-ux-pro-max@ui-ux-pro-max-skill"
+  },
+  {
+    "slug": "juliusbrussee-caveman",
+    "name": "Caveman",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "Forces coding agents to respond in minimal, clipped output without changing any code they produce. A 54-run study showed 33.2% fewer input tokens with 18/18 answers correct; a separate routing strategy came in 54% cheaper than Opus 5.5 at xhigh effort. Adobe Research independently measured 1.4–2.4× savings across eight models. Elastic reports 63.6% fewer response tokens in its MCP scenarios. 116k stars, Apache-2.0.",
+    "categories": ["cost", "skill"],
+    "install": "/plugin marketplace add JuliusBrussee/caveman\n/plugin install caveman@caveman"
+  },
+  {
+    "slug": "morluto-rea",
+    "name": "REA — Reverse Engineer Anything",
+    "primary_url": "https://github.com/morluto/rea",
+    "hook": "One MCP server that lets any AI coding agent reverse engineer native binaries, Electron/JS apps, .NET assemblies, Android APKs, websites, firmware, and packet captures. Analysis runs locally; results include evidence and stated limitations. Ships as a Claude Code plugin and a skill on skills.sh. `npx rea-agents setup` auto-detects your agent, installs the MCP server, backs up config, and supports Claude Code, Codex, Cursor, Gemini CLI, and Grok Build. 415k stars.",
+    "categories": ["mcp", "skill"],
+    "install": "npx rea-agents setup"
+  },
+  {
+    "slug": "nousresearch-hermes-agent",
+    "name": "Hermes Agent",
+    "primary_url": "https://github.com/NousResearch/hermes-agent",
+    "hook": "Nous Research's self-improving agent that builds skills from sessions, improves them during use, and maintains persistent knowledge. Supports any model provider, offers a messaging gateway for Telegram, Discord, Slack, WhatsApp, and Signal, plus subagents and MCP. Run `hermes import-agent claude-code` to migrate settings, memories, and skills from Claude Code. Tagged claude-code on GitHub. 259k stars, 57k forks.",
+    "categories": ["agent", "workflow"],
+    "install": "curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash"
+  },
+  {
+    "slug": "dietrichgebert-ponytail",
+    "name": "Ponytail",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "hook": "Skill that makes AI coding agents climb a seven-rung ladder before writing code: is the feature needed, already in the codebase, in the standard library, a platform primitive, an installed dep, or doable in one line? If not, write the minimum that works plus one test for branchy/money/security logic. \"Lazy, not negligent\" — error handling, security, and accessibility stay. Adds `/ponytail-review`, `/ponytail-audit`, and `/ponytail-debt` commands. 181k stars, 10k forks.",
+    "categories": ["skill", "cost"],
+    "install": "/plugin marketplace add DietrichGebert/ponytail\n/plugin install ponytail@ponytail"
+  },
+  {
+    "slug": "farion1231-cc-switch",
+    "name": "CC Switch",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "hook": "Desktop app (macOS, Windows, Linux) for managing twelve AI coding assistants — Claude Code, Codex, Gemini CLI, Grok Build, OpenCode, OpenClaw, Hermes, Pi, MiniMax Code, Kimi Code, and more — from one GUI. Switch API providers in one click; your plugins, hooks, and comments survive. Also manages Skills and MCP servers and shows a usage dashboard. 151k stars, 9.9k forks.",
+    "categories": ["plugin", "workflow"],
+    "install": "brew install --cask cc-switch"
+  },
+  {
+    "slug": "graphify-labs-graphify",
+    "name": "Graphify",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "hook": "Parses code, docs, PDFs, images, and video locally with tree-sitter AST into a queryable knowledge graph — no embeddings, no vector store. Each connection is tagged EXTRACTED (explicit) or INFERRED (resolved). Installs a `/graphify` skill and registers hooks that redirect file-search tool calls to the graph. `uv tool install graphifyy && graphify install` auto-detects your agent; `graphify claude install` adds per-project setup. Output: graph.html, GRAPH_REPORT.md, graph.json. 140k stars, 13.3k forks.",
+    "categories": ["skill", "workflow"],
+    "install": "uv tool install graphifyy\ngraphify install"
+  },
+  {
+    "slug": "addyosmani-agent-skills",
+    "name": "Agent Skills (Addy Osmani)",
+    "primary_url": "https://github.com/addyosmani/agent-skills",
+    "hook": "25 production-grade skills by Addy Osmani (former Chrome DevRel) covering spec → plan → build → test → review → ship. Includes four specialist personas (code-reviewer, security-auditor, test-engineer, web-perf-auditor) and seven checklists for security, performance, and accessibility. In Claude Code, /review becomes /agent-skills:review to avoid the built-in clash. Guides for Claude Code, Cursor, Gemini CLI, Codex, Copilot, Windsurf, and OpenCode. 112k stars, 11.7k forks.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add addyosmani/agent-skills\n/plugin install agent-skills@addy-agent-skills"
+  },
+  {
+    "slug": "stablyai-orca",
+    "name": "Orca",
+    "primary_url": "https://github.com/stablyai/orca",
+    "hook": "Desktop + mobile app for running multiple coding agents (Claude Code, Codex, OpenCode, Pi) in parallel, each in its own git worktree, tracked in one place. Shows per-agent usage and rate-limit resets, lets you switch provider accounts without re-logging in, and offers a mobile companion for monitoring and follow-up prompts. MIT, 112k stars, 7.1k forks.",
+    "categories": ["plugin", "workflow"],
+    "install": "brew install --cask stablyai/orca/orca"
+  },
+  {
+    "slug": "claude-code-v2-1-316",
+    "name": "Claude Code v2.1.316",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "October 31 release adds CLAUDE_CODE_SUBAGENT_EFFORT to control subagent effort independently of the parent session, and CLAUDE_CODE_DISABLE_ULTRATHINK to gate the keyword. Enterprise: pooled group budgets (monthly cap shared across a team), layered policy mode that applies every matching policy in stack order, and Bedrock guardrail input tagging. Write/Edit/NotebookEdit now refuse paths outside working directories by default. Opus 4.8 fast mode deprecated; removal November 30.",
+    "categories": ["official", "cost"]
+  },
+  {
+    "slug": "aws-agent-toolkit-for-aws",
+    "name": "AWS Agent Toolkit",
+    "primary_url": "https://github.com/aws/agent-toolkit-for-aws",
+    "hook": "AWS's official toolkit with an MCP server covering 300+ services, sandboxed Python execution, and CloudWatch/CloudTrail integration, plus five plugins on the Claude Code marketplace: aws-core (CDK, serverless, containers, billing), aws-agents (Bedrock AgentCore), aws-data-analytics (S3 Tables, Glue, Athena), aws-agents-for-devsecops (incident investigation, vuln scanning), and aws-startup-advisor. Freshly listed as official; Apache-2.0, 3.4k stars.",
+    "categories": ["mcp", "official"],
+    "install": "/plugin install aws-core@claude-plugins-official"
+  },
+  {
+    "slug": "career-ops-hq-career-ops",
+    "name": "Career Ops",
+    "primary_url": "https://github.com/career-ops-hq/career-ops",
+    "hook": "AI job search agent that scans 100+ company portals, scores each posting 1–5 against your CV before you apply, generates ATS-ready PDFs and tailored cover letters, and provides an interview prep and offer-stage suite. Human-in-the-loop: it drafts and evaluates; you press Submit. Installs as a Claude Code plugin or a standalone agent skill for Codex, OpenCode, and Antigravity. 79k stars, 14.6k forks.",
+    "categories": ["agent", "workflow"],
+    "install": "/plugin marketplace add career-ops-hq/career-ops\n/plugin install career-ops@career-ops"
+  },
+  {
+    "slug": "agricidaniel-claude-obsidian",
+    "name": "Claude Obsidian",
+    "primary_url": "https://github.com/AgriciDaniel/claude-obsidian",
+    "hook": "Turns any folder into a self-organizing Obsidian vault: drop sources in inbox/, Claude links and cites them, answers questions with references, and checks for broken links and orphan pages. Not an Obsidian plugin — it operates on the vault folder through Claude Code, shows a diff-preview before every write, rolls back interrupted edits, and keeps untouched source originals. From the author of claude-seo. 15 skills, 3 read-only agents. 16k stars.",
+    "categories": ["skill", "workflow"],
+    "install": "claude plugin marketplace add AgriciDaniel/claude-obsidian\nclaude plugin install claude-obsidian@agricidaniel-claude-obsidian"
+  },
+  {
+    "slug": "rebelytics-one-skill-to-rule-them-all",
+    "name": "Task Observer (one-skill-to-rule-them-all)",
+    "primary_url": "https://github.com/rebelytics/one-skill-to-rule-them-all",
+    "hook": "Meta-skill that watches your work sessions, captures corrections and judgment calls, then proposes improvements to your existing skills and candidates for new ones — nothing goes live until you approve staged copies. Also logs improvements to its own methodology. Requires an activation block in CLAUDE.md. Works in Claude Code and web/desktop/mobile Claude apps via .skill bundle upload. 3.7k stars.",
+    "categories": ["skill"],
+    "install": "npx skills add rebelytics/one-skill-to-rule-them-all --skill task-observer"
+  },
+  {
+    "slug": "qingyuna-answer-me-with-html",
+    "name": "Answer Me With HTML",
+    "primary_url": "https://github.com/QingYunA/answer-me-with-html",
+    "hook": "Agent skill that routes complex questions through an inline HTML renderer, delivering structured answers as a single readable page instead of inline chat text — useful for data tables, diagrams, step-by-step comparisons, and visual explanations. Updated October 31, 2026. MIT, 5k stars.",
+    "categories": ["skill"],
+    "install": "See README"
+  }
+]
