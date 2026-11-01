@@ -1,0 +1,113 @@
+[
+  {
+    "slug": "pbakaus-impeccable",
+    "name": "Impeccable",
+    "primary_url": "https://github.com/pbakaus/impeccable",
+    "hook": "Design vocabulary toolkit that teaches AI coding agents to critique UI like a senior designer rather than generate generic AI pages. Ships named commands (`/impeccable init`, `/impeccable audit`) and a rule-based detector for low-quality 'AI slop' patterns. 99k stars and trending #7 on the GitHub daily list for Nov 1.",
+    "categories": ["design", "skill"],
+    "install": "npx impeccable install"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "Skills for Real Engineers",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "TypeScript educator Matt Pocock's personal `.claude` directory published as an installable skill set — called 'the npm moment for Claude Code Skills' when it launched in April 2026. Includes git-guardrails hooks that block dangerous `git push`, `reset --hard`, and `clean` before they run. Sitting at 308k stars and trending #2 on GitHub daily Nov 1 — still climbing.",
+    "categories": ["skill", "workflow"],
+    "install": "npx skills@latest add mattpocock/skills"
+  },
+  {
+    "slug": "leonxlnx-taste-skill",
+    "name": "Taste Skill",
+    "primary_url": "https://github.com/Leonxlnx/taste-skill",
+    "hook": "Agent skill that steers coding agents through art direction, real reference images, and a browser check at three screen widths instead of dropping a generic hero section. v2.1 adds dashboard and app-screen modes. 108k stars, updated Oct 31, install via one `npx skills add` command.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"design-taste-frontend\"",
+    "recurring_note": "↑ 2nd feature — 108k stars, updated Oct 31"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "Persistent memory compression plugin that captures every tool call and observation during a Claude Code session, AI-compresses it, then injects relevant context into future sessions automatically. Works as a Claude Code plugin or standalone SDK. 109k stars, updated Nov 1, also compatible with Codex and Gemini.",
+    "categories": ["memory", "plugin"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ 4th feature — 109k stars, updated Nov 1, consistent traction"
+  },
+  {
+    "slug": "paperclipai-paperclip",
+    "name": "Paperclip",
+    "primary_url": "https://github.com/paperclipai/paperclip",
+    "hook": "Open-source, self-hosted control plane for running teams of AI agents. Assign goals, add agents from different providers, and track work and costs through one dashboard with org charts, budgets, and approval gates. 110k stars, updated Nov 1, requires Node.js 24.11+.",
+    "categories": ["orchestration"],
+    "install": "npx paperclipai@latest onboard --yes",
+    "recurring_note": "↑ Day 2 — updated Nov 1, 110k stars"
+  },
+  {
+    "slug": "panniantong-agent-reach",
+    "name": "Agent Reach",
+    "primary_url": "https://github.com/Panniantong/Agent-Reach",
+    "hook": "Read-only CLI that gives agents access to platforms they can't normally reach — Bilibili, V2EX, GitHub, YouTube — through one unified interface. No posting, commenting, or liking: purely a search and read tool. 108k stars, updated Nov 1; some channels need a Groq or OpenAI key for speech-to-text.",
+    "categories": ["browser", "skill"],
+    "install": "See README",
+    "recurring_note": "↑ 4th feature — 108k stars, updated Nov 1"
+  },
+  {
+    "slug": "rtk-ai-rtk",
+    "name": "RTK (Rust Token Killer)",
+    "primary_url": "https://github.com/rtk-ai/rtk",
+    "hook": "Local CLI proxy that intercepts Bash tool calls via a Claude Code PreToolUse hook and rewrites verbose command output before it reaches the context window. Self-reported savings of ~80% in a 30-minute session (118k → 24k tokens). 85k stars, updated Nov 1; `rtk discover` scans session history to show where it would have helped.",
+    "categories": ["cost"],
+    "install": "See README",
+    "recurring_note": "↑ 4th feature — 85k stars, updated Nov 1, still high signal"
+  },
+  {
+    "slug": "cheaper-inference-omniroute",
+    "name": "OmniRoute",
+    "primary_url": "https://github.com/cheaper-inference/OmniRoute",
+    "hook": "Free AI gateway that exposes a single local endpoint (localhost:20128/v1) and routes requests across 380 providers, falling back automatically when quotas hit. Includes 20 routing strategies and token compression the project claims saves 15–95% per request. 84k stars, updated Nov 1, v3.8.53 adds quota-weighted routing.",
+    "categories": ["cost", "mcp"],
+    "install": "See README",
+    "recurring_note": "↑ 4th feature — 84k stars, updated Nov 1, v3.8.53"
+  },
+  {
+    "slug": "tt-a1i-archify",
+    "name": "Archify",
+    "primary_url": "https://github.com/tt-a1i/archify",
+    "hook": "Agent skill that turns a prompt, plan, or codebase into a self-contained interactive HTML diagram you can open and share. Works with Claude Code, Cursor, Codex, and OpenCode; also generates one-page explainers that pair text answers with visuals. 92k stars, v3.2.0, updated Oct 31.",
+    "categories": ["design", "skill"],
+    "install": "npx -y skills@latest add https://archify.si --skill archify --agent cursor --global --copy --yes",
+    "recurring_note": "↑ 4th feature — 92k stars, updated Oct 31"
+  },
+  {
+    "slug": "lightpanda-io-browser",
+    "name": "Lightpanda Browser",
+    "primary_url": "https://github.com/lightpanda-io/browser",
+    "hook": "Headless browser built from scratch in Zig for AI agents and automation — benchmarks at 9x faster and 16x less memory than headless Chrome. Ships with an MCP server mode (each agent gets its own session) and an `agent` mode that drives the browser from plain-English tasks using Anthropic, OpenAI, Gemini, or local models. 40k stars.",
+    "categories": ["browser", "mcp"],
+    "install": "brew install lightpanda-io/browser/lightpanda"
+  },
+  {
+    "slug": "shareai-lab-learn-claude-code",
+    "name": "learn-claude-code",
+    "primary_url": "https://github.com/shareAI-lab/learn-claude-code",
+    "hook": "17-lesson progressive tutorial that builds an agent harness from scratch using only Python and Bash — no framework. Each lesson adds one mechanism: tool use, permissions, subagents, memory, task queues, MCP. The premise is 'Bash is all you need.' 80k stars, MIT, includes a web platform and a sister CLI tutorial.",
+    "categories": ["education", "architecture"],
+    "install": "See README"
+  },
+  {
+    "slug": "donchitos-claude-code-game-studios",
+    "name": "Claude Code Game Studios",
+    "primary_url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+    "hook": "Template that turns a single Claude Code session into a structured game development studio with 49 specialized agents in a three-tier hierarchy (directors → department leads → specialists), 74 slash-command skills, and 15 validation hooks. Supports Godot, Unity, and Unreal Engine. 32k stars, no install package — just `git clone` and `claude`.",
+    "categories": ["workflow", "skill"],
+    "install": "git clone https://github.com/Donchitos/Claude-Code-Game-Studios.git my-game && cd my-game && claude"
+  },
+  {
+    "slug": "conorbronsdon-avoid-ai-writing",
+    "name": "avoid-ai-writing",
+    "primary_url": "https://github.com/conorbronsdon/avoid-ai-writing",
+    "hook": "Agent skill that audits text for AI writing patterns (em-dash overuse, filler openers, hedging phrases) and rewrites them in a voice profile you specify. Ships a deterministic detector, detect-only mode, and a GitHub Actions gate for CI pipelines. Updated today; install via git clone or Claude Code plugin marketplace.",
+    "categories": ["skill", "writing"],
+    "install": "git clone https://github.com/conorbronsdon/avoid-ai-writing ~/.claude/skills/avoid-ai-writing"
+  }
+]
