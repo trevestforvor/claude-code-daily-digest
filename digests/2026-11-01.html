@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — November 1, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — November 1, 2026</h1><p class="sub">Top 13 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/pbakaus/impeccable">Impeccable</a></h3>
+  <p class="hook">Design vocabulary toolkit that teaches AI coding agents to critique UI like a senior designer rather than generate generic AI pages. Ships named commands (`/impeccable init`, `/impeccable audit`) and a rule-based detector for low-quality &#39;AI slop&#39; patterns. 99k stars and trending #7 on the GitHub daily list for Nov 1.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx impeccable install</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mattpocock/skills">Skills for Real Engineers</a></h3>
+  <p class="hook">TypeScript educator Matt Pocock&#39;s personal `.claude` directory published as an installable skill set — called &#39;the npm moment for Claude Code Skills&#39; when it launched in April 2026. Includes git-guardrails hooks that block dangerous `git push`, `reset --hard`, and `clean` before they run. Sitting at 308k stars and trending #2 on GitHub daily Nov 1 — still climbing.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>npx skills@latest add mattpocock/skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Leonxlnx/taste-skill">Taste Skill</a></h3>
+  <p class="hook">Agent skill that steers coding agents through art direction, real reference images, and a browser check at three screen widths instead of dropping a generic hero section. v2.1 adds dashboard and app-screen modes. 108k stars, updated Oct 31, install via one `npx skills add` command.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">frontend · viral · browser</div>
+  <pre><button class="copy">copy</button><code>npx skills add https://github.com/Leonxlnx/taste-skill --skill &quot;design-taste-frontend&quot;</code></pre>
+  <div class="recurring">↑ 2nd feature — 108k stars, updated Oct 31</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/thedotmack/claude-mem">claude-mem</a></h3>
+  <p class="hook">Persistent memory compression plugin that captures every tool call and observation during a Claude Code session, AI-compresses it, then injects relevant context into future sessions automatically. Works as a Claude Code plugin or standalone SDK. 109k stars, updated Nov 1, also compatible with Codex and Gemini.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">memory</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx claude-mem install</code></pre>
+  <div class="recurring">↑ 4th feature — 109k stars, updated Nov 1, consistent traction</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/paperclipai/paperclip">Paperclip</a></h3>
+  <p class="hook">Open-source, self-hosted control plane for running teams of AI agents. Assign goals, add agents from different providers, and track work and costs through one dashboard with org charts, budgets, and approval gates. 110k stars, updated Nov 1, requires Node.js 24.11+.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">orchestration</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx paperclipai@latest onboard --yes</code></pre>
+  <div class="recurring">↑ Day 2 — updated Nov 1, 110k stars</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Panniantong/Agent-Reach">Agent Reach</a></h3>
+  <p class="hook">Read-only CLI that gives agents access to platforms they can&#39;t normally reach — Bilibili, V2EX, GitHub, YouTube — through one unified interface. No posting, commenting, or liking: purely a search and read tool. 108k stars, updated Nov 1; some channels need a Groq or OpenAI key for speech-to-text.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">browser</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">audio · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  <div class="recurring">↑ 4th feature — 108k stars, updated Nov 1</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/rtk-ai/rtk">RTK (Rust Token Killer)</a></h3>
+  <p class="hook">Local CLI proxy that intercepts Bash tool calls via a Claude Code PreToolUse hook and rewrites verbose command output before it reaches the context window. Self-reported savings of ~80% in a 30-minute session (118k → 24k tokens). 85k stars, updated Nov 1; `rtk discover` scans session history to show where it would have helped.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">context · token · proxy · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  <div class="recurring">↑ 4th feature — 85k stars, updated Nov 1, still high signal</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/cheaper-inference/OmniRoute">OmniRoute</a></h3>
+  <p class="hook">Free AI gateway that exposes a single local endpoint (localhost:20128/v1) and routes requests across 380 providers, falling back automatically when quotas hit. Includes 20 routing strategies and token compression the project claims saves 15–95% per request. 84k stars, updated Nov 1, v3.8.53 adds quota-weighted routing.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  <div class="recurring">↑ 4th feature — 84k stars, updated Nov 1, v3.8.53</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/tt-a1i/archify">Archify</a></h3>
+  <p class="hook">Agent skill that turns a prompt, plan, or codebase into a self-contained interactive HTML diagram you can open and share. Works with Claude Code, Cursor, Codex, and OpenCode; also generates one-page explainers that pair text answers with visuals. 92k stars, v3.2.0, updated Oct 31.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx -y skills@latest add https://archify.si --skill archify --agent cursor --global --copy --yes</code></pre>
+  <div class="recurring">↑ 4th feature — 92k stars, updated Oct 31</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/lightpanda-io/browser">Lightpanda Browser</a></h3>
+  <p class="hook">Headless browser built from scratch in Zig for AI agents and automation — benchmarks at 9x faster and 16x less memory than headless Chrome. Ships with an MCP server mode (each agent gets its own session) and an `agent` mode that drives the browser from plain-English tasks using Anthropic, OpenAI, Gemini, or local models. 40k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">browser</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">memory · anthropic · viral</div>
+  <pre><button class="copy">copy</button><code>brew install lightpanda-io/browser/lightpanda</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/shareAI-lab/learn-claude-code">learn-claude-code</a></h3>
+  <p class="hook">17-lesson progressive tutorial that builds an agent harness from scratch using only Python and Bash — no framework. Each lesson adds one mechanism: tool use, permissions, subagents, memory, task queues, MCP. The premise is &#39;Bash is all you need.&#39; 80k stars, MIT, includes a web platform and a sister CLI tutorial.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">education</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">architecture</span>  </div>
+  <div class="tags">mcp · harness · memory · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Donchitos/Claude-Code-Game-Studios">Claude Code Game Studios</a></h3>
+  <p class="hook">Template that turns a single Claude Code session into a structured game development studio with 49 specialized agents in a three-tier hierarchy (directors → department leads → specialists), 74 slash-command skills, and 15 validation hooks. Supports Godot, Unity, and Unreal Engine. 32k stars, no install package — just `git clone` and `claude`.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">subagent · viral</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/Donchitos/Claude-Code-Game-Studios.git my-game &amp;&amp; cd my-game &amp;&amp; claude</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/conorbronsdon/avoid-ai-writing">avoid-ai-writing</a></h3>
+  <p class="hook">Agent skill that audits text for AI writing patterns (em-dash overuse, filler openers, hedging phrases) and rewrites them in a voice profile you specify. Ships a deterministic detector, detect-only mode, and a GitHub Actions gate for CI pipelines. Updated today; install via git clone or Claude Code plugin marketplace.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">writing</span>  </div>
+  <div class="tags">plugin · marketplace</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/conorbronsdon/avoid-ai-writing ~/.claude/skills/avoid-ai-writing</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
