@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "blader-humanizer",
+    "name": "Humanizer",
+    "primary_url": "https://github.com/blader/humanizer",
+    "hook": "blader/humanizer (63.9k stars, +3.7k this week) is a Claude Code plugin and agent skill that rewrites AI-generated text against 26 'AI-slop' patterns sourced from Wikipedia's style guide, printing a first draft, critique, and polished final in one pass. Works on prose only — leaves code, data, and frontmatter untouched. Gained nearly 4k stars this week on the back of viral social sharing.",
+    "categories": ["design", "skills"],
+    "install": "/plugin marketplace add blader/humanizer && /plugin install humanizer@humanizer"
+  },
+  {
+    "slug": "anthropics-claude-plugins-official-new-batch",
+    "name": "Anthropic Official Plugins — November Batch",
+    "primary_url": "https://github.com/anthropics/claude-plugins-official",
+    "hook": "Anthropic's official claude-plugins-official repository shipped a notable batch of new Claude Code plugins this week including session-report (generates an HTML usage analytics page for your Claude Code session), claude-security (multi-phase security scanning of repos and diffs), build-mcp-server (scaffold and ship an MCP server from inside Claude Code), and playground (create interactive HTML demos). All auto-update when you install from the official marketplace.",
+    "categories": ["skills", "official", "dev-workflow"],
+    "install": "/plugin install session-report@claude-plugins-official"
+  },
+  {
+    "slug": "anthropics-skills-new-additions",
+    "name": "Anthropic Skills — docx, pptx, academy-guide",
+    "primary_url": "https://github.com/anthropics/skills",
+    "hook": "Anthropic's public skills repository (186k stars, +2.6k this week) had four new skills verified in the community registry this week: docx (read and write Word documents), pptx (create and edit PowerPoint files), academy-guide (answers Claude product questions and recommends Anthropic courses), and discernment-nudge (prompts a review step after Claude drafts substantive advice or artifacts). All are MIT-licensed and maintained directly by Anthropic.",
+    "categories": ["skills", "official"],
+    "install": "npx skills add anthropics/skills:docx -g"
+  },
+  {
+    "slug": "morluto-rea",
+    "name": "REA — Reverse Engineer Anything",
+    "primary_url": "https://github.com/morluto/rea",
+    "secondary_urls": ["https://rea.tools"],
+    "hook": "REA (morluto/rea, 422k stars) is the #1 weekly trending repo on GitHub with +47k stars in 7 days. It is an MCP server and CLI that gives Claude Code (and Codex, Cursor, Grok Build) tools for reverse engineering native binaries via Hopper/Ghidra/IDA, JavaScript/Electron apps, .NET assemblies, Android APKs, firmware images, and packet captures — all locally. Ships a Claude Code .claude-plugin directory for one-command plugin setup.",
+    "categories": ["mcp", "security", "dev-workflow"],
+    "install": "npx rea-agents setup",
+    "recurring_note": "↑ Day 9 — holding #1 on GitHub weekly trending, +47k stars this week vs. +25k last week"
+  },
+  {
+    "slug": "chromedevtools-chrome-devtools-mcp",
+    "name": "Chrome DevTools MCP",
+    "primary_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "hook": "The official Chrome DevTools team shipped chrome-devtools-mcp (54.7k stars) as a first-party Claude Code plugin and MCP server this week (updated Nov 2). It gives coding agents performance trace recording, network request analysis, source-mapped stack traces, accessibility inspection, and full Puppeteer-based browser automation through 7 bundled skills including a11y-debugging, memory-leak-debugging, cookie-debugging, and debug-optimize-lcp.",
+    "categories": ["mcp", "debug", "browser"],
+    "install": "/plugin marketplace add ChromeDevTools/chrome-devtools-mcp && /plugin install chrome-devtools-mcp@chrome-devtools-plugins"
+  },
+  {
+    "slug": "deusdata-codebase-memory-mcp",
+    "name": "codebase-memory-mcp",
+    "primary_url": "https://github.com/DeusData/codebase-memory-mcp",
+    "hook": "codebase-memory-mcp (DeusData, 48k stars) builds a persistent local knowledge graph of your codebase, docs, and infrastructure that survives across Claude Code sessions. Unlike embedding-based search, the graph stores typed relationships — imports, calls, schema links — so agents can ask 'what uses this function?' or 'what tables touch this service?' without re-indexing each session. Updated Nov 2.",
+    "categories": ["mcp", "memory", "dev-workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "vercel-labs-agent-desktop",
+    "name": "agent-desktop",
+    "primary_url": "https://github.com/vercel-labs/agent-desktop",
+    "hook": "Vercel Labs launched agent-desktop (8.8k stars, 2.2k stars today Nov 2) — a Rust CLI that gives AI agents computer use by reading the OS accessibility tree rather than guessing from pixels. It returns JSON snapshots of every UI element with stable 'ref' IDs, lets agents act on them, and errors loudly on stale refs so agents re-snapshot instead of guessing. Installable as a Claude Code skill with `npx skills add`.",
+    "categories": ["computer-use", "skills", "infrastructure"],
+    "install": "npm install -g agent-desktop"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "Superpowers",
+    "primary_url": "https://github.com/obra/superpowers",
+    "hook": "Superpowers (obra/superpowers, 311k stars) is the cross-agent engineering skills framework with 20+ skills covering TDD, systematic debugging, brainstorming, dispatching parallel agents, code review, and git-worktree workflows. Supports 16 coding agent harnesses including Claude Code, Codex, Cursor, Gemini CLI, and Devin. Added 6.6k stars this week — still in the GitHub weekly top 10.",
+    "categories": ["skills", "workflow", "dev-workflow"],
+    "install": "/plugin install superpowers@claude-plugins-official",
+    "recurring_note": "↑ Day 4 — +6.6k stars this week, top 10 on GitHub weekly trending"
+  },
+  {
+    "slug": "dayuanjiang-next-ai-draw-io",
+    "name": "next-ai-draw-io",
+    "primary_url": "https://github.com/DayuanJiang/next-ai-draw-io",
+    "hook": "next-ai-draw-io (DayuanJiang, 36.6k stars) lets you edit draw.io architecture diagrams through AI chat and ships an MCP server so Claude Code can create and update diagrams mid-session. The web UI and Electron desktop app show live diagram edits as Claude responds, making it practical for architecture docs and system design within a Claude Code workflow. Updated Nov 2.",
+    "categories": ["mcp", "design", "dev-workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "oraios-serena",
+    "name": "Serena",
+    "primary_url": "https://github.com/oraios/serena",
+    "hook": "Serena (oraios/serena, 31k stars) is an MCP toolkit that gives Claude Code semantic code intelligence — symbol lookup, type-aware navigation, and reference-following — on par with LSP, rather than plain file search. Positions itself as an IDE layer for coding agents: agents can ask 'find all callers of this method' or 'show the definition of this type' and get structured answers rather than raw grep output.",
+    "categories": ["mcp", "dev-workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "jetbrains-thinkrail",
+    "name": "Thinkrail",
+    "primary_url": "https://github.com/JetBrains/thinkrail",
+    "hook": "JetBrains launched Thinkrail (7.1k stars, +5.8k this week) — a lightweight TypeScript IDE purpose-built for vibe coding with the pi agent, which adapts its suggestions to each developer's style over time. This is JetBrains' bet on the agentic IDE market: ultra-minimal editor shell with pi wired in natively. Reached 7k stars within days of launch.",
+    "categories": ["ide", "dev-workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "beenuar-aisoc",
+    "name": "AiSOC",
+    "primary_url": "https://github.com/beenuar/AiSOC",
+    "hook": "AiSOC (beenuar, 6.3k stars) is an open-source AI security operations center with LLM-agent triage, automated response playbooks, and an MCP server that works with Claude, Cursor, and Continue — letting Claude Code query alert queues, assess severity, and draft remediation steps inside a session. Security teams get a self-hosted SOC with Claude as the analyst.",
+    "categories": ["security", "mcp"],
+    "install": "See README"
+  }
+]
