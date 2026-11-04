@@ -1,0 +1,132 @@
+[
+  {
+    "slug": "anthropic-claude-code-v2-1-318",
+    "name": "Claude Code v2.1.318",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Today's release (Nov 4) adds an `effort` option to `$.model.fork` so parallel side-jobs can run at a lower reasoning level — a direct cost-saver for routine subagent work. Also ships: `assume_role` on mantle gateway upstreams for cross-account AWS roles and per-developer cost attribution; `loginExpiresAt` in `claude auth status`; and cloud sessions can now start without selecting a repository first.",
+    "categories": ["official", "cost"]
+  },
+  {
+    "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+    "name": "UI UX Pro Max",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "hook": "145k stars. Design intelligence skill that gives Claude Code 79 searchable UI styles, 192 industry-matched color palettes, 74 Google Fonts pairings, 119 UX accessibility guidelines, and 22 tech stacks (React, Next.js, SwiftUI, Flutter, Jetpack Compose, and more). A `--persist` flag writes a `MASTER.md` brand file for consistency across sessions; a theme-migration command reskins existing apps to a chosen style.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill\n/plugin install ui-ux-pro-max@ui-ux-pro-max-skill",
+    "recurring_note": "↑ Day 5 — 145k stars, updated Nov 3"
+  },
+  {
+    "slug": "dietrichgebert-ponytail",
+    "name": "Ponytail",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "hook": "184k stars (+3k since first featured Oct 31). Forces coding agents through a seven-rung pre-coding ladder before writing a line: is it needed, already in the codebase, in stdlib, a platform primitive, installed dep, or a one-liner? Benchmarks: 53% less code, 26% less cost, 45% fewer tokens vs. no skill. Adds `/ponytail-review`, `/ponytail-audit`, and a status band showing cost + code-reuse in real time.",
+    "categories": ["cost", "skill"],
+    "install": "/plugin marketplace add DietrichGebert/ponytail\n/plugin install ponytail@ponytail",
+    "recurring_note": "↑ Day 5 — 184k stars, +3k since Oct 31 first feature"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "113k stars on the claude-code GitHub topic (Nov 4). Persistent memory compression system for AI coding agents — automatically captures tool-usage observations each session, generates semantic summaries, and injects the most relevant context back into future sessions. Agent-agnostic since v13: works with Claude Code, Gemini CLI, and Codex. Web viewer at localhost:37777 shows your full memory graph. The quick-start is a single command; a note in the README warns that `npm install -g` installs only the SDK — `npx claude-mem install` does the full hook+worker setup.",
+    "categories": ["skill", "cost"],
+    "install": "npx claude-mem install"
+  },
+  {
+    "slug": "juliusbrussee-caveman",
+    "name": "Caveman",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "117k stars. Forces coding agents to reply in terse, caveman-style prose while leaving code and commands exact. Independent measurements: 33.2% fewer input tokens per session (own benchmark), 54% lower cost vs. Opus 5.5 at xhigh effort via smart routing, and 63.6% fewer response tokens in Elastic's MCP scenarios. Adobe Research independently confirmed 1.4–2.4× savings across 8 models. Apache-2.0.",
+    "categories": ["cost", "skill"],
+    "install": "npx @caveman-ai/cli@latest",
+    "recurring_note": "↑ Day 5 — 117k stars, updated Nov 3"
+  },
+  {
+    "slug": "affaan-m-ecc",
+    "name": "ECC (Enhanced Coding Context)",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "296k stars, updated Nov 2. Comprehensive agent-harness performance overlay: 71 specialized agents, 314 on-demand skills, 98 slash-command shims, hooks-based session memory, and AgentShield security scanning (flags hardcoded secrets, permission misconfigs, MCP risks in your .claude/ directory). Works on Claude Code, Codex, OpenCode, and Cursor. One setup command installs the whole stack.",
+    "categories": ["cost", "skill"],
+    "install": "npx ecc-universal@2.2.3 setup",
+    "recurring_note": "↑ Day 6 — 296k stars (+3k since Oct 30)"
+  },
+  {
+    "slug": "graphify-labs-graphify",
+    "name": "Graphify",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "hook": "142k stars. Parses code, docs, PDFs, images, and video into a traversable knowledge graph (no embeddings, no vector store) — each edge tagged EXTRACTED or INFERRED. Installs a `/graphify` skill and hooks that redirect file-search tool calls to the graph instead of grepping. Self-reported benchmarks: 0.497 recall@10 on LOCOMO and 76% QA accuracy on LongMemEval-S with zero LLM credits for graph building. ~40 languages.",
+    "categories": ["skill", "cost"],
+    "install": "uv tool install graphifyy\ngraphify install",
+    "recurring_note": "↑ Day 5 — 142k stars, updated Nov 2"
+  },
+  {
+    "slug": "farion1231-cc-switch",
+    "name": "CC Switch",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "hook": "152k stars. Cross-platform desktop app (macOS, Windows, Linux) for managing 12 AI coding tools — Claude Code, Codex, Gemini CLI, Grok Build, OpenCode, OpenClaw, Hermes, Pi, and more — from one GUI. Switch API providers in one click with 90+ presets; your plugins, hooks, and skills survive unchanged. Also manages MCP servers and shows a usage dashboard with quota tracking and cloud sync via WebDAV or S3.",
+    "categories": ["plugin", "cost"],
+    "install": "brew install --cask cc-switch",
+    "recurring_note": "↑ Day 5 — 152k stars, updated Nov 3"
+  },
+  {
+    "slug": "morluto-rea",
+    "name": "REA — Reverse Engineer Anything",
+    "primary_url": "https://github.com/morluto/rea",
+    "hook": "430k stars — the fastest-growing Claude Code plugin on GitHub. One MCP server + Claude Code plugin lets any coding agent reverse-engineer native binaries, Electron/JS apps, .NET assemblies, Android APKs, firmware, and packet captures fully locally. `npx rea-agents setup` auto-detects Claude Code, Codex, Cursor, Gemini CLI, or Grok Build and wires the MCP server in one command.",
+    "categories": ["mcp", "security"],
+    "install": "npx rea-agents setup",
+    "recurring_note": "↑ Day 11 — 430k stars, still #1 claude-code topic by stars"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "Superpowers",
+    "primary_url": "https://github.com/obra/superpowers",
+    "hook": "311k stars, updated Nov 3. Composable software-development methodology for 16 coding agents including Claude Code, Codex, Cursor, Gemini CLI, Hermes, Kimi Code, and Devin. Skills auto-trigger for clarifying questions, design docs, parallel subagents, and pre-ship review. October additions: Muse, Grok Build CLI, Kimi Code, Pi support, and a `diagnosing-superpowers` post-mortem skill.",
+    "categories": ["skill"],
+    "install": "/plugin install superpowers@claude-plugins-official",
+    "recurring_note": "↑ Day 7 — 311k stars, updated Nov 3"
+  },
+  {
+    "slug": "stablyai-orca",
+    "name": "Orca",
+    "primary_url": "https://github.com/stablyai/orca",
+    "hook": "115k stars. Desktop + mobile app for running multiple coding agents (Claude Code, Codex, OpenCode, Pi) in parallel, each in its own git worktree. Design mode: click any UI element in an embedded Chromium view to send its HTML, CSS, and screenshot directly to the agent. SSH worktrees for remote machines, GitHub/Linear integration, mobile companion for monitoring and follow-up prompts. MIT.",
+    "categories": ["plugin"],
+    "install": "brew install --cask stablyai/orca/orca",
+    "recurring_note": "↑ Day 5 — 115k stars, updated Nov 3"
+  },
+  {
+    "slug": "addyosmani-agent-skills",
+    "name": "Agent Skills (Addy Osmani)",
+    "primary_url": "https://github.com/addyosmani/agent-skills",
+    "hook": "113k stars. 25 production-grade skills by Addy Osmani (Chrome DevRel, author of Learning JavaScript Design Patterns) covering the full dev cycle: spec → plan → build → test → review → ship. Includes four specialist personas (code-reviewer, security-auditor, test-engineer, web-perf-auditor), 7 production checklists, and 9 slash commands. Works across Claude Code, Cursor, Codex, Gemini CLI, Windsurf, Copilot, and OpenCode. MIT.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add addyosmani/agent-skills\n/plugin install agent-skills@addy-agent-skills",
+    "recurring_note": "↑ Day 5 — 113k stars, updated Nov 1"
+  },
+  {
+    "slug": "paperclipai-paperclip",
+    "name": "Paperclip",
+    "primary_url": "https://github.com/paperclipai/paperclip",
+    "hook": "111k stars on the claude-code GitHub topic (Nov 4). Open-source, self-hosted orchestration platform that treats AI agents like employees: each agent gets a role, a reporting structure, and a ticket queue. Budgets, approval gates, and tool restrictions are enforced per agent. Paperclip doesn't run agents itself — it plugs into Claude Code, Codex, Gemini CLI, and others through adapters, then schedules them in short event-triggered heartbeat sessions. MIT, launched March 2026.",
+    "categories": ["plugin"],
+    "install": "See README"
+  },
+  {
+    "slug": "sickn33-agentic-awesome-skills",
+    "name": "Agentic Awesome Skills",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "hook": "49.1k stars, still actively updated Nov 4. The largest community-maintained skill library with 2,884 reusable skills under `skills/<name>/SKILL.md` plus a plugins/ directory — covering web dev, data science, DevOps, security, creative writing, and more. MIT code, CC BY 4.0 content. Works with Claude Code, Cursor, Gemini CLI, and Codex. A local catalog MCP server lets you search and install individual skills without cloning the whole repo. Also known as antigravity-awesome-skills in older listings.",
+    "categories": ["skill"],
+    "install": "npx skills add sickn33/agentic-awesome-skills --skill <name>"
+  },
+  {
+    "slug": "othmanadi-planning-with-files",
+    "name": "Planning With Files",
+    "primary_url": "https://github.com/OthmanAdi/planning-with-files",
+    "hook": "27.9k stars, updated Nov 4. Manus-style working memory on disk: keeps `task_plan.md`, `findings.md`, and `progress.md` in your project so the plan survives `/clear`, context compaction, and crashes. Hooks re-inject selected planning context every turn. In gated mode, the agent's stop is held until all phases are ticked off. SHA-256 tamper attestation blocks injection if an approved plan is changed externally. Works with 60+ agents.",
+    "categories": ["skill", "cost"],
+    "install": "npx skills add OthmanAdi/planning-with-files --skill planning-with-files -g",
+    "recurring_note": "↑ Day 2 — 27.9k stars, updated Nov 4"
+  }
+]
