@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "nexu-io-open-design",
+    "name": "OpenDesign",
+    "primary_url": "https://github.com/nexu-io/open-design",
+    "hook": "106k stars, updated Nov 5. The first open-source collaborative AI design agent workspace — a local-first desktop app that uses whatever coding agent you already have (Claude Code, Codex, Cursor, 26 CLIs total) to build prototypes, sites, decks, and motion graphics from DESIGN.md brand contracts. Ships 151 design-system packages, 100+ skills, and 277 official plugins; an MCP server exposes your local design files to other agents; `od mcp install claude` wires it in one command. Apache-2.0.",
+    "categories": ["design", "plugin"],
+    "install": "od mcp install claude"
+  },
+  {
+    "slug": "cathrynlavery-diagram-design",
+    "name": "Diagram Design (cathrynlavery)",
+    "primary_url": "https://github.com/cathrynlavery/diagram-design",
+    "hook": "65.2k stars, updated Nov 3. Editorial diagram skill for Claude Code that produces self-contained HTML+SVG files across 45 diagram types — architecture, sequence, ER, Wardley maps, Sankey, swimlane, and more. No build step, no external image dependencies; outputs sit on a 4px grid with 1px hairlines and a single accent color per the editorial style. Imports draw.io, Mermaid, and Excalidraw for redraws; brands itself from your site's palette; exports SVG or PNG. MIT.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add cathrynlavery/diagram-design\n/plugin install diagram-design@diagram-design"
+  },
+  {
+    "slug": "vincentwei1021-video-shotcraft",
+    "name": "Video ShotCraft",
+    "primary_url": "https://github.com/Vincentwei1021/video-shotcraft",
+    "hook": "17.2k stars, updated Oct 29. Cinematic product promo skill for Claude Code and Codex built on Remotion — not a video generator, but a code-driven film: 124 shot recipe cards across 10 motion categories, beat-sync sound design with Freesound SFX, page capture of real product screenshots, and a Motion Workbench browser editor for post-delivery tweaks. Outputs 1920×1080 MP4 h264 at 30fps plus the full Remotion project source. Apache-2.0.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add Vincentwei1021/video-shotcraft"
+  },
+  {
+    "slug": "headroomlabs-ai-headroom",
+    "name": "Headroom",
+    "primary_url": "https://github.com/headroomlabs-ai/headroom",
+    "hook": "78.9k stars, updated Nov 5. Compresses tool outputs, logs, files, and RAG chunks before they reach the LLM — measured 21–57% fewer input tokens on real agent scenarios (SRE incident debugging 57%, codebase exploration 42%, GitHub issue triage 30%), with 90%+ on JSON logs and repeated lines. Uses AST-aware code compression, a HuggingFace prose model (Kompress-v2-base), and a CacheAligner that avoids breaking provider KV-cache prefixes. Reversible: originals cached locally. Apache-2.0.",
+    "categories": ["cost"],
+    "install": "uv tool install --python 3.13 \"headroom-ai[all]\""
+  },
+  {
+    "slug": "upstash-context7",
+    "name": "Context7 (Upstash)",
+    "primary_url": "https://github.com/upstash/context7",
+    "hook": "64.2k stars. MCP server + CLI skill that injects version-specific, up-to-date library docs and code examples directly into the agent's context — no more stale training data for fast-moving libraries. Add a library ID like `/supabase/supabase` to any prompt to get version-matched docs; `npx ctx7 setup --claude` handles OAuth, API key generation, and skill installation in one command. MIT.",
+    "categories": ["cost", "mcp"],
+    "install": "npx ctx7 setup --claude"
+  },
+  {
+    "slug": "d4vinci-scrapling",
+    "name": "Scrapling",
+    "primary_url": "https://github.com/D4Vinci/Scrapling",
+    "hook": "97.7k stars — reached #1 on GitHub trending November 4. Self-healing web scraper framework that handles everything from a single request to full-scale crawls: browser TLS fingerprint impersonation, Cloudflare Turnstile bypass, persistent sessions, CSS/XPath/regex/adaptive element parsing, and concurrent spiders with proxy rotation. Ships an MCP server and an Agent Skill so Claude Code can scrape via plain prompts; `pip install \"scrapling[ai]\"` enables the MCP features. BSD-3-Clause.",
+    "categories": ["mcp"],
+    "install": "pip install \"scrapling[ai]\""
+  },
+  {
+    "slug": "egonex-ai-understand-anything",
+    "name": "Understand Anything",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "hook": "90.9k stars, updated Oct 26. Plugin that turns any codebase into an interactive knowledge graph you can explore, search, and query: file/function/class structure with AI summaries, business-logic domain views, change-impact analysis, guided architecture tours, and 12 programming-pattern explainers. Installs as a Claude Code plugin; also supports Codex, Cursor, Copilot, and Gemini CLI via `install.sh`. MIT.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything\n/plugin install understand-anything"
+  },
+  {
+    "slug": "shanraisshan-claude-code-best-practice",
+    "name": "Claude Code Best Practice",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "68.6k stars, updated Nov 5. Community guide covering Claude Code from vibe coding through agentic engineering: subagents, commands, skills, hooks, MCP servers, memory, context management, the Research → Plan → Execute → Review → Ship workflow, cross-model patterns combining Claude Code with Codex and Gemini, and curated tips from the creator community. 2,689 commits of active maintenance. MIT.",
+    "categories": ["skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "hesreallyhim-awesome-claude-code",
+    "name": "Awesome Claude Code (hesreallyhim)",
+    "primary_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "hook": "57.3k stars, updated Nov 5. Hand-curated collection of the best Claude Code resources: agent skills, agents, status lines, developer tooling, and plugins. 2,322 commits with a script-generated README (generate_readme.py) and a structured catalog in THE_RESOURCES_TABLE_NEW.csv — the most actively maintained community index for the full Claude Code ecosystem.",
+    "categories": ["skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "alibaba-open-code-review",
+    "name": "Open Code Review (Alibaba)",
+    "primary_url": "https://github.com/alibaba/open-code-review",
+    "hook": "49.5k stars, updated Nov 5. Battle-tested at Alibaba's scale — hybrid code review combining deterministic rules (null pointer, thread safety, XSS, SQL injection across multiple languages) with an LLM agent that reads full files and cross-references other changed files for context. Delegation mode lets your coding agent run the review with its own LLM and no extra API key. CI/CD integration and OpenTelemetry telemetry included. Apache-2.0.",
+    "categories": ["skill"],
+    "install": "npm install -g @alibaba-group/open-code-review"
+  },
+  {
+    "slug": "voltAgent-awesome-agent-skills",
+    "name": "Awesome Agent Skills (VoltAgent)",
+    "primary_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "hook": "36.9k stars, updated Nov 5. Curated registry of 1,000+ agent skills organized by official teams and community contributors — covering Claude Code, Codex, Cursor, Gemini CLI, and more. Maintained as a curation-first alternative to raw-volume collections, with editorial selection across engineering, design, security, and productivity domains.",
+    "categories": ["skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "wanshuiyin-aris",
+    "name": "ARIS (Auto-Research-In-Sleep)",
+    "primary_url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+    "hook": "18.7k stars, updated Nov 3. Markdown-only skill bundle for autonomous ML research that runs paper-to-code pipelines while you sleep — no framework required. Cross-model review loops pair an executor model with an independent reviewer (Codex MCP by default) for quality checks. Covers idea discovery → experiments → paper writing → rebuttal drafting → slide generation, with citation auditing and a persistent Research Wiki. `/meta-optimize` self-improves the skills over time. MIT.",
+    "categories": ["skill"],
+    "install": "claude plugin marketplace add wanshuiyin/Auto-claude-code-research-in-sleep\nclaude plugin install aris@aris"
+  }
+]
