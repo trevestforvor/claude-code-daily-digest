@@ -1,0 +1,128 @@
+[
+  {
+    "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+    "name": "UI UX Pro Max",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "hook": "145k stars. Design intelligence skill that gives Claude Code 79 searchable UI styles, 192 industry-matched color palettes, 74 Google Fonts pairings, 119 UX accessibility guidelines, and 22 tech stacks (React, Next.js, SwiftUI, Flutter, Jetpack Compose, and more). A `--persist` flag writes a `MASTER.md` brand file for consistency across sessions; a theme-migration command reskins existing apps to a chosen style.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill\n/plugin install ui-ux-pro-max@ui-ux-pro-max-skill",
+    "recurring_note": "↑ Day 7 — 145k stars, updated Nov 3"
+  },
+  {
+    "slug": "anthropic-opus-48-fast-mode-deprecation",
+    "name": "Opus 4.8 Fast Mode: 25 days to migrate",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Announced in v2.1.316 (Oct 31): Opus 4.8 fast mode is removed November 30, 2026. After that date, fast-mode requests on Opus 4.8 return an error instead of succeeding. Migration path is Opus 5.5 fast mode — which is also cheaper ($8/$40 per MTok input/output vs $10/$50 for 4.8). Change the model via `/model` in-session or update `model` in `~/.claude/settings.json`. Check any CI/CD pipelines that hardcode `claude-opus-4-8` with `speed: \"fast\"`.",
+    "categories": ["cost", "official"]
+  },
+  {
+    "slug": "colbymchenry-codegraph",
+    "name": "CodeGraph",
+    "primary_url": "https://github.com/colbymchenry/codegraph",
+    "hook": "62k+ stars (Jul 2026 snapshot, likely higher now). Pre-indexed, local code knowledge graph that wires into Claude Code (and 7 other agents) via MCP. `codegraph install` auto-detects Claude Code and registers the MCP server in `~/.claude.json` with auto-allow permissions. Each project gets a typed, persistent graph of functions, imports, calls, and schema links — agents ask 'what calls this function?' and get structured answers rather than grepping. Saves up to 70% tokens on codebase exploration per community benchmarks. MIT, TypeScript.",
+    "categories": ["cost", "mcp"],
+    "install": "npm i -g @colbymchenry/codegraph && codegraph install && codegraph init -i"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "113k+ stars, +8.8k this week (top GitHub weekly gainer). Persistent memory compression system for AI coding agents — automatically captures tool-usage observations each session, generates semantic summaries, and injects the most relevant context back into future sessions. Agent-agnostic since v13: works with Claude Code, Gemini CLI, and Codex. Web viewer at localhost:37777 shows your full memory graph. Full hook+worker setup via `npx claude-mem install`.",
+    "categories": ["skill", "cost"],
+    "install": "npx claude-mem install",
+    "recurring_note": "↑ Day 3 — 113k+ stars, still top weekly gainer on GitHub"
+  },
+  {
+    "slug": "dietrichgebert-ponytail",
+    "name": "Ponytail",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "hook": "184k stars. Forces coding agents through a seven-rung pre-coding ladder before writing a line: is it needed, already in the codebase, in stdlib, a platform primitive, installed dep, or a one-liner? Benchmarks: 53% less code, 26% less cost, 45% fewer tokens vs. no skill. Adds `/ponytail-review`, `/ponytail-audit`, and a status band showing cost + code-reuse in real time.",
+    "categories": ["cost", "skill"],
+    "install": "/plugin marketplace add DietrichGebert/ponytail\n/plugin install ponytail@ponytail",
+    "recurring_note": "↑ Day 7 — 184k stars, updated Nov 3"
+  },
+  {
+    "slug": "headroomlabs-ai-headroom",
+    "name": "Headroom",
+    "primary_url": "https://github.com/headroomlabs-ai/headroom",
+    "hook": "78.9k stars. Compresses tool outputs, logs, files, and RAG chunks before they reach the LLM — measured 21–57% fewer input tokens on real agent scenarios (SRE incident debugging 57%, codebase exploration 42%, GitHub issue triage 30%), with 90%+ on JSON logs and repeated lines. Uses AST-aware code compression, a HuggingFace prose model (Kompress-v2-base), and a CacheAligner that avoids breaking provider KV-cache prefixes. Reversible: originals cached locally. Apache-2.0.",
+    "categories": ["cost"],
+    "install": "uv tool install --python 3.13 \"headroom-ai[all]\"",
+    "recurring_note": "↑ Day 2 — 78.9k stars, updated Nov 5"
+  },
+  {
+    "slug": "juliusbrussee-caveman",
+    "name": "Caveman",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "117k stars. Forces coding agents to reply in terse, caveman-style prose while leaving code and commands exact. Independent measurements: 33.2% fewer input tokens per session (own benchmark), 54% lower cost vs. Opus 5.5 at xhigh effort via smart routing, and 63.6% fewer response tokens in Elastic's MCP scenarios. Adobe Research independently confirmed 1.4–2.4× savings across 8 models. Apache-2.0.",
+    "categories": ["cost", "skill"],
+    "install": "npx @caveman-ai/cli@latest",
+    "recurring_note": "↑ Day 7 — 117k stars, updated Nov 3"
+  },
+  {
+    "slug": "morluto-rea",
+    "name": "REA — Reverse Engineer Anything",
+    "primary_url": "https://github.com/morluto/rea",
+    "hook": "430k stars — the fastest-growing Claude Code plugin on GitHub. One MCP server + Claude Code plugin lets any coding agent reverse-engineer native binaries, Electron/JS apps, .NET assemblies, Android APKs, firmware, and packet captures fully locally. `npx rea-agents setup` auto-detects Claude Code, Codex, Cursor, Gemini CLI, or Grok Build and wires the MCP server in one command.",
+    "categories": ["mcp", "security"],
+    "install": "npx rea-agents setup",
+    "recurring_note": "↑ Day 13 — 430k stars, still #1 claude-code topic by stars"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "Superpowers",
+    "primary_url": "https://github.com/obra/superpowers",
+    "hook": "311k stars. Composable software-development methodology for 16 coding agents including Claude Code, Codex, Cursor, Gemini CLI, Hermes, Kimi Code, and Devin. Skills auto-trigger for clarifying questions, design docs, parallel subagents, and pre-ship review. October additions: Muse, Grok Build CLI, Kimi Code, Pi support, and a `diagnosing-superpowers` post-mortem skill.",
+    "categories": ["skill"],
+    "install": "/plugin install superpowers@claude-plugins-official",
+    "recurring_note": "↑ Day 9 — 311k stars, updated Nov 3"
+  },
+  {
+    "slug": "anthropics-knowledge-work-plugins",
+    "name": "Knowledge-Work Plugins (Anthropic Official)",
+    "primary_url": "https://github.com/anthropics/knowledge-work-plugins",
+    "hook": "17k+ stars. Anthropic's official knowledge-work plugin bundle with 11 production plugins for Sales, Legal, Finance, and Data domains. Each plugin bundles domain-specific skills, slash commands, and agent personas: `sales` for pipeline and email, `legal` for contract review and compliance, `finance` for P&L analysis, `data` for SQL/analytics workflows. Install individually by name from the official marketplace; all auto-update.",
+    "categories": ["official", "skill"],
+    "install": "claude plugin marketplace add anthropics/knowledge-work-plugins\nclaude plugin install sales@knowledge-work-plugins"
+  },
+  {
+    "slug": "nvidia-skillspector",
+    "name": "SkillSpector (NVIDIA)",
+    "primary_url": "https://github.com/NVIDIA/SkillSpector",
+    "hook": "NVIDIA's open-source security scanner for AI agent skills — scans a SKILL.md, local folder, or GitHub link against 64 vulnerability patterns in 16 categories: prompt injection, data exfiltration, supply-chain risks, MCP tool poisoning, YARA signatures, and taint tracking. Install the `[mcp]` extra to run it as an MCP server inside Claude Code or any other agent. Outputs SARIF for CI integration. Apache 2.0, Python 3.12+. Latest: v2.11.2 (Sep 10, 2026). The community standard for skill vetting before install.",
+    "categories": ["skill", "security"],
+    "install": "uv tool install 'skillspector[mcp] @ git+https://github.com/NVIDIA/skillspector.git'"
+  },
+  {
+    "slug": "alirezarezvani-claude-skills",
+    "name": "claude-skills (alirezarezvani)",
+    "primary_url": "https://github.com/alirezarezvani/claude-skills",
+    "hook": "29.1k stars, #1 GitHub Trending on November 1, +439 stars in the latest tracked week. Community mega-collection of 380+ production-ready skills across 20 domains (web dev, data science, DevOps, security, creative writing, business, and more) plus 110 marketplace plugins and a full LLM-wiki plugin. Last updated November 3, 2026. MIT.",
+    "categories": ["skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "verlabs-find-skills",
+    "name": "find-skills (Vercel Labs)",
+    "primary_url": "https://github.com/vercel-labs/skills",
+    "hook": "27.5k stars, 1.6M installs across the marketplace. The standard skill-discovery tool for Claude Code: before writing a new skill, run `npx skills find <query>` and it searches all indexed marketplaces, ranks results by install count + source reputation + GitHub stars, and prints the top matches with install commands. Official sources (Vercel, Anthropic) are weighted higher. Prevents skill sprawl and duplicate effort. MIT.",
+    "categories": ["skill"],
+    "install": "npx skills add vercel-labs/skills --skill find-skills --agent claude-code"
+  },
+  {
+    "slug": "bradautomates-claude-video",
+    "name": "claude-video",
+    "primary_url": "https://github.com/bradautomates/claude-video",
+    "hook": "19.8k stars (+1.8k last 30 days). Adds a `/watch` slash command to Claude Code: paste any video URL and the plugin downloads it via yt-dlp, extracts key frames, deduplicates visually similar ones, runs Whisper transcription when captions are absent, and passes the full frame + transcript context to Claude. Practical for reviewing UI recordings, conference talks, and tutorial videos from inside a session. MIT. Requires yt-dlp and ffmpeg.",
+    "categories": ["skill", "plugin"],
+    "install": "/plugin marketplace add bradautomates/claude-video\n/plugin install watch@claude-video"
+  },
+  {
+    "slug": "imbad0202-academic-research-skills",
+    "name": "Academic Research Skills",
+    "primary_url": "https://github.com/Imbad0202/academic-research-skills",
+    "hook": "20k stars. Claude Code plugin suite (v3.24.1, Nov 2) covering the full academic research lifecycle: `academic-paper` (find, evaluate, and summarize papers across arXiv, Semantic Scholar, and PubMed), `academic-pipeline` (end-to-end idea-to-draft automation), `academic-review` (structured peer-review critique against venue-specific standards), and `academic-revise` (apply review comments and rewrite). Installs from the marketplace in one command.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add Imbad0202/academic-research-skills\n/plugin install academic-research-skills"
+  }
+]
