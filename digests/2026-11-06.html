@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — November 6, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — November 6, 2026</h1><p class="sub">Top 15 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill">UI UX Pro Max</a></h3>
+  <p class="hook">145k stars. Design intelligence skill that gives Claude Code 79 searchable UI styles, 192 industry-matched color palettes, 74 Google Fonts pairings, 119 UX accessibility guidelines, and 22 tech stacks (React, Next.js, SwiftUI, Flutter, Jetpack Compose, and more). A `--persist` flag writes a `MASTER.md` brand file for consistency across sessions; a theme-migration command reskins existing apps to a chosen style.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill
+/plugin install ui-ux-pro-max@ui-ux-pro-max-skill</code></pre>
+  <div class="recurring">↑ Day 7 — 145k stars, updated Nov 3</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Opus 4.8 Fast Mode: 25 days to migrate</a></h3>
+  <p class="hook">Announced in v2.1.316 (Oct 31): Opus 4.8 fast mode is removed November 30, 2026. After that date, fast-mode requests on Opus 4.8 return an error instead of succeeding. Migration path is Opus 5.5 fast mode — which is also cheaper ($8/$40 per MTok input/output vs $10/$50 for 4.8). Change the model via `/model` in-session or update `model` in `~/.claude/settings.json`. Check any CI/CD pipelines that hardcode `claude-opus-4-8` with `speed: &quot;fast&quot;`.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">official</span>  </div>
+  
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/colbymchenry/codegraph">CodeGraph</a></h3>
+  <p class="hook">62k+ stars (Jul 2026 snapshot, likely higher now). Pre-indexed, local code knowledge graph that wires into Claude Code (and 7 other agents) via MCP. `codegraph install` auto-detects Claude Code and registers the MCP server in `~/.claude.json` with auto-allow permissions. Each project gets a typed, persistent graph of functions, imports, calls, and schema links — agents ask &#39;what calls this function?&#39; and get structured answers rather than grepping. Saves up to 70% tokens on codebase exploration per community benchmarks. MIT, TypeScript.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">memory · token</div>
+  <pre><button class="copy">copy</button><code>npm i -g @colbymchenry/codegraph &amp;&amp; codegraph install &amp;&amp; codegraph init -i</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/thedotmack/claude-mem">claude-mem</a></h3>
+  <p class="hook">113k+ stars, +8.8k this week (top GitHub weekly gainer). Persistent memory compression system for AI coding agents — automatically captures tool-usage observations each session, generates semantic summaries, and injects the most relevant context back into future sessions. Agent-agnostic since v13: works with Claude Code, Gemini CLI, and Codex. Web viewer at localhost:37777 shows your full memory graph. Full hook+worker setup via `npx claude-mem install`.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">memory · terminal</div>
+  <pre><button class="copy">copy</button><code>npx claude-mem install</code></pre>
+  <div class="recurring">↑ Day 3 — 113k+ stars, still top weekly gainer on GitHub</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/DietrichGebert/ponytail">Ponytail</a></h3>
+  <p class="hook">184k stars. Forces coding agents through a seven-rung pre-coding ladder before writing a line: is it needed, already in the codebase, in stdlib, a platform primitive, installed dep, or a one-liner? Benchmarks: 53% less code, 26% less cost, 45% fewer tokens vs. no skill. Adds `/ponytail-review`, `/ponytail-audit`, and a status band showing cost + code-reuse in real time.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · token · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add DietrichGebert/ponytail
+/plugin install ponytail@ponytail</code></pre>
+  <div class="recurring">↑ Day 7 — 184k stars, updated Nov 3</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/headroomlabs-ai/headroom">Headroom</a></h3>
+  <p class="hook">78.9k stars. Compresses tool outputs, logs, files, and RAG chunks before they reach the LLM — measured 21–57% fewer input tokens on real agent scenarios (SRE incident debugging 57%, codebase exploration 42%, GitHub issue triage 30%), with 90%+ on JSON logs and repeated lines. Uses AST-aware code compression, a HuggingFace prose model (Kompress-v2-base), and a CacheAligner that avoids breaking provider KV-cache prefixes. Reversible: originals cached locally. Apache-2.0.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">model · token · viral · search</div>
+  <pre><button class="copy">copy</button><code>uv tool install --python 3.13 &quot;headroom-ai[all]&quot;</code></pre>
+  <div class="recurring">↑ Day 2 — 78.9k stars, updated Nov 5</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/JuliusBrussee/caveman">Caveman</a></h3>
+  <p class="hook">117k stars. Forces coding agents to reply in terse, caveman-style prose while leaving code and commands exact. Independent measurements: 33.2% fewer input tokens per session (own benchmark), 54% lower cost vs. Opus 5.5 at xhigh effort via smart routing, and 63.6% fewer response tokens in Elastic&#39;s MCP scenarios. Adobe Research independently confirmed 1.4–2.4× savings across 8 models. Apache-2.0.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">mcp · token · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>npx @caveman-ai/cli@latest</code></pre>
+  <div class="recurring">↑ Day 7 — 117k stars, updated Nov 3</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/morluto/rea">REA — Reverse Engineer Anything</a></h3>
+  <p class="hook">430k stars — the fastest-growing Claude Code plugin on GitHub. One MCP server + Claude Code plugin lets any coding agent reverse-engineer native binaries, Electron/JS apps, .NET assemblies, Android APKs, firmware, and packet captures fully locally. `npx rea-agents setup` auto-detects Claude Code, Codex, Cursor, Gemini CLI, or Grok Build and wires the MCP server in one command.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">security</span>  </div>
+  <div class="tags">plugin · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>npx rea-agents setup</code></pre>
+  <div class="recurring">↑ Day 13 — 430k stars, still #1 claude-code topic by stars</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/obra/superpowers">Superpowers</a></h3>
+  <p class="hook">311k stars. Composable software-development methodology for 16 coding agents including Claude Code, Codex, Cursor, Gemini CLI, Hermes, Kimi Code, and Devin. Skills auto-trigger for clarifying questions, design docs, parallel subagents, and pre-ship review. October additions: Muse, Grok Build CLI, Kimi Code, Pi support, and a `diagnosing-superpowers` post-mortem skill.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">design · plugin · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>/plugin install superpowers@claude-plugins-official</code></pre>
+  <div class="recurring">↑ Day 9 — 311k stars, updated Nov 3</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/knowledge-work-plugins">Knowledge-Work Plugins (Anthropic Official)</a></h3>
+  <p class="hook">17k+ stars. Anthropic&#39;s official knowledge-work plugin bundle with 11 production plugins for Sales, Legal, Finance, and Data domains. Each plugin bundles domain-specific skills, slash commands, and agent personas: `sales` for pipeline and email, `legal` for contract review and compliance, `finance` for P&amp;L analysis, `data` for SQL/analytics workflows. Install individually by name from the official marketplace; all auto-update.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">official</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · anthropic · marketplace</div>
+  <pre><button class="copy">copy</button><code>claude plugin marketplace add anthropics/knowledge-work-plugins
+claude plugin install sales@knowledge-work-plugins</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/NVIDIA/SkillSpector">SkillSpector (NVIDIA)</a></h3>
+  <p class="hook">NVIDIA&#39;s open-source security scanner for AI agent skills — scans a SKILL.md, local folder, or GitHub link against 64 vulnerability patterns in 16 categories: prompt injection, data exfiltration, supply-chain risks, MCP tool poisoning, YARA signatures, and taint tracking. Install the `[mcp]` extra to run it as an MCP server inside Claude Code or any other agent. Outputs SARIF for CI integration. Apache 2.0, Python 3.12+. Latest: v2.11.2 (Sep 10, 2026). The community standard for skill vetting before install.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">security</span>  </div>
+  <div class="tags">mcp · agent</div>
+  <pre><button class="copy">copy</button><code>uv tool install &#39;skillspector[mcp] @ git+https://github.com/NVIDIA/skillspector.git&#39;</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/alirezarezvani/claude-skills">claude-skills (alirezarezvani)</a></h3>
+  <p class="hook">29.1k stars, #1 GitHub Trending on November 1, +439 stars in the latest tracked week. Community mega-collection of 380+ production-ready skills across 20 domains (web dev, data science, DevOps, security, creative writing, business, and more) plus 110 marketplace plugins and a full LLM-wiki plugin. Last updated November 3, 2026. MIT.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · model · viral · marketplace · security</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/vercel-labs/skills">find-skills (Vercel Labs)</a></h3>
+  <p class="hook">27.5k stars, 1.6M installs across the marketplace. The standard skill-discovery tool for Claude Code: before writing a new skill, run `npx skills find &lt;query&gt;` and it searches all indexed marketplaces, ranks results by install count + source reputation + GitHub stars, and prints the top matches with install commands. Official sources (Vercel, Anthropic) are weighted higher. Prevents skill sprawl and duplicate effort. MIT.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">anthropic · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>npx skills add vercel-labs/skills --skill find-skills --agent claude-code</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/bradautomates/claude-video">claude-video</a></h3>
+  <p class="hook">19.8k stars (+1.8k last 30 days). Adds a `/watch` slash command to Claude Code: paste any video URL and the plugin downloads it via yt-dlp, extracts key frames, deduplicates visually similar ones, runs Whisper transcription when captions are absent, and passes the full frame + transcript context to Claude. Practical for reviewing UI recordings, conference talks, and tutorial videos from inside a session. MIT. Requires yt-dlp and ffmpeg.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">video · viral · marketplace · education</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add bradautomates/claude-video
+/plugin install watch@claude-video</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Imbad0202/academic-research-skills">Academic Research Skills</a></h3>
+  <p class="hook">20k stars. Claude Code plugin suite (v3.24.1, Nov 2) covering the full academic research lifecycle: `academic-paper` (find, evaluate, and summarize papers across arXiv, Semantic Scholar, and PubMed), `academic-pipeline` (end-to-end idea-to-draft automation), `academic-review` (structured peer-review critique against venue-specific standards), and `academic-revise` (apply review comments and rewrite). Installs from the marketplace in one command.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add Imbad0202/academic-research-skills
+/plugin install academic-research-skills</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
