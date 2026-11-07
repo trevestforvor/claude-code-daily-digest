@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "leonxlnx-taste-skill",
+    "name": "Taste Skill",
+    "primary_url": "https://github.com/Leonxlnx/taste-skill",
+    "hook": "112k stars on GitHub. A Claude Code skill that gives agents real art direction: it classifies your business, plans each screen, pairs fonts and palette, pulls real photos, and runs a headless Chrome check for layout and contrast before finishing. The result is polished pages instead of generic AI slop.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"design-taste-frontend\""
+  },
+  {
+    "slug": "tt-a1i-archify",
+    "name": "Archify",
+    "primary_url": "https://github.com/tt-a1i/archify",
+    "hook": "94.4k stars. An Apache-licensed agent skill that turns any idea, plan, or codebase into an interactive HTML diagram — Architecture, Sequence, ERD, Class, Timeline, and 6 more. The output is a self-contained shareable file that exports to PNG/WebP/PDF. Works with Claude Code, Codex, Cursor, and OpenCode.",
+    "categories": ["design", "skill"],
+    "install": "npx -y skills@latest add https://archify.si --skill archify --global --copy --yes"
+  },
+  {
+    "slug": "rtk-ai-rtk",
+    "name": "RTK",
+    "primary_url": "https://github.com/rtk-ai/rtk",
+    "hook": "85.8k stars. A single Rust binary that proxies shell command output and strips everything an LLM doesn't need — cutting token consumption 60–90% on common dev commands. Zero dependencies, installs in one brew command. Tops the claude-code GitHub topic on cost-reduction tagging.",
+    "categories": ["cost", "cli"],
+    "install": "brew install rtk"
+  },
+  {
+    "slug": "cheaper-inference-omniroute",
+    "name": "OmniRoute",
+    "primary_url": "https://github.com/cheaper-inference/OmniRoute",
+    "hook": "85.4k stars, MIT. A local AI gateway that exposes one endpoint and routes to 375 providers (150+ free tiers), 1,400+ models, with automatic fallback when quotas run out. Cuts inference costs by keeping coding agents on free-tier providers until they're exhausted.",
+    "categories": ["cost", "mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "anthropic-claude-code-v2-1-319",
+    "name": "Claude Code v2.1.319",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Shipped November 6. MCP server tool calls now move to the background automatically instead of blocking the terminal. New `permissions.denyInsteadOfPrompting` lets CI/subagent runs fail fast instead of hanging. `/claude-api latency-optimize` finds where your API code makes users wait and tests faster settings against your eval.",
+    "categories": ["official"],
+    "install": "npm update -g @anthropic-ai/claude-code"
+  },
+  {
+    "slug": "panniantong-agent-reach",
+    "name": "Agent Reach",
+    "primary_url": "https://github.com/Panniantong/Agent-Reach",
+    "hook": "110k stars. A Python CLI that gives AI agents read and search access to platforms they normally can't reach — Reddit, YouTube, GitHub, Bilibili, Xiaohongshu, and more — with no API fees. Read-only by design; reuses existing browser logins only for the named site.",
+    "categories": ["mcp", "cli"],
+    "install": "See README (agent-driven install via https://raw.githubusercontent.com/Panniantong/Agent-Reach/main/docs/install.md)"
+  },
+  {
+    "slug": "wanshuiyin-auto-research-in-sleep",
+    "name": "ARIS (Auto Research In Sleep)",
+    "primary_url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+    "hook": "18.8k stars. Markdown-only skills for autonomous ML research: an executor model (Claude Code) does the work while an independent reviewer (Codex MCP by default) cross-checks it, avoiding single-model blind spots. Covers idea discovery, experiment automation, paper writing, rebuttal drafting, and slide generation.",
+    "categories": ["skill", "research"],
+    "install": "claude plugin marketplace add wanshuiyin/Auto-claude-code-research-in-sleep"
+  },
+  {
+    "slug": "browser-act-skills",
+    "name": "BrowserAct Skills",
+    "primary_url": "https://github.com/browser-act/skills",
+    "hook": "6.3k stars. A browser automation CLI built for AI agents — with layered anti-bot handling (fingerprint spoofing, proxy switching, CAPTCHA solving) and a human-takeover link when the agent gets stuck. Runs parallel isolated sessions and outputs compact indexed element commands instead of raw DOM.",
+    "categories": ["skill", "automation"],
+    "install": "See README (agent-driven install via browser-act/skills/tree/main/browser-act)"
+  },
+  {
+    "slug": "career-ops-hq-career-ops",
+    "name": "career-ops",
+    "primary_url": "https://github.com/career-ops-hq/career-ops",
+    "hook": "80.9k stars. An open-source AI job search agent that runs inside Claude Code and scores each listing 1–5 against your CV, checks whether it's still live, drafts a tailored ATS-friendly CV and cover letter, and tracks applications — without auto-submitting anything. All data stays local.",
+    "categories": ["skill", "productivity"],
+    "install": "npx @santifer/career-ops init"
+  },
+  {
+    "slug": "rebelytics-one-skill-to-rule-them-all",
+    "name": "One Skill to Rule Them All",
+    "primary_url": "https://github.com/rebelytics/one-skill-to-rule-them-all",
+    "hook": "3.8k stars. A meta-skill that watches your Claude Code sessions and after each one proposes targeted edits to your existing skills based on what the agent got wrong or corrected mid-task — with approval required before any changes apply. Treats your skill library as living documentation.",
+    "categories": ["skill", "meta"],
+    "install": "See README"
+  },
+  {
+    "slug": "morluto-rea",
+    "name": "REA",
+    "primary_url": "https://github.com/morluto/rea",
+    "secondary_urls": [],
+    "hook": "440k stars and still #1 on the claude-code GitHub topic. An agent-driven reverse engineering harness that works from observed app behavior all the way to native binaries. Viral for a fourth day running on GitHub trending.",
+    "categories": ["skill", "security"],
+    "recurring_note": "↑ Day 4 — still #1 on GitHub trending at 440k stars",
+    "install": "See README"
+  },
+  {
+    "slug": "dietrichgebert-ponytail",
+    "name": "Ponytail",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "hook": "186k stars, #4 on GitHub trending. A skill and harness constraint set that pushes AI agents toward minimal, deletion-first code — fewer abstractions, smaller diffs, fewer dependencies. Trending for a fourth day.",
+    "categories": ["skill", "code-quality"],
+    "recurring_note": "↑ Day 4 — 186k stars, still top-5 on GitHub trending",
+    "install": "See README"
+  }
+]
