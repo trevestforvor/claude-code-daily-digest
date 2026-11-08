@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — November 8, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — November 8, 2026</h1><p class="sub">Top 12 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/alchaincyf/huashu-design">Huashu Design</a></h3>
+  <p class="hook">29k stars. An MIT-licensed HTML-native design skill that turns a one-sentence request into finished web pages, app prototypes, editable PPTX decks, timeline animations, and infographics — no API keys, no network calls. Comes with 92 named styles, a brand-asset protocol (find the hex codes before guessing), anti-AI-slop rules banning the most common generic patterns, and a local taste log that stops Claude from repeating itself across sessions. Runs on Claude Code, Codex, Cursor, and DeepSeek Harness.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">harness · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add alchaincyf/huashu-design</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/lemomo-ai/lemo-opuscar">Lemo-Opuscar</a></h3>
+  <p class="hook">13.6k stars, +3,258 this week (top-10 weekly gainer). A Claude Code plugin giving agents 66 cinematic style templates — watercolour, ukiyo-e, risograph, LiDAR data films, 1930s rubber-hose cartoons, and 59 more — each with a demo short film made entirely in code by Opus 5.5 with no video model. You pick a style, the agent follows a DIRECTOR.md + TECHNIQUE.md pipeline covering story, rendering, TTS narration, and free music samples. Add your own styles under `~/lemo-my-styles/`. Latest drop (Oct 29): 7 new styles.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">video · audio · plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>claude plugin marketplace add lemomo-ai/lemo-opuscar
+claude plugin install lemo-opuscar@lemolab</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/multica-ai/andrej-karpathy-skills">Andrej Karpathy Skills</a></h3>
+  <p class="hook">230.8k stars, +3,030 this week. A single CLAUDE.md + plugin distilling four principles Karpathy described about LLM coding failures: Think Before Coding (surface assumptions, ask when unclear), Simplicity First (write only what the problem needs), Surgical Changes (touch only what the request requires, match existing style), and Goal-Driven Execution (define verifiable success criteria, loop until they pass). MIT, 23k forks. Also ships a Cursor `.mdc` rule. Not affiliated with Karpathy or Anthropic.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · model · anthropic · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add forrestchang/andrej-karpathy-skills
+/plugin install andrej-karpathy-skills@karpathy-skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/code-yeongyu/oh-my-openagent">OmO (oh-my-openagent)</a></h3>
+  <p class="hook">70.8k stars, updated Nov 8. Type &quot;ultrawork&quot; (or &quot;ulw&quot;) anywhere in a prompt and OmO reads the codebase, plans, verifies each step, and stops only when done. Add &quot;mass ulw&quot; and it decomposes the job into a graph of parallel agents on different models — routing simpler work to cheaper ones automatically. Kibitzer memory stores mistakes in a git repo of Markdown files so a cheap background model can flag repeated errors. Works with Claude, ChatGPT, Kimi, and GLM subscriptions via `/login`. Config in `~/.omo/omo.jsonc`.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">cli</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">memory · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>curl -fsSL https://get.omo.dev/install.sh | bash</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/wshobson/agents">wshobson/agents</a></h3>
+  <p class="hook">42.3k stars, updated Nov 8. Write a plugin once in Claude Code&#39;s Markdown format and adapters auto-generate versions for Codex CLI, Cursor, OpenCode, Antigravity CLI, GitHub Copilot, and Pi. The repo ships 94 plugins (Python, JS/TS, security, infrastructure, and more), 202 agents, 185 skills, and 105 commands. CI regenerates artifacts for every harness, validates them, and can run them through installed CLIs. Pensyve Cloud closed Oct 1 — the core repo is unaffected.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · harness · viral · marketplace · terminal · security</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add wshobson/agents
+/plugin install python-development@claude-code-workflows</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/alchaincyf/nuwa-skill">Nuwa Skill (女娲.skill)</a></h3>
+  <p class="hook">37.8k stars. Load the perspective of Steve Jobs, Elon Musk, Charlie Munger, Feynman, Naval Ravikant, Nassim Taleb, Paul Graham, Andrej Karpathy, or six others as a runnable agent skill. Each distills five layers — communication style, thinking frameworks, judgment heuristics, anti-patterns and values, and stated limitations — extracted by six parallel research agents and blind-tested for fidelity (all official skills score A grade / 85+). The skill itself states what it can&#39;t replicate. MIT.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add alchaincyf/nuwa-skill</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/nanocoai/nanoclaw">NanoClaw</a></h3>
+  <p class="hook">31.1k stars. A lightweight alternative to OpenClaw that runs each agent in an isolated Docker container with a credential gateway (agents never hold raw API keys). Add messaging channels via `/add-&lt;channel&gt;` skills — WhatsApp, Telegram, Discord, Slack, and email work out of the box. Each agent gets its own workspace, `CLAUDE.md`, and memory. Built on Anthropic&#39;s Claude Agent SDK; Claude Code, Codex, OpenCode, Cursor, and Ollama are available as skills. MIT.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">automation</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">memory · local · anthropic · viral · alternative · security</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/nanocoai/nanoclaw.git nanoclaw-v2 &amp;&amp; cd nanoclaw-v2 &amp;&amp; bash nanoclaw.sh</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/tigerless-labs/autoharness">AutoHarness</a></h3>
+  <p class="hook">10.8k stars. A Claude Code plugin that grows your skill library from real sessions: each episode is distilled into a skill with `/learn`, similar ones are merged, and skills that stop being loaded get pruned. Crucially it only touches skills it created — your hand-written config and installed plugins are left alone. Each create/update is logged in an evidence ledger. Requires Python 3.11+ on `python3`. Behavior tuned via `AUTOHARNESS_*` env vars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add tigerless-labs/autoharness
+/plugin install autoharness@autoharness</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/JimLiu/baoyu-skills">Baoyu Skills (JimLiu)</a></h3>
+  <p class="hook">27.4k stars. Daily-productivity skill collection for Claude Code and Codex: styled image cards, infographics, diagrams, slide decks, Xiaohongshu covers, YouTube transcript extraction, URL-to-Markdown, WeChat group summaries, multi-account WeChat publishing, image compression, and AI image generation across OpenAI, Google, Azure, and DashScope. Customizable via `EXTEND.md` per-project or globally. MIT-0 for published ClawHub skills. Installs only what you need to avoid context overhead.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">productivity</span>  </div>
+  <div class="tags">image · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add jimliu/baoyu-skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://crystl.dev">Crystl</a></h3>
+  <p class="hook">Native macOS terminal built for running multiple CLI coding agents side by side. Launched on Product Hunt this week (free tier available). Claude Code, Codex, and Antigravity CLI are first-class agents; any CLI agent runs. Work is organised into Gems (projects) containing Shards (sessions). Features: dedicated Git worktrees per session, a shared task backlog agents check off themselves, SSH remote sessions, and a permission-approval panel. A `crystl` CLI lets you script multi-agent workflows headlessly. Metal-accelerated, built on SwiftTerm.</p>
+  <div class="secondary">Also: <a href="https://www.producthunt.com/products/crystl-multitasking-terminal">www.producthunt.com/products/crystl-multitasking-terminal</a></div>
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">cli</span>  </div>
+  <div class="tags">agent · terminal</div>
+  <pre><button class="copy">copy</button><code>See README (download at crystl.dev/download; CLI installs via Help → install command line tool)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/morluto/rea">REA — Reverse Engineer Anything</a></h3>
+  <p class="hook">443k stars and still #1 on the claude-code GitHub topic. One MCP server + Claude Code plugin lets any coding agent reverse-engineer native binaries, Electron/JS apps, .NET assemblies, Android APKs, firmware, and packet captures — fully locally. `npx rea-agents setup` auto-detects Claude Code, Codex, Cursor, Gemini CLI, or Grok Build and wires the MCP server in one command.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">security</span>  </div>
+  <div class="tags">plugin · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>npx rea-agents setup</code></pre>
+  <div class="recurring">↑ Day 7 — 443k stars, still #1 on GitHub claude-code topic (updated Nov 8)</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/DietrichGebert/ponytail">Ponytail</a></h3>
+  <p class="hook">187k stars. Forces coding agents through a seven-rung pre-coding ladder before writing a line: is it needed, already in the codebase, in stdlib, a platform primitive, installed dep, or a one-liner? Benchmarks: 53% less code, 26% less cost, 45% fewer tokens vs. no skill. Adds `/ponytail-review`, `/ponytail-audit`, and a status band showing cost + code-reuse in real time.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · token · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add DietrichGebert/ponytail
+/plugin install ponytail@ponytail</code></pre>
+  <div class="recurring">↑ Day 6 — 187k stars, still top-5 on GitHub claude-code topic</div>
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
