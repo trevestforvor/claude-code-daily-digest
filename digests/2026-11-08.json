@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "alchaincyf-huashu-design",
+    "name": "Huashu Design",
+    "primary_url": "https://github.com/alchaincyf/huashu-design",
+    "hook": "29k stars. An MIT-licensed HTML-native design skill that turns a one-sentence request into finished web pages, app prototypes, editable PPTX decks, timeline animations, and infographics — no API keys, no network calls. Comes with 92 named styles, a brand-asset protocol (find the hex codes before guessing), anti-AI-slop rules banning the most common generic patterns, and a local taste log that stops Claude from repeating itself across sessions. Runs on Claude Code, Codex, Cursor, and DeepSeek Harness.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add alchaincyf/huashu-design"
+  },
+  {
+    "slug": "lemomo-ai-lemo-opuscar",
+    "name": "Lemo-Opuscar",
+    "primary_url": "https://github.com/lemomo-ai/lemo-opuscar",
+    "hook": "13.6k stars, +3,258 this week (top-10 weekly gainer). A Claude Code plugin giving agents 66 cinematic style templates — watercolour, ukiyo-e, risograph, LiDAR data films, 1930s rubber-hose cartoons, and 59 more — each with a demo short film made entirely in code by Opus 5.5 with no video model. You pick a style, the agent follows a DIRECTOR.md + TECHNIQUE.md pipeline covering story, rendering, TTS narration, and free music samples. Add your own styles under `~/lemo-my-styles/`. Latest drop (Oct 29): 7 new styles.",
+    "categories": ["design", "skill"],
+    "install": "claude plugin marketplace add lemomo-ai/lemo-opuscar\nclaude plugin install lemo-opuscar@lemolab"
+  },
+  {
+    "slug": "multica-ai-andrej-karpathy-skills",
+    "name": "Andrej Karpathy Skills",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "hook": "230.8k stars, +3,030 this week. A single CLAUDE.md + plugin distilling four principles Karpathy described about LLM coding failures: Think Before Coding (surface assumptions, ask when unclear), Simplicity First (write only what the problem needs), Surgical Changes (touch only what the request requires, match existing style), and Goal-Driven Execution (define verifiable success criteria, loop until they pass). MIT, 23k forks. Also ships a Cursor `.mdc` rule. Not affiliated with Karpathy or Anthropic.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add forrestchang/andrej-karpathy-skills\n/plugin install andrej-karpathy-skills@karpathy-skills"
+  },
+  {
+    "slug": "code-yeongyu-oh-my-openagent",
+    "name": "OmO (oh-my-openagent)",
+    "primary_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "hook": "70.8k stars, updated Nov 8. Type \"ultrawork\" (or \"ulw\") anywhere in a prompt and OmO reads the codebase, plans, verifies each step, and stops only when done. Add \"mass ulw\" and it decomposes the job into a graph of parallel agents on different models — routing simpler work to cheaper ones automatically. Kibitzer memory stores mistakes in a git repo of Markdown files so a cheap background model can flag repeated errors. Works with Claude, ChatGPT, Kimi, and GLM subscriptions via `/login`. Config in `~/.omo/omo.jsonc`.",
+    "categories": ["cli", "cost"],
+    "install": "curl -fsSL https://get.omo.dev/install.sh | bash"
+  },
+  {
+    "slug": "wshobson-agents",
+    "name": "wshobson/agents",
+    "primary_url": "https://github.com/wshobson/agents",
+    "hook": "42.3k stars, updated Nov 8. Write a plugin once in Claude Code's Markdown format and adapters auto-generate versions for Codex CLI, Cursor, OpenCode, Antigravity CLI, GitHub Copilot, and Pi. The repo ships 94 plugins (Python, JS/TS, security, infrastructure, and more), 202 agents, 185 skills, and 105 commands. CI regenerates artifacts for every harness, validates them, and can run them through installed CLIs. Pensyve Cloud closed Oct 1 — the core repo is unaffected.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add wshobson/agents\n/plugin install python-development@claude-code-workflows"
+  },
+  {
+    "slug": "alchaincyf-nuwa-skill",
+    "name": "Nuwa Skill (女娲.skill)",
+    "primary_url": "https://github.com/alchaincyf/nuwa-skill",
+    "hook": "37.8k stars. Load the perspective of Steve Jobs, Elon Musk, Charlie Munger, Feynman, Naval Ravikant, Nassim Taleb, Paul Graham, Andrej Karpathy, or six others as a runnable agent skill. Each distills five layers — communication style, thinking frameworks, judgment heuristics, anti-patterns and values, and stated limitations — extracted by six parallel research agents and blind-tested for fidelity (all official skills score A grade / 85+). The skill itself states what it can't replicate. MIT.",
+    "categories": ["skill"],
+    "install": "npx skills add alchaincyf/nuwa-skill"
+  },
+  {
+    "slug": "nanocoai-nanoclaw",
+    "name": "NanoClaw",
+    "primary_url": "https://github.com/nanocoai/nanoclaw",
+    "hook": "31.1k stars. A lightweight alternative to OpenClaw that runs each agent in an isolated Docker container with a credential gateway (agents never hold raw API keys). Add messaging channels via `/add-<channel>` skills — WhatsApp, Telegram, Discord, Slack, and email work out of the box. Each agent gets its own workspace, `CLAUDE.md`, and memory. Built on Anthropic's Claude Agent SDK; Claude Code, Codex, OpenCode, Cursor, and Ollama are available as skills. MIT.",
+    "categories": ["automation", "skill"],
+    "install": "git clone https://github.com/nanocoai/nanoclaw.git nanoclaw-v2 && cd nanoclaw-v2 && bash nanoclaw.sh"
+  },
+  {
+    "slug": "tigerless-labs-autoharness",
+    "name": "AutoHarness",
+    "primary_url": "https://github.com/tigerless-labs/autoharness",
+    "hook": "10.8k stars. A Claude Code plugin that grows your skill library from real sessions: each episode is distilled into a skill with `/learn`, similar ones are merged, and skills that stop being loaded get pruned. Crucially it only touches skills it created — your hand-written config and installed plugins are left alone. Each create/update is logged in an evidence ledger. Requires Python 3.11+ on `python3`. Behavior tuned via `AUTOHARNESS_*` env vars.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add tigerless-labs/autoharness\n/plugin install autoharness@autoharness"
+  },
+  {
+    "slug": "jimliu-baoyu-skills",
+    "name": "Baoyu Skills (JimLiu)",
+    "primary_url": "https://github.com/JimLiu/baoyu-skills",
+    "hook": "27.4k stars. Daily-productivity skill collection for Claude Code and Codex: styled image cards, infographics, diagrams, slide decks, Xiaohongshu covers, YouTube transcript extraction, URL-to-Markdown, WeChat group summaries, multi-account WeChat publishing, image compression, and AI image generation across OpenAI, Google, Azure, and DashScope. Customizable via `EXTEND.md` per-project or globally. MIT-0 for published ClawHub skills. Installs only what you need to avoid context overhead.",
+    "categories": ["skill", "productivity"],
+    "install": "npx skills add jimliu/baoyu-skills"
+  },
+  {
+    "slug": "crystl-multitasking-terminal",
+    "name": "Crystl",
+    "primary_url": "https://crystl.dev",
+    "secondary_urls": ["https://www.producthunt.com/products/crystl-multitasking-terminal"],
+    "hook": "Native macOS terminal built for running multiple CLI coding agents side by side. Launched on Product Hunt this week (free tier available). Claude Code, Codex, and Antigravity CLI are first-class agents; any CLI agent runs. Work is organised into Gems (projects) containing Shards (sessions). Features: dedicated Git worktrees per session, a shared task backlog agents check off themselves, SSH remote sessions, and a permission-approval panel. A `crystl` CLI lets you script multi-agent workflows headlessly. Metal-accelerated, built on SwiftTerm.",
+    "categories": ["cli"],
+    "install": "See README (download at crystl.dev/download; CLI installs via Help → install command line tool)"
+  },
+  {
+    "slug": "morluto-rea",
+    "name": "REA — Reverse Engineer Anything",
+    "primary_url": "https://github.com/morluto/rea",
+    "recurring_note": "↑ Day 7 — 443k stars, still #1 on GitHub claude-code topic (updated Nov 8)",
+    "hook": "443k stars and still #1 on the claude-code GitHub topic. One MCP server + Claude Code plugin lets any coding agent reverse-engineer native binaries, Electron/JS apps, .NET assemblies, Android APKs, firmware, and packet captures — fully locally. `npx rea-agents setup` auto-detects Claude Code, Codex, Cursor, Gemini CLI, or Grok Build and wires the MCP server in one command.",
+    "categories": ["mcp", "security"],
+    "install": "npx rea-agents setup"
+  },
+  {
+    "slug": "dietrichgebert-ponytail",
+    "name": "Ponytail",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "recurring_note": "↑ Day 6 — 187k stars, still top-5 on GitHub claude-code topic",
+    "hook": "187k stars. Forces coding agents through a seven-rung pre-coding ladder before writing a line: is it needed, already in the codebase, in stdlib, a platform primitive, installed dep, or a one-liner? Benchmarks: 53% less code, 26% less cost, 45% fewer tokens vs. no skill. Adds `/ponytail-review`, `/ponytail-audit`, and a status band showing cost + code-reuse in real time.",
+    "categories": ["cost", "skill"],
+    "install": "/plugin marketplace add DietrichGebert/ponytail\n/plugin install ponytail@ponytail"
+  }
+]
