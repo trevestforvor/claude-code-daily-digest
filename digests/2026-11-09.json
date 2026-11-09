@@ -1,0 +1,105 @@
+[
+  {
+    "slug": "mattpocock-skills",
+    "name": "Matt Pocock Skills",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "~310k stars, #2 daily trending Nov 7. TypeScript educator Matt Pocock's composable skill pack for real engineers — 32+ skills covering diagnose-bugs, wait-what (a one-word corrective for model verbosity), subagent-dispatch, and TypeScript idioms. August 2026 release added native Claude Code plugin support and Codex compatibility metadata so the same skills work in both harnesses without changes.",
+    "categories": ["skill"],
+    "install": "claude plugins install mattpocock-skills"
+  },
+  {
+    "slug": "cathrynlavery-diagram-design",
+    "name": "Diagram Design (cathrynlavery)",
+    "primary_url": "https://github.com/cathrynlavery/diagram-design",
+    "hook": "~65k stars. Generates 41 types of editorial-quality, brand-matched diagrams directly from natural language in Claude Code — Architecture, Sequence, ERD, Class, Timeline, System Context, and 35 more. Skips plain Mermaid and renders SVG with proper colour, typography, and spacing baked in. MIT.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add cathrynlavery/diagram-design\n/plugin install diagram-design@diagram-design",
+    "recurring_note": "↑ Day 4 — 65k stars, still in weekly skill report trending list"
+  },
+  {
+    "slug": "google-skills",
+    "name": "Google Agent Skills",
+    "primary_url": "https://github.com/google/skills",
+    "hook": "~22k stars. Google's official open-source agent skills library, launched at Cloud Next 2026. Bundles Google product plugins and MCP servers: Firebase basics, Google Workspace (Docs, Sheets, Drive), Cloud Run deploy, and more. Each skill is a self-contained unit installable into Claude Code, Codex, Cursor, or any harness that supports the skills CLI.",
+    "categories": ["official", "mcp"],
+    "install": "claude plugin marketplace add google/skills\nclaude plugin install firebase-basics@google-plugins"
+  },
+  {
+    "slug": "vercel-labs-agent-browser",
+    "name": "Vercel agent-browser",
+    "primary_url": "https://github.com/vercel-labs/agent-browser",
+    "hook": "~39k stars. Vercel Labs' browser automation CLI for agents — 9 new skills auto-approved in this week's skill report: Slack workspace automation (no API tokens, uses a browser session), AWS Bedrock AgentCore cloud browsers, Vercel Sandbox ephemeral browser VMs, WebMCP (call tools exposed by any page at runtime), and Electron app testing. Replaces Playwright MCP for many teams.",
+    "categories": ["skill", "mcp", "automation"],
+    "install": "npm i -g agent-browser && agent-browser install"
+  },
+  {
+    "slug": "cloudflare-security-audit-skill",
+    "name": "Cloudflare Security Audit Skill",
+    "primary_url": "https://github.com/cloudflare/security-audit-skill",
+    "hook": "~2.7k stars, surged sharply on Nov 7. Cloudflare's official open-source security audit skill for AI agents — the same vulnerability-detection harness Cloudflare built internally, now installable in Claude Code or any skills-compatible agent. Created June 18, 2026 alongside a Cloudflare post on building a vulnerability harness. MIT.",
+    "categories": ["security", "skill"],
+    "install": "npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit -a claude-code -g"
+  },
+  {
+    "slug": "siteboon-claudecodeui",
+    "name": "Claude Code UI (siteboon)",
+    "primary_url": "https://github.com/siteboon/claudecodeui",
+    "hook": "~12.8k stars. Free open-source web GUI for Claude Code (and Codex, Cursor CLI, Gemini CLI) — run on localhost:3001 and control coding agents from your phone browser. Requires Node.js 22+. ⚠️ Security: v1.25.0 fixes a critical OS command injection via WebSocket Shell — update before exposing beyond localhost.",
+    "categories": ["cli"],
+    "install": "npx @siteboon/claude-code-ui"
+  },
+  {
+    "slug": "appwrite-claude-plugin",
+    "name": "Appwrite Claude Plugin",
+    "primary_url": "https://github.com/appwrite/claude-plugin",
+    "secondary_urls": ["https://appwrite.io/blog/post/announcing-appwrite-claude-code-plugin"],
+    "hook": "Official Appwrite first-party integration for Claude Code. Bundles agent skills for every Appwrite SDK (Node, Python, Dart, Swift, Ruby) plus a hosted read-only MCP server at mcp.appwrite.io that lets Claude read your project, search current docs, and call services — no API key needed in the skill. 725 installs on Claude marketplace.",
+    "categories": ["mcp"],
+    "install": "claude plugins install appwrite@appwrite"
+  },
+  {
+    "slug": "egonex-ai-understand-anything",
+    "name": "Understand Anything (Egonex-AI)",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "hook": "~91k stars. Transforms codebases, knowledge bases, and documentation into interactive knowledge graphs. Ships 8 skills — understand, understand-chat, understand-dashboard, understand-knowledge, understand-domain (⚠️ quarantined), understand-figma, understand-explain, understand-onboard — covering everything from onboarding a new repo to Figma design comprehension. Works with Claude Code, Codex, Cursor, Gemini CLI. MIT.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything\n/plugin install understand-anything",
+    "recurring_note": "↑ Day 4 — 91k stars, up from 85k in October"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem (thedotmack)",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "115k stars. Persistent cross-session memory for Claude Code — captures tool-usage observations, generates semantic summaries, and surfaces relevant past context automatically. This week's skill report quarantined 5 of its skills: openclaw, Agent Cost Report, do, mode-creator, and request-progress — disable these if installed. Core memory system (mem-search workflow) remains vetted.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add thedotmack/claude-mem\n/plugin install claude-mem",
+    "recurring_note": "↑ Day 6 — 115k stars; ⚠️ weekly report quarantined claude-mem's openclaw, Agent Cost Report, do, mode-creator, and request-progress skills"
+  },
+  {
+    "slug": "dietrichgebert-ponytail",
+    "name": "Ponytail",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "hook": "187k stars. Forces coding agents through a seven-rung pre-coding ladder before writing a line: is it needed, already in the codebase, in stdlib, a platform primitive, installed dep, or a one-liner? Benchmarks: 53% less code, 26% less cost, 45% fewer tokens vs. no skill. Adds /ponytail-review, /ponytail-audit, and a status band showing cost + code-reuse in real time.",
+    "categories": ["cost", "skill"],
+    "install": "/plugin marketplace add DietrichGebert/ponytail\n/plugin install ponytail@ponytail",
+    "recurring_note": "↑ Day 7 — 187k stars, still top-5 claude-code GitHub topic"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "Superpowers (obra)",
+    "primary_url": "https://github.com/obra/superpowers",
+    "hook": "314k stars. Jesse Vincent's agentic skills framework — 14 composable skills covering systematic-debugging (newly approved in this week's skill report), code review, refactoring, test-driven development, and more. Works in Claude Code, Codex CLI, Factory Droid, Gemini CLI, OpenCode, Cursor, and GitHub Copilot CLI. MIT.",
+    "categories": ["skill"],
+    "install": "/plugin install superpowers@claude-plugins-official",
+    "recurring_note": "↑ Day 8 — 314k stars; systematic-debugging skill now vet-approved in this week's report"
+  },
+  {
+    "slug": "morluto-rea",
+    "name": "REA — Reverse Engineer Anything",
+    "primary_url": "https://github.com/morluto/rea",
+    "hook": "445k stars, still #1 on the claude-code GitHub topic. One MCP server + Claude Code plugin lets any coding agent reverse-engineer native binaries, Electron/JS apps, .NET assemblies, Android APKs, firmware, and packet captures — fully locally. This week's skill report approved 4 new skills: rea-ci-tests-audit, rea-analysis-optimization, rea-changelog-update, and rea-tool-design. `npx rea-agents setup` auto-detects your harness.",
+    "categories": ["mcp", "security"],
+    "install": "npx rea-agents setup",
+    "recurring_note": "↑ Day 8 — 445k stars, still #1 on claude-code GitHub topic; 4 new skills vetted this week"
+  }
+]
