@@ -1,0 +1,127 @@
+[
+  {
+    "slug": "pbakaus-impeccable",
+    "name": "Impeccable (pbakaus)",
+    "primary_url": "https://github.com/pbakaus/impeccable",
+    "hook": "107.4k stars with the largest surge in this week's skill report (+20,928 stars this period) — the design vocabulary for coding agents. Gives your agent named design commands across three phases: steer (`bolder`, `quieter`, `typeset`, `animate`), review (`critique`, `audit`), and finish (`polish`, `harden`). Ships with a 62-rule AI slop detector that flags generic AI design patterns with no LLM or API key required, plus a live mode for in-browser element swapping.",
+    "categories": ["design", "skill"],
+    "install": "npx impeccable install"
+  },
+  {
+    "slug": "meta-astryx",
+    "name": "Astryx (Meta)",
+    "primary_url": "https://github.com/meta/astryx",
+    "hook": "Meta open-sourced Astryx, the design system built over 8 years that now powers 13,000+ internal apps — 22.2k stars and +3,278 on GitHub trending today. Ships 150+ accessible React components with full CSS-variable theming, dark mode, and a `swizzle` command to copy any component's full source into your project. The repo includes CLAUDE.md and AGENTS.md so Claude Code and other coding agents adopt the design language automatically. MIT, React 19+ / StyleX.",
+    "categories": ["design"],
+    "install": "npm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex && npm install -D @astryxdesign/cli"
+  },
+  {
+    "slug": "blader-humanizer",
+    "name": "Humanizer (blader)",
+    "primary_url": "https://github.com/blader/humanizer",
+    "hook": "67.5k stars (+6,851 this skill-report period). Agent skill that rewrites AI-generated text using 26 anti-pattern rules across six categories — no AI-detector bypass claims, just better writing. Shows a draft, a critique of anything that still sounds artificial, and a final version. Leaves code, data, and frontmatter untouched. Blind judge test: preferred its rewrites 16/16 times. MIT, works in Claude Code, Codex, Claude.ai, and pi.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add blader/humanizer\n/plugin install humanizer@humanizer"
+  },
+  {
+    "slug": "anthropics-plugins-nov-2026",
+    "name": "Anthropic Official Plugins — Nov 2026 Batch",
+    "primary_url": "https://github.com/anthropics/claude-plugins-official",
+    "hook": "This week's official Anthropic plugin drop adds 7 new vetted skills to the marketplace: `claude-md-improver` (audits and rewrites your CLAUDE.md), `session-report` (generates an HTML cost/usage breakdown of your Claude Code session), `patterns` (finds anti-patterns in your PR history), `routines` (schedules recurring agent tasks), `playground` (spins up interactive single-file HTML explorers), and `discord/access` + `discord/faq` for community managers. All auto-verified by the weekly skill report.",
+    "categories": ["official", "skill"],
+    "install": "/plugin install claude-md-improver@claude-plugins-official"
+  },
+  {
+    "slug": "anthropics-skills-nov-2026",
+    "name": "Anthropic Agent Skills — Nov 2026 Additions",
+    "primary_url": "https://github.com/anthropics/skills",
+    "hook": "190.1k stars (+6,777 this period). Anthropic pushed 4 new auto-verified skills to their flagship skills repo this week: `docx` (create, read, edit Word files), `pptx` (create and edit PowerPoint files), `academy-guide` (checks answers against Claude learning courses for correctness), and `discernment-nudge` (prompts a human review before substantive agent advice lands). The docx/pptx pair closes a long-standing gap for document workflows.",
+    "categories": ["official", "skill"],
+    "install": "/plugin install docx@anthropics-skills"
+  },
+  {
+    "slug": "garrytan-gbrain",
+    "name": "GBrain (Garry Tan)",
+    "primary_url": "https://github.com/garrytan/gbrain",
+    "hook": "Garry Tan (Y Combinator CEO) open-sourced his personal memory layer for AI agents — 32.5k stars and appeared on GitHub trending today. Hybrid keyword + semantic search over your Markdown notes, a typed knowledge graph linking people and companies, and a `gbrain setup claude-code` command that wires it as an MCP server in one step. PGLite backend for personal use; Postgres + pgvector for teams. MIT, requires Bun 1.4.4+.",
+    "categories": ["mcp"],
+    "install": "bun install -g github:garrytan/gbrain#stable && gbrain setup claude-code"
+  },
+  {
+    "slug": "homeassistant-ai-ha-mcp",
+    "name": "Home Assistant MCP (homeassistant-ai)",
+    "primary_url": "https://github.com/homeassistant-ai/ha-mcp",
+    "hook": "6,189 stars and on GitHub trending today. 87-tool MCP server that exposes your entire Home Assistant instance inside Claude Code or any MCP-capable agent — read device state, trigger automations, control entities, configure scenes, and set up schedules through natural language. No scraping or unofficial APIs; uses the HA WebSocket and REST interfaces.",
+    "categories": ["mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-code-v2-1-319",
+    "name": "Claude Code v2.1.319",
+    "primary_url": "https://github.com/anthropics/claude-code",
+    "hook": "Released November 7. Three additions: (1) background execution for MCP server tool calls so long-running tools no longer block the terminal, (2) a \"deny and continue\" permission option that rejects a tool call without halting the whole session, and (3) clearer auto-mode behavior when telemetry or feature flags are disabled. Gateway admins also get new cost reports.",
+    "categories": ["official"],
+    "install": "npm install -g @anthropic-ai/claude-code@latest"
+  },
+  {
+    "slug": "microsoft-skills",
+    "name": "Microsoft Agent Skills",
+    "primary_url": "https://github.com/microsoft/skills",
+    "hook": "3.2k stars, newly pinned in this week's weekly skill report. 175+ agent skills for Azure and AI Foundry — covers Cosmos DB, Blob Storage, Event Grid, Entra, Key Vault, AKS, Azure OpenAI, AI Search, Application Insights, M365 Agents SDK, and Playwright Testing. Installs modularly so you pick only what your project needs. MIT, includes MCP configs for docs, GitHub, and browser automation pre-wired.",
+    "categories": ["mcp", "skill"],
+    "install": "npx skills add microsoft/skills"
+  },
+  {
+    "slug": "anthropics-claude-quickstarts",
+    "name": "Claude Quickstarts (Anthropic)",
+    "primary_url": "https://github.com/anthropics/claude-quickstarts",
+    "hook": "20.2k stars (+551 on GitHub trending today). Anthropic's official runnable examples for the Claude API — covers customer service agents, financial analysis, computer use, browser automation, and more in a copy-paste-ready format. Each example is a self-contained project showing production patterns like streaming, tool use, and multi-turn conversations. Good onramp for teams integrating Claude into new services.",
+    "categories": ["official"],
+    "install": "git clone https://github.com/anthropics/claude-quickstarts"
+  },
+  {
+    "slug": "k-dense-ai-scientific-agent-skills",
+    "name": "Scientific Agent Skills (K-Dense-AI)",
+    "primary_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "hook": "56.7k stars. This week's skill report newly approved clinical-decision-support and autoskill (scores pass 100/96). 177 skills turn any coding agent into an AI scientist: single-cell RNA-seq, molecular docking, proteomics, clinical decision support, materials science, 100+ database access skills covering 80 scientific databases. Each skill includes version metadata and a safety note on regulatory limits. MIT.",
+    "categories": ["skill"],
+    "install": "npx skills add K-Dense-AI/scientific-agent-skills",
+    "recurring_note": "↑ Day 8 — newly approved skills in this week's skill report"
+  },
+  {
+    "slug": "morluto-rea",
+    "name": "REA — Reverse Engineer Anything",
+    "primary_url": "https://github.com/morluto/rea",
+    "hook": "445.3k stars, still #1 on the claude-code GitHub topic. +71,675 stars this skill-report period — the highest raw gain of any repo this week. One MCP server + Claude Code plugin lets any coding agent reverse-engineer native binaries, Electron/JS apps, .NET assemblies, Android APKs, firmware, and packet captures — fully locally. `npx rea-agents setup` auto-detects your harness.",
+    "categories": ["mcp", "security"],
+    "install": "npx rea-agents setup",
+    "recurring_note": "↑ Day 9 — 445.3k stars, +71,675 this period, still #1 on claude-code GitHub topic"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "Superpowers (obra)",
+    "primary_url": "https://github.com/obra/superpowers",
+    "hook": "314.8k stars. Jesse Vincent's composable agent skill framework — 14 skills covering code review, refactoring, test-driven development, and systematic debugging. This week's skill report newly approved `systematic-debugging`, which walks agents through a seven-step diagnostic before writing a fix. Works in Claude Code, Codex CLI, Factory Droid, Gemini CLI, OpenCode, Cursor, and GitHub Copilot CLI. MIT.",
+    "categories": ["skill"],
+    "install": "/plugin install superpowers@claude-plugins-official",
+    "recurring_note": "↑ Day 9 — systematic-debugging skill newly vet-approved this week"
+  },
+  {
+    "slug": "dietrichgebert-ponytail",
+    "name": "Ponytail",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "hook": "187.2k stars (+12,350 this period). Forces coding agents through a seven-rung pre-coding ladder before writing a line: is it needed, already in the codebase, in stdlib, a platform primitive, an installed dep, or a one-liner? Benchmarks: 53% less code, 26% less cost, 45% fewer tokens vs. no skill. Adds /ponytail-review, /ponytail-audit, and a real-time status band showing cost + code-reuse.",
+    "categories": ["cost", "skill"],
+    "install": "/plugin marketplace add DietrichGebert/ponytail\n/plugin install ponytail@ponytail",
+    "recurring_note": "↑ Day 8 — 187.2k stars, still top-5 claude-code GitHub topic"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem (thedotmack)",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "hook": "115.1k stars (+12,561 this period). Persistent cross-session memory for Claude Code — captures tool-usage observations, generates semantic summaries, and surfaces relevant past context automatically. ⚠️ This week's skill report quarantined 5 skills: openclaw, Agent Cost Report, do, mode-creator, and request-progress — disable these if installed. Core memory system (mem-search workflow) remains vetted.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add thedotmack/claude-mem\n/plugin install claude-mem",
+    "recurring_note": "↑ Day 7 — 115.1k stars; ⚠️ weekly report quarantined 5 skills (openclaw, Agent Cost Report, do, mode-creator, request-progress)"
+  }
+]
