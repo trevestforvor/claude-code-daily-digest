@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "mksglu-context-mode",
+    "name": "Context Mode",
+    "primary_url": "https://github.com/mksglu/claude-context-mode",
+    "secondary_urls": ["https://feedbagel.com/post/context-mode-mcp-server-reduces-claude-code-context-consumption-by-98"],
+    "hook": "34k stars and an HN front-page hit (538 points). A free, local plugin that intercepts large tool outputs—file reads, shell, web fetches—stores them in a per-project SQLite FTS5 index, and returns only what the agent actually asks for. Benchmarks across 36 real tasks show a median 99.4% byte reduction vs. dumping raw output into the context window.",
+    "categories": ["cost", "mcp"],
+    "install": "claude plugin marketplace add mksglu/context-mode"
+  },
+  {
+    "slug": "anthropic-fable-5-2",
+    "name": "Claude Fable 5.2 & Mythos 5.2",
+    "primary_url": "https://www.anthropic.com/news",
+    "secondary_urls": ["https://aiweekly.co/alerts/anthropic-ships-claude-fable-52-and-vetted-tier-mythos-52", "https://thenewstack.io/anthropic-fable-coding-upgrade/"],
+    "hook": "Released November 9. The same underlying model ships as two tiers: Fable 5.2 is generally available; Mythos 5.2 stays with vetted orgs via Anthropic's Life Sciences and Cyber programs. 30% faster than 5.1, priced at $8/$40 per million tokens, took #1 on the Artificial Analysis Intelligence Index v5. FrontierCode 2.0 score: 49.1% at Xhigh effort. Mythos 5.2 hits 89.6% on Anthropic's CVE Rediscovery eval.",
+    "categories": ["cost", "official"]
+  },
+  {
+    "slug": "anthropic-personal-finance",
+    "name": "Personal Finance in Claude",
+    "primary_url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+    "secondary_urls": ["https://betanews.com/article/claude-personal-finance-bank-accounts-plaid/"],
+    "hook": "Launched November 5 as a beta for US paid users (Pro, Max, Ultra). Connect bank and card accounts via Plaid; Claude answers questions about balances, spending, and patterns in plain language. Read-only—Claude cannot move or invest money—and conversations in the Personal Finance hub are not used for model training.",
+    "categories": ["official"],
+    "install": "Available in Claude.ai sidebar for eligible US accounts"
+  },
+  {
+    "slug": "michael-denyer-pstack-claude",
+    "name": "pstack-claude",
+    "primary_url": "https://github.com/michael-denyer/pstack-claude",
+    "secondary_urls": ["https://runtimewire.com/article/pstack-claude-ports-cursor-workflows-to-coding-agents"],
+    "hook": "3.7k+ stars. A port of Lauren Tan's opinionated Cursor skill stack (pstack) to Claude Code, Codex, Pi, GitHub Copilot, Muse, Antigravity, and more. A SessionStart hook auto-routes tasks to the right workflow on Claude Code. Covers bug triage, features, refactoring, performance, formal verification, and PR maintenance—each with reproduction and verification steps baked in.",
+    "categories": ["design", "workflow"],
+    "install": "/plugin marketplace add michael-denyer/pstack-claude && /plugin install pstack@pstack-claude"
+  },
+  {
+    "slug": "reticlehq-reticle",
+    "name": "Reticle",
+    "primary_url": "https://github.com/reticlehq/reticle",
+    "secondary_urls": ["https://www.promptzone.com/quinn_kovac/reticle-ai-agents-that-verify-their-own-code-4d50"],
+    "hook": "1.3k stars, Show HN hit. Adds a tiny dev-only SDK so your Claude Code (or Cursor/Codex) agent can drive the running app and read what happens inside it—network responses, state, console errors, the source line behind each UI element. Returns a pass/fail/cannot-tell verdict per check with file:line evidence. Saves verified flows that gate CI without needing an AI model.",
+    "categories": ["testing", "quality"],
+    "install": "npx @reticlehq/server init"
+  },
+  {
+    "slug": "affaan-m-ecc",
+    "name": "Everything Claude Code (ECC)",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "285k stars. The sprawling skills OS for Claude Code and Codex: 311 skills, 71 agents, hooks, and rules organized by category. This week 50+ ECC skills moved to a new verified commit (d2ef2680), passing automated vetting—the largest single-week approval batch in the weekly skill report's history.",
+    "categories": ["skills", "workflow"],
+    "install": "/plugin marketplace add https://github.com/affaan-m/ECC && /plugin install ecc@ecc"
+  },
+  {
+    "slug": "qingyuna-answer-me-with-html",
+    "name": "Answer Me With HTML",
+    "primary_url": "https://github.com/QingYunA/answer-me-with-html",
+    "hook": "6.3k stars. Claude Code skill that has the agent write a short Markdown draft, then a bundled CLI compiles it into a single offline HTML page with diagrams, tables, and code—using ~1/8 the tokens of raw HTML generation. Ships with three themes and a writing-style check. Works with Codex and Cursor too.",
+    "categories": ["design", "skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "natively-ai-assistant",
+    "name": "Natively — AI Meeting Assistant",
+    "primary_url": "https://github.com/Natively-AI-assistant/natively-cluely-ai-assistant",
+    "hook": "3.3k stars. Free desktop overlay for live situations—meetings, interviews, presentations—with real-time speech-to-text, rolling context, screenshot/document understanding, and local RAG-indexed meeting history. Ships with CLAUDE.md, .mcp.json, and a SKILL.md system (invoke skills with `/`). Supports BYOK cloud models including Claude and local models via Ollama. Source-available, free for personal use.",
+    "categories": ["productivity", "skill"],
+    "install": "See README (desktop app download)"
+  },
+  {
+    "slug": "dunhkpcc-claude-guardian",
+    "name": "Claude Guardian",
+    "primary_url": "https://github.com/DUNHKpcc/Claude-Guardian",
+    "hook": "2k stars. All-in-one Claude account safety and risk prevention skill covering session monitoring, abnormal-behavior alerts, and cost guardrails. Requires Python 3.10+ and works with Claude Code and Codex. Install drops a `claude-guardian` skill folder into your skills root.",
+    "categories": ["security", "skill"],
+    "install": "git clone https://github.com/DUNHKpcc/Claude-Guardian.git && cp -R Claude-Guardian/skills/claude-guardian ~/.codex/skills/"
+  },
+  {
+    "slug": "jasoncolapietro-suede-creator-skills",
+    "name": "Suede Creator Skills",
+    "primary_url": "https://github.com/JasonColapietro/suede-creator-skills",
+    "hook": "124 stars. 39 marketing and growth skills (SEO, AI search visibility, conversion copy), code review with an A–F 'ship grade' across 7 lanes, and agent orchestration workflows. Unusually ships three ways: a Claude Code plugin, a dependency-free stdio MCP server (12 tools), and a pip-installable PyPI package. Also includes 'Suede Awesome Everything,' a 0–99 scoring directory for agent skills.",
+    "categories": ["mcp", "skill"],
+    "install": "/plugin marketplace add JasonColapietro/suede-creator-skills"
+  },
+  {
+    "slug": "the911fund-skill-of-skills",
+    "name": "Skill of Skills",
+    "primary_url": "https://github.com/the911fund/skill-of-skills",
+    "hook": "84 stars. Quality-ranked discovery engine for AI coding skills, plugins, and MCP servers across Claude Code, Codex, Cursor, Windsurf, Cline, and more. MIT-licensed with a project site at skills.911fund.io. The trending tracker listed it as a new addition this week.",
+    "categories": ["meta", "discovery"],
+    "install": "See README / skills.911fund.io"
+  },
+  {
+    "slug": "getaero-io-gtm-eng-skills",
+    "name": "GTM Engineering Skills (Deepline)",
+    "primary_url": "https://github.com/getaero-io/gtm-eng-skills",
+    "hook": "75 stars. 10 Claude Code skills for go-to-market engineering work: waterfall email enrichment, TAM list building, job-change detection, LinkedIn URL resolution, niche signal discovery, and cloud workflow scheduling—all backed by Deepline's 28+ GTM data providers. Free tier includes 100 credits.",
+    "categories": ["business", "skill"],
+    "install": "npx skills add getaero-io/gtm-eng-skills --all"
+  },
+  {
+    "slug": "joshlong145-ambits",
+    "name": "Ambits",
+    "primary_url": "https://github.com/joshLong145/ambits",
+    "hook": "17 stars. Rust CLI that tracks and visualizes code coverage inside LLM coding sessions. Reports which lines the agent's code actually exercised vs. left untested—surfaces gaps that test suites miss when the AI is driving. Early-stage but filling a gap no other Claude Code tooling covers.",
+    "categories": ["testing", "quality"],
+    "install": "See README"
+  }
+]
