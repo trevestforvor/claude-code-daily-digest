@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — November 12, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — November 12, 2026</h1><p class="sub">Top 13 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/mksglu/claude-context-mode">Context Mode</a></h3>
+  <p class="hook">34k stars and an HN front-page hit (538 points). A free, local plugin that intercepts large tool outputs—file reads, shell, web fetches—stores them in a per-project SQLite FTS5 index, and returns only what the agent actually asks for. Benchmarks across 36 real tasks show a median 99.4% byte reduction vs. dumping raw output into the context window.</p>
+  <div class="secondary">Also: <a href="https://feedbagel.com/post/context-mode-mcp-server-reduces-claude-code-context-consumption-by-98">feedbagel.com/post/context-mode-mcp-server-reduces-claude-code-context-consumption-by-98</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">plugin · context · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>claude plugin marketplace add mksglu/context-mode</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/news">Claude Fable 5.2 &amp; Mythos 5.2</a></h3>
+  <p class="hook">Released November 9. The same underlying model ships as two tiers: Fable 5.2 is generally available; Mythos 5.2 stays with vetted orgs via Anthropic&#39;s Life Sciences and Cyber programs. 30% faster than 5.1, priced at $8/$40 per million tokens, took #1 on the Artificial Analysis Intelligence Index v5. FrontierCode 2.0 score: 49.1% at Xhigh effort. Mythos 5.2 hits 89.6% on Anthropic&#39;s CVE Rediscovery eval.</p>
+  <div class="secondary">Also: <a href="https://aiweekly.co/alerts/anthropic-ships-claude-fable-52-and-vetted-tier-mythos-52">aiweekly.co/alerts/anthropic-ships-claude-fable-52-and-vetted-tier-mythos-52</a> · <a href="https://thenewstack.io/anthropic-fable-coding-upgrade/">thenewstack.io/anthropic-fable-coding-upgrade/</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">official</span>  </div>
+  <div class="tags">token · anthropic</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://claude.com/resources/articles/introducing-personal-finance-in-claude">Personal Finance in Claude</a></h3>
+  <p class="hook">Launched November 5 as a beta for US paid users (Pro, Max, Ultra). Connect bank and card accounts via Plaid; Claude answers questions about balances, spending, and patterns in plain language. Read-only—Claude cannot move or invest money—and conversations in the Personal Finance hub are not used for model training.</p>
+  <div class="secondary">Also: <a href="https://betanews.com/article/claude-personal-finance-bank-accounts-plaid/">betanews.com/article/claude-personal-finance-bank-accounts-plaid/</a></div>
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">official</span>  </div>
+  <div class="tags">anthropic · education</div>
+  <pre><button class="copy">copy</button><code>Available in Claude.ai sidebar for eligible US accounts</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/michael-denyer/pstack-claude">pstack-claude</a></h3>
+  <p class="hook">3.7k+ stars. A port of Lauren Tan&#39;s opinionated Cursor skill stack (pstack) to Claude Code, Codex, Pi, GitHub Copilot, Muse, Antigravity, and more. A SessionStart hook auto-routes tasks to the right workflow on Claude Code. Covers bug triage, features, refactoring, performance, formal verification, and PR maintenance—each with reproduction and verification steps baked in.</p>
+  <div class="secondary">Also: <a href="https://runtimewire.com/article/pstack-claude-ports-cursor-workflows-to-coding-agents">runtimewire.com/article/pstack-claude-ports-cursor-workflows-to-coding-agents</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">skill · plugin · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add michael-denyer/pstack-claude &amp;&amp; /plugin install pstack@pstack-claude</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/reticlehq/reticle">Reticle</a></h3>
+  <p class="hook">1.3k stars, Show HN hit. Adds a tiny dev-only SDK so your Claude Code (or Cursor/Codex) agent can drive the running app and read what happens inside it—network responses, state, console errors, the source line behind each UI element. Returns a pass/fail/cannot-tell verdict per check with file:line evidence. Saves verified flows that gate CI without needing an AI model.</p>
+  <div class="secondary">Also: <a href="https://www.promptzone.com/quinn_kovac/reticle-ai-agents-that-verify-their-own-code-4d50">www.promptzone.com/quinn_kovac/reticle-ai-agents-that-verify-their-own-code-4d50</a></div>
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">testing</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">quality</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx @reticlehq/server init</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/affaan-m/ECC">Everything Claude Code (ECC)</a></h3>
+  <p class="hook">285k stars. The sprawling skills OS for Claude Code and Codex: 311 skills, 71 agents, hooks, and rules organized by category. This week 50+ ECC skills moved to a new verified commit (d2ef2680), passing automated vetting—the largest single-week approval batch in the weekly skill report&#39;s history.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">skill · plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add https://github.com/affaan-m/ECC &amp;&amp; /plugin install ecc@ecc</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/QingYunA/answer-me-with-html">Answer Me With HTML</a></h3>
+  <p class="hook">6.3k stars. Claude Code skill that has the agent write a short Markdown draft, then a bundled CLI compiles it into a single offline HTML page with diagrams, tables, and code—using ~1/8 the tokens of raw HTML generation. Ships with three themes and a writing-style check. Works with Codex and Cursor too.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">token · local · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Natively-AI-assistant/natively-cluely-ai-assistant">Natively — AI Meeting Assistant</a></h3>
+  <p class="hook">3.3k stars. Free desktop overlay for live situations—meetings, interviews, presentations—with real-time speech-to-text, rolling context, screenshot/document understanding, and local RAG-indexed meeting history. Ships with CLAUDE.md, .mcp.json, and a SKILL.md system (invoke skills with `/`). Supports BYOK cloud models including Claude and local models via Ollama. Source-available, free for personal use.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">productivity</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">audio · mcp · cost · local · viral · search</div>
+  <pre><button class="copy">copy</button><code>See README (desktop app download)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/DUNHKpcc/Claude-Guardian">Claude Guardian</a></h3>
+  <p class="hook">2k stars. All-in-one Claude account safety and risk prevention skill covering session monitoring, abnormal-behavior alerts, and cost guardrails. Requires Python 3.10+ and works with Claude Code and Codex. Install drops a `claude-guardian` skill folder into your skills root.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">security</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">cost · viral</div>
+  <pre><button class="copy">copy</button><code>git clone https://github.com/DUNHKpcc/Claude-Guardian.git &amp;&amp; cp -R Claude-Guardian/skills/claude-guardian ~/.codex/skills/</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/JasonColapietro/suede-creator-skills">Suede Creator Skills</a></h3>
+  <p class="hook">124 stars. 39 marketing and growth skills (SEO, AI search visibility, conversion copy), code review with an A–F &#39;ship grade&#39; across 7 lanes, and agent orchestration workflows. Unusually ships three ways: a Claude Code plugin, a dependency-free stdio MCP server (12 tools), and a pip-installable PyPI package. Also includes &#39;Suede Awesome Everything,&#39; a 0–99 scoring directory for agent skills.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · viral · marketplace · review</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add JasonColapietro/suede-creator-skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/the911fund/skill-of-skills">Skill of Skills</a></h3>
+  <p class="hook">84 stars. Quality-ranked discovery engine for AI coding skills, plugins, and MCP servers across Claude Code, Codex, Cursor, Windsurf, Cline, and more. MIT-licensed with a project site at skills.911fund.io. The trending tracker listed it as a new addition this week.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">meta</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">discovery</span>  </div>
+  <div class="tags">mcp · skill · viral</div>
+  <pre><button class="copy">copy</button><code>See README / skills.911fund.io</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/getaero-io/gtm-eng-skills">GTM Engineering Skills (Deepline)</a></h3>
+  <p class="hook">75 stars. 10 Claude Code skills for go-to-market engineering work: waterfall email enrichment, TAM list building, job-change detection, LinkedIn URL resolution, niche signal discovery, and cloud workflow scheduling—all backed by Deepline&#39;s 28+ GTM data providers. Free tier includes 100 credits.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">business</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add getaero-io/gtm-eng-skills --all</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/joshLong145/ambits">Ambits</a></h3>
+  <p class="hook">17 stars. Rust CLI that tracks and visualizes code coverage inside LLM coding sessions. Reports which lines the agent&#39;s code actually exercised vs. left untested—surfaces gaps that test suites miss when the AI is driving. Early-stage but filling a gap no other Claude Code tooling covers.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">testing</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">quality</span>  </div>
+  <div class="tags">model · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
