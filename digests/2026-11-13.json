@@ -1,0 +1,94 @@
+[
+  {
+    "slug": "haydenschmitty-floorplan",
+    "name": "Floorplan",
+    "primary_url": "https://github.com/haydenschmitty/floorplan",
+    "hook": "Interactive codebase map + health checker for Claude Code and Codex: draws plain-English maps of parts, files, and cross-repo connections, then flags exposed keys, open DB tables, and unverified webhooks. Surged 2,000+ stars since Oct 27 and is still on the weekly trending list—one of the fastest-climbing plugins in the ecosystem.",
+    "categories": ["design", "code-review"],
+    "install": "claude plugin marketplace add haydenschmitty/floorplan && claude plugin install floorplan@floorplan"
+  },
+  {
+    "slug": "nutlope-hallmark",
+    "name": "Hallmark (Anti-AI-Slop Design Skill)",
+    "primary_url": "https://github.com/nutlope/hallmark",
+    "hook": "Hassan El Mghari (Nutlope) and Together AI built this design skill to fight cookie-cutter AI-generated UIs: 20 hand-curated visual themes and 65 pre-ship quality gates applied every time you generate UI with Claude Code, Cursor, or Codex. Crossed 46,000 GitHub stars and landed back on the weekly trending list this week.",
+    "categories": ["design", "skills"],
+    "install": "See README"
+  },
+  {
+    "slug": "anthropic-claude-manufacturing",
+    "name": "Claude for Manufacturing (Anthropic)",
+    "primary_url": "https://claude.com/resources/webinars/claude-for-manufacturing-put-your-plants-know-how-to-work",
+    "secondary_urls": ["https://claude.com/resources/articles/cowork-plugins-across-enterprise"],
+    "hook": "Announced Nov 12, Anthropic's new industry-vertical Cowork plugin ships 17 workflow skills for manufacturing teams (quoting/RFQ, NCRs, production reporting, maintenance diagnosis) with four first-party connectors: Autodesk Fusion, Infor, Microsoft 365, and Oracle NetSuite. Webinar with the Model Hardware Standard research preview is scheduled Nov 17.",
+    "categories": ["anthropic-official", "workflow"],
+    "install": "Available via claude.com/plugins directory (enterprise Cowork plugin)"
+  },
+  {
+    "slug": "claude-code-v2-1-321",
+    "name": "Claude Code v2.1.321",
+    "primary_url": "https://github.com/anthropics/claude-code",
+    "secondary_urls": ["https://newreleases.io/project/github/anthropics/claude-code/release/v2.1.321"],
+    "hook": "Released Nov 9: Fable 5.2 (claude-fable-5-2) is now the default Fable model, an optional fast mode delivers up to 2.5× faster token generation, and two security patches landed—one fixing MCP OAuth refresh tokens leaking to unintended hosts, another closing a read-only Bash sandbox bypass.",
+    "categories": ["anthropic-official", "cost"],
+    "install": "npm install -g @anthropic-ai/claude-code@2.1.321"
+  },
+  {
+    "slug": "donchitos-claude-code-game-studios",
+    "name": "Claude Code Game Studios",
+    "primary_url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+    "hook": "A Shell-based framework that turns Claude Code into a 49-agent, 72-skill game-dev studio (MIT license): art direction, physics design, multiplayer architecture, testing, and more—all wired together. Hit 18,700+ GitHub stars and gained an estimated 5,700 stars this week alone while trending on GitHub.",
+    "categories": ["skills", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "bradautomates-claude-video",
+    "name": "claude-video (/watch skill)",
+    "primary_url": "https://github.com/bradautomates/claude-video",
+    "hook": "One /watch command lets Claude download any video URL or local file, sample frames with ffmpeg, pull captions via yt-dlp (falls back to Whisper), and answer questions about what it watched. 13,900 GitHub stars and 8,100 install count across skill directories as of July 2026, with continued adoption.",
+    "categories": ["skills", "multimodal"],
+    "install": "See README (requires ffmpeg, yt-dlp)"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "recurring_note": "↑ Day 4 — 7,482 stars gained this week; still topping GitHub weekly trending",
+    "hook": "Persistent memory layer that works across Claude Code, Codex, Gemini CLI, Cursor, OpenCode, and more. Added an estimated 7,482 GitHub stars this week—the strongest single-week gain of any Claude ecosystem repo currently tracked.",
+    "categories": ["skills", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "alirezarezvani-claude-skills",
+    "name": "alirezarezvani/claude-skills (410-skill pack)",
+    "primary_url": "https://github.com/alirezarezvani/claude-skills",
+    "hook": "One of the most comprehensive community skill collections: 410 skills and 120+ agent configs spanning engineering, marketing, product, compliance, C-level advisory, research, and finance—all targeting Claude Code, Codex, Gemini CLI, Cursor, and 8 other coding agents. Sitting at ~19,800 GitHub stars with continuous releases.",
+    "categories": ["skills"],
+    "install": "See README"
+  },
+  {
+    "slug": "digitalsamba-claude-code-video-toolkit",
+    "name": "Claude Code Video Toolkit (digitalsamba)",
+    "primary_url": "https://github.com/digitalsamba/claude-code-video-toolkit",
+    "hook": "An MIT-licensed toolkit that lets you produce full short-form videos from Claude Code using open-source models that cost cents: script, AI voiceover, music, video clips, and final render—no proprietary API keys required. Around 2,300 GitHub stars, last major update Aug 2026.",
+    "categories": ["skills", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "linny006-trending-claude-skills",
+    "name": "trending-claude-skills (auto-leaderboard)",
+    "primary_url": "https://github.com/linny006/trending-claude-skills",
+    "hook": "An auto-refreshing leaderboard of trending Claude skills and AI agent repos, updated every 15 minutes. Useful as a live feed of what's gaining momentum in the ecosystem without polling GitHub Trending manually.",
+    "categories": ["workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "hashgraph-online-awesome-ai-plugins",
+    "name": "awesome-ai-plugins (hashgraph-online)",
+    "primary_url": "https://github.com/hashgraph-online/awesome-ai-plugins",
+    "secondary_urls": ["https://hol.org/plugins"],
+    "hook": "A curated cross-agent plugin list covering Claude Code, OpenAI Codex, Gemini, Antigravity, Pi, Grok, and more—maintained by the Hedera Open League project. Useful reference when evaluating which plugins have multi-agent support beyond Claude Code alone.",
+    "categories": ["mcp", "skills"],
+    "install": "See README"
+  }
+]
