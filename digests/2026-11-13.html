@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — November 13, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — November 13, 2026</h1><p class="sub">Top 11 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/haydenschmitty/floorplan">Floorplan</a></h3>
+  <p class="hook">Interactive codebase map + health checker for Claude Code and Codex: draws plain-English maps of parts, files, and cross-repo connections, then flags exposed keys, open DB tables, and unverified webhooks. Surged 2,000+ stars since Oct 27 and is still on the weekly trending list—one of the fastest-climbing plugins in the ecosystem.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">code-review</span>  </div>
+  <div class="tags">plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>claude plugin marketplace add haydenschmitty/floorplan &amp;&amp; claude plugin install floorplan@floorplan</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/nutlope/hallmark">Hallmark (Anti-AI-Slop Design Skill)</a></h3>
+  <p class="hook">Hassan El Mghari (Nutlope) and Together AI built this design skill to fight cookie-cutter AI-generated UIs: 20 hand-curated visual themes and 65 pre-ship quality gates applied every time you generate UI with Claude Code, Cursor, or Codex. Crossed 46,000 GitHub stars and landed back on the weekly trending list this week.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">skill · viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://claude.com/resources/webinars/claude-for-manufacturing-put-your-plants-know-how-to-work">Claude for Manufacturing (Anthropic)</a></h3>
+  <p class="hook">Announced Nov 12, Anthropic&#39;s new industry-vertical Cowork plugin ships 17 workflow skills for manufacturing teams (quoting/RFQ, NCRs, production reporting, maintenance diagnosis) with four first-party connectors: Autodesk Fusion, Infor, Microsoft 365, and Oracle NetSuite. Webinar with the Model Hardware Standard research preview is scheduled Nov 17.</p>
+  <div class="secondary">Also: <a href="https://claude.com/resources/articles/cowork-plugins-across-enterprise">claude.com/resources/articles/cowork-plugins-across-enterprise</a></div>
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">anthropic-official</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">plugin · anthropic · marketplace</div>
+  <pre><button class="copy">copy</button><code>Available via claude.com/plugins directory (enterprise Cowork plugin)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/claude-code">Claude Code v2.1.321</a></h3>
+  <p class="hook">Released Nov 9: Fable 5.2 (claude-fable-5-2) is now the default Fable model, an optional fast mode delivers up to 2.5× faster token generation, and two security patches landed—one fixing MCP OAuth refresh tokens leaking to unintended hosts, another closing a read-only Bash sandbox bypass.</p>
+  <div class="secondary">Also: <a href="https://newreleases.io/project/github/anthropics/claude-code/release/v2.1.321">newreleases.io/project/github/anthropics/claude-code/release/v2.1.321</a></div>
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">anthropic-official</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">mcp · token · anthropic · security</div>
+  <pre><button class="copy">copy</button><code>npm install -g @anthropic-ai/claude-code@2.1.321</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Donchitos/Claude-Code-Game-Studios">Claude Code Game Studios</a></h3>
+  <p class="hook">A Shell-based framework that turns Claude Code into a 49-agent, 72-skill game-dev studio (MIT license): art direction, physics design, multiplayer architecture, testing, and more—all wired together. Hit 18,700+ GitHub stars and gained an estimated 5,700 stars this week alone while trending on GitHub.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">design · skill · viral · testing</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/bradautomates/claude-video">claude-video (/watch skill)</a></h3>
+  <p class="hook">One /watch command lets Claude download any video URL or local file, sample frames with ffmpeg, pull captions via yt-dlp (falls back to Whisper), and answer questions about what it watched. 13,900 GitHub stars and 8,100 install count across skill directories as of July 2026, with continued adoption.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">multimodal</span>  </div>
+  <div class="tags">video · skill</div>
+  <pre><button class="copy">copy</button><code>See README (requires ffmpeg, yt-dlp)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/thedotmack/claude-mem">claude-mem</a></h3>
+  <p class="hook">Persistent memory layer that works across Claude Code, Codex, Gemini CLI, Cursor, OpenCode, and more. Added an estimated 7,482 GitHub stars this week—the strongest single-week gain of any Claude ecosystem repo currently tracked.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">memory · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  <div class="recurring">↑ Day 4 — 7,482 stars gained this week; still topping GitHub weekly trending</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/alirezarezvani/claude-skills">alirezarezvani/claude-skills (410-skill pack)</a></h3>
+  <p class="hook">One of the most comprehensive community skill collections: 410 skills and 120+ agent configs spanning engineering, marketing, product, compliance, C-level advisory, research, and finance—all targeting Claude Code, Codex, Gemini CLI, Cursor, and 8 other coding agents. Sitting at ~19,800 GitHub stars with continuous releases.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">skill · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/digitalsamba/claude-code-video-toolkit">Claude Code Video Toolkit (digitalsamba)</a></h3>
+  <p class="hook">An MIT-licensed toolkit that lets you produce full short-form videos from Claude Code using open-source models that cost cents: script, AI voiceover, music, video clips, and final render—no proprietary API keys required. Around 2,300 GitHub stars, last major update Aug 2026.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">video · cost</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/linny006/trending-claude-skills">trending-claude-skills (auto-leaderboard)</a></h3>
+  <p class="hook">An auto-refreshing leaderboard of trending Claude skills and AI agent repos, updated every 15 minutes. Useful as a live feed of what&#39;s gaining momentum in the ecosystem without polling GitHub Trending manually.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">agent · viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/hashgraph-online/awesome-ai-plugins">awesome-ai-plugins (hashgraph-online)</a></h3>
+  <p class="hook">A curated cross-agent plugin list covering Claude Code, OpenAI Codex, Gemini, Antigravity, Pi, Grok, and more—maintained by the Hedera Open League project. Useful reference when evaluating which plugins have multi-agent support beyond Claude Code alone.</p>
+  <div class="secondary">Also: <a href="https://hol.org/plugins">hol.org/plugins</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">plugin · agent</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
