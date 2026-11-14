@@ -1,0 +1,107 @@
+[
+  {
+    "slug": "addyosmani-agent-skills",
+    "name": "agent-skills (Addy Osmani)",
+    "primary_url": "https://github.com/addyosmani/agent-skills",
+    "hook": "117.5k stars and still climbing. Google Chrome DevTools lead Addy Osmani built 25 lifecycle skills that map straight to how senior engineers actually ship code: define → plan → build → verify → review → ship, each with checklists, verification gates, and 9 slash commands (/spec, /plan, /build, /test, /review, /ship, and three more). Ships a code-reviewer, test-engineer, security-auditor, and web-performance-auditor persona on top. Works in Claude Code, Codex, Cursor, Antigravity, Gemini CLI, Windsurf, OpenCode, GitHub Copilot, and Kiro.",
+    "categories": ["design", "workflow"],
+    "install": "/plugin marketplace add addyosmani/agent-skills && /plugin install agent-skills@addy-agent-skills"
+  },
+  {
+    "slug": "sickn33-agentic-awesome-skills",
+    "name": "Agentic Awesome Skills (AAS Core)",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "hook": "49.7k stars, v20.8.0, 2,957+ SKILL.md playbooks organized into bundles (role-based groupings) and workflows (ordered playbooks), plus 13 specialized plugins covering Web App Builder, Security Engineer, Data Analytics, DevOps & Cloud, and more. Skills install per-agent via the GitHub CLI's `gh skill` command. Supports Claude Code, Codex, Cursor, Gemini CLI, Antigravity, GitHub Copilot, Kiro, OpenCode, AdaL, and Autohand Code.",
+    "categories": ["skills", "workflow"],
+    "install": "gh skill install sickn33/agentic-awesome-skills skills/<name>/SKILL.md --agent claude-code"
+  },
+  {
+    "slug": "davila7-claude-code-templates",
+    "name": "claude-code-templates (davila7)",
+    "primary_url": "https://github.com/davila7/claude-code-templates",
+    "hook": "33.6k stars, updated Nov 13. An open-source registry + zero-install CLI for Claude Code components: 1,980 items across 918 skills, 422 agents, 288 commands, 119 MCP servers, 80 settings, 63 hooks, 50 mods, and more—all browsable at aitmpl.com. The CLI writes each file to its correct location and merges with existing config instead of overwriting. Includes a local analytics dashboard, conversation browser, and health-check diagnostic. Every PR is scanned by NVIDIA SkillSpector.",
+    "categories": ["workflow", "skills"],
+    "install": "npx claude-code-templates@latest"
+  },
+  {
+    "slug": "othmanadi-planning-with-files",
+    "name": "Planning with Files",
+    "primary_url": "https://github.com/OthmanAdi/planning-with-files",
+    "hook": "28.1k stars, Manus-style file-based planning for long-running agents. Keeps three markdown files in the project (task_plan.md, findings.md, progress.md) and uses lifecycle hooks to re-inject the plan every turn, so it survives /clear, context compaction, and crashes. A gated mode holds the agent from stopping mid-phase; SHA-256 attestation refuses to inject a plan whose contents were modified outside the session. Direct cost benefit: persistent context means no token-burning re-discovery after a session reset.",
+    "categories": ["cost", "workflow"],
+    "install": "/plugin marketplace add OthmanAdi/planning-with-files && /plugin install planning-with-files@planning-with-files"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "recurring_note": "↑ Day 5 — still topping weekly trending; 7,400+ stars gained this week",
+    "hook": "Persistent memory layer that works across Claude Code, Codex, Gemini CLI, Cursor, OpenCode, and more. Maintains its spot as the fastest-climbing Claude ecosystem repo this week with an estimated 7,400+ new stars since Monday, still holding GitHub weekly trending position.",
+    "categories": ["skills", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "trailofbits-skills",
+    "name": "Trail of Bits Skills",
+    "primary_url": "https://github.com/trailofbits/skills",
+    "hook": "8.2k stars, 99 skills from Trail of Bits—the security firm behind Slither, Echidna, and Manticore. The catalog covers smart-contract security, C/Rust/differential code review, CodeQL/Semgrep SARIF static analysis, supply-chain auditing, variant analysis, mutation testing, property-based testing, YARA authoring, DWARF reverse engineering, and mobile Firebase APK scanning. Installs as a Claude Code marketplace plugin; also works in Codex and ChatGPT workspaces.",
+    "categories": ["security", "skills"],
+    "install": "/plugin marketplace add trailofbits/skills"
+  },
+  {
+    "slug": "alchaincyf-huashu-art-motion",
+    "name": "Huashu Art Motion (alchaincyf)",
+    "primary_url": "https://github.com/alchaincyf/huashu-art-motion",
+    "hook": "6.9k stars, by the creator of huashu-design (29.5k stars). 36 art-style recipes—cave painting, Van Gogh, Bauhaus, Kubrick, 8-bit, Rick & Morty and more—plus 9 explainer-video grammars (Kurzgesagt, Vox, whiteboard, presenter). Renders frame-accurate clips from a JSON spec in landscape, portrait, or transparent formats using Playwright and ffmpeg. Adopted by Open Design's motion-design skill in October 2026.",
+    "categories": ["design", "skills"],
+    "install": "npx skills add alchaincyf/huashu-art-motion"
+  },
+  {
+    "slug": "nvidia-skills",
+    "name": "NVIDIA Agent Skills",
+    "primary_url": "https://github.com/NVIDIA/skills",
+    "hook": "4k stars, 343–489 NVIDIA-verified agent skills for Claude Code, Codex, Cursor, Snowflake CoCo, and Kiro. Product teams maintain skills in their own repos; a daily sync pipeline mirrors and signs each skill with a detached signature against an included root cert. Catalog spans CUDA-Q, cuDF, cuML, cuOpt, Isaac for Healthcare, Newton Physical AI, NeMo AutoModel, NeMo-RL, Megatron-Core, BioNeMo, DeepStream, Holoscan, Earth2Studio, RAG Blueprint, and ~60 more product areas. Apache-2.0 source, CC-BY-4.0 docs.",
+    "categories": ["skills", "workflow"],
+    "install": "npx skills add nvidia/skills --skill nvidia-skill-finder --yes"
+  },
+  {
+    "slug": "epicgames-unreal-mcp",
+    "name": "Unreal Engine Skills for Claude Code",
+    "primary_url": "https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin",
+    "hook": "2k stars, MIT license, official Epic Games plugin. The unreal-mcp skill lets Claude Code drive a running Unreal Editor through MCP—hundreds of tools across 30+ toolsets covering actors, Blueprints, Niagara, Control Rigs, Sequencer, State Trees, Gameplay Ability System, and automated testing. Tool discovery is automatic. UEFN support confirmed by Epic's forum posts. Install in one command from Anthropic's official marketplace.",
+    "categories": ["mcp", "skills"],
+    "install": "/plugin install unreal-engine-skills-for-claude-code@claude-plugins-official"
+  },
+  {
+    "slug": "zenstory-oh-story-claudecode",
+    "name": "Oh Story (Chinese Web Novel Skills)",
+    "primary_url": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "hook": "8.6k stars, MIT license. Full workflow skill pack for writing Chinese web novels end-to-end: pick topics by scanning ranking sites, deconstruct hit novels, outline, track long-form foreshadowing, write short stories with twists, strip AI-sounding prose, and generate covers—all via Claude Code or Codex. No separate GPU or model needed; uses the host agent's model. Run /story-setup in your project root to initialize.",
+    "categories": ["skills", "workflow"],
+    "install": "npx skills add zenstory-ai/oh-story-claudecode -y -g"
+  },
+  {
+    "slug": "timescale-pg-aiguide",
+    "name": "pg-aiguide (Timescale)",
+    "primary_url": "https://github.com/timescale/pg-aiguide",
+    "hook": "1.9k stars, updated Nov 13 by Timescale. MCP server + Claude Code plugin that gives coding agents real PostgreSQL expertise: semantic search over the full Postgres manual plus TimescaleDB and PostGIS docs via a hosted endpoint, and curated SKILL.md best practices for schema design, indexing, data types, constraints, naming, and performance. Single plugin install wires both the MCP server and the skill at once.",
+    "categories": ["mcp", "skills"],
+    "install": "claude plugin marketplace add timescale/pg-aiguide && claude plugin install pg@aiguide"
+  },
+  {
+    "slug": "zenstory-drama-skills",
+    "name": "Drama Skills (zenstory-ai)",
+    "primary_url": "https://github.com/zenstory-ai/drama-skills",
+    "hook": "4.2k stars, from the same team as Oh Story. Covers AI short dramas and motion comics: IP evaluation, script adaptation from novels, storyboard generation, character and scene design, and automated review of final video against the brief. Works alongside huashu-art-motion for the visual layer. Claude Code, Codex, Antigravity, and OpenCode supported.",
+    "categories": ["skills", "design"],
+    "install": "npx skills add zenstory-ai/drama-skills -y -g"
+  },
+  {
+    "slug": "zebbern-claude-code-guide",
+    "name": "Claude Code Guide (zebbern)",
+    "primary_url": "https://github.com/zebbern/claude-code-guide",
+    "hook": "4.7k stars, updated Nov 14 today. MIT-licensed guide covering setup, commands, workflows, agents, skills, and practical tips from beginner through power-user level. Ships its own agents/ and skills/ directories alongside the documentation. One of the most-starred pure-reference repos added this month—useful as a companion when onboarding teams.",
+    "categories": ["skills", "workflow"],
+    "install": "See README"
+  }
+]
