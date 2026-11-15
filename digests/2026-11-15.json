@@ -1,0 +1,128 @@
+[
+  {
+    "slug": "obra-superpowers",
+    "name": "Superpowers (obra)",
+    "primary_url": "https://github.com/obra/superpowers",
+    "hook": "Jesse Vincent's structured agentic-development methodology skill pack has hit 318k stars — the most-starred Claude Code plugin in the ecosystem. It orchestrates brainstorming → design review → implementation plan → subagent-driven development → TDD → code review → branch completion, with discrete SKILL.md files at each stage. Install is one command from the official marketplace.",
+    "categories": ["design", "workflow"],
+    "install": "/plugin install superpowers@claude-plugins-official"
+  },
+  {
+    "slug": "alchaincyf-nuwa-skill",
+    "name": "Nuwa Skill (女娲.skill)",
+    "primary_url": "https://github.com/alchaincyf/nuwa-skill",
+    "hook": "38.3k stars and updated today. alchaincyf's Nuwa extracts a cognitive-framework skill from any named thinker — Jobs, Munger, Feynman, Musk — giving your agent the mental models and decision heuristics of that person rather than just a persona prompt. Each generated skill includes a fidelity scorecard and documents its own limits; a companion darwin-skill auto-improves the output over time.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add alchaincyf/nuwa-skill"
+  },
+  {
+    "slug": "vincentwei1021-video-shotcraft",
+    "name": "video-shotcraft",
+    "primary_url": "https://github.com/Vincentwei1021/video-shotcraft",
+    "hook": "19.9k stars, updated Nov 15. This Claude Code + Codex skill turns a product URL into a fully editable cinematic promo video: the agent captures live screenshots, picks shots from a 150-entry motion-recipe library, storyboards the film, animates it in Remotion, syncs cuts to music, and exports MP4. Because frames are code-generated from your own screenshots, every frame is editable after export.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add Vincentwei1021/video-shotcraft"
+  },
+  {
+    "slug": "shanraisshan-claude-code-best-practice",
+    "name": "claude-code-best-practice (shanraisshan)",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "69.1k stars and updated today — \"from vibe coding to agentic engineering.\" The repo maps every Claude Code concept (subagents, hooks, skills, MCP, sessions, context, CLI flags) to concrete best-practice notes, compares 6+ community frameworks (Superpowers, Spec Kit, BMAD-METHOD, OpenSpec…), and curates ~84 attributed tips from Boris Cherny, Thariq, and others. No install needed; it ships a live .claude/ folder with example commands, agents, and skills.",
+    "categories": ["workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "voltAgent-awesome-agent-skills",
+    "name": "awesome-agent-skills (VoltAgent)",
+    "primary_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "hook": "37.2k stars, 1,497+ hand-picked agent skills from official vendor teams (Anthropic, Stripe, Supabase, Vercel, Cloudflare, Trail of Bits, Expo, Angular, Hugging Face, WordPress…) and the community. Explicitly \"not AI-slop generated\" — each entry is reviewed before merge. Compatible with Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot, OpenCode, and Windsurf.",
+    "categories": ["skill", "marketplace"],
+    "install": "See README"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "recurring_note": "↑ Day 6 — still holding GitHub weekly trending; fastest-climbing Claude ecosystem repo for a second consecutive week",
+    "hook": "Persistent memory layer that works across Claude Code, Codex, Gemini CLI, Cursor, OpenCode, and more. Now in its sixth day on GitHub weekly trending — the longest streak of any Claude ecosystem repo currently tracked.",
+    "categories": ["skills", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "wanshuiyin-aris",
+    "name": "ARIS (Auto-Research-In-Sleep)",
+    "primary_url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+    "hook": "19.2k stars, updated Nov 14. Lightweight Markdown-only skills for autonomous ML research: idea discovery, experiment automation, paper review, rebuttal drafting, slide and poster creation. The standout feature is a cross-model review loop — one model runs the work, an independent Codex MCP instance reviews it. Works with Claude Code, Codex, and OpenClaw; MIT license.",
+    "categories": ["skill", "workflow"],
+    "install": "claude plugin marketplace add wanshuiyin/Auto-claude-code-research-in-sleep && claude plugin install aris@aris"
+  },
+  {
+    "slug": "alchaincyf-darwin-skill",
+    "name": "Darwin Skill (达尔文.skill)",
+    "primary_url": "https://github.com/alchaincyf/darwin-skill",
+    "hook": "6.9k stars, updated Nov 14. Autonomous skill-optimization loop for Claude Code inspired by Karpathy's autoresearch: Evaluate → Propose → Test (actually runs the skill) → Keep or Revert. Version 3.0 uses blind-judge model comparison rather than voting on SKILL.md text, eliminating self-serving bias. Pairs with nuwa-skill to form a full create-and-improve pipeline.",
+    "categories": ["skill"],
+    "install": "npx skills add alchaincyf/darwin-skill"
+  },
+  {
+    "slug": "rebelytics-one-skill-to-rule-them-all",
+    "name": "one-skill-to-rule-them-all (task-observer)",
+    "primary_url": "https://github.com/rebelytics/one-skill-to-rule-them-all",
+    "hook": "3.9k stars, updated today. Eoghan Henn's task-observer meta-skill watches sessions for corrections, repeated patterns, and gaps, then proposes skill updates or new skills with their evidence — nothing is applied until you approve. v3.10.0 ships this week with a shorter CLAUDE.md activation block; 100+ contributors and 2,400+ logged observations across 86 skills reported by the author.",
+    "categories": ["skill"],
+    "install": "npx skills add rebelytics/one-skill-to-rule-them-all --skill task-observer"
+  },
+  {
+    "slug": "michael-denyer-pstack-claude",
+    "name": "pstack-claude",
+    "primary_url": "https://github.com/michael-denyer/pstack-claude",
+    "hook": "4.3k stars, updated Nov 13. Ports Lauren Tan's Cursor-based pstack skill stack to Claude Code, Codex, Gemini CLI, Pi, and 7 other harnesses. The poteto-mode skill routes goals to the appropriate workflow; a /create-formal-verification-skill command targets concurrency bugs and invariants that tests can't catch. Requires Claude Code 2.1.292+.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add michael-denyer/pstack-claude && /plugin install pstack@pstack-claude"
+  },
+  {
+    "slug": "addyosmani-agent-skills",
+    "name": "agent-skills (Addy Osmani)",
+    "primary_url": "https://github.com/addyosmani/agent-skills",
+    "recurring_note": "↑ Day 2 — 117.5k stars; adoption across Claude Code, Codex, Cursor, Gemini CLI, and Kiro confirmed",
+    "hook": "Google Chrome DevTools lead Addy Osmani's 25 lifecycle skills map straight to senior-engineering workflows — define → plan → build → verify → review → ship. Crossed 117.5k stars and continues daily growth. Ships specialist personas: code-reviewer, test-engineer, security-auditor, web-performance-auditor.",
+    "categories": ["design", "workflow"],
+    "install": "/plugin marketplace add addyosmani/agent-skills && /plugin install agent-skills@addy-agent-skills"
+  },
+  {
+    "slug": "sickn33-agentic-awesome-skills",
+    "name": "Agentic Awesome Skills (AAS Core)",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "recurring_note": "↑ Day 3 — 49.8k stars; v20.8.0 released this week",
+    "hook": "49.8k stars, v20.8.0, 2,957+ SKILL.md playbooks organized into bundles and workflows, plus 13 specialized plugins. v20.8.0 landed this week with new Data Analytics and DevOps & Cloud bundles. Works across Claude Code, Codex, Cursor, Gemini CLI, Antigravity, GitHub Copilot, and Kiro.",
+    "categories": ["skills", "workflow"],
+    "install": "gh skill install sickn33/agentic-awesome-skills skills/<name>/SKILL.md --agent claude-code"
+  },
+  {
+    "slug": "zenstory-drama-skills",
+    "name": "Drama Skills (zenstory-ai)",
+    "primary_url": "https://github.com/zenstory-ai/drama-skills",
+    "recurring_note": "↑ Day 2 — 4.3k stars; updated again Nov 15",
+    "hook": "4.3k stars, updated Nov 15 for a second straight day. Covers AI short dramas and motion comics end-to-end: IP evaluation, script adaptation from novels, storyboard generation, character and scene design, and automated review of final video against brief. Pairs with huashu-art-motion for the visual layer. Claude Code, Codex, Antigravity, and OpenCode.",
+    "categories": ["skills", "design"],
+    "install": "npx skills add zenstory-ai/drama-skills -y -g"
+  },
+  {
+    "slug": "zenstory-oh-story-claudecode",
+    "name": "Oh Story (Chinese Web Novel Skills)",
+    "primary_url": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "recurring_note": "↑ Day 2 — 8.6k stars; added cover-generation and anti-AI-prose modules",
+    "hook": "8.6k stars. Full workflow skill pack for writing Chinese web novels end-to-end: topic scouting from ranking sites, hit-novel deconstruction, long-form foreshadowing tracking, twist-short-story writing, anti-AI-prose stripping, and cover generation. The sister project to drama-skills from the same team.",
+    "categories": ["skills", "workflow"],
+    "install": "npx skills add zenstory-ai/oh-story-claudecode -y -g"
+  },
+  {
+    "slug": "alchaincyf-huashu-art-motion",
+    "name": "Huashu Art Motion (alchaincyf)",
+    "primary_url": "https://github.com/alchaincyf/huashu-art-motion",
+    "recurring_note": "↑ Day 2 — 7k stars; updated again Nov 15",
+    "hook": "7k stars, updated Nov 15 again. 36 art-style recipes — cave painting, Van Gogh, Bauhaus, Kubrick, 8-bit, Rick & Morty and more — plus 9 explainer-video grammars (Kurzgesagt, Vox, whiteboard, presenter). Renders frame-accurate clips from JSON specs via Playwright + ffmpeg; adopted by Open Design's motion-design skill in October 2026. By the creator of huashu-design (29.5k stars).",
+    "categories": ["design", "skills"],
+    "install": "npx skills add alchaincyf/huashu-art-motion"
+  }
+]
