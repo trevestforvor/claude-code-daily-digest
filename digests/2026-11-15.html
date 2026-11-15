@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — November 15, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — November 15, 2026</h1><p class="sub">Top 15 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/obra/superpowers">Superpowers (obra)</a></h3>
+  <p class="hook">Jesse Vincent&#39;s structured agentic-development methodology skill pack has hit 318k stars — the most-starred Claude Code plugin in the ecosystem. It orchestrates brainstorming → design review → implementation plan → subagent-driven development → TDD → code review → branch completion, with discrete SKILL.md files at each stage. Install is one command from the official marketplace.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">skill · plugin · agent · subagent · viral · marketplace · review</div>
+  <pre><button class="copy">copy</button><code>/plugin install superpowers@claude-plugins-official</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/alchaincyf/nuwa-skill">Nuwa Skill (女娲.skill)</a></h3>
+  <p class="hook">38.3k stars and updated today. alchaincyf&#39;s Nuwa extracts a cognitive-framework skill from any named thinker — Jobs, Munger, Feynman, Musk — giving your agent the mental models and decision heuristics of that person rather than just a persona prompt. Each generated skill includes a fidelity scorecard and documents its own limits; a companion darwin-skill auto-improves the output over time.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add alchaincyf/nuwa-skill</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Vincentwei1021/video-shotcraft">video-shotcraft</a></h3>
+  <p class="hook">19.9k stars, updated Nov 15. This Claude Code + Codex skill turns a product URL into a fully editable cinematic promo video: the agent captures live screenshots, picks shots from a 150-entry motion-recipe library, storyboards the film, animates it in Remotion, syncs cuts to music, and exports MP4. Because frames are code-generated from your own screenshots, every frame is editable after export.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">video · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add Vincentwei1021/video-shotcraft</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/shanraisshan/claude-code-best-practice">claude-code-best-practice (shanraisshan)</a></h3>
+  <p class="hook">69.1k stars and updated today — &quot;from vibe coding to agentic engineering.&quot; The repo maps every Claude Code concept (subagents, hooks, skills, MCP, sessions, context, CLI flags) to concrete best-practice notes, compares 6+ community frameworks (Superpowers, Spec Kit, BMAD-METHOD, OpenSpec…), and curates ~84 attributed tips from Boris Cherny, Thariq, and others. No install needed; it ships a live .claude/ folder with example commands, agents, and skills.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">mcp · agent · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/VoltAgent/awesome-agent-skills">awesome-agent-skills (VoltAgent)</a></h3>
+  <p class="hook">37.2k stars, 1,497+ hand-picked agent skills from official vendor teams (Anthropic, Stripe, Supabase, Vercel, Cloudflare, Trail of Bits, Expo, Angular, Hugging Face, WordPress…) and the community. Explicitly &quot;not AI-slop generated&quot; — each entry is reviewed before merge. Compatible with Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot, OpenCode, and Windsurf.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#1f3a5c;color:#93c5fd">marketplace</span>  </div>
+  <div class="tags">anthropic · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/thedotmack/claude-mem">claude-mem</a></h3>
+  <p class="hook">Persistent memory layer that works across Claude Code, Codex, Gemini CLI, Cursor, OpenCode, and more. Now in its sixth day on GitHub weekly trending — the longest streak of any Claude ecosystem repo currently tracked.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">memory · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  <div class="recurring">↑ Day 6 — still holding GitHub weekly trending; fastest-climbing Claude ecosystem repo for a second consecutive week</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep">ARIS (Auto-Research-In-Sleep)</a></h3>
+  <p class="hook">19.2k stars, updated Nov 14. Lightweight Markdown-only skills for autonomous ML research: idea discovery, experiment automation, paper review, rebuttal drafting, slide and poster creation. The standout feature is a cross-model review loop — one model runs the work, an independent Codex MCP instance reviews it. Works with Claude Code, Codex, and OpenClaw; MIT license.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">mcp · plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>claude plugin marketplace add wanshuiyin/Auto-claude-code-research-in-sleep &amp;&amp; claude plugin install aris@aris</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/alchaincyf/darwin-skill">Darwin Skill (达尔文.skill)</a></h3>
+  <p class="hook">6.9k stars, updated Nov 14. Autonomous skill-optimization loop for Claude Code inspired by Karpathy&#39;s autoresearch: Evaluate → Propose → Test (actually runs the skill) → Keep or Revert. Version 3.0 uses blind-judge model comparison rather than voting on SKILL.md text, eliminating self-serving bias. Pairs with nuwa-skill to form a full create-and-improve pipeline.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add alchaincyf/darwin-skill</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/rebelytics/one-skill-to-rule-them-all">one-skill-to-rule-them-all (task-observer)</a></h3>
+  <p class="hook">3.9k stars, updated today. Eoghan Henn&#39;s task-observer meta-skill watches sessions for corrections, repeated patterns, and gaps, then proposes skill updates or new skills with their evidence — nothing is applied until you approve. v3.10.0 ships this week with a shorter CLAUDE.md activation block; 100+ contributors and 2,400+ logged observations across 86 skills reported by the author.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add rebelytics/one-skill-to-rule-them-all --skill task-observer</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/michael-denyer/pstack-claude">pstack-claude</a></h3>
+  <p class="hook">4.3k stars, updated Nov 13. Ports Lauren Tan&#39;s Cursor-based pstack skill stack to Claude Code, Codex, Gemini CLI, Pi, and 7 other harnesses. The poteto-mode skill routes goals to the appropriate workflow; a /create-formal-verification-skill command targets concurrency bugs and invariants that tests can&#39;t catch. Requires Claude Code 2.1.292+.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · viral · marketplace · terminal</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add michael-denyer/pstack-claude &amp;&amp; /plugin install pstack@pstack-claude</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/addyosmani/agent-skills">agent-skills (Addy Osmani)</a></h3>
+  <p class="hook">Google Chrome DevTools lead Addy Osmani&#39;s 25 lifecycle skills map straight to senior-engineering workflows — define → plan → build → verify → review → ship. Crossed 117.5k stars and continues daily growth. Ships specialist personas: code-reviewer, test-engineer, security-auditor, web-performance-auditor.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">plugin · viral · marketplace · browser · security</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add addyosmani/agent-skills &amp;&amp; /plugin install agent-skills@addy-agent-skills</code></pre>
+  <div class="recurring">↑ Day 2 — 117.5k stars; adoption across Claude Code, Codex, Cursor, Gemini CLI, and Kiro confirmed</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/sickn33/agentic-awesome-skills">Agentic Awesome Skills (AAS Core)</a></h3>
+  <p class="hook">49.8k stars, v20.8.0, 2,957+ SKILL.md playbooks organized into bundles and workflows, plus 13 specialized plugins. v20.8.0 landed this week with new Data Analytics and DevOps &amp; Cloud bundles. Works across Claude Code, Codex, Cursor, Gemini CLI, Antigravity, GitHub Copilot, and Kiro.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">skill · agent · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>gh skill install sickn33/agentic-awesome-skills skills/&lt;name&gt;/SKILL.md --agent claude-code</code></pre>
+  <div class="recurring">↑ Day 3 — 49.8k stars; v20.8.0 released this week</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/zenstory-ai/drama-skills">Drama Skills (zenstory-ai)</a></h3>
+  <p class="hook">4.3k stars, updated Nov 15 for a second straight day. Covers AI short dramas and motion comics end-to-end: IP evaluation, script adaptation from novels, storyboard generation, character and scene design, and automated review of final video against brief. Pairs with huashu-art-motion for the visual layer. Claude Code, Codex, Antigravity, and OpenCode.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">video · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add zenstory-ai/drama-skills -y -g</code></pre>
+  <div class="recurring">↑ Day 2 — 4.3k stars; updated again Nov 15</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/zenstory-ai/oh-story-claudecode">Oh Story (Chinese Web Novel Skills)</a></h3>
+  <p class="hook">8.6k stars. Full workflow skill pack for writing Chinese web novels end-to-end: topic scouting from ranking sites, hit-novel deconstruction, long-form foreshadowing tracking, twist-short-story writing, anti-AI-prose stripping, and cover generation. The sister project to drama-skills from the same team.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">skill · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add zenstory-ai/oh-story-claudecode -y -g</code></pre>
+  <div class="recurring">↑ Day 2 — 8.6k stars; added cover-generation and anti-AI-prose modules</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/alchaincyf/huashu-art-motion">Huashu Art Motion (alchaincyf)</a></h3>
+  <p class="hook">7k stars, updated Nov 15 again. 36 art-style recipes — cave painting, Van Gogh, Bauhaus, Kubrick, 8-bit, Rick &amp; Morty and more — plus 9 explainer-video grammars (Kurzgesagt, Vox, whiteboard, presenter). Renders frame-accurate clips from JSON specs via Playwright + ffmpeg; adopted by Open Design&#39;s motion-design skill in October 2026. By the creator of huashu-design (29.5k stars).</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">video · skill · viral · browser</div>
+  <pre><button class="copy">copy</button><code>npx skills add alchaincyf/huashu-art-motion</code></pre>
+  <div class="recurring">↑ Day 2 — 7k stars; updated again Nov 15</div>
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
