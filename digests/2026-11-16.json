@@ -1,0 +1,129 @@
+[
+  {
+    "slug": "reanimate-skill",
+    "name": "reanimate",
+    "primary_url": "https://github.com/NiazMorshed2007/reanimate",
+    "hook": "New skill that reverse-engineers any animation — live URL, MP4, GIF, screen recording, or Lottie — and rebuilds it in your stack. The 5-step loop records the original, writes a per-element timing-and-easing spec, builds with CSS/Framer Motion/GSAP/three.js, compares frame-by-frame (reports pixel mismatch and diff images), and repeats until match. Add `--gl` for WebGL/WebGPU/Canvas capture including shaders and three.js scene graphs.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add NiazMorshed2007/reanimate -g"
+  },
+  {
+    "slug": "google-stitch-skills",
+    "name": "Stitch Skills (Google Labs)",
+    "primary_url": "https://github.com/google-labs-code/stitch-skills",
+    "hook": "Official Google Labs skill pack bridging Stitch and Claude Code across a full design-to-code loop. 15 skills in 3 plugins: stitch-design converts code to screens and extracts DESIGN.md tokens; stitch-build converts Stitch screens to React, React Native, or React+Vite (with Remotion walkthrough video option); stitch-utilities generates DESIGN.md, enhances vague UI prompts, and builds multi-page sites from one prompt. Requires Stitch MCP server. ~8.7k stars.",
+    "categories": ["design", "skill"],
+    "install": "npx plugins add google-labs-code/stitch-skills --scope project --target claude-code"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "Skills For Real Engineers (mattpocock)",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "Matt Pocock's (TypeScript Total TypeScript) 27-skill pack for engineers who want engineering discipline, not vibe coding. The 20 engineering skills include /tdd (red-green-refactor loop), /diagnosing-bugs (phase-gated), /to-spec, /code-review, and /improve-codebase-architecture. The 7 productivity skills include /grill-me — a full branch-tree interview before work starts — and a GLOSSARY.md shared vocabulary that reduces agent verbosity. Run /setup-matt-pocock-skills once per repo.",
+    "categories": ["design", "skill"],
+    "install": "claude plugin install mattpocock-skills@claude-plugins-official"
+  },
+  {
+    "slug": "hackernoon-cuttlefish",
+    "name": "Cuttlefish.MD (HackerNoon)",
+    "primary_url": "https://github.com/hackernoon/cuttlefish-agent-skills",
+    "secondary_urls": ["https://hackernoon.com/cuttlefishmd-skills-library-puts-2806-license-checked-agent-skills-to-work"],
+    "hook": "HackerNoon's Project Cuttlefish.MD packages 2,806 license-checked skills from 29 authors into 9 category plugins for Claude Code. Categories: Dev Workflow (530 skills), Data & Science (599), QA & Testing (422), Marketing & SEO (307), Writing & Blogging (706), Design & UI (131), Security (102), HackerNoon Originals (1), Learn Tech (8). Every skill is credited to its author with its license verified. Featured on TechBeat today (Nov 16).",
+    "categories": ["skill", "marketplace"],
+    "install": "/plugin marketplace add hackernoon/cuttlefish-agent-skills && /plugin install dev-workflow@cuttlefish"
+  },
+  {
+    "slug": "mvanhorn-last30days",
+    "name": "last30days-skill",
+    "primary_url": "https://github.com/mvanhorn/last30days-skill",
+    "hook": "Research skill that queries 30+ sources in parallel (Reddit, HN, YouTube, X, Polymarket, GitHub, arXiv, Bluesky, DEV.to, Techmeme, Yahoo Finance, LinkedIn, Threads, TikTok, local files, and more) and ranks results by engagement — upvotes, views, prediction-market volume — not SEO. Zero-config for Reddit, HN, Polymarket, and GitHub; a setup wizard unlocks the rest. v3.31.0, 63k+ stars.",
+    "categories": ["skill", "workflow"],
+    "install": "/plugin marketplace add mvanhorn/last30days-skill && /plugin install last30days"
+  },
+  {
+    "slug": "claude-code-v2-1-319",
+    "name": "Claude Code v2.1.319",
+    "primary_url": "https://code.claude.com/docs/en/changelog.md",
+    "hook": "Nov 6 release adds two impactful workflow features. First: MCP task calls now move to the background immediately — Claude Code notifies you when they finish instead of blocking the session (disable with CLAUDE_CODE_DISABLE_MCP_TASKS=1). Second: new `permissions.denyInsteadOfPrompting` setting silently denies disallowed tool calls rather than waiting for a human to dismiss the prompt — essential for unattended runs. `npm latest` and `next` tags now point to this version.",
+    "categories": ["anthropic"],
+    "install": "npm install -g @anthropic-ai/claude-code@latest"
+  },
+  {
+    "slug": "elementalsouls-claude-bughunter",
+    "name": "Claude-BugHunter (elementalsouls)",
+    "primary_url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "hook": "Authorized bug-bounty and red-team skill bundle: 83 skills, 15 slash commands (Claude Code only), grounded in 681 disclosed HackerOne report patterns. Coverage: 58 web-app skills (XSS, SQLi, SSRF, IDOR, SSTI), 10 enterprise-platform skills (M365/Entra, Okta, vCenter, SSL VPN), 6 reporting/validation, 5 recon/OSINT, 4 methodology. Works across Claude Code, OpenCode, Codex CLI, Hermes Agent, and AntiGravity. For authorized targets only.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add elementalsouls/Claude-BugHunter && /plugin install claude-bughunter@elementalsouls"
+  },
+  {
+    "slug": "donchitos-game-studios",
+    "name": "Claude Code Game Studios",
+    "primary_url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+    "hook": "Template that turns a Claude Code session into a 49-agent game-development studio with 75 skills, 15 event hooks, 62 document templates, and four engine tracks (Web/default, Godot 4, Unity, UE5). Brief-first workflow: Claude asks genre-tailored questions, you approve a one-page brief, then a headless browser runs scripted play-checks (startup errors, unresponsive controls, layout problems) after each build. `modes.rigor` (minimal/standard/full) controls documentation overhead.",
+    "categories": ["skill", "workflow"],
+    "install": "git clone https://github.com/Donchitos/Claude-Code-Game-Studios.git my-game && cd my-game && claude"
+  },
+  {
+    "slug": "nvidia-agent-skills",
+    "name": "NVIDIA Agent Skills",
+    "primary_url": "https://github.com/NVIDIA/skills",
+    "hook": "Official, NVIDIA-signed catalog of agent skills for Claude Code and Codex spanning 70+ product areas: Isaac robotics, CUDA-X libraries (cuDF, cuML, cuOpt, CUDA-Q, Warp), NeMo training, BioNeMo, Jetson, DeepStream, Holoscan, Omniverse, and more. Each skill must pass: SKILL.md, skill-card.md governance, a detached signature against NVIDIA's root cert, a Tier-3 evaluation dataset, and a generated BENCHMARK.md. Skills mirror from product repos daily. Install the skill-finder to browse and install from chat.",
+    "categories": ["skill"],
+    "install": "npx skills add nvidia/skills --skill nvidia-skill-finder --yes"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "recurring_note": "↑ Day 7 — still GitHub weekly trending; 83.9k stars and 288 releases; longest consecutive trending streak in the Claude ecosystem",
+    "hook": "Persistent memory layer that works across Claude Code, Codex, Gemini CLI, Cursor, OpenCode, and more. Enters its seventh straight day on GitHub weekly trending — the longest streak of any Claude ecosystem repo currently tracked. 83.9k stars, 288 releases.",
+    "categories": ["skill", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "addyosmani-agent-skills",
+    "name": "agent-skills (Addy Osmani)",
+    "primary_url": "https://github.com/addyosmani/agent-skills",
+    "recurring_note": "↑ Day 3 — 117.5k+ stars; confirmed daily growth across Claude Code, Codex, Cursor, Gemini CLI, and Kiro",
+    "hook": "Google Chrome DevTools lead Addy Osmani's 25 lifecycle skills map to senior-engineering workflows — define → plan → build → verify → review → ship. 117.5k+ stars and ongoing cross-agent adoption. Ships specialist personas: code-reviewer, test-engineer, security-auditor, web-performance-auditor.",
+    "categories": ["design", "workflow"],
+    "install": "/plugin marketplace add addyosmani/agent-skills && /plugin install agent-skills@addy-agent-skills"
+  },
+  {
+    "slug": "sickn33-agentic-awesome-skills",
+    "name": "Agentic Awesome Skills (AAS Core)",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "recurring_note": "↑ Day 4 — 49.8k stars; v20.8.0 landed this week with new Data Analytics and DevOps & Cloud bundles",
+    "hook": "49.8k stars, v20.8.0, 2,957+ SKILL.md playbooks organized into bundles and workflows plus 13 specialized plugins. v20.8.0 this week adds Data Analytics and DevOps & Cloud bundles. Works across Claude Code, Codex, Cursor, Gemini CLI, Antigravity, GitHub Copilot, and Kiro.",
+    "categories": ["skill", "workflow"],
+    "install": "gh skill install sickn33/agentic-awesome-skills skills/<name>/SKILL.md --agent claude-code"
+  },
+  {
+    "slug": "alchaincyf-huashu-art-motion",
+    "name": "Huashu Art Motion (alchaincyf)",
+    "primary_url": "https://github.com/alchaincyf/huashu-art-motion",
+    "recurring_note": "↑ Day 3 — 7k stars; updated again Nov 15 for a third straight day",
+    "hook": "36 art-style recipes — cave painting, Van Gogh, Bauhaus, Kubrick, 8-bit, Rick & Morty and more — plus 9 explainer-video grammars (Kurzgesagt, Vox, whiteboard, presenter). Renders frame-accurate clips from JSON specs via Playwright + ffmpeg. By the creator of huashu-design (29.5k stars); adopted by Open Design's motion-design skill.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add alchaincyf/huashu-art-motion"
+  },
+  {
+    "slug": "zenstory-drama-skills",
+    "name": "Drama Skills (zenstory-ai)",
+    "primary_url": "https://github.com/zenstory-ai/drama-skills",
+    "recurring_note": "↑ Day 3 — 4.3k stars; still active after three consecutive update days",
+    "hook": "AI short-drama and motion-comics workflow end to end: IP evaluation, script adaptation from novels, storyboard generation, character and scene design, and automated review of final video against brief. Pairs with huashu-art-motion for the visual layer. Claude Code, Codex, Antigravity, and OpenCode.",
+    "categories": ["skill", "design"],
+    "install": "npx skills add zenstory-ai/drama-skills -y -g"
+  },
+  {
+    "slug": "zenstory-oh-story-claudecode",
+    "name": "Oh Story (Chinese Web Novel Skills)",
+    "primary_url": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "recurring_note": "↑ Day 3 — 8.6k stars; added cover-generation and anti-AI-prose modules earlier this week",
+    "hook": "Full-workflow skill pack for writing Chinese web novels end to end: topic scouting from ranking sites, hit-novel deconstruction, long-form foreshadowing tracking, twist-short-story writing, anti-AI-prose stripping, and cover generation. Sister project to drama-skills from the same team. 8.6k stars.",
+    "categories": ["skill", "workflow"],
+    "install": "npx skills add zenstory-ai/oh-story-claudecode -y -g"
+  }
+]
