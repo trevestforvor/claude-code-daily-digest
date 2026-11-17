@@ -1,0 +1,107 @@
+[
+  {
+    "slug": "nextlevelbuilder-ui-ux-pro-max-skill",
+    "name": "UI UX Pro Max Skill",
+    "primary_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "hook": "Open-source AI skill with 151k stars giving Claude Code a searchable catalog of UI styles, color palettes, font pairings, and stack-specific guidelines. A built-in reasoning engine generates a full design system from a project description — works across Claude Code, Cursor, Codex, Windsurf, and 20+ other agents.",
+    "categories": ["design", "skill"],
+    "install": "npm install -g ui-ux-pro-max-cli && uipro init --ai claude"
+  },
+  {
+    "slug": "tt-a1i-archify",
+    "name": "Archify",
+    "primary_url": "https://github.com/tt-a1i/archify",
+    "hook": "Turns any codebase, idea, or plan into a self-contained interactive HTML diagram — architecture, sequence, ERD, workflow, timeline. 97k stars. Runs as a Claude Code skill; source-backed links let you jump from a node to the actual file. Zero external dependencies: diagrams are single-file.",
+    "categories": ["design", "skill"],
+    "install": "Ask Claude: \"Install Archify for me by reading https://raw.githubusercontent.com/tt-a1i/archify/main/llms.txt\""
+  },
+  {
+    "slug": "graphify-labs-graphify",
+    "name": "Graphify",
+    "primary_url": "https://github.com/Graphify-Labs/graphify",
+    "hook": "Parses a codebase (plus docs, SQL schemas, configs, PDFs) into a queryable knowledge graph using tree-sitter — no LLM, no vector store. 149k stars, updated today. Run `/graphify .` inside Claude Code to index; edges are tagged EXTRACTED vs INFERRED. Supports 20+ agents via `--platform` flag.",
+    "categories": ["design", "mcp"],
+    "install": "uv tool install graphifyy && graphify install"
+  },
+  {
+    "slug": "juliusbrussee-caveman",
+    "name": "Caveman",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "Skill + proxy that cuts token use by making Claude answer in terse 'caveman' style and by compressing logs, JSON, CSV, and test output before the agent reads them. Claims 65% reduction; measured at 33.2% fewer input tokens per session. 121k stars, 4.1.0, also ships a desktop app (Caveman Code) and a Blocks feature for code mode.",
+    "categories": ["cost", "skill"],
+    "install": "npx @caveman-ai/cli@latest"
+  },
+  {
+    "slug": "rtk-ai-rtk",
+    "name": "RTK",
+    "primary_url": "https://github.com/rtk-ai/rtk",
+    "hook": "Single Rust binary CLI proxy that compresses the output of common dev commands before an AI coding agent reads them. 87k stars, updated today. Hooks into 18 supported agents including Claude Code (which it lists first). Run `rtk init -g` after install to wire it in globally.",
+    "categories": ["cost"],
+    "install": "brew install rtk"
+  },
+  {
+    "slug": "cheaper-inference-omniroute",
+    "name": "OmniRoute",
+    "primary_url": "https://github.com/cheaper-inference/OmniRoute",
+    "hook": "MIT AI gateway with one local endpoint (`localhost:20128/v1`) routing to 375+ providers (150+ free) and 1,400+ models. 88k stars. Includes quota-aware automatic fallback, token compression, MCP/A2A support, and a Docker image. Any OpenAI-compatible agent connects unchanged — Claude Code, Codex, Cursor, and more.",
+    "categories": ["cost", "mcp"],
+    "install": "See README (npm install -g omniroute or Docker)"
+  },
+  {
+    "slug": "claude-code-v2-1-326",
+    "name": "Claude Code v2.1.326 — Code Mode + Agent Teams",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "v2.1.326 (Nov 16) enables experimental Code Mode alongside agent teams. Code Mode, introduced in v2.1.323 (Nov 12), lets Claude write JavaScript to call its tools — lower per-step overhead than natural language. Same set of releases raises unrecognized-model context from 200K to 1M, tightens sandbox writes to sensitive home folders, and adds VS Code prompt suggestions. ⚠ Opus 4.8 fast mode is removed Nov 30.",
+    "categories": ["official"],
+    "install": "npm install -g @anthropic-ai/claude-code@latest"
+  },
+  {
+    "slug": "farion1231-cc-switch",
+    "name": "CC Switch",
+    "primary_url": "https://github.com/farion1231/cc-switch",
+    "hook": "Cross-platform desktop app for managing AI coding tools: switch API providers in one click and manage MCP servers, skills, and prompts in a single UI without editing config files. 155k stars, updated today. Supports 12 agents including Claude Code, Codex, Gemini CLI, OpenCode, Grok Build, and Pi.",
+    "categories": ["mcp"],
+    "install": "brew install --cask cc-switch"
+  },
+  {
+    "slug": "stablyai-orca",
+    "name": "Orca",
+    "primary_url": "https://github.com/stablyai/orca",
+    "hook": "Desktop app for running a fleet of AI coding agents in parallel, each in its own git worktree. 128k stars, updated today. Chat UI + terminal, diffs, embedded browser, and a CLI in one window. Works with 30+ agents; Claude Code is a primary target. iOS/Android remote runtime in public beta.",
+    "categories": ["mcp"],
+    "install": "brew install --cask stablyai/orca/orca"
+  },
+  {
+    "slug": "paperclipai-paperclip",
+    "name": "Paperclip",
+    "primary_url": "https://github.com/paperclipai/paperclip",
+    "hook": "Open-source Node.js + React app for orchestrating teams of AI agents: org charts, task assignment, goals, budgets, approval gates, and a live cost dashboard. 115k stars, updated today. Bring your own agents (Claude Code, Codex, Cursor, Gemini CLI, OpenCode) — Paperclip only manages them.",
+    "categories": ["mcp"],
+    "install": "npx paperclipai@latest onboard --yes"
+  },
+  {
+    "slug": "panniantong-agent-reach",
+    "name": "Agent Reach",
+    "primary_url": "https://github.com/Panniantong/Agent-Reach",
+    "hook": "CLI giving AI agents read and search access to platforms they normally can't reach — Bilibili, Xiaohongshu, V2EX, Xueqiu, GitHub, YouTube — with zero API fees. 113k stars. Read-only; no posting or liking. Works with any CLI agent. Install by passing the install.md URL to your agent.",
+    "categories": ["mcp"],
+    "install": "Tell your agent: install Agent Reach from https://raw.githubusercontent.com/Panniantong/Agent-Reach/main/docs/install.md"
+  },
+  {
+    "slug": "code-yeongyu-oh-my-openagent",
+    "name": "OmO (oh-my-openagent)",
+    "primary_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "hook": "Terminal agent harness triggered by the `omo` command. The `ultrawork` (`ulw`) keyword makes it research, plan, verify, and ship — `mass ulw` fans out to a graph of parallel agents. Git-backed memory. 71k stars. Supports Claude, ChatGPT, Kimi, GLM subscriptions via `/login`.",
+    "categories": ["mcp"],
+    "install": "curl -fsSL https://get.omo.dev/install.sh | bash"
+  },
+  {
+    "slug": "egonex-ai-understand-anything",
+    "name": "Understand Anything",
+    "primary_url": "https://github.com/Egonex-AI/Understand-Anything",
+    "hook": "Multi-agent pipeline that maps a codebase's files, functions, classes, and dependencies into an interactive knowledge-graph dashboard. 93k stars; updated Nov 15 with dashboard improvements. Run `/understand` to analyze, `/understand-dashboard` to explore. Supports 18 platforms including Claude Code, Devin, Codex, and Copilot.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add Egonex-AI/Understand-Anything",
+    "recurring_note": "↑ Day 2 since Nov 15 dashboard update — steady activity after Nov 9 debut"
+  }
+]
