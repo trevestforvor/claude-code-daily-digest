@@ -1,0 +1,104 @@
+[
+  {
+    "slug": "backnotprop-plannotator",
+    "name": "Plannotator",
+    "primary_url": "https://github.com/backnotprop/plannotator",
+    "hook": "A local, browser-based review surface that opens alongside Claude Code so you can annotate plans, diffs, and HTML then send feedback back to the agent in the same session. Supports Claude Code, Codex, Copilot CLI, Gemini CLI, and Pi — 13.3K stars, Apache-licensed.",
+    "categories": ["design", "tools"],
+    "install": "curl -fsSL https://plannotator.ai/install.sh | bash"
+  },
+  {
+    "slug": "claude-fable-5-2",
+    "name": "Claude Fable 5.2 & Mythos 5.2",
+    "primary_url": "https://www.anthropic.com/claude/fable",
+    "secondary_urls": ["https://thenewstack.io/anthropic-fable-coding-upgrade/"],
+    "hook": "Anthropic's Nov 9 release cuts pricing 20% to $8/$40 per 1M in/out tokens (down from $10/$50), runs 30% faster than 5.1, and ships a 55% block-rate reduction. Available now in Claude Code with 1M token default context. Fast mode (2.5× speed, 2× price) also toggleable in Claude Code.",
+    "categories": ["cost", "anthropic"]
+  },
+  {
+    "slug": "yetone-magpie",
+    "name": "Magpie",
+    "primary_url": "https://github.com/yetone/magpie",
+    "hook": "Cross-platform model router for coding agents: pick any model (Anthropic, OpenAI, local) for Claude Code, Codex, or Cursor from one menu bar app. Auto-failover when quota runs out, PII masking before prompts leave your machine, real-time cost/quota tracking. 38.6K stars, updated today.",
+    "categories": ["cost", "tools"],
+    "install": "curl -fsSL https://usemagpie.ai/install.sh | sh"
+  },
+  {
+    "slug": "affaan-ecc",
+    "name": "Everything Claude Code (ECC)",
+    "primary_url": "https://github.com/affaan-m/ECC",
+    "hook": "The 305K-star comprehensive Claude Code agent harness bundles reusable skills, persistent memory, and the AgentShield security scanner. The bundled security-review skill is reportedly its most-installed feature. Currently trending on GitHub today; MIT-licensed.",
+    "categories": ["skills", "security"],
+    "install": "/plugin marketplace add https://github.com/affaan-m/ECC"
+  },
+  {
+    "slug": "alibaba-open-code-review",
+    "name": "OpenCodeReview",
+    "primary_url": "https://github.com/alibaba/open-code-review",
+    "hook": "Alibaba's Apache-licensed AI code review CLI hit 54.1K stars and is trending on GitHub today. Reads git diffs, calls an LLM agent for line-level review comments, and ships a Claude Code plugin with `/open-code-review:review` and `:delegate-review` slash commands.",
+    "categories": ["code-review", "tools"],
+    "install": "npx skills add alibaba/open-code-review"
+  },
+  {
+    "slug": "ag-ui-protocol",
+    "name": "AG-UI Protocol",
+    "primary_url": "https://github.com/ag-ui-protocol/ag-ui",
+    "hook": "AG-UI 1.0 landed this week: an open MIT protocol that connects AI agents to any user-facing app via a typed event stream (text streaming, tool calls, shared state, human-in-the-loop pauses, subagents). Includes a Claude Agent SDK integration; LangChain, CrewAI, Mastra, and Google ADK all ship adapters. 20.4K stars.",
+    "categories": ["protocol", "mcp"],
+    "install": "npm install @ag-ui/client"
+  },
+  {
+    "slug": "claude-code-v2-1-327",
+    "name": "Claude Code 2.1.327",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Yesterday's release (Nov 17) adds `claude mcp add-json <name> -` for piping MCP server config from stdin — keeping secrets off the command line. Also: `/status` lists broken agents, skills, commands and keybinding errors; `/tui classic` names the non-fullscreen renderer; VS Code right-click on files now @-mentions them directly in chat.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "kyegomez-swarms",
+    "name": "Swarms",
+    "primary_url": "https://github.com/kyegomez/swarms",
+    "hook": "Enterprise-grade Python multi-agent framework (sequential, concurrent, graph, hierarchical) updated today. Claude Code support via CLAUDE.md and an MCP docs server. New this cycle: MCPDeployer serves any agent or swarm as an authenticated MCP endpoint, and Agent Skills support via SKILL.md. 7.4K stars.",
+    "categories": ["agents", "mcp"],
+    "install": "pip3 install -U swarms"
+  },
+  {
+    "slug": "cursor-plugins",
+    "name": "Cursor Plugins",
+    "primary_url": "https://github.com/cursor/plugins",
+    "hook": "The official Cursor multi-plugin marketplace spec hit 17.1K stars and ships a `.claude-plugin` directory suggesting cross-compatibility with Claude Code. Covers code review, PR review canvases, Playwright, Gmail, GitHub, Salesforce, and dozens more — a growing standard for AI coding tool plugins.",
+    "categories": ["plugins"]
+  },
+  {
+    "slug": "czlonkowski-n8n-skills",
+    "name": "n8n Skills for Claude Code",
+    "primary_url": "https://github.com/czlonkowski/n8n-skills",
+    "hook": "14 skills teaching Claude Code to build production n8n workflows through the n8n-mcp MCP server: covers expression syntax, error handling, AI agents, sub-workflows, and binary files. Hooks fire before high-impact calls to enforce best-practices and prevent silent failures. 6.7K stars.",
+    "categories": ["skills", "automation"],
+    "install": "/plugin install czlonkowski/n8n-skills"
+  },
+  {
+    "slug": "tencent-loopforge",
+    "name": "LoopForge",
+    "primary_url": "https://github.com/Tencent/LoopForge",
+    "hook": "Tencent's MIT-licensed self-hosted platform orchestrates Claude Code, Codex, and 8 other coding agents with Docker sandboxes, role-based routing, and human approval gates. Repeatable sequences ('SOPs') let teams run battle-tested agent workflows unattended. 3.8K stars.",
+    "categories": ["agents", "orchestration"],
+    "install": "npx -y loopforge-cli@latest install claude"
+  },
+  {
+    "slug": "ha-mcp",
+    "name": "HA-MCP",
+    "primary_url": "https://github.com/homeassistant-ai/ha-mcp",
+    "hook": "The official Home Assistant MCP server: 85+ tools for controlling smart home devices, querying states, and managing automations from Claude Code via natural language. v7.1.0 available on PyPI; also installable via HACS for a no-config setup. 3.9K stars.",
+    "categories": ["mcp", "smart-home"],
+    "install": "claude mcp add ha-mcp -- uvx ha-mcp"
+  },
+  {
+    "slug": "slackapi-slack-skills",
+    "name": "Slack Skills Plugin",
+    "primary_url": "https://github.com/slackapi/slack-skills-plugin",
+    "hook": "Official Slack SDK plugin for Claude Code, Cursor, and Codex. Bundles the Slack hosted MCP server, 9 on-demand skills (messaging, search, Slack CLI, Block Kit validation, app deployment), and 5 slash commands including /summarize-channel and /standup. OAuth auth on first use. 170 stars.",
+    "categories": ["skills", "integrations", "mcp"],
+    "install": "/plugin marketplace add slackapi/slack-skills-plugin"
+  }
+]
