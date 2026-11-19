@@ -1,0 +1,73 @@
+[
+  {
+    "slug": "patch-gg-pixelfx",
+    "name": "pixelfx",
+    "primary_url": "https://github.com/patch-gg/pixelfx",
+    "hook": "244 MIT-licensed pixel art effects written as self-contained code — fire, explosions, lightning, water, shadow, critters, UI, and 12 combo \"moves\" — plus a Claude Code skill that finds, previews, exports, and generates new effects. Exports sprite sheets for Godot, Unity, and Phaser. No image assets; every effect is pure code. ~7K stars.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add patch-gg/pixelfx && /plugin install pixelfx@pixelfx"
+  },
+  {
+    "slug": "tangency-labs-solidcraft",
+    "name": "SolidCraft",
+    "primary_url": "https://github.com/tangency-labs/solidcraft",
+    "hook": "Open-source parametric 3D CAD in pure Rust — sketch, constrain, extrude, revolve, fillet, and assemble on an editable timeline. Runs desktop, browser, or headless. Its built-in MCP server lets Claude Code model parts end-to-end: `claude mcp add solidcraft -- solidcraft-cli mcp`. Exports STEP, IGES, 3MF, STL, OBJ, and glTF. ~16K stars, Hackaday-featured.",
+    "categories": ["mcp", "design"],
+    "install": "claude mcp add solidcraft -- solidcraft-cli mcp"
+  },
+  {
+    "slug": "rehan-remade-universal-modder",
+    "name": "Universal Modder",
+    "primary_url": "https://github.com/rehan-remade/universal-modder",
+    "hook": "Claude Code plugin that turns any PC game you own into a modding project end-to-end: auto-detects the engine (Unity, Unreal, Bethesda, Godot, Source, Minecraft, Stardew, Elden Ring, GTA V, and more), plans the mod, generates code and fal-AI art, runs in-game tests, and packages a playable release. Agents build a shared knowledge base of field notes per game so later runs improve. ~9K stars.",
+    "categories": ["skill", "design"],
+    "install": "/plugin marketplace add rehan-remade/universal-modder && /plugin install universal-modder@universal-modder"
+  },
+  {
+    "slug": "microsoft-tokeneconomizer",
+    "name": "TokenEconomizer",
+    "primary_url": "https://github.com/microsoft/TokenEconomizer",
+    "hook": "Microsoft Research + UC Berkeley black-box plugin that learns from prior sessions and prunes redundant tool context going forward — no model changes, no agent changes. Measured 18.4–30.9% cost reduction on SWE-Bench across 5 agent-model pairings; best case was Claude Code + Opus 4.8 at 30.9%. Apache 2.0, works with Claude Code, Codex, Copilot CLI, and Pi. ~4.3K stars.",
+    "categories": ["cost"],
+    "install": "See README (clone repo, /plugin marketplace add microsoft/TokenEconomizer, then install)"
+  },
+  {
+    "slug": "nvidia-skillevaluator",
+    "name": "NVIDIA SkillEvaluator",
+    "primary_url": "https://github.com/NVIDIA/SkillEvaluator",
+    "hook": "NVIDIA's Apache-licensed framework for evaluating agent skills across 3 tiers: Tier 1 static validation (schema, PII, security via SkillSpector, 11 CI checks); Tier 2 semantic overlap detection; Tier 3 live agent tests that compare pass rates with and without each skill. Ships a keyless `skillevaluator quality-check` that scores a SKILL.md out of 100 with no API key or Docker. Trending today (~312 stars/day, ~3.9K total). Experimental/community-supported.",
+    "categories": ["skills", "tools"],
+    "install": "pip install skillevaluator"
+  },
+  {
+    "slug": "anthropic-skills-plugins-nov30",
+    "name": "Skills → Plugins: Enterprise Cutover Nov 30",
+    "primary_url": "https://support.claude.com/en/articles/17740565-manage-plugins-skills-and-connectors-from-one-plugins-page",
+    "hook": "On November 30, Anthropic renames \"Skills\" to \"Plugins\" on Enterprise plans (Team and other plans began Oct 29). Critical admin action: if Skills are currently **off** for your org, plugins will also stop working in Claude Desktop after Nov 30. To keep plugins running: Organization settings → Library → Policy → enable \"Cloud code execution\" and turn on Skills before cutover. No action needed if Skills are already on.",
+    "categories": ["anthropic"]
+  },
+  {
+    "slug": "chromedevtools-chrome-devtools-mcp",
+    "name": "Chrome DevTools MCP",
+    "primary_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "hook": "Official Chrome DevTools team MCP server that gives Claude Code full browser control: performance trace recording, network request analysis with source-mapped stack traces, screenshots, console messages, and Puppeteer-driven browser automation. ~55K stars. Install via plugin to get bundled DevTools skills; bare `mcp add` skips them.",
+    "categories": ["mcp", "tools"],
+    "install": "/plugin marketplace add ChromeDevTools/chrome-devtools-mcp && /plugin install chrome-devtools-mcp@chrome-devtools-plugins"
+  },
+  {
+    "slug": "keygraphhq-shannon",
+    "name": "Shannon (Keygraph)",
+    "primary_url": "https://github.com/KeygraphHQ/shannon",
+    "hook": "Open-source autonomous AI pentester for web apps and APIs: feeds on your source code to map trust boundaries, then runs live exploits to prove each vulnerability before reporting. \"No exploit, no report.\" Covers injection, XSS, SSRF, broken auth/authz. CI/CD GitHub Action available; outputs PDF, Markdown, JSON, and SARIF 2.1.0. AGPL-3.0 (Lite); Pro edition for broader AppSec. For authorized targets only.",
+    "categories": ["security"],
+    "install": "npx @keygraph/shannon@latest"
+  },
+  {
+    "slug": "jakeschincariol-replica-skill",
+    "name": "Replica Skill",
+    "primary_url": "https://github.com/Jakeschincariol/replica-skill",
+    "hook": "11 Claude skills for reverse-engineering any app and rebuilding it cleanly: recon (stack fingerprint, API surface), architectural analysis, diff comparison, rebuild scaffolding, test generation, rebrand, launch copy, and deployment. Namespaced as `/replica-skill:*` commands. MIT-licensed; does not copy original code, logo, or content. ~9.3K stars.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add Jakeschincariol/replica-skill && /plugin install replica-skill"
+  }
+]
