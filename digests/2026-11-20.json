@@ -1,0 +1,112 @@
+[
+  {
+    "slug": "claude-code-v2-1-328-329",
+    "name": "Claude Code v2.1.328–2.1.329",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Two back-to-back releases landed November 19. v2.1.328 brings Auto mode to Opus 4.6 and Sonnet 4.6 on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry, and the Claude apps gateway — plus `\"onFailure\": \"block\"` for `mcp_tool` hooks and a tighter `/code-review` (bugs and CLAUDE.md violations only; use `/simplify` for cleanup). v2.1.329 adds `/tasks` showing all scheduled tasks and `/loop` wakeups with one-key stop, OpenTelemetry while Code Mode is on, and a trust dialog showing exactly where a folder's hooks are declared.",
+    "categories": ["anthropic"],
+    "install": "npm install -g @anthropic-ai/claude-code@latest"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "Superpowers",
+    "primary_url": "https://github.com/obra/superpowers",
+    "hook": "Complete software-development methodology for coding agents, built by Jesse Vincent and Prime Radiant. 322k stars. A composable set of skills covering the full dev lifecycle — planning, implementation, review, and ship. Available directly from the official Anthropic plugin marketplace; also supports Gemini CLI, Codex, Cursor, Factory Droid, and Pi. MIT-licensed.",
+    "categories": ["skill", "workflow"],
+    "install": "/plugin install superpowers@claude-plugins-official"
+  },
+  {
+    "slug": "lemomo-ai-lemo-opuscar",
+    "name": "lemo-opuscar",
+    "primary_url": "https://github.com/lemomo-ai/lemo-opuscar",
+    "hook": "99 cinematic and illustrative film-style recipes for Claude Code — from watercolor and woodblock ukiyo-e to Bauhaus, 8-bit, newsreel, and whiteboard. Each style ships with a demo film made entirely in code by Claude Opus 5.5, no video model used. Supports custom styles. 19k stars. MIT (code), CC BY-NC 4.0 (docs/prompts).",
+    "categories": ["design", "skill"],
+    "install": "claude plugin marketplace add lemomo-ai/lemo-opuscar && claude plugin install lemo-opuscar@lemolab"
+  },
+  {
+    "slug": "multica-ai-andrej-karpathy-skills",
+    "name": "Andrej Karpathy Skills",
+    "primary_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "hook": "Single CLAUDE.md encoding four Karpathy-inspired coding guardrails: Think First (plan before coding), Simplicity (simplest solution that works), Surgical Changes (minimal footprint), Goal-Driven (resist scope creep). Community project, not an official Karpathy release. 132K–205K stars across mirrors — the most-starred single-file skill in the ecosystem.",
+    "categories": ["skill"],
+    "install": "npx skills add multica-ai/andrej-karpathy-skills --skill karpathy-guidelines --agent claude-code"
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "recurring_note": "↑ Day 11 — record GitHub weekly trending streak in the Claude ecosystem; 83.9k stars and 288+ releases",
+    "hook": "Persistent memory layer for Claude Code, Codex, Gemini CLI, Cursor, OpenCode, and more. Now at 11 consecutive days on GitHub weekly trending — the longest streak of any Claude ecosystem repo. 83.9k stars, 288+ releases.",
+    "categories": ["skill", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "addyosmani-agent-skills",
+    "name": "agent-skills (Addy Osmani)",
+    "primary_url": "https://github.com/addyosmani/agent-skills",
+    "recurring_note": "↑ Day 7 — 117.5k+ stars; broad cross-agent adoption continues",
+    "hook": "Google Chrome DevTools lead Addy Osmani's 25 lifecycle skills for senior-engineering workflows — define → plan → build → verify → review → ship. Day 7 on trending. Ships specialist personas: code-reviewer, test-engineer, security-auditor, web-performance-auditor. Claude Code, Codex, Cursor, Gemini CLI, and Kiro.",
+    "categories": ["design", "workflow"],
+    "install": "/plugin marketplace add addyosmani/agent-skills && /plugin install agent-skills@addy-agent-skills"
+  },
+  {
+    "slug": "louis-cfm-coucou",
+    "name": "Coucou",
+    "primary_url": "https://github.com/Louis-CFM/coucou",
+    "hook": "Tiny macOS notch app that monitors Claude Code, Codex, Cursor, and Gemini CLI — surfaces agent permission requests in the notch and lets you approve them from your iPhone lock screen. 7.4k stars. Also supports Windows 10/11, Linux (AppImage/.deb/.rpm/NixOS), and Android 11+. MIT (code), by Louis Raillé.",
+    "categories": ["tools"],
+    "install": "brew tap louis-cfm/coucou https://github.com/Louis-CFM/coucou && brew install --cask coucou"
+  },
+  {
+    "slug": "leonxlnx-earshot",
+    "name": "Earshot",
+    "primary_url": "https://github.com/Leonxlnx/earshot",
+    "hook": "MCP server and CLI that gives coding agents ears and a voice: describes what a sound file contains in words, matches audio to text descriptions, locates moments in long recordings, checks whether audio is real or synthesized, reviews films with a listening transcript, and generates sounds from code recipes. Ships 252 built-in SFX. CPU-only (~1.1 GB model download), MIT, 5.3k stars.",
+    "categories": ["mcp", "design"],
+    "install": "uv tool install \"earshot[mcp] @ git+https://github.com/Leonxlnx/earshot\" && earshot doctor --fetch"
+  },
+  {
+    "slug": "haydenschmitty-floorplan",
+    "name": "Floorplan",
+    "primary_url": "https://github.com/haydenschmitty/floorplan",
+    "hook": "Claude or Codex reads your codebase and draws an interactive, plain-English map of it — no config, no embeddings, no vector store. Output is a navigable HTML file showing files, functions, and their relationships. 5.5k stars, MIT, by Hayden Smith. Node 18+ required; also works with Codex.",
+    "categories": ["skill", "tools"],
+    "install": "claude plugin marketplace add haydenschmitty/floorplan && claude plugin install floorplan@floorplan"
+  },
+  {
+    "slug": "sickn33-agentic-awesome-skills",
+    "name": "Agentic Awesome Skills (AAS Core)",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "recurring_note": "↑ Day 8 — 49.8k stars; v20.8.0 added Data Analytics and DevOps & Cloud bundles this week",
+    "hook": "49.8k stars, v20.8.0, 2,957+ SKILL.md playbooks across 13 specialized plugins. v20.8.0 this week adds Data Analytics and DevOps & Cloud bundles. Works across Claude Code, Codex, Cursor, Gemini CLI, Antigravity, GitHub Copilot, and Kiro.",
+    "categories": ["skill", "workflow"],
+    "install": "gh skill install sickn33/agentic-awesome-skills skills/<name>/SKILL.md --agent claude-code"
+  },
+  {
+    "slug": "alchaincyf-huashu-art-motion",
+    "name": "Huashu Art Motion",
+    "primary_url": "https://github.com/alchaincyf/huashu-art-motion",
+    "recurring_note": "↑ Day 7 — 7k stars; continued daily updates",
+    "hook": "36 art-style recipes — cave painting, Van Gogh, Bauhaus, Kubrick, 8-bit, Rick & Morty and more — plus 9 explainer-video grammars (Kurzgesagt, Vox, whiteboard, presenter). Renders frame-accurate clips from JSON specs via Playwright + ffmpeg. 7k stars. By the creator of huashu-design (29.5k stars).",
+    "categories": ["design", "skill"],
+    "install": "npx skills add alchaincyf/huashu-art-motion"
+  },
+  {
+    "slug": "zenstory-drama-skills",
+    "name": "Drama Skills (zenstory-ai)",
+    "primary_url": "https://github.com/zenstory-ai/drama-skills",
+    "recurring_note": "↑ Day 7 — 4.3k stars",
+    "hook": "AI short-drama and motion-comics workflow end to end: IP evaluation, script adaptation from novels, storyboard generation, character and scene design, and automated video review against brief. Pairs with huashu-art-motion for the visual layer. 4.3k stars. Claude Code, Codex, Antigravity, and OpenCode.",
+    "categories": ["skill", "design"],
+    "install": "npx skills add zenstory-ai/drama-skills -y -g"
+  },
+  {
+    "slug": "zenstory-oh-story-claudecode",
+    "name": "Oh Story (Chinese Web Novel Skills)",
+    "primary_url": "https://github.com/zenstory-ai/oh-story-claudecode",
+    "recurring_note": "↑ Day 7 — 8.6k stars; added cover-generation and anti-AI-prose modules earlier this week",
+    "hook": "Full-workflow skill pack for writing Chinese web novels: topic scouting from ranking sites, hit-novel deconstruction, long-form foreshadowing tracking, twist-short-story writing, anti-AI-prose stripping, and cover generation. Sister project to drama-skills from the same team. 8.6k stars.",
+    "categories": ["skill", "workflow"],
+    "install": "npx skills add zenstory-ai/oh-story-claudecode -y -g"
+  }
+]
