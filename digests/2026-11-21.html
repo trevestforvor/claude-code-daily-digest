@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — November 21, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — November 21, 2026</h1><p class="sub">Top 10 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/cathrynlavery/diagram-design">diagram-design</a></h3>
+  <p class="hook">Trending with 582 stars today (69.7k total) — an agent skill that draws any of 51 editorial diagram types as a single self-contained HTML+SVG file, with no build step. Brand colours and fonts are pulled from your site on first run, so every diagram matches your design system automatically.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">frontend · plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add cathrynlavery/diagram-design
+/plugin install diagram-design@diagram-design</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/meta/astryx">Astryx Design System</a></h3>
+  <p class="hook">Meta&#39;s internal design system — 150+ accessible React 19 components, now open-source and &#39;agent ready&#39;: running `npx @astryxdesign/cli init` writes your project&#39;s CLAUDE.md so Claude builds with Astryx components instead of guessing. 31.7k stars, 4,131 gained this week. Grew inside Meta for 8 years, powers 13,000+ apps.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">frontend · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>npm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex
+npm install -D @astryxdesign/cli
+npx @astryxdesign/cli init</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/google/elephant-goldfish-model">Elephant-Goldfish Model (EGM)</a></h3>
+  <p class="hook">Google Labs plugin for design and code review: the &#39;elephant&#39; agent holds full context and drafts specs; fresh &#39;goldfish&#39; reviewer subagents examine the draft cold, exposing unstated assumptions before you approve. 21.9k stars. Slash commands include /egm:draft, /egm:review, /egm:drift-report (compares docs to current source).</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · viral · marketplace · review</div>
+  <pre><button class="copy">copy</button><code>claude plugin marketplace add google/elephant-goldfish-model
+claude plugin install egm@egm</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.330</a></h3>
+  <p class="hook">Shipped Nov 20. Headline feature: Easel mod — a built-in mod that draws charts when you ask and auto-renders charts under MCP metrics results, available on Pro, Max, Team, and Enterprise (macOS/Linux). Also adds enterprise sign-in via `claude auth login`, `/fork` and `/workflows` commands in VS Code, and a `--start-dir` flag for self-hosted runners.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  
+  <pre><button class="copy">copy</button><code>claude update</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/GoogleChrome/modern-web-guidance-src">Modern Web Guidance</a></h3>
+  <p class="hook">Official Google Chrome, Edge, Firefox and MDN joint project: 262 modern web platform features and 204 real-world use cases packaged as an agent skill, so coding agents steer away from legacy patterns automatically. 9.8k stars, 5,224 gained this week. Runs `npx modern-web-guidance@latest install` and injects targeted guidance into the agent&#39;s context window as it works.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">context · viral · browser</div>
+  <pre><button class="copy">copy</button><code>npx modern-web-guidance@latest install</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/HKUDS/CLI-Anything">CLI-Anything</a></h3>
+  <p class="hook">Trending with 767 stars today (61.9k total). A 7-phase pipeline that generates a full Python CLI + REPL + JSON output + SKILL.md from any software codebase or repo, making it agent-native. CLI-Hub is the companion registry with ready-made CLIs for GIMP, Blender, LibreOffice, and Zotero. The meta-skill lets agents browse and install CLIs on their own.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · viral · marketplace · terminal</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add HKUDS/CLI-Anything
+/plugin install cli-anything</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/kajisho5/ffmpeg-skill">ffmpeg-skill</a></h3>
+  <p class="hook">9.2k stars, 3,268 this week. A local video-editing skill that exposes 42 FFmpeg tools to Claude Code, Cursor, and Codex — no cloud API required. Covers cuts, silence removal, 9:16 reframing, loudness normalization, HDR-to-SDR, green-screen, karaoke captions, and YouTube/Reels/TikTok delivery presets. An MCP server exposes every tool to any MCP client.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">video · viral</div>
+  <pre><button class="copy">copy</button><code>npx ffmpeg-skill setup</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/tradermonty/claude-trading-skills">Claude Trading Skills</a></h3>
+  <p class="hook">7.6k stars, 3,471 this week. A research and decision-process toolkit for equity investors: market regime analysis, VCP/CANSLIM/Stockbee-style screeners, position sizing, drawdown circuit-breaker, trade journaling, options strategy simulation, and earnings analysis — all as Claude Skills. A five-skill starter path runs without paid APIs using public CSVs and chart screenshots.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Tracer-Cloud/opensre">OpenSRE</a></h3>
+  <p class="hook">Trending with 450 stars today (13.9k total). An open-source CLI agent for CI/CD reliability in public alpha: when a CI run fails, it reads the logs, traces the cause, separates code failures from CI flakes, and pushes a fix to the PR branch for review. Posts summaries to Slack, PagerDuty, or Telegram. Integrates with GitHub, GitLab, Bitbucket, and Jenkins.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">viral · terminal</div>
+  <pre><button class="copy">copy</button><code>curl -fsSL https://install.opensre.com | bash -s -- -gh</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.getastra.com/mcp-integration">Astra Security MCP</a></h3>
+  <p class="hook">Official press release Nov 18. Connects Astra&#39;s autonomous pentesting platform to Claude Code (and GitHub Copilot, Cursor) via a hosted MCP server: query exploit-validated findings, start and schedule scans, triage vulnerabilities, generate reports, and get code-specific fixes — all from within the agent session. Single browser-auth setup.</p>
+  <div class="secondary">Also: <a href="https://www.globenewswire.com/news-release/2026/11/18/3406062/0/en/Astra-Security-Connects-Autonomous-Pentesting-to-Claude-Code-and-GitHub-Copilot-Through-New-MCP-Server.html">www.globenewswire.com/news-release/2026/11/18/3406062/0/en/Astra-Security-Connects-Autonomous-Pentesting-to-Claude-Code-and-GitHub-Copilot-Through-New-MCP-Server.html</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">browser · security</div>
+  <pre><button class="copy">copy</button><code>claude mcp add --transport http astra https://mcp.getastra.com/mcp</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
