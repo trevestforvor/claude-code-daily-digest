@@ -1,0 +1,83 @@
+[
+  {
+    "slug": "cathrynlavery-diagram-design",
+    "name": "diagram-design",
+    "primary_url": "https://github.com/cathrynlavery/diagram-design",
+    "hook": "Trending with 582 stars today (69.7k total) — an agent skill that draws any of 51 editorial diagram types as a single self-contained HTML+SVG file, with no build step. Brand colours and fonts are pulled from your site on first run, so every diagram matches your design system automatically.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add cathrynlavery/diagram-design\n/plugin install diagram-design@diagram-design"
+  },
+  {
+    "slug": "meta-astryx",
+    "name": "Astryx Design System",
+    "primary_url": "https://github.com/meta/astryx",
+    "hook": "Meta's internal design system — 150+ accessible React 19 components, now open-source and 'agent ready': running `npx @astryxdesign/cli init` writes your project's CLAUDE.md so Claude builds with Astryx components instead of guessing. 31.7k stars, 4,131 gained this week. Grew inside Meta for 8 years, powers 13,000+ apps.",
+    "categories": ["design"],
+    "install": "npm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex\nnpm install -D @astryxdesign/cli\nnpx @astryxdesign/cli init"
+  },
+  {
+    "slug": "google-elephant-goldfish-model",
+    "name": "Elephant-Goldfish Model (EGM)",
+    "primary_url": "https://github.com/google/elephant-goldfish-model",
+    "hook": "Google Labs plugin for design and code review: the 'elephant' agent holds full context and drafts specs; fresh 'goldfish' reviewer subagents examine the draft cold, exposing unstated assumptions before you approve. 21.9k stars. Slash commands include /egm:draft, /egm:review, /egm:drift-report (compares docs to current source).",
+    "categories": ["design", "skill"],
+    "install": "claude plugin marketplace add google/elephant-goldfish-model\nclaude plugin install egm@egm"
+  },
+  {
+    "slug": "claude-code-v2-1-330",
+    "name": "Claude Code v2.1.330",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Shipped Nov 20. Headline feature: Easel mod — a built-in mod that draws charts when you ask and auto-renders charts under MCP metrics results, available on Pro, Max, Team, and Enterprise (macOS/Linux). Also adds enterprise sign-in via `claude auth login`, `/fork` and `/workflows` commands in VS Code, and a `--start-dir` flag for self-hosted runners.",
+    "categories": ["mcp", "cost"],
+    "install": "claude update"
+  },
+  {
+    "slug": "googlechrome-modern-web-guidance-src",
+    "name": "Modern Web Guidance",
+    "primary_url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+    "hook": "Official Google Chrome, Edge, Firefox and MDN joint project: 262 modern web platform features and 204 real-world use cases packaged as an agent skill, so coding agents steer away from legacy patterns automatically. 9.8k stars, 5,224 gained this week. Runs `npx modern-web-guidance@latest install` and injects targeted guidance into the agent's context window as it works.",
+    "categories": ["skill"],
+    "install": "npx modern-web-guidance@latest install"
+  },
+  {
+    "slug": "hkuds-cli-anything",
+    "name": "CLI-Anything",
+    "primary_url": "https://github.com/HKUDS/CLI-Anything",
+    "hook": "Trending with 767 stars today (61.9k total). A 7-phase pipeline that generates a full Python CLI + REPL + JSON output + SKILL.md from any software codebase or repo, making it agent-native. CLI-Hub is the companion registry with ready-made CLIs for GIMP, Blender, LibreOffice, and Zotero. The meta-skill lets agents browse and install CLIs on their own.",
+    "categories": ["mcp", "skill"],
+    "install": "/plugin marketplace add HKUDS/CLI-Anything\n/plugin install cli-anything"
+  },
+  {
+    "slug": "kajisho5-ffmpeg-skill",
+    "name": "ffmpeg-skill",
+    "primary_url": "https://github.com/kajisho5/ffmpeg-skill",
+    "hook": "9.2k stars, 3,268 this week. A local video-editing skill that exposes 42 FFmpeg tools to Claude Code, Cursor, and Codex — no cloud API required. Covers cuts, silence removal, 9:16 reframing, loudness normalization, HDR-to-SDR, green-screen, karaoke captions, and YouTube/Reels/TikTok delivery presets. An MCP server exposes every tool to any MCP client.",
+    "categories": ["mcp", "skill"],
+    "install": "npx ffmpeg-skill setup"
+  },
+  {
+    "slug": "tradermonty-claude-trading-skills",
+    "name": "Claude Trading Skills",
+    "primary_url": "https://github.com/tradermonty/claude-trading-skills",
+    "hook": "7.6k stars, 3,471 this week. A research and decision-process toolkit for equity investors: market regime analysis, VCP/CANSLIM/Stockbee-style screeners, position sizing, drawdown circuit-breaker, trade journaling, options strategy simulation, and earnings analysis — all as Claude Skills. A five-skill starter path runs without paid APIs using public CSVs and chart screenshots.",
+    "categories": ["skill"],
+    "install": "See README"
+  },
+  {
+    "slug": "tracer-cloud-opensre",
+    "name": "OpenSRE",
+    "primary_url": "https://github.com/Tracer-Cloud/opensre",
+    "hook": "Trending with 450 stars today (13.9k total). An open-source CLI agent for CI/CD reliability in public alpha: when a CI run fails, it reads the logs, traces the cause, separates code failures from CI flakes, and pushes a fix to the PR branch for review. Posts summaries to Slack, PagerDuty, or Telegram. Integrates with GitHub, GitLab, Bitbucket, and Jenkins.",
+    "categories": ["mcp"],
+    "install": "curl -fsSL https://install.opensre.com | bash -s -- -gh"
+  },
+  {
+    "slug": "astra-mcp",
+    "name": "Astra Security MCP",
+    "primary_url": "https://www.getastra.com/mcp-integration",
+    "secondary_urls": ["https://www.globenewswire.com/news-release/2026/11/18/3406062/0/en/Astra-Security-Connects-Autonomous-Pentesting-to-Claude-Code-and-GitHub-Copilot-Through-New-MCP-Server.html"],
+    "hook": "Official press release Nov 18. Connects Astra's autonomous pentesting platform to Claude Code (and GitHub Copilot, Cursor) via a hosted MCP server: query exploit-validated findings, start and schedule scans, triage vulnerabilities, generate reports, and get code-specific fixes — all from within the agent session. Single browser-auth setup.",
+    "categories": ["mcp"],
+    "install": "claude mcp add --transport http astra https://mcp.getastra.com/mcp"
+  }
+]
