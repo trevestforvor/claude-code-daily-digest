@@ -1,0 +1,123 @@
+[
+  {
+    "slug": "alchaincyf-huashu-design",
+    "name": "huashu-design",
+    "primary_url": "https://github.com/alchaincyf/huashu-design",
+    "hook": "HTML-native design skill for Claude Code that outputs fully self-contained HTML/CSS/JS prototypes, slides, and motion graphics — no build step, no API key required for core rendering. Exports to HTML, PPTX, MP4, GIF, PDF, PNG, and SVG natively; local rendering works fully offline. By the creator of huashu-art-motion. ~30k stars, updated today.",
+    "categories": ["design", "skill"],
+    "install": "npx -y skills add alchaincyf/huashu-design --skill huashu-design --agent claude-code"
+  },
+  {
+    "slug": "arjun988-blender-skills",
+    "name": "Blender Skills",
+    "primary_url": "https://github.com/arjun988/blender-skills",
+    "hook": "94 Blender-specific Claude skills and 175+ curated reference files covering 3D modelling, rigging, animation, materials, and rendering — the agent navigates Blender's Python API without looking it up mid-task. Compatible with Claude Code, Cursor, Kiro, and Codex. ~1.1k stars.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add arjun988/blender-skills"
+  },
+  {
+    "slug": "google-stitch-skills",
+    "name": "Stitch Skills (Google Labs)",
+    "primary_url": "https://github.com/google-labs-code/stitch-skills",
+    "recurring_note": "↑ Day 7 — 11,570 stars, +326 today; #11 GitHub trending; grew from 8.7k stars at first coverage",
+    "hook": "Official Google Labs skill pack bridging Stitch and Claude Code across a full design-to-code loop: stitch-design converts code to screens and extracts DESIGN.md tokens; stitch-build converts Stitch screens to React, React Native, or React+Vite; stitch-utilities generates DESIGN.md and builds multi-page sites from one prompt. Requires Stitch MCP server.",
+    "categories": ["design", "skill"],
+    "install": "npx plugins add google-labs-code/stitch-skills --scope project --target claude-code"
+  },
+  {
+    "slug": "dietrichgebert-ponytail",
+    "name": "ponytail",
+    "primary_url": "https://github.com/DietrichGebert/ponytail",
+    "hook": "\"Lazy senior dev\" skill that trains Claude to write minimal, intention-revealing code: no boilerplate comments, no premature error handling, no abstractions until they earn their place. The most copy-clicked skill this week on ClaudePluginHub (563 clicks in 7 days). 197k stars.",
+    "categories": ["skill", "cost"],
+    "install": "/plugin marketplace add DietrichGebert/ponytail && /plugin install ponytail@ponytail"
+  },
+  {
+    "slug": "mjmirza-app-store-compliance",
+    "name": "App Store Compliance",
+    "primary_url": "https://github.com/mjmirza/app-store-compliance",
+    "hook": "124 App Store and Google Play rejection patterns packaged as a Claude Code skill — adds a /app-store-audit command and a pre-submit hook that flags violations before you submit your build. Trending on GitHub for 3 days (+720 stars today). 3.8k stars.",
+    "categories": ["skill"],
+    "install": "git clone https://github.com/mjmirza/app-store-compliance ~/repositories/app-store-compliance && bash ~/repositories/app-store-compliance/scripts/install.sh"
+  },
+  {
+    "slug": "elementalsouls-claude-bughunter",
+    "name": "Claude-BugHunter (elementalsouls)",
+    "primary_url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "recurring_note": "↑ Day 7 — #1 GitHub trending for the 7th consecutive day; 16,412 stars, +1,803 today",
+    "hook": "Authorized bug-bounty and red-team skill bundle: 83 skills and 15 slash commands grounded in 681 disclosed HackerOne report patterns. Covers web-app (XSS, SQLi, SSRF, IDOR, SSTI), enterprise platforms (M365/Entra, Okta, vCenter), and recon/OSINT. For authorized targets only.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add elementalsouls/Claude-BugHunter && /plugin install claude-bughunter@elementalsouls"
+  },
+  {
+    "slug": "coreyhaines31-marketingskills",
+    "name": "marketingskills",
+    "primary_url": "https://github.com/coreyhaines31/marketingskills",
+    "hook": "Marketing skills for Claude Code covering conversion copywriting, SEO analysis, analytics interpretation, and campaign briefs — the agent behaves like a senior digital marketer. 62k stars, updated November 20.",
+    "categories": ["skill"]
+  },
+  {
+    "slug": "ayghri-i-have-adhd",
+    "name": "i-have-adhd",
+    "primary_url": "https://github.com/ayghri/i-have-adhd",
+    "hook": "ADHD-friendly output skill that reformats every agent response: short sentences, one idea per line, bold key terms, a progress checklist at the top, and action items separated from explanations. Install once, affects all sessions. 61.9k stars.",
+    "categories": ["skill"]
+  },
+  {
+    "slug": "wshobson-agents",
+    "name": "agents (wshobson)",
+    "primary_url": "https://github.com/wshobson/agents",
+    "hook": "Multi-platform skill hub: write one Markdown spec and generators emit the SKILL.md, CLAUDE.md, .cursorrules, and Codex equivalents in one pass. Covers 40+ agent personas, plugins, and slash commands for Claude Code, Cursor, Codex, and Gemini CLI. 42.8k stars, updated today.",
+    "categories": ["skill", "tools"]
+  },
+  {
+    "slug": "othmanadi-planning-with-files",
+    "name": "planning-with-files",
+    "primary_url": "https://github.com/OthmanAdi/planning-with-files",
+    "hook": "Persistent file-based planning for long-running agent tasks: the skill writes a structured plan at the start, checks ~/.claude/projects/ for prior session data on each invocation, and resumes from the last checkpoint automatically — no manual \"where were we\" context reloads. 28.2k stars.",
+    "categories": ["skill", "workflow"],
+    "install": "/plugin marketplace add OthmanAdi/planning-with-files && /plugin install planning-with-files@planning-with-files"
+  },
+  {
+    "slug": "wanshuiyin-auto-research-sleep",
+    "name": "Auto-claude-code-research-in-sleep",
+    "primary_url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+    "hook": "Autonomous ML and AI research skills designed to run overnight: literature review loops, experiment design, baseline comparisons, and auto-generated write-ups — the agent keeps working while you sleep. 19.6k stars, updated November 19.",
+    "categories": ["skill", "workflow"]
+  },
+  {
+    "slug": "mvanhorn-last30days",
+    "name": "last30days-skill",
+    "primary_url": "https://github.com/mvanhorn/last30days-skill",
+    "recurring_note": "↑ Day 7 — 72,166 stars, +560 today; still #10 on GitHub trending",
+    "hook": "Research skill that queries 30+ sources in parallel (Reddit, HN, YouTube, X, Polymarket, GitHub, arXiv, Bluesky, DEV.to, Yahoo Finance, LinkedIn, Threads, TikTok, local files) and ranks results by engagement — upvotes, views, prediction-market volume — not SEO. Zero-config for Reddit, HN, Polymarket, and GitHub.",
+    "categories": ["skill", "workflow"],
+    "install": "/plugin marketplace add mvanhorn/last30days-skill && /plugin install last30days"
+  },
+  {
+    "slug": "cursor-plugins",
+    "name": "Cursor Plugins",
+    "primary_url": "https://github.com/cursor/plugins",
+    "recurring_note": "↑ Day 5 — 18,100 stars, +260 today; #5 GitHub trending; first covered Nov 18",
+    "hook": "Official Cursor multi-plugin marketplace spec and reference implementation — ships a .claude-plugin directory structure suggesting intentional cross-compatibility with Claude Code. Covers code review, PR canvases, Playwright, Gmail, GitHub, Salesforce, and dozens more plugins; now the de-facto reference for multi-agent plugin authoring.",
+    "categories": ["plugins", "tools"]
+  },
+  {
+    "slug": "thedotmack-claude-mem",
+    "name": "claude-mem",
+    "primary_url": "https://github.com/thedotmack/claude-mem",
+    "recurring_note": "↑ Day 13 — 119k stars; longest consecutive GitHub weekly trending streak in the Claude ecosystem",
+    "hook": "Persistent memory layer for Claude Code, Codex, Gemini CLI, Cursor, OpenCode, and more — 119k stars and 288+ releases. Entering its 13th consecutive day on GitHub weekly trending, the longest streak of any Claude ecosystem repo currently tracked.",
+    "categories": ["skill", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "sickn33-agentic-awesome-skills",
+    "name": "Agentic Awesome Skills (AAS Core)",
+    "primary_url": "https://github.com/sickn33/agentic-awesome-skills",
+    "recurring_note": "↑ Day 10 — 50.2k stars; v20.8.0 added Data Analytics and DevOps & Cloud bundles this week",
+    "hook": "50.2k stars, v20.8.0, 2,957+ SKILL.md playbooks across 13 specialized plugins. This week's v20.8.0 adds Data Analytics and DevOps & Cloud bundles. Works across Claude Code, Codex, Cursor, Gemini CLI, Antigravity, GitHub Copilot, and Kiro.",
+    "categories": ["skill", "workflow"],
+    "install": "gh skill install sickn33/agentic-awesome-skills skills/<name>/SKILL.md --agent claude-code"
+  }
+]
