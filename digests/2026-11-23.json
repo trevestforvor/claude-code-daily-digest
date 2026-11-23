@@ -1,0 +1,123 @@
+[
+  {
+    "slug": "vincentwei1021-video-shotcraft",
+    "name": "video-shotcraft",
+    "primary_url": "https://github.com/Vincentwei1021/video-shotcraft",
+    "hook": "AI video skill for Claude Code and Codex that ships editable product promos via Remotion. Packs 124 shot recipe cards, 209 motion previews, beat-synced cuts, a browser-based Motion Workbench editor, and optional social publishing. 22.3k stars, trending on GitHub today with 838 new stars.",
+    "categories": ["design", "video"],
+    "install": "npx skills add Vincentwei1021/video-shotcraft"
+  },
+  {
+    "slug": "qingyuna-answer-me-with-html",
+    "name": "answer-me-with-html",
+    "primary_url": "https://github.com/QingYunA/answer-me-with-html",
+    "secondary_urls": ["https://alphasignal.ai/news/answer-me-with-html-turns-ai-replies-into-visual-explainers-87-faster"],
+    "hook": "Agent skill that turns any hard question into a single offline HTML page complete with sequence diagrams, flow charts, tables, and three themes. AlphaSignal headline: \"87% faster visual explainers\" — the agent writes one-eighth the tokens while a bundled CLI handles all layout. 6.6k stars.",
+    "categories": ["design", "cost"],
+    "install": "npx skills add QingYunA/answer-me-with-html"
+  },
+  {
+    "slug": "rebelytics-one-skill-to-rule-them-all",
+    "name": "one-skill-to-rule-them-all",
+    "primary_url": "https://github.com/rebelytics/one-skill-to-rule-them-all",
+    "hook": "Meta-skill that watches your sessions, spots repeated corrections and emerging workflows, and proposes targeted updates to your existing skills — including itself. Every proposal cites its evidence; nothing touches a skill file until you approve it. 4k stars, updated Nov 23.",
+    "categories": ["design", "skills"],
+    "install": "npx skills@1.8.1 add rebelytics/one-skill-to-rule-them-all --skill task-observer"
+  },
+  {
+    "slug": "alchaincyf-darwin-skill",
+    "name": "Darwin.skill",
+    "primary_url": "https://github.com/alchaincyf/darwin-skill",
+    "hook": "AutoResearch-inspired autonomous skill optimization: an independent agent runs the updated skill on real tasks, blind A/B judges compare old vs. new, and changes are kept or reverted. Shorter versions win ties. Zero-token `darwin.py check` scans all skills for routing errors and leaked secrets. 7k stars.",
+    "categories": ["cost", "skills"],
+    "install": "npx skills add alchaincyf/darwin-skill"
+  },
+  {
+    "slug": "claude-code-v2-1-326-327",
+    "name": "Claude Code v2.1.326–327",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "v2.1.326 (Nov 16): Code Mode now works while agent teams are running. v2.1.327 (Nov 17): `/status` lists broken skill, command, and hook files plus keybinding errors; `claude mcp add-json <name> -` reads server JSON from stdin so tokens never touch the command line.",
+    "categories": ["official"],
+    "install": "See README"
+  },
+  {
+    "slug": "shanraisshan-claude-code-best-practice",
+    "name": "claude-code-best-practice",
+    "primary_url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "hook": "\"From vibe coding to agentic engineering\" — the #1 repo on the claude-code-skills GitHub topic at 69.4k stars. Covers every Claude Code surface: subagents, commands, skills, workflows, hooks, MCPs, plugins, and beta features. Includes 84 attributed tips and cross-model workflows with Codex and Gemini CLI.",
+    "categories": ["education"],
+    "install": "See README"
+  },
+  {
+    "slug": "code-yeongyu-oh-my-openagent",
+    "name": "oh-my-openagent (OmO)",
+    "primary_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "hook": "Add \"ultrawork\" to any prompt: OmO reads the codebase, plans, verifies every step, and stops only when done. Add \"mass ulw\" to fan out into parallel agents, each assigned to the right model and checked before merge. 71.1k stars; supports Claude, ChatGPT, Codex, Cursor, Gemini, and OpenCode.",
+    "categories": ["mcp", "cost"],
+    "install": "curl -fsSL https://get.omo.dev/install.sh | bash"
+  },
+  {
+    "slug": "alchaincyf-nuwa-skill",
+    "name": "Nuwa.skill (女娲.skill)",
+    "primary_url": "https://github.com/alchaincyf/nuwa-skill",
+    "hook": "Distills how a person thinks — speaking style, decision heuristics, anti-patterns, stated limits — into a deployable Agent Skill via a five-layer extraction pipeline. Ships 15 official person skills (Jobs, Munger, Feynman, Musk, and more) with A-grade fidelity scores from blind-tested agents. 38.9k stars.",
+    "categories": ["skills"],
+    "install": "npx skills add alchaincyf/nuwa-skill"
+  },
+  {
+    "slug": "alirezarezvani-claude-skills",
+    "name": "claude-skills (alirezarezvani)",
+    "primary_url": "https://github.com/alirezarezvani/claude-skills",
+    "hook": "410+ skills and 120+ agents covering engineering, marketing, product, compliance, C-suite advisory, research, and finance — all on the open Agent Skills standard and cross-compatible with ten coding agents. 30.3k stars, updated Nov 23.",
+    "categories": ["skills"],
+    "install": "npx skills add alirezarezvani/claude-skills"
+  },
+  {
+    "slug": "browser-act-skills",
+    "name": "browser-act/skills",
+    "primary_url": "https://github.com/browser-act/skills",
+    "hook": "Browser automation CLI built for AI agents: stealth fingerprints, TLS rotation, proxy switching, CAPTCHA solving, and a `remote-assist` command that generates a live handoff link so a human can take over from any device — then the agent resumes. 30+ prebuilt skill recipes in Solutions Catalog. 6.4k stars.",
+    "categories": ["mcp", "skills"],
+    "install": "See README (docs/installation.md)"
+  },
+  {
+    "slug": "michael-denyer-pstack-claude",
+    "name": "pstack-claude",
+    "primary_url": "https://github.com/michael-denyer/pstack-claude",
+    "hook": "Ports Poteto's rigorous pstack agent workflows — research-then-plan, build-and-review, ship — to Claude Code, Codex, Copilot, Gemini CLI, and others. Trending on the claude-code-skills topic; updated Nov 23. 4.8k stars.",
+    "categories": ["skills"],
+    "install": "See README"
+  },
+  {
+    "slug": "rohitg00-awesome-claude-code-toolkit",
+    "name": "awesome-claude-code-toolkit",
+    "primary_url": "https://github.com/rohitg00/awesome-claude-code-toolkit",
+    "hook": "Declared the most comprehensive Claude Code toolkit: 135 agents, 35 curated skills, 42 commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, 14 MCP configs, 26 companion apps. Install via plugin marketplace with one command. 2.9k stars.",
+    "categories": ["skills", "mcp"],
+    "install": "/plugin marketplace add rohitg00/awesome-claude-code-toolkit"
+  },
+  {
+    "slug": "firecrawl-firecrawl",
+    "name": "Firecrawl",
+    "primary_url": "https://github.com/firecrawl/firecrawl",
+    "hook": "Knowledge infrastructure for agents: search, scrape, and access 550+ data providers through one API. #6 on GitHub trending today, 207.6k stars with +920 new. Official MCP server means Claude Code agents can call it natively for grounded, real-time web research.",
+    "categories": ["mcp"],
+    "install": "See README"
+  },
+  {
+    "slug": "producthunt-mcp",
+    "name": "Product Hunt MCP Server",
+    "primary_url": "https://producthunt.com/mcp/install",
+    "hook": "Official Product Hunt MCP server launched Nov 9: Claude and other agents can search the leaderboard, compare products, read reviews, draft a launch, add images, preview it, and submit after user confirmation. Browser-based OAuth — no manual API tokens. Supports Claude, ChatGPT, Cursor, and VS Code.",
+    "categories": ["mcp"],
+    "install": "See https://producthunt.com/mcp/install"
+  },
+  {
+    "slug": "the911fund-skill-of-skills",
+    "name": "skill-of-skills",
+    "primary_url": "https://github.com/the911fund/skill-of-skills",
+    "hook": "Quality-ranked discovery engine for AI coding skills, plugins, and MCP servers across Claude Code, Codex, Cursor, and Gemini CLI. Early-stage at 82 stars but already appearing in multiple trending aggregators as a go-to tool for curated skill discovery.",
+    "categories": ["skills", "mcp"],
+    "install": "See README"
+  }
+]
