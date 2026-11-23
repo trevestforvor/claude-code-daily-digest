@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — November 23, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — November 23, 2026</h1><p class="sub">Top 15 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/Vincentwei1021/video-shotcraft">video-shotcraft</a></h3>
+  <p class="hook">AI video skill for Claude Code and Codex that ships editable product promos via Remotion. Packs 124 shot recipe cards, 209 motion previews, beat-synced cuts, a browser-based Motion Workbench editor, and optional social publishing. 22.3k stars, trending on GitHub today with 838 new stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">video</span>  </div>
+  <div class="tags">skill · viral · browser</div>
+  <pre><button class="copy">copy</button><code>npx skills add Vincentwei1021/video-shotcraft</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/QingYunA/answer-me-with-html">answer-me-with-html</a></h3>
+  <p class="hook">Agent skill that turns any hard question into a single offline HTML page complete with sequence diagrams, flow charts, tables, and three themes. AlphaSignal headline: &quot;87% faster visual explainers&quot; — the agent writes one-eighth the tokens while a bundled CLI handles all layout. 6.6k stars.</p>
+  <div class="secondary">Also: <a href="https://alphasignal.ai/news/answer-me-with-html-turns-ai-replies-into-visual-explainers-87-faster">alphasignal.ai/news/answer-me-with-html-turns-ai-replies-into-visual-explainers-87-faster</a></div>
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">skill · token · local · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>npx skills add QingYunA/answer-me-with-html</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/rebelytics/one-skill-to-rule-them-all">one-skill-to-rule-them-all</a></h3>
+  <p class="hook">Meta-skill that watches your sessions, spots repeated corrections and emerging workflows, and proposes targeted updates to your existing skills — including itself. Every proposal cites its evidence; nothing touches a skill file until you approve it. 4k stars, updated Nov 23.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">skill · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills@1.8.1 add rebelytics/one-skill-to-rule-them-all --skill task-observer</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/alchaincyf/darwin-skill">Darwin.skill</a></h3>
+  <p class="hook">AutoResearch-inspired autonomous skill optimization: an independent agent runs the updated skill on real tasks, blind A/B judges compare old vs. new, and changes are kept or reverted. Shorter versions win ties. Zero-token `darwin.py check` scans all skills for routing errors and leaked secrets. 7k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">skill · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add alchaincyf/darwin-skill</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.326–327</a></h3>
+  <p class="hook">v2.1.326 (Nov 16): Code Mode now works while agent teams are running. v2.1.327 (Nov 17): `/status` lists broken skill, command, and hook files plus keybinding errors; `claude mcp add-json &lt;name&gt; -` reads server JSON from stdin so tokens never touch the command line.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">official</span>  </div>
+  <div class="tags">mcp · skill · token · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/shanraisshan/claude-code-best-practice">claude-code-best-practice</a></h3>
+  <p class="hook">&quot;From vibe coding to agentic engineering&quot; — the #1 repo on the claude-code-skills GitHub topic at 69.4k stars. Covers every Claude Code surface: subagents, commands, skills, workflows, hooks, MCPs, plugins, and beta features. Includes 84 attributed tips and cross-model workflows with Codex and Gemini CLI.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">education</span>  </div>
+  <div class="tags">agent · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/code-yeongyu/oh-my-openagent">oh-my-openagent (OmO)</a></h3>
+  <p class="hook">Add &quot;ultrawork&quot; to any prompt: OmO reads the codebase, plans, verifies every step, and stops only when done. Add &quot;mass ulw&quot; to fan out into parallel agents, each assigned to the right model and checked before merge. 71.1k stars; supports Claude, ChatGPT, Codex, Cursor, Gemini, and OpenCode.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>curl -fsSL https://get.omo.dev/install.sh | bash</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/alchaincyf/nuwa-skill">Nuwa.skill (女娲.skill)</a></h3>
+  <p class="hook">Distills how a person thinks — speaking style, decision heuristics, anti-patterns, stated limits — into a deployable Agent Skill via a five-layer extraction pipeline. Ships 15 official person skills (Jobs, Munger, Feynman, Musk, and more) with A-grade fidelity scores from blind-tested agents. 38.9k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">skill · viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add alchaincyf/nuwa-skill</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/alirezarezvani/claude-skills">claude-skills (alirezarezvani)</a></h3>
+  <p class="hook">410+ skills and 120+ agents covering engineering, marketing, product, compliance, C-suite advisory, research, and finance — all on the open Agent Skills standard and cross-compatible with ten coding agents. 30.3k stars, updated Nov 23.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npx skills add alirezarezvani/claude-skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/browser-act/skills">browser-act/skills</a></h3>
+  <p class="hook">Browser automation CLI built for AI agents: stealth fingerprints, TLS rotation, proxy switching, CAPTCHA solving, and a `remote-assist` command that generates a live handoff link so a human can take over from any device — then the agent resumes. 30+ prebuilt skill recipes in Solutions Catalog. 6.4k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">skill · proxy · viral · terminal · browser</div>
+  <pre><button class="copy">copy</button><code>See README (docs/installation.md)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/michael-denyer/pstack-claude">pstack-claude</a></h3>
+  <p class="hook">Ports Poteto&#39;s rigorous pstack agent workflows — research-then-plan, build-and-review, ship — to Claude Code, Codex, Copilot, Gemini CLI, and others. Trending on the claude-code-skills topic; updated Nov 23. 4.8k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/rohitg00/awesome-claude-code-toolkit">awesome-claude-code-toolkit</a></h3>
+  <p class="hook">Declared the most comprehensive Claude Code toolkit: 135 agents, 35 curated skills, 42 commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, 14 MCP configs, 26 companion apps. Install via plugin marketplace with one command. 2.9k stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">plugin · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add rohitg00/awesome-claude-code-toolkit</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/firecrawl/firecrawl">Firecrawl</a></h3>
+  <p class="hook">Knowledge infrastructure for agents: search, scrape, and access 550+ data providers through one API. #6 on GitHub trending today, 207.6k stars with +920 new. Official MCP server means Claude Code agents can call it natively for grounded, real-time web research.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://producthunt.com/mcp/install">Product Hunt MCP Server</a></h3>
+  <p class="hook">Official Product Hunt MCP server launched Nov 9: Claude and other agents can search the leaderboard, compare products, read reviews, draft a launch, add images, preview it, and submit after user confirmation. Browser-based OAuth — no manual API tokens. Supports Claude, ChatGPT, Cursor, and VS Code.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">token · browser</div>
+  <pre><button class="copy">copy</button><code>See https://producthunt.com/mcp/install</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/the911fund/skill-of-skills">skill-of-skills</a></h3>
+  <p class="hook">Quality-ranked discovery engine for AI coding skills, plugins, and MCP servers across Claude Code, Codex, Cursor, and Gemini CLI. Early-stage at 82 stars but already appearing in multiple trending aggregators as a go-to tool for curated skill discovery.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">skill · viral · terminal</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
