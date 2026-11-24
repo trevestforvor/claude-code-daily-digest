@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "emilkowalski-skills",
+    "name": "Emil Kowalski Skills",
+    "primary_url": "https://github.com/emilkowalski/skills",
+    "hook": "35K+ GitHub stars (Sep 2026 snapshot) and 250K+ installs on skills.sh — Emil Kowalski's craft-focused design-engineering philosophy packaged as Claude Code skills. The flagship `emil-design-eng` skill encodes Kowalski's interface-building heuristics directly into Claude's context, making it the go-to for designers who code.",
+    "categories": ["design", "skills"],
+    "install": "npx skills add https://github.com/emilkowalski/skills --skill emil-design-eng"
+  },
+  {
+    "slug": "claude-code-v2-1-331",
+    "name": "Claude Code v2.1.331",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Shipped November 23 — Code Mode now works in terminal sessions on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry, and Claude Platform on AWS. Plugins can declare `optionalDependencies` so individual bundled tools can be disabled without removing the whole plugin. `claude doctor` gains an API connectivity diagnostic section.",
+    "categories": ["official"],
+    "install": "npm install -g @anthropic-ai/claude-code@latest"
+  },
+  {
+    "slug": "mattpocock-skills",
+    "name": "Matt Pocock Skills",
+    "primary_url": "https://github.com/mattpocock/skills",
+    "hook": "311K+ GitHub stars (trending with 1,164 new stars on a single day ~3 weeks ago) and v1.3.2 — Matt Pocock's personal `.claude` setup now public as 27 skills for real engineers. Covers grill-me, claude-handoff, and curated real-world engineering practices. Listed in Anthropic's official marketplace; install in one command.",
+    "categories": ["skills"],
+    "install": "See README"
+  },
+  {
+    "slug": "blader-humanizer",
+    "name": "Humanizer",
+    "primary_url": "https://github.com/blader/humanizer",
+    "hook": "60K+ stars (Oct 24 snapshot, enterprisedna.co) — a single SKILL.md that detects and rewrites 29 AI-writing patterns sourced from Wikipedia's Signs of AI Writing guide. Includes optional voice-calibration and an automatic second-pass audit. MIT, zero dependencies.",
+    "categories": ["skills", "writing"],
+    "install": "See README"
+  },
+  {
+    "slug": "opus-4-8-fast-mode-eol",
+    "name": "Opus 4.8 Fast Mode Sunset — Nov 30",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Hard deadline: November 30, 2026. After removal, fast mode on Claude Opus 4.8 returns an error with no silent fallback — it will not revert to standard Opus 4.8. Teams relying on fast mode must migrate to Opus 5.5 before the cutoff to avoid broken workflows.",
+    "categories": ["cost", "official"]
+  },
+  {
+    "slug": "unity-claude-code-plugin",
+    "name": "Unity Plugin for Claude Code",
+    "primary_url": "https://unity.com/blog/unity-plugin-for-claude-code",
+    "secondary_urls": ["https://docs.unity.com/en-us/ai/unity-plugin/claude-code"],
+    "hook": "Official Unity × Anthropic partnership — 29 built-in engine skills covering URP, UI Toolkit, Multiplayer, LevelPlay, and in-app purchases, plus an MCP server for live Editor control. Listed in Claude's partner plugin marketplace. Only Claude Code supported at launch, more agents coming later.",
+    "categories": ["mcp", "skills"],
+    "install": "/plugin install unity@unity-agent-plugin"
+  },
+  {
+    "slug": "jakeschincariol-youtube-agent-skill",
+    "name": "YouTube Agent Skill",
+    "primary_url": "https://github.com/Jakeschincariol/youtube-agent-skill",
+    "hook": "11 skills that give Claude Code a full YouTube channel workflow: scripts from 21 hook formulas with a scored hook, title + thumbnail linted as one pairing, an edit decision list from your transcript, a retention reader that finds where viewers actually leave, a Shorts cutter, and a virality engine. 3.2K stars on Claude Marketplaces.",
+    "categories": ["skills", "content"],
+    "install": "See README"
+  },
+  {
+    "slug": "sergebulaev-youtube-skills",
+    "name": "YouTube Shorts Marketing Skills",
+    "primary_url": "https://github.com/sergebulaev/youtube-skills",
+    "hook": "YouTube and Shorts marketing skills for Claude Code and Codex: high-CTR title generation, SEO descriptions, retention-hook writing, thumbnail concepts, and content-plan creation. Integrates with Publora for publishing. MIT-licensed — a leaner complement to the Jakeschincariol YouTube agent skill.",
+    "categories": ["skills", "content"],
+    "install": "See README"
+  }
+]
