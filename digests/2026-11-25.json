@@ -1,0 +1,118 @@
+[
+  {
+    "slug": "claude-code-v2-1-332-mcp-skills",
+    "name": "Claude Code v2.1.332 — Skills from MCP Servers (Beta)",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "Anthropic shipped v2.1.332 today, adding Skills from MCP servers in beta — MCP servers now push skills directly into Claude Code's `/` slash menu as `server:skill` entries, no manual installs needed. A new `PreSkillShellCommand` hook lets admins gate inline shell commands a skill tries to execute. The `sonnet` alias on GCP and Foundry now resolves to Sonnet 5.5; Foundry's default model also moves to Sonnet 5.5.",
+    "categories": ["mcp", "official"]
+  },
+  {
+    "slug": "claude-code-v2-1-330-easel",
+    "name": "Claude Code v2.1.330 — easel Charts + 30-Day Loops",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "hook": "v2.1.330 (Nov 20) shipped `easel`, a built-in mod on Pro/Max/Team/Enterprise that automatically draws interactive charts in macOS and Linux sessions — toggle it off in `/config`. The same release extended recurring `/loop` and scheduled task runs from 7 to 30 days, and added Enterprise sign-in via Anthropic's Enterprise Admin Console.",
+    "categories": ["design", "official"],
+    "install": "Update Claude Code; toggle automatic charts off via `/config`"
+  },
+  {
+    "slug": "beaglelathe-lathe",
+    "name": "BeagleLathe — MCP Server That Collapses Tool Call Round-Trips",
+    "primary_url": "https://github.com/BeagleLathe/lathe",
+    "secondary_urls": ["https://www.producthunt.com/p/beaglelathe/beaglelathe"],
+    "hook": "BeagleLathe is a local MCP server for Claude Code with 11 tools that collapse common 3-5 round-trip sequences into a single call. The maker's 9-fixture benchmark reports ~46% fewer tool calls, ~10% lower cost, and ~29% faster runs (same model, both sides). Free tier: 200 calls/month.",
+    "categories": ["cost", "mcp"],
+    "install": "uv tool install beaglelathe"
+  },
+  {
+    "slug": "juliusbrussee-caveman",
+    "name": "JuliusBrussee/caveman — Claude Speaks Caveman, Saves 65% Output Tokens",
+    "primary_url": "https://github.com/JuliusBrussee/caveman",
+    "hook": "Caveman is a Claude Code skill that makes the agent write terse cave-person prose (dropping filler, using fragments) while keeping code, commands, and errors verbatim intact. Creator's 10-prompt benchmark: ~65% output token reduction, 22-87% range depending on task. MIT licensed. Trending on GitHub. The `/caveman-compress` command also rewrites CLAUDE.md files for ~46% input savings.",
+    "categories": ["cost", "skill"],
+    "install": "claude plugin marketplace add JuliusBrussee/caveman && claude plugin install caveman@caveman"
+  },
+  {
+    "slug": "cocoindex-code",
+    "name": "CocoIndex Code — AST-Aware Semantic Search MCP for Your Codebase",
+    "primary_url": "https://www.cocoindex.io/cocoindex-code",
+    "secondary_urls": ["https://www.producthunt.com/products/cocoindex-code"],
+    "hook": "CocoIndex Code is an open-source Tree-sitter-based MCP that indexes your repo into AST-aware chunks, embeds them incrementally, and serves results in a single tool call. Apache 2.0, latest v0.2.22. The dev who built it reported going viral with 54k views on a post about saving ~70% of codebase-lookup tokens. 'Launched this week' per Product Hunt.",
+    "categories": ["cost", "mcp"],
+    "install": "pip install cocoindex-code && claude mcp add cocoindex-code -- ccc mcp"
+  },
+  {
+    "slug": "skillsovermcp-com",
+    "name": "SkillsOverMCP.com — Host Any GitHub Skills Repo as an MCP Endpoint",
+    "primary_url": "https://www.skillsovermcp.com/",
+    "secondary_urls": ["https://github.com/skills-mcp/skills-mcp"],
+    "hook": "SkillsOverMCP.com turns any public GitHub repo of SKILL.md files into a live remote MCP endpoint — free, open source. Site launched November 21, 2026. With v2.1.332 shipping native MCP skills support today, any existing skills repo (mattpocock/skills, trailofbits/skills, etc.) now becomes a zero-config distributable server.",
+    "categories": ["mcp", "workflow"],
+    "install": "Add the generated endpoint via: claude mcp add --transport http <name> <skillsovermcp-url>"
+  },
+  {
+    "slug": "czlonkowski-n8n-skills",
+    "name": "czlonkowski/n8n-skills — 14-Skill Pack for Building n8n Workflows",
+    "primary_url": "https://github.com/czlonkowski/n8n-skills",
+    "hook": "14 Claude Code skills plus a router skill and hooks enforcement layer for building flawless n8n workflows. At 6.1k-6.5k GitHub stars with 1k forks, it's the most-starred n8n+Claude integration in the ecosystem. Requires the companion n8n-mcp MCP server. Skills cover workflow patterns, error handling, debugging, and execution.",
+    "categories": ["workflow", "skills"],
+    "install": "claude plugin install n8n-skills@czlonkowski"
+  },
+  {
+    "slug": "trailofbits-skills",
+    "name": "trailofbits/skills — 60+ Security Audit Skills, Now Serveable via MCP",
+    "primary_url": "https://github.com/trailofbits/skills",
+    "secondary_urls": ["https://www.skillsovermcp.com/connect/trailofbits/skills"],
+    "hook": "Trail of Bits' security skills collection covers static analysis, Slither smart contract review, fuzzing patterns, and audit workflows. At 6.8k-8k GitHub stars it's the most-starred security skills repo in the ecosystem. With today's v2.1.332 MCP skills support, the trailofbits endpoint on SkillsOverMCP.com now serves 60 skills natively in Claude Code's slash menu.",
+    "categories": ["security", "skills"],
+    "install": "claude skill install trailofbits/skills"
+  },
+  {
+    "slug": "sambhav-mcp-demo",
+    "name": "sambhav/mcp-demo — Reference Server for Skills over MCP (SEP-2640)",
+    "primary_url": "https://github.com/sambhav/mcp-demo",
+    "hook": "A Python reference MCP server implementing Agent Skills over MCP with per-client negotiation, as specced in SEP-2640. Skills are served via the resources tier — now the right way to implement for Claude Code v2.1.332's native MCP skills feature. The clearest working example of the new protocol today.",
+    "categories": ["mcp", "skills"],
+    "install": "See README"
+  },
+  {
+    "slug": "apple-xcode-plugin",
+    "name": "Apple Xcode Plugin for Claude Code — Official, Ships via xcrun",
+    "primary_url": "https://claudemarketplaces.com/plugins/anthropics-claude-plugins-official/xcode",
+    "hook": "Apple published an official Xcode plugin to `anthropics/claude-plugins-official` on November 6, 2026 (author: Apple Inc.). The plugin runs `xcrun agent plugin path --plugin-format claude` to generate skills from the local Xcode installation, covering build, run, test, and Apple developer docs search. No downloaded files — skills are generated fresh from your installed Xcode.",
+    "categories": ["official", "plugin"],
+    "install": "/plugin marketplace add anthropics/claude-plugins-official && claude plugin install xcode@claude-plugins-official"
+  },
+  {
+    "slug": "traxagent",
+    "name": "TraxAgent — Per-Developer AI Spend Intelligence with MCP",
+    "primary_url": "https://www.producthunt.com/p/traxagent",
+    "hook": "TraxAgent monitors Claude Code, Codex, and Cursor spend per developer, fires team alerts at 50/80/100% of budget, runs 14 nightly checks plus an AI review, and ships an MCP server so agents can query their own spend. Read-only admin key — no proxy, no SDK. Free up to $100/month in API spend.",
+    "categories": ["cost"],
+    "install": "See README (MCP server config at traxagent.io)"
+  },
+  {
+    "slug": "anthropic-champion-kit",
+    "name": "champion-kit — Anthropic Official Champions Productivity Plugin",
+    "primary_url": "https://claudemarketplaces.com/plugins/anthropics-claude-plugins-official/champion-kit",
+    "hook": "Anthropic's official champion-kit plugin (7 skills + 1 agent) helps designated Claude Code Champions run internal hackathons and office hours, identify patterns worth sharing across teams, and produce AI maturity reports. Ships via the official claude-plugins-official marketplace.",
+    "categories": ["official", "plugin"],
+    "install": "claude plugin install champion-kit@claude-plugins-official"
+  },
+  {
+    "slug": "davila7-claude-code-templates-mcp-skills",
+    "name": "claude-code-templates — Adds Skills over MCP Component (PR #1701)",
+    "primary_url": "https://github.com/davila7/claude-code-templates/pull/1701",
+    "hook": "PR #1701 in the popular claude-code-templates repo adds a Skills over MCP component to the template registry, targeting Claude Code 2.1.331+. Ships a remote example server serving two skills with no tools surface — the most copy-paste-ready starting point for projects that want to distribute skills over MCP.",
+    "categories": ["mcp", "workflow"],
+    "install": "See README"
+  },
+  {
+    "slug": "mantrana-mcp",
+    "name": "Mantrana — 4-Juror AI Spec Review via MCP Inside Claude Code",
+    "primary_url": "https://www.producthunt.com/p/mantrana",
+    "secondary_urls": ["https://www.producthunt.com/p/mantrana/what-we-shipped-mantrana-now-speaks-mcp-bring-the-spec-council-into-claude-code"],
+    "hook": "Mantrana routes a technical brief through 4 specialist AI 'jurors' to produce a reviewed, phased spec document. This week the team shipped MCP support, letting Claude Code users invoke the spec council directly from the terminal. Useful for teams wanting adversarial review before implementation.",
+    "categories": ["mcp", "workflow"],
+    "install": "claude mcp add --transport http mantrana https://mantrana.co/mcp"
+  }
+]
