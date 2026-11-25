@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — November 25, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — November 25, 2026</h1><p class="sub">Top 14 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.332 — Skills from MCP Servers (Beta)</a></h3>
+  <p class="hook">Anthropic shipped v2.1.332 today, adding Skills from MCP servers in beta — MCP servers now push skills directly into Claude Code&#39;s `/` slash menu as `server:skill` entries, no manual installs needed. A new `PreSkillShellCommand` hook lets admins gate inline shell commands a skill tries to execute. The `sonnet` alias on GCP and Foundry now resolves to Sonnet 5.5; Foundry&#39;s default model also moves to Sonnet 5.5.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">official</span>  </div>
+  <div class="tags">skill · anthropic</div>
+  
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Claude Code v2.1.330 — easel Charts + 30-Day Loops</a></h3>
+  <p class="hook">v2.1.330 (Nov 20) shipped `easel`, a built-in mod on Pro/Max/Team/Enterprise that automatically draws interactive charts in macOS and Linux sessions — toggle it off in `/config`. The same release extended recurring `/loop` and scheduled task runs from 7 to 30 days, and added Enterprise sign-in via Anthropic&#39;s Enterprise Admin Console.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">official</span>  </div>
+  <div class="tags">anthropic</div>
+  <pre><button class="copy">copy</button><code>Update Claude Code; toggle automatic charts off via `/config`</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/BeagleLathe/lathe">BeagleLathe — MCP Server That Collapses Tool Call Round-Trips</a></h3>
+  <p class="hook">BeagleLathe is a local MCP server for Claude Code with 11 tools that collapse common 3-5 round-trip sequences into a single call. The maker&#39;s 9-fixture benchmark reports ~46% fewer tool calls, ~10% lower cost, and ~29% faster runs (same model, both sides). Free tier: 200 calls/month.</p>
+  <div class="secondary">Also: <a href="https://www.producthunt.com/p/beaglelathe/beaglelathe">www.producthunt.com/p/beaglelathe/beaglelathe</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  
+  <pre><button class="copy">copy</button><code>uv tool install beaglelathe</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/JuliusBrussee/caveman">JuliusBrussee/caveman — Claude Speaks Caveman, Saves 65% Output Tokens</a></h3>
+  <p class="hook">Caveman is a Claude Code skill that makes the agent write terse cave-person prose (dropping filler, using fragments) while keeping code, commands, and errors verbatim intact. Creator&#39;s 10-prompt benchmark: ~65% output token reduction, 22-87% range depending on task. MIT licensed. Trending on GitHub. The `/caveman-compress` command also rewrites CLAUDE.md files for ~46% input savings.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · token · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>claude plugin marketplace add JuliusBrussee/caveman &amp;&amp; claude plugin install caveman@caveman</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.cocoindex.io/cocoindex-code">CocoIndex Code — AST-Aware Semantic Search MCP for Your Codebase</a></h3>
+  <p class="hook">CocoIndex Code is an open-source Tree-sitter-based MCP that indexes your repo into AST-aware chunks, embeds them incrementally, and serves results in a single tool call. Apache 2.0, latest v0.2.22. The dev who built it reported going viral with 54k views on a post about saving ~70% of codebase-lookup tokens. &#39;Launched this week&#39; per Product Hunt.</p>
+  <div class="secondary">Also: <a href="https://www.producthunt.com/products/cocoindex-code">www.producthunt.com/products/cocoindex-code</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">token</div>
+  <pre><button class="copy">copy</button><code>pip install cocoindex-code &amp;&amp; claude mcp add cocoindex-code -- ccc mcp</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.skillsovermcp.com/">SkillsOverMCP.com — Host Any GitHub Skills Repo as an MCP Endpoint</a></h3>
+  <p class="hook">SkillsOverMCP.com turns any public GitHub repo of SKILL.md files into a live remote MCP endpoint — free, open source. Site launched November 21, 2026. With v2.1.332 shipping native MCP skills support today, any existing skills repo (mattpocock/skills, trailofbits/skills, etc.) now becomes a zero-config distributable server.</p>
+  <div class="secondary">Also: <a href="https://github.com/skills-mcp/skills-mcp">github.com/skills-mcp/skills-mcp</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">skill</div>
+  <pre><button class="copy">copy</button><code>Add the generated endpoint via: claude mcp add --transport http &lt;name&gt; &lt;skillsovermcp-url&gt;</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/czlonkowski/n8n-skills">czlonkowski/n8n-skills — 14-Skill Pack for Building n8n Workflows</a></h3>
+  <p class="hook">14 Claude Code skills plus a router skill and hooks enforcement layer for building flawless n8n workflows. At 6.1k-6.5k GitHub stars with 1k forks, it&#39;s the most-starred n8n+Claude integration in the ecosystem. Requires the companion n8n-mcp MCP server. Skills cover workflow patterns, error handling, debugging, and execution.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">mcp · skill · plugin · proxy</div>
+  <pre><button class="copy">copy</button><code>claude plugin install n8n-skills@czlonkowski</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/trailofbits/skills">trailofbits/skills — 60+ Security Audit Skills, Now Serveable via MCP</a></h3>
+  <p class="hook">Trail of Bits&#39; security skills collection covers static analysis, Slither smart contract review, fuzzing patterns, and audit workflows. At 6.8k-8k GitHub stars it&#39;s the most-starred security skills repo in the ecosystem. With today&#39;s v2.1.332 MCP skills support, the trailofbits endpoint on SkillsOverMCP.com now serves 60 skills natively in Claude Code&#39;s slash menu.</p>
+  <div class="secondary">Also: <a href="https://www.skillsovermcp.com/connect/trailofbits/skills">www.skillsovermcp.com/connect/trailofbits/skills</a></div>
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">security</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  <div class="tags">mcp · skill</div>
+  <pre><button class="copy">copy</button><code>claude skill install trailofbits/skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/sambhav/mcp-demo">sambhav/mcp-demo — Reference Server for Skills over MCP (SEP-2640)</a></h3>
+  <p class="hook">A Python reference MCP server implementing Agent Skills over MCP with per-client negotiation, as specced in SEP-2640. Skills are served via the resources tier — now the right way to implement for Claude Code v2.1.332&#39;s native MCP skills feature. The clearest working example of the new protocol today.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">skills</span>  </div>
+  
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://claudemarketplaces.com/plugins/anthropics-claude-plugins-official/xcode">Apple Xcode Plugin for Claude Code — Official, Ships via xcrun</a></h3>
+  <p class="hook">Apple published an official Xcode plugin to `anthropics/claude-plugins-official` on November 6, 2026 (author: Apple Inc.). The plugin runs `xcrun agent plugin path --plugin-format claude` to generate skills from the local Xcode installation, covering build, run, test, and Apple developer docs search. No downloaded files — skills are generated fresh from your installed Xcode.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">official</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add anthropics/claude-plugins-official &amp;&amp; claude plugin install xcode@claude-plugins-official</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.producthunt.com/p/traxagent">TraxAgent — Per-Developer AI Spend Intelligence with MCP</a></h3>
+  <p class="hook">TraxAgent monitors Claude Code, Codex, and Cursor spend per developer, fires team alerts at 50/80/100% of budget, runs 14 nightly checks plus an AI review, and ships an MCP server so agents can query their own spend. Read-only admin key — no proxy, no SDK. Free up to $100/month in API spend.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d3d;color:#6ee7b7">cost</span>  </div>
+  <div class="tags">mcp · proxy</div>
+  <pre><button class="copy">copy</button><code>See README (MCP server config at traxagent.io)</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://claudemarketplaces.com/plugins/anthropics-claude-plugins-official/champion-kit">champion-kit — Anthropic Official Champions Productivity Plugin</a></h3>
+  <p class="hook">Anthropic&#39;s official champion-kit plugin (7 skills + 1 agent) helps designated Claude Code Champions run internal hackathons and office hours, identify patterns worth sharing across teams, and produce AI maturity reports. Ships via the official claude-plugins-official marketplace.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">official</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">anthropic · marketplace</div>
+  <pre><button class="copy">copy</button><code>claude plugin install champion-kit@claude-plugins-official</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/davila7/claude-code-templates/pull/1701">claude-code-templates — Adds Skills over MCP Component (PR #1701)</a></h3>
+  <p class="hook">PR #1701 in the popular claude-code-templates repo adds a Skills over MCP component to the template registry, targeting Claude Code 2.1.331+. Ships a remote example server serving two skills with no tools surface — the most copy-paste-ready starting point for projects that want to distribute skills over MCP.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://www.producthunt.com/p/mantrana">Mantrana — 4-Juror AI Spec Review via MCP Inside Claude Code</a></h3>
+  <p class="hook">Mantrana routes a technical brief through 4 specialist AI &#39;jurors&#39; to produce a reviewed, phased spec document. This week the team shipped MCP support, letting Claude Code users invoke the spec council directly from the terminal. Useful for teams wanting adversarial review before implementation.</p>
+  <div class="secondary">Also: <a href="https://www.producthunt.com/p/mantrana/what-we-shipped-mantrana-now-speaks-mcp-bring-the-spec-council-into-claude-code">www.producthunt.com/p/mantrana/what-we-shipped-mantrana-now-speaks-mcp-bring-the-spec-council-into-claude-code</a></div>
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">terminal</div>
+  <pre><button class="copy">copy</button><code>claude mcp add --transport http mantrana https://mantrana.co/mcp</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
