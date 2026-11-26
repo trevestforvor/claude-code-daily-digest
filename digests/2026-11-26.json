@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "leonxlnx-taste-skill",
+    "name": "taste-skill — Art-Director Taste Baked Into Every UI Commit",
+    "primary_url": "https://github.com/Leonxlnx/taste-skill",
+    "hook": "taste-skill is a 121.9k-star Claude Code skill that wraps every frontend task with art-direction review — checking spacing rhythm, color contrast, type hierarchy, and overall visual quality before changes land. Install it once and the agent runs a taste audit on each UI edit, flagging anything that reads as generic or misaligned before it reaches the browser. Tagged as `design-taste-frontend`.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"design-taste-frontend\""
+  },
+  {
+    "slug": "nutlope-hallmark",
+    "name": "Hallmark — Design Inspector That Stamps Out AI-Slop",
+    "primary_url": "https://github.com/nutlope/hallmark",
+    "hook": "Hallmark is a 61.5k-star Claude Code skill by Nutlope that acts as a design quality inspector: before shipping any UI it checks for 'AI-slop' patterns — symmetric card grids with zero texture, homogeneous colour ramps, lorem ipsum stand-ins — and flags each with a specific fix rather than generic 'make it better' advice. MIT licensed. Last surfaced here Nov 13; has continued gaining stars.",
+    "categories": ["design", "skill"],
+    "install": "npx skills add nutlope/hallmark -g"
+  },
+  {
+    "slug": "wilwaldon-frontend-design-toolkit",
+    "name": "Claude Code Frontend Design Toolkit — 70+ Curated UI Constraints",
+    "primary_url": "https://github.com/wilwaldon/Claude-Code-Frontend-Design-Toolkit",
+    "hook": "A 1.4k-star curated CLAUDE.md you drop into any web project, adding 70+ frontend design constraints as ambient context — component naming conventions, responsive breakpoint rules, motion preference guards, and contrast requirements all baked in so every Claude Code session inherits the same opinionated UI baseline without invoking a skill or running a command.",
+    "categories": ["design"],
+    "install": "See README"
+  },
+  {
+    "slug": "claude-code-v2-1-332-mcp-skills",
+    "name": "Skills from MCP Servers — Public Beta + Early Adopters Confirmed",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "recurring_note": "↑ Day 2 — Tasks + Elicitation APIs now GA; early adopters Shopify, GitHub, Supabase, HubSpot, and Atlassian confirmed live. Any Skills-over-MCP compatible server now auto-surfaces slash commands without manual installs.",
+    "hook": "Anthropic shipped v2.1.332, adding Skills from MCP servers in beta — MCP servers now push skills directly into Claude Code's `/` slash menu as `server:skill` entries, no manual installs needed. A new `PreSkillShellCommand` hook lets admins gate inline shell commands a skill tries to execute. The `sonnet` alias on GCP and Foundry now resolves to Sonnet 5.5; Foundry's default model also moves to Sonnet 5.5.",
+    "categories": ["mcp", "official"]
+  },
+  {
+    "slug": "anthropics-knowledge-work-plugins",
+    "name": "Anthropic Knowledge-Work Plugins — 11 Official Domain Plugins",
+    "primary_url": "https://github.com/anthropics/knowledge-work-plugins",
+    "hook": "Anthropic's official knowledge-work-plugins repo (37k stars) bundles 11 productivity plugins for Claude Code covering common business workflows. Each plugin loads a domain-specific system prompt and tool suite optimized for its workflow. MIT licensed. Last surfaced here Nov 6; this week's Skills-over-MCP GA makes these distributable as first-class MCP endpoints with zero additional configuration.",
+    "categories": ["plugin", "official"],
+    "install": "claude plugin marketplace add anthropics/knowledge-work-plugins"
+  },
+  {
+    "slug": "shopify-ai-toolkit",
+    "name": "Shopify AI Toolkit — Official First-Party Claude Plugin",
+    "primary_url": "https://github.com/Shopify/shopify-ai-toolkit",
+    "hook": "Shopify's official first-party Claude Code plugin (654 stars, launched this week) connects Claude Code to the Shopify platform. One of the first Skills-over-MCP early adopter integrations from a major platform, shipped by the Shopify GitHub org alongside the Skills-over-MCP public beta announcement.",
+    "categories": ["plugin", "official"],
+    "install": "claude plugin install shopify-ai-toolkit@claude-plugins-official"
+  },
+  {
+    "slug": "garrytan-gbrain",
+    "name": "GBrain — Garry Tan's Persistent Memory Graph for Claude",
+    "primary_url": "https://github.com/garrytan/gbrain",
+    "hook": "GBrain is a 14k-star MCP server built by Garry Tan (Y Combinator CEO) that gives Claude Code a persistent memory graph — entities and relationships extracted from conversations are stored locally and recalled in future sessions, so the agent retains architectural decisions, stakeholder context, and recurring patterns across projects. Last surfaced here Nov 10; momentum has continued.",
+    "categories": ["mcp"],
+    "install": "claude mcp add gbrain -- gbrain serve"
+  },
+  {
+    "slug": "elementalsouls-claude-bughunter",
+    "name": "Claude-BugHunter (elementalsouls)",
+    "primary_url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "recurring_note": "↑ Day 11 — 24.2k stars (+1,644/day); continues as this week's fastest-growing Claude Code plugin. No new releases; growth is organic via security-team word-of-mouth.",
+    "hook": "Authorized bug-bounty and red-team skill bundle: 83 skills and 15 slash commands grounded in 681 disclosed HackerOne report patterns. Covers web-app (XSS, SQLi, SSRF, IDOR, SSTI), enterprise platforms (M365/Entra, Okta, vCenter), and recon/OSINT. For authorized targets only.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add elementalsouls/Claude-BugHunter && /plugin install claude-bughunter@elementalsouls"
+  },
+  {
+    "slug": "mvanhorn-last30days",
+    "name": "last30days-skill",
+    "primary_url": "https://github.com/mvanhorn/last30days-skill",
+    "recurring_note": "↑ Day 11 — 75.6k stars (+5,302 this week); #1 trending Claude Code skill by weekly stars. No new releases; growth is organic via team onboarding.",
+    "hook": "Research skill that queries 30+ sources in parallel (Reddit, HN, YouTube, X, Polymarket, GitHub, arXiv, Bluesky, DEV.to, Yahoo Finance, LinkedIn, Threads, TikTok, local files) and ranks results by engagement — upvotes, views, prediction-market volume — not SEO. Zero-config for Reddit, HN, Polymarket, and GitHub.",
+    "categories": ["skill", "workflow"],
+    "install": "/plugin marketplace add mvanhorn/last30days-skill && /plugin install last30days"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "Superpowers",
+    "primary_url": "https://github.com/obra/superpowers",
+    "recurring_note": "↑ Day 7 — 323k stars; steady community adoption continues. No new releases in the 72h window.",
+    "hook": "Complete software-development methodology for coding agents, built by Jesse Vincent and Prime Radiant. 322k stars. A composable set of skills covering the full dev lifecycle — planning, implementation, review, and ship. Available directly from the official Anthropic plugin marketplace; also supports Gemini CLI, Codex, Cursor, Factory Droid, and Pi. MIT-licensed.",
+    "categories": ["skill", "workflow"],
+    "install": "/plugin install superpowers@claude-plugins-official"
+  },
+  {
+    "slug": "obsidianmd-obsidian-skills",
+    "name": "Obsidian Skills (Official) — Claude Code Meets Your PKM Vault",
+    "primary_url": "https://github.com/obsidianmd/obsidian-skills",
+    "hook": "obsidian-skills is an official Obsidian org plugin for Claude Code (53.9k stars) that connects the agent to your vault via the Obsidian local REST API — enabling note search, page creation with backlinks, and vault-aware context retrieval mid-session. First time in this digest; published under the official obsidianmd GitHub org.",
+    "categories": ["plugin"],
+    "install": "claude plugin marketplace add obsidianmd/obsidian-skills"
+  },
+  {
+    "slug": "backnotprop-plannotator",
+    "name": "Plannotator — Collaborative Pre-Execution Plan Review",
+    "primary_url": "https://github.com/backnotprop/plannotator",
+    "secondary_urls": ["https://plannotator.ai"],
+    "hook": "Plannotator is a 15.2k-star Claude Code workspace tool that transforms a draft plan into a live collaborative review document — the agent annotates each step with risk flags, missing assumptions, and estimated complexity, then opens a web UI where human reviewers can accept, reject, or expand items before execution begins. Last surfaced here Nov 18.",
+    "categories": ["workflow", "plugin"],
+    "install": "/plugin marketplace add backnotprop/plannotator"
+  },
+  {
+    "slug": "ag-ui-protocol-ag-ui",
+    "name": "AG-UI Protocol 1.0 — Stable Standard for Streaming Agent UIs",
+    "primary_url": "https://github.com/ag-ui-protocol/ag-ui",
+    "hook": "AG-UI Protocol hit 1.0 stable (21.8k stars) — the open standard for streaming real-time agent state to frontends. The reference @ag-ui/client package handles SSE streams, diff patches, tool call rendering, and interrupt signals in one typed API. Version 1.0 ships the final event taxonomy with breaking changes from the 0.x series. Claude Code is a first-class target. Last surfaced here Nov 18.",
+    "categories": ["workflow", "mcp"],
+    "install": "npm install @ag-ui/client"
+  }
+]
