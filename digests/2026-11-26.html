@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Digest — November 26, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b0d10; color: #e6e9ef; line-height: 1.5; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 48px 24px; }
+a { color: #7aa2f7; text-decoration: none; }
+a:hover { color: #a3bffa; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 40px 0 12px; border-bottom: 1px solid #1e232b; padding-bottom: 8px; }
+h3 { margin: 0 0 6px; font-size: 17px; }
+h3 a { color: #e6e9ef; }
+h3 a:hover { color: #a3bffa; }
+p.sub { color: #9aa3b2; margin: 0 0 32px; }
+.crumb { color: #9aa3b2; font-size: 13px; margin-bottom: 16px; }
+.hero { display: grid; gap: 12px; margin: 0 0 40px; }
+.hero-card { position: relative; border: 1px solid #1e232b; border-radius: 12px; padding: 20px 24px; background: linear-gradient(180deg, #0f1217 0%, #0b0d10 100%); transition: border-color 0.15s; }
+.hero-card:hover { border-color: #3a4049; }
+.hero-card h2 { margin: 0 0 6px; font-size: 18px; color: #e6e9ef; border: none; padding: 0; }
+.hero-card p { margin: 0; color: #9aa3b2; font-size: 14px; }
+.hero-card .arrow { position: absolute; top: 20px; right: 24px; color: #6a7280; font-size: 20px; }
+.hero-card code { background: #1a1e25; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.section-title { font-size: 13px; font-weight: 600; color: #9aa3b2; text-transform: uppercase; letter-spacing: 0.05em; margin: 32px 0 12px; }
+.monthly-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-bottom: 32px; }
+.monthly-grid .mini { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border: 1px solid #1e232b; border-radius: 8px; background: #0f1217; color: #e6e9ef; font-size: 14px; }
+.monthly-grid .mini:hover { border-color: #3a4049; }
+.monthly-grid .mini .count { color: #6a7280; font-size: 12px; }
+.daily-list { border: 1px solid #1e232b; border-radius: 12px; padding: 4px 0; background: #0f1217; }
+.daily-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #1e232b; gap: 16px; }
+.daily-item:last-child { border-bottom: none; }
+.daily-item .date { color: #e6e9ef; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.daily-item .teaser { color: #9aa3b2; font-size: 13px; flex: 1; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #6a7280; font-size: 13px; padding: 20px; text-align: center; font-style: italic; }
+.item { padding: 20px 0; border-top: 1px solid #1e232b; }
+.item:first-of-type { border-top: none; }
+.item .hook { color: #c2c8d4; font-size: 14px; margin: 6px 0 10px; }
+.item .secondary { font-size: 12px; color: #6a7280; margin-bottom: 8px; }
+.item .secondary a { color: #7aa2f7; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; align-items: center; }
+.badge { font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 500; letter-spacing: 0.02em; }
+.trend, .stars { font-size: 11px; color: #9aa3b2; }
+.recurring { margin-top: 6px; font-size: 12px; color: #fbbf24; }
+.tags { margin-top: 4px; font-size: 11px; color: #6a7280; line-height: 1.5; }
+pre { background: #1a1e25; border: 1px solid #2a3039; border-radius: 8px; padding: 10px 42px 10px 12px; overflow-x: auto; font-size: 13px; position: relative; margin: 8px 0 4px; }
+pre code { font-family: "SF Mono", Monaco, Menlo, Consolas, monospace; color: #e6e9ef; }
+.copy { position: absolute; top: 6px; right: 6px; background: #2a3039; border: none; color: #e6e9ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; font-family: inherit; }
+.copy:hover { background: #3a4049; }
+details { margin-bottom: 16px; border: 1px solid #1e232b; border-radius: 12px; background: #0f1217; }
+summary { cursor: pointer; font-weight: 600; font-size: 16px; padding: 16px 20px; user-select: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; color: #6a7280; transition: transform 0.15s; font-size: 12px; }
+details[open] summary::after { transform: rotate(90deg); }
+summary .count { color: #6a7280; font-weight: 400; font-size: 13px; }
+.month-body { padding: 0 20px 12px; }
+.toc { position: sticky; top: 0; background: #0b0d10; border-bottom: 1px solid #1e232b; display: flex; flex-wrap: wrap; gap: 16px; padding: 12px 0; margin: 0 0 24px; z-index: 10; }
+.toc a { color: #e6e9ef; font-size: 13px; }
+.toc a .count { color: #6a7280; }
+.foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e232b; color: #6a7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">← Back to hub</a></div>
+<h1>Daily Digest — November 26, 2026</h1><p class="sub">Top 13 hottest Claude Code ecosystem items from the past 72 hours.</p>
+<article class="item">
+  <h3><a href="https://github.com/Leonxlnx/taste-skill">taste-skill — Art-Director Taste Baked Into Every UI Commit</a></h3>
+  <p class="hook">taste-skill is a 121.9k-star Claude Code skill that wraps every frontend task with art-direction review — checking spacing rhythm, color contrast, type hierarchy, and overall visual quality before changes land. Install it once and the agent runs a taste audit on each UI edit, flagging anything that reads as generic or misaligned before it reaches the browser. Tagged as `design-taste-frontend`.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">frontend · browser</div>
+  <pre><button class="copy">copy</button><code>npx skills add https://github.com/Leonxlnx/taste-skill --skill &quot;design-taste-frontend&quot;</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/nutlope/hallmark">Hallmark — Design Inspector That Stamps Out AI-Slop</a></h3>
+  <p class="hook">Hallmark is a 61.5k-star Claude Code skill by Nutlope that acts as a design quality inspector: before shipping any UI it checks for &#39;AI-slop&#39; patterns — symmetric card grids with zero texture, homogeneous colour ramps, lorem ipsum stand-ins — and flags each with a specific fix rather than generic &#39;make it better&#39; advice. MIT licensed. Last surfaced here Nov 13; has continued gaining stars.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span> <span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  
+  <pre><button class="copy">copy</button><code>npx skills add nutlope/hallmark -g</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/wilwaldon/Claude-Code-Frontend-Design-Toolkit">Claude Code Frontend Design Toolkit — 70+ Curated UI Constraints</a></h3>
+  <p class="hook">A 1.4k-star curated CLAUDE.md you drop into any web project, adding 70+ frontend design constraints as ambient context — component naming conventions, responsive breakpoint rules, motion preference guards, and contrast requirements all baked in so every Claude Code session inherits the same opinionated UI baseline without invoking a skill or running a command.</p>
+  
+  <div class="badges"><span class="badge" style="background:#3b2b5c;color:#c4b5fd">design</span>  </div>
+  <div class="tags">frontend · skill</div>
+  <pre><button class="copy">copy</button><code>See README</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://code.claude.com/docs/en/changelog">Skills from MCP Servers — Public Beta + Early Adopters Confirmed</a></h3>
+  <p class="hook">Anthropic shipped v2.1.332, adding Skills from MCP servers in beta — MCP servers now push skills directly into Claude Code&#39;s `/` slash menu as `server:skill` entries, no manual installs needed. A new `PreSkillShellCommand` hook lets admins gate inline shell commands a skill tries to execute. The `sonnet` alias on GCP and Foundry now resolves to Sonnet 5.5; Foundry&#39;s default model also moves to Sonnet 5.5.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">official</span>  </div>
+  <div class="tags">skill · anthropic</div>
+  
+  <div class="recurring">↑ Day 2 — Tasks + Elicitation APIs now GA; early adopters Shopify, GitHub, Supabase, HubSpot, and Atlassian confirmed live. Any Skills-over-MCP compatible server now auto-surfaces slash commands without manual installs.</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/anthropics/knowledge-work-plugins">Anthropic Knowledge-Work Plugins — 11 Official Domain Plugins</a></h3>
+  <p class="hook">Anthropic&#39;s official knowledge-work-plugins repo (37k stars) bundles 11 productivity plugins for Claude Code covering common business workflows. Each plugin loads a domain-specific system prompt and tool suite optimized for its workflow. MIT licensed. Last surfaced here Nov 6; this week&#39;s Skills-over-MCP GA makes these distributable as first-class MCP endpoints with zero additional configuration.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">official</span>  </div>
+  <div class="tags">mcp · anthropic · viral · marketplace</div>
+  <pre><button class="copy">copy</button><code>claude plugin marketplace add anthropics/knowledge-work-plugins</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/Shopify/shopify-ai-toolkit">Shopify AI Toolkit — Official First-Party Claude Plugin</a></h3>
+  <p class="hook">Shopify&#39;s official first-party Claude Code plugin (654 stars, launched this week) connects Claude Code to the Shopify platform. One of the first Skills-over-MCP early adopter integrations from a major platform, shipped by the Shopify GitHub org alongside the Skills-over-MCP public beta announcement.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">official</span>  </div>
+  <div class="tags">mcp · viral</div>
+  <pre><button class="copy">copy</button><code>claude plugin install shopify-ai-toolkit@claude-plugins-official</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/garrytan/gbrain">GBrain — Garry Tan&#39;s Persistent Memory Graph for Claude</a></h3>
+  <p class="hook">GBrain is a 14k-star MCP server built by Garry Tan (Y Combinator CEO) that gives Claude Code a persistent memory graph — entities and relationships extracted from conversations are stored locally and recalled in future sessions, so the agent retains architectural decisions, stakeholder context, and recurring patterns across projects. Last surfaced here Nov 10; momentum has continued.</p>
+  
+  <div class="badges"><span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">memory</div>
+  <pre><button class="copy">copy</button><code>claude mcp add gbrain -- gbrain serve</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/elementalsouls/Claude-BugHunter">Claude-BugHunter (elementalsouls)</a></h3>
+  <p class="hook">Authorized bug-bounty and red-team skill bundle: 83 skills and 15 slash commands grounded in 681 disclosed HackerOne report patterns. Covers web-app (XSS, SQLi, SSRF, IDOR, SSTI), enterprise platforms (M365/Entra, Okta, vCenter), and recon/OSINT. For authorized targets only.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span>  </div>
+  <div class="tags">plugin · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add elementalsouls/Claude-BugHunter &amp;&amp; /plugin install claude-bughunter@elementalsouls</code></pre>
+  <div class="recurring">↑ Day 11 — 24.2k stars (+1,644/day); continues as this week&#39;s fastest-growing Claude Code plugin. No new releases; growth is organic via security-team word-of-mouth.</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/mvanhorn/last30days-skill">last30days-skill</a></h3>
+  <p class="hook">Research skill that queries 30+ sources in parallel (Reddit, HN, YouTube, X, Polymarket, GitHub, arXiv, Bluesky, DEV.to, Yahoo Finance, LinkedIn, Threads, TikTok, local files) and ranks results by engagement — upvotes, views, prediction-market volume — not SEO. Zero-config for Reddit, HN, Polymarket, and GitHub.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">plugin · marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add mvanhorn/last30days-skill &amp;&amp; /plugin install last30days</code></pre>
+  <div class="recurring">↑ Day 11 — 75.6k stars (+5,302 this week); #1 trending Claude Code skill by weekly stars. No new releases; growth is organic via team onboarding.</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/obra/superpowers">Superpowers</a></h3>
+  <p class="hook">Complete software-development methodology for coding agents, built by Jesse Vincent and Prime Radiant. 322k stars. A composable set of skills covering the full dev lifecycle — planning, implementation, review, and ship. Available directly from the official Anthropic plugin marketplace; also supports Gemini CLI, Codex, Cursor, Factory Droid, and Pi. MIT-licensed.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c2343;color:#f9a8d4">skill</span> <span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span>  </div>
+  <div class="tags">plugin · anthropic · viral · marketplace · terminal</div>
+  <pre><button class="copy">copy</button><code>/plugin install superpowers@claude-plugins-official</code></pre>
+  <div class="recurring">↑ Day 7 — 323k stars; steady community adoption continues. No new releases in the 72h window.</div>
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/obsidianmd/obsidian-skills">Obsidian Skills (Official) — Claude Code Meets Your PKM Vault</a></h3>
+  <p class="hook">obsidian-skills is an official Obsidian org plugin for Claude Code (53.9k stars) that connects the agent to your vault via the Obsidian local REST API — enabling note search, page creation with backlinks, and vault-aware context retrieval mid-session. First time in this digest; published under the official obsidianmd GitHub org.</p>
+  
+  <div class="badges"><span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">viral · marketplace · search</div>
+  <pre><button class="copy">copy</button><code>claude plugin marketplace add obsidianmd/obsidian-skills</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/backnotprop/plannotator">Plannotator — Collaborative Pre-Execution Plan Review</a></h3>
+  <p class="hook">Plannotator is a 15.2k-star Claude Code workspace tool that transforms a draft plan into a live collaborative review document — the agent annotates each step with risk flags, missing assumptions, and estimated complexity, then opens a web UI where human reviewers can accept, reject, or expand items before execution begins. Last surfaced here Nov 18.</p>
+  <div class="secondary">Also: <a href="https://plannotator.ai">plannotator.ai</a></div>
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span> <span class="badge" style="background:#5c4a1f;color:#fde68a">plugin</span>  </div>
+  <div class="tags">marketplace</div>
+  <pre><button class="copy">copy</button><code>/plugin marketplace add backnotprop/plannotator</code></pre>
+  
+</article>
+
+<article class="item">
+  <h3><a href="https://github.com/ag-ui-protocol/ag-ui">AG-UI Protocol 1.0 — Stable Standard for Streaming Agent UIs</a></h3>
+  <p class="hook">AG-UI Protocol hit 1.0 stable (21.8k stars) — the open standard for streaming real-time agent state to frontends. The reference @ag-ui/client package handles SSE streams, diff patches, tool call rendering, and interrupt signals in one typed API. Version 1.0 ships the final event taxonomy with breaking changes from the 0.x series. Claude Code is a first-class target. Last surfaced here Nov 18.</p>
+  
+  <div class="badges"><span class="badge" style="background:#2a3039;color:#c2c8d4">workflow</span> <span class="badge" style="background:#1f4d4d;color:#67e8f9">mcp</span>  </div>
+  <div class="tags">viral</div>
+  <pre><button class="copy">copy</button><code>npm install @ag-ui/client</code></pre>
+  
+</article>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(b.parentElement.querySelector('code').innerText);
+  const t = b.innerText; b.innerText = 'copied'; setTimeout(() => b.innerText = t, 1200);
+}));
+</script>
+</body>
+</html>
