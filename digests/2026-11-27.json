@@ -1,0 +1,68 @@
+[
+  {
+    "slug": "alirezarezvani-claude-skills",
+    "name": "alirezarezvani/claude-skills",
+    "primary_url": "https://github.com/alirezarezvani/claude-skills",
+    "hook": "30.6k-star mega-collection of 434 Claude Code skills and plugins. This week: new Agent Launcher pack (6 skills that build, launch, grade, and schedule Claude Managed Agents in your own account) and Video Studio (4 skills that produce MP4 videos from a brief via code-based animatics). Install command verified.",
+    "categories": ["skills", "agent"],
+    "install": "/plugin marketplace add alirezarezvani/claude-skills && /plugin install engineering-skills@claude-code-skills",
+    "recurring_note": "↑ Day 5 — Agent Launcher (Managed Agents) and Video Studio added"
+  },
+  {
+    "slug": "mcp-experimental-ext-skills",
+    "name": "modelcontextprotocol/experimental-ext-skills",
+    "primary_url": "https://github.com/modelcontextprotocol/experimental-ext-skills",
+    "hook": "Official MCP Skills extension reference implementation (SEP-2640), maintained by the Skills Over MCP Working Group. 840 stars. Provides TypeScript types, JSON Schema 2020-12, and machine-verified spec examples — the canonical starting point for any MCP server author wanting their tools to ship bundled skills to Claude Code 2.1.332+ and VS Code.",
+    "categories": ["mcp", "skills"],
+    "install": "See README"
+  },
+  {
+    "slug": "zhuyansen-awesome-claude-video-skills",
+    "name": "zhuyansen/awesome-claude-video-skills",
+    "primary_url": "https://github.com/zhuyansen/awesome-claude-video-skills",
+    "hook": "2.9k-star curated list of 561 open-source skills and toolkits that let Claude Code and other coding agents make video — frameworks, promo/demos, explainers, shorts, motion graphics, avatars, and music videos, each security-graded. Maintainers ran 16 skills on the same 15-second promo brief in a sandboxed Opus 5.5 session; they recommend explainroo for speed and onetake for single-idea films.",
+    "categories": ["skills", "design"],
+    "install": "See README for individual skill installs"
+  },
+  {
+    "slug": "travisjneuman-dot-claude",
+    "name": "travisjneuman/.claude",
+    "primary_url": "https://github.com/travisjneuman/.claude",
+    "hook": "Drop-in ~/.claude config with 183 skills, 10 agents, 29 commands, 7 hooks, and 86 marketplace repos. November 2026 release added a skills-only plugin path so you can install just domain bundles without hooks and settings; guard hooks now cover PowerShell; long skills split into leaner overviews backed by references/ files. MIT, no telemetry.",
+    "categories": ["toolkit", "skills"],
+    "install": "/plugin marketplace add travisjneuman/.claude && /plugin install tjn-skills@tjn-claude"
+  },
+  {
+    "slug": "glebis-claude-skills",
+    "name": "glebis/claude-skills",
+    "primary_url": "https://github.com/glebis/claude-skills",
+    "hook": "416-star curated collection of 100+ agent skills covering meetings (Fathom/Granola/Zoom), research (Firecrawl/Obsidian), media (GPT Image/ElevenLabs TTS), dev workflows, and business ops. Latest batch adds kinetic-ad (vertical kinetic-type video ads), sops-mesh (cross-machine SOPS secrets sharing), pii-pdf (local PDF PII detection and redaction), bridgework (stack audit + tool canvas), luma-event, and app-map.",
+    "categories": ["skills", "productivity"],
+    "install": "claude plugin marketplace add glebis/claude-skills && claude plugin install tdd@glebis-skills"
+  },
+  {
+    "slug": "anthropics-skills-incoming-nov",
+    "name": "anthropics/skills — incoming PRs",
+    "primary_url": "https://github.com/anthropics/skills",
+    "secondary_urls": ["https://github.com/BuhDuy256/agents-radar/issues/426"],
+    "hook": "Three PRs open in the official Anthropic skills repo as of Nov 26: PR #1703 adds md2video-audio (converts Markdown to narrated MP4 videos via Marp slide rendering); PR #1615 adds scnet-hpc (high-performance computing workflows); PR #1771 adds proofcore-contract-auditor (smart contract security analysis). All pending merge review.",
+    "categories": ["skills"],
+    "install": "See README for each skill once merged"
+  },
+  {
+    "slug": "waziri-skill-drops-nov-2026",
+    "name": "WaziriG/skill-drops — November 2026",
+    "primary_url": "https://github.com/WaziriG/skill-drops/releases/tag/newsletter-2026-11",
+    "hook": "November newsletter release with three standalone Claude Code skills: Session Audit (/session-audit) saves decisions and open items so they persist past session end; Clear the Mac (/clear-the-mac) moves large folders to two external drives and verifies every file before deleting originals; Concept Motion (/concept-motion) turns an idea into a short animated diagram series (~10 min first-run setup).",
+    "categories": ["skills", "productivity"],
+    "install": "Copy skill folder into ~/.claude/skills/ and restart Claude Code"
+  },
+  {
+    "slug": "rdmgator12-awesome-claude-plugins",
+    "name": "rdmgator12/awesome-claude-plugins",
+    "primary_url": "https://github.com/rdmgator12/awesome-claude-plugins",
+    "hook": "Community-maintained CC0 directory of all 535 official Anthropic Claude plugins, updated Nov 22 with a net +12 additions. New entries include Claude for Manufacturing, a KYC operations bundle, Cortex AppSec, Opsera DevSecOps, AWS Continuum, and RingCentral. 331 plugins run in Claude Code and 468 in Cowork; each entry shows categories, install commands, and Anthropic-verified badges.",
+    "categories": ["directory"],
+    "install": "See README"
+  }
+]
