@@ -1,0 +1,131 @@
+[
+  {
+    "slug": "cathrynlavery-diagram-design",
+    "name": "diagram-design — Editorial Diagrams Without Figma",
+    "primary_url": "https://github.com/cathrynlavery/diagram-design",
+    "hook": "cathrynlavery/diagram-design is the fastest-rising Claude Code skill on Nov 28, adding ~1,600 stars today to a 60k+ total. It generates editorial-quality diagrams as fully self-contained HTML/SVG — flow charts, system maps, comparison tables, timelines, and more — using typographic rules and brand colours from the project's design context. No Figma, no external renderer, no cloud. By BestSelf.co founder Cathryn Lavery. MIT-licensed.",
+    "categories": ["design", "skill"],
+    "install": "/plugin marketplace add cathrynlavery/diagram-design && /plugin install diagram-design@diagram-design"
+  },
+  {
+    "slug": "opus-4-8-fast-mode-eol",
+    "name": "Opus 4.8 Fast Mode Sunset — 2 Days Left (Nov 30 Hard Deadline)",
+    "primary_url": "https://code.claude.com/docs/en/changelog",
+    "recurring_note": "↑ Day 5 — DEADLINE IN 48 HOURS. Fast mode on Opus 4.8 is removed Nov 30; calls fail with no silent fallback.",
+    "hook": "Hard deadline: November 30, 2026 — two days from now. After removal, fast mode on Claude Opus 4.8 returns an error with no silent fallback and will NOT revert to standard Opus 4.8. Any team or workflow relying on fast-mode Opus 4.8 must migrate to Opus 5.5 before midnight Sunday. The upgrade path is a one-line model alias change.",
+    "categories": ["cost", "official"]
+  },
+  {
+    "slug": "kajisho5-ffmpeg-skill",
+    "name": "ffmpeg-skill — 42-Tool Local Video Editor with MCP Server",
+    "primary_url": "https://github.com/kajisho5/ffmpeg-skill",
+    "hook": "kajisho5/ffmpeg-skill is a Claude Code Agent Skill (and MCP server) for local, zero-cloud video editing: 42 FFmpeg-backed Python tools for trimming, transcoding, overlays, captions, concat, and QC. Ships 12 tools by default; set FFMPEG_SKILL_MCP_FULL=1 for all 42. Trending on GitHub from Nov 16 onwards. Python 3.9+ standard library only — no API keys, no uploads. The companion captions and Remotion graphics skills complete a full production pipeline. Sources report 6–8k stars (varies by snapshot date).",
+    "categories": ["design", "cost"],
+    "install": "npx ffmpeg-skill"
+  },
+  {
+    "slug": "addyosmani-agent-skills",
+    "name": "Addy Osmani's Agent Skills — 24 Production Skills, 106k Stars",
+    "primary_url": "https://github.com/addyosmani/agent-skills",
+    "hook": "Google Chrome's engineering lead Addy Osmani open-sourced his personal agent-skills repo — 24 production-grade skills encoding Google-calibre engineering practices directly into AI coding agents. At 106k+ stars it's one of the most-starred Claude Code skill repositories. Covers code-review, systematic debugging, structured planning, accessibility auditing, performance profiling, and more. Cross-agent (Claude Code, Codex, Cursor, Antigravity); listed in the official Anthropic marketplace.",
+    "categories": ["skills", "workflow"],
+    "install": "/plugin marketplace add addyosmani/agent-skills"
+  },
+  {
+    "slug": "google-labs-stitch-skills",
+    "name": "Stitch Skills (Google Labs) — Agent Skills Bridge for Design-to-Code",
+    "primary_url": "https://github.com/google-labs-code/stitch-skills",
+    "hook": "Google Labs' official agent-skills library for the Stitch MCP server. Covers UI design, design-system synthesis, and design-to-code conversion — every skill operation is an MCP call into the Stitch backend. Works across Claude Code, Codex, Cursor, Gemini CLI, and OpenCode. ~8k stars, last updated July 2026. The main entry point, stitch-design, synthesises design systems from prompts and turns them into visual requirements. NOTE: mantainers warn skills have inter-dependencies; selective installs need dependencies included.",
+    "categories": ["design", "mcp"],
+    "install": "claude plugin marketplace add google-labs-code/stitch-skills"
+  },
+  {
+    "slug": "elementalsouls-claude-bughunter",
+    "name": "Claude-BugHunter (elementalsouls)",
+    "primary_url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "recurring_note": "↑ Day 13 — was #1 daily gainer Nov 26 (+1,644 stars/day); 24.2k stars total. No new releases; growth via security-community word-of-mouth.",
+    "hook": "Authorized bug-bounty and red-team skill bundle: 83 skills and 15 slash commands grounded in 681 disclosed HackerOne report patterns. Covers web-app (XSS, SQLi, SSRF, IDOR, SSTI), enterprise platforms (M365/Entra, Okta, vCenter), and recon/OSINT. For authorized targets only. Ships a cbh standalone CLI (pipx install) and a Claude Code plugin path. Trended to 7.6k stars on Nov 17 and has continued climbing.",
+    "categories": ["skill"],
+    "install": "/plugin marketplace add elementalsouls/Claude-BugHunter && /plugin install claude-bughunter@elementalsouls"
+  },
+  {
+    "slug": "mvanhorn-last30days",
+    "name": "last30days-skill",
+    "primary_url": "https://github.com/mvanhorn/last30days-skill",
+    "recurring_note": "↑ Day 13 — 75.6k stars (+5,302 this week); #1 trending Claude Code skill by weekly star growth.",
+    "hook": "Research skill that queries 30+ sources in parallel (Reddit, HN, YouTube, X, Polymarket, GitHub, arXiv, Bluesky, DEV.to, Yahoo Finance, LinkedIn, Threads, TikTok, local files) and ranks results by engagement — upvotes, views, prediction-market volume — not SEO. Zero-config for Reddit, HN, Polymarket, and GitHub.",
+    "categories": ["skill", "workflow"],
+    "install": "/plugin marketplace add mvanhorn/last30days-skill && /plugin install last30days"
+  },
+  {
+    "slug": "obra-superpowers",
+    "name": "Superpowers",
+    "primary_url": "https://github.com/obra/superpowers",
+    "recurring_note": "↑ Day 9 — 323k stars; steady community adoption continues.",
+    "hook": "Complete software-development methodology for coding agents, built by Jesse Vincent and Prime Radiant. 323k stars. A composable set of skills covering the full dev lifecycle — planning, implementation, review, and ship. Available directly from the official Anthropic plugin marketplace; also supports Gemini CLI, Codex, Cursor, Factory Droid, and Pi. MIT-licensed.",
+    "categories": ["skill", "workflow"],
+    "install": "/plugin install superpowers@claude-plugins-official"
+  },
+  {
+    "slug": "janestreet-agent-skills",
+    "name": "janestreet/agent_skills — Socratic Tutor Skill from Jane Street",
+    "primary_url": "https://github.com/janestreet/agent_skills",
+    "hook": "Jane Street — the high-frequency trading firm known for OCaml engineering rigour — open-sourced agent_skills in November 2026 with one skill: a Socratic tutor. The skill guides the agent through learning tasks with probing questions rather than direct answers. MIT-licensed, 383 stars. A strong ecosystem signal: when institutional engineering firms start publishing agent skills, the standard has crossed the mainstream threshold.",
+    "categories": ["skills"],
+    "install": "See README"
+  },
+  {
+    "slug": "alirezarezvani-claude-skills",
+    "name": "alirezarezvani/claude-skills",
+    "primary_url": "https://github.com/alirezarezvani/claude-skills",
+    "recurring_note": "↑ Day 6 — 30.6k-star mega-collection. Agent Launcher (Managed Agents) and Video Studio added earlier this week.",
+    "hook": "30.6k-star mega-collection of 434 Claude Code skills and plugins. This week: Agent Launcher pack (6 skills that build, launch, grade, and schedule Claude Managed Agents) and Video Studio (4 skills that produce MP4s from a brief via code-based animatics). The broadest single-install Claude Code toolkit available.",
+    "categories": ["skills", "agent"],
+    "install": "/plugin marketplace add alirezarezvani/claude-skills && /plugin install engineering-skills@claude-code-skills"
+  },
+  {
+    "slug": "mcp-experimental-ext-skills",
+    "name": "modelcontextprotocol/experimental-ext-skills",
+    "primary_url": "https://github.com/modelcontextprotocol/experimental-ext-skills",
+    "recurring_note": "↑ Day 2 — 840-star official reference for MCP Skills (SEP-2640).",
+    "hook": "Official MCP Skills extension reference implementation (SEP-2640), maintained by the Skills Over MCP Working Group. Provides TypeScript types, JSON Schema 2020-12, and machine-verified spec examples — the canonical starting point for any MCP server author wanting tools to ship bundled skills to Claude Code 2.1.332+ and VS Code. Pairs with the SkillsOverMCP.com hosting service (covered Nov 25).",
+    "categories": ["mcp", "skills"],
+    "install": "See README"
+  },
+  {
+    "slug": "travisjneuman-dot-claude",
+    "name": "travisjneuman/.claude",
+    "primary_url": "https://github.com/travisjneuman/.claude",
+    "recurring_note": "↑ Day 2 — steady adoption. November release added skills-only plugin path.",
+    "hook": "Drop-in ~/.claude config with 183 skills, 10 agents, 29 commands, 7 hooks, and 86 marketplace repos. November 2026 release added a skills-only plugin path so you can install just domain bundles without hooks and settings; guard hooks now cover PowerShell; long skills split into leaner overviews backed by references/ files. MIT, no telemetry.",
+    "categories": ["toolkit", "skills"],
+    "install": "/plugin marketplace add travisjneuman/.claude && /plugin install tjn-skills@tjn-claude"
+  },
+  {
+    "slug": "glebis-claude-skills",
+    "name": "glebis/claude-skills",
+    "primary_url": "https://github.com/glebis/claude-skills",
+    "recurring_note": "↑ Day 2 — 416 stars. New batch added this week: kinetic-ad, sops-mesh, pii-pdf, bridgework, luma-event, app-map.",
+    "hook": "416-star curated collection of 100+ agent skills covering meetings (Fathom/Granola/Zoom), research (Firecrawl/Obsidian), media (GPT Image/ElevenLabs TTS), dev workflows, and business ops. Latest batch adds kinetic-ad (vertical kinetic-type video ads), sops-mesh (cross-machine SOPS secrets sharing), pii-pdf (local PDF PII detection and redaction), bridgework (stack audit + tool canvas), luma-event, and app-map.",
+    "categories": ["skills", "productivity"],
+    "install": "claude plugin marketplace add glebis/claude-skills && claude plugin install tdd@glebis-skills"
+  },
+  {
+    "slug": "waziri-skill-drops-nov-2026",
+    "name": "WaziriG/skill-drops — November 2026",
+    "primary_url": "https://github.com/WaziriG/skill-drops/releases/tag/newsletter-2026-11",
+    "recurring_note": "↑ Day 2 — steady installs on the Nov 2026 newsletter release.",
+    "hook": "November newsletter release with three standalone Claude Code skills: Session Audit (/session-audit) saves decisions and open items so they persist past session end; Clear the Mac (/clear-the-mac) moves large folders to two external drives and verifies every file before deleting originals; Concept Motion (/concept-motion) turns an idea into a short animated diagram series (~10 min first-run setup).",
+    "categories": ["skills", "productivity"],
+    "install": "Copy skill folder into ~/.claude/skills/ and restart Claude Code"
+  },
+  {
+    "slug": "rdmgator12-awesome-claude-plugins",
+    "name": "rdmgator12/awesome-claude-plugins",
+    "primary_url": "https://github.com/rdmgator12/awesome-claude-plugins",
+    "recurring_note": "↑ Day 2 — 535-entry directory, updated Nov 22 with net +12 entries.",
+    "hook": "Community-maintained CC0 directory of all 535 official Anthropic Claude plugins, updated Nov 22 with a net +12 additions. New entries include Claude for Manufacturing, a KYC operations bundle, Cortex AppSec, Opsera DevSecOps, AWS Continuum, and RingCentral. 331 plugins run in Claude Code and 468 in Cowork; each entry shows categories, install commands, and Anthropic-verified badges.",
+    "categories": ["directory"],
+    "install": "See README"
+  }
+]
